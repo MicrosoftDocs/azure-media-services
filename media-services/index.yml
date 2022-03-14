@@ -145,13 +145,6 @@ conceptualContent:
           - url: ./latest/migrate-v-2-v-3-migration-introduction.md 
             itemType: overview
             text: Migrate from v2 to v3 overview
-
-    - title: Learn about more Azure services for media   
-      links:    
-          - url: .https://docs.microsoft.com/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-docs/overview
-            itemType: overview
-            text: Capture and run custom AI models on live surveillance video with Azure Video Analyzer
-
 additionalContent:
   sections:
     - items:      

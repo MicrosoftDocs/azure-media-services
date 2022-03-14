@@ -20,8 +20,6 @@ ms.author: inhenkel
 
 This article describes quotas and limitations associated with Microsoft Azure Media Services.
 
-[!INCLUDE [azure-mediaservices-limits](../latest/includes/azure-media-services-limits.md)]
-
 ## Open a Support Ticket to request changes to the default quotas
 To request changes to the default quotas provided, you can open a support ticket. Please include detailed information in the request on the desired quota changes, use-case scenarios, and regions required.
 
