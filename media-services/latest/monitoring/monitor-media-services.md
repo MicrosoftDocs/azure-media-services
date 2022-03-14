@@ -33,7 +33,7 @@ robb@microsoft.com -->
 
 ## What is Azure Monitor?
 
-Media Services creates monitoring data using [Azure Monitor](../https://docs.microsoft.com/azure-monitor/overview.md), which is a full stack monitoring service in Azure that provides a complete set of features to monitor your Azure resources in addition to resources in other clouds and on-premises.
+Media Services creates monitoring data using [Azure Monitor](https://docs.microsoft.com/azure-monitor/overview.md), which is a full stack monitoring service in Azure that provides a complete set of features to monitor your Azure resources in addition to resources in other clouds and on-premises.
 
 Start with reading the article [Monitoring Azure resources with Azure Monitor](/azure-monitor/essentials/monitor-azure-resource.md), which describes the following concepts:
 
@@ -65,13 +65,13 @@ See the article [Monitoring Media Services data reference](monitor-media-service
 
 *Resource Logs* are **not** collected and stored until you create a diagnostic setting and route them to one or more locations.
 
-See the article [Create diagnostic setting to collect platform logs and metrics in Azure](../https://docs.microsoft.com/azure-monitor/essentials/diagnostic-settings.md) for the detailed process of creating a diagnostic setting using the Azure portal, CLI, or PowerShell.
+See the article [Create diagnostic setting to collect platform logs and metrics in Azure](https://docs.microsoft.com/azure-monitor/essentials/diagnostic-settings.md) for the detailed process of creating a diagnostic setting using the Azure portal, CLI, or PowerShell.
 
 When you create a diagnostic setting, you specify which categories of logs to collect. The categories for Media Services are listed in [Media Services monitoring data reference](monitor-media-services-data-reference.md).
 
 ## Analyzing metrics
 
-You can analyze metrics for Media Services with metrics from other Azure services using metrics explorer by opening **Metrics** from the **Azure Monitor** menu. See [Getting started with Azure Metrics Explorer](../https://docs.microsoft.com/azure-monitor/essentials/metrics-getting-started.md) for details on using this tool.
+You can analyze metrics for Media Services with metrics from other Azure services using metrics explorer by opening **Metrics** from the **Azure Monitor** menu. See [Getting started with Azure Metrics Explorer](https://docs.microsoft.com/azure-monitor/essentials/metrics-getting-started.md) for details on using this tool.
 
 For a list of the metrics collected for Media Services, see [Monitoring Media Services Data Reference](monitor-media-services-data-reference.md).
 
@@ -79,11 +79,11 @@ For a list of the metrics collected for Media Services, see [Monitoring Media Se
 
 Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.  
 
-All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](../https://docs.microsoft.com/azure-monitor/essentials/resource-logs-schema.md#top-level-common-schema).
+All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](https://docs.microsoft.com/azure-monitor/essentials/resource-logs-schema.md#top-level-common-schema).
 
 The schema for Media Services resource logs is found in [Monitoring Media Services Data Reference](monitor-media-services-data-reference.md).
 
-The [Activity log](../https://docs.microsoft.com/azure-monitor/essentials/activity-log.md) is a platform log in Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can do much more complex queries using Log Analytics.
+The [Activity log](https://docs.microsoft.com/azure-monitor/essentials/activity-log.md) is a platform log in Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can do much more complex queries using Log Analytics.
 
 For a list of the types of resource logs collected for Media Services, see [Monitoring Media Services data reference](monitor-media-services-data-reference.md).
 
@@ -98,7 +98,7 @@ Some things that you can examine with diagnostic logs are:
 
 ## Alerts
 
-Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system before your customers notice them. You can set alerts on [metrics](../https://docs.microsoft.com/azure-monitor/alerts/alerts-metric-overview.md), [logs](../https://docs.microsoft.com/azure-monitor/alerts/alerts-unified-log.md), and the [activity log](../https://docs.microsoft.com/azure-monitor/alerts/activity-log-alerts.md).
+Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system before your customers notice them. You can set alerts on [metrics](https://docs.microsoft.com/azure-monitor/alerts/alerts-metric-overview.md), [logs](https://docs.microsoft.com/azure-monitor/alerts/alerts-unified-log.md), and the [activity log](https://docs.microsoft.com/azure-monitor/alerts/activity-log-alerts.md).
 
 Media Services metrics are collected at regular intervals whether or not the value changes. They're useful for alerting because they can be sampled frequently. An alert can be fired quickly with relatively simple logic.
 
@@ -113,7 +113,3 @@ The following table lists common and recommended alert rules for Media Services.
 | | | |
 | | | |
 -->
-
-## Next steps
-
-[!INCLUDE [monitoring-next-steps](../includes/monitoring-next-steps.md)]

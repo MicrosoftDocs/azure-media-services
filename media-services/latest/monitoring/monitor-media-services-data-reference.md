@@ -12,7 +12,7 @@ ms.date: 04/21/2021
 
 # Monitoring Media Services data reference
 
-This article covers the data that is useful for monitoring Media Services. For more information about all platform metrics supported in Azure Monitor, review [Supported metrics with Azure Monitor](../https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md).
+This article covers the data that is useful for monitoring Media Services. For more information about all platform metrics supported in Azure Monitor, review [Supported metrics with Azure Monitor](https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md).
 
 ## Metrics
 
@@ -23,9 +23,9 @@ Media Services supports monitoring metrics for the following resources:
 
 |Metric Type | Resource Provider / Type Namespace<br/> and link to individual metrics |
 |-------|-----|
-| Media Services general | [General](../https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md#microsoftmediamediaservices) |
-| Live Events | [Microsoft.Media/mediaservices/liveEvents](../https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md#microsoftmediamediaservicesliveevents) 
-| Streaming Endpoints | [Microsoft.Media/mediaservices/streamingEndpoints](../https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md#microsoftmediamediaservicesstreamingendpoints), which are relevant to the [Streaming Endpoints REST API](/rest/api/media/streamingendpoints). 
+| Media Services general | [General](https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md#microsoftmediamediaservices) |
+| Live Events | [Microsoft.Media/mediaservices/liveEvents](https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md#microsoftmediamediaservicesliveevents)
+| Streaming Endpoints | [Microsoft.Media/mediaservices/streamingEndpoints](https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md#microsoftmediamediaservicesstreamingendpoints), which are relevant to the [Streaming Endpoints REST API](/rest/api/media/streamingendpoints).
 
 
 You should also review [account quotas and limits](../limits-quotas-constraints-reference.md).
@@ -33,9 +33,10 @@ You should also review [account quotas and limits](../limits-quotas-constraints-
 
 ## Metric Dimensions
 
-For more information on what metric dimensions are, see [Multi-dimensional metrics](../https://docs.microsoft.com/azure-monitor/essentials/data-platform-metrics.md#multi-dimensional-metrics).
+For more information on what metric dimensions are, see [Multi-dimensional metrics](https://docs.microsoft.com/azure-monitor/essentials/data-platform-metrics.md#multi-dimensional-metrics).
 
-Media services has the following metric dimensions.  They are self-explantory based on the metrics they support.  See the [metrics links](#metrics) above for more information.   
+Media services has the following metric dimensions.  They are self-explantory based on the metrics they support.  See the [metrics links](#metrics) above for more information.
+
 - OutputFormat
 - HttpStatusCode 
 - ErrorCode 
@@ -43,14 +44,14 @@ Media services has the following metric dimensions.  They are self-explantory ba
 
 ## Resource logs
 
-Resource logs provide rich and frequent data about the operation of an Azure resource. For more information, see [How to collect and consume log data from your Azure resources](../https://docs.microsoft.com/azure-monitor/essentials/platform-logs-overview.md).
+Resource logs provide rich and frequent data about the operation of an Azure resource. For more information, see [How to collect and consume log data from your Azure resources](https://docs.microsoft.com/azure-monitor/essentials/platform-logs-overview.md).
 
 Media Services supports the following resource logs:
-[Microsoft.Media/mediaservices](../https://docs.microsoft.com/azure-monitor/essentials/resource-logs-categories.md#microsoftmediamediaservices)
+[Microsoft.Media/mediaservices](https://docs.microsoft.com/azure-monitor/essentials/resource-logs-categories.md#microsoftmediamediaservices)
 
 ## Schemas
 
-For detailed description of the top-level diagnostic logs schema, see [Supported services, schemas, and categories for Azure Diagnostic Logs](../https://docs.microsoft.com/azure-monitor/essentials/resource-logs-schema.md).
+For detailed description of the top-level diagnostic logs schema, see [Supported services, schemas, and categories for Azure Diagnostic Logs](https://docs.microsoft.com/azure-monitor/essentials/resource-logs-schema.md).
 
 ### Key delivery 
 
@@ -128,7 +129,3 @@ Properties of the key delivery requests schema.
 
 >[!NOTE]
 > Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
-## Next steps
-
-[!INCLUDE [monitoring-next-steps](../includes/monitoring-next-steps.md)]
