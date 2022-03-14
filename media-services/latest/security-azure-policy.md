@@ -47,9 +47,4 @@ See the following articles for more information:
 - [What is Azure Policy](../../governance/policy/overview.md)
 - [Quickstart:Create a policy in the Portal](../../governance/policy/assign-policy-portal.md)
 - [List of built-in policy definitions for Media Services](../../governance/policy/samples/built-in-policies.md#media-services)
-
-## Next steps
-
-- [Developing with Media Services v3 APIs](media-services-apis-overview.md)
-- [Role based access control in Media Services](security-rbac-concept.md)
-- [Private link how-to with Media Services](security-private-link-how-to.md)
+- 
