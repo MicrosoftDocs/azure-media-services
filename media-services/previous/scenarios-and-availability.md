@@ -136,10 +136,3 @@ AMS customers can scale streaming endpoints, media processing, and storage in th
     For more information see, [Scale media processing](media-services-portal-scale-media-processing.md).
 
 * You can also scale your Media Services account by adding storage accounts to it. Each storage account is limited to 500 TB. For more information, see [Manage storage accounts](./media-services-managing-multiple-storage-accounts.md).
-
-## Next steps
-
-[Migrate to Media Services v3](../latest/media-services-overview.md)
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

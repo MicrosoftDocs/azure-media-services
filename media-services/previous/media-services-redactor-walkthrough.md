@@ -115,17 +115,3 @@ If you are a developer trying to parse the JSON annotation data, look inside Mod
 	
 6.	Upload this file to the output asset from step 1. Upload the original video to this asset as well and set as primary asset. 
 7.	Run Redaction job on this asset with "Redact" mode to get the final redacted video. 
-
-## Next steps 
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Related links
-[Azure Media Services Analytics Overview](./legacy-components.md)
-
-[Azure Media Analytics demos](http://amslabs.azurewebsites.net/demos/Analytics.html)
-
-[Announcing Face Redaction for Azure Media Analytics](https://azure.microsoft.com/blog/azure-media-redactor/)

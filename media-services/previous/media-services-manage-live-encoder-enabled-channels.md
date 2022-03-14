@@ -337,31 +337,3 @@ The following table shows how Channel states map to the billing mode.
 * Channel start up time has been improved to an average of 2 minutes, but at times of increased demand could still take up to 20+ minutes.
 * Slate images should conform to restrictions described [here](media-services-manage-live-encoder-enabled-channels.md#default_slate). If you attempt to create a Channel with a default slate that is larger than 1920x1080, the request will eventually error out.
 * Once again....don't forget to STOP YOUR CHANNELS when you are done streaming. If you don't, billing will continue.
-
-## Need help?
-
-You can open a support ticket by navigating to [New support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)
-
-## Next step
-
-Review Media Services learning paths.
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Related topics
-[Delivering Live Streaming Events with Azure Media Services](media-services-overview.md)
-
-[Create channels that perform live encoding from a singe bitrate to adaptive bitrate stream with Portal](media-services-portal-creating-live-encoder-enabled-channel.md)
-
-[Create channels that perform live encoding from a singe bitrate to adaptive bitrate stream with .NET SDK](media-services-dotnet-creating-live-encoder-enabled-channel.md)
-
-[Manage channels with REST API](/rest/api/media/operations/channel)
-
-[Media Services Concepts](media-services-concepts.md)
-
-[Azure Media Services Fragmented MP4 Live Ingest Specification](media-services-fmp4-live-ingest-overview.md)
-
-[live-overview]: ./media/media-services-manage-live-encoder-enabled-channels/media-services-live-streaming-new.png

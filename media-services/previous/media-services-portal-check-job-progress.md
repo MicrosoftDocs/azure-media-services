@@ -31,12 +31,3 @@ To monitor the progress of the encoding job, click **Settings** (at the top of t
 You can click the job to see more details.
 
 ![Jobs](./media/media-services-portal-vod-get-started/media-services-job-progress2.png)
-
-## Next steps
-After your encoding job is one, you can publish and play your assets, as described [here](media-services-portal-publish.md).
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

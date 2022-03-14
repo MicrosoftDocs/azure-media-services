@@ -87,9 +87,3 @@ Some considerations apply:
 * Make sure that the video has been published.
 * The Azure portal media player plays from the default streaming endpoint. If you want to play from a non-default streaming endpoint, select and copy the URL, and then paste it into another player. For example, you can test your video on the [Azure Media Player](https://aka.ms/azuremediaplayer).
 * The streaming endpoint from which you are streaming must be running.  
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Next steps
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]

@@ -39,16 +39,3 @@ In Media Services, you upload your digital files into an asset. The Asset  can c
 
 	When the job starts running, a storage queue is created. This queue is populated with messages about transformed blobs as they are ready. The name of this queue is the same as the name of the job definition. You can use this queue to determine when as asset is ready and call your desired Media Services operation to run on it. For example, you can use this queue to trigger an Azure Function that has the necessary Media Services code in it.
 
-## See also
-
-[Use the .NET SDK to trigger jobs in the Data Manager](https://docs.microsoft.com/storsimple/storsimple-data-manager-dotnet-jobs.md)
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Next steps
-
-You can now encode your uploaded assets. For more information, see [Encode assets](media-services-portal-encode.md).

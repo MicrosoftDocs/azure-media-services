@@ -41,7 +41,7 @@ This tutorial shows you how to:
 > * Create a StreamingLocator with the specified streaming policy.
 > * Create a URL used to playback your file.
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
+[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
 
 ## Prerequisites
 

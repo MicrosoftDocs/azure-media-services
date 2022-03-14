@@ -148,20 +148,3 @@ The following table shows how Channel states map to the billing mode.
 | Running |Ready (no running programs)<br/>or<br/>Streaming (at least one running program) |YES |
 | Stopping |Stopping |No (transient state) |
 | Stopped |Stopped |No |
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Related topics
-[Azure Media Services Fragmented MP4 Live Ingest Specification](media-services-fmp4-live-ingest-overview.md)
-
-[Working with Channels that are Enabled to Perform Live Encoding with Azure Media Services](media-services-manage-live-encoder-enabled-channels.md)
-
-[Working with Channels that Receive Multi-bitrate Live Stream from On-premises Encoders](media-services-live-streaming-with-onprem-encoders.md)
-
-[Quotas and limitations](media-services-quotas-and-limitations.md).  
-
-[Media Services Concepts](media-services-concepts.md)

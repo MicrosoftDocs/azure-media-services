@@ -24,7 +24,7 @@ This topic gives a brief overview of Azure Media Services terminology and concep
 
 The fundamental concepts described in these topics should be reviewed before starting development.
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
+[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
 
 ## Media Services v3 terminology
 

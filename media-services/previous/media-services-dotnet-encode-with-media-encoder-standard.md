@@ -200,13 +200,3 @@ namespace MediaEncoderStandardSample
 * [Crop videos during encoding](media-services-crop-video.md)
 * [Customizing encoding presets](media-services-custom-mes-presets-with-dotnet.md)
 * [Overlay or watermark a video with an image](media-services-advanced-encoding-with-mes.md#overlay)
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Next steps
-[How to generate thumbnail using Media Encoder Standard with .NET](media-services-dotnet-generate-thumbnail-with-mes.md)
-[Media Services Encoding Overview](media-services-encode-asset.md)

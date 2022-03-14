@@ -278,15 +278,3 @@ HTTP/1.1 201 Created
 * [Crop videos during encoding](media-services-crop-video.md)
 * [Customizing encoding presets](media-services-custom-mes-presets-with-dotnet.md)
 * [Overlay or watermark a video with an image](media-services-advanced-encoding-with-mes.md#overlay)
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Next steps
-Now that you know how to create a job to encode an asset, see [How to check job progress with Media Services](media-services-rest-check-job-progress.md).
-
-## See also
-[Get Media Processors](media-services-rest-get-media-processor.md)

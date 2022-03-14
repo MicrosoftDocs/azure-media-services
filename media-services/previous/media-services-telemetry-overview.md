@@ -209,11 +209,3 @@ Telemetric data can be processed and visualized with the following tools:
 ### How to manage data retention?
 
 The telemetry system does not provide data retention management or auto deletion of old records. Thus, you need to manage and delete old records manually from the storage table. You can refer to storage SDK for how to do it.
-
-## Next steps
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
