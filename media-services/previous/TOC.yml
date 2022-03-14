@@ -480,7 +480,7 @@
         href: media-services-rest-dynamic-manifest.md
         displayName: media services v2, v2, version 2
     - name: CDN Caching Policy in Media Services Extension
-      href: ../../cdn/cdn-caching-policy.md?toc=%2fazure%2fmedia-services%2ftoc.json
+      href: https://docs.microsoft.com/cdn/cdn-caching-policy.md?toc=%2fazure%2fmedia-services%2ftoc.json
       displayName: media services v2, v2, version 2
     - name: Publish content
       items:

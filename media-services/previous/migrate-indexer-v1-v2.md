@@ -56,12 +56,12 @@ To get started see:
 
 ## Getting started with Cognitive Services Speech Services
 
-[Azure Cognitive Services](../../cognitive-services/index.yml) provides a speech-to-text service that transcribes audio streams to text in real time that your applications, tools, or devices can consume or display. You can  use speech-to-text to [customize your own acoustic model, language model, or pronunciation model](../../cognitive-services/speech-service/how-to-custom-speech-train-model.md). For more information, see [Cognitive Services speech-to-text](../../cognitive-services/speech-service/speech-to-text.md). 
+[Azure Cognitive Services](https://docs.microsoft.com/cognitive-services/index.yml) provides a speech-to-text service that transcribes audio streams to text in real time that your applications, tools, or devices can consume or display. You can  use speech-to-text to [customize your own acoustic model, language model, or pronunciation model](https://docs.microsoft.com/cognitive-services/speech-service/how-to-custom-speech-train-model.md). For more information, see [Cognitive Services speech-to-text](https://docs.microsoft.com/cognitive-services/speech-service/speech-to-text.md). 
 
 > [!NOTE] 
-> The speech-to-text service does not take video file formats and only takes [certain audio formats](../../cognitive-services/speech-service/rest-speech-to-text.md#audio-formats). 
+> The speech-to-text service does not take video file formats and only takes [certain audio formats](https://docs.microsoft.com/cognitive-services/speech-service/rest-speech-to-text.md#audio-formats). 
 
-For more information about the text-to-speech service and how to get started, see [What is speech-to-text?](../../cognitive-services/speech-service/speech-to-text.md)
+For more information about the text-to-speech service and how to get started, see [What is speech-to-text?](https://docs.microsoft.com/cognitive-services/speech-service/speech-to-text.md)
 
 ## Known differences from deprecated services
 

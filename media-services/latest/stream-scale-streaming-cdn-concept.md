@@ -57,7 +57,7 @@ When the Standard streaming endpoint is created, it's configured by default with
 Azure Media Services integration with Azure CDN is implemented on **Azure CDN from Verizon** for standard streaming endpoints. Premium streaming endpoints can be configured using all **Azure CDN pricing tiers and providers**.
 
 > [!NOTE]
-> For details about Azure CDN, see the [CDN overview](../../cdn/cdn-overview.md).
+> For details about Azure CDN, see the [CDN overview](~/../cdn/cdn-overview.md).
 
 ## Determine if a DNS change was made
 

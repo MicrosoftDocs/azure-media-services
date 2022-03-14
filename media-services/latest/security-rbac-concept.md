@@ -33,14 +33,14 @@ foreach (Microsoft.Azure.Management.Media.Models.Operation a in client.Operation
 }
 ```
 
-The [built-in role definitions](../../role-based-access-control/built-in-roles.md) article tells you exactly what the role grants. 
+The [built-in role definitions](https://docs.microsoft.com/role-based-access-controle/built-in-roles.md) article tells you exactly what the role grants. 
 
 See the following articles for more information:
 
-- [Classic subscription administrator roles, Azure roles, and Azure AD roles](../../role-based-access-control/rbac-and-directory-admin-roles.md)
-- [What is Azure role-based access control (Azure RBAC)?](../../role-based-access-control/overview.md)
-- [Add or remove Azure role assignments using the REST API](../../role-based-access-control/role-assignments-rest.md)
-- [Media Services resource provider operations](../../role-based-access-control/resource-provider-operations.md#microsoftmedia)
+- [Classic subscription administrator roles, Azure roles, and Azure AD roles](https://docs.microsoft.com/role-based-access-controle/rbac-and-directory-admin-roles.md)
+- [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/role-based-access-controle/overview.md)
+- [Add or remove Azure role assignments using the REST API](https://docs.microsoft.com/role-based-access-controle/role-assignments-rest.md)
+- [Media Services resource provider operations](https://docs.microsoft.com/role-based-access-controle/resource-provider-operations.md#microsoftmedia)
 
 ## Next steps
 

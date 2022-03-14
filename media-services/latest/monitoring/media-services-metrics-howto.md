@@ -65,7 +65,3 @@ To get other metrics, substitute "Egress" for the metric name you are interested
 
 - [Azure Monitor Metrics](https://docs.microsoft.com/azure-monitor/data-platform.md)
 - [Create, view, and manage metric alerts using Azure Monitor](https://docs.microsoft.com/azure-monitor/alerts/alerts-metric.md).
-
-## Next steps
-
-[Diagnostic logs](../media-services-diagnostic-logs-howto.md)

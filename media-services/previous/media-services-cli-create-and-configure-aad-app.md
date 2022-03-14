@@ -34,7 +34,7 @@ This topic shows you how to use the Azure CLI to create an Azure Active Director
 
 	![Cloud Shell](./media/media-services-cli-create-and-configure-aad-app/media-services-cli-create-and-configure-aad-app01.png) 
 
-For more information, see [Overview of Azure Cloud Shell](../../cloud-shell/overview.md).
+For more information, see [Overview of Azure Cloud Shell](https://docs.microsoft.com/cloud-shell/overview.md).
 
 ## Create an Azure AD app and configure access to the media account with Azure CLI
  
@@ -60,7 +60,7 @@ For example, it could be one of the following levels:
 
 For more information, see [Create an Azure service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli)
 
-Also see [Add or remove Azure role assignments using Azure CLI](../../role-based-access-control/role-assignments-cli.md). 
+Also see [Add or remove Azure role assignments using Azure CLI](https://docs.microsoft.com/role-based-access-controle/role-assignments-cli.md). 
 
 ## Next steps
 

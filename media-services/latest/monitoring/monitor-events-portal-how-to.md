@@ -70,7 +70,7 @@ You subscribe to a topic to tell Event Grid which events you want to track, and 
 
 1. View your web app again, and notice that a subscription validation event has been sent to it. 
 
-    Event Grid sends the validation event so the endpoint can verify that it wants to receive event data. The endpoint has to set `validationResponse` to `validationCode`. For more information, see [Event Grid security and authentication](../https://docs.microsoft.com/event-grid/security-authentication.md). You can view the web app code to see how it validates the subscription.
+    Event Grid sends the validation event so the endpoint can verify that it wants to receive event data. The endpoint has to set `validationResponse` to `validationCode`. For more information, see [Event Grid security and authentication](https://docs.microsoft.com/event-grid/security-authentication.md). You can view the web app code to see how it validates the subscription.
 
 Now, let's trigger events to see how Event Grid distributes the message to your endpoint.
 

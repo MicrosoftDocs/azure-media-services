@@ -20,7 +20,7 @@ ms.author: inhenkel
 
 This article provides the schemas and properties for Media Services events.
 
-For a list of sample scripts and tutorials, see [Media Services event source](../https://docs.microsoft.com/event-grid/event-schema-subscriptions.md).
+For a list of sample scripts and tutorials, see [Media Services event source](https://docs.microsoft.com/event-grid/event-schema-subscriptions.md).
 
 ## Job-related event types
 
@@ -701,10 +701,6 @@ An event has the following top-level data:
 | `data` | object | Media Services event data. |
 | `dataVersion` | string | The schema version of the data object. The publisher defines the schema version. |
 | `metadataVersion` | string | The schema version of the event metadata. Event Grid defines the schema of the top-level properties. Event Grid provides this value. |
-
-## Next steps
-
-[Register for job state change events](../job-state-events-cli-how-to.md)
 
 ## See also
 

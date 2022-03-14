@@ -28,12 +28,12 @@ ms.author: inhenkel
 
 In Media Services, you upload your digital files into an asset. The Asset  can contain video, audio, images, thumbnail collections, text tracks and closed caption files (and the metadata about these files.) Once the files are uploaded, your content is stored securely in the cloud for further processing and streaming.
 
-[Azure StorSimple](../../storsimple/index.yml) uses cloud storage as an extension of the on-premises solution and automatically tiers data across the on-premises storage and cloud storage. The StorSimple device dedupes and compresses your data before sending it to the cloud making it very efficient for sending large files to the cloud. The [StorSimple Data Manager](../../storsimple/storsimple-data-manager-overview.md) service provides APIs that enable you to extract data from StorSimple and present it as AMS assets.
+[Azure StorSimple](https://docs.microsoft.com/storsimple/index.yml) uses cloud storage as an extension of the on-premises solution and automatically tiers data across the on-premises storage and cloud storage. The StorSimple device dedupes and compresses your data before sending it to the cloud making it very efficient for sending large files to the cloud. The [StorSimple Data Manager](https://docs.microsoft.com/storsimple/storsimple-data-manager-overview.md) service provides APIs that enable you to extract data from StorSimple and present it as AMS assets.
 
 ## Get started
 
 1. [Create a Media Services account](media-services-portal-create-account.md) into which you want to transfer the assets.
-2. Sign up for Data Manager preview, as described in the [StorSimple Data Manager](../../storsimple/storsimple-data-manager-overview.md) article.
+2. Sign up for Data Manager preview, as described in the [StorSimple Data Manager](https://docs.microsoft.com/storsimple/storsimple-data-manager-overview.md) article.
 3. Create a StorSimple Data Manager account.
 4. Create a data transformation job that when runs, extracts data from a StorSimple device and transfers it into an AMS account as assets. 
 
@@ -41,7 +41,7 @@ In Media Services, you upload your digital files into an asset. The Asset  can c
 
 ## See also
 
-[Use the .NET SDK to trigger jobs in the Data Manager](../../storsimple/storsimple-data-manager-dotnet-jobs.md)
+[Use the .NET SDK to trigger jobs in the Data Manager](https://docs.microsoft.com/storsimple/storsimple-data-manager-dotnet-jobs.md)
 
 ## Media Services learning paths
 [!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]

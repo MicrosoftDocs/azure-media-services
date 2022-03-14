@@ -49,7 +49,7 @@ The new supported BCP-47 language codes are: he-IL, fa-IR, and pt-PT.
 
 ### New live event channel archive heartbeat event
 
-A new event that tracks the status and health of the live event archive has been added. See the LiveEventChannelArchiveHeartbeatEvent in the [Event Grid schemas for Media Services](./media-services-event-schemas.md) for more details on this new event.
+A new event that tracks the status and health of the live event archive has been added. See the LiveEventChannelArchiveHeartbeatEvent in the [Event Grid schemas for Media Services](./monitoring/media-services-event-schemas.md) for more details on this new event.
 
 
 ## September 2021
@@ -122,11 +122,11 @@ See the [LiveEventIngestHeartbeat schema](./monitoring/media-services-event-sche
 
 ### Private links support is now GA
 
-Support for using Media Services with [private links](../../private-link/index.yml) is now GA and available in all Azure regions including Azure Government clouds.
+Support for using Media Services with [private links](https://docs.microsfot.com/private-link/index.yml) is now GA and available in all Azure regions including Azure Government clouds.
 Azure Private Link enables you to access Azure PaaS Services and Azure hosted customer-owned/partner services over a Private Endpoint in your virtual network.
 Traffic between your virtual network and the service traverses over the Microsoft backbone network, eliminating exposure from the public Internet.
 
-For details on how to use Media Services with private links, see [Create a Media Services and Storage account with a Private Link](./security-private-link-how-to.md)
+For details on how to use Media Services with private links, see [Create a Media Services and Storage account with a Private Link](security-private-link-how-to.md)
 
 ### New US West 3 region is GA
 
@@ -382,7 +382,7 @@ To see part of the header exchange in action, you can try the following steps:
 
 Live transcription is now in public preview and available for use in the West US 2 region.
 
-Live transcription is designed to work with live events as an add-on capability.  It is supported on both pass-through and Standard or Premium encoding live events.  When this feature is enabled, the service uses the [Speech-To-Text](../../cognitive-services/speech-service/speech-to-text.md) feature of Cognitive Services to transcribe the spoken words in the incoming audio into text. This text is then made available for delivery along with video and audio in MPEG-DASH and HLS protocols. Billing is based on a new add-on meter that is extra cost to the live event when it is in the "Running" state.  For details on Live transcription and billing, see [Live transcription](live-event-live-transcription-how-to.md)
+Live transcription is designed to work with live events as an add-on capability.  It is supported on both pass-through and Standard or Premium encoding live events.  When this feature is enabled, the service uses the [Speech-To-Text](https://docs.microsoft.com/cognitive-services/speech-service/speech-to-text.md) feature of Cognitive Services to transcribe the spoken words in the incoming audio into text. This text is then made available for delivery along with video and audio in MPEG-DASH and HLS protocols. Billing is based on a new add-on meter that is extra cost to the live event when it is in the "Running" state.  For details on Live transcription and billing, see [Live transcription](live-event-live-transcription-how-to.md)
 
 > [!NOTE]
 > Currently, live transcription is only available as a preview feature in the West US 2 region. It supports transcription of spoken words in English (en-us) only at this time.

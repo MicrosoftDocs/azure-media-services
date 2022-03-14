@@ -45,7 +45,7 @@ You need the following items to complete the tutorial:
 
 - Install [Node.js](https://nodejs.org/en/download/).
 - Install [TypeScript](https://www.typescriptlang.org/).
-- [Create a Media Services account](./create-account-howto.md). Remember the values that you use for the resource group name and Media Services account name.
+- [Create a Media Services account](account-create-account-how-to.md). Remember the values that you use for the resource group name and Media Services account name.
 - Follow the steps in [Access the Azure Media Services API with the Azure CLI](./access-api-howto.md) and save the credentials. You'll need them to access the API and configure your environment variables file.
 - Walk through the [Configure and connect with Node.js](./configure-connect-nodejs-howto.md) article to understand how to use the Node.js client SDK.
 - Install Visual Studio Code or Visual Studio.
@@ -129,7 +129,7 @@ While you're in the *index.ts* file, select the F5 key to open the debugger.
 To speed up the polling of long running operations from the default of 30s down to a couple of seconds, you need to set the *longRunningOperationUpdateIntervalMs* and pass this value to the *updateIntervaleInMs* property of the options parameter on createAndWait() operations when using liveEvents. This can be seen throughout the sample.  This sample uses a value of 2000 ms (2 seconds). This change reduces the time it takes to poll for the status of a long-running operation on the Azure Resource Manager endpoint. It will shorten the time to complete major operations like creating live events, starting, and stopping, which are all asynchronous calls. We recommend a value of 2 seconds for most scenarios that are time sensitive.
 
 
-[!code-typescript[Main](../../../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#LongRunningOperation)]
+[!code-typescript[Main](~/../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#LongRunningOperation)]
 
 
 ### Create a live event
@@ -153,7 +153,7 @@ You might want to specify the following things when you're creating the live eve
 * **A static host name and a unique GUID**. For an ingest URL to be predictive and easier to maintain in a hardware-based live encoder, set the `useStaticHostname` property to `true`. For `accessToken`, use a custom, unique GUID. For detailed information, see [Live event ingest URLs](live-event-outputs-concept.md#live-event-ingest-urls).
 
 
-[!code-typescript[Main](../../../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#CreateLiveEvent)]
+[!code-typescript[Main](~/../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#CreateLiveEvent)]
 
 
 ### Create an asset to record and archive the live event
@@ -165,7 +165,7 @@ When you're learning these concepts, it's helpful to think of the asset object a
 Keep in mind that the asset, or "tape," can be created at any time. You'll hand the empty asset to the live output object, the "tape recorder" in this analogy.
 
 
-[!code-typescript[Main](../../../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#CreateAsset)]
+[!code-typescript[Main](~/../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#CreateAsset)]
 
 
 ### Create the live output
@@ -179,7 +179,7 @@ The live output, or "tape recorder" in our analogy, can be created at any time a
 Live outputs start when they're created and stop when they're deleted.  When you delete the live output, you're not deleting the underlying asset or content in the asset. Think of it as ejecting the "tape." The asset with the recording will last as long as you like. When it's ejected (meaning, when the live output is deleted), it will be available for on-demand viewing immediately.
 
 
-[!code-typescript[Main](../../../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#CreateLiveOutput)]
+[!code-typescript[Main](~/../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#CreateLiveOutput)]
 
 
 
@@ -188,7 +188,7 @@ Live outputs start when they're created and stop when they're deleted.  When you
 After the live event is created, you can get ingest URLs that you'll provide to the live encoder. The encoder uses these URLs to input a live stream by using the RTMP protocol.
 
 
-[!code-typescript[Main](../../../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#GetIngestURL)]
+[!code-typescript[Main](~/../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#GetIngestURL)]
 
 
 ### Get the preview URL
@@ -199,7 +199,7 @@ Use `previewEndpoint` to preview and verify that the input from the encoder is b
 > Make sure that the video is flowing to the preview URL before you continue.
 
 
-[!code-typescript[Main](../../../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#GetPreviewURL)]
+[!code-typescript[Main](~/../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#GetPreviewURL)]
 
 
 ### Create and manage live events and live outputs
@@ -220,14 +220,14 @@ If you want to remove the ability of a client to play back the archived content,
 When you publish the asset by using a streaming locator, the live event (up to the DVR window length) will continue to be viewable until the streaming locator's expiration or deletion, whichever comes first. This is how you make the virtual "tape" recording available for your viewing audience to see live and on demand. The same URL can be used to watch the live event, the DVR window, or the on-demand asset when the recording is complete (when the live output is deleted).
 
 
-[!code-typescript[Main](../../../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#CreateStreamingLocator)]
+[!code-typescript[Main](~/../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#CreateStreamingLocator)]
 
 
 #### Build the paths to the HLS and DASH manifests
 
 The method `BuildManifestPaths` in the sample shows how to deterministically create the streaming paths to use for HLS or DASH delivery to various clients and player frameworks.
 
-[!code-typescript[Main](../../../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#BuildManifestPaths)]
+[!code-typescript[Main](~/../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#BuildManifestPaths)]
 
 
 ## Watch the event
