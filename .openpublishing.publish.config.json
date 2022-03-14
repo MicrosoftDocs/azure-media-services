@@ -131,22 +131,10 @@
       "url": "https://github.com/Azure-Samples/media-services-v3-node-tutorials",
       "branch": "main",
       "branch_mapping": {}
-    },
+    }
     {
-      "path_to_root": "includes",
-      "url": "https://github.com/MicrosoftDocs/azure-docs-pr/tree/main/includes",
-      "branch": "main",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "event-grid",
-      "url": "https://github.com/MicrosoftDocs/azure-docs-pr/tree/main/articles/event-grid",
-      "branch": "main",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "azure-resource-manager",
-      "url": "https://github.com/MicrosoftDocs/azure-docs-pr/tree/main/articles/azure-resource-manager",
+      "path_to_root": "azure-docs-pr",
+      "url": "https://github.com/MicrosoftDocs/azure-docs-pr",
       "branch": "main",
       "branch_mapping": {}
     }
