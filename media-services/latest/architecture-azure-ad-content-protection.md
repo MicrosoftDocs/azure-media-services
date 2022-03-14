@@ -95,8 +95,6 @@ The design of the subsystem is shown in the following diagram.  It has three lay
 
 ![screen for parsing JWT tokens](media/aad-ams-content-protection/subsystem.svg)
 
-Read [Design of a multi-DRM content protection system with access control](architecture-design-multi-drm-system.md) for more details about the subsystem.
-
 ## Understand the Single-page app
 
 The player app is a Single-page application (SPA), developed in Visual Studio Code using:

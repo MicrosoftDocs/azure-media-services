@@ -98,7 +98,7 @@ Now, let's trigger events to see how Event Grid distributes the message to your 
 
 You can trigger events for the Media Services account by running an encoding job. You can follow [this quickstart](../stream-files-dotnet-quickstart.md) to encode a file and start sending events. 
 
-View your web app again, and notice that a subscription validation event has been sent to it. Event Grid sends the validation event so the endpoint can verify that it wants to receive event data. The endpoint has to set `validationResponse` to `validationCode`. For more information, see [Event Grid security and authentication](../https://docs.microsoft.com/event-grid/security-authentication.md). You can view the web app code to see how it validates the subscription.
+View your web app again, and notice that a subscription validation event has been sent to it. Event Grid sends the validation event so the endpoint can verify that it wants to receive event data. The endpoint has to set `validationResponse` to `validationCode`. For more information, see [Event Grid security and authentication](https://docs.microsoft.com/event-grid/security-authentication.md). You can view the web app code to see how it validates the subscription.
 
 > [!TIP]
 > Select the eye icon to expand the event data. Do not refresh the page, if you want to view all the events.

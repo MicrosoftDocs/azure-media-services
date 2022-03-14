@@ -125,7 +125,7 @@ For customers using the Indexer v1 processor in the v2 API, you need to create a
 - [Create a basic audio transform](transform-create-basic-audio-how-to.md)
 - [How to encode with a custom transform](transform-custom-transform-how-to.md)
 - [How to create an overlay with Media Encoder Standard](transform-create-overlay-how-to.md)
-- [How to generate thumbnails using Encoder Standard](transform-generate-thumbnails-dotnet-how-to.md)
+- [How to generate thumbnails using Encoder Standard](transform-generate-thumbnails-how-to.md)
 - [Subclip a video when encoding with Media Services - REST](transform-subclip-video-how-to.md)
 
 ## Samples

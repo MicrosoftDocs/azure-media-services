@@ -23,8 +23,6 @@ This article provides you with details and guidance on the migration of content 
 
 ## Protect content in v3 API
 
-Use the support for [Multi-key](architecture-design-multi-drm-system.md) features in the new v3 API.
-
 See content protection concepts, tutorials and how to guides at the end of this article for specific steps.
 
 > [!NOTE]
@@ -87,7 +85,6 @@ You should first unpublish (remove all Streaming Locators) on the Asset via the 
 ### Concepts
 
 - [Protect your content with Media Services dynamic encryption](drm-content-protection-concept.md)
-- [Design of a multi-DRM content protection system with access control](architecture-design-multi-drm-system.md)
 - [Media Services v3 with PlayReady license template](drm-playready-license-template-concept.md)
 - [Media Services v3 with Widevine license template overview](drm-widevine-license-template-concept.md)
 - [Apple FairPlay license requirements and configuration](drm-fairplay-license-overview.md)
