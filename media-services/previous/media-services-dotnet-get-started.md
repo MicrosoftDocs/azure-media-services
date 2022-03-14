@@ -21,7 +21,7 @@ ms.custom: devx-track-csharp
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]  
 
-[!INCLUDE [media-services-selector-get-started](../includes/media-services-selector-get-started.md)]
+[!INCLUDE [media-services-selector-get-started](../latest/includes/media-services-selector-get-started.md)]
 
 This tutorial walks you through the steps of implementing a basic Video-on-Demand (VoD) content delivery service with Azure Media Services (AMS) application using the Azure Media Services .NET SDK.
 

@@ -167,7 +167,7 @@ You can find samples of the blur types below.
 
 The Redaction MP provides high precision face location detection and tracking that can detect up to 64 human faces in a video frame. Frontal faces provide the best results, while side faces and small faces (less than or equal to 24x24 pixels) are challenging.
 
-[!INCLUDE [media-services-analytics-output-json](../includes/media-services-analytics-output-json.md)]
+[!INCLUDE [media-services-analytics-output-json](./includes/media-services-analytics-output-json.md)]
 
 ## .NET sample code
 

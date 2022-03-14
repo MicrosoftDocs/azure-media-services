@@ -44,7 +44,9 @@ Before subscribing to the events for the Media Services account, let's create th
 
 If you switch to the "Azure Event Grid Viewer" site, you see it has no events yet.
    
+<!--
 [!INCLUDE [event-grid-register-provider-portal.md](../../includes/event-grid-register-provider-portal.md)]
+-->
 
 ## Subscribe to Media Services events
 

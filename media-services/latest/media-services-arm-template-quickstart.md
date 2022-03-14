@@ -21,7 +21,7 @@ This article shows you how to use an Azure Resource Manager template (ARM templa
 
 ## Introduction
 
-[!INCLUDE [About Azure Resource Manager](../includes/resource-manager-quickstart-introduction.md)]
+[!INCLUDE [About Azure Resource Manager](./includes/resource-manager-quickstart-introduction.md)]
 
 Readers who are experienced with ARM templates can continue to the [deployment section](#deploy-the-template).
 
@@ -41,9 +41,11 @@ If you have never deployed an ARM template before, it is helpful to read about [
 
 The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/media-services-create/).
 
+<!--
 The syntax for the JSON code fence is:
 
-:::code language="json" source="~/quickstart-templates/quickstarts/microsoft.media/media-services-create/azuredeploy.json":::
+:::code language="json" source="~/../quickstart-templates/quickstarts/microsoft.media/media-services-create/azuredeploy.json":::
+-->
 
 Three Azure resource types are defined in the template:
 

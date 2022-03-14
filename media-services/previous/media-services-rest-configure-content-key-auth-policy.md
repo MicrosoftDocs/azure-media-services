@@ -19,7 +19,7 @@ ms.custom: devx-track-csharp
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
  
-[!INCLUDE [media-services-selector-content-key-auth-policy](../includes/media-services-selector-content-key-auth-policy.md)]
+[!INCLUDE [media-services-selector-content-key-auth-policy](../latest/includes/media-services-selector-content-key-auth-policy.md)]
 
 ## Overview
  You can use Azure Media Services to deliver your content encrypted (dynamically) with the Advanced Encryption Standard (AES) by using 128-bit encryption keys and PlayReady or Widevine digital rights management (DRM). Media Services also provides a service for delivering keys and PlayReady/Widevine licenses to authorized clients.

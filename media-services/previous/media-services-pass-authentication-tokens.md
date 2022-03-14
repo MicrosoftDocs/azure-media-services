@@ -50,4 +50,4 @@ This option is used for PlayReady license acquisition only, through the CustomDa
 
 ## Next steps
 
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../latest/includes/media-services-learning-paths-include.md)]
