@@ -131,6 +131,12 @@
       "url": "https://github.com/Azure-Samples/media-services-v3-node-tutorials",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure",
+      "url": "https:https://docs.microsoft.com/azure",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
