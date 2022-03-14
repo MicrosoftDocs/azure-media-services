@@ -35,7 +35,7 @@ robb@microsoft.com -->
 
 Media Services creates monitoring data using [Azure Monitor](../../../azure-monitor/overview.md), which is a full stack monitoring service in Azure that provides a complete set of features to monitor your Azure resources in addition to resources in other clouds and on-premises.
 
-Start with reading the article [Monitoring Azure resources with Azure Monitor](../../../azure-monitor/essentials/monitor-azure-resource.md), which describes the following concepts:
+Start with reading the article [Monitoring Azure resources with Azure Monitor](/azure-monitor/essentials/monitor-azure-resource.md), which describes the following concepts:
 
 - What is Azure Monitor?
 - Costs associated with monitoring
@@ -45,7 +45,7 @@ Start with reading the article [Monitoring Azure resources with Azure Monitor](.
 
 ## Monitoring data
 
-Media Services collects the same kinds of monitoring data as other Azure resources that are described in [Monitoring data from Azure resources](../../../azure-monitor/essentials/monitor-azure-resource.md#monitoring-data).
+Media Services collects the same kinds of monitoring data as other Azure resources that are described in [Monitoring data from Azure resources](/azure-monitor/essentials/monitor-azure-resource.md#monitoring-data).
 
 All data collected by Azure Monitor fits into one of two fundamental types: metrics and logs. With these two types you can:
 

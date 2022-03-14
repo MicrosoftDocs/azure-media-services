@@ -129,7 +129,7 @@ landingContent:
           - text: Compliance, Privacy and Security
             url: analyze-video-audio-files-concept.md#compliance-privacy-and-security
           - text: Azure Video Analyzer (preview) documentation
-            url: ../../azure-video-analyzer/video-analyzer-docs/overview.md
+            url: ./azure-video-analyzer/video-analyzer-docs/overview.md
       - linkListType: tutorial
         links:
           - text: Analyze videos
