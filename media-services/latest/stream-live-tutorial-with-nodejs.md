@@ -45,7 +45,7 @@ You need the following items to complete the tutorial:
 
 - Install [Node.js](https://nodejs.org/en/download/).
 - Install [TypeScript](https://www.typescriptlang.org/).
-- [Create a Media Services account](account-create-account-how-to.md). Remember the values that you use for the resource group name and Media Services account name.
+- [Create a Media Services account](account-create-how-to.md). Remember the values that you use for the resource group name and Media Services account name.
 - Follow the steps in [Access the Azure Media Services API with the Azure CLI](./access-api-howto.md) and save the credentials. You'll need them to access the API and configure your environment variables file.
 - Walk through the [Configure and connect with Node.js](./configure-connect-nodejs-howto.md) article to understand how to use the Node.js client SDK.
 - Install Visual Studio Code or Visual Studio.

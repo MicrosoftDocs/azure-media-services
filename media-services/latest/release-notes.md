@@ -126,7 +126,7 @@ Support for using Media Services with [private links](https://docs.microsfot.com
 Azure Private Link enables you to access Azure PaaS Services and Azure hosted customer-owned/partner services over a Private Endpoint in your virtual network.
 Traffic between your virtual network and the service traverses over the Microsoft backbone network, eliminating exposure from the public Internet.
 
-For details on how to use Media Services with private links, see [Create a Media Services and Storage account with a Private Link](security-private-link-how-to.md)
+For details on how to use Media Services with private links, see [Create a Media Services and Storage account with a Private Link](security-private-arm-link-how-to.md)
 
 ### New US West 3 region is GA
 

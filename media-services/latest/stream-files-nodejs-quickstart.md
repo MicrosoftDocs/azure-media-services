@@ -37,7 +37,7 @@ The sample in this article encodes content that you make accessible via an HTTPS
 ## Prerequisites
 
 - Install [Node.js](https://nodejs.org/en/download/)
-- [Create a Media Services account](./account-create-account-how-to.md).<br/>Make sure to remember the values that you used for the resource group name and Media Services account name.
+- [Create a Media Services account](./account-create-how-to.md).<br/>Make sure to remember the values that you used for the resource group name and Media Services account name.
 - Follow the steps in [Access Azure Media Services API with the Azure CLI](./access-api-howto.md) and save the credentials. You will need to use them to access the API.
 - Walk through the [Configure and Connect with Node.js](./configure-connect-nodejs-howto.md) how-to first to understand how to use the Node.js client SDK
 
