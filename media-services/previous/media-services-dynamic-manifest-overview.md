@@ -181,35 +181,7 @@ You can combine up to three filters.
 
 For more information, see [this](https://azure.microsoft.com/blog/azure-media-services-release-dynamic-manifest-composition-remove-hls-audio-only-track-and-hls-i-frame-track-support/) blog.
 
-## Know issues and limitations
+## Known issues and limitations
 * Dynamic manifest operates in GOP boundaries (Key Frames) hence trimming has GOP accuracy. 
 * You can use same filter name for local and global filters. Local filters have higher precedence and will override global filters.
 * If you update a filter, it can take up to 2 minutes for streaming endpoint to refresh the rules. If the content was served using some filters (and cached in proxies and CDN caches), updating these filters can result in player failures. It is recommended to clear the cache after updating the filter. If this option is not possible, consider using a different filter.
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## See Also
-[Delivering Content to Customers Overview](media-services-deliver-content-overview.md)
-
-[renditions1]: ./media/media-services-dynamic-manifest-overview/media-services-rendition-filter.png
-[renditions2]: ./media/media-services-dynamic-manifest-overview/media-services-rendition-filter2.png
-
-[rendered_subclip]: ./media/media-services-dynamic-manifests/media-services-rendered-subclip.png
-[timeline_trim_event]: ./media/media-services-dynamic-manifests/media-services-timeline-trim-event.png
-[timeline_trim_subclip]: ./media/media-services-dynamic-manifests/media-services-timeline-trim-subclip.png
-
-[multiple-rules]:./media/media-services-dynamic-manifest-overview/media-services-multiple-rules-filters.png
-
-[subclip_filter]: ./media/media-services-dynamic-manifest-overview/media-services-subclips-filter.png
-[trim_event]: ./media/media-services-dynamic-manifests/media-services-timeline-trim-event.png
-[trim_subclip]: ./media/media-services-dynamic-manifests/media-services-timeline-trim-subclip.png
-[trim_filter]: ./media/media-services-dynamic-manifest-overview/media-services-trim-filter.png
-[redered_subclip]: ./media/media-services-dynamic-manifests/media-services-rendered-subclip.png
-[livebackoff_filter]: ./media/media-services-dynamic-manifest-overview/media-services-livebackoff-filter.png
-[language_filter]: ./media/media-services-dynamic-manifest-overview/media-services-language-filter.png
-[dvr_filter]: ./media/media-services-dynamic-manifest-overview/media-services-dvr-filter.png
-[skiing]: ./media/media-services-dynamic-manifest-overview/media-services-skiing.png

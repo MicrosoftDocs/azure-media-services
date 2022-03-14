@@ -27,14 +27,3 @@ In Media Services, a **Reserved Unit Type** determines the speed with which your
 In addition to specifying the reserved unit type, you can specify to provision your account with **Reserved Units**. The number of provisioned reserved units determines the number of media tasks that can be processed concurrently in a given account. For example, if your account has five reserved units, then five media tasks will be running concurrently as long as there are tasks to be processed. The remaining tasks will wait in the queue and will get picked up for processing sequentially when a running task finishes. If an account does not have any reserved units provisioned, then tasks will be picked up sequentially. In this case, the wait time between one task finishing and the next one starting will depend on the availability of resources in the system.
 
 For detailed information and examples that show how to scale encoding units, see [this](media-services-scale-media-processing-overview.md) topic.
-
-## Next step
-
-[Scale encoding units](media-services-scale-media-processing-overview.md)
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
