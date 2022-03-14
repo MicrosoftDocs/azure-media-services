@@ -19,7 +19,7 @@ ms.custom: devx-track-csharp
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
  
-[!INCLUDE [media-services-selector-content-key-auth-policy](../../../includes/media-services-selector-content-key-auth-policy.md)]
+[!INCLUDE [media-services-selector-content-key-auth-policy](../extra/media-services-selector-content-key-auth-policy.md)]
 
 ## Overview
  You can use Azure Media Services to deliver your content encrypted (dynamically) with the Advanced Encryption Standard (AES) by using 128-bit encryption keys and PlayReady or Widevine digital rights management (DRM). Media Services also provides a service for delivering keys and PlayReady/Widevine licenses to authorized clients.
@@ -480,10 +480,10 @@ public enum ContentKeyDeliveryType
 * Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
 
 ## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../extra/media-services-learning-paths-include.md)]
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
 
 ## Next steps
 Now that you have configured a content key's authorization policy, see [Configure asset delivery policy](media-services-rest-configure-asset-delivery-policy.md).

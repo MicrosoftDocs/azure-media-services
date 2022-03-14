@@ -1031,10 +1031,10 @@ You have completed lesson 4.  In this lesson, you add the functionality to choos
 
 ## Media Services learning paths
 
-[!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../extra/media-services-learning-paths-include.md)]
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
 
 ## Other Resources:
 * [How to build a Smooth Streaming Windows 8 JavaScript application with advanced features](https://blogs.iis.net/cenkd/archive/2012/08/10/how-to-build-a-smooth-streaming-windows-8-javascript-application-with-advanced-features.aspx)

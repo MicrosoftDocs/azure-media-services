@@ -107,4 +107,4 @@ A Media Services account is associated with a reserved unit type that determines
 
 ## Provide feedback
 
-[!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]

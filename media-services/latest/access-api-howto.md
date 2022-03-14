@@ -68,7 +68,7 @@ Copy your credentials to connect your user application from the **Connect to Med
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [media-services-v3-cli-access-api-include](../../../includes/media-services-v3-cli-access-api-include.md)]
+[!INCLUDE [media-services-v3-cli-access-api-include](../extra/media-services-v3-cli-access-api-include.md)]
 
 ---
 

@@ -142,4 +142,4 @@ AMS customers can scale streaming endpoints, media processing, and storage in th
 [Migrate to Media Services v3](../latest/media-services-overview.md)
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]

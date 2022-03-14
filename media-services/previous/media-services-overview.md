@@ -87,4 +87,4 @@ For more information, see [Microsoft Azure SLA](https://azure.microsoft.com/supp
 
 ## Provide feedback
 
-[!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]

@@ -20,7 +20,7 @@ ms.custom: devx-track-csharp
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-[!INCLUDE [media-services-selector-asset-delivery-policy](../../../includes/media-services-selector-asset-delivery-policy.md)]
+[!INCLUDE [media-services-selector-asset-delivery-policy](../extra/media-services-selector-asset-delivery-policy.md)]
 
 ## Overview
 If you plan to delivery encrypted assets, one of the steps in the Media Services content delivery workflow is configuring delivery policies for assets. The asset delivery policy tells Media Services how you want for your asset to be delivered: into which streaming protocol should your asset be dynamically packaged (for example, MPEG DASH, HLS, Smooth Streaming, or all), whether or not you want to dynamically encrypt your asset and how (envelope or common encryption).
@@ -353,8 +353,8 @@ The following enum describes values you can set to configure keys used to get sp
 * Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
 
 ## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../extra/media-services-learning-paths-include.md)]
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
 

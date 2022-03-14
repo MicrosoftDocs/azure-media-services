@@ -257,4 +257,4 @@ This document includes the following steps and information you can use to implem
 
 ## Next steps
 
-[!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../extra/media-services-learning-paths-include.md)]

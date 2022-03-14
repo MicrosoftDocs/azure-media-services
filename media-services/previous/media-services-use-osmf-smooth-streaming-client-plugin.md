@@ -389,10 +389,10 @@ The Smooth Streaming for OSMF dynamic plugin is compatible with [Strobe Media Pl
 3. Enjoy Smooth Streaming content inside Adobe&reg; Flash&reg; Player.
 
 ## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../../../includes/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../extra/media-services-learning-paths-include.md)]
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../../../includes/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
 
 ## See Also
 [Microsoft Adaptive Streaming Plugin for OSMF Update](https://azure.microsoft.com/blog/2014/10/27/microsoft-adaptive-streaming-plugin-for-osmf-update/) 
