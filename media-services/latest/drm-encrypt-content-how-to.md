@@ -2,9 +2,12 @@
 title: Encrypt content with the Azure portal
 description: This quickstart shows you how to configure encryption for your content using Azure Media Services in the Azure portal.
 ms.topic: quickstart
-ms.date: 08/31/2020
-ms.custom: mode-ui
+ms.date: 03/14/2022
+ms.author: inhenkel
+author: IngridAtMicrosoft
+ms.service: media-services
 ---
+
 # Quickstart: Use portal to encrypt content
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
@@ -29,7 +32,7 @@ This quickstart shows you how to create a content key policy where you specify w
 
 ## Prerequisites
 
-Upload and process your content as described in [manage assets in the Azure portal](asset-create-asset-upload-portal-quickstart.md)
+Upload and process your content as described in [manage assets in the Azure portal](asset-create-asset-how-to.md)
 
 ## Create a content key policy
 

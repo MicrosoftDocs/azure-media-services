@@ -32,7 +32,7 @@ This quickstart shows you how to do basic encoding with Python and Azure Media S
 
 - [Create a Media Services v3 account](account-create-how-to.md).
 - [Get your storage account key](https://docs.microsoft.com/storage/common/storage-account-keys-manage.md#view-account-access-keys).
-- [Create a service principal and key](../../purview/create-service-principal-azure.md).
+- [Create a service principal and key](https://docs.microsoft.com/purview/create-service-principal-azure.md).
 
 ## Get the sample
 
@@ -108,7 +108,7 @@ In this sample, a random number gets generated for naming things so you can iden
 
 We're not using the SAS URL for the input asset in this sample.
 
-[!code-python[Main](../../../media-services-v3-python/BasicEncoding/basic-encoding.py)]
+[!code-python[Main](~/../media-services-v3-python/BasicEncoding/basic-encoding.py)]
 
 ## Delete resources
 

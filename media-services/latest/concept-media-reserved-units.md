@@ -25,7 +25,7 @@ If you have an account that was created using a version prior to the 2020-05-01 
 
 ## Billing
 
-While there were previously charges for Media Reserved Units, as of April 17, 2021 there are no longer any charges for accounts that have configuration for Media Reserved Units. For more information on billing for encoding jobs, see [Encoding video and audio with Media Services](encoding-concept.md)
+While there were previously charges for Media Reserved Units, as of April 17, 2021 there are no longer any charges for accounts that have configuration for Media Reserved Units. For more information on billing for encoding jobs, see [Encoding video and audio with Media Services](encode-concept.md)
 
 For accounts created in with the **2020-05-01** version of the API, that is, the v3 version, or through the Azure portal, scaling and media reserved units are no longer required. Scaling is now automatically handled by the service internally. Media reserved units are no longer needed or supported for any Azure Media Services account. See [Media reserved units (legacy)](concept-media-reserved-units.md) for additional information.
 

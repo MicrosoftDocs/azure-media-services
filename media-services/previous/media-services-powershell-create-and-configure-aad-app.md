@@ -30,7 +30,7 @@ Learn how to use a PowerShell script to create an Azure Active Directory (Azure 
 
 - Azure PowerShell. For more information, see [How to use Azure PowerShell](/powershell/azure/).
 
-[!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
+[!INCLUDE [updated-for-az](../latest/includes/updated-for-az.md)]
 
 ## Create an Azure AD app by using PowerShell  
 

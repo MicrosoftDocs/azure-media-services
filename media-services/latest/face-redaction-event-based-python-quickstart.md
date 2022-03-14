@@ -99,7 +99,7 @@ The bash script below provisions the Azure services used in this solution. The b
 - Define names for ADLSgen2, a generic Azure Storage account, Azure Media Services, Azure Function App, and an Event Grid System Topic and Subscription.
 - Provision the Azure services defined.
 
-[!code-bash[Main](../../../media-services-v3-python/VideoAnalytics/FaceRedactorEventBased/AzureServicesProvisioning/deploy_resources.azcli)]
+[!code-bash[Main](~/../media-services-v3-python/VideoAnalytics/FaceRedactorEventBased/AzureServicesProvisioning/deploy_resources.azcli)]
 
 ## Examine Azure Function code
 
@@ -111,7 +111,7 @@ After successfully provisioning the Azure Resources, we are ready to deploy the 
 - Connect to Azure Data Lake Gen2 using DataLakeService Client, and generate a SAS-token to use as authentication for the AMS job input.
 - Configure and create the Job.
 
-[!code-python[Main](../../../media-services-v3-python/VideoAnalytics/FaceRedactorEventBased/AzureFunction/EventGrid_AMSJob/__init__.py)]
+[!code-python[Main](~/../media-services-v3-python/VideoAnalytics/FaceRedactorEventBased/AzureFunction/EventGrid_AMSJob/__init__.py)]
 
 ## Examine the code for configuring the Azure Resources 
 
@@ -124,8 +124,8 @@ The bash script below is used for configuring the Resources after they have been
 > [!NOTE]
 > Currently, neither the Azure Media Services v3 Python SDK, nor Azure CLI did support the creation of a FaceRedaction Transform. We therefore the REST API method to create the transform job.
 
-[!code-bash[Main](../../../media-services-v3-python/VideoAnalytics/FaceRedactorEventBased/AzureServicesProvisioning/configure_resources.azcli)]
- 
+[!code-bash[Main](~/../media-services-v3-python/VideoAnalytics/FaceRedactorEventBased/AzureServicesProvisioning/configure_resources.azcli)]
+
 ## Enable GitHub Actions pipeline
  The Workflow file in this repository contains the steps to execute the deployment of this solution. To start the Workflow, it needs to be enabled for your own repo. In order to enable it, go to the Actions tab in your repo and select 'I understand my workflows, go ahead and enable them'.
 :::image type="content" source="./media/face-redaction-event-based-python-quickstart/activate-workflow.png" alt-text="Enable workflow":::

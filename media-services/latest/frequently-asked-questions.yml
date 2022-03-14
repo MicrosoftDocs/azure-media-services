@@ -63,7 +63,7 @@ sections:
         The common encoding formats are available with Media Services Standard Encoder. For a list of all formats, see [Standard Encoder formats and codecs](encode-media-encoder-standard-formats-reference.md).
     - question: How do I create a Media Services job?
       answer: |
-        You can create a job in the Azure portal by using the [Azure CLI](job-create-cli-how-to.md), REST, or any of the SDKs. See the [Media Services samples](https://github.com/Azure-Samples?q=media-services&type=&language=&sort=) for the language that you prefer.
+        You can create a job in the Azure portal by using the [Azure CLI](job-create-how-to.md), REST, or any of the SDKs. See the [Media Services samples](https://github.com/Azure-Samples?q=media-services&type=&language=&sort=) for the language that you prefer.
     - question: Can I use Media Services to create an auto-generated bitrate ladder?
       answer: |
         Yes.  See [Encode with an auto-generated bitrate ladder](./encode-autogen-bitrate-ladder.md).
@@ -198,7 +198,6 @@ sections:
 
         For more information, see:
 
-        - [Content protection overview](drm-content-protection-concept.md)
         - [Design of a multi-DRM content protection system with access control](architecture-design-multi-drm-system.md)
     - question: Why does only audio play and not video when I'm using FairPlay offline mode?
       answer: |

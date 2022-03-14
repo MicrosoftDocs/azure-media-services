@@ -104,7 +104,3 @@ View your web app again, and notice that a subscription validation event has bee
 > Select the eye icon to expand the event data. Do not refresh the page, if you want to view all the events.
 
 ![View subscription event](../media/monitor-events-portal/view-subscription-event.png)
-
-## Next steps
-
-[Upload, encode, and stream](../stream-files-tutorial-with-api.md)

@@ -88,7 +88,7 @@ dotnet add package Azure.Identity
 
 The project template creates a project in your chosen language and installs required dependencies. The new project has these files:
 
-* **host.json**: Lets you configure the Functions host. These settings apply when you're running functions locally and when you're running them in Azure. For more information, see [host.json reference](./https://docs.microsoft.com/azure-functions/functions-host-json.md).
+* **host.json**: Lets you configure the Functions host. These settings apply when you're running functions locally and when you're running them in Azure. For more information, see [host.json reference](https://docs.microsoft.com/azure-functions/functions-host-json.md).
 
 * **local.settings.json**: Maintains settings used when you're running functions locally. These settings are used only when you're running functions locally.
 
@@ -108,7 +108,7 @@ Once you are done defining your function, select **Save and Run**.
 
 The source code for the **Run** method of the function is:
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-core-functions-integration/Tutorial/HttpTriggerEncode.cs#Run)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-core-functions-integration/Tutorial/HttpTriggerEncode.cs#Run)]
 
 ### local.settings.json
 

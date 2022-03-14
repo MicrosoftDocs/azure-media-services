@@ -50,7 +50,7 @@ See the [Analyze a media file with a audio analyzer preset](https://github.com/A
 
 ## Sample code of preset override in .NET
 
-[!code-csharp[Main](../../../media-services-v3-dotnet/AudioAnalytics/AudioAnalyzer/program.cs#PresetOverride)]
+[!code-csharp[Main](~/../media-services-v3-dotnet/AudioAnalytics/AudioAnalyzer/program.cs#PresetOverride)]
 
 ## Ask questions, give feedback, get updates
 

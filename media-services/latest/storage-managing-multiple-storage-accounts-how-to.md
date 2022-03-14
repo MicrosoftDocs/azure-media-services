@@ -24,7 +24,7 @@ You can attach multiple storage accounts to a single Media Services account. Abi
 
 This article demonstrates how to attach multiple storage accounts to a Media Services account using [Azure Resource Manager APIs](/rest/api/media/operations/azure-media-services-rest-api-reference) and [PowerShell](/powershell/module/az.media). It also shows how to specify different storage accounts when creating assets using the Media Services SDK.
 
-[!INCLUDE [updated-for-az](../includes/updated-for-az.md)]
+[!INCLUDE [updated-for-az](./includes/updated-for-az.md)]
 
 ## Considerations
 
