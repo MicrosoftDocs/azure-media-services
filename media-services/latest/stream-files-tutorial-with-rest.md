@@ -38,7 +38,7 @@ This tutorial shows you how to:
 > * Test the streaming URL
 > * Clean up resources
 
-[!INCLUDE [quickstarts-free-trial-note](../../../includes/quickstarts-free-trial-note.md)]
+[!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
 
 ## Prerequisites
 

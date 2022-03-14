@@ -67,7 +67,7 @@ You can now upload files into your AMS account. For more information, see [Uploa
 If you plan to access AMS API programmatically, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 ## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../extra/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

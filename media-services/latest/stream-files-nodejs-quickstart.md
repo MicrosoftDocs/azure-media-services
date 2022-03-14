@@ -32,7 +32,7 @@ The sample in this article encodes content that you make accessible via an HTTPS
 
 ![Play the video](./media/stream-files-nodejs-quickstart/final-video.png)
 
-[!INCLUDE [quickstarts-free-trial-note](../../../includes/quickstarts-free-trial-note.md)]
+[!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
 
 ## Prerequisites
 

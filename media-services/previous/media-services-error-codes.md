@@ -116,7 +116,7 @@ To handle this error, we recommend using exponential back-off retry logic. That 
 [Media Services Management Error Codes](/rest/api/media/)
 
 ## Next steps
-[!INCLUDE [media-services-learning-paths-include](../extra/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

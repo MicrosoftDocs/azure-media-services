@@ -68,10 +68,10 @@ For information, see [How to create overlays using Media Encoder Standard](media
 If your input video does not contain closed captioning, the output Asset will still contain an empty TTML file.
 
 ## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../extra/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
 
 ## Related articles
 * [Perform advanced encoding tasks by customizing Media Encoder Standard presets](media-services-custom-mes-presets-with-dotnet.md)

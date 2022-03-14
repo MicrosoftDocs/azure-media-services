@@ -11,7 +11,7 @@ ms.custom: dotnet
 
 ## Prerequisites
 
-[!INCLUDE [media-services-cli-instructions.md](../../extra/media-services-cli-instructions.md)]
+[!INCLUDE [media-services-cli-instructions.md](../../includes/media-services-cli-instructions.md)]
 
 ## Example script
 

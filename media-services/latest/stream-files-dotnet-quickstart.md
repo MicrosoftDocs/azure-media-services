@@ -28,7 +28,7 @@ By the end of the tutorial you will be able to stream a video.
 
 ![Play the video](./media/stream-files-dotnet-quickstart/final-video.png)
 
-[!INCLUDE [quickstarts-free-trial-note](../../../includes/quickstarts-free-trial-note.md)]
+[!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
 
 ## Prerequisites
 

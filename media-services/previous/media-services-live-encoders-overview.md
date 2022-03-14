@@ -33,10 +33,10 @@ For information on how to configure the [Telestream Wirecast](https://www.telest
 For more information, see [Elemental Live](https://www.elemental.com/products/aws-elemental-appliances-software/#elemental-live).
 
 ## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../extra/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
 
 ## Next steps
 

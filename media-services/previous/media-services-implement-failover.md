@@ -758,8 +758,8 @@ For more information about content protection, see [Use AES-128 dynamic encrypti
 You can now use a traffic manager to route requests between the two datacenters, and thus fail over in case of any outages.
 
 ## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../extra/media-services-learning-paths-include.md)]
+[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
 

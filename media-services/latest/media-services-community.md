@@ -23,7 +23,7 @@ This Azure Media Services community page discusses different ways you can ask qu
 
 ## Provide feedback and make suggestions
 
-[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
 
 ## Discussion
 

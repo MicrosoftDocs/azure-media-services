@@ -51,5 +51,5 @@ This section gives suggestions on how to troubleshoot problems related to on-pre
 > 
 
 ## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../extra/media-services-user-voice-include.md)]
+[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
 

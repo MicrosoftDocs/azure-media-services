@@ -21,7 +21,7 @@ ms.devlang: azurecli
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-[!INCLUDE [quickstarts-free-trial-note](../../../includes/quickstarts-free-trial-note.md)]
+[!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
 
 ## [Portal](#tab/portal/)
 
