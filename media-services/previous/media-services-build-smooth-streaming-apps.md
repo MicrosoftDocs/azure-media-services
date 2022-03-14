@@ -1029,16 +1029,3 @@ A Smooth Streaming presentation can contain multiple video files encoded with di
 
 You have completed lesson 4.  In this lesson, you add the functionality to choose tracks.
 
-## Media Services learning paths
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Other Resources:
-* [How to build a Smooth Streaming Windows 8 JavaScript application with advanced features](https://blogs.iis.net/cenkd/archive/2012/08/10/how-to-build-a-smooth-streaming-windows-8-javascript-application-with-advanced-features.aspx)
-* [Smooth Streaming Technical Overview](https://www.iis.net/learn/media/on-demand-smooth-streaming/smooth-streaming-technical-overview)
-
-[PlayerApplication]: ./media/media-services-build-smooth-streaming-apps/SSClientWin8-1.png
-[CodeViewPic]: ./media/media-services-build-smooth-streaming-apps/SSClientWin8-2.png

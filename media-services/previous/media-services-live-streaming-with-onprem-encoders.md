@@ -217,13 +217,6 @@ Here are other considerations related to working with channels and related compo
 * By default, you can add only five channels to your Media Services account. For more information, see [Quotas and limitations](media-services-quotas-and-limitations.md).
 * You are billed only when your channel is in the **Running** state. For more information, see the [Channel states and billing](media-services-live-streaming-with-onprem-encoders.md#states) section.
 
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Suggestions and Feedback
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
 ## Related topics
 [Recommended on premises encoders](media-services-recommended-encoders.md)
 

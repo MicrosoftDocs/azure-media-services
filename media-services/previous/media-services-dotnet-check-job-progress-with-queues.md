@@ -362,11 +362,3 @@ TimeStamp: 2013-05-14T20:24:40
 job with Id: nb:jid:UUID:526291de-f166-be47-b62a-11ffe6d4be54 reached expected
 State: Finished
 ```
-
-## Next step
-Review Media Services learning paths.
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

@@ -253,11 +253,3 @@ Host: wamsbnp1clus001rest-hs.cloudapp.net
 ## Consuming telemetry information
 
 For information about consuming telemetry information, see [this](media-services-telemetry-overview.md) topic.
-
-## Next steps
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

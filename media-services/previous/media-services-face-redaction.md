@@ -369,17 +369,3 @@ namespace FaceRedaction
     }
 }
 ```
-
-## Next steps
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Related links
-
-[Azure Media Services Analytics Overview](./legacy-components.md)
-
-[Azure Media Analytics demos](http://amslabs.azurewebsites.net/demos/Analytics.html)
