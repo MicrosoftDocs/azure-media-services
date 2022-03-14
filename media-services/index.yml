@@ -151,9 +151,6 @@ conceptualContent:
           - url: .https://docs.microsoft.com/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-docs/overview
             itemType: overview
             text: Capture and run custom AI models on live surveillance video with Azure Video Analyzer
-          - url: .https://docs.microsoft.com/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-for-media-docs/video-indexer-overview
-            itemType: overview
-            text: Extract insights from your video files with Video Analyzer for Media (formerly Video Indexer)
 
 additionalContent:
   sections:

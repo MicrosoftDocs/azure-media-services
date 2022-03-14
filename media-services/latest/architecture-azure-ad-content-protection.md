@@ -47,11 +47,11 @@ It is optional but recommended that you are familiar with the following concepts
 * Digital Rights Management (DRM)
 * [Azure Media Services (AMS) v3](./media-services-overview.md)
 * AMS [content key policies](drm-content-key-policy-concept.md) using the AMS API v3, Azure portal, or the [Azure Media Services Explorer (AMSE) tool](https://github.com/Azure/Azure-Media-Services-Explorer)
-* Azure AD v2 endpoints on the [Microsoft Identity Platform](../../active-directory/develop/index.yml)
-* Modern cloud authentication such as [OAuth 2.0 and OpenID Connect](../../active-directory/develop/active-directory-v2-protocols.md)
-  * [Authorization code flow in OAuth 2.0](../../active-directory/develop/v2-oauth2-auth-code-flow.md) and why PKCE is needed
-  * [Delegated permission vs application permission](../../active-directory/develop/developer-glossary.md#permissions)
-* [JWT token](../../active-directory/develop/access-tokens.md), its claims, and signing key rollover (included in sample.)
+* Azure AD v2 endpoints on the [Microsoft Identity Platform](https://docs.microsoft.com/active-directory/develop/index.yml)
+* Modern cloud authentication such as [OAuth 2.0 and OpenID Connect](https://docs.microsoft.com/active-directory/develop/active-directory-v2-protocols.md)
+  * [Authorization code flow in OAuth 2.0](https://docs.microsoft.com/active-directory/develop/v2-oauth2-auth-code-flow.md) and why PKCE is needed
+  * [Delegated permission vs application permission](https://docs.microsoft.com/active-directory/develop/developer-glossary.md#permissions)
+* [JWT token](https://docs.microsoft.com/active-directory/develop/access-tokens.md), its claims, and signing key rollover (included in sample.)
 
 ### Prerequisite code and installations
 
@@ -60,7 +60,7 @@ It is optional but recommended that you are familiar with the following concepts
 * An installation of Node.js. Download Node.js here [https://nodejs.org](https://nodejs.org). NPM comes with the install.
 * An [Azure subscription](https://azure.microsoft.com/free/).
 * An Azure Media Services (AMS) account.
-* @azure/msal-browser v2.0, one of the members in [Microsoft Authentication Library (MSAL)](../../active-directory/develop/msal-overview.md) SDK family for different client platforms
+* @azure/msal-browser v2.0, one of the members in [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/active-directory/develop/msal-overview.md) SDK family for different client platforms
 * The latest version of [Azure Media Player](https://github.com/Azure-Samples/azure-media-player-samples)(included in sample.)
 * FPS credentials from Apple if you want to include FairPlay DRM and the application certificate hosted with CORS that is accessible via client-side JavaScript.
 
@@ -335,7 +335,7 @@ if (tokenClaims != null && tokenClaims.Length > 0)
 }
 ```
 
-The *groups* claim is a member of a [Restricted Claim Set](../../active-directory/develop/reference-claims-mapping-policy-type.md#claim-sets) in Azure AD.
+The *groups* claim is a member of a [Restricted Claim Set](https://docs.microsoft.com/active-directory/develop/reference-claims-mapping-policy-type.md#claim-sets) in Azure AD.
 
 #### Test
 
@@ -371,8 +371,3 @@ Your sample solution may be set up in a Microsoft tenant with Microsoft subscrip
 
 > [!WARNING]
 > If you're not going to continue to use this application, delete the resources you created while following this tutorial. Otherwise, you will be charged for them.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Quickstart: Encrypt content](drm-encrypt-content-how-to.md)

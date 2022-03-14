@@ -34,7 +34,7 @@ Media Services in Azure Government maintains:
 - DoD IL4 PA
 - DoD IL5 PA
 
-For more information about Azure compliance coverage for US government, see Azure [FedRAMP High](/azure/compliance/offerings/offering-fedramp), [DoD IL2](/azure/compliance/offerings/offering-dod-il2), [DoD IL4](/azure/compliance/offerings/offering-dod-il4), and [DoD IL5](/azure/compliance/offerings/offering-dod-il5) documentation. For FedRAMP and DoD audit scope, see [Cloud services by audit scope](../../azure-government/compliance/azure-services-in-fedramp-auditscope.md).
+For more information about Azure compliance coverage for US government, see Azure [FedRAMP High](https://docs.microsoft.com/azure/compliance/offerings/offering-fedramp), [DoD IL2](https://docs.microsoft.com/azure/compliance/offerings/offering-dod-il2), [DoD IL4](https://docs.microsoft.com/azure/compliance/offerings/offering-dod-il4), and [DoD IL5](https://docs.microsoft.com/azure/compliance/offerings/offering-dod-il5) documentation. For FedRAMP and DoD audit scope, see [Cloud services by audit scope](https://docs.microsoft.com/azure-government/compliance/azure-services-in-fedramp-auditscope.md).
 
 ## Azure compliance documentation
 

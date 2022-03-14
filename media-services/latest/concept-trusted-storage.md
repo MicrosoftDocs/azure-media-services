@@ -37,4 +37,4 @@ For more information about Trusted Microsoft Services, see [Configure Azure Stor
 
 ## Next steps
 
-To learn more about what managed identities can do for you and your Azure applications, see [Azure AD Managed Identities](../../active-directory/managed-identities-azure-resources/overview.md).
+To learn more about what managed identities can do for you and your Azure applications, see [Azure AD Managed Identities](https://docs.microsoft.com/active-directory/managed-identities-azure-resources/overview.md).

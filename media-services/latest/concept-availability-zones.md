@@ -11,7 +11,7 @@ ms.author: johndeu
 ---
 # Availability Zones
 
-Azure Media Services uses [Availability Zones](../../availability-zones/az-overview.md), providing fault-isolated locations within the same Azure region. Media Services is zone-redundant by default in the [available locations](../../availability-zones/az-region.md#azure-regions-with-availability-zones) and no extra configuration on the account is required to enable this capability.  Media Services stores media data in the associated storage account(s).  These storage accounts should be created as zone-redundant storage (ZRS) or Geo-zone-redundant storage (GZRS) to provide the same level of redundancy as the Media Services account. For  details on how to configure replication on the associated storage account(s), see the article [Change how a storage account is replicated](../../storage/common/redundancy-migration.md).
+Azure Media Services uses [Availability Zones](https://docs.microsoft.com/availability-zones/az-overview.md), providing fault-isolated locations within the same Azure region. Media Services is zone-redundant by default in the [available locations](https://docs.microsoft.com/availability-zones/az-region.md#azure-regions-with-availability-zones) and no extra configuration on the account is required to enable this capability.  Media Services stores media data in the associated storage account(s).  These storage accounts should be created as zone-redundant storage (ZRS) or Geo-zone-redundant storage (GZRS) to provide the same level of redundancy as the Media Services account. For  details on how to configure replication on the associated storage account(s), see the article [Change how a storage account is replicated](https://docs.microsoft.com/storage/common/redundancy-migration.md).
 
 ## How Media Services components handle an Availability Zone fault
 
@@ -31,12 +31,12 @@ The article and sample code provides a solution for how individual regional Medi
 
 ## Media Services support for Availability Zones by region
 
-Availability Zones are currently only supported in certain Azure regions. To learn more about Availability Zones region support, see [Azure Regions with Availability Zones](../../availability-zones/az-region.md#azure-regions-with-availability-zones)
+Availability Zones are currently only supported in certain Azure regions. To learn more about Availability Zones region support, see [Azure Regions with Availability Zones](https://docs.microsoft.com/availability-zones/az-region.md#azure-regions-with-availability-zones)
 
 ## Further reading
 
-To learn more about Availability Zones, see [Regions and Availability Zones in Azure](../../availability-zones/az-overview.md).
+To learn more about Availability Zones, see [Regions and Availability Zones in Azure](https://docs.microsoft.com/availability-zones/az-overview.md).
 
 To learn more about High Availability encoding and streaming, see [High Availability with Media Services Video on Demand](architecture-high-availability-encoding-concept.md).
 
-To learn how to properly configure storage account replication to support Availability Zones, see [Change how a storage account is replicated](../../storage/common/redundancy-migration.md).
+To learn how to properly configure storage account replication to support Availability Zones, see [Change how a storage account is replicated](https://docs.microsoft.com/storage/common/redundancy-migration.md).

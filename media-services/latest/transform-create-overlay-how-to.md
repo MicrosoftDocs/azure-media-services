@@ -18,7 +18,7 @@ Media Services allows you to overlay an image, audio file, or another video on t
 
 ## Prerequisites
 
-* Collect the account information that you need to configure the *appsettings.json* file in the sample. If you're not sure how to do that, see [Quickstart: Register an application with the Microsoft identity platform](../../active-directory/develop/quickstart-register-app.md). The following values are expected in the *appsettings.json* file.
+* Collect the account information that you need to configure the *appsettings.json* file in the sample. If you're not sure how to do that, see [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/active-directory/develop/quickstart-register-app.md). The following values are expected in the *appsettings.json* file.
 
 ```json
     {

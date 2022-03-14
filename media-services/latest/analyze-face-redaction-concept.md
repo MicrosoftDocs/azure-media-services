@@ -194,11 +194,11 @@ The sample is located in the [FaceRedactor](https://github.com/Azure-Samples/med
 
 This code shows how to set up the **FaceDetectorPreset** for a **Combined** mode blur.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet/VideoAnalytics/FaceRedactor/Program.cs#FaceDetectorPreset)]
+[!code-csharp[Main](~/../media-services-v3-dotnet/VideoAnalytics/FaceRedactor/Program.cs#FaceDetectorPreset)]
 
 This code sample shows how the preset is passed into a Transform object during creation. After creating the Transform, jobs may be submitted directly to it.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet/VideoAnalytics/FaceRedactor/Program.cs#FaceDetectorPresetTransform)]
+[!code-csharp[Main](~/../media-services-v3-dotnet/VideoAnalytics/FaceRedactor/Program.cs#FaceDetectorPresetTransform)]
 
 ## Next steps
 

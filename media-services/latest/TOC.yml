@@ -38,7 +38,7 @@
       href: access-api-howto.md
       displayName: API, SDK, Access, Authentication
     - name: Set up Azure Cloud Shell
-      href: ../../cloud-shell/overview.md
+      href: https://docs.microsoft.com/cloud-shell/overview.md
   - name: SDKs
     items:
     - name: Connect with C# (.NET) SDK

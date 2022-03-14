@@ -21,7 +21,7 @@ ms.author: inhenkel
 
 The Azure Media Services API is a RESTful API. You can use it to perform operations on media resources by using a REST API or by using available client SDKs. Azure Media Services offers a Media Services client SDK for Microsoft .NET. To be authorized to access Media Services resources and the Media Services API, you must first be authenticated. 
 
-Media Services supports [Azure Active Directory (Azure AD)-based authentication](../../active-directory/fundamentals/active-directory-whatis.md). The Azure Media REST service requires that the user or application that makes the REST API requests have either the **Contributor** or **Owner** role to access the resources. For more information, see [What is Azure role-based access control (Azure RBAC)](../../role-based-access-control/overview.md).  
+Media Services supports [Azure Active Directory (Azure AD)-based authentication](https://docs.microsoft.com/active-directory/fundamentals/active-directory-whatis.md). The Azure Media REST service requires that the user or application that makes the REST API requests have either the **Contributor** or **Owner** role to access the resources. For more information, see [What is Azure role-based access control (Azure RBAC)](../../role-based-access-control/overview.md).  
 
 This document gives an overview of how to access the Media Services API by using REST or .NET APIs.
 
@@ -89,7 +89,7 @@ In the preceding diagram, the numbers represent the flow of the requests in chro
 
 For information about how to use Azure AD authentication to communicate with REST requests by using the Media Services .NET client SDK, see [Use Azure AD authentication to access the Media Services API with .NET](media-services-dotnet-get-started-with-aad.md). 
 
-If you are not using the Media Services .NET client SDK, you must manually create an Azure AD access token request by using the parameters described in step 2. For more information, see [How to use the Azure AD Authentication Library to get the Azure AD token](../../active-directory/azuread-dev/active-directory-authentication-libraries.md).
+If you are not using the Media Services .NET client SDK, you must manually create an Azure AD access token request by using the parameters described in step 2. For more information, see [How to use the Azure AD Authentication Library to get the Azure AD token](https://docs.microsoft.com/active-directory/azuread-dev/active-directory-authentication-libraries.md).
 
 ### Service principal authentication
 
@@ -131,7 +131,7 @@ In the preceding figure, the numbers represent the flow of the requests in chron
 
 For more information about how to use Azure AD authentication to communicate with REST requests by using the Media Services .NET client SDK, see [Use Azure AD authentication to access Azure Media Services API with .NET](media-services-dotnet-get-started-with-aad.md). 
 
-If you are not using the Media Services .NET client SDK, you must manually create an Azure AD token request by using parameters described in step 1. For more information, see [How to use the Azure AD Authentication Library to get the Azure AD token](../../active-directory/azuread-dev/active-directory-authentication-libraries.md).
+If you are not using the Media Services .NET client SDK, you must manually create an Azure AD token request by using parameters described in step 1. For more information, see [How to use the Azure AD Authentication Library to get the Azure AD token](https://docs.microsoft.com/active-directory/azuread-dev/active-directory-authentication-libraries.md).
 
 ## Troubleshooting
 
@@ -143,8 +143,8 @@ Solution: For the Media Services REST request to succeed, the calling user must 
 
 The following articles are overviews of Azure AD authentication concepts: 
 
-- [Authentication scenarios addressed by Azure AD](../../active-directory/develop/authentication-vs-authorization.md)
-- [Add, update, or remove an application in Azure AD](../../active-directory/develop/quickstart-register-app.md)
+- [Authentication scenarios addressed by Azure AD](https://docs.microsoft.com/active-directory/develop/authentication-vs-authorization.md)
+- [Add, update, or remove an application in Azure AD](https://docs.microsoft.com/active-directory/develop/quickstart-register-app.md)
 - [Add or remove Azure role assignments using Azure PowerShell](../../role-based-access-control/role-assignments-powershell.md)
 
 ## Next steps

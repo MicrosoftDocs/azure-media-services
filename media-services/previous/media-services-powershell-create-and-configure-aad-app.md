@@ -30,7 +30,7 @@ Learn how to use a PowerShell script to create an Azure Active Directory (Azure 
 
 - Azure PowerShell. For more information, see [How to use Azure PowerShell](/powershell/azure/).
 
-[!INCLUDE [updated-for-az](./includesupdated-for-az.md)]
+[!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
 
 ## Create an Azure AD app by using PowerShell  
 
@@ -56,8 +56,8 @@ $Retries = 0;While ($NewRole -eq $null -and $Retries -le 6)
 
 For more information, see the following articles:
 
-- [Use Azure PowerShell to create a service principal to access resources](../../active-directory/develop/howto-authenticate-service-principal-powershell.md)
-- [Add or remove Azure role assignments using Azure PowerShell](../../role-based-access-control/role-assignments-powershell.md)
+- [Use Azure PowerShell to create a service principal to access resources](https://docs.microsoft.com/active-directory/develop/howto-authenticate-service-principal-powershell.md)
+- [Add or remove Azure role assignments using Azure PowerShell](https://docs.microsoft.com/role-based-access-control/role-assignments-powershell.md)
 - [How to manually configure daemon apps by using certificates](https://github.com/azure-samples/active-directory-dotnetcore-daemon-v2)
 
 ## Next steps
