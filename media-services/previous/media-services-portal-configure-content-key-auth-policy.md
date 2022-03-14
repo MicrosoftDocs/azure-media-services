@@ -81,12 +81,3 @@ You can select the **import policy xml** button and provide a different XML that
 ## Additional notes
 
 * Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
-## Next steps
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-[open_policy]: ./media/media-services-portal-configure-content-key-auth-policy/media-services-protect-content-with-open-restriction.png
-[token_policy]: ./media/media-services-key-authorization-policy/media-services-protect-content-with-token-restriction.png

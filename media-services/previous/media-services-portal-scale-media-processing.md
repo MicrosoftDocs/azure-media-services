@@ -50,11 +50,3 @@ To change the reserved unit type and the number of reserved units, do the follow
 3. Press the SAVE button to save your changes.
    
     The new reserved units are allocated when you press SAVE.
-
-## Next steps
-Review Media Services learning paths.
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

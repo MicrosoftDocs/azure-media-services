@@ -380,19 +380,3 @@ For more information, see the following topics:
 
 ## Download sample
 The following code sample contains the code that you created in this tutorial: [sample](https://azure.microsoft.com/documentation/samples/media-services-dotnet-on-demand-encoding-with-media-encoder-standard/).
-
-## Next Steps
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-
-
-<!-- Anchors. -->
-
-
-<!-- URLs. -->
-[Web Platform Installer]: https://go.microsoft.com/fwlink/?linkid=255386
-[Portal]: https://portal.azure.com/

@@ -300,22 +300,3 @@ The code also relies on a locally stored video file. You must edit the code to p
         }
     }
 ```
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Additional Resources
-For more information about developing Java apps on Azure, see [Azure Java Developer Center][Azure Java Developer Center] and [Azure for Java developers][Azure for Java developers].
-
-
-For Media Services Javadoc documentation, see [Azure Libraries for Java documentation][Azure Libraries for Java documentation].
-
-<!-- URLs. -->
-
-[Azure Media Services SDK Maven Package]: https://mvnrepository.com/artifact/com.microsoft.azure/azure-media/latest
-[Azure Java Developer Center]: https://azure.microsoft.com/develop/java/
-[Azure for Java developers]: /java/azure/
-[Media Services Client Development]: /previous-versions/azure/dn223283(v=azure.100)

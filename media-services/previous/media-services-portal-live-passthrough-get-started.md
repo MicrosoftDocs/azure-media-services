@@ -146,11 +146,3 @@ Even after you stop and delete the event, the users would be able to stream your
 To manage your assets, select **Setting** and click **Assets**.
 
 ![Assets](./media/media-services-portal-passthrough-get-started/media-services-assets.png)
-
-## Next step
-Review Media Services learning paths.
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

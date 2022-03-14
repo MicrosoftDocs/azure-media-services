@@ -80,11 +80,3 @@ For information about regional availability, see [Media service availability](av
 ## Service Level Agreement (SLA)
 
 For more information, see [Microsoft Azure SLA](https://azure.microsoft.com/support/legal/sla/).
-
-## Support
-
-[Azure Support](https://azure.microsoft.com/support/options/) provides support options for Azure, including Media Services.
-
-## Provide feedback
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

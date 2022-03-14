@@ -387,13 +387,3 @@ The Smooth Streaming for OSMF dynamic plugin is compatible with [Strobe Media Pl
 
 2. Save your HTML page and publish to a web server. Browse to the published web page using your favorite Flash&reg; Player enabled Internet browser (Internet Explorer, Chrome, Firefox, so on).
 3. Enjoy Smooth Streaming content inside Adobe&reg; Flash&reg; Player.
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## See Also
-[Microsoft Adaptive Streaming Plugin for OSMF Update](https://azure.microsoft.com/blog/2014/10/27/microsoft-adaptive-streaming-plugin-for-osmf-update/) 
-

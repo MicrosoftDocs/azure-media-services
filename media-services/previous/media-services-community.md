@@ -27,10 +27,6 @@ This Azure Media Services (AMS) community page discusses different ways you can 
 - [Azure Media Services Developer Deep Dive](https://azure.microsoft.com/documentation/videos/build-2015-azure-media-services-developer-deep-dive/) 
 - [Azure Media Indexer automatically creates transcripts for your media](https://azure.microsoft.com/documentation/videos/azure-media-indexer-autoatically-creates-transcripts-for-your-media-with-adarsh-solanki/)  
 
-
-## Provide feedback and make suggestions
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
 ## Discussion
 
 ### Twitter
@@ -49,11 +45,3 @@ Currently, MSDN is Media Services team's primary community forum.
 The team also monitors questions tagged on Stack Overflow with 'azure-media-services'.
 
 [:::image type="icon" source="./media/media-services-community/stack-overflow.png" border="false":::](https://stackoverflow.com/questions/tagged/azure-media-services) 
-
-## Need help?
-
-You can open a support ticket by navigating to [New support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)
-
-## Next steps
-
-[Overview](media-services-overview.md)
