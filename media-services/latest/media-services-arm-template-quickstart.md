@@ -21,7 +21,7 @@ This article shows you how to use an Azure Resource Manager template (ARM templa
 
 ## Introduction
 
-[!INCLUDE [About Azure Resource Manager](./includes/resource-manager-quickstart-introduction.md)]
+[!INCLUDE [About Azure Resource Manager](../includes/resource-manager-quickstart-introduction.md)]
 
 Readers who are experienced with ARM templates can continue to the [deployment section](#deploy-the-template).
 
