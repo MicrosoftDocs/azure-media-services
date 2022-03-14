@@ -25,7 +25,7 @@ When creating custom presets, the following considerations apply:
 
 ## Prerequisites
 
-[Create a Media Services account](./account-create-account-how-to.md)
+[Create a Media Services account](./account-create-how-to.md)
 
 ## [CLI](#tab/cli/)
 
