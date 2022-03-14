@@ -21,9 +21,6 @@ ms.author: inhenkel
 
 This Azure Media Services community page discusses different ways you can ask questions, give feedback, and get updates about Media Services.
 
-## Provide feedback and make suggestions
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
 
 ## Discussion
 

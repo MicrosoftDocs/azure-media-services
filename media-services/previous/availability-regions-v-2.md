@@ -100,11 +100,3 @@ A Media Services account is associated with a reserved unit type that determines
 |S1|GA|All|
 |S2|GA|All except Brazil South, and India West|
 |S3|GA|All except India West|
-
-## Next steps
-
-[Migrate to Media Services v3](../latest/media-services-overview.md)
-
-## Provide feedback
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
