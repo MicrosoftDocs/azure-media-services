@@ -36,8 +36,6 @@ This tutorial shows you how to:
 > * Test the streaming URL.
 > * Clean up resources.
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
-
 ## Prerequisites
 
 - Install [Visual Studio Code for Windows/macOS/Linux](https://code.visualstudio.com/) or [Visual Studio 2019 for Windows or Mac](https://visualstudio.microsoft.com/).

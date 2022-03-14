@@ -28,8 +28,6 @@ By the end of this tutorial, you'll be able to stream a video.
 
 ![Play the video](./media/stream-files-dotnet-quickstart/final-video.png)
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
-
 ## Create a Media Services account
 
 Before you can encrypt, encode, analyze, manage, and stream media content in Azure, you need to create a Media Services account. That account must be associated with one or more storage accounts.

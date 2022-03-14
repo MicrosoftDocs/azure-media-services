@@ -29,8 +29,6 @@ If you aren't familiar with the Azure Managed Identity platform, take some time 
  
 You can use either the Azure portal or the CLI to create a Media Services account. Choose the tab for the method you would like to use.
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
-
 <!-- NOTE: The following are in the includes folder and are reused in other How To articles. All task based content should be in the includes folder with the task- prefix prepended to the file name. -->
 
 [!INCLUDE [the media services account and storage account must be in the same subscription](./includes/note-account-storage-same-subscription.md)]
