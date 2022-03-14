@@ -49,7 +49,3 @@ This section gives suggestions on how to troubleshoot problems related to on-pre
 > If after following the troubleshooting steps you still cannot successfully stream, submit a support ticket using the Azure portal.
 > 
 > 
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
