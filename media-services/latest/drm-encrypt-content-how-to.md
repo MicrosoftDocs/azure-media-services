@@ -92,8 +92,3 @@ If you intend to try the other quickstarts, you should hold on to the resources 
 
 
 [!INCLUDE [Warning on captions and encryption](./includes/warning-captions-encryption.md)]
-
-
-## Next steps
-
-[Manage assets](asset-create-asset-upload-portal-quickstart.md)

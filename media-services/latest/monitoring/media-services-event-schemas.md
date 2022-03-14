@@ -20,7 +20,7 @@ ms.author: inhenkel
 
 This article provides the schemas and properties for Media Services events.
 
-For a list of sample scripts and tutorials, see [Media Services event source](../../../event-grid/event-schema-subscriptions.md).
+For a list of sample scripts and tutorials, see [Media Services event source](../https://docs.microsoft.com/event-grid/event-schema-subscriptions.md).
 
 ## Job-related event types
 

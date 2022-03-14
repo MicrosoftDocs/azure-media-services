@@ -196,9 +196,6 @@ sections:
 
         Use Azure Media Services APIs for configuring license/key delivery and encrypting your assets (as shown in [this sample](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithAES/Program.cs)).
 
-        For more information, see:
-
-        - [Design of a multi-DRM content protection system with access control](architecture-design-multi-drm-system.md)
     - question: Why does only audio play and not video when I'm using FairPlay offline mode?
       answer: |
         This behavior seems to be by design of the sample app. When an alternate audio track is present (which is the case for HLS) during offline mode, both iOS 10 and iOS 11 default to the alternate audio track. To compensate for this behavior in FPS offline mode, remove the alternate audio track from the stream. To do this on Media Services, add the dynamic manifest filter **audio-only=false**. In other words, an HLS URL ends with **.ism/manifest(format=m3u8-aapl,audio-only=false)**. 

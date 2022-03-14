@@ -30,6 +30,6 @@ In Media Services v3, when you submit Jobs to process your videos, you have to t
 
 The following code shows how to create a job with an HTTPS URL input.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-quickstarts/AMSV3Quickstarts/EncodeAndStreamFiles/Program.cs#SubmitJob)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-quickstarts/AMSV3Quickstarts/EncodeAndStreamFiles/Program.cs#SubmitJob)]
 
 ---

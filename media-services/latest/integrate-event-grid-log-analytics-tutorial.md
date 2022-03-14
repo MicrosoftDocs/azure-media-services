@@ -134,7 +134,7 @@ Now that you are subscribed to the event(s), create an action.
     > [!div class="mx-imgBorder"]
     > ![Verify Body and Function steps](media/tutorial-events-log-analytics/verify-changes-to-json.png)
 
-1. When you examine all the resources in the resource group, there will be a Logic App and two Logic App API connectors listed, one for the Events and one for Log Analytics. For more information about Event Grid system topics, read [Event Grid System Topics](../../event-grid/system-topics.md).
+1. When you examine all the resources in the resource group, there will be a Logic App and two Logic App API connectors listed, one for the Events and one for Log Analytics. For more information about Event Grid system topics, read [Event Grid System Topics](https://docs.microsoft.com/event-grid/system-topics.md).
     > [!div class="mx-imgBorder"]
     > ![See all new resources in Resource Group](media/tutorial-events-log-analytics/contoso-rg-listing.png)
 

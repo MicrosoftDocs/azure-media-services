@@ -75,7 +75,7 @@ The PresetConfigurations class allows you to adjust the following settings on th
 
 The following code snippet is from the sample [Encode with content-aware, H.246, and constraints](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_H264_ContentAware_Constrained).
 
-[!code-csharp[Main](../../../media-services-v3-dotnet/VideoEncoding/Encoding_H264_ContentAware_Constrained/Program.cs#PresetConfigurations)]
+[!code-csharp[Main](~/../media-services-v3-dotnet/VideoEncoding/Encoding_H264_ContentAware_Constrained/Program.cs#PresetConfigurations)]
 
 ## Samples
 
