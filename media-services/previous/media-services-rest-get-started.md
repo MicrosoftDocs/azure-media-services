@@ -962,9 +962,3 @@ To stream MPEG DASH, append (format=mpd-time-csf) after the "/manifest".
 To stream you video, use [Azure Media Services Player](https://aka.ms/azuremediaplayer).
 
 To test progressive download, paste a URL into a browser (for example, IE, Chrome, Safari).
-
-## Next Steps: Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

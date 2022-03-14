@@ -101,14 +101,3 @@ Finally, set the size of the video element using CSS. In an adaptive streaming e
 
 ## Playing a Video
 To play a video, point your browser at the basicPlayback.html file and click play on the video player displayed.
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## See Also
-
-[GitHub dash.js repository](https://github.com/Dash-Industry-Forum/dash.js) 
-

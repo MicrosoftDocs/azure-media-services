@@ -167,7 +167,7 @@ You can find samples of the blur types below.
 
 The Redaction MP provides high precision face location detection and tracking that can detect up to 64 human faces in a video frame. Frontal faces provide the best results, while side faces and small faces (less than or equal to 24x24 pixels) are challenging.
 
-[!INCLUDE [media-services-analytics-output-json](../includes/media-services-analytics-output-json.md)]
+[!INCLUDE [media-services-analytics-output-json](../includes/legacy/media-services-analytics-output-json.md)]
 
 ## .NET sample code
 
@@ -199,11 +199,3 @@ This code shows how to set up the **FaceDetectorPreset** for a **Combined** mode
 This code sample shows how the preset is passed into a Transform object during creation. After creating the Transform, jobs may be submitted directly to it.
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/VideoAnalytics/FaceRedactor/Program.cs#FaceDetectorPresetTransform)]
-
-## Next steps
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

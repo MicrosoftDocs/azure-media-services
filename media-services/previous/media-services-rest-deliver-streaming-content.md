@@ -192,15 +192,3 @@ public enum LocatorType
     OnDemandOrigin = 2,
 }
 ```
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## See also
-[Media Services operations REST API overview](media-services-rest-how-to-use.md)
-
-[Configure asset delivery policy](media-services-rest-configure-asset-delivery-policy.md)
-

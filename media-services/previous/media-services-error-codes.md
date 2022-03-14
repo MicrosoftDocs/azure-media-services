@@ -111,12 +111,3 @@ To handle this error, we recommend using exponential back-off retry logic. That 
 > If you are using [Azure Media Services SDK for .Net](https://github.com/Azure/azure-sdk-for-media-services/tree/master), the retry logic for the 503 error has been implemented by the SDK.  
 > 
 > 
-
-## See Also
-[Media Services Management Error Codes](/rest/api/media/)
-
-## Next steps
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

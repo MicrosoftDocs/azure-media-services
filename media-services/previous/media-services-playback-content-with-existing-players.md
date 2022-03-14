@@ -57,11 +57,3 @@ To test HLS URLs you can also use:
 
 * **Safari** on an iOS device or
 * **3ivx HLS Player** on Windows.
-
-## Media Services learning paths
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

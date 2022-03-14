@@ -264,14 +264,3 @@ In the case of an error, Azure Media Indexer should report back one of the follo
 
 ## <a id="supported_languages"></a>Supported Languages
 Currently, the English and Spanish languages are supported.  
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Related links
-[Azure Media Services Analytics Overview](./legacy-components.md)
-
-[Indexing Media Files with Azure Media Indexer 2 Preview](./legacy-components.md)

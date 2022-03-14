@@ -28,7 +28,7 @@ By the end of this tutorial, you'll be able to stream a video.
 
 ![Play the video](./media/stream-files-dotnet-quickstart/final-video.png)
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
+[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
 
 ## Create a Media Services account
 

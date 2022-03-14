@@ -167,14 +167,3 @@ The following code calls .NET SDK extensions methods that create a locator and g
     Console.WriteLine(hlsUri);
     Console.WriteLine(mpegDashUri);
 ```
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Next steps
-* [Download assets](media-services-deliver-asset-download.md)
-* [Configure asset delivery policy](media-services-dotnet-configure-asset-delivery-policy.md)
-

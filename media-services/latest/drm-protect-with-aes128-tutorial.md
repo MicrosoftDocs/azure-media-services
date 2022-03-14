@@ -47,7 +47,7 @@ This tutorial shows you how to:
 > * Build a streaming URL.
 > * Clean up resources.
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
+[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
 
 ## Prerequisites
 

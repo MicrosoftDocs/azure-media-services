@@ -25,7 +25,7 @@ This tutorial shows you how to:
 > * Examine the output.
 > * Clean up resources.
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
+[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
 
 ## Compliance, Privacy, and Security
  
