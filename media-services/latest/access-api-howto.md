@@ -66,10 +66,6 @@ This option could be used to authenticate an employee or member of an Azure Acti
 
 Copy your credentials to connect your user application from the **Connect to Media Services API** section. You can get text values or copy the JSON or XML blocks.
 
-## [CLI](#tab/cli/)
-
-[!INCLUDE [media-services-v3-cli-access-api-include](../includes/legacy/media-services-v3-cli-access-api-include.md)]
-
 ---
 
 ## Next steps
