@@ -25,7 +25,7 @@ Media Services provides several common use case definitions for Azure Policy tha
 
 ## Built-in Azure Policy definitions for Media Services
 
-Several built in policy use case definitions are available for use with Media Services to help get you started, and allow you to define your own custom policies.
+Several built in policy definitions are available for use with Media Services to help get you started, and allow you to define your own custom policies.
 
 [!INCLUDE [Azure Policy Media Services](./includes/policies-media-services.md)]
 
