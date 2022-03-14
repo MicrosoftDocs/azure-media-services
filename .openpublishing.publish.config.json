@@ -131,7 +131,7 @@
       "url": "https://github.com/Azure-Samples/media-services-v3-node-tutorials",
       "branch": "main",
       "branch_mapping": {}
-    }
+    },
     {
       "path_to_root": "azure-docs-pr",
       "url": "https://github.com/MicrosoftDocs/azure-docs-pr",
