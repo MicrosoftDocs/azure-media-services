@@ -56,11 +56,3 @@ Dynamic Packaging supports MP4 files, which contain audio encoded with [AAC](htt
 
 > [!NOTE]
 > Dynamic Packaging does not support files that contain [Dolby Digital](https://en.wikipedia.org/wiki/Dolby_Digital) (AC3) audio (it is a legacy codec).
-
-## Media Services learning paths
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

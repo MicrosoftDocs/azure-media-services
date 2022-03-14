@@ -357,13 +357,3 @@ The following examples show how to add filters to your streaming URLs.
 **Smooth Streaming**
 
 `http://testendpoint-testaccount.streaming.mediaservices.windows.net/fecebb23-46f6-490d-8b70-203e86b0df58/BigBuckBunny.ism/Manifest(filter=MyFilter)`
-
-	
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## See Also
-[Dynamic manifests overview](media-services-dynamic-manifest-overview.md)

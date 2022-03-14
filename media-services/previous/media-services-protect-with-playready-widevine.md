@@ -605,13 +605,6 @@ namespace DynamicEncryptionWithDRM
 
 * Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
 
-## Next steps
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
 ## See also
 
 * [Use the CENC with multi-DRM and access control](media-services-cenc-with-multidrm-access-control.md)

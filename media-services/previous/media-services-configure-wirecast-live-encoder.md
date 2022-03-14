@@ -168,9 +168,3 @@ The stream is now ready to be embedded in a player, or distributed to an audienc
 
 ## Troubleshooting
 See the [troubleshooting](media-services-troubleshooting-live-streaming.md) article for guidance.
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

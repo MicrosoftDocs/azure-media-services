@@ -115,12 +115,3 @@ Authentication on the REST API is done through Azure Active Directory(AAD).
 For details on how to get required authentication details for your Media Services account from the Azure Portal, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 For details on writing code that connects to the REST API using Azure AD authentication, see the article [Use Azure AD authentication to access the Azure Media Services API with REST](media-services-rest-connect-with-aad.md).
-
-## Next steps
-To learn how to use Azure AD authentication with Media Services REST API, see [Use Azure AD authentication to access the Azure Media Services API with REST](media-services-rest-connect-with-aad.md).
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]

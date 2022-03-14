@@ -35,16 +35,3 @@ The following table lists error codes that could be returned in case an error wa
 | TransientError |Category of errors to cover transient issues (eg. temporary networking issues with Azure Storage) |
 
 To get help from the **Media Services** team, open a [support ticket](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Related articles
-* [Perform advanced encoding tasks by customizing Media Encoder Standard presets](media-services-custom-mes-presets-with-dotnet.md)
-* [Quotas and Limitations](media-services-quotas-and-limitations.md)
-
-<!--Reference links in article-->
-[1]: https://azure.microsoft.com/pricing/details/media-services/

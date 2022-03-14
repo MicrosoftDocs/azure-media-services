@@ -192,13 +192,3 @@ To manage your assets, select **Setting** and click **Assets**.
 
 * Currently, the max recommended duration of a live event is 8 hours. Please contact amshelp@microsoft.com if you need to run a Channel for longer periods of time.
 * Make sure the streaming endpoint from which you want to stream  your content is in the **Running** state.
-
-## Next steps
-
-Review Media Services learning paths.
-
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
