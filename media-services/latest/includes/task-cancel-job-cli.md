@@ -8,6 +8,6 @@ ms.author: inhenkel
 
 ## Cancel a job with the CLI
 
-:::code language="azurecli" source="~/media-services-v3-python/cli/code-snippets.sh" id="AmsJobCancel" interactive="azurecli-interactive":::
+:::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsJobCancel" interactive="azurecli-interactive":::
 
 For more information about this command, see the [CLI reference](/cli/azure/ams/job?view=azure-cli-latest#az-ams-job-cancel).

@@ -11,4 +11,4 @@ ms.custom: CLI, devx-track-azurecli
 
 ## Get an asset's encryption key
 
-:::code language="azurecli" source="~/media-services-v3-python/cli/code-snippets.sh" id="AmsAssetGetEncryptionKey" interactive="azurecli-interactive":::
+:::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetGetEncryptionKey" interactive="azurecli-interactive":::
