@@ -18,7 +18,6 @@ The output JSON includes the following elements:
 | offset |This is the time offset for timestamps. In version 1.0 of Video APIs, this will always be 0. In future scenarios we support, this value may change. |
 | width, hight |The width and hight of the output video frame, in pixels.|
 | framerate |Frames per second of the video. |
-| [fragments](#fragments-json-elements) |The metadata is chunked up into different segments called fragments. Each fragment contains a start, duration, interval number, and event(s). |
 
 ### Fragments JSON elements
 

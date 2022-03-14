@@ -12,10 +12,6 @@ ms.custom: include file
 
 ## Use CLI Shell
 
-It is recommended to use [Azure Cloud Shell](../articles/cloud-shell/overview.md) to execute CLI commands. **Cloud Shell** is a free, interactive shell that you can use to run the steps in this article. Common Azure tools are preinstalled and configured in Cloud Shell for you to use with your account. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell.
-
-You can also install the CLI locally. See [Install the Azure CLI](/cli/azure/install-azure-cli) for instructions for your platform.
-
 ### Sign in
 
 Using a local install of the CLI requires signing in to Azure. This step is not required for Azure Cloud Shell. Sign in with the `az login` command.
@@ -42,5 +38,3 @@ Absolute file path on Linux/Mac and Windows OS
 
 Use `{file}` if the command is asking for a path to the file. For example, `az ams transform create -a amsaccount -g resourceGroup -n custom --preset .\customPreset.json`. <br/> 
 Use `@{file}` if the command is going to load the specified file. For example, `az ams account-filter create -a amsaccount -g resourceGroup -n filterName --tracks @tracks.json`.
-
-[Upload files]: ./media/media-services-cli/upload-download-files.png
