@@ -96,5 +96,11 @@
             "branch": "main",
             "branch_mapping": {}
           }
+          {
+            "path_to_root": "azure",
+            "url": "https://docs.microsost.com/azure/",
+            "branch": "main",
+            "branch_mapping": {}
+          }
     ]
 }
