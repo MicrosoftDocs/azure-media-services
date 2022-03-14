@@ -148,10 +148,10 @@ conceptualContent:
 
     - title: Learn about more Azure services for media   
       links:    
-          - url: ../azure-video-analyzer/video-analyzer-docs/overview.md
+          - url: .https://docs.microsoft.com/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-docs/overview.md
             itemType: overview
             text: Capture and run custom AI models on live surveillance video with Azure Video Analyzer
-          - url: ../azure-video-analyzer/video-analyzer-for-media-docs/video-indexer-overview.md
+          - url: .https://docs.microsoft.com/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-for-media-docs/video-indexer-overview.md
             itemType: overview
             text: Extract insights from your video files with Video Analyzer for Media (formerly Video Indexer)
 
