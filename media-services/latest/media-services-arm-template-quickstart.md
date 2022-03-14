@@ -41,9 +41,11 @@ If you have never deployed an ARM template before, it is helpful to read about [
 
 The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/media-services-create/).
 
+<!--
 The syntax for the JSON code fence is:
 
 :::code language="json" source="~/../quickstart-templates/quickstarts/microsoft.media/media-services-create/azuredeploy.json":::
+-->
 
 Three Azure resource types are defined in the template:
 
