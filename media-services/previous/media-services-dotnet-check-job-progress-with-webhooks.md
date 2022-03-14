@@ -31,7 +31,7 @@ This article shows how to
 	In this case, the webhook is triggered by Media Services when your encoding job changes status. The function listens for the webhook call back from Media Services notifications and publishes the output asset once the job finishes. 
 	
 	>[!TIP]
-	>Before continuing, make sure you understand how [Azure Functions HTTP and webhook bindings](../../azure-functions/functions-bindings-http-webhook.md) work.
+	>Before continuing, make sure you understand how [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/azure-functions/functions-bindings-http-webhook.md) work.
 	>
 	
 * Add a webhook to your encoding task and specify the webhook URL and secret key that this webhook responds to. You will find an example that adds a webhook to your encoding task at the end of the article.  
@@ -44,12 +44,12 @@ The following are required to complete the tutorial:
 
 * An Azure account. For details, see [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/).
 * A Media Services account. To create a Media Services account, see [How to Create a Media Services Account](media-services-portal-create-account.md).
-* Understanding of [how to use Azure Functions](../../azure-functions/functions-overview.md). Also, review [Azure Functions HTTP and webhook bindings](../../azure-functions/functions-bindings-http-webhook.md).
+* Understanding of [how to use Azure Functions](https://docs.microsoft.com/azure-functions/functions-overview.md). Also, review [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/azure-functions/functions-bindings-http-webhook.md).
 
 ## Create a function app
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign-in with your Azure account.
-2. Create a function app as described [here](../../azure-functions/functions-create-function-app-portal.md).
+2. Create a function app as described [here](https://docs.microsoft.com/azure-functions/functions-create-function-app-portal.md).
 
 ## Configure function app settings
 

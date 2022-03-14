@@ -18,7 +18,7 @@ ms.custom: devx-track-azurepowershell
 
 You're asked to select an Azure Storage account when you create a new Azure Media Services (AMS) account.  You can add more than one storage account to your Media Services account. This article shows how to rotate storage keys. It also shows how to add storage accounts to a media account.
 
-To complete the actions described in this article, you should be using [Azure Resource Manager APIs](/rest/api/media/operations/azure-media-services-rest-api-reference) and [PowerShell](/powershell/module/az.media).  For more information, see [How to manage Azure resources with PowerShell and Resource Manager](../../azure-resource-manager/management/manage-resource-groups-powershell.md).
+To complete the actions described in this article, you should be using [Azure Resource Manager APIs](/rest/api/media/operations/azure-media-services-rest-api-reference) and [PowerShell](/powershell/module/az.media).  For more information, see [How to manage Azure resources with PowerShell and Resource Manager](https://docs.microsoft.com/azure-resource-manager/management/manage-resource-groups-powershell.md).
 
 [!INCLUDE [updated-for-az](./includes/updated-for-az.md)]
 

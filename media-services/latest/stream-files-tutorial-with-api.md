@@ -75,15 +75,15 @@ The sample performs the following actions:
 
 To start using Media Services APIs with .NET, you need to create an `AzureMediaServicesClient` object. To create the object, you need to supply credentials for the client to connect to Azure by using Azure Active Directory. Another option is to use interactive authentication, which is implemented in `GetCredentialsInteractiveAuthAsync`.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#CreateMediaServicesClientAsync)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#CreateMediaServicesClientAsync)]
 
 In the code that you cloned at the beginning of the article, the `GetCredentialsAsync` function creates the `ServiceClientCredentials` object based on the credentials supplied in the local configuration file (*appsettings.json*) or through the *.env* environment variables file in the root of the repository.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#GetCredentialsAsync)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#GetCredentialsAsync)]
 
 In the case of interactive authentication, the `GetCredentialsInteractiveAuthAsync` function creates the `ServiceClientCredentials` object based on an interactive authentication and the connection parameters supplied in the local configuration file (*appsettings.json*) or through the *.env* environment variables file in the root of the repository. In that case, AADCLIENTID and AADSECRET are not needed in the configuration or environment variables file.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#GetCredentialsInteractiveAuthAsync)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#GetCredentialsInteractiveAuthAsync)]
 
 ### Create an input asset and upload a local file into it
 
@@ -94,18 +94,18 @@ In Media Services v3, you use Azure Storage APIs to upload files. The following 
 The following function performs these actions:
 
 * Creates an **Asset**.
-* Gets a writable [SAS URL](../../storage/common/storage-sas-overview.md) to the asset’s [container in storage](../../storage/blobs/storage-quickstart-blobs-dotnet.md#upload-a-blob-to-a-container).
+* Gets a writable [SAS URL](https://docs.microsoft.com/storage/common/storage-sas-overview.md) to the asset’s [container in storage](https://docs.microsoft.com/storage/blobs/storage-quickstart-blobs-dotnet.md#upload-a-blob-to-a-container).
 
     If using asset’s [ListContainerSas](/rest/api/media/assets/listcontainersas) function to get SAS URLs, note that the function returns multiple SAS URLs as there are two storage account keys for each storage account. A storage account has two keys because it allows for seamless rotation  of storage account keys (for example, change one while using the other then start using the new key and rotate the other key). The 1st SAS URL represents storage key1 and second one storage key2.
 * Uploads the file into the container in storage using the SAS URL.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateInputAsset)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateInputAsset)]
 
 ### Create an output asset to store the result of a job
 
 The output [Asset](/rest/api/media/assets) stores the result of your encoding job. The project defines the **DownloadResults** function that downloads the results from this output asset into the "output" folder, so you can see what you got.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateOutputAsset)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateOutputAsset)]
 
 ### Create a Transform and a Job that encodes the uploaded file
 
@@ -119,7 +119,7 @@ You can use a built-in EncoderNamedPreset or use custom presets. For more inform
 
 When creating a [Transform](/rest/api/media/transforms), you should first check if one already exists using the **Get** method, as shown in the code that follows. In Media Services v3, **Get** methods on entities return **null** if the entity doesn’t exist (a case-insensitive check on the name).
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#EnsureTransformExists)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#EnsureTransformExists)]
 
 #### Job
 
@@ -127,7 +127,7 @@ As mentioned above, the [Transform](/rest/api/media/transforms) object is the re
 
 In this example, the input video has been uploaded from your local machine. If you want to learn how to encode from an HTTPS URL, see [this](job-input-from-http-how-to.md) article.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#SubmitJob)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#SubmitJob)]
 
 ### Wait for the Job to complete
 
@@ -137,7 +137,7 @@ Event Grid is designed for high availability, consistent performance, and dynami
 
 The **Job** usually goes through the following states: **Scheduled**, **Queued**, **Processing**, **Finished** (the final state). If the job has encountered an error, you get the **Error** state. If the job is in the process of being canceled, you get **Canceling** and **Canceled** when it's done.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#WaitForJobToFinish)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#WaitForJobToFinish)]
 
 ### Job error codes
 
@@ -156,7 +156,7 @@ When creating a [StreamingLocator](/rest/api/media/streaminglocators), you'll ne
 
 The following code assumes that you're calling the function with a unique locatorName.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateStreamingLocator)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateStreamingLocator)]
 
 While the sample in this topic discusses streaming, you can use the same call to create a Streaming Locator for delivering video via progressive download.
 
@@ -167,13 +167,13 @@ Now that the [Streaming Locator](/rest/api/media/streaminglocators) has been cre
 > [!NOTE]
 > In this method, you  need the locatorName that was used when creating the **Streaming Locator** for the output Asset.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#GetStreamingURLs)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#GetStreamingURLs)]
 
 ### Clean up resources in your Media Services account
 
 Generally, you should clean up everything except objects that you're planning to reuse (typically, you'll reuse Transforms, and you'll persist StreamingLocators, etc.). If you want your account to be clean after experimenting, delete the resources that you don't plan to reuse. For example, the following code deletes the job, created assets and content key policy:
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CleanUp)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CleanUp)]
 
 ## Run the sample app
 

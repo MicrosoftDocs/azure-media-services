@@ -147,7 +147,7 @@ To enable streaming, you first have to start the [Streaming Endpoint](./stream-s
         
         `https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/<resourceGroupName>/providers/Microsoft.Media/mediaservices/<accountName>/streamingendpointoperations/1be71957-4edc-4f3c-a29d-5c2777136a2e?api-version=2018-07-01`
 
-        The [track asynchronous Azure operations](../../azure-resource-manager/management/async-operations.md) article explains in depth how to track the status of asynchronous Azure operations through values returned in the response.
+        The [track asynchronous Azure operations](https://docs.microsoft.com/azure-resource-manager/management/async-operations.md) article explains in depth how to track the status of asynchronous Azure operations through values returned in the response.
 
 ### Create an output asset
 

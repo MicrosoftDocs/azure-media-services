@@ -54,9 +54,9 @@ Internet access to the endpoints in the Media Services account can be restricted
 
 | Service                | Media Services integration                      | Private link documentation |
 | ---------------------- | ----------------------------------------------- | -------------------------- |
-| Azure Storage          | Used to store media                             | [Use private endpoints for Azure Storage](../../storage/common/storage-private-endpoints.md) |
+| Azure Storage          | Used to store media                             | [Use private endpoints for Azure Storage](https://docs.microsoft.com/storage/common/storage-private-endpoints.md) |
 | Azure Key Vault        | Used to store [customer managed keys](security-customer-managed-keys-portal-tutorial.md)             | [Configure Azure Key Vault networking settings](../../key-vault/general/how-to-azure-key-vault-network-security.md) |
-| Azure Resource Manager | Provides access to Media Services APIs          | [Use REST API to create private link for managing Azure resources](../../azure-resource-manager/management/create-private-link-access-rest.md) |
+| Azure Resource Manager | Provides access to Media Services APIs          | [Use REST API to create private link for managing Azure resources](https://docs.microsoft.com/azure-resource-manager/management/create-private-link-access-rest.md) |
 | Event Grid             | Provides [notifications of Media Services events](./monitoring/job-state-events-cli-how-to.md) | [Configure private endpoints for Azure Event Grid topics or domains](../../event-grid/configure-private-endpoints.md)  |
 
 ## Private endpoints are created on the Media Services account

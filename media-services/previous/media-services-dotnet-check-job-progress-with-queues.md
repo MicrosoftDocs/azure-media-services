@@ -22,7 +22,7 @@ ms.custom: devx-track-csharp
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
-When you run encoding jobs, you often require a way to track job progress. You can configure Media Services to deliver notifications to [Azure Queue storage](../../storage/queues/storage-dotnet-how-to-use-queues.md). You can monitor job progress by getting notifications from the Queue storage. 
+When you run encoding jobs, you often require a way to track job progress. You can configure Media Services to deliver notifications to [Azure Queue storage](https://docs.microsoft.com/storage/queues/storage-dotnet-how-to-use-queues.md). You can monitor job progress by getting notifications from the Queue storage. 
 
 Messages delivered to Queue storage can be accessed from anywhere in the world. The Queue storage messaging architecture is reliable and highly scalable. Polling Queue storage for messages is recommended over using other methods.
 

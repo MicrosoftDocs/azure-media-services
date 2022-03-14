@@ -25,7 +25,7 @@ The Media Services account and all associated storage accounts must be in the sa
 
 You must have one **Primary** storage account and you can have any number of **Secondary** storage accounts associated with your Media Services account. Media Services supports **General-purpose v2** (GPv2) or **General-purpose v1** (GPv1) accounts. Blob only accounts aren't allowed as **Primary**.
 
-We recommend that you use GPv2, so you can take advantage of the latest features and performance. To learn more about storage accounts, see [Azure Storage account overview](../../storage/common/storage-account-overview.md).
+We recommend that you use GPv2, so you can take advantage of the latest features and performance. To learn more about storage accounts, see [Azure Storage account overview](https://docs.microsoft.com/storage/common/storage-account-overview.md).
 
 > [!NOTE]
 > Only the hot access tier is supported for use with Azure Media Services, although the other access tiers can be used to reduce storage costs on content that isn't being actively used.
@@ -46,14 +46,14 @@ To protect your assets at rest, the assets should be encrypted by the storage si
 |Encryption option|Description|Media Services v3|
 |---|---|---|
 |Media Services storage encryption| AES-256 encryption, key managed by Media Services. |Not supported.<sup>1</sup>|
-|[Storage service encryption for data at rest](../../storage/common/storage-service-encryption.md)|Server-side encryption offered by Azure Storage, key managed by Azure or by customer.|Supported.|
-|[Storage client-side encryption](../../storage/common/storage-client-side-encryption.md)|Client-side encryption offered by Azure storage, key managed by customer in Key Vault.|Not supported.|
+|[Storage service encryption for data at rest](https://docs.microsoft.com/storage/common/storage-service-encryption.md)|Server-side encryption offered by Azure Storage, key managed by Azure or by customer.|Supported.|
+|[Storage client-side encryption](https://docs.microsoft.com/storage/common/storage-client-side-encryption.md)|Client-side encryption offered by Azure storage, key managed by customer in Key Vault.|Not supported.|
 
 <sup>1</sup> In Media Services v3, storage encryption (AES-256 encryption) is only supported for backwards compatibility when your assets were created with Media Services v2, which means v3 works with existing storage encrypted assets but won't allow creation of new ones.
 
 ## Storage account double encryption
 
-Storage accounts support double encryption but the second layer must explicitly be enabled. See [Azure Storage encryption for data at rest](../../storage/common/storage-service-encryption.md#doubly-encrypt-data-with-infrastructure-encryption).  
+Storage accounts support double encryption but the second layer must explicitly be enabled. See [Azure Storage encryption for data at rest](https://docs.microsoft.com/storage/common/storage-service-encryption.md#doubly-encrypt-data-with-infrastructure-encryption).  
 
 ## Storage account errors
 

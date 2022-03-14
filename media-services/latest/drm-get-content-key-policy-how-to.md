@@ -33,6 +33,6 @@ The ContentKeyPolicy with secrets example is located in the [EncryptWithDRM](htt
 
 To get to the key, use **GetPolicyPropertiesWithSecretsAsync**, as shown in the example below.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#GetOrCreateContentKeyPolicy)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#GetOrCreateContentKeyPolicy)]
 
 ---

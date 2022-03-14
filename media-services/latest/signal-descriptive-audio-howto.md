@@ -38,10 +38,10 @@ In Media Services v3, you use Azure Storage APIs to upload files. The following 
 The following function performs these actions:
 
 * Creates an **Asset** 
-* Gets a writable [SAS URL](../../storage/common/storage-sas-overview.md) to the asset’s [container in storage](../../storage/blobs/storage-quickstart-blobs-dotnet.md#upload-a-blob-to-a-container)
+* Gets a writable [SAS URL](https://docs.microsoft.com/storage/common/storage-sas-overview.md) to the asset’s [container in storage](https://docs.microsoft.com/storage/blobs/storage-quickstart-blobs-dotnet.md#upload-a-blob-to-a-container)
 * Uploads the file into the container in storage using the SAS URL
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateInputAsset)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateInputAsset)]
 
 If you need to pass the name of the created input asset to other methods, make sure to use the `Name` property on the asset object returned from `CreateInputAssetAsync`, for example, inputAsset.Name. 
 
@@ -49,7 +49,7 @@ If you need to pass the name of the created input asset to other methods, make s
 
 The output [Asset](/rest/api/media/assets) stores the result of your encoding job. The following function shows how to create an output asset.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateOutputAsset)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateOutputAsset)]
 
 If you need to pass the name of the created output asset to other methods, make sure to use the `Name` property on the asset object returned from `CreateIOutputAssetAsync`, for example, outputAsset.Name. 
 
@@ -61,11 +61,11 @@ When encoding or processing content in Media Services, it is a common pattern to
 
 The following example creates a transform (if one does not exist).
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#EnsureTransformExists)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#EnsureTransformExists)]
 
 The following function submits a job.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#SubmitJob)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#SubmitJob)]
 
 ## Wait for the job to complete
 
@@ -208,7 +208,7 @@ When creating a [StreamingLocator](/rest/api/media/streaminglocators), you will 
 
 The following code assumes that you are calling the function with a unique locatorName.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateStreamingLocator)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateStreamingLocator)]
 
 While the sample in this topic discusses streaming, you can use the same call to create a Streaming Locator for delivering video via progressive download.
 
@@ -219,7 +219,7 @@ Now that the [Streaming Locator](/rest/api/media/streaminglocators) has been cre
 > [!NOTE]
 > In this method, you  need the locatorName that was used when creating the **Streaming Locator** for the output Asset.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#GetStreamingURLs)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#GetStreamingURLs)]
 
 ## Test with Azure Media Player
 

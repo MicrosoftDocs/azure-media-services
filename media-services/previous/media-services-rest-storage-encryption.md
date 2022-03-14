@@ -43,8 +43,8 @@ When accessing entities in Media Services, you must set specific header fields a
 |Encryption option|Description|Media Services v2|Media Services v3|
 |---|---|---|---|
 |Media Services Storage Encryption|AES-256 encryption, key managed by Media Services|Supported<sup>(1)</sup>|Not supported<sup>(2)</sup>|
-|[Storage Service Encryption for Data at Rest](../../storage/common/storage-service-encryption.md)|Server-side encryption offered by Azure Storage, key managed by Azure or by customer|Supported|Supported|
-|[Storage Client-Side Encryption](../../storage/common/storage-client-side-encryption.md)|Client-side encryption offered by Azure storage, key managed by customer in Key Vault|Not supported|Not supported|
+|[Storage Service Encryption for Data at Rest](https://docs.microsoft.com/storage/common/storage-service-encryption.md)|Server-side encryption offered by Azure Storage, key managed by Azure or by customer|Supported|Supported|
+|[Storage Client-Side Encryption](https://docs.microsoft.com/storage/common/storage-client-side-encryption.md)|Client-side encryption offered by Azure storage, key managed by customer in Key Vault|Not supported|Not supported|
 
 <sup>1</sup> While Media Services does support handling of content in the clear/without any form of encryption, doing so is not recommended.
 

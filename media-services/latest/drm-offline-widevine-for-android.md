@@ -89,7 +89,7 @@ In the [GetOrCreateContentKeyPolicyAsync](https://github.com/Azure-Samples/media
 
 To enable **offline** mode for Widevine licenses, you need to configure [Widevine license template](drm-widevine-license-template-concept.md). In the **policy_overrides** object, set the **can_persist** property to **true** (default is false), as shown in [ConfigureWidevineLicenseTemplate](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs#L452). 
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#ConfigureWidevineLicenseTempate)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#ConfigureWidevineLicenseTempate)]
 
 ## Configuring the Android player for offline playback
 

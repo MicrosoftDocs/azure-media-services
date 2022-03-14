@@ -171,7 +171,7 @@ Some considerations apply:
 
 Now that you have the upload URL, you need to write some code using the Azure Blob APIs directly to upload your file to the SAS container. For more information, see the following articles:
 
-- [Using the Azure Storage REST API](../../storage/common/storage-rest-api-auth.md?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [Using the Azure Storage REST API](https://docs.microsoft.com/storage/common/storage-rest-api-auth.md?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
 - [PUT Blob](/rest/api/storageservices/put-blob)
 - [Upload blobs to Blob storage](/previous-versions/azure/storage/storage-use-azcopy#upload-blobs-to-blob-storage)
 

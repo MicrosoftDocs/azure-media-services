@@ -163,7 +163,7 @@ New **Python** sample demonstrating how to use Azure Functions, and Event Grid t
 
 ### Availability Zones default support in Media Services
 
-Media Services now supports [Availability Zones](concept-availability-zones.md), providing fault-isolated locations within the same Azure region.  Media Services accounts are zone redundant by default now and there is no extra configuration or settings required. This only applies to regions that have [Availability Zones support](../../availability-zones/az-region.md#azure-regions-with-availability-zones)
+Media Services now supports [Availability Zones](concept-availability-zones.md), providing fault-isolated locations within the same Azure region.  Media Services accounts are zone redundant by default now and there is no extra configuration or settings required. This only applies to regions that have [Availability Zones support](https://docs.microsoft.com/availability-zones/az-region.md#azure-regions-with-availability-zones)
 
 
 ## March 2021

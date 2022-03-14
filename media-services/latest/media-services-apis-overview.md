@@ -88,7 +88,7 @@ The names of files/blobs within an asset must follow both the [blob name require
 
 The operations marked with `x-ms-long-running-operation` in the Azure Media Services [swagger files](https://github.com/Azure/azure-rest-api-specs/blob/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2018-07-01/streamingservice.json) are long running operations. 
 
-For details about how to track asynchronous Azure operations, see [Async operations](../../azure-resource-manager/management/async-operations.md).
+For details about how to track asynchronous Azure operations, see [Async operations](https://docs.microsoft.com/azure-resource-manager/management/async-operations.md).
 
 Media Services has the following long-running operations:
 
@@ -111,7 +111,7 @@ Media Services has the following long-running operations:
 
 On successful submission of a long operation, you receive a '201 Created' and must poll for operation completion using the returned operation ID.
 
-The [track asynchronous Azure operations](../../azure-resource-manager/management/async-operations.md) article explains in depth how to track the status of asynchronous Azure operations through values returned in the response.
+The [track asynchronous Azure operations](https://docs.microsoft.com/azure-resource-manager/management/async-operations.md) article explains in depth how to track the status of asynchronous Azure operations through values returned in the response.
 
 Only one long-running operation is supported for a given Live Event or any of its associated Live Outputs. Once started, a long running operation must complete before starting a subsequent long-running operation on the same LiveEvent or any associated Live Outputs. For Live Events with multiple Live Outputs, you must await the completion of a long running operation on one Live Output before triggering a long running operation on another Live Output.
 

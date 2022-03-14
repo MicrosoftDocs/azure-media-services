@@ -73,21 +73,21 @@ The "Encrypt with DRM" sample is located in the [EncryptWithDRM](https://github.
 
 To start using Media Services APIs with .NET, you need to create an `AzureMediaServicesClient` object. To create the object, you need to supply credentials for the client to connect to Azure by using Azure Active Directory. Another option is to use interactive authentication, which is implemented in `GetCredentialsInteractiveAuthAsync`.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#CreateMediaServicesClientAsync)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#CreateMediaServicesClientAsync)]
 
 In the code that you cloned at the beginning of the article, the `GetCredentialsAsync` function creates the `ServiceClientCredentials` object based on the credentials supplied in the local configuration file (*appsettings.json*) or through the *.env* environment variables file in the root of the repository.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#GetCredentialsAsync)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#GetCredentialsAsync)]
 
 In the case of interactive authentication, the `GetCredentialsInteractiveAuthAsync` function creates the `ServiceClientCredentials` object based on an interactive authentication and the connection parameters supplied in the local configuration file (*appsettings.json*) or through the *.env* environment variables file in the root of the repository. In that case, AADCLIENTID and AADSECRET are not needed in the configuration or environment variables file.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#GetCredentialsInteractiveAuthAsync)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#GetCredentialsInteractiveAuthAsync)]
 
 ## Create an output asset  
 
 The output [Asset](assets-concept.md) stores the result of your encoding job.  
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#CreateOutputAsset)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#CreateOutputAsset)]
 
 ## Get or create an encoding Transform
 
@@ -95,7 +95,7 @@ When creating a new [Transform](transform-jobs-concept.md) instance, you need to
 
 Before creating a new **Transform**, you should first check if one already exists using the **Get** method, as shown in the code that follows.  In Media Services v3, **Get** methods on entities return **null** if the entity doesn’t exist (a case-insensitive check on the name).
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#EnsureTransformExists)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#EnsureTransformExists)]
 
 ## Submit Job
 
@@ -103,7 +103,7 @@ As mentioned above, the **Transform** object is the recipe and a [Job](transform
 
 In this tutorial, we create the job's input based on a file that's ingested directly from an [HTTPs source URL](job-input-from-http-how-to.md).
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#SubmitJob)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#SubmitJob)]
 
 ## Wait for the Job to complete
 
@@ -111,7 +111,7 @@ The job takes some time to complete. When it does, you want to be notified. The 
 
 The **Job** usually goes through the following states: **Scheduled**, **Queued**, **Processing**, **Finished** (the final state). If the job has come across an error, you get the **Error** state. If the job is in the process of being canceled, you get **Canceling** and **Canceled** when it's done.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#WaitForJobToFinish)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#WaitForJobToFinish)]
 
 ## Create a Content Key Policy
 
@@ -129,7 +129,7 @@ You need to set the requirements (restrictions) on the **Content Key Policy** th
 
 When a stream is requested by a player, Media Services uses the specified key to dynamically encrypt your content. To decrypt the stream, the player requests the key from the key delivery service. To determine whether the user is authorized to get the key, the service evaluates the content key policy that you specified for the key.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#GetOrCreateContentKeyPolicy)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#GetOrCreateContentKeyPolicy)]
 
 ## Create a Streaming Locator
 
@@ -145,7 +145,7 @@ When creating a **Streaming Locator**, you need to specify the desired `Streamin
 > [!IMPORTANT]
 > When using a custom [Streaming Policy](stream-streaming-policy-concept.md), you should design a limited set of such policies for your Media Service account, and re-use them for your StreamingLocators whenever the same encryption options and protocols are needed. Your Media Service account has a quota for the number of StreamingPolicy entries. You shouldn't be creating a new StreamingPolicy for each StreamingLocator.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#CreateStreamingLocator)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#CreateStreamingLocator)]
 
 ## Get a test token
 
@@ -153,13 +153,13 @@ In this tutorial, we specify for the content key policy to have a token restrict
 
 The ContentKeyIdentifierClaim is used in the ContentKeyPolicy, which means that the token presented to the key delivery service must have the identifier of the ContentKey in it. In the sample, we don't specify a content key when creating the Streaming Locator, the system creates a random one for us. To generate the test token, we must get the ContentKeyId to put in the ContentKeyIdentifierClaim claim.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#GetToken)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#GetToken)]
 
 ## Build a streaming URL
 
 Now that the [StreamingLocator](/rest/api/media/streaminglocators) has been created, you can get the streaming URLs. To build a URL, you need to concatenate the [StreamingEndpoint](/rest/api/media/streamingendpoints) host name and the **Streaming Locator** path. In this sample, the *default* **Streaming Endpoint** is used. When you first create a Media Service account, this *default* **Streaming Endpoint** will be in a stopped state, so you need to call **Start**.
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#GetMPEGStreamingUrl)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#GetMPEGStreamingUrl)]
 
 When you run the app, you see the following screen:
 
@@ -171,7 +171,7 @@ You can open a browser and paste the resulting URL to launch the Azure Media Pla
 
 Generally, you should clean up everything except objects that you're planning to reuse (typically, you'll reuse Transforms, StreamingLocators, and so on). If you want for your account to be clean after experimenting, delete the resources that you don't plan to reuse. For example, the following code deletes the job, created assets and content key policy:
 
-[!code-csharp[Main](../../../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#CleanUp)]
+[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#CleanUp)]
 
 ## Clean up resources
 
