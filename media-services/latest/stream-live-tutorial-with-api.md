@@ -30,8 +30,6 @@ This tutorial shows how to use .NET 5.0 to create a *pass-through* type of a liv
 > * Watch the event with [Azure Media Player](https://amp.azure.net/libs/amp/latest/docs/index.html) on the [Media Player demo site](https://ampdemo.azureedge.net).
 > * Clean up resources.
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
-
 > [!NOTE]
 > Even though the tutorial uses [.NET SDK](/dotnet/api/microsoft.azure.management.media.models.liveevent) examples, the general steps are the same for [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event), or other supported [SDKs](media-services-apis-overview.md#sdks). 
 

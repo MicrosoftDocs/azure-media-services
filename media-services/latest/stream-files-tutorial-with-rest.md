@@ -38,8 +38,6 @@ This tutorial shows you how to:
 > * Test the streaming URL
 > * Clean up resources
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
-
 ## Prerequisites
 
 - [Create a Media Services account](./account-create-how-to.md).

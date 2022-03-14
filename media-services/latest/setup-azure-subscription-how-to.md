@@ -21,8 +21,6 @@ ms.devlang: azurecli
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
-
 ## [Portal](#tab/portal/)
 
 ## Use the Azure portal

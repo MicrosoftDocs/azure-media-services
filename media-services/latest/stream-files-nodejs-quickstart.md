@@ -32,8 +32,6 @@ The sample in this article encodes content that you make accessible via an HTTPS
 
 ![Play the video](./media/stream-files-nodejs-quickstart/final-video.png)
 
-[!INCLUDE [quickstarts-free-trial-note](../includes/legacy/quickstarts-free-trial-note.md)]
-
 ## Prerequisites
 
 - Install [Node.js](https://nodejs.org/en/download/)
