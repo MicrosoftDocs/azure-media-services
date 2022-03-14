@@ -49,14 +49,3 @@ To complete this tutorial, you need an Azure account. For details, see [Azure fr
     The upload begins. You can see the progress under the file name.  
 
 When the upload is finished, the new asset is listed in the **Assets** pane. 
-
-## Media Services learning paths
-[!INCLUDE [media-services-learning-paths-include](../includes/media-services-learning-paths-include.md)]
-
-## Provide feedback
-[!INCLUDE [media-services-user-voice-include](../includes/media-services-user-voice-include.md)]
-
-## Next steps
-* Learn how to [encode your uploaded assets](media-services-portal-encode.md).
-
-* You also can use Azure Functions to trigger an encoding job when a file arrives in the configured container. For more information, see the sample at [Media Services: Integrating Azure Media Services with Azure Functions and Logic Apps](https://azure.microsoft.com/resources/samples/media-services-dotnet-functions-integration/).
