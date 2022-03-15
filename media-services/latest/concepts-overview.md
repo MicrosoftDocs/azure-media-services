@@ -44,16 +44,3 @@ The fundamental concepts described in these topics should be reviewed before sta
 |Monitoring with Event Grid|To see the progress of the job, use **Event Grid**. Media Services also emits the live event types. With Event Grid, your apps can listen for and react to events from virtually all Azure services, as well as custom sources. |[Handling Event Grid events](monitoring/reacting-to-media-services-events.md)<br/><br/>[Schemas](monitoring/media-services-event-schemas.md)|
 |Monitoring with Azure Monitor|Monitor metrics and diagnostic logs that help you understand how your apps are performing with Azure Monitor.|[Metrics and diagnostic logs](monitoring/monitor-media-services-data-reference.md)<br/><br/>[Diagnostic logs schemas](monitoring/monitor-media-services-data-reference.md)|
 |Player clients|You can use any player framework that supports the HLS or DASH streaming protocol. There are many open source and commercial players available on the market (Shaka, Hls.js, Video.js, Theo Player, Bitmovin Player, etc.) as well as built-in native browser and OS level streaming support for HLS and DASH.  The Azure Media Player is also available to play back media content streamed by Media Services on a wide variety of browsers. The Azure Media Player uses industry standards, such as HTML5, Media Source Extensions (MSE), and Encrypted Media Extensions (EME) to provide an adaptive streaming experience. |[Azure Media Player overview](player-use-azure-media-player-how-to.md)|
-
-## Ask questions, give feedback, get updates
-
-Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
-
-## Next steps
-
-* [Encode remote file and stream video – REST](stream-files-tutorial-with-rest.md)
-* [Encode uploaded file and stream video - .NET](stream-files-tutorial-with-api.md)
-* [Stream live - .NET](stream-live-tutorial-with-api.md)
-* [Analyze your video - .NET](analyze-videos-tutorial.md)
-* [AES-128 dynamic encryption - .NET](drm-playready-license-template-concept.md)
-* [Encrypt dynamically with multi-DRM - .NET](drm-protect-with-drm-tutorial.md)

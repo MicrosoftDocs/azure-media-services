@@ -75,14 +75,3 @@ The following endpoints are important to know when connecting to Media Services 
 | Azure Resource Manager | `https://management.chinacloudapi.cn/` |
 | Authentication | `https://login.chinacloudapi.cn/` |
 | Token audience |  `https://management.core.chinacloudapi.cn/` |
-
-## See also
-
-* [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/)
-* [Regional code names and endpoints](azure-regions-code-names.md)
-* [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/)
-* [Azure locations](https://azure.microsoft.com/global-infrastructure/locations/)
-
-## Next steps
-
-[Media Services v3 overview](media-services-overview.md)

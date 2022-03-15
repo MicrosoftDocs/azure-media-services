@@ -121,7 +121,3 @@ az group delete --name amsResourceGroup
 - [npm install @azure/arm-mediaservices](https://www.npmjs.com/package/@azure/arm-mediaservices)
 - [Azure for JavaScript & Node.js developers](/azure/developer/javascript/)
 - [Media Services source code in the @azure/azure-sdk-for-js repo](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
-
-## Next steps
-
-> [Media Services concepts](concepts-overview.md)

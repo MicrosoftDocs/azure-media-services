@@ -186,7 +186,3 @@ To stop the streaming endpoint:
 
 > [!TIP]
 > If you don't want to keep the assets from this event, be sure to delete them so you're not billed for storage.
-
-## Next steps
-> [!div class="nextstepaction"]
-> [Live events and live outputs in Media Services](./live-event-outputs-concept.md)

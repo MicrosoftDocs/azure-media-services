@@ -156,9 +156,3 @@ JSON input body example:
 The function should return 200 OK with an output body containing the job and output asset names.
 
 ![Test the function with Postman](./Media/integrate-azure-functions-dotnet-how-to/postman.png)
-
-## Next steps
-
-At this point, you are ready to start developing functions that call Media Services API.
-
-For more information and a complete sample of using Azure Functions with Azure Media Services v3, see the [Media Services v3 Azure Functions sample](https://github.com/Azure-Samples/media-services-v3-dotnet-core-functions-integration/tree/main/Functions).

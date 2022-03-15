@@ -98,8 +98,3 @@ pip3 install azure-mgmt-media
 ## Additional samples
 
 Additional samples are available in GitHub in the [Azure Media Services v3 Python Samples](https://github.com/Azure-Samples/media-services-v3-python) repo.
-
-## Next steps
-
-- Use [Python SDK](https://aka.ms/ams-v3-python-sdk).
-- Review the Media Services [Python ref](/python/api/overview/azure/mediaservices/management) documentation.

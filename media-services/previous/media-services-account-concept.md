@@ -39,7 +39,3 @@ Media Services v2 does not support multi-tenancy model. If you need to move a Me
 ### Troubleshoot
 
 If a Media Services account or an associated Azure Storage account become "disconnected" following the resource group move, try rotating the Storage Account keys. If rotating the Storage Account keys does not resolve the "disconnected" status of the Media Services account, file a new support request from the "Support + troubleshooting" menu in the Media Services account.  
-
-## Next steps
-
-[Create an account](media-services-portal-create-account.md)

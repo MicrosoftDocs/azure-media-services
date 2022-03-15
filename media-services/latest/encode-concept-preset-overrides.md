@@ -55,10 +55,3 @@ See the [Analyze a media file with a audio analyzer preset](https://github.com/A
 ## Ask questions, give feedback, get updates
 
 Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
-
-## Next steps
-
-* [Upload, encode, and stream using Media Services](stream-files-tutorial-with-api.md).
-* [Encode from an HTTPS URL using built-in presets](job-input-from-http-how-to.md).
-* [Encode a local file using built-in presets](job-input-from-local-file-how-to.md).
-* [Build a custom preset to target your specific scenario or device requirements](transform-custom-transform-how-to.md).

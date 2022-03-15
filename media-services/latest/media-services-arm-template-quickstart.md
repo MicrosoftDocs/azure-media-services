@@ -202,10 +202,3 @@ If you aren't planning to use the resources you just created, you can delete the
 az group delete --name {name of the resource group}
 
 ```
-
-## Next steps
-
-To learn more about using an ARM template by following the process of creating a template with parameters, variables and more, try
-
-> [!div class="nextstepaction"]
-> [Tutorial: Create and deploy your first ARM template](https://docs.microsoft.com/azure-resource-manager/templates/template-tutorial-create-first-template.md)

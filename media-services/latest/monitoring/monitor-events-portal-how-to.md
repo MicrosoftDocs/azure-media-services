@@ -84,7 +84,3 @@ You can trigger events for the Media Services account by running an encoding job
 > Select the eye icon to expand the event data. Do not refresh the page, if you want to view all the events.
 
 ![View subscription event](../media/monitor-events-portal/view-subscription-event.png)
-
-## Next steps
-
-[Upload, encode, and stream](../stream-files-tutorial-with-api.md)

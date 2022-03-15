@@ -41,8 +41,3 @@ See the following articles for more information:
 - [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/role-based-access-controle/overview.md)
 - [Add or remove Azure role assignments using the REST API](https://docs.microsoft.com/role-based-access-controle/role-assignments-rest.md)
 - [Media Services resource provider operations](https://docs.microsoft.com/role-based-access-controle/resource-provider-operations.md#microsoftmedia)
-
-## Next steps
-
-- [Developing with Media Services v3 APIs](media-services-apis-overview.md)
-- [Get content key policy using Media Services .NET](drm-get-content-key-policy-how-to.md)

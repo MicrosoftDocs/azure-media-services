@@ -38,13 +38,3 @@ ms.devlang: azurecli
 ### List your Azure subscriptions with CLI
 
 [!INCLUDE [List your Azure subscriptions with CLI](./includes/task-list-set-subscription-cli.md)]
-
-### See also
-
-* [Azure CLI](/cli/azure/ams)
-
----
-
-## Next steps
-
-[Stream a file](stream-files-dotnet-quickstart.md)

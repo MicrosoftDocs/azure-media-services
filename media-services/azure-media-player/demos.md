@@ -59,8 +59,3 @@ Options to show how to display audio tracks menu on the default skin. |
 | Select text track | [Dynamic](https://amp.azure.net/libs/amp/latest/samples/dynamic_selectTextTrack.html) | N/A | Selecting a WebVTT track from the track list. |
 | Select bitrate | [Dynamic](https://amp.azure.net/libs/amp/latest/samples/dynamic_selectBitrate.html) | N/A | Selecting a bitrate from the list of bitrates. This sample only works on some techs. |
 | Select audio stream | [Dynamic](https://amp.azure.net/libs/amp/latest/samples/dynamic_selectAudioStream.html) | N/A | Selecting an Audio Stream from the list of available audio streams. This sample only works on some techs. |
-
-## Next steps
-
-<!---Some context for the following links goes here--->
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

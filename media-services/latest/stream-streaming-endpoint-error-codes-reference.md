@@ -189,17 +189,3 @@ The server is currently unable to receive requests. This error may be caused by 
 |Error code|Hexadecimal value |Error description|
 |---|---|---|
 |MPE_STORAGE_SERVER_BUSY|0x808900E8|Storage Operation error, received HTTP server busy error 503.|
-
-## Ask questions, give feedback, get updates
-
-Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
-
-## See also
-
-- [Encoding error codes](/rest/api/media/jobs/get#joberrorcode)
-- [Azure Media Services concepts](concepts-overview.md)
-- [Quotas and limits](limits-quotas-constraints-reference.md)
-
-## Next steps
-
-[Example: access ErrorCode and Message from ApiException with .NET](configure-connect-dotnet-howto.md#connect-to-the-net-client)

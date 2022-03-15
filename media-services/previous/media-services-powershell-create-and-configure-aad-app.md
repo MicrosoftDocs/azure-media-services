@@ -59,7 +59,3 @@ For more information, see the following articles:
 - [Use Azure PowerShell to create a service principal to access resources](https://docs.microsoft.com/active-directory/develop/howto-authenticate-service-principal-powershell.md)
 - [Add or remove Azure role assignments using Azure PowerShell](https://docs.microsoft.com/role-based-access-control/role-assignments-powershell.md)
 - [How to manually configure daemon apps by using certificates](https://github.com/azure-samples/active-directory-dotnetcore-daemon-v2)
-
-## Next steps
-
-Get started with [uploading files to your account](media-services-portal-upload-files.md).

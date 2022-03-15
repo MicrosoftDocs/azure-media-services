@@ -41,7 +41,3 @@ For more information about Azure compliance coverage for US government, see Azur
 To help you meet your own compliance obligations across regulated industries and markets worldwide, Azure maintains the largest compliance portfolio in the industry both in terms of breadth (total number of [compliance offerings](/azure/compliance/offerings/)) and depth (number of [customer-facing services](https://azure.microsoft.com/services/) in assessment scope). For service availability, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/).
 
 Azure compliance offerings are grouped into four segments - globally applicable, US Government, industry specific, and region/country specific.  Compliance offerings are based on various types of assurances, including formal certifications, attestations, validations, authorizations, and assessments produced by independent third-party auditing firms, as well as contractual amendments, self-assessments, and customer guidance documents produced by Microsoft. For more information, see [Azure compliance documentation](https://docs.microsoft.com/compliance/index.yml). You will also find additional compliance resources such as audit reports, a checklist for privacy and General Data Protection Regulation (GDPR), compliance blueprints, country and regional guidelines, implementation and mappings, as well as white papers and analyst reports.
-
-## Next steps
-
-> [Azure Media Services overview](media-services-overview.md)

@@ -50,8 +50,3 @@ Azure Media Player is easy to set up. It only takes a few moments to get basic p
 ## Additional notes
 
 * Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
-## Next steps
-
-* [Azure Media Player documentation](../azure-media-player/azure-media-player-overview.md)
-* [Azure Media Player samples](https://github.com/Azure-Samples/azure-media-player-samples)

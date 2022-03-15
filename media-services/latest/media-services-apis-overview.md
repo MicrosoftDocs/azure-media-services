@@ -143,18 +143,3 @@ AMSE is an Open Source project, support is provided by the community (issues can
 ## Filtering, ordering, paging of Media Services entities
 
 See [Filtering, ordering, paging of Azure Media Services entities](filter-order-page-entities-how-to.md).
-
-## Ask questions, give feedback, get updates
-
-Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
-
-## See also
-
-To get all the needed values, see [Access Azure Media Services API](./access-api-howto.md).
-
-## Next steps
-
-* [Connect to Media Services with Java](configure-connect-java-howto.md)
-* [Connect to Media Services with .NET](configure-connect-dotnet-howto.md)
-* [Connect to Media Services with Node.js](configure-connect-nodejs-howto.md)
-* [Connect to Media Services with Python](configure-connect-python-howto.md)

@@ -345,7 +345,3 @@ Run this Azure CLI command:
 ```azurecli-interactive
 az group delete --name amsResourceGroup
 ```
-
-## Next steps
-
-[Media Services overview](media-services-overview.md)

@@ -105,7 +105,3 @@ The current release has the following known issues:
 
 - AES and restricted token content does not play back using iOS and older Android devices.
   - In order to achieve this scenario, a proxy must be added to your service.
-
-## Next steps ##
-
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

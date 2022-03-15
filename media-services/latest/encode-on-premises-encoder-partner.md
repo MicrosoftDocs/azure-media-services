@@ -61,11 +61,3 @@ Follow the same steps as in [Pass-through Live Event verification](#pass-through
 ## Email your recorded settings
 
 Finally, email your recorded settings and live archive parameters to Azure Media Services at amshelp@microsoft.com as a notification that all self-verification checks have passed. Also, include your contact information for any follow-ups. You can contact the Azure Media Services team with any questions about this process.
-
-## See also
-
-[Tested on-premises encoders](encode-recommended-on-premises-live-encoders.md)
-
-## Next steps
-
-[Live streaming with Media Services v3](stream-live-streaming-concept.md)

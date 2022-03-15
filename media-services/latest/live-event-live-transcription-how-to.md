@@ -186,7 +186,3 @@ For preview, the following are known issues with live transcription:
 
 - Apps need to use the preview APIs, described in the [Media Services v3 OpenAPI Specification](https://github.com/Azure/azure-rest-api-specs/blob/master/specification/mediaservices/resource-manager/Microsoft.Media/preview/2019-05-01-preview/streamingservice.json).
 - Digital rights management (DRM) protection does not apply to the text track, only AES envelope encryption is possible.
-
-## Next steps
-
-* [Media Services overview](media-services-overview.md)

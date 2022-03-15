@@ -96,21 +96,3 @@ The following diagram shows the **Job** object and the objects it references inc
 Click the image to view it full size.  
 
 [![Diagram showing the Job object and the objects it references, including the class derivation relationships between the objects.](./media/api-diagrams/job-small.png)](./media/api-diagrams/job-large.png#lightbox)
-
-## Ask questions, give feedback, get updates
-
-Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
-
-## See also
-
-* [Error codes](/rest/api/media/jobs/get#joberrorcode)
-* [Filtering, ordering, paging of Media Services entities](filter-order-page-entities-how-to.md)
-
-## Next steps
-
-- Before you start developing, review [Developing with Media Services v3 APIs](media-services-apis-overview.md) (includes information on accessing APIs, naming conventions, etc.)
-- Check out these tutorials:
-
-    - [Tutorial: Encode a remote file based on URL and stream the video](stream-files-tutorial-with-rest.md)
-    - [Tutorial: Upload, encode, and stream videos](stream-files-tutorial-with-api.md)
-    - [Tutorial: Analyze videos with Media Services v3](analyze-videos-tutorial.md)

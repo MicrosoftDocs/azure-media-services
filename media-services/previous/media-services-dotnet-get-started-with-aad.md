@@ -199,7 +199,3 @@ namespace AzureADAuthSample
     }
 }
 ```
-
-## Next steps
-
-Get started with [uploading files to your account](media-services-dotnet-upload-files.md).

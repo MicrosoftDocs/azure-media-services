@@ -29,8 +29,3 @@ See [How to use the Shaka player with Azure Media Services](player-shaka-player-
 Video.js is a video player that plays adaptive media formats (such as DASH and HLS) in a browser. Video.js uses the open web standards MediaSource Extensions and Encrypted Media Extensions. It supports video playback on desktops and mobile devices. Its official documentation can be found at https://docs.videojs.com/.
 
 See [How to use the Video.js player with Azure Media Services](player-how-to-video-js-player.md).
-
-
-## Next steps ##
-
-- [Azure Media Player Quickstart](../azure-media-player/azure-media-player-quickstart.md)

@@ -152,12 +152,3 @@ The `Origin-Assist CDN-Prefetch` feature supports the following streaming protoc
 * Does this feature work with UHD/HEVC contents?
 
     Yes.
-
-## Ask questions, give feedback, get updates
-
-Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
-
-## Next steps
-
-* Make sure to review the [Streaming Endpoint (origin)](stream-streaming-endpoint-concept.md) document.
-* The sample [in this repository](https://github.com/Azure-Samples/media-services-v3-dotnet-quickstarts/blob/master/AMSV3Quickstarts/EncodeAndStreamFiles/Program.cs) shows how to start the default streaming endpoint with .NET.
