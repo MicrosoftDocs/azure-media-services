@@ -20,7 +20,7 @@ ms.custom: seodec18, devx-track-csharp
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Azure Media Services enables you to encrypt your HLS content with **Apple FairPlay** (AES-128 CBC). Media Services also provides a service for delivering FairPlay licenses. When a player tries to play your FairPlay-protected content, a request is sent to the license delivery service to obtain a license. If the license service approves the request, it issues the license that is sent to the client and is used to decrypt and play the specified content.
+Azure Media Services enables you to encrypt your HLS content with **Apple FairPlay Streaming** (AES-128 CBC). Media Services also provides a service for delivering FairPlay licenses. FairPlay Streaming is an Apple technology that is only available for video transferred over HTTP Live Streaming (HLS) on iOS devices, in Apple TV, and in Safari on macOS. When an Apple client tries to play your FairPlay-protected content over HLS format, a request is sent to the license delivery service to obtain a license. If the license service approves the request, it issues the license that is sent to the client and is used to decrypt and play the specified content.
 
 Media Services also provides APIs that you can use to configure your FairPlay licenses. This topic discusses FairPlay license requirements and demonstrates how you can configure a **FairPlay** license using Media Services APIs. 
 
@@ -114,3 +114,13 @@ private static ContentKeyPolicyFairPlayConfiguration ConfigureFairPlayPolicyOpti
     return fairPlayConfiguration;
 }
 ```
+
+## Storage of the FairPlay Private Key (.pfx) in Azure Key Vault
+
+Note that the private key (.pfx) that you receive from Apple should be treated as a secure certificate and can be stored in the Azure Key Vault.
+
+To store the private key in the Key Vault, you need to first convert it into a base64 encoded text file.
+
+- The .pfx certificate file should first be converted to base 64 text file by the admin
+- Once converted, this file can be stored in Azure DevOps as a secure text file. 
+- The string can then be stored in Azure KeyVault manually, or as part of a deployment/build script for your solution. An example of storing the FairPlay private certificate in Azure KeyVault can be seen in the [Gridwich project sample code](https://github.com/mspnp/gridwich/blob/main/infrastructure/azure-pipelines/templates/steps/azcli-last-steps-template.yml#L30)

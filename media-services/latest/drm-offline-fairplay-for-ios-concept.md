@@ -19,7 +19,7 @@ ms.author: inhenkel
 - Google Widevine
     
     Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-- Apple FairPlay
+- Apple FairPlay Streaming - An Apple DRM technology that is only available for video transferred over HTTP Live Streaming (HLS) on iOS devices, in Apple TV, and in Safari on macOS.
 - AES-128 encryption
 
 Digital rights management (DRM)/Advanced Encryption Standard (AES) encryption of content is performed dynamically upon request for various streaming protocols. DRM license/AES decryption key delivery services also are provided by Media Services.
@@ -30,7 +30,7 @@ Besides protecting content for online streaming over various streaming protocols
 * Some content providers might disallow DRM license delivery beyond a country/region's border. If users want to watch content while traveling outside of the country/region, offline download is needed.
 * In some countries/regions, internet availability and/or bandwidth is still limited. Users might choose to download first to be able to watch content in a resolution that is high enough for a satisfactory viewing experience. In this case, the issue typically isn't network availability but limited network bandwidth. Over-the-top (OTT)/online video platform (OVP) providers request offline-mode support.
 
-This article covers FairPlay Streaming (FPS) offline-mode support that targets devices running iOS 10 or later. This feature isn't supported for other Apple platforms, such as watchOS, tvOS, or Safari on macOS.
+This article covers FairPlay Streaming (FPS) offline-mode support that targets devices running iOS 10 or later. FairPlay Streaming is an Apple technology that is only available for video transferred over HTTP Live Streaming (HLS) on iOS devices, in Apple TV, and in Safari on macOS.
 
 > [!NOTE]
 > Offline DRM is only billed for making a single request for a license when you download the content. Any errors are not billed.
@@ -48,6 +48,7 @@ Before you implement offline DRM for FairPlay on an iOS 10+ device:
 
     - The FPS Server SDK, which contains the Key Security Module (KSM), client samples, a specification, and a set of test vectors.
     - The FPS Deployment Pack, which contains the D function specification, along with instructions about how to generate the FPS Certificate, customer-specific private key, and Application Secret Key. Apple issues the FPS Deployment Pack only to licensed content providers.
+    - Note that the .der/.cer certificate files you receive as part of the generation of the FPS certificate contain a public key and can be made available to the client.  The private key (.pfx) should be secured in Azure Key Vault or another secure location. 
 * Clone https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials.git. 
 
     You will need to modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add FairPlay configurations.  
@@ -160,7 +161,7 @@ In HLSCatalog\Shared\Managers\ContentKeyDelegate.swift, implement the method `re
     return ckcData
 ```
 
-In HLSCatalog\Shared\Managers\ContentKeyDelegate.swift, implement the method `requestApplicationCertificate()`. This implementation depends on whether you embed the certificate (public key only) with the device or host the certificate on the web. The following implementation uses the hosted application certificate used in the test samples. Let "certUrl" be a variable that contains the URL of the application certificate.
+In HLSCatalog\Shared\Managers\ContentKeyDelegate.swift, implement the method `requestApplicationCertificate()`. This implementation depends on whether you embed the certificate (public key only - sometimes referred to as the .der or .cer file) with the device or host the certificate on the web. The following implementation uses the hosted application certificate used in the test samples. Let "certUrl" be a variable that contains the URL of the application certificate.
 
 ```swift
 func requestApplicationCertificate() throws -> Data {
@@ -200,3 +201,13 @@ With either the version 3 or version 4 sample of the FPS Server SDK, if a master
 ## Offline Fairplay questions
 
 See [offline fairplay questions in the FAQ](frequently-asked-questions.yml).
+
+
+## Storage of the FairPlay Private Key (.pfx) in Azure Key Vault
+
+Note that the private key (.pfx) that you receive from Apple should be treated as a secure certificate and can be stored in the Azure Key Vault. 
+To store the private key in the Key Vault, you need to first convert it into a base64 encoded text file.
+
+- The .pfx certificate file should first be converted to base 64 text file by the admin
+- Once converted, this file can be stored in Azure DevOps as a secure text file. 
+- The string can then be stored in Azure KeyVault manually, or as part of a deployment/build script for your solution. An example of storing the FairPlay private certificate in Azure KeyVault can be seen in the [Gridwich project sample code](https://github.com/mspnp/gridwich/blob/main/infrastructure/azure-pipelines/templates/steps/azcli-last-steps-template.yml#L30)

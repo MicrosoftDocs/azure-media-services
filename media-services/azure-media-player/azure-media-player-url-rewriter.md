@@ -37,7 +37,7 @@ or
     ]);
 ```
 
-Also, if you want, you can specify the specific streaming formats you would like Azure Media Player to rewrite to using the `streamingFormats` parameter. Options include `DASH`, `SMOOTH`, `HLSv3`, `HLSv4`, `HLS`. The difference between HLS and HLSv3 & v4 is that the HLS format supports playback of FairPlay content. v3 and v4 do not support FairPlay. This is useful if you do not have a delivery policy for a particular protocol available.  Here is an example of when a DASH protocol is not enabled with your asset.
+Also, if you want, you can specify the specific streaming formats you would like Azure Media Player to rewrite to using the `streamingFormats` parameter. Options include `DASH`, `SMOOTH`, `HLSv3`, `HLSv4`, `HLS`. The difference between HLS and HLSv3 & v4 is that the HLS format supports playback of FairPlay content. v3 and v4 do not support FairPlay (FairPlay is an Apple technology that is only available for video transferred over HTTP Live Streaming on iOS devices, in Apple TV, and in Safari on macOS.) This is useful if you do not have a delivery policy for a particular protocol available.  Here is an example of when a DASH protocol is not enabled with your asset.
 
 ```html
     <video id="vid1" class="azuremediaplayer amp-default-skin">
