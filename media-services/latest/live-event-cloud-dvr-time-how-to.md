@@ -47,8 +47,3 @@ For more information, see:
 
 > [!NOTE]
 > When you delete the Live Output, you're not deleting the underlying asset and content in the asset.
-
-## Next steps
-
-* [Subclip your videos](transform-subclip-video-how-to.md).
-* [Define filters for your assets](filters-dynamic-manifest-rest-howto.md).

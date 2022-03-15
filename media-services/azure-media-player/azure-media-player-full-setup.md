@@ -112,7 +112,3 @@ Instead of using an element ID, you can also pass a reference to the element its
     });
     myPlayer.src([{ src: "//example/path/to/myVideo.ism/manifest", type: "application/vnd.ms-sstr+xml"]);
 ```
-
-## Next steps ##
-
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

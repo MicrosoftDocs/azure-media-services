@@ -38,8 +38,3 @@ az ams account sp reset-credentials \
   --account-name $amsAccountName \
   --resource-group $resourceGroup
  ```
-
-## Next steps
-
-* [az ams](/cli/azure/ams)
-* [Reset credentials](/cli/azure/ams/account/sp#az_ams_account_sp_reset_credentials)

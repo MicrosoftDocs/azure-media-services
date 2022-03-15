@@ -23,7 +23,3 @@ ms.author: inhenkel
 1. Select the Azure Active Directory icon under Azure services. The Active Directory page will open.
 1. Your tenant ID is located under **Basic Information**.
 1. Copy the tenant ID and paste it into a text document of your choice for use later.
-
-## Next steps
-
-[Stream a file](stream-files-dotnet-quickstart.md)

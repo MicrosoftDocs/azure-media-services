@@ -104,18 +104,3 @@ The following considerations apply:
 ## Additional notes
 
 * Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
-## Next steps
-The following articles describe next steps to help you get started with content protection:
-
-* [Protect with storage encryption](media-services-rest-storage-encryption.md)
-* [Protect with AES encryption](media-services-playready-license-template-overview.md)
-* [Protect with PlayReady and/or Widevine](media-services-protect-with-playready-widevine.md)
-* [Protect with FairPlay](media-services-protect-hls-with-FairPlay.md)
-
-## Related links
-
-* [JWT token authentication](http://www.gtrifonov.com/2015/01/03/jwt-token-authentication-in-azure-media-services-and-dynamic-encryption/)
-* [Integrate Azure Media Services OWIN MVC-based app with Azure Active Directory and restrict content key delivery based on JWT claims](http://www.gtrifonov.com/2015/01/24/mvc-owin-azure-media-services-ad-integration/)
-
-[content-protection]: ./media/media-services-content-protection-overview/media-services-content-protection.png

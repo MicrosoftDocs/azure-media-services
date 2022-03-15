@@ -69,12 +69,3 @@ Media Encoder Standard is more robust, reliable, has better performance, and pro
 * Media Encoder Standard produces output files with a different naming convention than WAME.
 * Media Encoder Standard produces artifacts such as files containing the [input file metadata](media-services-input-metadata-schema.md) and the [output file(s) metadata](media-services-output-metadata-schema.md).
 * As documented on the [pricing page](https://azure.microsoft.com/pricing/details/media-services/#encoding) (especially in the FAQ section), when you encode videos using Media Encoder Standard, you get billed based on the duration of the files produced as output. With WAME, you would be billed based on the sizes of the input video file(s) and output video file(s).
-
-## Need help?
-
-You can open a support ticket by navigating to [New support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)
-
-## Next steps
-
-* [Legacy components](legacy-components.md)
-* [Pricing page](https://azure.microsoft.com/pricing/details/media-services/#encoding)

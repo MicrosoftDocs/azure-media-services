@@ -56,7 +56,3 @@ If you don't want to use auto-setup, you can omit the `data-setup` attribute and
         type: "application/vnd.ms-sstr+xml"
     }]);
 ```
-
-## Next steps ##
-
-- [Azure Media Player Full Setup](./azure-media-player-full-setup.md)

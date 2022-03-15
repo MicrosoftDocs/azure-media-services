@@ -146,7 +146,3 @@ The following code catches just 404 errors:
         // all http 404 errors
     }
 ```
-
-## Next steps ##
-
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

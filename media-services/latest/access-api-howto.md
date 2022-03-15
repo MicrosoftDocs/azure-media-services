@@ -67,7 +67,3 @@ This option could be used to authenticate an employee or member of an Azure Acti
 Copy your credentials to connect your user application from the **Connect to Media Services API** section. You can get text values or copy the JSON or XML blocks.
 
 ---
-
-## Next steps
-
-[Tutorial: Upload, encode, and stream videos with Media Services v3](stream-files-tutorial-with-api.md).

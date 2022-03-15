@@ -115,11 +115,3 @@ To play back content, both an audio and video stream must be present. Playback o
 > [!IMPORTANT]
 > Watch the physical condition of the machine (CPU / Memory / etc) as uploading fragments to cloud involves CPU and IO operations. 
 > If you change any encoder configurations, reset [Live Events](https://docs.microsoft.com/rest/api/media/live-events/reset) the channels and the live event for the change to take place. If you stop and start the live event without resetting it, the live event will preserve the previous configuration.
-
-## See also
-
-[Live streaming with Media Services v3](stream-live-streaming-concept.md)
-
-## Next steps
-
-[How to verify your encoder](encode-on-premises-encoder-partner.md)

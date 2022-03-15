@@ -95,13 +95,3 @@ Before you start manipulating AMS v3 resources you need to get and set Azure AD 
 
 * If your application fails with "HTTP 504: Gateway Timeout", make sure that the location variable has not been explicitly set to a value other than the expected location of the Media Services account. 
 * If you get an "account not found" error, also check to make sure that the location property in the Body JSON message is set to the location that the Media Services account is in. 
-
-## See also
-
-- [Create filters with Media Services - REST](filters-dynamic-manifest-rest-howto.md)
-- [Azure Resource Manager based REST API](https://github.com/Azure-Samples/media-services-v3-arm-templates)
-
-## Next steps
-
-- [Stream files with REST](stream-files-tutorial-with-rest.md).  
-- [Tutorial: Encode a remote file based on URL and stream the video - REST](stream-files-tutorial-with-rest.md)

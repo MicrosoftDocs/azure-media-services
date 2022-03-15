@@ -187,15 +187,3 @@ See the following articles:
 
 - [CDN overview](https://docs.microsoft.com/cdn/cdn-overview.md)
 - [Scaling streaming with CDN](stream-scale-streaming-cdn-concept.md)
-
-## Ask questions and get updates
-
-Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
-
-## See also
-
-[Dynamic packaging](encode-dynamic-packaging-concept.md)
-
-## Next steps
-
-[Manage streaming endpoints](stream-manage-streaming-endpoints-how-to.md)

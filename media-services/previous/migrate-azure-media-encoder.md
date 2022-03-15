@@ -67,8 +67,3 @@ Media Encoder Standard is more robust, reliable, has better performance, and pro
 
 * Media Encoder Standard produces output files with a different naming convention than AME.
 * Media Encoder Standard produces artifacts such as files containing the [input file metadata](media-services-input-metadata-schema.md) and the [output file(s) metadata](media-services-output-metadata-schema.md).
-
-## Next steps
-
-* [Legacy components](legacy-components.md)
-* [Pricing page](https://azure.microsoft.com/pricing/details/media-services/#encoding)

@@ -40,8 +40,3 @@ Azure Media Player supports controlling through keyboard hot key. In a web brows
 | Left and Right Arrow | Video progress will increase /decrease                                  |
 | 0,1,2,3,4,5,6,7,8,9  | Video progress will be changed to 0%\- 90% depending on the key pressed |
 | Click Action         | Video will play/pause                                                   |
-
-## Next steps
-
-<!---Some context for the following links goes here--->
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

@@ -190,8 +190,3 @@ This section shows how to access the **Assets** API using **Postman**.
 7. Press **Send**.
 
 The returned response contains the assets that are in your account.
-
-## Next steps
-
-* Try this sample code in [Azure AD Authentication for Azure Media Services Access: Both via REST API](https://github.com/willzhan/WAMSRESTSoln)
-* [Upload files with .NET](media-services-dotnet-upload-files.md)

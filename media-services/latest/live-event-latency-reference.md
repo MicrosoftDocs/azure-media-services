@@ -55,8 +55,3 @@ The following tables show typical results for latency (when the LowLatency flag 
 
 > [!NOTE]
 > The end-to-end latency can vary depending on local network conditions or by introducing a CDN caching layer. You should test your exact configurations.
-
-## Next steps
-
-- [Live streaming overview](stream-live-streaming-concept.md)
-- [Live streaming tutorial](stream-live-tutorial-with-api.md)

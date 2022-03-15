@@ -37,8 +37,3 @@ The **ipAllowList** property is an array of single IPv4 address and/or IPv4 rang
 ## Setting the allowlist in the portal
 
 The Azure portal provides a method for configuring and updating the IP allowlist for key delivery.  Navigate to your Media Services account and access the **Key delivery** menu under **Settings**.
-
-## Next steps
-
-- [Create an account](./account-create-how-to.md)
-- [DRM and content protection overview](./drm-content-protection-concept.md)

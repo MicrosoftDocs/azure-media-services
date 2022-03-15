@@ -109,8 +109,3 @@ See [Error codes](/rest/api/media/jobs/get#joberrorcode).
 ## Multithreading
 
 The Azure Media Services v3 SDKs are not thread-safe. When working with multi-threaded application, you should generate a new  AzureMediaServicesClient object per thread.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Tutorial: upload, encode, and stream files](stream-files-tutorial-with-api.md)

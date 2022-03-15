@@ -63,7 +63,3 @@ Given the recommended tech order with streaming content from Azure Media Service
 
 > [!NOTE]
 > If the expected tech chosen requires a plugin be installed, like Flash, and that is not installed on the user's machine, AMP will continue to check the capabilities of the next tech, in conjunction with source types and protection info, in the tech list. For example, if attempting to view an unprotected on-demand stream in Safari 8 on OS X Yosemite, and both Flash and Silverlight are not installed, AMP will select the native Html5 tech for playback.<br/><br/>New browser technologies are emerging daily, and as such could affect this matrix.
-
-## Next steps ##
-
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

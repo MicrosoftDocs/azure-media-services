@@ -54,8 +54,3 @@ The following table explains elements and attributes of the configuration XML.
   
 </configuration>  
 ```
-  
-## Next steps
-
-See [Indexing media files with Azure Media Indexer](media-services-index-content.md).
-

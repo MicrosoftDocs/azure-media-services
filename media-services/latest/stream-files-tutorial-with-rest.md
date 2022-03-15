@@ -399,14 +399,3 @@ Execute the following CLI command:
 ```azurecli
 az group delete --name amsResourceGroup
 ```
-
-## Ask questions, give feedback, get updates
-
-Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
-
-## Next steps
-
-Now that you know how to upload, encode, and stream your video, see the following article: 
-
-> [!div class="nextstepaction"]
-> [Analyze videos](analyze-videos-tutorial.md)

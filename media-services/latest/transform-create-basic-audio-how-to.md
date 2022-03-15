@@ -28,8 +28,4 @@ Follow the steps in [Create a Media Services account](./account-create-how-to.md
 
 [!INCLUDE [media-services-cli-instructions.md](./includes/task-create-basic-audio-rest.md)]
 
-## Next steps
-
-[!INCLUDE [transforms next steps](./includes/transforms-next-steps.md)]
-
 ---

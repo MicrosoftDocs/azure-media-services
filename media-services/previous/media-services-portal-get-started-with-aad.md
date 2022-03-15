@@ -60,7 +60,3 @@ This option could be used to authenticate an employee or member of an Azure Acti
 ### Connect to Media Services API
 
 Copy your credentials to connect your user application from the **Connect to Media Services API** section. You can get text values or copy the JSON or XML blocks.
-
-## Next steps
-
-Get started with [uploading files to your account](media-services-portal-upload-files.md).

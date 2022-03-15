@@ -144,7 +144,3 @@ Setting enabled to true allows you to display live CEA captioning in your live s
 ```
 
 This option is only available in Azure Media Player version 2.1.1 and later.
-
-## Next steps ##
-
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

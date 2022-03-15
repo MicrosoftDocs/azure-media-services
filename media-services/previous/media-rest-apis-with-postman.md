@@ -51,7 +51,3 @@ This environment and collection is used in articles that show how to achieve var
 3. Choose the **AzureMediaServicesOperations.postman_collection.json** file.
 
     ![Screenshot shows the IMPORT dialog box with Choose Files selected.](./media/media-services-rest-upload-files/postman-import-collection.png)
-
-## Next steps
-
-Check out the [upload assets](media-services-rest-upload-files.md) article.  

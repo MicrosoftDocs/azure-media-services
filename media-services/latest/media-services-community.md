@@ -21,7 +21,6 @@ ms.author: inhenkel
 
 This Azure Media Services community page discusses different ways you can ask questions, give feedback, and get updates about Media Services.
 
-
 ## Discussion
 
 ### Twitter
@@ -39,7 +38,3 @@ Currently, MSDN is Media Services team's primary community forum.
 The team also monitors questions tagged on Stack Overflow with 'azure-media-services'.
 
 [![StackOverflow](./media/media-services-community/stack-overflow.png)](https://stackoverflow.com/questions/tagged/azure-media-services) 
-
-## Next steps
-
-[Azure Media Services overview](media-services-overview.md)

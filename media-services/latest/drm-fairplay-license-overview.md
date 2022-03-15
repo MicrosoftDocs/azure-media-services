@@ -114,7 +114,3 @@ private static ContentKeyPolicyFairPlayConfiguration ConfigureFairPlayPolicyOpti
     return fairPlayConfiguration;
 }
 ```
-
-## Next steps
-
-Check out how to [protect with DRM](drm-protect-with-drm-tutorial.md)

@@ -251,8 +251,3 @@ Check out the [Azure Media Services community](media-services-community.md) arti
 - [Azure for JavaScript and Node.js developers](/azure/developer/javascript/)
 - [Media Services source code in the @azure/azure-sdk-for-js GitHub repo](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
 - [Azure package documentation for Node.js developers](/javascript/api/overview/azure/)
-
-
-## Next steps
-
-[Stream files](stream-files-tutorial-with-api.md)

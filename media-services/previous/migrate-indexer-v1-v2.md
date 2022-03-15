@@ -74,8 +74,3 @@ Some known differences include:
 ## Support
 
 You can open a support ticket by navigating to [New support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest)
-
-## Next steps
-
-* [Legacy components](legacy-components.md)
-* [Pricing page](https://azure.microsoft.com/pricing/details/media-services/#encoding)

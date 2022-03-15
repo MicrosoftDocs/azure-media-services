@@ -57,7 +57,3 @@ The above two can be used in combination with each other for multiple circumstan
 
 > [!NOTE]
 > Widevine protection information only persists on the DASH protocol.
-
-## Next steps ##
-
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

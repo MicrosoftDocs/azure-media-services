@@ -34,7 +34,3 @@ ms.date: 04/05/2021
 | Hot Keys                            | <strike>[Demo](http://sr-test.azurewebsites.net/Tests/Plugin%20Gallery/plugins/hotkeys/example.html)</strike>                        | <strike>[GitHub](https://github.com/Azure-Samples/media-services-javascript-azure-media-player-hot-keys-plugin)</strike>                     | The hot keys plugin enables viewers to control various aspects of the player with generic plugin combinations like F for fullscreen, M for mute and arrow keys for progress bar control. *Note: This plugin has been already integrated into AMP but feel free to use it as a resource* |
 | Social                              | | | |
 | Share                               | [Demo](http://sr-test.azurewebsites.net/Tests/Plugin%20Gallery/plugins/share/example.html)                        | [GitHub](https://github.com/Azure-Samples/media-services-javascript-azure-media-player-social-share-plugin)                     | This plugin adds a share button to the player's control bar so that your viewers can share the video they're watching with their friends via Facebook, Twitter, or Linkedin. |
-
-## Next steps ##
-
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

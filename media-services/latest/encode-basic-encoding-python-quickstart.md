@@ -113,18 +113,3 @@ We're not using the SAS URL for the input asset in this sample.
 ## Delete resources
 
 Once you successfully complete the quickstart, delete the resources created in the resource group.
-
-## Next steps
-
-Get familiar with the [Media Services Python SDK](/python/api/azure-mgmt-media/)
-
-## Resources
-
-- See the Azure Media Services [management API](/python/api/overview/azure/mediaservices/management).
-- Learn how to use the [Storage APIs with Python](/azure/developer/python/azure-sdk-example-storage-use?tabs=cmd)
-- Learn more about the [Azure Identity client library for Python](/python/api/overview/azure/identity-readme#environment-variables)
-- Learn more about [Azure Media Services v3](./media-services-overview.md).
-- Learn about the [Azure Python SDKs](/azure/developer/python)
-- Learn more about [usage patterns for Azure Python SDKs](/azure/developer/python/azure-sdk-library-usage-patterns)
-- Find more Azure Python SDKs in the [Azure Python SDK index](/azure/developer/python/azure-sdk-library-package-index)
-- [Azure Storage Blob Python SDK reference](/python/api/azure-storage-blob/)

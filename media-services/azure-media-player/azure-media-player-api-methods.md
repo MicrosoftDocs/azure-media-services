@@ -65,8 +65,3 @@ Events should be registered directly after initializing the player for the first
     myPlayer.addEventListener(amp.eventName.error, _ampEventHandler);
     //add other event listeners
 ```
-
-## Next steps ##
-
-<!---Some context for the following links goes here--->
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

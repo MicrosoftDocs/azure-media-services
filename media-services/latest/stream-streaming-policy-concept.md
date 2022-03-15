@@ -79,9 +79,3 @@ Response:
 ## Filtering, ordering, paging
 
 See [Filtering, ordering, paging of Media Services entities](filter-order-page-entities-how-to.md).
-
-## Next steps
-
-* [Stream a file](stream-files-dotnet-quickstart.md)
-* [Use AES-128 dynamic encryption and the key delivery service](drm-playready-license-template-concept.md)
-* [Use DRM dynamic encryption and license delivery service](drm-protect-with-drm-tutorial.md)
