@@ -651,6 +651,40 @@
       displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
   - name: Deliver content
     items:
+    - name: Create a streaming endpoint
+      href: streaming-endpoint-create-how-to.md
+    - name: Delete a streaming endpoint
+      href: streaming-endpoint-delete-how-to.md
+    - name: List streaming endpoints
+      href: streaming-endpoint-list-how-to.md
+    - name: Show or get the details of a streaming endpoint
+      href: streaming-endpoint-show-how-to.md
+    - name: Start a streaming endpoint
+      href: streaming-endpoint-start-how-to.md
+    - name: Stop a streaming endpoint
+      href: streaming-endpoint-stop-how-to.md
+    - name: Update a streaming endpoint
+      href: streaming-endpoint-update-how-to.md
+    - name: Create a streaming locator
+      href: streaming-locator-create-how-to.md
+    - name: Show the details of a streaming locator
+      href: streaming-locator-show-how-to.md
+    - name: List streaming locators
+      href: streaming-locator-list-how-to.md
+    - name: List streaming locator paths
+      href: streaming-locator-list-paths-how-to.md
+    - name: List streaming locator content keys
+      href: streaming-locator-list-content-keys-how-to.md
+    - name: Delete a streaming locator
+      href: streaming-locator-delete-how-to.md
+    - name: Create a streaming policy
+      href: streaming-policy-create-how-to.md
+    - name: Delete a streaming policy
+      href: streaming-policy-delete-how-to.md
+    - name: List streaming policies
+      href: streaming-policy-list-how-to.md
+    - name: Show or get the details of a streaming policy
+      href: streaming-policy-show-how-to.md
     - name: Manage streaming endpoints
       href: stream-manage-streaming-endpoints-how-to.md
       displayName: streaming endpoint, sample, how-to, how to, manage, management
