@@ -575,6 +575,22 @@
       displayName: ingest, URL, remote URL, remote ingest, SAS, SAS URL, S3, S3 token, ingest from HTTP, JobInputHttp, blob, storage, storage account, blob file, ingest blob file, upload blob, copy blob, http, https    
   - name: Stream live
     items:
+    - name: Create a live event
+      href: live-event-create-how-to.md
+    - name: Allocate an event in standby mode
+      href: live-event-standby-how-to.md
+    - name: Delete a live event
+      href: live-event-delete-how-to.md
+    - name: List a live events
+      href: live-event-list-how-to.md
+    - name: Reset a live event
+      href: live-event-reset-how-to.md
+    - name: Show the details of a live event
+      href: live-event-show-how-to.md
+    - name: Stop a live event
+      href: live-event-stop-how-to.md
+    - name: Wait until a condition is met
+      href: live-event-wait-how-to.md
     - name: Live event with portal and Wirecast
       href: live-event-wirecast-quickstart.md    
       displayName: Wirecast, Telestream, streaming, stream live, RTMP, RTMPS, ingest, streamkey, stream key, live event, live streaming, live
@@ -639,6 +655,17 @@
         href: integrate-azure-functions-dotnet-how-to.md
         displayName: Azure Functions, Functions, functions app, lambda, serverless, serverless functions, integrations, .NET
   - name: Create filters
+    items:
+    - name: Create an account filter
+      href: account-filter-create-how-to.md
+    - name: Delete an account filter
+      href: account-filter-delete-how-to.md
+    - name: List account filters
+      href: account-filter-list-how-to.md
+    - name: Show or get the details of an account filter
+      href: account-filter-show-how-to.md
+    - name: Update an account filter
+      href: account-filter-update-how-to.md
     items:
     - name: With .NET
       href: filters-dynamic-manifest-dotnet-how-to.md
