@@ -666,7 +666,6 @@
       href: account-filter-show-how-to.md
     - name: Update an account filter
       href: account-filter-update-how-to.md
-    items:
     - name: With .NET
       href: filters-dynamic-manifest-dotnet-how-to.md
       displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal

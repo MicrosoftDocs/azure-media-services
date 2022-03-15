@@ -1,6 +1,6 @@
 ---
 title: Show or get the details of an account filter
-description: This article shows how to delete an account filter.
+description: This article shows how to show the details of an account filter.
 services: media-services
 author: IngridAtMicrosoft
 manager: femila 
