@@ -34,7 +34,3 @@ You can learn more about enabling trusted storage with the [Media Services trust
 To understand the methods of creating trusted storage with Managed Identities, read [Managed Identities and Media Services](concept-managed-identities.md).
 
 For more information about Trusted Microsoft Services, see [Configure Azure Storage firewalls and virtual networks](https://docs.microsoft.com/storage/common/storage-network-security.md#trusted-microsoft-services).
-
-## Next steps
-
-To learn more about what managed identities can do for you and your Azure applications, see [Azure AD Managed Identities](https://docs.microsoft.com/active-directory/managed-identities-azure-resources/overview.md).

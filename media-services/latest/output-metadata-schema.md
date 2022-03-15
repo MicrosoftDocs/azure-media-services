@@ -254,7 +254,3 @@ Each physical AssetFile can contain in it zero or more audio tracks interleaved 
   ]
 }
 ```
-
-## Next steps
-
-[Create a job input from an HTTPS URL](job-input-from-http-how-to.md)

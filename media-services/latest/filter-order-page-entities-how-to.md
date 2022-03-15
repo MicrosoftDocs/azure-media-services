@@ -176,13 +176,3 @@ The following table shows how you can apply the filtering and ordering options t
 |[Transforms](/rest/api/media/transforms)| name | `eq`            | `asc` and `desc`|
 || properties.created      | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
 || properties.lastModified | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
-
-## Next steps
-
-* [List Assets](/rest/api/media/assets/list)
-* [List Content Key Policies](/rest/api/media/contentkeypolicies/list)
-* [List Jobs](/rest/api/media/jobs/list)
-* [List Streaming Policies](/rest/api/media/streamingpolicies/list)
-* [List Streaming Locators](/rest/api/media/streaminglocators/list)
-* [Stream a file](stream-files-dotnet-quickstart.md)
-* [Quotas and limits](limits-quotas-constraints-reference.md)

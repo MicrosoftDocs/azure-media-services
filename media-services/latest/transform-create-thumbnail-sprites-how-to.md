@@ -38,7 +38,3 @@ Add the code snippets for your preferred development language.
 See also thumbnail sprite creation in a [complete encoding sample](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/main/VideoEncoding/Encoding_SpriteThumbnail/Program.cs#L261-L287) at Azure Samples.
 
 ---
-
-## Next steps
-
-[!INCLUDE [transforms next steps](./includes/transforms-next-steps.md)]

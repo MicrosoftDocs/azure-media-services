@@ -44,7 +44,3 @@ Azure Media Player currently supports the following languages with their corresp
 
 > [!NOTE]
 > If you do not want any localization to occur you must force the language to English
-
-## Next steps ##
-
-- [Azure Media Player Quickstart](azure-media-player-quickstart.md)

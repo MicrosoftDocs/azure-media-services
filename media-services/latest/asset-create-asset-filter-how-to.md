@@ -9,7 +9,8 @@ ms.topic: how-to
 ms.date: 03/08/2022
 ms.author: inhenkel
 ---
-# Create an account filter
+
+# Create an asset filter
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 

@@ -57,9 +57,3 @@ See [Filtering, ordering, paging of Media Services entities](filter-order-page-e
 
 * Properties of the Content Key Policies that are of the `Datetime` type are always in UTC format.
 * Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
-## Next steps
-
-* [Use AES-128 dynamic encryption and the key delivery service](drm-playready-license-template-concept.md)
-* [Use DRM dynamic encryption and license delivery service](drm-protect-with-drm-tutorial.md)
-* [Basic AES Clear Key Encryption and streaming sample code](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/BasicAESClearKey)

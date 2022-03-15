@@ -222,7 +222,3 @@ With the live stream, Azure Media Services is emitting various events that are t
 ## Delete resources
 
 If you don't want to continue to use the resources you created during this tutorial, make sure you delete all of the resources in the resource group or you will continue to be charged.
-
-## Next steps
-
-You can create different queries and save them. These can be added to [Azure Dashboard](https://docs.microsoft.com/azure-monitor/visualize/tutorial-logs-dashboards.md).

@@ -66,7 +66,3 @@ Use the navigation on the right to find the region you are interested in.
 * [Regional code names and endpoints](azure-regions-code-names.md)
 * [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/)
 * [Azure locations](https://azure.microsoft.com/global-infrastructure/locations/)
-
-## Next steps
-
-[Media Services v3 overview](media-services-overview.md)

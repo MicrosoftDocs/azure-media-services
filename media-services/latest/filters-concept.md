@@ -149,11 +149,3 @@ See the following examples:
 It is not recommended to update the definition of filters associated with an actively published **Streaming Locator**, especially when CDN is enabled. Streaming servers and CDNs can have internal caches that may result in stale cached data to be returned. 
 
 If the filter definition needs to be changed consider creating a new filter and adding it to the **Streaming Locator** URL or publishing a new **Streaming Locator** that references the filter directly.
-
-## Next steps
-
-The following articles show how to create filters programmatically.  
-
-- [Create filters with REST APIs](filters-dynamic-manifest-rest-howto.md)
-- [Create filters with .NET](filters-dynamic-manifest-dotnet-how-to.md)
-- [Create filters with CLI](filters-dynamic-manifest-cli-how-to.md)

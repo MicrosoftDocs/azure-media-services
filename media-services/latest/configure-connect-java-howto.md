@@ -97,16 +97,3 @@ When you run the command, the `pom.xml`, `App.java`, and other files are created
    }
    ```
 1. Run the app.
-
-## See also
-
-- [Media Services concepts](concepts-overview.md)
-- [Java SDK](https://aka.ms/ams-v3-java-sdk)
-- [Java reference](/java/api/overview/azure/mediaservices/management)
-- [com.azure.resourcemanager.mediaservices](https://mvnrepository.com/artifact/com.azure.resourcemanager/azure-resourcemanager-mediaservices)
-
-## Next steps
-
-You can now include `import com.azure.resourcemanager.mediaservices.*` and start manipulating entities.
-
-For more code examples, see the [Java SDK samples](/samples/azure-samples/media-services-v3-java/azure-media-services-v3-samples-using-java/) repo.

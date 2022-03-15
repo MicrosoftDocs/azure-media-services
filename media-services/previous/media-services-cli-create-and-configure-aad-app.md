@@ -61,7 +61,3 @@ For example, it could be one of the following levels:
 For more information, see [Create an Azure service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli)
 
 Also see [Add or remove Azure role assignments using Azure CLI](https://docs.microsoft.com/role-based-access-controle/role-assignments-cli.md). 
-
-## Next steps
-
-Get started with [uploading files to your account](media-services-portal-upload-files.md).

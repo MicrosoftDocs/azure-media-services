@@ -69,8 +69,3 @@ Below are the results for another category of source content, where the encoder 
 ![RD curve using VMAF](media/encode-content-aware-concept/msrv4.png)
 
 **Figure 4: RD curve using VMAF for low-quality input (at 1080p)**
-
-  
-## Next steps
-* [How to use the content-aware encoding presets](encode-content-aware-how-to.md)
-* [Tutorial: Upload, encode, and stream videos with Media Services v3](stream-files-tutorial-with-api.md)

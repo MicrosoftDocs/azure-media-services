@@ -674,8 +674,3 @@ Check out the [Azure Media Services community](media-services-community.md) arti
 ## See also
 
 [Migration guidance for moving from Media Services v2 to v3](migrate-v-2-v-3-migration-introduction.md).
-
-## Next steps
-
-- [Overview](media-services-overview.md)
-- [Media Services v2 release notes](../previous/media-services-release-notes.md)

@@ -24,10 +24,6 @@ Preview [Dynamic packaging](encode-dynamic-packaging-concept.md)
 
 ## Create a streaming locator
 
-## [Portal](#tab/portal/)
-
-[!INCLUDE [task-create-asset-portal](includes/task-create-streaming-locator-portal.md)]
-
 ## [.NET](#tab/net/)
 
 ## Using .NET

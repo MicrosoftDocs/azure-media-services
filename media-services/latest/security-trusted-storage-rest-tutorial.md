@@ -335,7 +335,3 @@ Authorization: Bearer {{getArmToken.response.body.access_token}}
 GET https://{{armEndpoint}}/subscriptions/{{subscription}}/resourceGroups/{{resourceGroup}}/providers/Microsoft.Media/mediaservices/{{accountName}}?api-version=2020-05-01
 Authorization: Bearer {{getArmToken.response.body.access_token}}
 ```
-
-## Next steps
-
-[How to create an Asset](asset-create-asset-how-to.md)

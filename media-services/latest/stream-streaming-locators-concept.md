@@ -95,14 +95,3 @@ To get Streaming Locators based on the associated Asset name, use the following 
 |.NET|[ListStreamingLocators](/dotnet/api/microsoft.azure.management.media.assetsoperationsextensions.liststreaminglocators#Microsoft_Azure_Management_Media_AssetsOperationsExtensions_ListStreamingLocators_Microsoft_Azure_Management_Media_IAssetsOperations_System_String_System_String_System_String_)|
 |Java|[AssetStreamingLocator](/rest/api/media/assets/liststreaminglocators#assetstreaminglocator)|
 |Node.js|[listStreamingLocators](/javascript/api/@azure/arm-mediaservices/assets#liststreaminglocators-string--string--string--msrest-requestoptionsbase-)|
-
-## See also
-
-* [Assets](assets-concept.md)
-* [Streaming Policies](stream-streaming-policy-concept.md)
-* [Content Key Policies](drm-content-key-policy-concept.md)
-* [Tutorial: Upload, encode, and stream videos using .NET](stream-files-tutorial-with-api.md)
-
-## Next steps
-
-[How to create a streaming locator and build URLs](create-streaming-locator-build-url.md)

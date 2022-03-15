@@ -71,10 +71,3 @@ Source with height "360" and framerate "29.970" produces 3 video layers:
 
 The [content-aware encoding presets](./encode-content-aware-concept.md) offer a better solution over the adaptive streaming presets by analyzing the source content prior to deciding the right set of output bitrates and resolutions to use in the ladder.
 It's recommended to test out the [content-aware encoding presets](./encode-content-aware-concept.md) first before using the more static and fixed ladder provided by the adaptive bitrate streaming presets.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Stream a file](stream-files-dotnet-quickstart.md)
-> [Using the content-aware encoding presets](./encode-content-aware-concept.md)
-> [How to use content-aware encoding](./encode-content-aware-how-to.md)

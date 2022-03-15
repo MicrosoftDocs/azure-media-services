@@ -20,6 +20,6 @@ This article shows you how to remove a storage account from a Media Services acc
 
 You can use the following methods to remove a storage account from a Media Services account.
 
-## CLI
+## [CLI](#tab/cli/)
 
 [!INCLUDE [Create an asset with CLI](./includes/task-remove-account-storage-cli.md)]

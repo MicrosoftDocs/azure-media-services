@@ -138,16 +138,3 @@ If you are not using the Media Services .NET client SDK, you must manually creat
 Exception: "The remote server returned an error: (401) Unauthorized."
 
 Solution: For the Media Services REST request to succeed, the calling user must be a Contributor or Owner role in the Media Services account it is trying to access. For more information, see the [Access control](media-services-use-aad-auth-to-access-ams-api.md#access-control) section.
-
-## Resources
-
-The following articles are overviews of Azure AD authentication concepts: 
-
-- [Authentication scenarios addressed by Azure AD](https://docs.microsoft.com/active-directory/develop/authentication-vs-authorization.md)
-- [Add, update, or remove an application in Azure AD](https://docs.microsoft.com/active-directory/develop/quickstart-register-app.md)
-- [Add or remove Azure role assignments using Azure PowerShell](https://docs.microsoft.com/role-based-access-controle/role-assignments-powershell.md)
-
-## Next steps
-
-* Use the Azure portal to [access Azure AD authentication to consume Azure Media Services API](media-services-portal-get-started-with-aad.md).
-* Use Azure AD authentication to [access Azure Media Services API with .NET](media-services-dotnet-get-started-with-aad.md).

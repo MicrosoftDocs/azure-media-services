@@ -125,7 +125,3 @@ In summary, we have achieved offline mode on Azure Media Services:
 ## Additional notes
 
 * Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
-## Next steps
-
-[Hybrid DRM system design](hybrid-design-drm-sybsystem.md)

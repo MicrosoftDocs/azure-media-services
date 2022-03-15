@@ -204,7 +204,3 @@ Many more samples are available in the [repository](https://github.com/Azure-Sam
 - [Media Services concepts](concepts-overview.md)
 - [Azure for JavaScript & Node.js developers](/azure/developer/javascript/)
 - [Media Services source code in the @azure/azure-sdk-for-js repo](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
-
-## Next steps
-
-Explore the Media Services [Node.js ref](/javascript/api/overview/azure/arm-mediaservices-readme) documentation and check out [samples](https://github.com/Azure-Samples/media-services-v3-node-tutorials) that show how to use Media Services API with node.js.

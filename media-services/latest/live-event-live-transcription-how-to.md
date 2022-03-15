@@ -16,7 +16,7 @@ ms.author: inhenkel
 
 ---
 
-# Live transcription (preview)
+# Live transcription
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
@@ -24,7 +24,7 @@ Azure Media Service delivers video, audio, and text in different protocols. When
 
 Additional charges apply when live transcription is turned on. Please review the pricing information in the Live Video section of the [Media Services pricing page](https://azure.microsoft.com/pricing/details/media-services/).
 
-This article describes how to enable live transcription when streaming a Live Event with Azure Media Services. Before you continue, make sure you're familiar with the use of Media Services v3 REST APIs (see [this tutorial](stream-files-tutorial-with-rest.md) for details). You should also be familiar with the [live streaming](stream-live-streaming-concept.md) concept. It's recommended to complete the [Stream live with Media Services](stream-live-tutorial-with-api.md) tutorial.
+This article describes how to enable live transcription when streaming a Live Event with Azure Media Services. Before you continue, make sure you're familiar with the use of Media Services v3 REST APIs (see [this tutorial](stream-files-tutorial-with-rest.md) for details). You should also be familiar with the [live streaming](stream-live-streaming-concept.md) concept. It's recommendeded to complete the [Stream live with Media Services](stream-live-tutorial-with-api.md) tutorial.
 
 ## Live transcription preview regions and languages
 
@@ -56,122 +56,20 @@ This is the list of available languages that can be transcribed, use the languag
 
 ## Create the live event with live transcription
 
-To create a live event with the transcription turned on, send the PUT operation with the 2019-05-01-preview API version, for example:
+To create a live event with the transcription turned on, set the 'transcriptions' property with the desired language code when creating the [live event](/rest/api/media/live-events/create). The language code must match the spoken language of the video.
 
-```
-PUT https://management.azure.com/subscriptions/:subscriptionId/resourceGroups/:resourceGroupName/providers/Microsoft.Media/mediaServices/:accountName/liveEvents/:liveEventName?api-version=2019-05-01-preview&autoStart=true 
-```
-
-The operation has the following body (where a basic pass-through Live Event is created with RTMP as the ingest protocol). Note the addition of a transcriptions property.
-
-```
-{
-  "properties": {
-    "description": "Demonstrate how to enable live transcriptions",
-    "input": {
-      "streamingProtocol": "RTMP",
-      "accessControl": {
-        "ip": {
-          "allow": [
-            {
-              "name": "Allow All",
-              "address": "0.0.0.0",
-              "subnetPrefixLength": 0
-            }
-          ]
-        }
-      }
-    },
-    "preview": {
-      "accessControl": {
-        "ip": {
-          "allow": [
-            {
-              "name": "Allow All",
-              "address": "0.0.0.0",
-              "subnetPrefixLength": 0
-            }
-          ]
-        }
-      }
-    },
-    "encoding": {
-      "encodingType": "PassthroughBasic"
-    },
-    "transcriptions": [
-      {
-        "language": "en-US"
-      }
-    ],
-    "useStaticHostname": false,
-    "streamOptions": [
-      "Default"
-    ]
-  },
-  "location": "West US 2"
-}
-```
 
 ## Start or stop transcription after the live event has started
 
-You can start and stop live transcription while the live event is in running state. For more information about starting and stopping live events, read the Long-running operations section at [Develop with Media Services v3 APIs](media-services-apis-overview.md#long-running-operations).
+You can start and stop, or change the language of live transcription while the live event is in running, standby or stopped state.
 
-To turn on live transcriptions or to update the transcription language, patch the live event to include a “transcriptions” property. To turn off live transcriptions, remove the “transcriptions” property from the live event object.  
+To turn on live transcriptions or to update the transcription language, patch the live event to include a “[transcriptions](/rest/api/media/live-events/create#liveeventtranscription)” property with the correct language code on the 'language' property. See the list above to supported language codes. 
+
+To turn off live transcriptions, remove the “transcriptions” property from the live event object.
 
 > [!NOTE]
-> Turning the transcription on or off **more than once** during the live event is not a supported scenario.
+> Turning live transcription on or off must be done before any data is written to the output asset - this is usually when a live output is created, or when the incoming input stream arrives at the live event.
 
-This is the sample call to turn on live transcriptions.
-
-PATCH: ```https://management.azure.com/subscriptions/:subscriptionId/resourceGroups/:resourceGroupName/providers/Microsoft.Media/mediaServices/:accountName/liveEvents/:liveEventName?api-version=2019-05-01-preview```
-
-```
-{
-  "properties": {
-    "description": "Demonstrate how to enable live transcriptions", 
-    "input": {
-      "streamingProtocol": "RTMP",
-      "accessControl": {
-        "ip": {
-          "allow": [
-            {
-              "name": "Allow All",
-              "address": "0.0.0.0",
-              "subnetPrefixLength": 0
-            }
-          ]
-        }
-      }
-    },
-    "preview": {
-      "accessControl": {
-        "ip": {
-          "allow": [
-            {
-              "name": "Allow All",
-              "address": "0.0.0.0",
-              "subnetPrefixLength": 0
-            }
-          ]
-        }
-      }
-    },
-    "encoding": {
-      "encodingType": "None"
-    },
-    "transcriptions": [
-      {
-        "language": "en-US"
-      }
-    ],
-    "useStaticHostname": false,
-    "streamOptions": [
-      "Default"
-    ]
-  },
-  "location": "West US 2"
-}
-```
 
 ## Transcription delivery and playback
 
@@ -180,12 +78,6 @@ Review the [Dynamic packaging overview](encode-dynamic-packaging-concept.md#to-p
 > [!NOTE]
 > If using Azure Media Player, use version 2.3.3 or later.
 
-## Known issues
-
-For preview, the following are known issues with live transcription:
-
-- Apps need to use the preview APIs, described in the [Media Services v3 OpenAPI Specification](https://github.com/Azure/azure-rest-api-specs/blob/master/specification/mediaservices/resource-manager/Microsoft.Media/preview/2019-05-01-preview/streamingservice.json).
-- Digital rights management (DRM) protection does not apply to the text track, only AES envelope encryption is possible.
 
 ## Next steps
 

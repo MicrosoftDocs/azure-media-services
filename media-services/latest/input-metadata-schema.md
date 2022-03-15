@@ -232,7 +232,3 @@ Contains a collection of AssetFile elements for the encoding job.
   ]
 }
 ```
-
-## Next steps
-
-[Output metadata](output-metadata-schema.md)

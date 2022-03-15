@@ -110,11 +110,3 @@ event.
 >|**MPE_INGEST_DISCONTINUITY** ||No|
 >| Description| There is discontinuty in incoming data.||
 >|Suggested solution| This is a warning that the encoder drops data due to a network issue or a system resource issue. Check the encoder log or system log. Monitor the system resource (CPU, memory or network) as well. If the system CPU is too high, try to lower the bitrate or use the H/W encoder option from the system graphics card.||
-
-## See also
-
-[Streaming Endpoint (Origin) error codes](stream-streaming-endpoint-error-codes-reference.md)
-
-## Next steps
-
-[Tutorial: Stream live with Media Services](stream-live-tutorial-with-api.md)

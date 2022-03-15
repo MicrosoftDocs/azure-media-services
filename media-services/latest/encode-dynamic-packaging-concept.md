@@ -354,15 +354,3 @@ You can use *dynamic encryption* to dynamically encrypt your live or on-demand c
 
 > [!NOTE]
 > Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
-## More information
-
-Check out [Azure Media Services community](media-services-community.md) to see different ways you can ask questions, give feedback, and get updates about Media Services.
-
-## Need help?
-
-You can open a support ticket by navigating to [New support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest).
-
-## Next steps
-
-[Upload, encode, and stream videos](stream-files-tutorial-with-api.md)

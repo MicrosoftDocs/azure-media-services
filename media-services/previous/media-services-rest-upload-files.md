@@ -219,9 +219,3 @@ Response will contain size, name, and other information.
 "ContentFileSize": "3186542",
 "ParentAssetId": "nb:cid:UUID:0b8f3b04-72fb-4f38-8e7b-d7dd78888938",
 ```
-  
-## Next steps
-
-You can now encode your uploaded assets. For more information, see [Encode assets](media-services-portal-encode.md).
-
-You can also use Azure Functions to trigger an encoding job based on a file arriving in the configured container. For more information, see [this sample](https://azure.microsoft.com/resources/samples/media-services-dotnet-functions-integration/ ).

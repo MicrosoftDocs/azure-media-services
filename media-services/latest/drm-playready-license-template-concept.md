@@ -309,7 +309,3 @@ objContentKeyPolicyPlayReadyLicense = new ContentKeyPolicyPlayReadyLicense
     <xs:element name="ScmsRestriction" nillable="true" type="tns:ScmsRestriction" />
 </xs:schema>
 ```
-
-## Next steps
-
-Check out how to [protect with DRM](drm-protect-with-drm-tutorial.md)

@@ -145,8 +145,3 @@ For more information, see [Shaka player DRM protection documentation](https://sh
 
 
 [!INCLUDE [Warning on captions and encryption](./includes/warning-captions-encryption.md)]
-
-## Next steps
-
-* [Use the Azure Media Player](../azure-media-player/azure-media-player-overview.md)
-* [Quickstart: Encrypt content](drm-encrypt-content-how-to.md)

@@ -23,17 +23,3 @@ This topic links to a REST reference document for detailed description of [Job](
 ## Job error codes
 
 The following REST document gives detailed explanations about [Job error codes](/rest/api/media/jobs/get#joberrorcode).
-
-## Ask questions, give feedback, get updates
-
-Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
-
-## See also
-
-- [Streaming Endpoint error codes](stream-streaming-endpoint-error-codes-reference.md)
-- [Azure Media Services concepts](concepts-overview.md)
-- [Quotas and limits](limits-quotas-constraints-reference.md)
-
-## Next steps
-
-[Example: access ErrorCode and Message from ApiException with .NET](configure-connect-dotnet-howto.md#connect-to-the-net-client)

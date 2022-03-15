@@ -64,9 +64,3 @@ Media Services automatically detects when the key is changed. OPTIONAL: To test 
 ## Clean up resources
 
 If you're not going to continue to use the resources that you created and *you don't want to continue to be billed*, delete them.
-
-## Next steps
-
-Go to the next article to learn how to:
-> [!div class="nextstepaction"]
-> [Encode a remote file based on URL and stream the video with REST](stream-files-tutorial-with-rest.md)

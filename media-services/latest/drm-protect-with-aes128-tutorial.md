@@ -177,8 +177,3 @@ Check out the [Azure Media Services community](media-services-community.md) arti
 ## Additional notes
 
 * Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Protect with DRM](drm-protect-with-drm-tutorial.md)
