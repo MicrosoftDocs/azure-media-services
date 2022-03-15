@@ -736,28 +736,28 @@
     - name: Monitor diagnostic logs
       href: monitoring/media-services-diagnostic-logs-howto.md
       displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging    
-    - name: Security
-    items:
-      - name: Account security
-        items:
-        - name: Create a Media Services account
-          href: account-create-how-to.md
-        - name: Set account encryption with customer managed keys
-          href: account-set-account-encryption-customer-managed-key-how-to.md
-        - name: Show account encryption
-          href: account-show-encryption-how-to.md
-      - name: Network security
+  - name: Security
+      items:
+    - name: Account security
+      items:
+    - name: Create a Media Services account
+      href: account-create-how-to.md
+    - name: Set account encryption with customer managed keys
+      href: account-set-account-encryption-customer-managed-key-how-to.md
+    - name: Show account encryption
+      href: account-show-encryption-how-to.md
+    - name: Network security
         items:
         - name: Use a Private Link with a Streaming endpoint
           href: security-private-link-streaming-endpoint-how-to.md
         - name: How to use Private Link with and ARM template
           href: security-private-link-arm-how-to.md
           displayName: security, private link, links, firewall, storage account, storage, private, links, secure
-      - name: Secure streaming
-        items:
-        - name: Pass authentication tokens to key delivery service
-          href: security-pass-authentication-tokens-how-to.md
-          displayName: AMP, player, Azure Media Player, authentication, tokens, auth tokens, token auth, authentication tokens
+    - name: Secure streaming
+      items:
+      - name: Pass authentication tokens to key delivery service
+        href: security-pass-authentication-tokens-how-to.md
+        displayName: AMP, player, Azure Media Player, authentication, tokens, auth tokens, token auth, authentication tokens
   - name: Use media players
     items:
     - name: Azure Media Player full set up
