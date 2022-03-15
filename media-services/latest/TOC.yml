@@ -473,6 +473,8 @@
           href: account-set-account-encryption-customer-managed-key-how-to.md
         - name: Show account encryption
           href: account-show-encryption-how-to.md
+        - name: Sync storage keys
+          href: storage-sync-storage-keys-how-to.md
       - name: Assets
         items:
         - name: Create an asset
@@ -530,6 +532,8 @@
           href: asset-list-asset-filters-how-to.md
         - name: Delete an asset filter
           href: asset-delete-asset-filter-how-to.md
+        - name: Create dynamic manifest filters
+          href: filters-dynamic-manifest-cli-how-to.md  
       - name: Jobs
         items:
         - name: Create or start a job
@@ -578,6 +582,9 @@
           href: streaming-endpoint-stop-how-to.md
         - name: Update a streaming endpoint
           href: streaming-endpoint-update-how-to.md
+        - name: Manage streaming endpoints
+          href: stream-manage-streaming-endpoints-how-to.md
+          displayName: streaming endpoint, sample, how-to, how to, manage, management
       - name: Streaming locators
         items:
         - name: Create a streaming locator
@@ -613,38 +620,83 @@
           href: transform-update-transform-how-to.md
         - name: Delete a transform
           href: transform-delete-transform-how-to.md
-  - name: Manage storage
+        - name: Create a custom transform
+          href: transform-create-transform-how-to.md
+        - name: Add a custom output transform
+          href: transform-add-custom-transform-output-how-to.md
+      - name: Upload media
+        href: asset-upload-media-how-to.md
+        displayName: how to, how-to, tutorial, create asset, upload file, ingest file, upload, container, storage account, SAS, S3, URL, HTTP ingest, upload media
+  - name: .NET
     items:
-      - name: Manage multiple storage accounts
-        href: storage-managing-multiple-storage-accounts-how-to.md
-        displayName: how to, how-to, tutorial, storage accounts, multiple storage accounts
-      - name: Sync storage keys
-        href: storage-sync-storage-keys-how-to.md
-  - name: Upload media
-    items:
-    - name: Upload media
-      href: asset-upload-media-how-to.md
-      displayName: how to, how-to, tutorial, create asset, upload file, ingest file, upload, container, storage account, SAS, S3, URL, HTTP ingest, upload media
-  - name: Encode media with transforms and jobs
+    - name: Manage multiple storage accounts
+      href: storage-managing-multiple-storage-accounts-how-to.md
+      displayName: how to, how-to, tutorial, storage accounts, multiple storage accounts
+    - name: Stitch two or more video files
+      href: transform-stitch-how-to.md
+      displayName: stitch, edit, edit decision list, edl, stitching, combine, merge, clips, highlight
+    - name: Create an overlay transform
+      href: transform-create-overlay-how-to.md
+      displayName: overlay, video overlay, audio overlay, audio silence, remove audio, redact video, logo, lower third, bug, brand, branding, text overlay, graphic overlay, graphics, image overlay, image
+    - name: Create a copyAllBitrateNonInterleaved transform
+      href: transform-create-copyallbitratenoninterleaved-how-to.md
+      displayName: Copy, copy bitrates, 
+    - name: Use the content aware encoding preset
+      href: encode-content-aware-how-to.md
+      displayName: encode, encoder, transcode, custom preset, content aware, transform, CAE, scene based, shot based, qvbr, quality defined
+    - name: Create job input with a local file
+      href: job-input-from-local-file-how-to.md
+      displayName: upload, upload file, ingest file, local file, uploading, CLI
+    - name: Jobs with multiple transform outputs
+      href: job-multiple-transform-outputs-how-to.md
+      displayName: jobs, CLI, transform, multiple outputs, multi output
+    - name: HTTPS as job input
+      href: job-input-from-http-how-to.md
+    - name: Get content key policy
+      href: drm-get-content-key-policy-how-to.md   
+      displayName: content protection, DRM, content keys, content key policy, .NET, how to, how-to, sample, tutorial
+    - name: Offline FairPlay for iOS 
+      href: drm-offline-fairplay-for-ios-concept.md
+      displayName: Content protection, DRM, content keys, content key policy, iOS, FairPlay, Apple, how to, how-to, sample, tutorial. offline DRM, offline FairPlay, offline, disconnect, disconnected, airplane, train, bus, car
+    - name: Offline Widevine for Android
+      href: drm-offline-widevine-for-android.md
+      displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline Widevine, offline,disconnect, disconnected, airplane, train, bus, car
+    - name: Offline PlayReady for Windows 10
+      href: drm-offline-playready-streaming-for-windows-10.md 
+      displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline PlayReady, offline,disconnect, disconnected, airplane, train, bus, car
+    - name: Create filters
+      href: filters-dynamic-manifest-dotnet-how-to.md
+    - name: Create a streaming locator and build URLs
+      href: create-streaming-locator-build-url.md
+      displayName: streaming endpoint, sample, how-to, how to, manage, management
+    - name: Download results
+      href: job-download-results-how-to.md
+      displayName: download, progressive download, encoding job, encoding results, job results, download results, download output
+    - name: Signal descriptive audio
+      href: signal-descriptive-audio-howto.md
+      displayName: descriptive audio, accessibility, access, accessible
+  - name: REST
     items:
     - name: Create a basic audio transform
       href: transform-create-basic-audio-how-to.md
       displayName: Transform, speech to text, audio, transcription, captions, subtitles, translation, language, accessibility
+    - name: Copy videos without re-encoding
+      href: transform-create-copy-video-audio-how-to.md
+      displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding
+    - name: Create filters
+      href: filters-dynamic-manifest-rest-howto.md
+      displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
+  - name: Encode media with transforms and jobs
+    items:
     - name: Create thumbnail sprites
       href: transform-create-thumbnail-sprites-how-to.md
       displayName: thumbnail, thumbnails, encoder, encode, sprite, webVTT sprite, webVTT, web VTT, sprites, poster, VTT
-    - name: Stitch two or more video files
-      href: transform-stitch-how-to.md
-      displayName: stitch, edit, edit decision list, edl, stitching, combine, merge, clips, highlight
     - name: Subclip a video
       href: transform-subclip-video-how-to.md
       displayName: clip, highlight, clips, edit, edit decision list, edl, trim, head, tail, clipping, trimming, editing, subclipping, remove
     - name: Customize encoder transforms
       href: transform-custom-transform-how-to.md
       displayName: custom, preset, custom preset, custom encoding, user defined, customize, presets, transcode, encode, encoding, encoder, MES, Standard encoder, .NET, transform, custom transform
-    - name: Create an overlay transform
-      href: transform-create-overlay-how-to.md
-      displayName: overlay, video overlay, audio overlay, audio silence, remove audio, redact video, logo, lower third, bug, brand, branding, text overlay, graphic overlay, graphics, image overlay, image
     - name: Generate thumbnails
       href: transform-generate-thumbnails-how-to.md
       displayName: thumbnail, generate thumbnail, thumbnail job, job, image, jpg, png, bmp, sprite, VTT, WebVTT, best frame, automatic thumbnail, poster, poster frame, step, percentage
@@ -654,30 +706,6 @@
     - name: Generate thumbnails
       href: transform-generate-thumbnails-how-to.md
       displayName: thumbnail, generate thumbnail, thumbnail job, job, image, jpg, png, bmp, sprite, VTT, WebVTT, best frame, automatic thumbnail, poster, poster frame, step, percentage
-    - name: Create a copyAllBitrateNonInterleaved transform
-      href: transform-create-copyallbitratenoninterleaved-how-to.md
-      displayName: Copy, copy bitrates, copyAllBitrateNonInterleaved
-    - name: Copy videos without re-encoding
-      href: transform-create-copy-video-audio-how-to.md
-      displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding
-    - name: Use the content aware encoding preset
-      href: encode-content-aware-how-to.md
-      displayName: encode, encoder, transcode, custom preset, content aware, transform, CAE, scene based, shot based, qvbr, quality defined
-    - name: Add a custom output transform
-      href: transform-add-custom-transform-output-how-to.md
-    - name: Create a custom transform
-      href: transform-create-transform-how-to.md
-  - name: Create jobs
-    items:
-    - name: Create job input with a local file
-      displayName: upload, upload file, ingest file, local file, uploading, CLI
-      href: job-input-from-local-file-how-to.md
-    - name: Jobs with multiple transform outputs
-      href: job-multiple-transform-outputs-how-to.md
-      displayName: jobs, CLI, transform, multiple outputs, multi output
-    - name: HTTPS as job input
-      href: job-input-from-http-how-to.md
-      displayName: ingest, URL, remote URL, remote ingest, SAS, SAS URL, S3, S3 token, ingest from HTTP, JobInputHttp, blob, storage, storage account, blob file, ingest blob file, upload blob, copy blob, http, https    
   - name: Stream live
     items:
     - name: Live event with portal and Wirecast
@@ -707,47 +735,8 @@
       displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
     - name: Monitor diagnostic logs
       href: monitoring/media-services-diagnostic-logs-howto.md
-      displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
-  - name: Protect content
-    items:
-    - name: Get content key policy
-      href: drm-get-content-key-policy-how-to.md   
-      displayName: content protection, DRM, content keys, content key policy, .NET, how to, how-to, sample, tutorial, 
-    - name: Offline FairPlay for iOS 
-      href: drm-offline-fairplay-for-ios-concept.md
-      displayName: Content protection, DRM, content keys, content key policy, iOS, FairPlay, Apple, how to, how-to, sample, tutorial. offline DRM, offline FairPlay, offline, disconnect, disconnected, airplane, train, bus, car
-    - name: Offline Widevine for Android
-      href: drm-offline-widevine-for-android.md
-      displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline Widevine, offline,disconnect, disconnected, airplane, train, bus, car
-    - name: Offline PlayReady for Windows 10
-      href: drm-offline-playready-streaming-for-windows-10.md 
-      displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline PlayReady, offline,disconnect, disconnected, airplane, train, bus, car
-  - name: Create filters
-    items:
-    - name: With .NET
-      href: filters-dynamic-manifest-dotnet-how-to.md
-      displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
-    - name: With REST
-      href: filters-dynamic-manifest-rest-howto.md
-      displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
-    - name: With CLI
-      href: filters-dynamic-manifest-cli-how-to.md  
-      displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
-  - name: Deliver content
-    items:
-    - name: Manage streaming endpoints
-      href: stream-manage-streaming-endpoints-how-to.md
-      displayName: streaming endpoint, sample, how-to, how to, manage, management
-    - name: Create a streaming locator and build URLs
-      href: create-streaming-locator-build-url.md
-      displayName: streaming endpoint, sample, how-to, how to, manage, management
-    - name: Download results
-      href: job-download-results-how-to.md
-      displayName: download, progressive download, encoding job, encoding results, job results, download results, download output
-    - name: Signal descriptive audio
-      href: signal-descriptive-audio-howto.md
-      displayName: descriptive audio, accessibility, access, accessible
-  - name: Security
+      displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging    
+    - name: Security
     items:
       - name: Account security
         items:
