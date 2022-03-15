@@ -102,6 +102,9 @@
     - name: Content protection with Azure AD
       href: architecture-azure-ad-content-protection.md
       displayName: SDK, Tutorial, .NET, sample, AAD, Active Directory, protect, content protection, DRM, encrypt, PlayReady, Widevine, FairPlay, encrypt, CENC, CBCS
+    - name: Use Azure Functions .NET
+      href: integrate-azure-functions-dotnet-how-to.md
+      displayName: Azure Functions, Functions, functions app, lambda, serverless, serverless functions, integrations, .NET
   - name: REST
     items:
     - name: Enable trusted storage
@@ -647,13 +650,6 @@
     - name: Offline PlayReady for Windows 10
       href: drm-offline-playready-streaming-for-windows-10.md 
       displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline PlayReady, offline,disconnect, disconnected, airplane, train, bus, car
-  - name: Use Azure Functions
-    items:
-    - name: With .NET
-      items:
-      - name: Use Azure Functions .NET
-        href: integrate-azure-functions-dotnet-how-to.md
-        displayName: Azure Functions, Functions, functions app, lambda, serverless, serverless functions, integrations, .NET
   - name: Create filters
     items:
     - name: Create an account filter
@@ -666,6 +662,14 @@
       href: account-filter-show-how-to.md
     - name: Update an account filter
       href: account-filter-update-how-to.md
+    - name: Create an asset filter
+      href: asset-create-asset-filter-how-to.md
+    - name: Update an asset filter
+      href: asset-update-asset-filter-how-to.md
+    - name: List asset filters
+      href: asset-list-asset-filters-how-to.md
+    - name: Delete an asset filter
+      href: asset-delete-asset-filter-how-to.md
     - name: With .NET
       href: filters-dynamic-manifest-dotnet-how-to.md
       displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
