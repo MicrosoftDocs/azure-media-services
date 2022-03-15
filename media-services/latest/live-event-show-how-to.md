@@ -1,6 +1,6 @@
 ---
 title: Show or get the details of a live event
-description: This article shows how to delete a live event.
+description: This article shows how to show or get the details of a live event.
 services: media-services
 author: IngridAtMicrosoft
 manager: femila 

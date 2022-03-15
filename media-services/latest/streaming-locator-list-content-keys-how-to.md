@@ -1,6 +1,6 @@
 ---
 title: List the content keys of a streaming locator
-description: This article shows how to show the details of a streaming locator.
+description: This article shows how to list the content keys of a streaming locator.
 services: media-services
 author: IngridAtMicrosoft
 manager: femila 

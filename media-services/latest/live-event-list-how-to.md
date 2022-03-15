@@ -1,6 +1,6 @@
 ---
 title: List live events
-description: This article shows how to create a live event.
+description: This article shows how to list the live events in a Media Services account.
 services: media-services
 author: IngridAtMicrosoft
 manager: femila 
