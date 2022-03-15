@@ -1,6 +1,6 @@
 ---
 title: Media Services v3 offline FairPlay Streaming for iOS
-description: This topic gives an overview and shows how to use Azure Media Services v3 to dynamically encrypt your HTTP Live Streaming (HLS) content with Apple FairPlay in offline mode.
+description: This article gives an overview and shows how to use Azure Media Services v3 to dynamically encrypt your HTTP Live Streaming (HLS) content with Apple FairPlay in offline mode.
 author: willzhan
 manager: femila
 ms.service: media-services
@@ -48,10 +48,10 @@ Before you implement offline DRM for FairPlay on an iOS 10+ device:
 
     - The FPS Server SDK, which contains the Key Security Module (KSM), client samples, a specification, and a set of test vectors.
     - The FPS Deployment Pack, which contains the D function specification, along with instructions about how to generate the FPS Certificate, customer-specific private key, and Application Secret Key. Apple issues the FPS Deployment Pack only to licensed content providers.
-    - Note that the .der/.cer certificate files you receive as part of the generation of the FPS certificate contain a public key and can be made available to the client.  The private key (.pfx) should be secured in Azure Key Vault or another secure location. 
+    - The .der/.cer certificate files you receive as part of the generation of the FPS certificate contain a public key and can be made available to the client.  The private key (.pfx) should be secured in Azure Key Vault or another secure location. 
 * Clone https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials.git. 
 
-    You will need to modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add FairPlay configurations.  
+    You'll need to modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add FairPlay configurations.  
 
 ## [.NET](#tab/net/)
 
