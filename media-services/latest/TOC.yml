@@ -737,7 +737,7 @@
       href: monitoring/media-services-diagnostic-logs-howto.md
       displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging    
   - name: Security
-      items:
+    items:
     - name: Account security
       items:
       - name: Create a Media Services account
