@@ -21,7 +21,7 @@ This article shows you how to add storage to a Media Services account.
 
 You can use the following methods to add storage to a Media Services account.
 
-## CLI
+## [CLI](#tab/cli/)
 
 [!INCLUDE [Show the media services account encryption](./includes/task-add-account-storage-cli.md)]
 

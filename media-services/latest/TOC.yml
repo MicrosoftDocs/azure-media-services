@@ -457,74 +457,246 @@
     - name: Reset account credentials
       href: account-reset-account-credentials.md   
       displayName: reset, account credentials, remove credentials, security, restore, remove, credentials 
-  - name: Manage accounts and storage
+  - name: Code snippets
     items:
-      - name: Add storage to an account
-        href: account-add-account-storage-how-to.md
-      - name: Remove storage from an account
-        href: account-remove-account-storage-how-to.md
-      - name: List assets in an account
-        href: account-add-account-storage-how-to.md
-      - name: List transforms in an account
-        href: account-add-account-storage-how-to.md
-      - name: Set account encryption with customer managed keys
-        href: account-set-account-encryption-customer-managed-key-how-to.md
-      - name: Show account encryption
-        href: account-show-encryption-how-to.md
-      - name: Manage multiple storage accounts
-        href: storage-managing-multiple-storage-accounts-how-to.md
-        displayName: how to, how-to, tutorial, storage accounts, multiple storage accounts
-      - name: Sync storage keys
-        href: storage-sync-storage-keys-how-to.md
-  - name: Manage assets
+      - name: Accounts and Storage
+        items:
+        - name: Add storage to an account
+          href: account-add-account-storage-how-to.md
+        - name: Remove storage from an account
+          href: account-remove-account-storage-how-to.md
+        - name: List assets in an account
+          href: account-list-assets-how-to.md
+        - name: List transforms in an account
+          href: account-list-transforms-how-to.md
+        - name: Set account encryption with customer managed keys
+          href: account-set-account-encryption-customer-managed-key-how-to.md
+        - name: Show account encryption
+          href: account-show-encryption-how-to.md
+        - name: Sync storage keys
+          href: storage-sync-storage-keys-how-to.md
+      - name: Assets
+        items:
+        - name: Create an asset
+          href: asset-create-asset-how-to.md
+          displayName: how to, how-to, tutorial, create asset, upload file, ingest file, upload, container, storage account, SAS, S3, URL, HTTP ingest
+        - name: Delete an asset
+          href: asset-delete-asset-how-to.md
+        - name: Get asset SAS URLs
+          href: asset-get-asset-sas-urls-how-to.md
+        - name: Get asset encryption key
+          href: asset-get-encryption-key-how-to.md
+        - name: Create an asset filter
+          href: asset-create-asset-filter-how-to.md
+        - name: Update an asset filter
+          href: asset-update-asset-filter-how-to.md
+        - name: List asset filters
+          href: asset-list-asset-filters-how-to.md
+        - name: Delete an asset filter
+          href: asset-delete-asset-filter-how-to.md
+        - name: List asset streaming locators
+          href: asset-list-asset-streaming-locators-how-to.md
+      - name: Content key policies
+        items:
+        - name: Create a content key policy
+          href: drm-create-content-key-policy-how-to.md
+        - name: List content key policies
+          href: drm-list-content-key-policy-how-to.md
+        - name: Update a content key policy
+          href: drm-update-content-key-policy-how-to.md
+        - name: Delete a content key policy
+          href: drm-delete-content-key-policy-how-to.md
+        - name: Add an option to a content key policy
+          href: drm-add-option-content-key-policy-how-to.md
+        - name: Update an option in a content key policy
+          href: drm-update-option-content-key-policy-how-to.md
+        - name: Remove and option from a content key policy
+          href: drm-remove-option-content-key-policy-how-to.md
+      - name: Filters
+        items:
+        - name: Create an account filter
+          href: account-filter-create-how-to.md
+        - name: Delete an account filter
+          href: account-filter-delete-how-to.md
+        - name: List account filters
+          href: account-filter-list-how-to.md
+        - name: Show or get the details of an account filter
+          href: account-filter-show-how-to.md
+        - name: Update an account filter
+          href: account-filter-update-how-to.md
+        - name: Create an asset filter
+          href: asset-create-asset-filter-how-to.md
+        - name: Update an asset filter
+          href: asset-update-asset-filter-how-to.md
+        - name: List asset filters
+          href: asset-list-asset-filters-how-to.md
+        - name: Delete an asset filter
+          href: asset-delete-asset-filter-how-to.md
+        - name: Create dynamic manifest filters
+          href: filters-dynamic-manifest-cli-how-to.md  
+      - name: Jobs
+        items:
+        - name: Create or start a job
+          href: job-create-how-to.md
+        - name: List jobs
+          href: job-list-how-to.md
+        - name: Show or get the details of a job
+          href: job-show-how-to.md
+        - name: Cancel a job
+          href: job-cancel-how-to.md
+        - name: Update a job
+          href: job-update-how-to.md
+        - name: Delete a job
+          href: job-delete-how-to.md
+      - name: Live event
+        items:
+        - name: Create a live event
+          href: live-event-create-how-to.md
+        - name: Allocate an event in standby mode
+          href: live-event-standby-how-to.md
+        - name: Delete a live event
+          href: live-event-delete-how-to.md
+        - name: List a live events
+          href: live-event-list-how-to.md
+        - name: Reset a live event
+          href: live-event-reset-how-to.md
+        - name: Show the details of a live event
+          href: live-event-show-how-to.md
+        - name: Stop a live event
+          href: live-event-stop-how-to.md
+        - name: Wait until a condition is met
+          href: live-event-wait-how-to.md
+      - name: Streaming endpoints
+        items:
+        - name: Create a streaming endpoint
+          href: streaming-endpoint-create-how-to.md
+        - name: Delete a streaming endpoint
+          href: streaming-endpoint-delete-how-to.md
+        - name: List streaming endpoints
+          href: streaming-endpoint-list-how-to.md
+        - name: Show or get the details of a streaming endpoint
+          href: streaming-endpoint-show-how-to.md
+        - name: Start a streaming endpoint
+          href: streaming-endpoint-start-how-to.md
+        - name: Stop a streaming endpoint
+          href: streaming-endpoint-stop-how-to.md
+        - name: Update a streaming endpoint
+          href: streaming-endpoint-update-how-to.md
+        - name: Manage streaming endpoints
+          href: stream-manage-streaming-endpoints-how-to.md
+          displayName: streaming endpoint, sample, how-to, how to, manage, management
+      - name: Streaming locators
+        items:
+        - name: Create a streaming locator
+          href: streaming-locator-create-how-to.md
+        - name: Show the details of a streaming locator
+          href: streaming-locator-show-how-to.md
+        - name: List streaming locators
+          href: streaming-locator-list-how-to.md
+        - name: List streaming locator paths
+          href: streaming-locator-list-paths-how-to.md
+        - name: List streaming locator content keys
+          href: streaming-locator-list-content-keys-how-to.md
+        - name: Delete a streaming locator
+          href: streaming-locator-delete-how-to.md
+      - name: Streaming policies
+        items:
+        - name: Create a streaming policy
+          href: streaming-policy-create-how-to.md
+        - name: Delete a streaming policy
+          href: streaming-policy-delete-how-to.md
+        - name: List streaming policies
+          href: streaming-policy-list-how-to.md
+        - name: Show or get the details of a streaming policy
+          href: streaming-policy-show-how-to.md
+      - name: Transforms
+        items:
+        - name: Create a transform
+          href: transform-create-transform-how-to.md
+          displayName: Transform, encoding, encode, encoder, thumbnail, H264, HEVC, MP4, TS, MOV, MXF, Content aware encoding, ABR, adaptive bitrate, custom encoding, custom job, job, preset
+        - name: List transforms
+          href: account-list-transforms-how-to.md
+        - name: Update a transform
+          href: transform-update-transform-how-to.md
+        - name: Delete a transform
+          href: transform-delete-transform-how-to.md
+        - name: Create a custom transform
+          href: transform-create-transform-how-to.md
+        - name: Add a custom output transform
+          href: transform-add-custom-transform-output-how-to.md
+      - name: Upload media
+        href: asset-upload-media-how-to.md
+        displayName: how to, how-to, tutorial, create asset, upload file, ingest file, upload, container, storage account, SAS, S3, URL, HTTP ingest, upload media
+  - name: .NET
     items:
-    - name: Create an asset
-      href: asset-create-asset-how-to.md
-      displayName: how to, how-to, tutorial, create asset, upload file, ingest file, upload, container, storage account, SAS, S3, URL, HTTP ingest
-    - name: Delete an asset
-      href: asset-delete-asset-how-to.md
-    - name: Get asset SAS URLs
-      href: asset-get-asset-sas-urls-how-to.md
-    - name: Get asset encryption key
-      href: asset-get-encryption-key-how-to.md
-    - name: Create an asset filter
-      href: asset-create-asset-filter-how-to.md
-    - name: Update an asset filter
-      href: asset-update-asset-filter-how-to.md
-    - name: List asset filters
-      href: asset-list-asset-filters-how-to.md
-    - name: Delete an asset filter
-      href: asset-delete-asset-filter-how-to.md
-    - name: List asset streaming locators
-      href: asset-list-asset-streaming-locators-how-to.md
-  - name: Upload media
-    items:
-    - name: Upload media
-      href: asset-upload-media-how-to.md
-      displayName: how to, how-to, tutorial, create asset, upload file, ingest file, upload, container, storage account, SAS, S3, URL, HTTP ingest, upload media
-  - name: Encode media
-    items:
-    - name: Create a transform
-      href: transform-create-transform-how-to.md
-      displayName: Transform, encoding, encode, encoder, thumbnail, H264, HEVC, MP4, TS, MOV, MXF, Content aware encoding, ABR, adaptive bitrate, custom encoding, custom job, job, preset
-    - name: Create a basic audio transform
-      href: transform-create-basic-audio-how-to.md
-      displayName: Transform, speech to text, audio, transcription, captions, subtitles, translation, language, accessibility
-    - name: Create thumbnail sprites
-      href: transform-create-thumbnail-sprites-how-to.md
-      displayName: thumbnail, thumbnails, encoder, encode, sprite, webVTT sprite, webVTT, web VTT, sprites, poster, VTT
+    - name: Manage multiple storage accounts
+      href: storage-managing-multiple-storage-accounts-how-to.md
+      displayName: how to, how-to, tutorial, storage accounts, multiple storage accounts
     - name: Stitch two or more video files
       href: transform-stitch-how-to.md
       displayName: stitch, edit, edit decision list, edl, stitching, combine, merge, clips, highlight
+    - name: Create an overlay transform
+      href: transform-create-overlay-how-to.md
+      displayName: overlay, video overlay, audio overlay, audio silence, remove audio, redact video, logo, lower third, bug, brand, branding, text overlay, graphic overlay, graphics, image overlay, image
+    - name: Create a copyAllBitrateNonInterleaved transform
+      href: transform-create-copyallbitratenoninterleaved-how-to.md
+      displayName: Copy, copy bitrates, 
+    - name: Use the content aware encoding preset
+      href: encode-content-aware-how-to.md
+      displayName: encode, encoder, transcode, custom preset, content aware, transform, CAE, scene based, shot based, qvbr, quality defined
+    - name: Create job input with a local file
+      href: job-input-from-local-file-how-to.md
+      displayName: upload, upload file, ingest file, local file, uploading, CLI
+    - name: Jobs with multiple transform outputs
+      href: job-multiple-transform-outputs-how-to.md
+      displayName: jobs, CLI, transform, multiple outputs, multi output
+    - name: HTTPS as job input
+      href: job-input-from-http-how-to.md
+    - name: Get content key policy
+      href: drm-get-content-key-policy-how-to.md   
+      displayName: content protection, DRM, content keys, content key policy, .NET, how to, how-to, sample, tutorial
+    - name: Offline FairPlay for iOS 
+      href: drm-offline-fairplay-for-ios-concept.md
+      displayName: Content protection, DRM, content keys, content key policy, iOS, FairPlay, Apple, how to, how-to, sample, tutorial. offline DRM, offline FairPlay, offline, disconnect, disconnected, airplane, train, bus, car
+    - name: Offline Widevine for Android
+      href: drm-offline-widevine-for-android.md
+      displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline Widevine, offline,disconnect, disconnected, airplane, train, bus, car
+    - name: Offline PlayReady for Windows 10
+      href: drm-offline-playready-streaming-for-windows-10.md 
+      displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline PlayReady, offline,disconnect, disconnected, airplane, train, bus, car
+    - name: Create filters
+      href: filters-dynamic-manifest-dotnet-how-to.md
+    - name: Create a streaming locator and build URLs
+      href: create-streaming-locator-build-url.md
+      displayName: streaming endpoint, sample, how-to, how to, manage, management
+    - name: Download results
+      href: job-download-results-how-to.md
+      displayName: download, progressive download, encoding job, encoding results, job results, download results, download output
+    - name: Signal descriptive audio
+      href: signal-descriptive-audio-howto.md
+      displayName: descriptive audio, accessibility, access, accessible
+  - name: REST
+    items:
+    - name: Create a basic audio transform
+      href: transform-create-basic-audio-how-to.md
+      displayName: Transform, speech to text, audio, transcription, captions, subtitles, translation, language, accessibility
+    - name: Copy videos without re-encoding
+      href: transform-create-copy-video-audio-how-to.md
+      displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding
+    - name: Create filters
+      href: filters-dynamic-manifest-rest-howto.md
+      displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
+  - name: Encode media with transforms and jobs
+    items:
+    - name: Create thumbnail sprites
+      href: transform-create-thumbnail-sprites-how-to.md
+      displayName: thumbnail, thumbnails, encoder, encode, sprite, webVTT sprite, webVTT, web VTT, sprites, poster, VTT
     - name: Subclip a video
       href: transform-subclip-video-how-to.md
       displayName: clip, highlight, clips, edit, edit decision list, edl, trim, head, tail, clipping, trimming, editing, subclipping, remove
     - name: Customize encoder transforms
       href: transform-custom-transform-how-to.md
       displayName: custom, preset, custom preset, custom encoding, user defined, customize, presets, transcode, encode, encoding, encoder, MES, Standard encoder, .NET, transform, custom transform
-    - name: Create an overlay transform
-      href: transform-create-overlay-how-to.md
-      displayName: overlay, video overlay, audio overlay, audio silence, remove audio, redact video, logo, lower third, bug, brand, branding, text overlay, graphic overlay, graphics, image overlay, image
     - name: Generate thumbnails
       href: transform-generate-thumbnails-how-to.md
       displayName: thumbnail, generate thumbnail, thumbnail job, job, image, jpg, png, bmp, sprite, VTT, WebVTT, best frame, automatic thumbnail, poster, poster frame, step, percentage
@@ -534,66 +706,8 @@
     - name: Generate thumbnails
       href: transform-generate-thumbnails-how-to.md
       displayName: thumbnail, generate thumbnail, thumbnail job, job, image, jpg, png, bmp, sprite, VTT, WebVTT, best frame, automatic thumbnail, poster, poster frame, step, percentage
-    - name: Create a copyAllBitrateNonInterleaved transform
-      href: transform-create-copyallbitratenoninterleaved-how-to.md
-      displayName: Copy, copy bitrates, copyAllBitrateNonInterleaved
-    - name: Copy videos without re-encoding
-      href: transform-create-copy-video-audio-how-to.md
-      displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding
-    - name: Use the content aware encoding preset
-      href: encode-content-aware-how-to.md
-      displayName: encode, encoder, transcode, custom preset, content aware, transform, CAE, scene based, shot based, qvbr, quality defined
-    - name: Add a custom output transform
-      href: transform-add-custom-transform-output-how-to.md
-    - name: Create a custom transform
-      href: transform-create-transform-how-to.md
-    - name: List transforms
-      href: account-list-transforms-how-to.md
-    - name: Update a transform
-      href: transform-update-transform-how-to.md
-    - name: Delete a transform
-      href: transform-delete-transform-how-to.md
-  - name: Create jobs
-    items:
-    - name: Create or start a job
-      href: job-create-how-to.md
-    - name: List jobs
-      href: job-list-how-to.md
-    - name: Show or get the details of a job
-      href: job-show-how-to.md
-    - name: Cancel a job
-      href: job-cancel-how-to.md
-    - name: Update a job
-      href: job-update-how-to.md
-    - name: Delete a job
-      href: job-delete-how-to.md
-    - name: Create job input with a local file
-      displayName: upload, upload file, ingest file, local file, uploading, CLI
-      href: job-input-from-local-file-how-to.md
-    - name: Jobs with multiple transform outputs
-      href: job-multiple-transform-outputs-how-to.md
-      displayName: jobs, CLI, transform, multiple outputs, multi output
-    - name: HTTPS as job input
-      href: job-input-from-http-how-to.md
-      displayName: ingest, URL, remote URL, remote ingest, SAS, SAS URL, S3, S3 token, ingest from HTTP, JobInputHttp, blob, storage, storage account, blob file, ingest blob file, upload blob, copy blob, http, https    
   - name: Stream live
     items:
-    - name: Create a live event
-      href: live-event-create-how-to.md
-    - name: Allocate an event in standby mode
-      href: live-event-standby-how-to.md
-    - name: Delete a live event
-      href: live-event-delete-how-to.md
-    - name: List a live events
-      href: live-event-list-how-to.md
-    - name: Reset a live event
-      href: live-event-reset-how-to.md
-    - name: Show the details of a live event
-      href: live-event-show-how-to.md
-    - name: Stop a live event
-      href: live-event-stop-how-to.md
-    - name: Wait until a condition is met
-      href: live-event-wait-how-to.md
     - name: Live event with portal and Wirecast
       href: live-event-wirecast-quickstart.md    
       displayName: Wirecast, Telestream, streaming, stream live, RTMP, RTMPS, ingest, streamkey, stream key, live event, live streaming, live
@@ -621,134 +735,29 @@
       displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
     - name: Monitor diagnostic logs
       href: monitoring/media-services-diagnostic-logs-howto.md
-      displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
-  - name: Protect content
-    items:
-    - name: Create a content key policy
-      href: drm-create-content-key-policy-how-to.md
-    - name: List content key policies
-      href: drm-list-content-key-policy-how-to.md
-    - name: Update a content key policy
-      href: drm-update-content-key-policy-how-to.md
-    - name: Delete a content key policy
-      href: drm-delete-content-key-policy-how-to.md
-    - name: Add an option to a content key policy
-      href: drm-add-option-content-key-policy-how-to.md
-    - name: Update an option in a content key policy
-      href: drm-update-option-content-key-policy-how-to.md
-    - name: Remove and option from a content key policy
-      href: drm-remove-option-content-key-policy-how-to.md
-    - name: Get content key policy
-      href: drm-get-content-key-policy-how-to.md   
-      displayName: content protection, DRM, content keys, content key policy, .NET, how to, how-to, sample, tutorial, 
-    - name: Offline FairPlay for iOS 
-      href: drm-offline-fairplay-for-ios-concept.md
-      displayName: Content protection, DRM, content keys, content key policy, iOS, FairPlay, Apple, how to, how-to, sample, tutorial. offline DRM, offline FairPlay, offline, disconnect, disconnected, airplane, train, bus, car
-    - name: Offline Widevine for Android
-      href: drm-offline-widevine-for-android.md
-      displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline Widevine, offline,disconnect, disconnected, airplane, train, bus, car
-    - name: Offline PlayReady for Windows 10
-      href: drm-offline-playready-streaming-for-windows-10.md 
-      displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline PlayReady, offline,disconnect, disconnected, airplane, train, bus, car
-  - name: Create filters
-    items:
-    - name: Create an account filter
-      href: account-filter-create-how-to.md
-    - name: Delete an account filter
-      href: account-filter-delete-how-to.md
-    - name: List account filters
-      href: account-filter-list-how-to.md
-    - name: Show or get the details of an account filter
-      href: account-filter-show-how-to.md
-    - name: Update an account filter
-      href: account-filter-update-how-to.md
-    - name: Create an asset filter
-      href: asset-create-asset-filter-how-to.md
-    - name: Update an asset filter
-      href: asset-update-asset-filter-how-to.md
-    - name: List asset filters
-      href: asset-list-asset-filters-how-to.md
-    - name: Delete an asset filter
-      href: asset-delete-asset-filter-how-to.md
-    - name: With .NET
-      href: filters-dynamic-manifest-dotnet-how-to.md
-      displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
-    - name: With REST
-      href: filters-dynamic-manifest-rest-howto.md
-      displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
-    - name: With CLI
-      href: filters-dynamic-manifest-cli-how-to.md  
-      displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
-  - name: Deliver content
-    items:
-    - name: Create a streaming endpoint
-      href: streaming-endpoint-create-how-to.md
-    - name: Delete a streaming endpoint
-      href: streaming-endpoint-delete-how-to.md
-    - name: List streaming endpoints
-      href: streaming-endpoint-list-how-to.md
-    - name: Show or get the details of a streaming endpoint
-      href: streaming-endpoint-show-how-to.md
-    - name: Start a streaming endpoint
-      href: streaming-endpoint-start-how-to.md
-    - name: Stop a streaming endpoint
-      href: streaming-endpoint-stop-how-to.md
-    - name: Update a streaming endpoint
-      href: streaming-endpoint-update-how-to.md
-    - name: Create a streaming locator
-      href: streaming-locator-create-how-to.md
-    - name: Show the details of a streaming locator
-      href: streaming-locator-show-how-to.md
-    - name: List streaming locators
-      href: streaming-locator-list-how-to.md
-    - name: List streaming locator paths
-      href: streaming-locator-list-paths-how-to.md
-    - name: List streaming locator content keys
-      href: streaming-locator-list-content-keys-how-to.md
-    - name: Delete a streaming locator
-      href: streaming-locator-delete-how-to.md
-    - name: Create a streaming policy
-      href: streaming-policy-create-how-to.md
-    - name: Delete a streaming policy
-      href: streaming-policy-delete-how-to.md
-    - name: List streaming policies
-      href: streaming-policy-list-how-to.md
-    - name: Show or get the details of a streaming policy
-      href: streaming-policy-show-how-to.md
-    - name: Manage streaming endpoints
-      href: stream-manage-streaming-endpoints-how-to.md
-      displayName: streaming endpoint, sample, how-to, how to, manage, management
-    - name: Create a streaming locator and build URLs
-      href: create-streaming-locator-build-url.md
-      displayName: streaming endpoint, sample, how-to, how to, manage, management
-    - name: Download results
-      href: job-download-results-how-to.md
-      displayName: download, progressive download, encoding job, encoding results, job results, download results, download output
-    - name: Signal descriptive audio
-      href: signal-descriptive-audio-howto.md
-      displayName: descriptive audio, accessibility, access, accessible
+      displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging    
   - name: Security
     items:
-      - name: Account security
-        items:
-        - name: Create a Media Services account
-          href: account-create-how-to.md
-        - name: Set account encryption with customer managed keys
-          href: account-set-account-encryption-customer-managed-key-how-to.md
-        - name: Show account encryption
-          href: account-show-encryption-how-to.md
-      - name: Network security
-        items:
-        - name: Use a Private Link with a Streaming endpoint
-          href: security-private-link-streaming-endpoint-how-to.md
-        - name: How to use Private Link with and ARM template
-          href: security-private-link-arm-how-to.md
-          displayName: security, private link, links, firewall, storage account, storage, private, links, secure
-      - name: Secure streaming
-        items:
-        - name: Pass authentication tokens to key delivery service
-          href: security-pass-authentication-tokens-how-to.md
-          displayName: AMP, player, Azure Media Player, authentication, tokens, auth tokens, token auth, authentication tokens
+    - name: Account security
+      items:
+      - name: Create a Media Services account
+        href: account-create-how-to.md
+      - name: Set account encryption with customer managed keys
+        href: account-set-account-encryption-customer-managed-key-how-to.md
+      - name: Show account encryption
+        href: account-show-encryption-how-to.md
+    - name: Network security
+      items:
+      - name: Use a Private Link with a Streaming endpoint
+        href: security-private-link-streaming-endpoint-how-to.md
+      - name: How to use Private Link with and ARM template
+        href: security-private-link-arm-how-to.md
+        displayName: security, private link, links, firewall, storage account, storage, private, links, secure
+    - name: Secure streaming
+      items:
+      - name: Pass authentication tokens to key delivery service
+        href: security-pass-authentication-tokens-how-to.md
+        displayName: AMP, player, Azure Media Player, authentication, tokens, auth tokens, token auth, authentication tokens
   - name: Use media players
     items:
     - name: Azure Media Player full set up
