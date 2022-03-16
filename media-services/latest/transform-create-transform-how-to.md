@@ -1,20 +1,11 @@
 ---
-title: Azure CLI Script Example - Create a transform 
-description: Transforms describe a simple workflow of tasks for processing your video or audio files (often referred to as a "recipe"). The Azure CLI script in this article shows how to create a transform. 
-services: media-services
-documentationcenter: ''
+title: Azure CLI Script Example - Create a transform
+description: Transforms describe a simple workflow of tasks for processing your video or audio files (often referred to as a recipe). The Azure CLI script in this article shows how to create a transform.
 author: IngridAtMicrosoft
-manager: femila
-editor: 
-
-ms.assetid:
 ms.service: media-services
 ms.topic: how-to
-ms.tgt_pltfrm: multiple
-ms.workload: na
-ms.date: 11/18/2020
-ms.author: inhenkel 
-ms.custom: devx-track-azurecli
+ms.date: 3/16/2022
+ms.author: inhenkel
 ---
 
 

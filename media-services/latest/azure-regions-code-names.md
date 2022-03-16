@@ -1,12 +1,10 @@
 ---
 title: Clouds and regions for Azure Media Services v3
 description: This article talks about the URLs used for endpoints and code for regions.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: reference
-ms.date: 10/28/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

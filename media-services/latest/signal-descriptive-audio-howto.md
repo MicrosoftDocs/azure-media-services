@@ -1,12 +1,10 @@
 ---
 title: Signal descriptive audio tracks with Media Services v3
 description: Follow the steps of this tutorial to upload a file, encode the video, add descriptive audio tracks, and stream your content with Media Services v3.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/09/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

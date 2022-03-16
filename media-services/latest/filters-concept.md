@@ -1,18 +1,11 @@
 ---
-title: Defining filters in Azure Media Services 
+title: Defining filters in Azure Media Services
 description: This topic describes how to create filters so your client can use them to stream specific sections of a stream. Media Services creates dynamic manifests to achieve this selective streaming.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 # Filters
 

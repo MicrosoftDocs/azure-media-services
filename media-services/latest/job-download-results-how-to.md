@@ -1,11 +1,10 @@
 ---
-title: Download the results of a job - Azure Media Services 
+title: Download the results of a job - Azure Media Services
 description: This article demonstrates how to download the results of a job.
 author: IngridAtMicrosoft
-manager: femila
-ms.service: media-services 
+ms.service: media-services
 ms.topic: how-to
-ms.date: 03/09/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

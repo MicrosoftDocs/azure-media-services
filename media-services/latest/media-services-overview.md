@@ -1,15 +1,11 @@
 ---
 title: Azure Media Services v3 overview
-: Azure Media Services
 description: A high-level overview of Azure Media Services v3 with links to quickstarts, tutorials, and code samples.
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
-
-#Customer intent: As a developer or a content provider, I want to encode, stream (on demand or live), analyze my media content so that my customers can: view the content on a wide variety of browsers and devices, gain valuable insights from recorded content.
 ---
 
 # Azure Media Services v3 overview

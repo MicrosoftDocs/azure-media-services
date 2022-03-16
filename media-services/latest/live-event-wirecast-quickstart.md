@@ -1,12 +1,11 @@
 ---
 title: Create an Azure Media Services live stream
 description: Learn how to create an Azure Media Services live stream by using the portal and Wirecast
-services: media-services
 ms.service: media-services
 ms.topic: quickstart
 ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.custom: mode-other
 ---
 

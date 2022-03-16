@@ -1,21 +1,11 @@
 ---
 title: Encrypt video with AES-128
-: Azure Media Services
 description: Learn how to encrypt video with AES 128-bit encryption and how to use the key delivery service in Azure Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
 ms.topic: tutorial
-ms.date: 05/25/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 # Tutorial: Encrypt video with AES-128 and use the key delivery service
 

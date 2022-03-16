@@ -1,17 +1,11 @@
 ---
 title: How to find your Azure tenant ID
 description: Find your Azure tenant so you can set up your environment.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: media
 ms.topic: how-to
-ms.date: 02/8/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 # How to find your Azure tenant ID
 

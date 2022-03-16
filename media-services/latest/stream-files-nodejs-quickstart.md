@@ -1,18 +1,12 @@
 ---
 title: How to encode and stream video files with Node.js
 description: How to stream video files with Node.js. Follow the steps of this tutorial to create a new Azure Media Services account, encode a file, and stream it to Azure Media Player.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 keywords: azure media services, stream, Node.js
-
 ms.service: media-services
-ms.workload: media
 ms.topic: tutorial
-ms.date: 02/17/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 
 # How to encode and stream video files with Node.js

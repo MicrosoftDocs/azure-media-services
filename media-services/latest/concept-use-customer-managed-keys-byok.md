@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 1/28/2020
+ms.date: 3/16/2022
 ---
 
 # Bring your own key (customer-managed keys) with Media Services

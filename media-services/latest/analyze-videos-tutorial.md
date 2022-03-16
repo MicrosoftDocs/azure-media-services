@@ -1,12 +1,10 @@
 ---
 title: Analyze videos with Media Services v3
 description: Learn how to analyze videos using Azure Media Services.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
-ms.service: media-services 
+ms.service: media-services
 ms.topic: tutorial
-ms.date: 07/26/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 
