@@ -1,13 +1,8 @@
 ---
 title: Encode a remote file and stream using Media Services
 description: Follow the steps of this tutorial to encode a file based on a URL and stream your content with Azure Media Services using REST.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 ms.service: media-services
-ms.workload: 
 ms.topic: tutorial
 ms.custom: mvc
 ms.date: 03/17/2021

@@ -1,9 +1,7 @@
 ---
 title: How to stitch two or more video files | Microsoft Docs
 description: This article shows how to stitch two or more video files.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/09/2022

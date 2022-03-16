@@ -1,14 +1,14 @@
 ---
 title: Reacting to Azure Media Services events 
 description: This article describes how to use Azure Event Grid to subscribe to Media Services events. 
-services: media-services
-documentationcenter: ''
+
+
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
+
+
 
 ms.service: media-services
-ms.workload: 
+
 ms.topic: conceptual
 ms.date: 07/08/2021
 ms.author: inhenkel

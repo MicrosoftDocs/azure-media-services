@@ -1,9 +1,8 @@
 ---
 title: Get a Media Services asset encryption key
 description: This article shows you how to get a Media Services asset encryption key.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
+ 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/08/2022

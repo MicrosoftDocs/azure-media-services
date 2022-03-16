@@ -1,13 +1,10 @@
 ---
 title: Media Services live streaming best practices guide 
 description: This article describes best practices for achieving low-latency live streams with Azure Media Services.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 
 ms.service: media-services
 ms.topic: conceptual
-ms.workload: media
 ms.date: 02/14/2022
 ms.author: inhenkel
 ---

@@ -1,9 +1,8 @@
 ---
 title: Show or get a job
 description: This article shows how to show or get a job.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
+ 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/11/2022

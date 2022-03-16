@@ -1,9 +1,7 @@
 ---
 title: Add a custom transform output for a Media Services job
 description: This article shows you how to add a custom transform output for a Media Services job.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/08/2022

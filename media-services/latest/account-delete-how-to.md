@@ -1,9 +1,7 @@
 ---
 title: Delete a Media Services account
 description: This article shows you how to delete a Media Services account.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/04/2022

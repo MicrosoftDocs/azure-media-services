@@ -1,17 +1,10 @@
 ---
 title: Media Services v2 to v3 migration setup 
 description: This article will assist you with setting up your environment for migrating from Azure Media Services v2 to v3.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-tags: ''
-keywords: azure media services, migration, stream, broadcast, live, SDK
+
 ms.service: media-services
-ms.devlang: csharp
 ms.topic: conceptual
-ms.tgt_pltfrm: multiple
-ms.workload: media
 ms.date: 03/25/2021
 ms.author: inhenkel
 ---

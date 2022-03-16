@@ -2,15 +2,10 @@
 # Mandatory fields. See more on aka.ms/skyeye/meta.
 title: Playback with Azure Media Player - Azure 
 description: Azure Media Player is a web video player built to play back media content from Microsoft Azure Media Services on a wide variety of browsers and devices.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 
 ms.service: media-services
-ms.workload: 
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/17/2019
 ms.author: inhenkel
 

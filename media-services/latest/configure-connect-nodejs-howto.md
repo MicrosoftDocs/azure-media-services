@@ -1,20 +1,12 @@
 ---
 title: Connect to Azure Media Services v3 API - Node.js
 description: This article demonstrates how to connect to Media Services v3 API with Node.js.  
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: javascript
 ms.topic: how-to
 ms.date: 12/13/2021
 ms.author: inhenkel
-ms.custom: devx-track-js
 ---
 # Connect to Media Services v3 API - Node.js
 

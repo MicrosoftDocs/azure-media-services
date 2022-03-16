@@ -1,9 +1,8 @@
 ---
 title: List live events
 description: This article shows how to list the live events in a Media Services account.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
+ 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/10/2022

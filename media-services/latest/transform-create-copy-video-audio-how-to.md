@@ -1,9 +1,7 @@
 ---
 title: Create a CopyVideo CopyAudio transform
 description: Create a CopyVideo CopyAudio transform using Media Services API.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/09/2022

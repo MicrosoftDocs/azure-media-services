@@ -3,13 +3,8 @@
 title: Stream content with CDN integration
 : Azure Media Services
 description: Learn about streaming content with CDN integration, as well as prefetching and Origin-Assist CDN-Prefetch.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 ms.service: media-services
-ms.workload: 
 ms.topic: conceptual
 ms.date: 08/31/2020
 ms.author: inhenkel

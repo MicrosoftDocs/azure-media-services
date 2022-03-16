@@ -1,9 +1,8 @@
 ---
 title: Stop a live event
 description: This article shows how to stop a live event.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
+ 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/10/2022

@@ -1,13 +1,9 @@
 ---
 title: How to use the Shaka player with Azure Media Services
 description: This article explains how to use the Shaka player with Azure Media Services
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
+
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: how-to
 ms.date: 08/31/2020
 ms.author: inhenkel

@@ -1,9 +1,8 @@
 ---
 title: Azure Media Services v3 regions availability
 description: This article talks about Azure clouds and regions in which Azure Media Services v3 is available.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
+
 ms.service: media-services
 ms.topic: reference
 ms.date: 12/9/2021

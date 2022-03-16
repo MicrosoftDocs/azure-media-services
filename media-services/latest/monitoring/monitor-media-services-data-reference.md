@@ -3,7 +3,7 @@ title: Monitoring Media Services data reference
 description: Important reference material needed when you monitor Media Services 
 author: IngridAtMicrosoft
 ms.author: inhenkel
-manager: femila
+
 ms.topic: reference
 ms.service: media-services
 ms.custom: subject-monitoring

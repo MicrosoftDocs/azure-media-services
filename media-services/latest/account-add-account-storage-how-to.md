@@ -1,9 +1,7 @@
 ---
 title: Add storage to a Media Services Account
 description: This article shows you how to add storage to a Media Services account.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/08/2022

@@ -1,9 +1,8 @@
 ---
 title: Create a streaming locator and build URLs
 description: This article demonstrates how to create a streaming locator and build URLs.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
+
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/01/2022

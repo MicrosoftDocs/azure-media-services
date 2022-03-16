@@ -1,9 +1,7 @@
 ---
 title: Create an account filter
 description: This article shows how to create an account filter.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/10/2022

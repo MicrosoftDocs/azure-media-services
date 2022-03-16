@@ -1,9 +1,8 @@
 ---
 title: Overview of using private links with Azure Media Services
 description: This article gives an overview of using private links with Azure Media Services.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
+
 ms.service: media-services
 ms.topic: conceptual
 ms.date: 10/22/2021

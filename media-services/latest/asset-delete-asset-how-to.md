@@ -1,9 +1,8 @@
 ---
 title: Delete a Media Services asset
 description: This article shows you how to delete a Media Services asset.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
+ 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/01/2022

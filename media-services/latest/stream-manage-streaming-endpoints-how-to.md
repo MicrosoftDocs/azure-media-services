@@ -1,10 +1,7 @@
 ---
 title: Manage streaming endpoints
 description: This article demonstrates how to manage streaming endpoints with Azure Media Services v3.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/01/2022

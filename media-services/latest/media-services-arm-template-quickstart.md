@@ -1,11 +1,8 @@
 ---
 title: Media Services account ARM template
 description: This article shows you how to use an ARM template to create a media services account.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
+
 ms.service: media-services
 ms.topic: quickstart
 ms.date: 03/23/2021

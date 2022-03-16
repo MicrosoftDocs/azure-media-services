@@ -1,9 +1,7 @@
 ---
 title: Scale a streaming endpoint
 description: This article shows how to scale a streaming endpoint.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/10/2022

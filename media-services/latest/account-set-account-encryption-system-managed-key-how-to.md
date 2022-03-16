@@ -1,9 +1,8 @@
 ---
 title: Set the Media Services account encryption with system managed keys
 description: This article shows you how to set the Media Services account encryption with system managed keys.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
+ 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/08/2022

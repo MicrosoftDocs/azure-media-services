@@ -1,13 +1,12 @@
 ---
 title: Availability Zones
 description: Media Services supports Availability Zones providing fault-isolation
-services: media-services
 author: johndeu
-manager: femila
+
 ms.service: media-services
 ms.topic: conceptual
 ms.date: 05/27/2021
-ms.author: johndeu
+ms.author: inhenkel
 ---
 # Availability Zones
 

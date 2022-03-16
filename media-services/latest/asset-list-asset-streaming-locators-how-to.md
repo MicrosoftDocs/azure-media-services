@@ -1,9 +1,8 @@
 ---
 title: List the streaming locators of a Media Services asset
 description: This article shows you how to list the streaming locators of a Media Services asset.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
+ 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/08/2022

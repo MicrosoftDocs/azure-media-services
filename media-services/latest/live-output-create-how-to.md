@@ -1,9 +1,8 @@
 ---
 title: Create a live output
 description: This article shows how to create a live output.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
+ 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/10/2022

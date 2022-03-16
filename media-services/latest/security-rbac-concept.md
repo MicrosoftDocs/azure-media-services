@@ -1,13 +1,8 @@
 ---
 title: Role-based access control for Media Services accounts
 description: This article discusses Azure role-based access control (Azure RBAC) for Azure Media Services accounts.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 ms.service: media-services
-ms.workload: 
 ms.topic: conceptual
 ms.date: 08/31/2020
 ms.author: inhenkel

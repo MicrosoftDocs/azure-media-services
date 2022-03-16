@@ -2,7 +2,7 @@
 title: Get a signing key from a policy
 description: This topic shows how to get a signing key from the existing policy using Media Services v3.
 author: IngridAtMicrosoft
-manager: femila
+
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/09/2022

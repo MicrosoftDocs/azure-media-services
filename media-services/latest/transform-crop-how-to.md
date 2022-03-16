@@ -1,9 +1,7 @@
 ---
 title: How to crop video files with Media Services
 description: Cropping is the process of selecting a rectangular window within the video frame, and encoding just the pixels within that window. This topic shows how to crop video files with Media Services.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/09/2022

@@ -1,9 +1,8 @@
 ---
 title: List jobs
 description: This article shows how to list jobs.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
+ 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/11/2022

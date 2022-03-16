@@ -1,9 +1,8 @@
 ---
 title: Use a Key Vault key to encrypt data into a Media Services account
 description: If you'd like Media Services to encrypt data using a key from your Key Vault, the Media Services account must be granted *access* to the Key Vault. Follow the steps below to create a Managed Identity for the Media Services account and grant this identity access to their Key Vault using the Media Services CLI.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
+
 ms.service: media-services
 ms.topic: tutorial
 ms.date: 05/14/2021

@@ -2,15 +2,8 @@
 title: Stream live with Media Services by using .NET 5.0
 titleSuffix: Azure Media Services
 description: Learn how to stream live events by using .NET 5.0
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: tutorial
 ms.custom: "mvc, devx-track-csharp"
 ms.date: 06/13/2019

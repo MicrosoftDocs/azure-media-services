@@ -1,9 +1,8 @@
 ---
 title: Show the account encryption of a Media Services Account
 description: This article shows you how to show the account encryption of a Media Services Account.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
+
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/08/2022

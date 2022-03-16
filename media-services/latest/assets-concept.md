@@ -2,14 +2,9 @@
 # Mandatory fields. See more on aka.ms/skyeye/meta.
 title: Assets in Azure Media Services
 description: Learn about what assets are and how they're used by Azure Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 
 ms.service: media-services
-ms.workload: 
 ms.topic: conceptual
 ms.date: 01/06/2022
 ms.author: inhenkel

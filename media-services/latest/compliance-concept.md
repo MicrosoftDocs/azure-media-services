@@ -1,14 +1,9 @@
 ---
 title: Media Services regulatory compliance
 description: Azure Media Services helps Azure Government customers meet their compliance obligations.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 
 ms.service: media-services
-ms.workload: 
 ms.topic: conceptual
 ms.date: 09/11/2021
 ms.author: inhenkel

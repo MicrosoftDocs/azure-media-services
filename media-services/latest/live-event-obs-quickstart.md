@@ -1,7 +1,6 @@
 ---
 title: Create a live stream with OBS Studio
 description: Learn how to create an Azure Media Services live stream by using the portal and OBS Studio
-services: media-services
 ms.service: media-services
 ms.topic: quickstart
 ms.author: inhenkel

@@ -1,9 +1,7 @@
 ---
 title: Update a Media Services transform
 description: This article shows you how to update a Media Services transform.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
 ms.service: media-services
 ms.topic: how-to
 ms.date: 03/08/2022
