@@ -9,7 +9,7 @@ ms.custom: portal
 
 <!-- Use the portal to create a media services account. -->
 
-## Enable a Media Services system-assigned managed identity
+### Enable a Media Services system-assigned managed identity with the portal
 
 When a Media Services account is created, a user-managed identity is either selected or created.  If you need to create a system-managed identity, take the following steps after you've created a Media Services account:
 

@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!-- ### List available locations -->
 
-## List available locations
+### List available locations with the CLI
 
 To list available locations, use the following command:
 

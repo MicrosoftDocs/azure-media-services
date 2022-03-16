@@ -6,7 +6,7 @@ ms.date: 03/11/2022
 ms.author: inhenkel
 ---
 
-## Update a job with Python
+### Update a job with Python
 
 Set up imports, environment variables, authentication and create the client.
 

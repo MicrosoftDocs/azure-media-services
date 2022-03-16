@@ -6,6 +6,6 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## Create a streaming endpoint with REST
+### Create a streaming endpoint with REST
 
 See the [REST API](/rest/api/media/streaming-endpoints/create).

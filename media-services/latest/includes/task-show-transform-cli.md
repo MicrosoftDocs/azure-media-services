@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!--Show the details of a transform.-->
 
-## Show the details of a transform
+### Show the details of a transform with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsTransformShow" interactive="azurecli-interactive":::
 

@@ -6,7 +6,7 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## List streaming policies with the CLI
+### List streaming policies with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsStreamingPolicyList" interactive="azurecli-interactive":::
 

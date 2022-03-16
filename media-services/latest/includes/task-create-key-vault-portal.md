@@ -9,7 +9,7 @@ ms.custom: portal
 
 <!--Create a key vault in the portal-->
 
-## Create a key vault
+### Create a key vault with the portal
 
 1. From the Home screen of the Azure portal, select **Create a resource**.
 1. Enter *Key vault* into the **Marketplace** search field and select **Key Vault** when it appears in the search results.

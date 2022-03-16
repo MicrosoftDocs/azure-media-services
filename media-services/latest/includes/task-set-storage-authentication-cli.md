@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!--Set storage authentication-->
 
-## Set storage authentication
+### Set storage authentication with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AccountStorageSetAuthentication" interactive="azurecli-interactive":::
 

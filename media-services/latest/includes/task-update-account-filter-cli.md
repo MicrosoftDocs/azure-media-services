@@ -6,7 +6,7 @@ ms.date: 03/10/2022
 ms.author: inhenkel
 ---
 
-## Update an account filter
+### Update an account filter with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAccountFilterUpdate" interactive="azurecli-interactive":::
 

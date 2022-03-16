@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!--Create a transform-->
 
-## Create a transform
+### Create a transform with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsTransformCreate" interactive="azurecli-interactive":::
 

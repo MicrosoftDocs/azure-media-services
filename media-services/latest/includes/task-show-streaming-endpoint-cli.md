@@ -6,7 +6,7 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## Show the details of a streaming endpoint with the CLI
+### Show the details of a streaming endpoint with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsStreamingEndpointShow" interactive="azurecli-interactive":::
 

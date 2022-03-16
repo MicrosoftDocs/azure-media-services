@@ -6,6 +6,6 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## Update a content key policy with REST
+### Update a content key policy with REST
 
-See the Media Services [REST API](/rest/api/media/content-key-policies/update).
+See the Media Services [REST API](/rest/api/media/content-key-policies/update) for updating a content key policy.

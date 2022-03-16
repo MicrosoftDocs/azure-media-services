@@ -8,6 +8,6 @@ ms.author: inhenkel
 
 <!--List the streaming locators for an asset-->
 
-## List the streaming locators for an asset
+### List the streaming locators for an asset with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetListStreamingLocators" interactive="azurecli-interactive":::

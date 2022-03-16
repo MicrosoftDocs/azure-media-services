@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!--Show the details of an asset-->
 
-## Show the details of an asset
+### Show the details of an asset with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetShow" interactive="azurecli-interactive":::
 

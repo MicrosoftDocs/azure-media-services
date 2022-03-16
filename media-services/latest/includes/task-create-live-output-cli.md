@@ -6,7 +6,7 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## Create a live output
+### Create a live output with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsLiveEOutputCreate" interactive="azurecli-interactive":::
 

@@ -9,7 +9,7 @@ ms.custom: CLI
 
 <!--Create a media services transform portal-->
 
-## Create a transform
+### Create a transform with the portal
 
 > [!IMPORTANT] 
 > You must encode your files with a transform in order to stream them, even if they have been encoded locally.  The Media Services encoding process creates the manifest files needed for streaming.

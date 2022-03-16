@@ -9,7 +9,7 @@ ms.custom: portal
 
 <!-- Use the portal to add use either a user managed identity or system managed identity for account encryption -->
 
-## Use either a user-managed identity or a system-managed identity for account encryption
+### Use either a user-managed identity or a system-managed identity for account encryption in the portal
 
 You can assign either a user-managed identity or a system-managed identity for account encryption.
 
