@@ -461,6 +461,8 @@
     items:
       - name: Accounts and Storage
         items:
+        - name: Create a storage account
+          href: storage-create-how-to.md
         - name: Add storage to an account
           href: account-add-account-storage-how-to.md
         - name: Remove storage from an account
