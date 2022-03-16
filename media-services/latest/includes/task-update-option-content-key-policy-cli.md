@@ -6,7 +6,7 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## Update an option from a content key policy
+### Update an option from a content key policy
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsContentKeyPolicyOptionUpdate" interactive="azurecli-interactive":::
 

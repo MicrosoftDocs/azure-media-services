@@ -9,7 +9,7 @@ ms.custom: portal
 
 <!--Create a resourse group in the portal-->
 
-## Create a resource group
+### Create a resource group with the portal
 
 1. On the Home screen of the Azure portal, select **Create a resource**. The Marketplace screen will appear.
 1. Select **Resource groups**.  A listing of resource groups will appear.

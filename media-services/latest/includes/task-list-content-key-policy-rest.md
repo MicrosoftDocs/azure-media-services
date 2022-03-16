@@ -6,6 +6,6 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## List content key policies with REST
+### List content key policies with REST
 
-See the Media Services [REST API](/rest/api/media/content-key-policies/list).
+See the Media Services [REST API](/rest/api/media/content-key-policies/list) for listing content key policies.

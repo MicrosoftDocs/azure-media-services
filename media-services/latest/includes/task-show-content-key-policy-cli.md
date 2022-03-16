@@ -6,7 +6,7 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## Show a content key policy
+### Show a content key policy with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsContentKeyPolicyShow" interactive="azurecli-interactive":::
 

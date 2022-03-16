@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Create a job with REST
 
-See the Media Services [REST API](/rest/api/media/jobs/create)
+See the Media Services [REST API](/rest/api/media/jobs/create) for creating a job.

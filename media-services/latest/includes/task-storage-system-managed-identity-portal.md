@@ -9,7 +9,7 @@ ms.custom: portal
 
 <!-- Use the portal to add a system managed identity to a media services storage account -->
 
-## Use a system-managed identity with a Media Services storage account
+### Use a system-managed identity with a Media Services storage account in the portal
 
 After you've created a Media Services account with an associated storage account, you can assign a system-managed identity to it.
 

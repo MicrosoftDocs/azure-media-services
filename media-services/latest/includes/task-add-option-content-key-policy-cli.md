@@ -6,7 +6,7 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## Add an option to a content key policy
+### Add an option to a content key policy
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsContentKeyPolicyOptionAdd" interactive="azurecli-interactive":::
 

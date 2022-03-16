@@ -9,7 +9,7 @@ ms.custom: portal
 
 <!-- Use the portal to create a media services account. -->
 
-## Create a Media Services account
+### Create a Media Services account with the portal
 
 1. Sign in at the [Azure portal](https://portal.azure.com/).
 2. Click **+Create a resource** > **Media** > **Media Services**.

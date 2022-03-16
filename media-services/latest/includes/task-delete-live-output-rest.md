@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ## Delete a live output with REST
 
-See the [REST API](/rest/api/media/live-outputs/delete).
+See the [REST API](/rest/api/media/live-outputs/delete) for deleting a live output.

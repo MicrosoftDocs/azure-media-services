@@ -6,7 +6,7 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## List streaming endpoints with the CLI
+### List streaming endpoints with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsStreamingEndpointList" interactive="azurecli-interactive":::
 

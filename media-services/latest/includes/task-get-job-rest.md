@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Get a job with REST
 
-See the Media Services [REST API](/rest/api/media/jobs/get)
+See the Media Services [REST API](/rest/api/media/jobs/get) for getting the details of a job.

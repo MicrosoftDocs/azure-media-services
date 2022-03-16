@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### List jobs with REST
 
-See the Media Services [REST API](/rest/api/media/jobs/list)
+See the Media Services [REST API](/rest/api/media/jobs/list) for listing jobs.

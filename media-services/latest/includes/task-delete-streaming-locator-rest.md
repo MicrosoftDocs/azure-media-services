@@ -6,6 +6,6 @@ ms.date: 03/10/2022
 ms.author: inhenkel
 ---
 
-## Delete a streaming locator with REST
+### Delete a streaming locator with REST
 
-See the Media Services [REST API](/rest/api/media/streaming-locators/delete).
+See the Media Services [REST API](/rest/api/media/streaming-locators/delete) for deleting a streaming locator.

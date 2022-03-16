@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!-- ### Create a storage account -->
 
-## Create an Azure Storage account
+### Create an Azure Storage account with the CLI
 
 Use the following commands to create an Azure Storage account.
 
@@ -24,7 +24,7 @@ To list available locations, use the following command:
 
 [!INCLUDE [task-create-resource-group-cli](task-create-resource-group-cli.md)]
 
-## Choose a SKU
+### Choose a SKU
 
 You also need to choose a SKU for your storage account. You can list storage accounts.
 

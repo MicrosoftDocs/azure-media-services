@@ -9,7 +9,7 @@ ms.custom: CLI, devx-track-azurecli
 
 <!--Get an asset's SAS URLs CLI-->
 
-## Get an asset's SAS URLs
+### Get an asset's SAS URLs with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetGetSASUrls" interactive="azurecli-interactive":::
 
