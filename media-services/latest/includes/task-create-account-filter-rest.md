@@ -6,6 +6,6 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## Create an account filter with REST
+### Create an account filter with REST
 
-See the [REST API](/rest/api/media/account-filters/create-or-update).
+See the [REST API](/rest/api/media/account-filters/create-or-update) for creating an account filter.

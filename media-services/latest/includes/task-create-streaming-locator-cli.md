@@ -6,7 +6,7 @@ ms.date: 03/10/2022
 ms.author: inhenkel
 ---
 
-## Create a streaming locator with the CLI
+### Create a streaming locator with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsStreamingLocatorCreate" interactive="azurecli-interactive":::
 

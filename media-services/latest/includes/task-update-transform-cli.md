@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!--Update a transform-->
 
-## Update a transform
+### Update a transform with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsTransformUpdate" interactive="azurecli-interactive":::
 

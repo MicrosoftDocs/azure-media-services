@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Delete a job with REST
 
-See the Media Services [REST API](/rest/api/media/jobs/delete)
+See the Media Services [REST API](/rest/api/media/jobs/delete) for deleting a job.

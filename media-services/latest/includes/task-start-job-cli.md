@@ -5,8 +5,7 @@ ms.topic: include
 ms.date: 08/18/2020
 ms.author: inhenkel
 ---
-
-## Start a job with the CLI
+# Start a job with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsJobStart" interactive="azurecli-interactive":::
 

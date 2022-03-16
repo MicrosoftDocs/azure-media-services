@@ -9,7 +9,7 @@ ms.custom: CLI, devx-track-azurecli
 
 <!--Delete a media services asset CLI-->
 
-## Delete an asset
+### Delete an asset with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetDelete" interactive="azurecli-interactive":::
 

@@ -6,7 +6,7 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## Stop a streaming endpoint with the CLI
+### Stop a streaming endpoint with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsStreamingEndpointStop" interactive="azurecli-interactive":::
 

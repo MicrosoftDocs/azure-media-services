@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!--Synchronize storage account keys for a storage account associated with an Azure Media Services account.-->
 
-## Synchronize storage account keys for a Media Services account storage account
+### Synchronize storage account keys for a Media Services account storage account with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AccountStorageSyncStorageKeys" interactive="azurecli-interactive":::
 

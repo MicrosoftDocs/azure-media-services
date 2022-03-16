@@ -6,6 +6,6 @@ ms.date: 03/10/2022
 ms.author: inhenkel
 ---
 
-## Cancel a job with REST
+### Cancel a job with REST
 
-See the Media Services [REST API](/rest/api/media/jobs/cancel-job)
+See the Media Services [REST API](/rest/api/media/jobs/cancel-job) for canceling a job.

@@ -9,7 +9,7 @@ ms.custom: CLI
 
 <!--Create a media services asset portal-->
 
-## Upload videos
+### Upload videos
 
 You should have a media services account, a storage account, and a default streaming endpoint.  
 

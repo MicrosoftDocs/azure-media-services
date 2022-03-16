@@ -8,6 +8,6 @@ ms.author: inhenkel
 
 <!--List the assets of a Media Services account-->
 
-## List assets with REST
+### List assets with REST
 
-See the Media Services [REST API](/rest/api/media/assets/list)
+See the Media Services [REST API](/rest/api/media/assets/list) for listing assets.

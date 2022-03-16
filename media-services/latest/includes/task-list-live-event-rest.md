@@ -6,6 +6,6 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## List live events with REST
+### List live events with REST
 
-See the [REST API](/rest/api/media/live-events/list).
+See the [REST API](/rest/api/media/live-events/list) for listing live events.

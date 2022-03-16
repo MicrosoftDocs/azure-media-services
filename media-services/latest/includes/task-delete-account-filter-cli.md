@@ -6,7 +6,7 @@ ms.date: 03/10/2022
 ms.author: inhenkel
 ---
 
-## Delete an account filter
+## Delete an account filter with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAccountFilterDelete" interactive="azurecli-interactive":::
 

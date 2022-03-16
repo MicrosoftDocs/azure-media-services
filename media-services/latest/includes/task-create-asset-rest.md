@@ -9,6 +9,6 @@ ms.custom: CLI, devx-track-azurecli
 
 <!--Create a media services asset CLI-->
 
-## Create an asset with REST
+### Create an asset with REST
 
-See the [REST API](/rest/api/media/assets/create-or-update).
+See the [REST API](/rest/api/media/assets/create-or-update) for creating an asset.

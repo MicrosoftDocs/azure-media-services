@@ -6,6 +6,6 @@ ms.date: 03/10/2022
 ms.author: inhenkel
 ---
 
-## List streaming policies with REST
+### List streaming policies with REST
 
-See the Media Services [REST API](/rest/api/media/streaming-policies/list).
+See the Media Services [REST API](/rest/api/media/streaming-policies/list) for listing streaming policies.

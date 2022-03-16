@@ -6,6 +6,6 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## List streaming endpoints with REST
+### List streaming endpoints with REST
 
-See the [REST API](/rest/api/media/streaming-endpoints/list).
+See the [REST API](/rest/api/media/streaming-endpoints/list) for listing the streaming endpoints.

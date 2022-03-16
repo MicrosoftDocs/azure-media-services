@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!--Set account encryption with a system managed key-->
 
-## Set account encryption with a system managed key
+### Set account encryption with a system managed key with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAccountEncryptionSetSystemManagedKey" interactive="azurecli-interactive":::
 

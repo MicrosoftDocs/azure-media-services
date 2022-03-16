@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!--Show account encryption-->
 
-## Show account encryption
+### Show account encryption with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAccountEncryptionShow" interactive="azurecli-interactive":::
 

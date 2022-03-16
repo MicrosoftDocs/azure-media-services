@@ -6,7 +6,7 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-## Delete a streaming endpoint with the CLI
+### Delete a streaming endpoint with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsStreamingEndpointDelete" interactive="azurecli-interactive":::
 

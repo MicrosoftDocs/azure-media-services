@@ -9,7 +9,7 @@ ms.custom: CLI, devx-track-azurecli
 
 <!--Show the details of an asset filter CLI-->
 
-## Show the details of an asset filter
+### Show the details of an asset filter with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetFilterShow" interactive="azurecli-interactive":::
 

@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!--Create a custom transform-->
 
-## Create a custom transform
+### Create a custom transform
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsTransformCreateCustom" interactive="azurecli-interactive":::
 

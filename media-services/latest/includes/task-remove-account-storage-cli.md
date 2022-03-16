@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 <!--Remove a storage account to a media services account-->
 
-### Remove a storage account from a Media Services account
+### Remove a storage account from a Media Services account with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAccountStorageRemove" interactive="azurecli-interactive":::
 

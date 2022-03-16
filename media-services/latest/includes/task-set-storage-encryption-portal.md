@@ -9,7 +9,7 @@ ms.custom: portal
 
 <!--Set the encryption on storage account in the portal-->
 
-## Set the encryption on a storage account
+### Set the encryption on a storage account
 
 1. In the Azure portal, enter the name of the storage account you want to encrypt in the **Search** field at the top of the screen.  Matches will appear below the search field.
 1. Select the storage account you are looking for. The storage account screen will appear.
