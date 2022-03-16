@@ -62,7 +62,7 @@ It is optional but recommended that you are familiar with the following concepts
 * An Azure Media Services (AMS) account.
 * @azure/msal-browser v2.0, one of the members in [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/active-directory/develop/msal-overview.md) SDK family for different client platforms
 * The latest version of [Azure Media Player](https://github.com/Azure-Samples/azure-media-player-samples)(included in sample.)
-* FPS credentials from Apple if you want to include FairPlay DRM and the application certificate hosted with CORS that is accessible via client-side JavaScript.
+* FPS credentials from Apple if you want to include FairPlay DRM and the application certificate hosted with CORS that is accessible via client-side JavaScript. FairPlay is an Apple technology that is only available for video transferred over HTTP Live Streaming on iOS devices, in Apple TV, and in Safari on macOS
 
 > [!IMPORTANT]
 > This tutorial uses .NET to create the content key policy restriction.  If you are not a .NET developer, but want to try Node.js to connect to Azure Media Services, read [Connect to Media Services v3 API - Node.js](configure-connect-nodejs-howto.md). There is also a Node.js module available to handle key rollover automatically, see Node.js [passport-ad module](https://github.com/AzureAD/passport-azure-ad).

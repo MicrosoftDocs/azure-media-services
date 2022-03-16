@@ -15,7 +15,7 @@ Playback Technology refers to the specific browser or plugin technology used to 
 
 - **azureHtml5JS**: utilizes MSE and EME standards in conjunction with the video element for plugin-less based playback of DASH content with support for AES-128 bit envelope encrypted content or DRM common encrypted content (via PlayReady and Widevine when the browser supports it) from Azure Media Services
 - **flashSS**: utilizes flash player technology to play back Smooth content with support for AES-128 bit envelope decryption from Azure Media Services - requires Flash version of 11.4 or higher
-- **html5FairPlayHLS**: utilizes Safari specific in browser-based playback technology via HLS with the video element. This tech is requires to play back FairPlay protected content from Azure Media Services and was added to the techOrder as of 10/19/16
+- **html5FairPlayHLS**: utilizes Safari (on Mac or iOS only) specific in browser-based playback technology via HLS with the video element. This tech is requires to play back FairPlay protected content from Azure Media Services and was added to the techOrder as of 10/19/16
 - **SilverlightSS**: utilizes Silverlight technology to play back Smooth content with support for PlayReady protected content from Azure Media Services.
 - **html5**: utilizes in browser-based playback technology with the video element.  When on an Apple iOS or Android device, this tech allows playback of HLS streams with some basic support for AES-128 bit envelope encryption or DRM content (via FairPlay when the browser supports it).
 

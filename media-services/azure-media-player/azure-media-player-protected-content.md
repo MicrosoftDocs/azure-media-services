@@ -11,7 +11,7 @@ ms.custom: devx-track-js
 
 # Protected content #
 
-Azure Media Player currently supports AES-128 bit envelope encrypted content and common encrypted content (through PlayReady and Widevine)  or encrypted content via FairPlay. In order to playback protected content correctly, you must tell Azure Media Player the `protectionInfo`. This information exists per source and can be added directly on the `<source>` tag via the `data-setup`.  You can also add the `protectionInfo` directly as a parameter if setting the source dynamically.
+Azure Media Player currently supports AES-128 bit envelope encrypted content and common encrypted content (through PlayReady and Widevine)  or encrypted content via FairPlay Streaming (FPS). In order to playback protected content correctly, you must tell Azure Media Player the `protectionInfo`. This information exists per source and can be added directly on the `<source>` tag via the `data-setup`.  You can also add the `protectionInfo` directly as a parameter if setting the source dynamically.
 
 `protectionInfo` accepts a JSON object and includes:
 
@@ -23,7 +23,7 @@ Azure Media Player currently supports AES-128 bit envelope encrypted content and
 > [!IMPORTANT]
 > The **certificateUrl** object is only needed for FairPlay DRM.***
 >[!NOTE]
-> The default techOrder has been changed to accommodate the new tech- `html5FairPlayHLS` specifically to playback FairPlay content natively on browsers that support it (Safari on OSX 8+). If you have FairPlay content to playback **AND** you've changed the default techOrder to a custom one in your application, you will need to add this new tech into your techOrder object. We recommend you include it before silverlightSS so your content doesn't playback via PlayReady.
+> The default techOrder has been changed to accommodate the new tech- `html5FairPlayHLS` specifically to playback FairPlay content natively on browsers that support it (FairPlay is an Apple technology that is only available for video transferred over HTTP Live Streaming on iOS devices, in Apple TV, and in Safari on macOS). If you have FairPlay content to playback **AND** you've changed the default techOrder to a custom one in your application, you will need to add this new tech into your techOrder object. We recommend you include it before silverlightSS so your content doesn't playback via PlayReady.
 
 ## Code sample ##
 
