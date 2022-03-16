@@ -18,12 +18,16 @@ This article shows you how to list the transforms in a Media Services account.
 
 You can use the following methods to list the transforms in a Media Services account.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-list-transforms-portal.md](./includes/task-list-transforms-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [List transforms](./includes/task-list-transforms-cli.md)]
+[!INCLUDE [task-list-transforms-cli.md](./includes/task-list-transforms-cli.md)]
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/transforms/list).
+[!INCLUDE [task-list-transforms-rest.md](./includes/task-list-transforms-rest.md)]
 
 ---
