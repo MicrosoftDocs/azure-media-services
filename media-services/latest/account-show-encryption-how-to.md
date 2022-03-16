@@ -19,8 +19,12 @@ This article shows you how to show the account encryption of a Media Services Ac
 
 You can use the following methods to show the account encryption of a Media Services Account.
 
-## CLI
+## [Portal](#tab/portal/)
 
-[!INCLUDE [Show the media services account encryption](./includes/task-show-account-encryption-cli.md)]
+[!INCLUDE [task-show-account-encryption-portal.md](./includes/task-show-account-encryption-portal.md)]
+
+## [CLI](#tab/cli/)
+
+[!INCLUDE [task-show-account-encryption-cli.md](./includes/task-show-account-encryption-cli.md)]
 
 ---
