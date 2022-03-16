@@ -6,9 +6,9 @@ ms.date: 03/08/2022
 ms.author: inhenkel
 ---
 
-<!--Set account encryption with a customer managed key-->
+<!--Set account encryption with a customer-managed key-->
 
-### Set account encryption with a customer managed key with the CLI
+### Set account encryption with a customer-managed key with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAccountEncryptionSetCustomerManagedKey" interactive="azurecli-interactive":::
 
