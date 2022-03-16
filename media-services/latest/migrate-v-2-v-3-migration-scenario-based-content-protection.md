@@ -1,13 +1,10 @@
 ---
 title: Content protection migration guidance
 description: This article gives your content protection scenario-based guidance that will assist you in your  migrating from Azure Media Services v2 to v3.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: conceptual
-ms.workload: media
-ms.date: 04/05/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

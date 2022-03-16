@@ -1,12 +1,10 @@
 ---
 title: List the Media Services accounts in a subscription
 description: This article shows you how to list the Media Service accounts in an Azure subscription.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/04/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 # List the Media Services accounts in a subscription

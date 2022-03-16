@@ -1,15 +1,10 @@
 ---
 title: End-to-end content protection using Azure AD
-description: This article teaches you how to protect your content with Azure Media Services and Azure Active Directory
-services: media-services
-documentationcenter: ''
+description: This article teaches you how to protect your content with Azure Media Services and Azure Active Directory.
 author: willzhan
-manager: femila
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: tutorial
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ms.custom: devx-track-js
 ---

@@ -6,7 +6,7 @@ summary: Learn how to broadcast live events, encode, package, and stream videos 
 metadata:
   title: Azure Media Services (v3) documentation
   description: Learn how to broadcast live events, encode, package, and stream videos on-demand videos with Media Services.
-  services: media-services
+  
   ms.service: media-services
   ms.subservice:
   ms.topic: landing-page # Required

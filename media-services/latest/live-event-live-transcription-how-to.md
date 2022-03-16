@@ -1,19 +1,11 @@
 ---
 title: Live transcription
-: Azure Media Services
-description: Learn about Azure Media Services live transcription.  
-services: media-services
-documentationcenter: ''
+description: Learn about Azure Media Services live transcription.
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: how-to
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 
 # Live transcription

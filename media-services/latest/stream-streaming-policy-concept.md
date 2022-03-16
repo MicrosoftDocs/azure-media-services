@@ -1,17 +1,10 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
-title: Streaming Policies in Azure Media Services 
+title: Streaming Policies in Azure Media Services
 description: This article gives an explanation of what Streaming Policies are, and how they are used by Azure Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: 
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

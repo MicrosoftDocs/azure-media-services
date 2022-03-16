@@ -1,12 +1,9 @@
 ---
 title: Live streaming encoders recommended by Media Services
 description: Learn about live streaming on-premises encoders recommended by Media Services
-services: media-services
-keywords: encoding;encoders;media
 author: johndeu
-manager: johndeu
-ms.author: johndeu
-ms.date: 03/04/2022
+ms.author: inhenkel
+ms.date: 3/16/2022
 ms.topic: conceptual
 ms.service: media-services
 ---

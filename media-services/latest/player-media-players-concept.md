@@ -4,8 +4,8 @@ description: Which media players can I use with Azure Media Services? Azure Medi
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
-ms.topic: overview
-ms.date: 3/08/2021
+ms.topic: concept
+ms.date: 3/16/2022
 ---
 
 # Media players for Media Services

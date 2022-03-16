@@ -1,21 +1,11 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
-title: Develop with v3 APIs
-: Azure Media Services
-description: Learn about rules that apply to entities and APIs when developing with Media Services v3. 
-services: media-services
-documentationcenter: ''
+title: Develop with Azure Media Services v3 APIs
+description: Learn about rules that apply to entities and APIs when developing with Media Services v3.
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: 
 ms.topic: conceptual
-ms.date: 10/23/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: seodec18
-
 ---
 
 # Develop with Media Services v3 APIs

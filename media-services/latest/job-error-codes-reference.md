@@ -2,15 +2,9 @@
 title: Job (encoding and analyzing) error codes
 description: This article links to job error codes reference topic and gives useful links to related topics.
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-services: media-services
-documentationcenter: ''
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: error-reference
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

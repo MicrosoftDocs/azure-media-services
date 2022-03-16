@@ -1,18 +1,11 @@
 ---
 title: How to use the content-aware encoding preset
 description: This article discusses how to use the content-aware encoding preset in Microsoft Azure Media Services v3.
-services: media-services
-documentationcenter: ''
 author: jiayali-ms
-manager: femila
-editor: ''
 ms.service: media-services
-ms.workload: 
-ms.devlang: csharp
 ms.topic: how-to
-ms.date: 09/17/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: devx-track-csharp
 ---
 
 # How to use the content-aware encoding preset

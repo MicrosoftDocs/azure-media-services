@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 10/18/2020
+ms.date: 3/16/2022
 ---
 
 # Tutorial: Use the Azure portal to use customer-managed keys or BYOK with Media Services

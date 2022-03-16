@@ -1,19 +1,11 @@
 ---
 title: Azure Media Services v3 community overview
 description: This Azure Media Services community page discusses different ways you can ask questions, give feedback, and get updates about Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 08/31/2020
+ms.topic: conceptual
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 # Azure Media Services v3 community
 

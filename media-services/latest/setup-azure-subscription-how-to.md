@@ -1,21 +1,12 @@
 ---
 title: How to find your Azure subscription
 description: Find your Azure subscription so you can set up your environment.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: how-to
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: portal, devx-track-azurecli 
-ms.devlang: azurecli
-
+ms.custom: portal, devx-track-azurecli
 ---
 # Find your Azure subscription
 

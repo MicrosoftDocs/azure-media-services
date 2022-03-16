@@ -1,12 +1,10 @@
 ---
 title: Pass authentication tokens to Media Services v3 | Microsoft Docs
 description: Learn how to send authentication tokens from the client to the Media Services v3 key delivery service
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/10/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

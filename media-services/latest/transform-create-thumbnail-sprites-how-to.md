@@ -1,19 +1,10 @@
 ---
 title: Create a thumbnail sprites transform
 description: How do I create thumbnail sprites? You can create a transform for a job that will generate thumbnail sprites for your videos.  This article shows you how.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: 
-
-ms.assetid:
 ms.service: media-services
-ms.devlang: csharp
 ms.topic: how-to
-ms.tgt_pltfrm: multiple
-ms.workload: na
-ms.date: 2/17/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

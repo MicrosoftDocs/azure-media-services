@@ -1,12 +1,10 @@
 ---
 title: Get a Media Services asset SAS URLs
 description: This article shows you how to get a Media Services asset's SAS URLs.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila 
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/08/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

@@ -1,12 +1,10 @@
 ---
 title: Analyze video and audio files
 description: Learn how to analyze audio and video content using AudioAnalyzerPreset and VideoAnalyzerPreset in Azure Media Services.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 07/26/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

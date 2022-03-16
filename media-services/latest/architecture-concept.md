@@ -1,18 +1,11 @@
 ---
 title: Media Services architectures
 description: This article describes architectures for Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: 
 ms.topic: conceptual
-ms.date: 11/20/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 
 # Media Services architectures

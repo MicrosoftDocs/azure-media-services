@@ -1,21 +1,11 @@
 ---
 title: Protect your content with Media Services v3 dynamic encryption
 description: Learn about content protection with dynamic encryption, streaming protocols, and encryption types in Azure Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
 ms.topic: conceptual
-ms.date: 05/25/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: "seodec18, devx-track-csharp"
-
 ---
 # Protect your content with Media Services dynamic encryption
 

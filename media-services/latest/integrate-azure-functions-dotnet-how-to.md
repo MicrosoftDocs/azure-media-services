@@ -1,15 +1,11 @@
 ---
 title: Develop Azure Functions with Media Services v3
 description: This article shows how to start developing Azure Functions with Media Services v3 using Visual Studio Code.
-services: media-services
 author: xpouyat
 ms.service: media-services
-ms.workload: media
-ms.devlang: csharp
 ms.topic: article
-ms.date: 06/09/2021
-ms.author: xpouyat
-ms.custom: devx-track-csharp
+ms.date: 3/16/2022
+ms.author: inhenkel
 ---
 
 # Develop Azure Functions with Media Services v3

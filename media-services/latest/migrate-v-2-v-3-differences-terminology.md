@@ -1,14 +1,10 @@
 ---
 title: Media Services v3 terminology and entity changes
 description: This article describes the terminology differences between Azure Media Services v2 to v3.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
 ms.service: media-services
 ms.topic: conceptual
-ms.tgt_pltfrm: multiple
-ms.workload: media
-ms.date: 03/25/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

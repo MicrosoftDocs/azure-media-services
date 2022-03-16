@@ -1,20 +1,11 @@
 ---
 title: Standard Encoder formats and codecs - Azure
 description: This article contains a list of the most common import and export file formats that you can use with StandardEncoderPreset.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.date: 11/18/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
-ms.reviewer: johndeu
-
 ---
 # Standard Encoder formats and codecs
 

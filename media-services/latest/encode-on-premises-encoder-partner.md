@@ -1,11 +1,10 @@
 ---
 title: Become an on-premises encoder partner
 description: This article discusses how to verify your on-premises live streaming encoders.
-services: media-services
 author: johndeu
 manager: johndeu
-ms.author: johndeu
-ms.date: 08/31/2020
+ms.author: inhenkel
+ms.date: 3/16/2022
 ms.topic: how-to
 ms.service: media-services
 ---

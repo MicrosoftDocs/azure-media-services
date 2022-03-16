@@ -1,18 +1,13 @@
 ---
 title: Monitor Media Services events with Event Grid portal
 description: This article shows how to subscribe to Event Grid in order to monitor Azure Media Services events.
-services: media-services
 documentationcenter: na
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
 tags: ''
 keywords: azure media services, stream, broadcast, live, offline
 ms.service: media-services
 ms.topic: how-to
-ms.tgt_pltfrm: multiple
-ms.workload: media
-ms.date: 03/17/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

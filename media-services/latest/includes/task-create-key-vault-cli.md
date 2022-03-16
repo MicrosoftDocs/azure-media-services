@@ -5,7 +5,6 @@ ms.topic: include
 ms.date: 08/17/2020
 ms.author: inhenkel
 ms.custom: CLI, devx-track-azurecli 
-ms.devlang: azurecli
 ---
 
 <!-- Create a resource group -->

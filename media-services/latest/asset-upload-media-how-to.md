@@ -1,17 +1,10 @@
 ---
 title: Upload media
-: Azure Media Services
 description: Learn how to upload media for streaming or encoding.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-
 ms.service: media-services
-ms.workload: 
 ms.topic: how-to
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 
