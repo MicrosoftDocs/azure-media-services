@@ -20,7 +20,7 @@ ms.custom: seodec18, devx-track-csharp
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Azure Media Services enables you to encrypt your HLS content with **Apple FairPlay** (AES-128 CBC). Media Services also provides a service for delivering FairPlay licenses. When a player tries to play your FairPlay-protected content, a request is sent to the license delivery service to obtain a license. If the license service approves the request, it issues the license that is sent to the client and is used to decrypt and play the specified content.
+Azure Media Services enables you to encrypt your HLS content with **Apple FairPlay Streaming** (AES-128 CBC). Media Services also provides a service for delivering FairPlay licenses. FairPlay Streaming is an Apple technology that is only available for video transferred over HTTP Live Streaming (HLS) on iOS devices, in Apple TV, and in Safari on macOS. When an Apple client tries to play your FairPlay-protected content over HLS format, a request is sent to the license delivery service to obtain a license. If the license service approves the request, it issues the license that is sent to the client and is used to decrypt and play the specified content.
 
 Media Services also provides APIs that you can use to configure your FairPlay licenses. This topic discusses FairPlay license requirements and demonstrates how you can configure a **FairPlay** license using Media Services APIs. 
 
@@ -114,3 +114,5 @@ private static ContentKeyPolicyFairPlayConfiguration ConfigureFairPlayPolicyOpti
     return fairPlayConfiguration;
 }
 ```
+
+[!INCLUDE [Store FairPlay Private Key in Azure KeyVault](./includes/task-drm-store-fairplay-key.md)]
