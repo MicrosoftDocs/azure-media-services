@@ -18,6 +18,10 @@ This article shows you how to set the Media Services storage authentication.
 
 You can use the following methods to set the Media Services storage authentication.
 
-## CLI
+## [Portal](#tab/portal/)
 
-[!INCLUDE [Set storage authentication](./includes/task-set-storage-authentication-cli.md)]
+[!INCLUDE [task-set-storage-authentication-portal.md](./includes/task-set-storage-authentication-portal.md)]
+
+## [CLI](#tab/cli/)
+
+[!INCLUDE [task-set-storage-authentication-cli.md](./includes/task-set-storage-authentication-cli.md)]
