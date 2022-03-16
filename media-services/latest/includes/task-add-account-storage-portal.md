@@ -8,7 +8,7 @@ ms.author: inhenkel
 
 ### Add a storage account to a Media Services account with the portal
 
-Before you add a storage account to a Media Services account, if the storage account doesn't already exist, [create a new storage account](storage-create-how-to.md).
+Before you add a storage account to a Media Services account, if the storage account doesn't already exist, [create a new storage account](../storage-create-how-to.md).
 
 >[!NOTE]
 > If you just created a storage account, it will take a few minutes before it shows up in the list of storage accounts.
