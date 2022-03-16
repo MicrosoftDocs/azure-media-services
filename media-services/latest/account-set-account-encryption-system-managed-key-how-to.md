@@ -18,6 +18,10 @@ This article shows you how to set the Media Services account encryption with sys
 
 You can use the following methods to set the Media Services account encryption with system managed keys.
 
-## CLI
+## [Portal](#tab/portal/)
 
-[!INCLUDE [Set account encryption](./includes/task-set-account-encryption-customer-managed-key-cli.md)]
+[!INCLUDE [task-set-account-encryption-customer-managed-key-portal.md](./includes/task-set-account-encryption-system-managed-key-portal.md)]
+
+## [CLI](#tab/cli/)
+
+[!INCLUDE [Set account encryption](./includes/task-set-account-encryption-system-managed-key-cli.md)]

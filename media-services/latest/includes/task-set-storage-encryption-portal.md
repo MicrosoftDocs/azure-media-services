@@ -20,7 +20,7 @@ ms.custom: portal
 
 By default, data in the storage account is encrypted using Microsoft managed keys.
 
-### Use customer managed keys
+### Use customer-managed keys
 
 1. Select **Customer managed keys**.
 1. Select either **Enter key URI** or **Select from key vault**.

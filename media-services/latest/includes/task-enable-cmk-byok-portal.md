@@ -7,9 +7,9 @@ ms.author: inhenkel
 ms.custom: portal
 ---
 
-<!--Enable customer managed keys on a Media Services account-->
+<!--Enable customer-managed keys on a Media Services account-->
 
-### Enable customer managed keys on a Media Services account in the portal
+### Enable customer-managed keys on a Media Services account in the portal
 
 1. After creating the Media Services account, go to it in the portal.
 1. Select  **Encryption (new)**.

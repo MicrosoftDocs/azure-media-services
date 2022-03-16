@@ -147,7 +147,7 @@
     items:
     - name: Customer managed keys or BYOK tutorial
       href: security-customer-managed-keys-portal-tutorial.md
-      displayName: BYOK, managed keys, customer managed keys, security, tutorial, portal
+      displayName: BYOK, managed keys, customer-managed keys, security, tutorial, portal
     - name: Store AMS events in Azure Log Analytics
       href: integrate-event-grid-log-analytics-tutorial.md
       displayName: events, event grid, log analytics, tutorial, portal, monitoring, monitor
@@ -198,7 +198,7 @@
       displayName: storage, trusted storage, security, management
     - name: Customer managed keys
       href: concept-use-customer-managed-keys-byok.md
-      displayName: customer managed keys, byok, customer keys, keys, management
+      displayName: customer-managed keys, byok, customer keys, keys, management
   - name: Assets
     items: 
     - name: Assets
@@ -356,10 +356,10 @@
           displayName: storage, storage account, roll, rolling keys, rotate keys, storage keys, storage access
         - name: Customer managed keys with REST API
           href: security-customer-managed-keys-rest-postman-tutorial.md
-          displayName: keys, security, secure, customer managed keys, key-vault, key vault, managed keys, encrypt, encryption
+          displayName: keys, security, secure, customer-managed keys, key-vault, key vault, managed keys, encrypt, encryption
         - name: Use a Key Vault key to encrypt data
           href: security-encrypt-data-managed-identity-cli-tutorial.md
-          displayName: keys, security, secure, customer managed keys, key-vault, key vault, managed keys, encrypt, encryption
+          displayName: keys, security, secure, customer-managed keys, key-vault, key vault, managed keys, encrypt, encryption
       - name: Storage/Assets
         items:
         - name: Enable trusted storage
@@ -471,7 +471,7 @@
           href: account-list-assets-how-to.md
         - name: List transforms in an account
           href: account-list-transforms-how-to.md
-        - name: Set account encryption with customer managed keys
+        - name: Set account encryption with customer-managed keys
           href: account-set-account-encryption-customer-managed-key-how-to.md
         - name: Show account encryption
           href: account-show-encryption-how-to.md
@@ -744,7 +744,7 @@
       items:
       - name: Create a Media Services account
         href: account-create-how-to.md
-      - name: Set account encryption with customer managed keys
+      - name: Set account encryption with customer-managed keys
         href: account-set-account-encryption-customer-managed-key-how-to.md
       - name: Show account encryption
         href: account-show-encryption-how-to.md

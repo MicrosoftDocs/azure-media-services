@@ -27,7 +27,7 @@ ms.custom: portal
 > [!IMPORTANT]
 > All **new** Media Services accounts require a user-managed identity. Previously created accounts that have a system-managed identity have not changed.
 
-<!--|**Advanced settings**| You can create an account using a system-managed identity by selecting the **System-managed** radio button.  Making this selection will allow you to use customer managed keys, or bring your own key (BYOK) and Media Services to enable trusted storage.  For more information about customer managed keys, see [Bring your own key (customer-managed keys) with Media Services](../concept-use-customer-managed-keys-byok.md). Additionally, [managed identities](../concept-managed-identities.md) will also be enabled. -->
+<!--|**Advanced settings**| You can create an account using a system-managed identity by selecting the **System-managed** radio button.  Making this selection will allow you to use customer-managed keys, or bring your own key (BYOK) and Media Services to enable trusted storage.  For more information about customer-managed keys, see [Bring your own key (customer-managed keys) with Media Services](../concept-use-customer-managed-keys-byok.md). Additionally, [managed identities](../concept-managed-identities.md) will also be enabled. -->
 
 4. Select the checkbox next to "I have all the rights to use the content/file, and agree that it will be handled per the Online Services Terms and the Microsoft Privacy Statement." to confirm and continue.
 5. Click **Review + create** or add tags with the **Next:Tags** button.
