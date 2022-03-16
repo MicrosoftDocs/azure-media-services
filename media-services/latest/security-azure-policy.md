@@ -4,7 +4,7 @@ description: This article discusses Azure Policy built-in support for Azure Medi
 author: johndeu
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: johndeu
 ---
 

@@ -1,11 +1,10 @@
 ---
-title: Media Services v2 to v3 migration samples comparison 
+title: Media Services v2 to v3 migration samples comparison
 description: A set of samples to help you compare the code differences between Azure Media Services v2 to v3.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/25/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

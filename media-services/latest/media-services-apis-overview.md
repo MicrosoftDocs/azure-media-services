@@ -1,11 +1,10 @@
 ---
 title: Develop with Azure Media Services v3 APIs
-description: Learn about rules that apply to entities and APIs when developing with Media Services v3. 
+description: Learn about rules that apply to entities and APIs when developing with Media Services v3.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/23/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

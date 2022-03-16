@@ -4,7 +4,7 @@ description: How do I create thumbnail sprites? You can create a transform for a
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 2/17/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

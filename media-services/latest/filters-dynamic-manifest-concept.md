@@ -2,11 +2,10 @@
 title: Filter your manifests using Dynamic Packager
 description: Learn how to create filters using Dynamic Packager to filter and selectively stream your manifests.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 08/31/2020
-ms.author: inhenkel 
+ms.date: 3/16/2022
+ms.author: inhenkel
 ---
 
 # Filter your manifests using Dynamic Packager

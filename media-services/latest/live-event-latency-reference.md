@@ -1,14 +1,12 @@
 ---
-title: LiveEvent low latency settings in Azure Media Services 
+title: LiveEvent low latency settings in Azure Media Services
 description: This topic gives an overview of LiveEvent low latency settings and shows how to set low latency.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: reference
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ms.custom: devx-track-csharp
-
 ---
 
 # Live Event low latency settings

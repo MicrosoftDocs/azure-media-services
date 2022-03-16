@@ -4,7 +4,7 @@ description: This article gives you guidance on how to update Media Services v3 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 03/22/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 # Update Media Services v3 after rolling storage access keys

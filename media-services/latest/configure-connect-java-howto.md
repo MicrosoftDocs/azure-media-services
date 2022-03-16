@@ -2,10 +2,9 @@
 title: Connect to Azure Media Services v3 API - Java
 description: This article describes how to connect to Azure Media Services v3 API with Java.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 # Connect to Media Services v3 API - Java

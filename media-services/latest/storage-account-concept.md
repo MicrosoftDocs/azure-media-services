@@ -1,12 +1,10 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
 title: Azure storage accounts
-: Azure Media Services
 description: Learn how to create an Azure storage account to use with Azure Media Services.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/29/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

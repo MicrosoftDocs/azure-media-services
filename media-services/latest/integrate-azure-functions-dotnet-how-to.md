@@ -4,7 +4,7 @@ description: This article shows how to start developing Azure Functions with Med
 author: xpouyat
 ms.service: media-services
 ms.topic: article
-ms.date: 06/09/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

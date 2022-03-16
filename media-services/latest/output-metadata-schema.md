@@ -1,13 +1,11 @@
 ---
-title: Azure Media Services output metadata schema 
+title: Azure Media Services output metadata schema
 description: This article gives an overview of Azure Media Services v3 output metadata schema.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: reference
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 # Output metadata
 

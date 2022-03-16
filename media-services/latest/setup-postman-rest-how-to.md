@@ -4,7 +4,7 @@ description: This article shows you how to configure Postman so it can be used t
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 # Configure Postman for Media Services v3 REST API calls

@@ -2,10 +2,9 @@
 title: Event-based Face Redaction
 description: This quickstart shows how to deploy an event-based solution on Azure, where incoming videos will be transformed using a Job in Azure Media Services.
 author: harmke
-
 ms.service: media-services
 ms.topic: quickstart
-ms.date: 5/21/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

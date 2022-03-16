@@ -1,13 +1,11 @@
 ---
-title: Azure Media Services live event error codes 
+title: Azure Media Services live event error codes
 description: This article lists live event error codes.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: error-reference
-ms.date: 03/26/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 
 # Media Services Live Event error codes

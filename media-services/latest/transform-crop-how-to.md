@@ -4,7 +4,7 @@ description: Cropping is the process of selecting a rectangular window within th
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/09/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

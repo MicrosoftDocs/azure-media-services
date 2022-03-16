@@ -2,10 +2,9 @@
 title: Allocate a live event in standby mode
 description: This article shows how to allocate a live event in standby mode.
 author: IngridAtMicrosoft
- 
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

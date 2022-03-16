@@ -1,18 +1,11 @@
 ---
 title: View metrics with Azure Monitor
 description: This article shows how to monitor metrics with the Azure portal charts and Azure CLI.
-
-
 author: IngridAtMicrosoft
-
-
 ms.service: media-services
-
-
 ms.topic: how-to
-ms.date: 03/17/2021
-ms.author: inhenkel 
-
+ms.date: 3/16/2022
+ms.author: inhenkel
 ---
 
 # Monitor Media Services metrics

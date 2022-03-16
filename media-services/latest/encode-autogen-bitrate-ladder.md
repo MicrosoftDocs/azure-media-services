@@ -1,14 +1,12 @@
 ---
-title: Encode videos with Standard Encoder in Media Services 
-description: This topic shows how to use the Standard Encoder in Media Services to encode an input video with an auto-generated bitrate ladder, based on the input resolution and bitrate. 
+title: Encode videos with Standard Encoder in Media Services
+description: This topic shows how to use the Standard Encoder in Media Services to encode an input video with an auto-generated bitrate ladder, based on the input resolution and bitrate.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/21/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ms.custom: seodec18
-
 ---
 #  Encode with an auto-generated bitrate ladder
 

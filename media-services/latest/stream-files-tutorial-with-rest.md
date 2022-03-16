@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
 ms.custom: mvc
-ms.date: 03/17/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

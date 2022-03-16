@@ -2,10 +2,9 @@
 title: Update a job
 description: This article shows how to update a job.
 author: IngridAtMicrosoft
- 
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/11/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

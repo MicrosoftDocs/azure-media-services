@@ -2,10 +2,9 @@
 title: Give an Azure Function app access to a Media Services account
 description: Suppose you want to build an “On Air” sign for your broadcasting studio. You can determine when Media Services Live Events are running using the Media Services API but this may be hard to call from an embedded device. Instead, you could expose an HTTP API for your embedded device using Azure Functions. Azure Functions could then call Media Services to get the state of the Live Event.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 09/13/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

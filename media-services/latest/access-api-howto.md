@@ -1,10 +1,10 @@
 ---
-title: Get started with Azure AD authentication  
-description: Learn how to access Azure Active Directory (Azure AD) authentication to consume the Azure Media Services API. 
+title: Get started with Azure AD authentication
+description: Learn how to access Azure Active Directory (Azure AD) authentication to consume the Azure Media Services API.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/31/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 # Get credentials to access Media Services API

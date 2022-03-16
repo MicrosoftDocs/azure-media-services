@@ -2,10 +2,9 @@
 title: Azure Media Services v3 overview
 description: A high-level overview of Azure Media Services v3 with links to quickstarts, tutorials, and code samples.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

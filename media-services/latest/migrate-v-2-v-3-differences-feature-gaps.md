@@ -1,11 +1,10 @@
 ---
-title: Feature gaps between Azure Media Services V2 and V3 
+title: Feature gaps between Azure Media Services V2 and V3
 description: This article describes the feature gaps between Azure Media Services V2 to v3.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/31/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

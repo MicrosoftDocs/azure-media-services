@@ -2,10 +2,9 @@
 title: Scale Media Reserved Units (MRUs)
 description: This topic shows how to use to scale media processing with Azure Media Services.
 author: jiayali-ms
-
 ms.service: media-services
 ms.topic: how-to
-ms.date: 08/25/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 # How to scale media reserved units (legacy)

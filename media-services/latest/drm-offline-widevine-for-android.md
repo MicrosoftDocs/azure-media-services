@@ -2,10 +2,9 @@
 title: Stream Widevine Android offline
 description: This topic shows how to configure your Azure Media Services v3 account for offline streaming of Widevine protected content.
 author: willzhan
-
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/09/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

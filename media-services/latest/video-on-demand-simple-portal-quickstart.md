@@ -1,10 +1,10 @@
 ---
-title: Quickstart Video on Demand with Media Services 
+title: Quickstart Video on Demand with Media Services
 description: This article shows you how to do the basic steps for delivering video on demand (VOD) with Azure Media Services.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: quickstart
-ms.date: 03/01/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

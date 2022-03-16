@@ -1,13 +1,13 @@
 ---
-title: Monitoring Media Services 
-description: Start here to learn how to monitor Media Services 
+title: Monitoring Media Services
+description: Start here to learn how to monitor Media Services
 author: IngridAtMicrosoft
 ms.author: inhenkel
 manager: femilia
-ms.topic: how-to 
+ms.topic: how-to
 ms.service: media-services
 ms.custom: subject-monitoring
-ms.date: 03/17/2021
+ms.date: 3/16/2022
 ---
 
 # Monitor Media Services

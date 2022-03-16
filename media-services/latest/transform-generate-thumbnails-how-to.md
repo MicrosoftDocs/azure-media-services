@@ -4,7 +4,7 @@ description: This article shows how to encode an asset and generate thumbnails a
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/09/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 # How to generate thumbnails using Encoder Standard

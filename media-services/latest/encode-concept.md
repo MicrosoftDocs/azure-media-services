@@ -1,12 +1,10 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
 title: Encoding video and audio with Media Services
 description: This article explains about encoding video and audio with Azure Media Services.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

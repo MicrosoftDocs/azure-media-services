@@ -4,7 +4,7 @@ description: This article shows you how to add a custom transform output for a M
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/08/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 # Add a custom transform output

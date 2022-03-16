@@ -1,12 +1,12 @@
 ---
-title: Stream video files with Azure Media Services - .NET 
+title: Stream video files with Azure Media Services - .NET
 description: Follow the steps of this tutorial to use .NET to create a new Azure Media Services account, encode a file, and stream it to Azure Media Player.
 author: IngridAtMicrosoft
 keywords: azure media services, stream
 ms.service: media-services
 ms.topic: tutorial
 ms.custom: mvc
-ms.date: 07/23/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

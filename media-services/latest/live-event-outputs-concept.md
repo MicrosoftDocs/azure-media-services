@@ -2,10 +2,9 @@
 title: Live events and live outputs concepts
 description: This topic provides an overview of live events and live outputs in Azure Media Services v3.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/23/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 # Live events and live outputs in Media Services

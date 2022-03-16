@@ -2,10 +2,9 @@
 title: Wait until a condition of the live event is met
 description: This article shows how to place the CLI in a waiting state until a condition of the live event is met.
 author: IngridAtMicrosoft
- 
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

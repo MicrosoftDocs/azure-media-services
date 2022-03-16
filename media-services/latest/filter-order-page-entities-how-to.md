@@ -2,10 +2,9 @@
 title: Filtering, ordering, and paging of entities
 description: Learn about filtering, ordering, and paging of Azure Media Services v3 entities.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: how-to
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

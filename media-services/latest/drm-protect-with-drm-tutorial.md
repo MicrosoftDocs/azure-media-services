@@ -2,10 +2,9 @@
 title: Media Services DRM encryption and license delivery
 description: Learn how to use DRM dynamic encryption and license delivery service to deliver streams encrypted with Microsoft PlayReady, Google Widevine, or Apple FairPlay licenses.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 05/25/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ms.custom: seodec18
 ---

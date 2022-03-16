@@ -1,12 +1,10 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
 title: Using preset overrides to change transform settings on job submission
 description: This article how to use preset overrides to adjust transform settings on a per-job instance
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/20/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

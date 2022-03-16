@@ -2,10 +2,9 @@
 title: Use time-shifting to create on-demand video playback
 description: This article describes how to use time-shifting and Live Outputs to record Live Streams and create on-demand playback.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

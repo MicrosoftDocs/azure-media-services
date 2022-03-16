@@ -2,10 +2,9 @@
 title: Reset your account credentials -CLI
 description: Use the Azure CLI script to reset your account credentials and get the app.config settings back.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: how-to
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

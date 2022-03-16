@@ -4,7 +4,7 @@ description: This article shows you how to delete a Media Services transform.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/01/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

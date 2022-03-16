@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 2/8/2021
+ms.date: 3/16/2022
 ---
 
 # Tutorial: Media Services trusted storage

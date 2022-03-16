@@ -4,7 +4,7 @@ description: This topic describes how to subclip a video when encoding with Azur
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/09/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

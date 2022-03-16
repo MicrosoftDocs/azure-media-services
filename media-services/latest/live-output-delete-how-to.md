@@ -2,10 +2,9 @@
 title: Delete a live output
 description: This article shows how to delete a live output.
 author: IngridAtMicrosoft
- 
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

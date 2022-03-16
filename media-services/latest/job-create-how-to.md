@@ -1,11 +1,10 @@
 ---
-title: Create a job with Media Services 
+title: Create a job with Media Services
 description: The article shows how to create a Media Services job using different methods.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/11/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

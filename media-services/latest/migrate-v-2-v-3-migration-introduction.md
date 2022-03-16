@@ -2,10 +2,9 @@
 title: Migrate from Media Services v2 to v3 introduction
 description: This article is an introduction to migrating from Media Services v2 to v3.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 03/25/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

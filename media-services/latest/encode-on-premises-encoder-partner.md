@@ -4,7 +4,7 @@ description: This article discusses how to verify your on-premises live streamin
 author: johndeu
 manager: johndeu
 ms.author: inhenkel
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.topic: how-to
 ms.service: media-services
 ---

@@ -2,10 +2,9 @@
 title: Set the Media Services storage authentication
 description: This article shows you how to set the Media Services storage authentication.
 author: IngridAtMicrosoft
- 
 ms.service: media-services
 ms.topic: how-to
-ms.date: 03/08/2022
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

@@ -1,11 +1,10 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
-title: Streaming Locators in Azure Media Services 
+title: Streaming Locators in Azure Media Services
 description: This article gives an explanation of what Streaming Locators are, and how they are used by Azure Media Services.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 03/04/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ---

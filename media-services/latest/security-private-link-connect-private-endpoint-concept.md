@@ -2,10 +2,9 @@
 title: Private Endpoint connections overview
 description: This article is an overview of Private Endpoint connections with Media Services.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: overview
-ms.date: 10/22/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

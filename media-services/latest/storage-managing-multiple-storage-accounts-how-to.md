@@ -4,7 +4,7 @@ description: This articles give you guidance on how to manage Media Services v3 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 03/22/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ms.custom: devx-track-csharp, devx-track-azurepowershell
 ---

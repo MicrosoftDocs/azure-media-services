@@ -1,15 +1,12 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
-title: Content Key Policies in Media Services - Azure 
+title: Content Key Policies in Media Services - Azure
 description: This article gives an explanation of what Content Key Policies are, and how they are used by Azure Media Services.
 author: IngridAtMicrosoft
-
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ms.custom: seodec18
-
 ---
 
 # Content Key Policies

@@ -4,7 +4,7 @@ description: This article shows you how to use a private link with a Streaming E
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 10/22/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 

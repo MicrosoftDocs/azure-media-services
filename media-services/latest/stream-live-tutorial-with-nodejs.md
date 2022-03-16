@@ -6,10 +6,9 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.devlang: javascript
 ms.topic: tutorial
-ms.custom: "mvc, devx-track-nodejs"
-ms.date: 02/13/2021
+ms.custom: mvc, devx-track-nodejs
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 
 # Tutorial: Stream live with Media Services by using Node.js and TypeScript

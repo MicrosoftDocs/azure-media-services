@@ -5,7 +5,7 @@ ms.service: media-services
 ms.topic: quickstart
 ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.custom: mode-other
 ---
 

@@ -5,9 +5,8 @@ author: IngridAtMicrosoft
 keywords: azure media services, stream, Node.js
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 02/17/2021
+ms.date: 3/16/2022
 ms.author: inhenkel
-
 ---
 
 # How to encode and stream video files with Node.js

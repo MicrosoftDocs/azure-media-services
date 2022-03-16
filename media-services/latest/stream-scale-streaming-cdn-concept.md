@@ -1,12 +1,10 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
 title: Stream content with CDN integration
-: Azure Media Services
 description: Learn about streaming content with CDN integration, as well as prefetching and Origin-Assist CDN-Prefetch.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 08/31/2020
+ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 
