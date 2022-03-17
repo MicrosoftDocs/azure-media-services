@@ -11,7 +11,7 @@ ms.author: inhenkel
 1. Navigate to the Media Services account you want to work with.
 1. Select **Streaming endpoints** from the menu.
 1. Select **+ Streaming endpoint**. The Create a streaming endpoint screen will appear.
-1. Enter a name into the **Streaming enpoint name** field.
+1. Enter a name into the **Streaming endpoint name** field.
 1. Select a streaming endpoint type from the **Streaming endpoint types** selections:
     1. **Standard**. Select the Standard streaming endpoint if you expect egress bandwidth to be less than 600 Mbps, and you will not be using a CDN.
     1. **Premium**.  Select the Premium streaming endpoint if you expect egress bandwidth to be higher than 600 Mbps and you plant to use a CDN.
