@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to stop a live event.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-stop-live-event-portal.md](./includes/task-stop-live-event-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [stop an asset with CLI](./includes/task-stop-live-event-cli.md)]
+[!INCLUDE [task-stop-live-event-cli.md](./includes/task-stop-live-event-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [stop an asset with CLI](./includes/task-stop-live-event-rest.md)]
+[!INCLUDE [task-stop-live-event-rest.md](./includes/task-stop-live-event-rest.md)]
 
 ---

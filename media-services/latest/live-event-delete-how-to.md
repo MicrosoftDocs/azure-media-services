@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to delete a live event.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-delete-live-event-portal.md](./includes/task-delete-live-event-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [delete an asset with CLI](./includes/task-delete-live-event-cli.md)]
+[!INCLUDE [task-delete-live-event-cli.md](./includes/task-delete-live-event-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [delete an asset with CLI](./includes/task-delete-live-event-rest.md)]
+[!INCLUDE [task-delete-live-event-rest.md](./includes/task-delete-live-event-rest.md)]
 
 ---

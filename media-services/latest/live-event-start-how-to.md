@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to start a live event.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-start-live-event-portal.md](./includes/task-start-live-event-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [start an asset with CLI](./includes/task-start-live-event-cli.md)]
+[!INCLUDE [task-start-live-event-cli.md](./includes/task-start-live-event-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [start an asset with CLI](./includes/task-start-live-event-rest.md)]
+[!INCLUDE [task-start-live-event-rest.md](./includes/task-start-live-event-rest.md)]
 
 ---
