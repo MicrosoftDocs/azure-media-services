@@ -10,4 +10,4 @@ ms.author: inhenkel
 
 1. Navigate to the live event screen if you aren't there already.
 1. Select **Settings**. The Edit live event "live event name" settings screen will appear.
-1. You can change any of the settings you used to [create the live event](./live-event-create-how-to.md).
+1. You can change any of the settings you used to [create the live event](../live-event-create-how-to.md).

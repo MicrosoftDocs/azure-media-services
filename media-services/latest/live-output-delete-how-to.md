@@ -18,7 +18,7 @@ Use the following methods to delete a live output.
 
 ## [Portal](#tab/portal/)
 
-[!INCLUDE [task-delete-live-output-portal.md](./includes/task-delete-live-output-portal.md)]
+[!INCLUDE [task-stop-live-output-portal.md](./includes/task-stop-live-output-portal.md)]
 
 ## [CLI](#tab/cli/)
 
