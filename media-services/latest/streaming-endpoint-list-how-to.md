@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to list streaming endpoints.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-show-streaming-endpoint-portal.md](./includes/task-list-streaming-endpoint-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-show-streaming-endpoint-cli.md)]
+[!INCLUDE [task-show-streaming-endpoint-cli.md](./includes/task-list-streaming-endpoint-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-get-streaming-endpoint-rest.md)]
+[!INCLUDE [task-get-streaming-endpoint-rest.md](./includes/task-get-streaming-endpoint-rest.md)]
 
 ---
