@@ -473,6 +473,8 @@
           href: account-list-transforms-how-to.md
         - name: Set account encryption with customer-managed keys
           href: account-set-account-encryption-customer-managed-key-how-to.md
+        - name: Set account encryption with system-managed keys
+          href: account-set-account-encryption-system-managed-key-how-to.md
         - name: Show account encryption
           href: account-show-encryption-how-to.md
         - name: Sync storage keys
