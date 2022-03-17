@@ -21,14 +21,14 @@ Use the following methods to allocate a live event in standby mode.
 
 ## [Portal](#tab/portal/)
 
-[!INCLUDE [update an asset with CLI](./includes/task-standby-live-event-cli.md)]
+[!INCLUDE [task-standby-live-event-portal.md](./includes/task-standby-live-event-portal.md)]
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [update an asset with CLI](./includes/task-standby-live-event-cli.md)]
+[!INCLUDE [task-standby-live-event-cli.md](./includes/task-standby-live-event-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [update an asset with CLI](./includes/task-allocate-live-event-rest.md)]
+[!INCLUDE [task-allocate-live-event-rest.md](./includes/task-allocate-live-event-rest.md)]
 
 ---
