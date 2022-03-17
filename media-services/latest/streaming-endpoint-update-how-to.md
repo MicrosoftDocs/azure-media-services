@@ -12,7 +12,8 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-It is recommended that you review the [live event streaming best practices guide](live-event-streaming-best-practices-guide.md) before you update a streaming endpoint.
+> [!TIP]
+> Before you create a streaming endpoint, it is recommended that you review the [Media Services live streaming best practices guide](live-event-streaming-best-practices-guide.md).
 
 ## Methods
 
