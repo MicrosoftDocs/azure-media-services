@@ -18,6 +18,10 @@ ms.author: inhenkel
 
 Use the following methods to show or get a job.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-show-job-portal.md](includes/task-show-job-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-show-job-cli.md](includes/task-show-job-cli.md)]
