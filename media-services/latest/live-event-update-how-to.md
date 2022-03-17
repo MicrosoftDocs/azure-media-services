@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to update a live event.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-update-live-event-portal.md](./includes/task-update-live-event-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [update an asset with CLI](./includes/task-update-live-event-cli.md)]
+[!INCLUDE [task-update-live-event-cli.md](./includes/task-update-live-event-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [update an asset with CLI](./includes/task-update-live-event-rest.md)]
+[!INCLUDE [task-update-live-event-rest.md](./includes/task-update-live-event-rest.md)]
 
 ---

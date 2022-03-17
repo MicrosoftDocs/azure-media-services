@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to delete a streaming endpoint.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-delete-streaming-endpoint-portal.md](./includes/task-delete-streaming-endpoint-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-delete-streaming-endpoint-cli.md)]
+[!INCLUDE [task-delete-streaming-endpoint-cli.md](./includes/task-delete-streaming-endpoint-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-delete-streaming-endpoint-rest.md)]
+[!INCLUDE [task-delete-streaming-endpoint-rest.md](./includes/task-delete-streaming-endpoint-rest.md)]
 
 ---

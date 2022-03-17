@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to start a streaming endpoint.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-start-streaming-endpoint-portal.md](./includes/task-start-streaming-endpoint-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [start an asset with CLI](./includes/task-start-streaming-endpoint-cli.md)]
+[!INCLUDE [task-start-streaming-endpoint-cli.md](./includes/task-start-streaming-endpoint-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [start an asset with CLI](./includes/task-start-streaming-endpoint-rest.md)]
+[!INCLUDE [task-start-streaming-endpoint-rest.md](./includes/task-start-streaming-endpoint-rest.md)]
 
 ---

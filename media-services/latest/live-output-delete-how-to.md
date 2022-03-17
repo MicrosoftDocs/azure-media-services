@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to delete a live output.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-stop-live-output-portal.md](./includes/task-stop-live-output-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [delete an asset with CLI](./includes/task-delete-live-output-cli.md)]
+[!INCLUDE [task-delete-live-output-cli.md](./includes/task-delete-live-output-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [delete an asset with CLI](./includes/task-delete-live-output-rest.md)]
+[!INCLUDE [task-delete-live-output-rest.md](./includes/task-delete-live-output-rest.md)]
 
 ---

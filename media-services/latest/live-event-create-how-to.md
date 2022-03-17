@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to create a live event.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-create-live-event-portal.md](./includes/task-create-live-event-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-live-event-cli.md)]
+[!INCLUDE [task-create-live-event-cli.md](./includes/task-create-live-event-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-live-event-rest.md)]
+[!INCLUDE [task-create-live-event-rest.md](./includes/task-create-live-event-rest.md)]
 
 ---
