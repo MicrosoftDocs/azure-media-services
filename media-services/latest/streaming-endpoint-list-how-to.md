@@ -18,11 +18,11 @@ Use the following methods to list streaming endpoints.
 
 ## [Portal](#tab/portal/)
 
-[!INCLUDE [task-show-streaming-endpoint-portal.md](./includes/task-list-streaming-endpoint-portal.md)]
+[!INCLUDE [task-list-streaming-endpoint-portal.md](./includes/task-list-streaming-endpoint-portal.md)]
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [task-show-streaming-endpoint-cli.md](./includes/task-list-streaming-endpoint-cli.md)]
+[!INCLUDE [task-list-streaming-endpoint-cli.md](./includes/task-list-streaming-endpoint-cli.md)]
 
 ## [REST](#tab/rest/)
 

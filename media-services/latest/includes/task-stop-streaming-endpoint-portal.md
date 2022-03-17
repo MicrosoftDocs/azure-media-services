@@ -1,0 +1,15 @@
+---
+author: IngridAtMicrosoft
+ms.service: media-services 
+ms.topic: include
+ms.date: 08/18/2020
+ms.author: inhenkel
+---
+
+### Stop a streaming endpoint in the portal
+
+1. Navigate to the Media Services account you want to work with.
+1. Select **Streaming endpoints**. The Streaming enpoints page will appear.
+1. Select the streaming enpoint you want to start. The detail screen for the streaming endpoint will appear.
+1. Select **Stop**. A warning prompt will appear.
+1. Select the **Yes** button in the warning.
