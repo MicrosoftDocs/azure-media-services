@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to List live events.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-list-live-event-portal.md](./includes/task-list-live-event-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-list-live-event-cli.md](./includes/task-list-live-event-cli.md)]
