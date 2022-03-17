@@ -16,6 +16,13 @@ ms.author: inhenkel
 
 Use the following methods to allocate a live event in standby mode.
 
+> [!WARNING]
+> Allocating a live event in standby mode starts billing for the live event.
+
+## [Portal](#tab/portal/)
+
+[!INCLUDE [update an asset with CLI](./includes/task-standby-live-event-cli.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [update an asset with CLI](./includes/task-standby-live-event-cli.md)]

@@ -16,7 +16,7 @@ ms.author: inhenkel
 
 Use the following methods to delete a live event.
 
-## [Portal](#tab/cli/)
+## [Portal](#tab/portal/)
 
 [!INCLUDE [task-show-live-event-portal.md](./includes/task-show-live-event-portal.md)]
 
