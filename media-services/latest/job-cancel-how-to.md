@@ -16,7 +16,7 @@ ms.author: inhenkel
 
 Use the following methods to cancel a job.
 
-## [Portal](#tab/cli/)
+## [Portal](#tab/portal/)
 
 [!INCLUDE [task-cancel-job-portal.md](includes/task-cancel-job-portal.md)]
 
