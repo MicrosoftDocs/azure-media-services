@@ -26,7 +26,8 @@ ms.author: inhenkel
     1. **Use custom name**. The custom name field will appear.
         1. Enter the name you want to use in the **Custom hostname prefix** field. The input URL will have custom name prefix you enter prepended to the URL.
 1. You can either choose to start the live event automatically once it is created or you can start the live event later. Select either the **Yes** or **No** radio button.
-    >[!WARNING] If you start the live event once it has been created, your billing for the live event will begin.
+    >[!WARNING]
+    > If you start the live event once it has been created, your billing for the live event will begin.
 1. At this point you can either select the **Review + create** or **Next: Advanced >** button.
 1. Select the checkbox next to the *I have all the rights to use the content/file, and agree that it will be handled per the Online Services Terms  and the Microsoft Privacy Statement*.
 1. Select **Create** to create the live event.
