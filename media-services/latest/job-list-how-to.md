@@ -18,6 +18,10 @@ ms.author: inhenkel
 
 Use the following methods to list jobs.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-list-job-portal.md](includes/task-list-job-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-list-job-cli.md](includes/task-list-job-cli.md)]

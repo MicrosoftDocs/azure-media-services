@@ -18,6 +18,10 @@ ms.author: inhenkel
 
 Use the following methods to delete a job.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-delete-job-portal.md](includes/task-delete-job-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-delete-job-cli.md](includes/task-delete-job-cli.md)]

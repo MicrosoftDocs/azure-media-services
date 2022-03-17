@@ -18,6 +18,10 @@ ms.author: inhenkel
 
 Use the following methods to update a job.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-update-job-portal.md](includes/task-update-job-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-update-job-cli.md](includes/task-update-job-cli.md)]
