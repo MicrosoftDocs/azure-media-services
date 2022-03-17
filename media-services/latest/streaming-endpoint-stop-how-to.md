@@ -16,7 +16,7 @@ ms.author: inhenkel
 
 Use the following methods to stop a streaming endpoint.
 
-## [CLI](#tab/cli/)
+## [Portal](#tab/portal/)
 
 [!INCLUDE [task-stop-streaming-endpoint-portal.md](./includes/task-stop-streaming-endpoint-portal.md)]
 
