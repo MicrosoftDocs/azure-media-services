@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to create a live event.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [Create an asset with CLI](./includes/task-create-live-event-cli.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [Create an asset with CLI](./includes/task-create-live-event-cli.md)]
