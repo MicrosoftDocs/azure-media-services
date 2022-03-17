@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to stop a streaming endpoint.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-stop-streaming-endpoint-portal.md](./includes/task-stop-streaming-endpoint-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [stop an asset with CLI](./includes/task-stop-streaming-endpoint-cli.md)]
+[!INCLUDE [task-stop-streaming-endpoint-cli.md](./includes/task-stop-streaming-endpoint-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [stop an asset with CLI](./includes/task-stop-streaming-endpoint-rest.md)]
+[!INCLUDE [task-stop-streaming-endpoint-rest.md](./includes/task-stop-streaming-endpoint-rest.md)]
 
 ---

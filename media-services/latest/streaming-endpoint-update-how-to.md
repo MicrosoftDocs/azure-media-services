@@ -12,16 +12,23 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
+> [!TIP]
+> Before you create a streaming endpoint, it is recommended that you review the [Media Services live streaming best practices guide](live-event-streaming-best-practices-guide.md).
+
 ## Methods
 
 Use the following methods to update a streaming endpoint.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-update-streaming-endpoint-portal.md](./includes/task-update-streaming-endpoint-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [update an asset with CLI](./includes/task-update-streaming-endpoint-cli.md)]
+[!INCLUDE [task-update-streaming-endpoint-cli.md](./includes/task-update-streaming-endpoint-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [update an asset with CLI](./includes/task-update-streaming-endpoint-rest.md)]
+[!INCLUDE [task-update-streaming-endpoint-rest.md](./includes/task-update-streaming-endpoint-rest.md)]
 
 ---
