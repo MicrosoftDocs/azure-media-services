@@ -20,4 +20,4 @@ ms.author: inhenkel
     > [!WARNING]
     > When the streaming endpoint is started, billing begins.
 
-You can configure the streaming endpoint after you have created it.  See the [Live event streaming best practices guide](..live-event-streaming-best-practices-guide.md) to help you decide the ratio of traffic the streaming endpoint and CDN will handle.
+You can configure the streaming endpoint after you have created it.  See the [Live event streaming best practices guide](../live-event-streaming-best-practices-guide.md) to help you decide the ratio of traffic the streaming endpoint and CDN will handle.
