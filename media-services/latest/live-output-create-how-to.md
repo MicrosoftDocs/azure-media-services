@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to create a live output.
 
+## [Poral](#tab/portal/)
+
+[!INCLUDE [Create an asset with CLI](./includes/task-create-live-output-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [Create an asset with CLI](./includes/task-create-live-output-cli.md)]
