@@ -18,6 +18,10 @@ This article shows how to delete a Media Services asset.
 
 You can use the following methods to delete a Media Services asset.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [Create an asset with CLI](./includes/task-create-asset-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [Create an asset with CLI](./includes/task-create-asset-cli.md)]
