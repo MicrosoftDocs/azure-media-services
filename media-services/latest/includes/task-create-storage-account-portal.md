@@ -12,6 +12,8 @@ To create a storage account, you must first create a resource group within a loc
 
 [!INCLUDE [task-create-resource-group-portal](task-create-resource-group-portal.md)]
 
+### Create the storage account
+
 1. Navigate to the resource group you want to work with.
 1. Select + Create to create a new resource.
 1. Search for Storage account in the search bar and select *Storage account*.
