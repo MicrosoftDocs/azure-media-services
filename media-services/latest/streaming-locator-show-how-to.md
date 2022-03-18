@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to show the details of a streaming locator.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-show-urls-streaming-locator-portal.md](./includes/task-show-urls-streaming-locator-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [Create an asset with CLI](includes/task-show-streaming-locator-cli.md)]
