@@ -12,31 +12,29 @@ ms.author: inhenkel
 
 This topic gives details about [Transforms](/rest/api/media/transforms) and [Jobs](/rest/api/media/jobs) and explains the relationship between these entities.
 
-## Overview
+## Typical workflow
+
+A **Transform** is like a recipe. It helps you create the recipe once (Step 1), and submit Jobs using that recipe (Step 2).
+
+1. Create a Transform.
+1. Submit Jobs under that Transform.
+1. List Transforms.
+1. Delete a Transform, if you aren't planning to use it in the future.
+
+## Example
+
+Suppose you wanted to extract the first frame of all your videos as a thumbnail image–the steps you would take are:
+
+1. Define the recipe, or the rule for processing your videos: "use the first frame of the video as the thumbnail".
+1. For each video, you would tell the service:
+    1. Where to find that video.
+    1. Where to write the output thumbnail image.
 
 ### Transforms/Jobs workflow
 
 The following diagram shows transforms/jobs workflow:
 
 ![Transforms and jobs workflow in Azure Media Services](./media/encoding/transforms-jobs.png)
-
-#### Typical workflow
-
-1. Create a Transform.
-2. Submit Jobs under that Transform.
-3. List Transforms.
-4. Delete a Transform, if you aren't planning to use it in the future.
-
-#### Example
-
-Suppose you wanted to extract the first frame of all your videos as a thumbnail image–the steps you would take are:
-
-1. Define the recipe, or the rule for processing your videos: "use the first frame of the video as the thumbnail".
-2. For each video, you would tell the service:
-    1. Where to find that video.
-    2. Where to write the output thumbnail image.
-
-A **Transform** helps you create the recipe once (Step 1), and submit Jobs using that recipe (Step 2).
 
 > [!NOTE]
 > Properties of **Transform** and **Job** of the Datetime type are always in UTC format.
