@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to create a content key policy.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-create-content-key-policy-portal.md](includes/task-create-content-key-policy-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-create-content-key-policy-cli.md)]
+[!INCLUDE [task-create-content-key-policy-cli.md](includes/task-create-content-key-policy-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-create-content-key-policy-rest.md)]
+[!INCLUDE [task-create-content-key-policy-rest.md](includes/task-create-content-key-policy-rest.md)]
 
 ---

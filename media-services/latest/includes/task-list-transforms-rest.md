@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### List transforms with REST
 
-See the [REST API](/rest/api/media/transforms/list) for listing tranforms.
+See the [REST API](/rest/api/media/transforms/list) for listing transforms.

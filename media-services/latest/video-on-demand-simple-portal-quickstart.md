@@ -26,6 +26,8 @@ This article shows you how to do the basic steps for delivering a basic video on
 
 <!-- ## Create a transform -->
 
+Select ContentAwareEncoding for the preset name selection step below.
+
 [!INCLUDE [task-create-asset-portal](includes/task-create-transform-portal.md)]
 
 Stay on this screen for the next steps.

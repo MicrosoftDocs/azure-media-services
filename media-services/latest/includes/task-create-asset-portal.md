@@ -13,7 +13,7 @@ ms.custom: CLI
 
 You should have a media services account, a storage account, and a default streaming endpoint.  
 
-1. In the portal, navigate to the Media Services account.
+1. Navigate to the Media Services account you want to work with.
 1. Select **Assets**. Assets are the containers that are used to house your media content.
 1. Select **Upload**. The Upload new assets screen will appear.
 1. Select the storage account you created for the Media Services account from the **Storage account** dropdown menu. It should be selected by default.
