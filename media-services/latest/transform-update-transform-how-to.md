@@ -18,6 +18,10 @@ This article shows you how to update a Media Services transform.
 
 You can use the following methods to update a Media Services transform.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [Update a transform](./includes/task-update-transform-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [Update a transform](./includes/task-update-transform-cli.md)]
