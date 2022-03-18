@@ -9,6 +9,7 @@ ms.custom: CLI
 
 ### Create a transform with the portal
 
+1. Navigate to the Media Service account you want to work with.
 1. Select **Transforms + jobs**.
 1. Select **Add transform**. The Add transform screen will appear.
 1. Enter a transform name in the **Transform name** field.
