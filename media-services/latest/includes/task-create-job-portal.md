@@ -7,10 +7,11 @@ ms.author: inhenkel
 ms.custom: CLI
 ---
 
-<!--Create a media services job portal-->
-
 ### Create a job in the portal
 
+1. Navigate to the Media Services account you want to work with.
+1. Select **Tranforms + jobs** from the menu.
+1. Select the transform you want to use for the job. The transform screen will appear.
 1. Select **Add job**. The Create a job screen will appear.
 1. For the **Input source**, the **Asset** radio button should be selected by default.  If not, select it now.
 1. Select **Select an existing asset**. The Select an asset screen will appear.

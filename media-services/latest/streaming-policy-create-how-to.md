@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to create a streaming policy.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-create-streaming-policy-portal.md](./includes/task-create-streaming-policy-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-streaming-policy-cli.md)]
+[!INCLUDE [task-create-streaming-policy-cli.md](./includes/task-create-streaming-policy-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-streaming-policy-rest.md)]
+[!INCLUDE [task-create-streaming-policy-rest.md](./includes/task-create-streaming-policy-rest.md)]
 
 ---

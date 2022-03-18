@@ -19,4 +19,4 @@ From this screen, you can:
 - See if there are jobs associated with a transform.
 - When the job was last modified.
 - When the job was last submitted.
-- Add a job, edit the tranform, or delete the transform by selecting **...**.
+- Add a job, edit the transform, or delete the transform by selecting **...**.

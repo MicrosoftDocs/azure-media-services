@@ -18,6 +18,10 @@ This article shows you how to delete a Media Services transform.
 
 You can use the following methods to delete a Media Services transform.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [Create an asset with CLI](./includes/task-delete-transform-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [Create an asset with CLI](./includes/task-delete-transform-cli.md)]
