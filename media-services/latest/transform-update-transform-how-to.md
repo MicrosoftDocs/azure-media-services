@@ -20,11 +20,11 @@ You can use the following methods to update a Media Services transform.
 
 ## [Portal](#tab/portal/)
 
-[!INCLUDE [Update a transform](./includes/task-update-transform-portal.md)]
+[!INCLUDE [task-update-transform-portal.md](./includes/task-update-transform-portal.md)]
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Update a transform](./includes/task-update-transform-cli.md)]
+[!INCLUDE [task-update-transform-cli.md](./includes/task-update-transform-cli.md)]
 
 ## [REST](#tab/rest/)
 
