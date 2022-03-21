@@ -18,6 +18,10 @@ Use the following methods to add an option to a content key policy.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-add-option-content-key-policy-cli.md)]
+[!INCLUDE [task-add-option-content-key-policy-cli.md](includes/task-add-option-content-key-policy-cli.md)]
+
+## [REST](#tab/rest/)
+
+[!INCLUDE [task-add-option-content-key-policy-rest.md](includes/task-add-option-content-key-policy-rest.md)]
 
 ---

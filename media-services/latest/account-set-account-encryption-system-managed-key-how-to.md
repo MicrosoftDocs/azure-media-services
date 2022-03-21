@@ -25,3 +25,7 @@ You can use the following methods to set the Media Services account encryption w
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [Set account encryption](./includes/task-set-account-encryption-system-managed-key-cli.md)]
+
+## [REST](#tab/rest/)
+
+[!INCLUDE [Set account encryption](./includes/task-set-account-encryption-rest.md)]

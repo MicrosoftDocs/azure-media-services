@@ -25,3 +25,9 @@ You can use the following methods to remove a storage account from a Media Servi
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-remove-account-storage-cli.md](./includes/task-remove-account-storage-cli.md)]
+
+## [REST](#tab/rest/)
+
+[!INCLUDE [task-remove-account-storage-rest.md](./includes/task-remove-account-storage-rest.md)]
+
+---
