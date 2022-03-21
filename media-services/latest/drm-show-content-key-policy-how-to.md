@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to show an existing content key policy.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-list-content-key-policy-portal.md](includes/task-list-content-key-policy-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [Create an asset with CLI](includes/task-show-content-key-policy-cli.md)]
