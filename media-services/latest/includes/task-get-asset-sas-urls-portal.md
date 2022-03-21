@@ -20,4 +20,4 @@ ms.custom: CLI, devx-track-azurecli
 1. Give the SAS a start and expiry time and date.
 1. If you would like to restrict access to the asset enter the IP addresses that will be allowed to access the asset in the **Allowed IP addresses** field.
 1. Select either the **HTTPS** or **HPPTS and HTTP** radio button to set the allowed protocols on the asset.
-1. Select the Generate SAS token and URL button.  The URLs will appear on the screen.
+1. Select the **Generate SAS token and URL** button.  The URLs will appear on the screen.

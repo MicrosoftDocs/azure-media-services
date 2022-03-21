@@ -13,4 +13,4 @@ ms.author: inhenkel
 1. Streaming locators are listed under the video player.
 1. Find the streaming locator you want to work with.
 1. Select **Show URLs** for the streaming locator. The Streaming URLs screen will appear.
-1. If a content key policy was applied to the streaming locator, the policy will be shown next to the Content Key policy label.
+1. If a content key policy was applied to the streaming locator, the policy will be shown next to the **Content Key** policy label.
