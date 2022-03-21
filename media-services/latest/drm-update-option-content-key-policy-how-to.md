@@ -26,6 +26,6 @@ Use the following methods to update an option in a content key policy.
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [task-update-option-content-key-policy-rest.md](includes/task-update-key-policy-rest.md)]
+[!INCLUDE [task-update-option-content-key-policy-rest.md](includes/task-update-content-key-policy-rest.md)]
 
 ---
