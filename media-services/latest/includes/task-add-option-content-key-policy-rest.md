@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Add an option to a content key policy with REST
 
-See the Media Services [REST API](https://docs.microsoft.com/en-us/rest/api/media/content-key-policies/update) for adding an option to a content key policy.
+See the Media Services [REST API](https://docs.microsoft.com/rest/api/media/content-key-policies/update) for adding an option to a content key policy.

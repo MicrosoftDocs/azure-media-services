@@ -27,6 +27,6 @@ You can use the following methods to show the account encryption of a Media Serv
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [task-get-account-encryption-rest.md](./includes/task-get-account-encryption-rest.md)]
+[!INCLUDE [task-get-account-encryption-rest.md](./includes/task-show-account-encryption-rest.md)]
 
 ---
