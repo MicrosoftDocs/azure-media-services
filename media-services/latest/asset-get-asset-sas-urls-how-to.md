@@ -18,6 +18,10 @@ This article shows you how to get a Media Services asset's SAS URLs.
 
 You can use the following methods to get a Media Services asset's SAS URLs.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-get-asset-sas-urls-portal.md](./includes/task-get-asset-sas-urls-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-get-asset-sas-urls-cli.md](./includes/task-get-asset-sas-urls-cli.md)]
