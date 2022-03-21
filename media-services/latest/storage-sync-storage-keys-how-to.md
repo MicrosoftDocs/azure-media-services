@@ -20,10 +20,10 @@ You can use the following methods to sync the storage keys of a Media Services s
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-sync-storage-keys-cli.md)]
+[!INCLUDE [./includes/task-sync-storage-keys-cli.md](./includes/task-sync-storage-keys-cli.md)]
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/mediaservices/sync-storage-keys).
+[!INCLUDE [./includes/task-sync-storage-keys-rest.md](./includes/task-sync-storage-keys-rest.md)]
 
 ---

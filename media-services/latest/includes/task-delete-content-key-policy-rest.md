@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Delete a content key policy with REST
 
-See the Media Services [REST API](/rest/api/media/content-key-policies/delete).
+See the Media Services [REST API](/rest/api/media/content-key-policies/delete) for deleting a content key policy.
