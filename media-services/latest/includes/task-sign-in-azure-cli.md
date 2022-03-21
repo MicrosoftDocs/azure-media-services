@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 05/13/2021
 ms.author: inhenkel
-ms.custom: CLI, devx-track-azurecli
+
 ---
 
 <!--Sign in to Azure CLI-->

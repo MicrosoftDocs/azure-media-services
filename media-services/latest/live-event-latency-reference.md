@@ -6,7 +6,6 @@ ms.service: media-services
 ms.topic: reference
 ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: devx-track-csharp
 ---
 
 # Live Event low latency settings

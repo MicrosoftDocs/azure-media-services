@@ -6,7 +6,6 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.devlang: javascript
 ms.topic: tutorial
-ms.custom: mvc, devx-track-nodejs
 ms.date: 3/16/2022
 ms.author: inhenkel
 ---

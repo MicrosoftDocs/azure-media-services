@@ -7,7 +7,6 @@
  ms.topic: include
  ms.date: 04/16/2020
  ms.author: spelluru
- ms.custom: include file
 ---
 
 ## Enable Event Grid resource provider

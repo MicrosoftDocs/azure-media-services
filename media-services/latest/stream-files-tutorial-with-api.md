@@ -4,7 +4,6 @@ description: Tutorial showing how to upload a file, encode video, and stream con
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
-ms.custom: mvc
 ms.date: 3/16/2022
 ms.author: inhenkel
 ---

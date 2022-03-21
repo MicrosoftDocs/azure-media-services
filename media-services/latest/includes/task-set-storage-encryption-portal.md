@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 11/04/2020
 ms.author: inhenkel
-ms.custom: portal
+
 ---
 
 <!--Set the encryption on storage account in the portal-->

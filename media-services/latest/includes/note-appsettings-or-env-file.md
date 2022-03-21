@@ -4,7 +4,6 @@ ms.service: media-services
 ms.topic: include
 ms.date: 07/23/2021
 ms.author: inhenkel
-ms.custom: portal
 ---
 
 Open appsettings.json in your downloaded project. Replace the values with credentials that you got from [accessing APIs](../access-api-howto.md).

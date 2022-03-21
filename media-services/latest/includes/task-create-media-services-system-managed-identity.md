@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 11/29/2021
 ms.author: inhenkel
-ms.custom: portal
+
 ---
 
 <!-- Use the portal to create a media services account. -->

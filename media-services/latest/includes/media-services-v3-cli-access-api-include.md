@@ -1,13 +1,11 @@
 ---
 title: include file
 description: include file
-
 author: Juliako
 ms.service: media-services
 ms.topic: include
 ms.date: 05/01/2019
 ms.author: juliako
-ms.custom: include file, devx-track-azurecli
 ---
 
 ### Access the Media Services API

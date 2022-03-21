@@ -6,7 +6,6 @@ ms.service: media-services
 ms.topic: article
 ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: devx-track-csharp, devx-track-azurepowershell
 ---
 
 # Managing Media Services v3 assets across multiple storage accounts  
