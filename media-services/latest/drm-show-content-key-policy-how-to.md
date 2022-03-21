@@ -22,7 +22,7 @@ Use the following methods to show an existing content key policy.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE task-show-content-key-policy-cli.md](includes/task-show-content-key-policy-cli.md)]
+[!INCLUDE [task-show-content-key-policy-cli.md](includes/task-show-content-key-policy-cli.md)]
 
 ## [REST](#tab/rest/)
 
