@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Get account encryption with REST
 
-See the Media Services [REST API](https://docs.microsoft.com/en-us/rest/api/media/mediaservices/get) for getting the Media Services account ecryption.
+See the Media Services [REST API](https://docs.microsoft.com/rest/api/media/mediaservices/get) for getting the Media Services account ecryption.

@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Remove a storage account from a Media Services account with REST
 
-See the Media Services [REST API](https://docs.microsoft.com/en-us/rest/api/media/mediaservices/update) for removing a storage account from a Media Services account.
+See the Media Services [REST API](https://docs.microsoft.com/rest/api/media/mediaservices/update) for removing a storage account from a Media Services account.
