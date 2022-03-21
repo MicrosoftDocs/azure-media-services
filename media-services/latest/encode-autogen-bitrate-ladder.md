@@ -6,7 +6,6 @@ ms.service: media-services
 ms.topic: conceptual
 ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: seodec18
 ---
 #  Encode with an auto-generated bitrate ladder
 

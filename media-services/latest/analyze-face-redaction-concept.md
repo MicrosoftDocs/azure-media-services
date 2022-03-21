@@ -6,7 +6,6 @@ ms.service: media-services
 ms.topic: conceptual
 ms.date: 3/16/2022
 ms.author: johndeu
-ms.custom: devx-track-csharp
 ---
 # Find and redact (blur) faces with the Face Detector preset
 

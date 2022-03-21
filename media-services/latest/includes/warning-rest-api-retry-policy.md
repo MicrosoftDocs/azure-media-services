@@ -4,7 +4,6 @@ ms.service: media-services
 ms.topic: include
 ms.date: 11/04/2020
 ms.author: johndeu
-ms.custom: sdk
 ---
 
 > [!WARNING]

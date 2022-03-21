@@ -6,7 +6,6 @@ ms.topic: quickstart
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.date: 3/16/2022
-ms.custom: mode-ui
 ---
 
 # Create an Azure Media Services live stream with OBS

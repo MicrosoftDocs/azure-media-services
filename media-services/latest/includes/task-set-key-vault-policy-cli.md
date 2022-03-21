@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 05/14/2021
 ms.author: inhenkel
-ms.custom: CLI
+
 ---
 
 <!-- ### Set the the Key Vault policy -->

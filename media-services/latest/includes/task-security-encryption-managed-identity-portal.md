@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 12/01/2021
 ms.author: inhenkel
-ms.custom: portal
+
 ---
 
 <!-- Use the portal to add use either a user managed identity or system managed identity for account encryption -->

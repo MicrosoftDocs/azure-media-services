@@ -6,7 +6,6 @@ ms.service: media-services
 ms.topic: tutorial
 ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: devx-track-js
 ---
 
 # Tutorial: End-to-End content protection using Azure AD

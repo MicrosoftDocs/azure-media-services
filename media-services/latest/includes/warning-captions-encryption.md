@@ -4,7 +4,6 @@ ms.service: media-services
 ms.topic: include
 ms.date: 10/09/21
 ms.author: johndeu
-ms.custom: concept, captions, encryption
 ---
 
 ## Security considerations for closed captions, subtitles, and timed-metadata delivery
