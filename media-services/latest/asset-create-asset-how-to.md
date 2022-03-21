@@ -26,24 +26,24 @@ Use the following methods to create a Media Services asset.
 
 Creating assets in the portal is as simple as uploading a file.
 
-[!INCLUDE [task-create-asset-portal](includes/task-create-asset-portal.md)]
+[!INCLUDE [task-create-asset-portal.md](includes/task-create-asset-portal.md)]
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-asset-cli.md)]
+[!INCLUDE [task-create-asset-cli.md](./includes/task-create-asset-cli.md)]
 
 ## [REST](#tab/rest/)
 
 ### Using REST
 
-[!INCLUDE [create an asset writh REST](./includes/task-create-asset-rest.md)]
+[!INCLUDE [task-create-asset-rest.md](./includes/task-create-asset-rest.md)]
 
 ### Using cURL
 
-[!INCLUDE [create an asset with CURL](./includes/task-create-asset-curl.md)]
+[!INCLUDE [task-create-asset-curl.md](./includes/task-create-asset-curl.md)]
 
 ## [.NET](#tab/net/)
 
-[!INCLUDE [Create an asset with .NET](./includes/task-create-asset-dotnet.md)]
+[!INCLUDE [task-create-asset-dotnet.md](./includes/task-create-asset-dotnet.md)]
 
 ---
