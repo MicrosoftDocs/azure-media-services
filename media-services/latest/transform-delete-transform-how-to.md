@@ -20,14 +20,14 @@ You can use the following methods to delete a Media Services transform.
 
 ## [Portal](#tab/portal/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-delete-transform-portal.md)]
+[!INCLUDE [task-delete-transform-portal.md](./includes/task-delete-transform-portal.md)]
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-delete-transform-cli.md)]
+[!INCLUDE [task-delete-transform-cli.md](./includes/task-delete-transform-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with REST](./includes/task-delete-transform-rest.md)]
+[!INCLUDE [task-delete-transform-rest.md](./includes/task-delete-transform-rest.md)]
 
 ---

@@ -22,10 +22,10 @@ Use the following methods to show the details of a streaming locator.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-show-streaming-locator-cli.md)]
+[!INCLUDE [task-show-streaming-locator-cli.md](includes/task-show-streaming-locator-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-get-streaming-locator-rest.md)]
+[!INCLUDE [task-get-streaming-locator-rest.md](includes/task-get-streaming-locator-rest.md)]
 
 ---

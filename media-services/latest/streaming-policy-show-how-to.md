@@ -18,10 +18,10 @@ Use the following methods to show or get the details of a streaming policy.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-show-streaming-policy-cli.md)]
+[!INCLUDE [task-show-streaming-policy-cli.md](./includes/task-show-streaming-policy-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-get-streaming-policy-rest.md)]
+[!INCLUDE [task-get-streaming-policy-rest.md](./includes/task-get-streaming-policy-rest.md)]
 
 ---

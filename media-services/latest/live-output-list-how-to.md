@@ -18,10 +18,10 @@ Use the following methods to list live outputs.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-list-live-output-cli.md)]
+[!INCLUDE [task-list-live-output-cli.md](./includes/task-list-live-output-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-list-live-output-rest.md)]
+[!INCLUDE [task-list-live-output-rest.md](./includes/task-list-live-output-rest.md)]
 
 ---
