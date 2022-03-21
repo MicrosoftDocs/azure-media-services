@@ -24,6 +24,6 @@ You can use the following methods to sync the storage keys of a Media Services s
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [./includes/task-sync-storage-keys-cli.md](./includes/task-sync-storage-keys-cli.md)]
+[!INCLUDE [./includes/task-sync-storage-keys-rest.md](./includes/task-sync-storage-keys-rest.md)]
 
 ---
