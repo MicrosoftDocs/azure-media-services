@@ -18,6 +18,10 @@ Use the following methods to show or get the details of an account filter.
 
 ## [CLI](#tab/cli/)
 
+You cannot get the details of an account filter in the portal.
+
+## [CLI](#tab/cli/)
+
 [!INCLUDE [task-create-account-filter-cli.md](./includes/task-show-account-filter-cli.md)]
 
 ## [REST](#tab/rest/)

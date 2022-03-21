@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to list the content keys of a streaming locator.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-list-content-key-streaming-locator-portal.md](./includes/task-list-content-key-streaming-locator-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-list-content-keys-streaming-locator-cli.md](./includes/task-list-content-keys-streaming-locator-cli.md)]

@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to remove an option from a content key policy.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-list-content-key-policy-portal.md](includes/task-list-content-key-policy-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-remove-option-content-key-policy-cli.md](includes/task-remove-option-content-key-policy-cli.md)]

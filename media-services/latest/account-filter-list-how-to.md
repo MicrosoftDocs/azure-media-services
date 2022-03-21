@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to list account filters.
 
+## [Portal](#tab/portal/)
+
+You cannot list account filters in the portal.
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-create-account-filter-cli.md](./includes/task-list-account-filter-cli.md)]
