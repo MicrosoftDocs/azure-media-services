@@ -29,4 +29,8 @@ You can use additional storage accounts with a Media Services account.
 
 [!INCLUDE [task-create-storage-account-cli.md](./includes/task-create-storage-account-cli.md)]
 
+## [REST](#tab/rest/)
+
+[!INCLUDE [task-create-storage-account-portal.md](./includes/task-create-storage-account-rest.md)]
+
 ---
