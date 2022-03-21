@@ -25,4 +25,8 @@ You can use the following methods to add storage to a Media Services account.
 
 [!INCLUDE [./includes/task-add-account-storage-cli.md](./includes/task-add-account-storage-cli.md)]
 
+## [CLI](#tab/cli/)
+
+[!INCLUDE [./includes/task-add-account-storage-cli.md](./includes/task-add-account-storage-rest.md)]
+
 ---
