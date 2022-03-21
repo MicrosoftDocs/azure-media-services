@@ -7,10 +7,10 @@ ms.author: inhenkel
 ms.custom: CLI, devx-track-azurecli
 ---
 
-<!--Delete an asset filter CLI-->
+### Delete an asset filter in the portal
 
-### Delete an asset filter with the CLI
-
-:::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetFilterDelete" interactive="azurecli-interactive":::
-
-For more information about this command, see the Media Services [CLI reference](/cli/azure/ams/asset-filter?view=azure-cli-latest#az-ams-asset-filter-delete).
+1. Navigate to the Media Services account you want to work with.
+1. Select **Assets** from the menu. The Assets screen will appear.
+1. Select the asset you want to work with from the list.
+1. In the Asset filter's list, select **...**.
+1. Select **Delete** to delete the asset filter.
