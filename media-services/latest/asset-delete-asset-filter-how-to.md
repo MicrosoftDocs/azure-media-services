@@ -18,6 +18,10 @@ This article shows how to delete a Media Services asset filter.
 
 You can use the following methods to delete a Media Services asset filter.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-delete-asset-filter-portal.md](./includes/task-delete-asset-filter-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-delete-asset-filter-cli.md](./includes/task-delete-asset-filter-cli.md)]

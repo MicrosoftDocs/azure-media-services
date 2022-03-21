@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to update account filters.
 
+## [Poral](#tab/portal/)
+
+You cannot update an account filter in the portal.
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-create-account-filter-cli.md](./includes/task-update-account-filter-cli.md)]

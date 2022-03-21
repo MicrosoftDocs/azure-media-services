@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to show or get the details of an account filter.
 
+## [Portal](#tab/portal/)
+
+You cannot get the details of an account filter in the portal.
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-create-account-filter-cli.md](./includes/task-show-account-filter-cli.md)]

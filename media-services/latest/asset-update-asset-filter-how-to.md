@@ -18,6 +18,11 @@ This article shows you how to update a Media Services asset filter.
 
 You can use the following methods to update a Media Services asset filter.
 
+
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-create-asset-filter-portal.md](./includes/task-create-asset-filter-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-update-asset-filter-cli.md](./includes/task-update-asset-filter-cli.md)]
