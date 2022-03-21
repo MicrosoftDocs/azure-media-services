@@ -20,6 +20,10 @@ This article shows you how to create a Media Services asset filter.
 
 You can use the following methods to create a Media Services asset filter.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-create-asset-filter-portal.md](./includes/task-create-asset-filter-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-create-asset-filter-cli.md](./includes/task-create-asset-filter-cli.md)]

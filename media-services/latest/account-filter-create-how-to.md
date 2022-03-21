@@ -16,6 +16,10 @@ ms.author: inhenkel
 
 Use the following methods to create an account filter.
 
+## [Portal](#tab/portal/)
+
+You cannot create an account filter with the portal.
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-create-account-filter-cli.md](./includes/task-create-account-filter-cli.md)]

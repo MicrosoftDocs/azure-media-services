@@ -7,8 +7,6 @@ ms.author: inhenkel
 ms.custom: CLI, devx-track-azurecli
 ---
 
-<!--Create an asset filter CLI-->
-
 ### Create an asset filter with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetFilterCreate" interactive="azurecli-interactive":::
