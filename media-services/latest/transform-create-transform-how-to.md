@@ -25,15 +25,14 @@ You can use the following methods to create a transform.
 
 ## [Portal](#tab/portal/)
 
-[!INCLUDE [task-create-asset-portal](includes/task-create-transform-portal.md)]
+[!INCLUDE [task-create-transform-portal.md](includes/task-create-transform-portal.md)]
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [task-create-asset-portal](includes/task-create-transform-cli.md)]
+[!INCLUDE [task-create-transform-cli.md](includes/task-create-transform-cli.md)]
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/transforms/create-or-update).
+[!INCLUDE [task-create-transform-rest.md](includes/task-create-transform-rest.md)]
 
 ---
-

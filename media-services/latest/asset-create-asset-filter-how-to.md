@@ -22,10 +22,10 @@ You can use the following methods to create a Media Services asset filter.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Show the media services account encryption](./includes/task-create-asset-filter-cli.md)]
+[!INCLUDE [task-create-asset-filter-cli.md](./includes/task-create-asset-filter-cli.md)]
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/asset-filters/create-or-update).
+[!INCLUDE [task-create-asset-filter-rest.md](./includes/task-create-asset-filter-rest.md)]
 
 ---

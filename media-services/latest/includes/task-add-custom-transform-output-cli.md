@@ -8,6 +8,6 @@ ms.author: inhenkel
 
 <!--Add a custom transform output-->
 
-### Add a custom transform output
+### Add a custom transform output with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsTransformOutputAddCustom" interactive="azurecli-interactive":::

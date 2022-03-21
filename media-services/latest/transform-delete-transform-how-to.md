@@ -28,6 +28,6 @@ You can use the following methods to delete a Media Services transform.
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/transforms/delete).
+[!INCLUDE [Create an asset with REST](./includes/task-delete-transform-rest.md)]
 
 ---

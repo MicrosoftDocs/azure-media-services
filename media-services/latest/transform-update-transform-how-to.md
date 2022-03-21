@@ -28,4 +28,4 @@ You can use the following methods to update a Media Services transform.
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/transforms/update).
+[!INCLUDE [task-update-transform-rest.md)](./includes/task-update-transform-rest.md)]

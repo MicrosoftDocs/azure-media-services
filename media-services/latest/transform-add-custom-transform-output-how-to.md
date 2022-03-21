@@ -21,10 +21,10 @@ You can use the following methods to add a custom transform output for a Media S
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Show the media services account encryption](./includes/task-add-custom-transform-output-cli.md)]
+[!INCLUDE [task-add-custom-transform-output-cli.md](./includes/task-add-custom-transform-output-cli.md)]
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/transforms).
+[!INCLUDE [task-add-custom-transform-output-rest.md](./includes/task-add-custom-transform-output-rest.md)]
 
 ---

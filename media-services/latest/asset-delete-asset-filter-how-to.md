@@ -20,8 +20,8 @@ You can use the following methods to delete a Media Services asset filter.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-delete-asset-filter-cli.md)]
+[!INCLUDE [task-delete-asset-filter-cli.md](./includes/task-delete-asset-filter-cli.md)]
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/asset-filters/delete).
+[!INCLUDE [task-delete-asset-filter-rest.md](./includes/task-delete-asset-filter-rest.md)]
