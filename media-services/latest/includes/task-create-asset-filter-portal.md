@@ -6,7 +6,7 @@ ms.date: 08/18/2020
 ms.author: inhenkel
 ---
 
-### Create or update an asset filter in the portal
+### Create, list or update an asset filter in the portal
 
 1. Navigate to the Media Services account you want to work with.
 1. Select **Assets**. The assets screen will appear.
@@ -17,7 +17,7 @@ ms.author: inhenkel
 1. Select **+ Add an asset filter**. The Add asset filter screen will appear.
 1. Enter a name in the **Asset filter name** field.
 
-### Update a filter
+### List and update a filter
 
 1. Select a filter from the filters list. The Update asset filter screen will appear.
 

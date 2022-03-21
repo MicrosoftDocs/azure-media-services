@@ -18,6 +18,10 @@ This article shows you how to list the asset filters of a Media Services asset.
 
 You can use the following methods to list the asset filters of a Media Services asset.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-create-asset-filters-portal.md](./includes/task-create-asset-filters-portal.md)]
+
 ## [CLI](#tab/cli/)
 
 [!INCLUDE [task-list-asset-filters-cli.md](./includes/task-list-asset-filters-cli.md)]
