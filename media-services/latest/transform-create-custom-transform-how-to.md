@@ -20,4 +20,4 @@ You can use the following methods to create a Media Services custom transform.
 
 ## CLI
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-custom-transform-cli.md)]
+[!INCLUDE [task-create-custom-transform-cli.md](./includes/task-create-custom-transform-cli.md)]

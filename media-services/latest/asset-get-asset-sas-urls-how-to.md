@@ -20,10 +20,10 @@ You can use the following methods to get a Media Services asset's SAS URLs.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-get-asset-sas-urls-cli.md)]
+[!INCLUDE [task-get-asset-sas-urls-cli.md](./includes/task-get-asset-sas-urls-cli.md)]
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/assets/list-container-sas).
+[!INCLUDE [task-get-asset-sas-urls-rest.md](./includes/task-get-asset-sas-urls-rest.md)]
 
 ---

@@ -18,14 +18,14 @@ Use the following methods to create a streaming locator.
 
 ## [Portal](#tab/portal/)
 
-[!INCLUDE [task-create-asset-portal](includes/task-create-streaming-locator-portal.md)]
+[!INCLUDE [task-create-streaming-locator-portal.md](includes/task-create-streaming-locator-portal.md)]
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-streaming-locator-cli.md)]
+[!INCLUDE [task-create-streaming-locator-cli.md](./includes/task-create-streaming-locator-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-streaming-locator-rest.md)]
+[!INCLUDE [task-create-streaming-locator-rest.md](./includes/task-create-streaming-locator-rest.md)]
 
 ---

@@ -18,10 +18,10 @@ Use the following methods to list the content keys of a streaming locator.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-list-content-keys-streaming-locator-cli.md)]
+[!INCLUDE [task-list-content-keys-streaming-locator-cli.md](./includes/task-list-content-keys-streaming-locator-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-list-content-keys-streaming-locator-rest.md)]
+[!INCLUDE [task-list-content-keys-streaming-locator-rest.md](./includes/task-list-content-keys-streaming-locator-rest.md)]
 
 ---

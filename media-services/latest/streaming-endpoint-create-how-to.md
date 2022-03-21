@@ -21,14 +21,14 @@ Use the following methods to create a streaming endpoint.
 
 ## [Portal](#tab/portal/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-streaming-endpoint-portal.md)]
+[!INCLUDE [task-create-streaming-endpoint-portal.md](./includes/task-create-streaming-endpoint-portal.md)]
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-streaming-endpoint-cli.md)]
+[!INCLUDE [task-create-streaming-endpoint-cli.md](./includes/task-create-streaming-endpoint-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-streaming-endpoint-rest.md)]
+[!INCLUDE [task-create-streaming-endpoint-rest.md](./includes/task-create-streaming-endpoint-rest.md)]
 
 ---
