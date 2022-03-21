@@ -24,7 +24,6 @@ You can use the following methods to list the asset filters of a Media Services 
 
 ## [REST](#tab/rest/)
 
-
 [!INCLUDE [task-list-asset-filters-rest.md](./includes/task-list-asset-filters-rest.md)]
 
 ---

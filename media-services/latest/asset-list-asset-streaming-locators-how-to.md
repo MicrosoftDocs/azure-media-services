@@ -29,6 +29,6 @@ You can use the following methods to list the streaming locators of a Media Serv
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/assets/list-streaming-locators).
+[!INCLUDE [task-list-asset-streaming-locators-rest.md](./includes/task-list-asset-streaming-locators-rest.md)]
 
 ---

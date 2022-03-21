@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Get an asset's SAS URLs with REST
 
-See the Media Services [REST API](/rest/api/media/assets/list-container-sas).
+See the Media Services [REST API](/rest/api/media/assets/list-container-sas) for getting asset URLs.

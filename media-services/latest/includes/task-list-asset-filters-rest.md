@@ -11,4 +11,4 @@ ms.custom: CLI, devx-track-azurecli
 
 ### List asset filters with REST
 
-See the Media Services [REST API](/rest/api/media/asset-filters/list).
+See the Media Services [REST API](/rest/api/media/asset-filters/list) for listing asset filters.
