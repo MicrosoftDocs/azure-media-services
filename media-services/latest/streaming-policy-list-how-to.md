@@ -18,7 +18,7 @@ Use the following methods to list streaming policies.
 
 ## [Portal](#tab/portal/)
 
-You cannot list the streaming policies in the portal except when you are applying them to a streaming locator. See [Streaming policies](../stream-streaming-policy-concept).
+You cannot list the streaming policies in the portal except when you are applying them to a streaming locator. See [Streaming policies](stream-streaming-policy-concept.md).
 
 ## [CLI](#tab/cli/)
 

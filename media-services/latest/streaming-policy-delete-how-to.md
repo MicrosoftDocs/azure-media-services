@@ -18,7 +18,7 @@ Use the following methods to delete a streaming policy.
 
 ## [Portal](#tab/portal/)
 
-You cannot delete a streaming policy in the portal, they are offered by the service. See [Streaming policies](../stream-streaming-policy-concept).
+You cannot delete a streaming policy in the portal, they are offered by the service. See [Streaming policies](stream-streaming-policy-concept.md).
 
 ## [CLI](#tab/cli/)
 

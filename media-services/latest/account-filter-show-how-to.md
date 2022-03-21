@@ -16,7 +16,7 @@ ms.author: inhenkel
 
 Use the following methods to show or get the details of an account filter.
 
-## [CLI](#tab/cli/)
+## [Portal](#tab/portal/)
 
 You cannot get the details of an account filter in the portal.
 

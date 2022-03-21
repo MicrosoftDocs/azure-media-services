@@ -20,7 +20,7 @@ You can use the following methods to list the asset filters of a Media Services 
 
 ## [Portal](#tab/portal/)
 
-[!INCLUDE [task-create-asset-filters-portal.md](./includes/task-create-asset-filters-portal.md)]
+[!INCLUDE [task-create-asset-filters-portal.md](./includes/task-create-asset-filter-portal.md)]
 
 ## [CLI](#tab/cli/)
 
