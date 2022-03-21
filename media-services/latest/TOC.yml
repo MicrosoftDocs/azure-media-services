@@ -624,9 +624,7 @@
           href: transform-update-transform-how-to.md
         - name: Delete a transform
           href: transform-delete-transform-how-to.md
-        - name: Create a custom transform
-          href: transform-create-transform-how-to.md
-        - name: Add a custom output transform
+        - name: Add a custom transform output
           href: transform-add-custom-transform-output-how-to.md
       - name: Upload media
         href: asset-upload-media-how-to.md
