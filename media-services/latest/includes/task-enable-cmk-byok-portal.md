@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 11/16/2020
 ms.author: inhenkel
-ms.custom: portal
+
 ---
 
 <!--Enable customer-managed keys on a Media Services account-->

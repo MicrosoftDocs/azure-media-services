@@ -5,7 +5,6 @@ author: IngridAtMicrosoft
 keywords: azure media services, stream
 ms.service: media-services
 ms.topic: tutorial
-ms.custom: mvc
 ms.date: 3/16/2022
 ms.author: inhenkel
 ---

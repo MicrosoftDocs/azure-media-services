@@ -5,7 +5,6 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.topic: reference
 ms.service: media-services
-ms.custom: subject-monitoring
 ms.date: 3/16/2022
 ---
 

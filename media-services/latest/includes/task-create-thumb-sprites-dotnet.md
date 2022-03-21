@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 2/17/2020
 ms.author: inhenkel
-ms.custom: REST
+
 ---
 
 <!--Create a thumbnail sprites dotnet-->

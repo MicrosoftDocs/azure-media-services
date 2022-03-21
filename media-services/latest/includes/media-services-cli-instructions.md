@@ -1,13 +1,9 @@
 ---
-title: include file
-description: include file
-
 author: Juliako
 ms.service: media-services
 ms.topic: include
 ms.date: 01/28/2019
 ms.author: juliako
-ms.custom: include file
 ---
 
 ## Use CLI Shell

@@ -6,8 +6,8 @@ ms.service: media-services
 ms.topic: how-to
 ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: devx-track-csharp
 ---
+
 # Connect to Media Services v3 API - .NET
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]

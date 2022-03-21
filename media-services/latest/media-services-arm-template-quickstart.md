@@ -6,7 +6,6 @@ ms.service: media-services
 ms.topic: quickstart
 ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: subject-armqs, mode-arm
 ---
 
 # Quickstart: Media Services account ARM template

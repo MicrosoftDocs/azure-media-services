@@ -6,7 +6,6 @@ ms.service: media-services
 ms.topic: overview
 ms.date: 3/16/2022
 ms.author: inhenkel
-ms.custom: seodec18
 ---
 
 # Media Services terminology and concepts

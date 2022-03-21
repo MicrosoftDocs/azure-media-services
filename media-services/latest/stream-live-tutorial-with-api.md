@@ -5,7 +5,6 @@ description: Learn how to stream live events by using .NET 5.0
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
-ms.custom: mvc, devx-track-csharp
 ms.date: 3/16/2022
 ms.author: inhenkel
 ---
