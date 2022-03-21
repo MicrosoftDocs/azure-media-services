@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Delete a live event with REST
 
-See the [REST API](/rest/api/media/live-events/delete).
+See the [REST API](/rest/api/media/live-events/delete) for deleting a live event.

@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Allocate a live event with REST
 
-See the [REST API](/rest/api/media/live-events/allocate).
+See the [REST API](/rest/api/media/live-events/allocate) for allocating a live event.

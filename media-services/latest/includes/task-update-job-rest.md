@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Update a job with REST
 
-See the Media Services [REST API](/rest/api/media/jobs/update)
+See the Media Services [REST API](/rest/api/media/jobs/update) for updating a job.

@@ -18,10 +18,10 @@ Use the following methods to delete a streaming policy.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-delete-streaming-policy-cli.md)]
+[!INCLUDE [task-delete-streaming-policy-cli.md](./includes/task-delete-streaming-policy-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-delete-streaming-policy-rest.md)]
+[!INCLUDE [task-delete-streaming-policy-rest.md](./includes/task-delete-streaming-policy-rest.md)]
 
 ---

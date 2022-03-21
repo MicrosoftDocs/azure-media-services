@@ -18,6 +18,10 @@ Use the following methods to remove an option from a content key policy.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-remove-option-content-key-policy-cli.md)]
+[!INCLUDE [task-remove-option-content-key-policy-cli.md](includes/task-remove-option-content-key-policy-cli.md)]
+
+## [REST](#tab/rest/)
+
+[!INCLUDE [task-update-content-key-policy-rest.md](includes/task-update-content-key-policy-rest.md)]
 
 ---

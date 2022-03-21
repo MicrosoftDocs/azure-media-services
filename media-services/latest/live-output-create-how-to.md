@@ -18,14 +18,14 @@ Use the following methods to create a live output.
 
 ## [Poral](#tab/portal/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-live-output-portal.md)]
+[!INCLUDE [task-create-live-output-portal.md](./includes/task-create-live-output-portal.md)]
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-live-output-cli.md)]
+[!INCLUDE [task-create-live-output-cli.md](./includes/task-create-live-output-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-create-live-output-rest.md)]
+[!INCLUDE [task-create-live-output-rest.md](./includes/task-create-live-output-rest.md)]
 
 ---

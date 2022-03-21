@@ -22,10 +22,10 @@ Use the following methods to show an existing content key policy.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-show-content-key-policy-cli.md)]
+[!INCLUDE [task-show-content-key-policy-cli.md](includes/task-show-content-key-policy-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-get-content-key-policy-rest.md)]
+[!INCLUDE [task-get-content-key-policy-rest.md](includes/task-get-content-key-policy-rest.md)]
 
 ---

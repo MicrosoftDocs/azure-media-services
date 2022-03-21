@@ -18,10 +18,10 @@ Use the following methods to list streaming policies.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-list-streaming-policy-cli.md)]
+[!INCLUDE [task-list-streaming-policy-cli.md](./includes/task-list-streaming-policy-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-list-streaming-policy-rest.md)]
+[!INCLUDE [task-list-streaming-policy-rest.md](./includes/task-list-streaming-policy-rest.md)]
 
 ---

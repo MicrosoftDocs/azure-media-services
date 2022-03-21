@@ -8,4 +8,4 @@ ms.author: inhenkel
 
 ### Create a streaming locator with REST
 
-See the Media Services [REST API](/rest/api/media/streaming-locators/create).
+See the Media Services [REST API](/rest/api/media/streaming-locators/create) for creating a streaming locator.

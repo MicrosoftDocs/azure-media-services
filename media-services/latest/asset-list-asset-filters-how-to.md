@@ -20,10 +20,10 @@ You can use the following methods to list the asset filters of a Media Services 
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](./includes/task-list-asset-filters-cli.md)]
+[!INCLUDE [task-list-asset-filters-cli.md](./includes/task-list-asset-filters-cli.md)]
 
 ## [REST](#tab/rest/)
 
-See the Media Services [REST API](/rest/api/media/asset-filters/list).
+[!INCLUDE [task-list-asset-filters-rest.md](./includes/task-list-asset-filters-rest.md)]
 
 ---

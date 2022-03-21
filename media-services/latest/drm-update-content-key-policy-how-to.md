@@ -22,10 +22,10 @@ Use the following methods to update an existing content key policy.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-update-content-key-policy-cli.md)]
+[!INCLUDE [task-update-content-key-policy-cli.md](includes/task-update-content-key-policy-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-update-content-key-policy-rest.md)]
+[!INCLUDE [task-update-content-key-policy-rest.md](includes/task-update-content-key-policy-rest.md)]
 
 ---
