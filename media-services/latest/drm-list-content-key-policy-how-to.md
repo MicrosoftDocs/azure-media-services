@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to list the content key policies.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-list-content-key-policy-portal.md](includes/task-list-content-key-policy-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-list-content-key-policy-cli.md)]
+[!INCLUDE [task-list-content-key-policy-cli.md](includes/task-list-content-key-policy-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-list-content-key-policy-rest.md)]
+[!INCLUDE [task-list-content-key-policy-rest.md](includes/task-list-content-key-policy-rest.md)]
 
 ---

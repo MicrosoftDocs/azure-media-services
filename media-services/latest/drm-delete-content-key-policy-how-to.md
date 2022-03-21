@@ -16,12 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to delete a content key policy.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-delete-content-key-policy-portal.md](includes/task-delete-content-key-policy-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-delete-content-key-policy-cli.md)]
+[!INCLUDE [task-delete-content-key-policy-cli.md](includes/task-delete-content-key-policy-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-delete-content-key-policy-rest.md)]
+[!INCLUDE [task-delete-content-key-policy-rest.md](includes/task-delete-content-key-policy-rest.md)]
 
 ---

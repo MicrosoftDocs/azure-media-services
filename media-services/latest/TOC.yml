@@ -514,7 +514,7 @@
           href: drm-add-option-content-key-policy-how-to.md
         - name: Update an option in a content key policy
           href: drm-update-option-content-key-policy-how-to.md
-        - name: Remove and option from a content key policy
+        - name: Remove an option from a content key policy
           href: drm-remove-option-content-key-policy-how-to.md
       - name: Filters
         items:
