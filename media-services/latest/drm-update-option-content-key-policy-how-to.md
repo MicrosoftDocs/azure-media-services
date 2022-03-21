@@ -16,8 +16,16 @@ ms.author: inhenkel
 
 Use the following methods to update an option in a content key policy.
 
+## [Portal](#tab/portal/)
+
+[!INCLUDE [task-list-content-key-policy-portal.md](includes/task-list-content-key-policy-portal.md)]
+
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [Create an asset with CLI](includes/task-update-option-content-key-policy-cli.md)]
+[!INCLUDE [task-update-option-content-key-policy-cli.md](includes/task-update-option-content-key-policy-cli.md)]
+
+## [REST](#tab/rest/)
+
+[!INCLUDE [task-update-option-content-key-policy-rest.md](includes/task-update-content-key-policy-rest.md)]
 
 ---
