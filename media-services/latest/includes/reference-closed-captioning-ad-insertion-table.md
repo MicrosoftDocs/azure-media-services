@@ -1,6 +1,5 @@
 ---
 title: Closed captioning and ad insertion
-description: The table in this article lists the types of captions supported by Media Services.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
@@ -8,7 +7,7 @@ ms.date: 03/22/2022
 ms.author: inhenkel
 ---
 
-# Closed captioning and ad insertion
+## Closed captioning and ad insertion
 
 The following table lists the types of captions supported by Media Services.
 
