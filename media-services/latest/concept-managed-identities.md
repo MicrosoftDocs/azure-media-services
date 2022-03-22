@@ -37,7 +37,6 @@ Try these tutorials to get some hands-on experience with using a Managed Identit
 - [CLI: Allow Media Services to access a storage account that is configured to block requests from unknown IP addresses](security-access-storage-managed-identity-cli-tutorial.md)
 - [CLI: Give a Function App access to Media Services account](security-function-app-managed-identity-cli-tutorial.md)
 - [PORTAL: Use the Azure portal to use customer-managed keys or BYOK with Media Services](security-customer-managed-keys-portal-tutorial.md)
-- [POSTMAN/REST: Use customer-managed keys or BYOK with Media Services REST API](security-customer-managed-keys-rest-postman-tutorial.md)
 
 ## Further reading
 
