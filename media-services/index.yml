@@ -96,6 +96,7 @@ conceptualContent:
           text: Uploading
         - url: ./latest/encode-concept.md
           itemType: concept
+          text: Encoding
 
     - title: Encrypt content
       links:
