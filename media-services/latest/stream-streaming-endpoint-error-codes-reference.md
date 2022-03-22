@@ -141,7 +141,6 @@ For filter guidance, see:
 
 - [Concept: dynamic manifests](filters-dynamic-manifest-concept.md)
 - [Concept: filters](filters-concept.md)
-- [Sample: create filters with REST APIs](filters-dynamic-manifest-rest-howto.md)
 - [Sample: create filters with .NET](filters-dynamic-manifest-dotnet-how-to.md)
 - [Sample: create filters with CLI](filters-dynamic-manifest-cli-how-to.md)
 
@@ -159,7 +158,7 @@ For live articles and samples, see:
 
 ## 500 Internal Server Error
 
-During the processing of the request, Media Services encounters some error that prevents the processing from continuing.  
+During the processing of the request, Media Services encounters some error that prevents the processing from continuing.
 
 |Error code|Hexadecimal value |Error description|
 |---|---|---|
@@ -176,7 +175,7 @@ The server is currently unable to receive requests. This error may be caused by 
 
 > [!NOTE]
 > Check the error message and error code string to get more detailed information about the reason you got the 503 error. This error does not always mean throttling.
-> 
+>
 
 |Error code|Hexadecimal value |Error description|
 |---|---|---|
