@@ -54,6 +54,7 @@ conceptualContent:
           - url: ./latest/all-sdks.md
             itemType: concept
             text: Develop with Media Services
+          - url: ./latest/samples-overview.md
             itemType: get-started
             text: GitHub samples
           - url: /samples/browse/?products=azure-media-services
