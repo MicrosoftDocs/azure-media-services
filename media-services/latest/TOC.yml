@@ -629,9 +629,6 @@
     - name: Create an overlay transform
       href: transform-create-overlay-how-to.md
       displayName: overlay, video overlay, audio overlay, audio silence, remove audio, redact video, logo, lower third, bug, brand, branding, text overlay, graphic overlay, graphics, image overlay, image
-    - name: Create a copyAllBitrateNonInterleaved transform
-      href: transform-create-copyallbitratenoninterleaved-how-to.md
-      displayName: Copy, copy bitrates,
     - name: Use the content aware encoding preset
       href: encode-content-aware-how-to.md
       displayName: encode, encoder, transcode, custom preset, content aware, transform, CAE, scene based, shot based, qvbr, quality defined
@@ -671,6 +668,9 @@
     - name: Create a basic audio transform
       href: transform-create-basic-audio-how-to.md
       displayName: Transform, speech to text, audio, transcription, captions, subtitles, translation, language, accessibility
+    - name: Create a copyAllBitrateNonInterleaved transform
+      href: transform-create-copyallbitratenoninterleaved-how-to.md
+      displayName: Copy, copy bitrates
     - name: Copy videos without re-encoding
       href: transform-create-copy-video-audio-how-to.md
       displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding
