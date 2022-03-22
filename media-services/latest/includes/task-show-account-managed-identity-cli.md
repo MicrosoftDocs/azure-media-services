@@ -1,23 +1,22 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 05/13/2021
 ms.author: inhenkel
-
+title: Show properties of Media Services account in the CLI
 ---
 
 <!--Show Media Services Managed Identity CLI-->
 
 This command shows all of the properties of a Media Services account.
 
-```azurecli-interactive
+```cloudshell-bash
 az ams account show --name <your-media-services-account-name> --resource-group <your-resource-group>
 ```
 
 > [!NOTE]
 > If you have assigned access roles to the Media Services account, this line will return `"storageAuthentication": "ManagedIdentity"`.
-
 
 Example JSON response:
 

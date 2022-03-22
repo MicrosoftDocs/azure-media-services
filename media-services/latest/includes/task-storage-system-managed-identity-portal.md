@@ -1,10 +1,10 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 12/01/2021
 ms.author: inhenkel
-
+title: Use a system-managed identity with a Media Services storage account in the portal
 ---
 
 <!-- Use the portal to add a system managed identity to a media services storage account -->

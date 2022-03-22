@@ -23,15 +23,15 @@ Azure Monitor provides several ways to interact with metrics, including charting
 
 ## View metrics in Azure portal
 
-1. Sign in to the Azure portal at https://portal.azure.com.
+1. Sign in to the [Azure portal](https://portal.azure.com)
 1. Navigate to your Azure Media Services account and select **Metrics**.
 1. Click the **Scope** box and select the resource you want to monitor.
 
     The **Select a scope** window appears on the right with the list of resources available to you. In this case you see:
 
-    * &lt;Media Services account name&gt;
-    * &lt;Media Services account name&gt;/&lt;streaming endpoint name&gt;
-    * &lt;storage account name&gt;
+    - &lt;Media Services account name&gt;
+    - &lt;Media Services account name&gt;/&lt;streaming endpoint name&gt;
+    - &lt;storage account name&gt;
 
     Filter then select the resource and press **Apply**. For details about supported resources and metrics, see [Monitor Media Services metrics](monitor-media-services-data-reference.md).
 
@@ -46,7 +46,7 @@ Azure Monitor provides several ways to interact with metrics, including charting
 
 To get "Egress" metrics with Azure CLI, you would run the following `az monitor metrics` command:
 
-```azurecli-interactive
+```cloudshell-bash
 az monitor metrics list --resource \
    "/subscriptions/<subscription id>/resourcegroups/<resource group name>/providers/Microsoft.Media/mediaservices/<Media Services account name>/streamingendpoints/<streaming endpoint name>" \
    --metric "Egress"

@@ -17,7 +17,7 @@ This tutorial shows how to easily encode and stream videos on a variety of brows
 
 The example in this article encodes content that you make accessible via an HTTPS URL. Media Services v3 doesn't currently support chunked transfer encoding over HTTPS URLs.
 
-By the end of this tutorial, you'll be able to stream a video.  
+By the end of this tutorial, you'll be able to stream a video.
 
 ![Play the video](./media/stream-files-dotnet-quickstart/final-video.png)
 
@@ -29,7 +29,7 @@ Your Media Services account and all associated storage accounts must be in the s
 
 ### Create a resource group
 
-```azurecli-interactive
+```cloudshell-bash
 az group create -n amsResourceGroup -l westus2
 ```
 
@@ -39,19 +39,19 @@ In this example, we create a General-Purpose v2 Standard LRS account.
 
 If you want to experiment with storage accounts, use `--sku Standard_LRS`. When you're picking a SKU for production, consider using `--sku Standard_RAGRS`, which provides geographic replication for business continuity. For more information, see [storage accounts](/cli/azure/storage/account).
 
-```azurecli-interactive
+```cloudshell-bash
 az storage account create -n amsstorageaccount --kind StorageV2 --sku Standard_LRS -l westus2 -g amsResourceGroup
 ```
 
 ### Create an Azure Media Services account
 
-```azurecli-interactive
+```cloudshell-bash
 az ams account create --n amsaccount -g amsResourceGroup --storage-account amsstorageaccount -l westus2
 ```
 
 You get a response like this:
 
-```
+```json
 {
   "id": "/subscriptions/<id>/resourceGroups/amsResourceGroup/providers/Microsoft.Media/mediaservices/amsaccount",
   "location": "West US 2",
@@ -74,13 +74,13 @@ You get a response like this:
 
 The following Azure CLI command starts the default **Streaming Endpoint**.
 
-```azurecli-interactive
+```cloudshell-bash
 az ams streaming-endpoint start  -n default -a amsaccount -g amsResourceGroup
 ```
 
 You get a response like this:
 
-```
+```json
 {
   "accessControl": null,
   "availabilitySetName": null,
@@ -109,7 +109,7 @@ You get a response like this:
 
 If the streaming endpoint is already running, you get this message:
 
-```
+```json
 (InvalidOperation) The server cannot execute the operation in its current state.
 ```
 
@@ -117,13 +117,13 @@ If the streaming endpoint is already running, you get this message:
 
 Create a **Transform** to configure common tasks for encoding or analyzing videos. In this example, we do adaptive bitrate encoding. We then submit a job under the transform that we created. The job is the request to Media Services to apply the transform to the given video or audio content input.
 
-```azurecli-interactive
+```cloudshell-bash
 az ams transform create --name testEncodingTransform --preset AdaptiveStreaming --description 'a simple Transform for Adaptive Bitrate Encoding' -g amsResourceGroup -a amsaccount
 ```
 
 You get a response like this:
 
-```
+```json
 {
   "created": "2019-02-15T00:11:18.506019+00:00",
   "description": "a simple Transform for Adaptive Bitrate Encoding",
@@ -149,7 +149,7 @@ You get a response like this:
 
 Create an output **Asset** to use as the encoding job's output.
 
-```azurecli-interactive
+```cloudshell-bash
 az ams asset create -n testOutputAssetName -a amsaccount -g amsResourceGroup
 ```
 
@@ -183,7 +183,7 @@ When you run `az ams job start`, you can set a label on the job's output. You ca
 
   Notice that we add "=" to the `output-assets`.
 
-```azurecli-interactive
+```cloudshell-bash
 az ams job start --name testJob001 --transform-name testEncodingTransform --base-uri 'https://nimbuscdn-nimbuspm.streaming.mediaservices.windows.net/2b533311-b215-4409-80af-529c3e853622/' --files 'Ignite-short.mp4' --output-assets testOutputAssetName= -a amsaccount -g amsResourceGroup
 ```
 
@@ -226,7 +226,7 @@ You get a response like this:
 
 In five minutes, check the status of the job. It should be "Finished." It's not finished, check again in a few minutes. When it's finished, go to the next step and create a **Streaming Locator**.
 
-```azurecli-interactive
+```cloudshell-bash
 az ams job show -a amsaccount -g amsResourceGroup -t testEncodingTransform -n testJob001
 ```
 
@@ -236,8 +236,8 @@ After the encoding is complete, the next step is to make the video in the output
 
 ### Create a streaming locator
 
-```azurecli-interactive
-az ams streaming-locator create -n testStreamingLocator --asset-name testOutputAssetName --streaming-policy-name Predefined_ClearStreamingOnly  -g amsResourceGroup -a amsaccount 
+```cloudshell-bash
+az ams streaming-locator create -n testStreamingLocator --asset-name testOutputAssetName --streaming-policy-name Predefined_ClearStreamingOnly  -g amsResourceGroup -a amsaccount
 ```
 
 You get a response like this:
@@ -262,7 +262,7 @@ You get a response like this:
 
 ### Get streaming locator paths
 
-```azurecli-interactive
+```cloudshell-bash
 az ams streaming-locator get-paths -a amsaccount -g amsResourceGroup -n testStreamingLocator
 ```
 
@@ -303,7 +303,7 @@ Copy the HTTP live streaming (HLS) path. In this case, it's `/e01b2be1-5ea4-42ca
 
 ### Get the streaming endpoint host name
 
-```azurecli-interactive
+```cloudshell-bash
 az ams streaming-endpoint list -a amsaccount -g amsResourceGroup -n default
 ```
 
@@ -335,6 +335,6 @@ If you no longer need any of the resources in your resource group, including the
 
 Run this Azure CLI command:
 
-```azurecli-interactive
+```cloudshell-bash
 az group delete --name amsResourceGroup
 ```

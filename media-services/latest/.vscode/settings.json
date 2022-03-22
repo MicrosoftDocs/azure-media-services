@@ -4,5 +4,39 @@
         "MD025": {
             "front_matter_title": ""
         }
-    }
+    },
+    "cSpell.words": [
+        "AADCLIENTID",
+        "AADSECRET",
+        "amsaccount",
+        "appsettings",
+        "authlevel",
+        "azurecli",
+        "bitrates",
+        "Cabac",
+        "cloudshell",
+        "createorupdate",
+        "functionapp",
+        "getissuers",
+        "govcloud",
+        "ipaddresses",
+        "keyvault",
+        "listissuers",
+        "liveevent",
+        "liveevents",
+        "managecontacts",
+        "mediaservices",
+        "mediatest",
+        "odata",
+        "quickstart",
+        "RESOURCEGROUPS",
+        "RTMP",
+        "RTMPS",
+        "setissuers",
+        "streamingendpoints",
+        "transformoutput",
+        "Vianet",
+        "westus",
+        "Widevine"
+    ]
 }

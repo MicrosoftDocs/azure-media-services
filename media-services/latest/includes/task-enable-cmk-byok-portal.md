@@ -1,10 +1,10 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 11/16/2020
 ms.author: inhenkel
-
+title: Enable customer-managed keys on a Media Services account in the portal
 ---
 
 <!--Enable customer-managed keys on a Media Services account-->
