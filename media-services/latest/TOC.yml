@@ -53,8 +53,6 @@
     - name: Connect with Java SDK
       href: configure-connect-java-howto.md
       displayName: Java, SDK, client, library
-    - name: Learn the REST API
-      href: setup-postman-rest-how-to.md
   - name: Try an SDK sample
     items:
       - name: GitHub samples by language
