@@ -1,10 +1,11 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 08/17/2020
 ms.author: inhenkel
- 
+title: Create a key vault
+
 ---
 
 <!-- Create a resource group -->
@@ -17,7 +18,7 @@ Use the following commands to create a Key Vault and key. Change `your-resource-
 
 ### Create the Key Vault
 
-```azurecli-interactive
+```cloudshell-bash
 
 az keyvault create --resource-group <your-resource-group-name> --bypass AzureServices --enable-purge-protection --name <your-keyvault-name>
 
@@ -112,7 +113,7 @@ Example JSON response:
 
 ### Create the key
 
-```azurecli-interactive
+```cloudshell-bash
 az keyvault key create --kty RSA --name your-key-name --vault-name your-keyvault-name
 
 ```

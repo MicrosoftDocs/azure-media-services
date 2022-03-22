@@ -1,17 +1,17 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 05/14/2021
 ms.author: inhenkel
-
+title: Set the key vault policy
 ---
 
-<!-- ### Set the the Key Vault policy -->
+<!-- ### Set the Key Vault policy -->
 
 To use this command, you must include the Media Services `principalId` as the `object-id`. if you haven't already, use `az ams account show --name <your-media-services-account-name> --resource-group <your-resource-group>` to get this ID.
 
-```azurecli-interactive
+```cloudshell-bash
 az keyvault set-policy --name <your-keyvault-name> --object-id <principalId> --key-permissions decrypt encrypt get list unwrapKey wrapKey
 ```
 

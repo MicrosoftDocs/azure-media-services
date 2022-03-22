@@ -1,10 +1,10 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 2/17/2020
 ms.author: inhenkel
-
+title: Create thumbnail sprites dotnet
 ---
 
 <!--Create a thumbnail sprites dotnet-->

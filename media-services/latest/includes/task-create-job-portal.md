@@ -1,16 +1,17 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 03/01/2022
 ms.author: inhenkel
+title: Create a job in the portal
 
 ---
 
 ### Create a job in the portal
 
 1. Navigate to the Media Services account you want to work with.
-1. Select **Tranforms + jobs** from the menu.
+1. Select **Transforms + jobs** from the menu.
 1. Select the transform you want to use for the job. The transform screen will appear.
 1. Select **Add job**. The Create a job screen will appear.
 1. For the **Input source**, the **Asset** radio button should be selected by default.  If not, select it now.
@@ -18,7 +19,7 @@ ms.author: inhenkel
 1. Select one of the assets in the list. You can only select one at a time for the job.
 1. Select the **Use existing** radio button.
 1. Select a transform from the **Transform** dropdown list.
-1. Under Configure output, default settings will be autopopulated. You can leave them as they are or change them.
+1. Under Configure output, default settings will be auto-Spopulated. You can leave them as they are or change them.
 1. Select **Create**.
 1. Select **Transforms + Jobs**.
 1. You'll see the name of the transform you chose for the job. Select the transform to see the status of the job.

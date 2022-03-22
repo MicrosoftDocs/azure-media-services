@@ -1,9 +1,10 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 03/03/2022
 ms.author: inhenkel
+title: Create an Azure Storage account with the CLI
 ---
 
 <!-- ### Create a storage account -->
@@ -31,7 +32,7 @@ You also need to choose a SKU for your storage account. You can list storage acc
 [!INCLUDE [sku-list](sku-list.md)]
 
 - Change `myStorageAccount` to a unique name with a length of fewer than 24 characters.
-- Change `chooseLocation` to the region you want to work within. 
+- Change `chooseLocation` to the region you want to work within.
 - Change `chooseSKU` to your preferred SKU.
 
-:::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="CreateStorage" interactive="azurecli-interactive":::
+:::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="CreateStorage" interactive="cloudshell-bash":::

@@ -1,10 +1,10 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 08/18/2020
 ms.author: inhenkel
-
+title: Create or get an asset's SAS URLs in the portal
 ---
 
 ### Create or get an asset's SAS URLs in the portal

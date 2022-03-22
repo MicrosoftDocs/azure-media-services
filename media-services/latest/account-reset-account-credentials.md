@@ -20,7 +20,7 @@ The Azure CLI script in this article shows how to reset your account credentials
 
 ## Example script
 
-```azurecli-interactive
+```cloudshell-bash
 # Update the following variables for your own settings:
 resourceGroup=amsResourceGroup
 amsAccountName=amsmediaaccountname

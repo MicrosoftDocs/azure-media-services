@@ -10,11 +10,11 @@ ms.author: inhenkel
 
 # Regional code names and endpoints
 
-### Region code name
+## Region code name
 
 When the **location** parameter is used in a command or request, you need to provide the region code name as the **location** value. To get the code name of the region that your account is in and that your call should be routed to, you can run the following line in Azure CLI.
 
-```azurecli-interactive
+```cloudshell-bash
 az account list-locations
 ```
 
@@ -33,7 +33,7 @@ For example, for the Azure region West US 2 (displayed below), you will use "wes
     }
 ```
 
-## Endpoints  
+## Endpoints
 
 The following endpoints are important to know when connecting to Media Services accounts from different national Azure clouds.
 
