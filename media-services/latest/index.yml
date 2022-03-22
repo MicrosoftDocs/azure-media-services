@@ -98,8 +98,6 @@ landingContent:
             url: encode-concept.md
       - linkListType: tutorial
         links:
-          - text: Encode remote file and stream
-            url: stream-files-tutorial-with-rest.md
           - text: Encode uploaded file and stream
             url: stream-files-tutorial-with-api.md
 
