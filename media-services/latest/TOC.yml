@@ -224,8 +224,6 @@
     - name: Preset overrides
       href: encode-concept-preset-overrides.md
       displayName: preset, override, transform, job, per-job, language, encode, transcode, custom, per job, encoding settings, customize, job output, output
-    - name: Closed captioning and ad insertion
-      href: closed-captioning-ad-insertion-concept.md
     - name: Media reserved units (legacy)
       href: concept-media-reserved-units.md
       displayName: MRU, reserved units, scaling, scale, encoding, media reserved units
