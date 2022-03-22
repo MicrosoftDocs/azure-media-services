@@ -46,7 +46,25 @@ sections:
     - question: What Azure roles can perform actions on Media Services resources?
       answer: |
         See [Azure role-based access control (Azure RBAC) for Media Services accounts](security-rbac-concept.md).
+    - question: Does Media Services support fine-grained role based access control (RBAC)?
+      answer: |
+        Media Services defines the following built-in roles:
 
+        - Media Services Account Administrator
+        - Media Services Media Operator
+        - Media Services Policy Administrator
+        - Media Services Streaming Endpoints Administrator
+        - Media Services Live Events Administrator
+        
+        These roles are detailed in [Azure role-based access control (Azure RBAC) for Media Services accounts](security-rbac-concept.md).
+        
+        These roles can be used to give fine-grained access to a Media Services account. To allow all access to a Media Services account, the “Owner” or “Contributor” role can be used.
+        Media Services has an older API on the deprecation path that does not support fine-grained access control. 
+        Customers who require fine-grained access control should not select “Enable classic APIs” when creating a Media Services account using the portal (or use the 2020-05-01 API version if they are using the API to create accounts). 
+        
+        The following built-in Azure Policy can be used to block the creation of accounts that support the old API:
+        [Azure Media Services accounts that allow access to the legacy v2 API should be blocked - Microsoft Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fccf93279-9c91-4143-a841-8d1f21505455)
+ 
   - name: Assets, uploading, and storage
     questions:
     - question: What is a Media Services asset?
