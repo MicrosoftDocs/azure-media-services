@@ -53,8 +53,6 @@
     - name: Connect with Java SDK
       href: configure-connect-java-howto.md
       displayName: Java, SDK, client, library
-    - name: Learn the REST API
-      href: setup-postman-rest-how-to.md
   - name: Try an SDK sample
     items:
       - name: GitHub samples by language
@@ -109,10 +107,6 @@
     items:
     - name: Enable trusted storage
       href: security-trusted-storage-rest-tutorial.md
-    - name: Encode and stream a remote file REST
-      href: stream-files-tutorial-with-rest.md
-    - name: Customer managed keys with REST API
-      href: security-customer-managed-keys-rest-postman-tutorial.md
   - name: CLI
     items:
     - name: Encode and stream a remote file CLI
@@ -156,8 +150,6 @@
   - name: GitHub samples by language
     href: samples-overview.md
     displayName: samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
-  - name: Media Services v3 GitHub REST samples
-    href: https://github.com/Azure-Samples/media-services-v3-rest-postman
 - name: Concepts
   expanded: true
   items:
@@ -354,9 +346,6 @@
         - name: Roll storage access keys
           href: security-storage-roll-access-keys-how-to.md
           displayName: storage, storage account, roll, rolling keys, rotate keys, storage keys, storage access
-        - name: Customer managed keys with REST API
-          href: security-customer-managed-keys-rest-postman-tutorial.md
-          displayName: keys, security, secure, customer-managed keys, key-vault, key vault, managed keys, encrypt, encryption
         - name: Use a Key Vault key to encrypt data
           href: security-encrypt-data-managed-identity-cli-tutorial.md
           displayName: keys, security, secure, customer-managed keys, key-vault, key vault, managed keys, encrypt, encryption
@@ -685,9 +674,6 @@
     - name: Copy videos without re-encoding
       href: transform-create-copy-video-audio-how-to.md
       displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding
-    - name: Create filters
-      href: filters-dynamic-manifest-rest-howto.md
-      displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
   - name: Encode media with transforms and jobs
     items:
     - name: Create thumbnail sprites
@@ -798,7 +784,7 @@
       displayName: SDK, Python SDK, Python, Python docs, Python reference, reference Python, developer, develop, Python library, pypi, package, pip, pip install
     - name: Node.js
       href: https://docs.microsoft.com/rest/api/media/javascript/api/overview/azure/arm-mediaservices-readme
-      displayName: SDK, Node SDK, Node.js, Nodejs, Nodejs SDk, Node.js SDk, Javscript, JavaScript SDK, TypeScript, TypeScript SDK, JavaScript docs, Node docs, Node.js Docs, Node.js reference, reference Node, developer, develop, Node.js library, TypeScript library, package, npm, npm install
+      displayName: SDK, Node SDK, Node.js, Nodejs, Nodejs SDk, Node.js SDk, JavaScript, JavaScript SDK, TypeScript, TypeScript SDK, JavaScript docs, Node docs, Node.js Docs, Node.js reference, reference Node, developer, develop, Node.js library, TypeScript library, package, npm, npm install
     - name: Go
       href: https://aka.ms/ams-v3-go-ref
       displayName: Go, Go SDK, SDK, Go reference, Go docs, Go Documentation, Go library, go package
@@ -829,7 +815,7 @@
     displayName: videos, blogs, vlogs, help video, support video, tutorial video, video tutorial
   - name: OpenAPI Specification (Swagger)
     href: https://aka.ms/ams-v3-rest-sdk
-    displayName: Swagger, OpenAPI, open api, rest, rest reference, postman
+    displayName: Swagger, OpenAPI, open api, rest, rest reference
   - name: SDKs/Tools
     items:
     - name: Azure CLI
@@ -837,7 +823,7 @@
       displayName: CLI, command line, install cli, use cli, how to cli, cli how to, cli install, azure cli, get started
     - name: .NET
       href: https://aka.ms/ams-v3-dotnet-sdk
-      displayName: SDK, install SDK, get SDK, client SDK, .NET SDK, install .NET SDK, .NET, dotnet, install, download SDK, nuget, pacakage manager, get started
+      displayName: SDK, install SDK, get SDK, client SDK, .NET SDK, install .NET SDK, .NET, dotnet, install, download SDK, nuget, package manager, get started
     - name: Java
       href: https://aka.ms/ams-v3-java-sdk
       displayName: SDK, install SDK, get SDK, client SDK, Java SDK, install Java SDK, Java, install, download SDK, maven, package, package manager, get started
@@ -861,7 +847,7 @@
     displayName: quota, quotas, constraint, limits, limitations, performance, maximum, allowed, request quota, soft limits, hard limits
   - name: Azure clouds and regions
     href: azure-clouds-regions.md
-    displayName: Azure clouds, Azure regions, regions, geographies, data centers, locations, region, geo, availability, government cloud, gov cloud, china, germany, soverign, soverign cloud,
+    displayName: Azure clouds, Azure regions, regions, geographies, data centers, locations, region, geo, availability, government cloud, gov cloud, china, germany, sovereign, sovereign cloud,
   - name: Regional code names and endpoints
     href: azure-regions-code-names.md
-    displayName: region, regions, Azure couds, code names, region codes, region code names, region locations, location, data centers, endpoints
+    displayName: region, regions, Azure clouds, code names, region codes, region code names, region locations, location, data centers, endpoints

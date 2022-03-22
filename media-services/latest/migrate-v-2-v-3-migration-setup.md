@@ -54,7 +54,6 @@ Follow the quickstart steps for [setting up your environment](setup-azure-subscr
 
 ## [REST](#tab/rest)
 
-Use [Postman](./setup-postman-rest-how-to.md) for Media Services v3 REST API calls.
 Read the [REST API reference pages](/rest/api/media/).
 
 You should use the 2020-05-01 (or later) version string in the Postman collection.
@@ -99,7 +98,7 @@ class Program
 	    {
         try
         {
-            AzureAdTokenCredentials tokenCredentials = 
+            AzureAdTokenCredentials tokenCredentials =
                 new AzureAdTokenCredentials(_AADTenantDomain,
                     new AzureAdClientSymmetricKey(_AMSClientId, _AMSClientSecret),
                     AzureEnvironments.AzureCloudEnvironment);

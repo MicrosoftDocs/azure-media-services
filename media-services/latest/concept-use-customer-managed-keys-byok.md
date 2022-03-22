@@ -42,4 +42,3 @@ Media Services automatically supports double encryption. For data at rest, the f
 ## Tutorials
 
 - [Use the Azure portal to use customer-managed keys or BYOK with Media Services](security-customer-managed-keys-portal-tutorial.md)
-- [Use customer-managed keys or BYOK with Media Services REST API](security-customer-managed-keys-rest-postman-tutorial.md).

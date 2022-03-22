@@ -21,7 +21,7 @@ This article discusses rules that apply to entities and APIs when you develop wi
 ## Accessing the Azure Media Services API
 
 To be authorized to access Media Services resources and the Media Services API, you must first be authenticated. Media Services supports [Azure Active Directory (Azure AD)-based](https://docs.microsoft.com/active-directory/fundamentals/active-directory-whatis.md) authentication. Two common authentication options are:
- 
+
 * **Service principal authentication**: Used to authenticate a service (for example: web apps, function apps, logic apps, API, and microservices). Applications that commonly use this authentication method are apps that run daemon services, middle-tier services, or scheduled jobs. For example, for web apps there should always be a mid-tier that connects to Media Services with a Service Principal.
 * **User authentication**: Used to authenticate a person who is using the app to interact with Media Services resources. The interactive app should first prompt the user for the user's credentials. An example is a management console app used by authorized users to monitor encoding jobs or live streaming.
 
@@ -39,14 +39,14 @@ In the following figure, the numbers represent the flow of the requests in chron
 
 ![Middle-tier app authentication with AAD from a web API](./media/use-aad-auth-to-access-ams-api/media-services-principal-service-aad-app1.png)
 
-1. A middle-tier app requests an Azure AD access token that has the following parameters:  
+1. A middle-tier app requests an Azure AD access token that has the following parameters:
 
    * Azure AD tenant endpoint.
    * Media Services resource URI.
    * Resource URI for REST Media Services.
    * Azure AD app values: the client ID and client secret.
 
-   To get all the needed values, 
+   To get all the needed values,
 see [Access Azure Media Services API](./access-api-howto.md).
 
 2. The Azure AD access token is sent to the middle tier.
@@ -60,7 +60,6 @@ See the following samples that show how to connect with Azure AD service princip
 * [Connect with Node.js](configure-connect-nodejs-howto.md)
 * [Connect with Python](configure-connect-python-howto.md)
 * [Connect with Java](configure-connect-java-howto.md)
-* [Connect with REST](setup-postman-rest-how-to.md)  
 
 ## Naming conventions
 
@@ -76,7 +75,7 @@ The names of files/blobs within an asset must follow both the [blob name require
 
 ## Long-running operations
 
-The operations marked with `x-ms-long-running-operation` in the Azure Media Services [swagger files](https://github.com/Azure/azure-rest-api-specs/blob/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2018-07-01/streamingservice.json) are long running operations. 
+The operations marked with `x-ms-long-running-operation` in the Azure Media Services [swagger files](https://github.com/Azure/azure-rest-api-specs/blob/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2018-07-01/streamingservice.json) are long running operations.
 
 For details about how to track asynchronous Azure operations, see [Async operations](https://docs.microsoft.com/azure-resource-manager/management/async-operations.md).
 
@@ -88,7 +87,7 @@ Media Services has the following long-running operations:
 * [Start Live Event](/rest/api/media/liveevents/start)
 * [Stop LiveEvent](/rest/api/media/liveevents/stop)
 
-  Use the `removeOutputsOnStop` parameter to delete all associated Live Outputs when stopping the event.  
+  Use the `removeOutputsOnStop` parameter to delete all associated Live Outputs when stopping the event.
 * [Reset LiveEvent](/rest/api/media/liveevents/reset)
 * [Create LiveOutput](/rest/api/media/liveevents/create)
 * [Delete LiveOutput](/rest/api/media/liveevents/delete)
@@ -115,7 +114,7 @@ Only one long-running operation is supported for a given Live Event or any of it
 |[.NET SDK](https://aka.ms/ams-v3-dotnet-sdk)|[.NET ref](/dotnet/api/overview/azure/mediaservices/management)|
 |[Java SDK](https://aka.ms/ams-v3-java-sdk)|[Java ref](/java/api/overview/azure/mediaservices/management)|
 |[Python SDK](https://aka.ms/ams-v3-python-sdk)|[Python ref](/python/api/overview/azure/mediaservices/management)|
-|[Node.js SDK](https://aka.ms/ams-v3-nodejs-sdk) |[Node.js ref](/javascript/api/overview/azure/arm-mediaservices-readme)| 
+|[Node.js SDK](https://aka.ms/ams-v3-nodejs-sdk) |[Node.js ref](/javascript/api/overview/azure/arm-mediaservices-readme)|
 |[Go SDK](https://aka.ms/ams-v3-go-sdk) |[Go ref](https://aka.ms/ams-v3-go-ref)|
 |[Ruby SDK](https://aka.ms/ams-v3-ruby-sdk)||
 
