@@ -51,7 +51,7 @@ conceptualContent:
   items:
     - title: Develop with Media Services SDK
       links:
-          - url: ./latest/media-services-apis-overview.md
+          - url: ./latest/all-sdks.md
             itemType: concept
             text: Develop with Media Services
           - url: ./latest/samples-overview.md

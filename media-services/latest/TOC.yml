@@ -37,10 +37,10 @@
     - name: Access the API
       href: access-api-howto.md
       displayName: API, SDK, Access, Authentication
-    - name: Set up Azure Cloud Shell
-      href: https://docs.microsoft.com/cloud-shell/overview.md
   - name: SDKs
     items:
+    - name: All SDKs
+      href: all-sdks.md
     - name: Connect with C# (.NET) SDK
       href: configure-connect-dotnet-howto.md
       displayName: .NET, SDK, client, library, C#
@@ -629,9 +629,6 @@
     - name: Create an overlay transform
       href: transform-create-overlay-how-to.md
       displayName: overlay, video overlay, audio overlay, audio silence, remove audio, redact video, logo, lower third, bug, brand, branding, text overlay, graphic overlay, graphics, image overlay, image
-    - name: Create a copyAllBitrateNonInterleaved transform
-      href: transform-create-copyallbitratenoninterleaved-how-to.md
-      displayName: Copy, copy bitrates,
     - name: Use the content aware encoding preset
       href: encode-content-aware-how-to.md
       displayName: encode, encoder, transcode, custom preset, content aware, transform, CAE, scene based, shot based, qvbr, quality defined
@@ -671,6 +668,9 @@
     - name: Create a basic audio transform
       href: transform-create-basic-audio-how-to.md
       displayName: Transform, speech to text, audio, transcription, captions, subtitles, translation, language, accessibility
+    - name: Create a copyAllBitrateNonInterleaved transform
+      href: transform-create-copyallbitratenoninterleaved-how-to.md
+      displayName: Copy, copy bitrates
     - name: Copy videos without re-encoding
       href: transform-create-copy-video-audio-how-to.md
       displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding
@@ -822,22 +822,22 @@
       href: https://docs.microsoft.com/rest/api/media/cli/azure/install-azure-cli
       displayName: CLI, command line, install cli, use cli, how to cli, cli how to, cli install, azure cli, get started
     - name: .NET
-      href: https://aka.ms/ams-v3-dotnet-sdk
+      href: https://docs.microsoft.com/dotnet/api/overview/azure/media-services?view=azure-dotnet
       displayName: SDK, install SDK, get SDK, client SDK, .NET SDK, install .NET SDK, .NET, dotnet, install, download SDK, nuget, package manager, get started
     - name: Java
-      href: https://aka.ms/ams-v3-java-sdk
+      href: https://docs.microsoft.com/java/api/com.azure.resourcemanager.mediaservices?view=azure-java-stable
       displayName: SDK, install SDK, get SDK, client SDK, Java SDK, install Java SDK, Java, install, download SDK, maven, package, package manager, get started
     - name: Python
-      href: https://aka.ms/ams-v3-python-sdk
+      href: https://docs.microsoft.com/python/api/overview/azure/media-services?view=azure-python
       displayName:  SDK, install SDK, get SDK, client SDK, Python SDK, install Python SDK, Python, install, download SDK, pypi, pip, pip3 package, package manager, get started
     - name: Node.js
-      href: https://aka.ms/ams-v3-nodejs-sdk
+      href: https://docs.microsoft.com/javascript/api/overview/azure/media-services?view=azure-node-latest
       displayName: SDK, install SDK, get SDK, client SDK, Node.js SDK, install Node.js SDK, Node.js, TypeScript, JavaScript install, download SDK, npm, package, package manager, node package, get started
     - name: Go
-      href: https://aka.ms/ams-v3-go-sdk
+      href: https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mediaservices/armmediaservices
       displayName: SDK, install SDK, get SDK, client SDK, Go SDK, install Go SDK, Go, Go install, download SDK, get started
     - name: Ruby
-      href: https://aka.ms/ams-v3-ruby-sdk
+      href: https://github.com/Azure/azure-sdk-for-ruby
       displayName: SDK, install SDK, get SDK, client SDK, Ruby SDK, install Ruby SDK, Ruby, Ruby install, download SDK, get started
   - name: Azure Media Services Explorer
     href: https://github.com/Azure/Azure-Media-Services-Explorer
