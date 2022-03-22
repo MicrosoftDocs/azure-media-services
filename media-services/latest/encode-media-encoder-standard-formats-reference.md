@@ -87,3 +87,7 @@ The following table lists the codecs and file formats that are supported for exp
 | --- | --- | --- |
 | MP4 <br/><br/>(including multi-bitrate MP4 containers) |H.264 (High, Main, and Baseline Profiles), HEVC (H.265) 8-bit |AAC-LC, HE-AAC v1, HE-AAC v2 |
 | MPEG2-TS |H.264 (High, Main, and Baseline Profiles) |AAC-LC, HE-AAC v1, HE-AAC v2 |
+
+<!-- captions and ad insertion-->
+
+[!INCLUDE [reference-closed-captioning-ad-insertion-table](includes/reference-closed-captioning-ad-insertion-table.md)]
