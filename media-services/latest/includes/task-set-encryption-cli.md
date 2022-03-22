@@ -1,17 +1,17 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 03/01/2022
 ms.author: inhenkel
-
+title: Set the key vault key and key
 ---
 
 <!-- ### Set the the Key Vault policy -->
 
 To use this command, you must already have created a Key Vault and a key.
 
-```azurecli-interactive
+```cloudshell-bash
 az ams account encryption set --account-name <your-media-services-account-name> --resource-group <your-resource-group> --key-type CustomerKey --key-identifier https://<your-keyvault-name>.vault.azure.net/keys/<your-key-name>
 ```
 

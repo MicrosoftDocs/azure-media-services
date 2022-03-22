@@ -1,6 +1,6 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 11/19/2020
 ms.author: inhenkel
@@ -52,6 +52,7 @@ PUT https://management.azure.com/subscriptions/{{subscriptionId}}/resourceGroups
 ```
 
 ## Sample response
+
 ```json
 {
     "name": "aacaudio",

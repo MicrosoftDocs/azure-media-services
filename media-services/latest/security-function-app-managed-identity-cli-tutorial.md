@@ -84,7 +84,7 @@ In this section, you'll set up your Azure Function.
 
 Use the Azure Functions to create your function project and retrieve the code from the HTTP template.
 
-```azurecli-interactive
+```cloudshell-bash
 func init MediaServicesLiveMonitor –dotnet
 ```
 
@@ -92,13 +92,13 @@ func init MediaServicesLiveMonitor –dotnet
 
 Make sure you change your working directory to the project directory.  Otherwise you'll get errors.
 
-```azurecli-interactive
+```cloudshell-bash
 cd .\MediaServicesLiveMonitor\
 ```
 
 ### Name your function
 
-```azurecli-interactive
+```cloudshell-bash
 func new --name OnAir --template "HTTP trigger" --authlevel "anonymous"
 ```
 
@@ -182,7 +182,7 @@ namespace MediaServicesLiveMonitor
 
 Create the Function App to host the function. The name is the same as the one that you downloaded earlier, `MediaServicesLiveMonitorApp`.
 
-```azurecli-interactive
+```cloudshell-bash
 
 az functionapp create --resource-group <your-resource-group-name> --consumption-plan-location your-region --runtime dotnet --functions-version 3 --name MediaServicesLiveMonitorApp --storage-account mediatest3store --assign-identity "[system]"
 
@@ -192,7 +192,7 @@ Look for `principalId` in the JSON response:
 
 ```json
 {
-...  
+...
 "identity": {
 //Note the principalId value for the following step
     "principalId": "00000000-0000-0000-000000000000",
@@ -210,13 +210,13 @@ For this request:
 - `assignee` is the `principalId` that is in the JSON response from `az functionapp create`
 - `scope` is the `id` that is in the JSON response from `az ams account create`.  See the example JSON response above.
 
-```azurecli-interactive
+```cloudshell-bash
 az role assignment create --assignee 00000000-0000-0000-000000000000 --role "Media Services Account Administrator" --scope "/subscriptions/<the-subscription-id>/resourceGroups/<your-resource-group>/providers/Microsoft.Media/mediaservices/<your-media-services-account-name>"
 ```
 
 ## Publish the function
 
-```azurecli-interactive
+```cloudshell-bash
 func azure functionapp publish MediaServicesLiveMonitorApp
 ```
 
@@ -230,7 +230,7 @@ This should return a 404 (Not Found) error as the Live Event does not exist yet.
 
 ### Create a Live Event
 
-```azurecli-interactive
+```cloudshell-bash
 az ams live-event create --resource-group test3 --account-name mediatest3 --name live1 --streaming-protocol RTMP
 ```
 
@@ -244,7 +244,7 @@ This should now show “Off Air”.
 
 If you start the Live Event, the function should return “On Air”.
 
-```azurecli-interactive
+```cloudshell-bash
 az ams live-event start live1
 ```
 

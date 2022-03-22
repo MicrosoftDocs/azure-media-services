@@ -1,10 +1,10 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 05/13/2021
 ms.author: inhenkel
-
+title: Sign in to Azure CLI
 ---
 
 <!--Sign in to Azure CLI-->

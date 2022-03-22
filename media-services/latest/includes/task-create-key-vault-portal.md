@@ -1,10 +1,10 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 11/04/2020
 ms.author: inhenkel
-
+title: Create a key vault with the portal
 ---
 
 <!--Create a key vault in the portal-->

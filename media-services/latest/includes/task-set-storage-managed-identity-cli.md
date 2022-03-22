@@ -1,10 +1,10 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 08/17/2020
 ms.author: inhenkel
-
+title: Give a media services managed identity access to a storage account
 ---
 
 <!-- ### Give a Media Services Managed identity access to a storage account. -->
@@ -13,7 +13,7 @@ The following command gives a Media Services Managed Identity access to a storag
 
 In the command below, change `your-resource-group-name` to the resource group name, and `your-media-services-account-name`to the Media Services account name you want to work with:
 
-```azurecli-interactive
+```cloudshell-bash
 az ams account storage set-authentication --storage-auth ManagedIdentity --resource-group <your-resource-group_name> --account-name <your-media-services-account-name>
 
 ```

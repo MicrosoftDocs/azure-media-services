@@ -1,15 +1,15 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 08/18/2020
 ms.author: inhenkel
-
+title: Delete assets in the portal
 ---
 
 ### Delete assets in the portal
 
-You should have a media services account, a storage account, and a default streaming endpoint.  
+You should have a media services account, a storage account, and a default streaming endpoint.
 
 1. In the portal, navigate to the Media Services account.
 1. Select **Assets**. The Assets screen will appear.

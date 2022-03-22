@@ -1,19 +1,19 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 08/17/2020
 ms.author: inhenkel
-
+title: Creaete a media services account managed identity
 ---
 
 <!--Create a media services account -->
 
-The following Azure CLI command creates a new Media Services account. Replace the following values: `your-media-services-account-name`  `your-storage-account-name`, and `your-resource-group-name` with the names you want to use. The command assumes that you have already created a resource group and a Storage account. 
+The following Azure CLI command creates a new Media Services account. Replace the following values: `your-media-services-account-name`  `your-storage-account-name`, and `your-resource-group-name` with the names you want to use. The command assumes that you have already created a resource group and a Storage account.
 
 It gives the Media Services account a system assigned managed identity with the `--mi-system-assigned` flag.
 
-```azurecli-interactive
+```cloudshell-bash
 
 az ams account create --name <your-media-services-account-name> --resource-group <your-resource-group-name> --mi-system-assigned --storage-account <your-storage-account-name>
 

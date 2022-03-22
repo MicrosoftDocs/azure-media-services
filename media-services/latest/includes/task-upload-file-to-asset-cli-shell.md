@@ -1,10 +1,10 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 08/18/2020
 ms.author: inhenkel
-
+title: Upload a file with CLI shell
 ---
 
 <!--Upload file with CLI Shell-->
@@ -15,7 +15,7 @@ ms.author: inhenkel
 
 ## Example script
 
-```azurecli-interactive
+```cloudshell-bash
 #!/bin/bash
 # Update the following variables for your own settings:
 storageAccountName=build2018storage
@@ -28,9 +28,9 @@ sasToken="?sv=2015-07-08&sr=c&sig=u1uy9OIeXnZUEN62hE0bDgg%2FPXYgRDNGnQxE%2BSi51d
 # The container name is in the SAS URL path, and should be set with the -c option.
 # Use the -f option to point to a local file on your machine.
 # Use the -n option to name the blob in storage.
-# Use the --account-name option to point to the storage account name to use 
-# Use the --sas-token option to place the SAS token after the query string from previous step. 
-# NOTE that the SAS Token is only good for up to 24 hours max. 
+# Use the --account-name option to point to the storage account name to use
+# Use the --sas-token option to place the SAS token after the query string from previous step.
+# NOTE that the SAS Token is only good for up to 24 hours max.
 #
 az storage blob upload \
     -c $assetContainer \

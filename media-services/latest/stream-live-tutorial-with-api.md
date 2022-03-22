@@ -11,18 +11,17 @@ ms.author: inhenkel
 
 # Tutorial: Stream live with Media Services by using .NET 5.0
 
-In Azure Media Services, [live events](/rest/api/media/liveevents) are responsible for processing live streaming content. A live event provides an input endpoint (ingest URL) that you then provide to a live encoder. The live event receives input streams from the live encoder and makes them available for streaming through one or more [streaming endpoints](/rest/api/media/streamingendpoints). Live events also provide a preview endpoint (preview URL) that you use to preview and validate your stream before further processing and delivery. 
+In Azure Media Services, [live events](/rest/api/media/liveevents) are responsible for processing live streaming content. A live event provides an input endpoint (ingest URL) that you then provide to a live encoder. The live event receives input streams from the live encoder and makes them available for streaming through one or more [streaming endpoints](/rest/api/media/streamingendpoints). Live events also provide a preview endpoint (preview URL) that you use to preview and validate your stream before further processing and delivery.
 
 This tutorial shows how to use .NET 5.0 to create a *pass-through* type of a live event. In this tutorial, you will:
 
-> [!div class="checklist"]
-> * Download a sample app.
-> * Examine the code that performs live streaming.
-> * Watch the event with [Azure Media Player](https://amp.azure.net/libs/amp/latest/docs/index.html) on the [Media Player demo site](https://ampdemo.azureedge.net).
-> * Clean up resources.
+- Download a sample app.
+- Examine the code that performs live streaming.
+- Watch the event with [Azure Media Player](https://amp.azure.net/libs/amp/latest/docs/index.html) on the [Media Player demo site](https://ampdemo.azureedge.net).
+- Clean up resources.
 
 > [!NOTE]
-> Even though the tutorial uses [.NET SDK](/dotnet/api/microsoft.azure.management.media.models.liveevent) examples, the general steps are the same for [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event), or other supported [SDKs](media-services-apis-overview.md#sdks). 
+> Even though the tutorial uses [.NET SDK](/dotnet/api/microsoft.azure.management.media.models.liveevent) examples, the general steps are the same for [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event), or other supported [SDKs](media-services-apis-overview.md#sdks).
 
 ## Prerequisites
 
@@ -31,21 +30,21 @@ You need the following items to complete the tutorial:
 - Install [Visual Studio Code for Windows/macOS/Linux](https://code.visualstudio.com/) or [Visual Studio 2019 for Windows or Mac](https://visualstudio.microsoft.com/).
 - Install [.NET 5.0 SDK](https://dotnet.microsoft.com/download)
 - [Create a Media Services account](./account-create-how-to.md). Be sure to copy the **API Access** details in JSON format or store the values needed to connect to the Media Services account in the *.env* file format used in this sample.
-- Follow the steps in [Access the Azure Media Services API with the Azure CLI](./access-api-howto.md) and save the credentials. You'll need to use them to access the API in this sample, or enter them into the *.env* file format. 
+- Follow the steps in [Access the Azure Media Services API with the Azure CLI](./access-api-howto.md) and save the credentials. You'll need to use them to access the API in this sample, or enter them into the *.env* file format.
 
 You need these additional items for live-streaming software:
 
 - A camera or a device (like a laptop) that's used to broadcast an event.
-- An on-premises software encoder that encodes your camera stream and sends it to the Media Services live-streaming service through the Real-Time Messaging Protocol (RTMP). For more information, see [Recommended on-premises live encoders](encode-recommended-on-premises-live-encoders.md). The stream has to be in RTMP or Smooth Streaming format.  
+- An on-premises software encoder that encodes your camera stream and sends it to the Media Services live-streaming service through the Real-Time Messaging Protocol (RTMP). For more information, see [Recommended on-premises live encoders](encode-recommended-on-premises-live-encoders.md). The stream has to be in RTMP or Smooth Streaming format.
 
-  This sample assumes that you'll use Open Broadcaster Software (OBS) Studio to broadcast RTMP to the ingest endpoint. [Install OBS Studio](https://obsproject.com/download). 
+  This sample assumes that you'll use Open Broadcaster Software (OBS) Studio to broadcast RTMP to the ingest endpoint. [Install OBS Studio](https://obsproject.com/download).
 
 > [!TIP]
-> Review [Live streaming with Media Services v3](stream-live-streaming-concept.md) before proceeding. 
+> Review [Live streaming with Media Services v3](stream-live-streaming-concept.md) before proceeding.
 
 ## Download and configure the sample
 
-Clone the GitHub repository that contains the live-streaming .NET sample to your machine by using the following command:  
+Clone the GitHub repository that contains the live-streaming .NET sample to your machine by using the following command:
 
 ```bash
 git clone https://github.com/Azure-Samples/media-services-v3-dotnet.git
@@ -66,12 +65,11 @@ This section examines functions defined in the [Authentication.cs](https://githu
 
 The sample creates a unique suffix for each resource so that you don't have name collisions if you run the sample multiple times without cleaning up.
 
-
 ### Start using Media Services APIs with the .NET SDK
 
 Authentication.cs creates a `AzureMediaServicesClient` object using credentials supplied in the local configuration files (appsettings.json or .env).
 
-An `AzureMediaServicesClient` object allows you to start using Media Services APIs with .NET. To create the object, you need to supply credentials for the client to connect to Azure by using Azure Active Directory, which is implemented in `GetCredentailsAsync`. Another option is to use interactive authentication, which is implemented in `GetCredentialsInteractiveAuthAsync`.
+An `AzureMediaServicesClient` object allows you to start using Media Services APIs with .NET. To create the object, you need to supply credentials for the client to connect to Azure by using Azure Active Directory, which is implemented in `GetCredentialsAsync`. Another option is to use interactive authentication, which is implemented in `GetCredentialsInteractiveAuthAsync`.
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/Common_Utils/Authentication.cs#CreateMediaServicesClientAsync)]
 
@@ -83,25 +81,26 @@ In the case of interactive authentication, the `GetCredentialsInteractiveAuthAsy
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/Common_Utils/Authentication.cs#GetCredentialsInteractiveAuthAsync)]
 
-
 ### Create a live event
 
 This section shows how to create a *pass-through* type of live event (`LiveEventEncodingType` set to `None`). For information about the available types, see [Live event types](live-event-outputs-concept.md#live-event-types). In addition to pass-through, you can use a live transcoding event for 720p or 1080p adaptive bitrate cloud encoding.
- 
+
 You might want to specify the following things when you're creating the live event:
 
-* **The ingest protocol for the live event**. Currently, the RTMP, RTMPS, and Smooth Streaming protocols are supported. You can't change the protocol option while the live event or its associated live outputs are running. If you need different protocols, create a separate live event for each streaming protocol. 
-* **IP restrictions on the ingest and preview**. You can define the IP addresses that are allowed to ingest a video to this live event. Allowed IP addresses can be specified as one of these choices:
+- **The ingest protocol for the live event**. Currently, the RTMP, RTMPS, and Smooth Streaming protocols are supported. You can't change the protocol option while the live event or its associated live outputs are running. If you need different protocols, create a separate live event for each streaming protocol.
+- **IP restrictions on the ingest and preview**. You can define the IP addresses that are allowed to ingest a video to this live event. Allowed IP addresses can be specified as one of these choices:
 
-  * A single IP address (for example, `10.0.0.1`)
-  * An IP range that uses an IP address and a Classless Inter-Domain Routing (CIDR) subnet mask (for example, `10.0.0.1/22`)
-  * An IP range that uses an IP address and a dotted decimal subnet mask (for example, `10.0.0.1(255.255.252.0)`)
+  - A single IP address (for example, `10.0.0.1`)
+  - An IP range that uses an IP address and a Classless Inter-Domain Routing (CIDR) subnet mask (for example, `10.0.0.1/22`)
+  - An IP range that uses an IP address and a dotted decimal subnet mask (for example, `10.0.0.1(255.255.252.0)`)
 
-  If no IP addresses are specified and there's no rule definition, then no IP address will be allowed. To allow any IP address, create a rule and set `0.0.0.0/0`. The IP addresses have to be in one of the following formats: IPv4 address with four numbers or a CIDR address range.  
-* **Autostart on an event as you create it**. When autostart is set to `true`, the live event will start after creation. That means the billing starts as soon as the live event starts running. You must explicitly call `Stop` on the live event resource to halt further billing. For more information, see [Live event states and billing](live-event-states-billing-concept.md).
+  If no IP addresses are specified and there's no rule definition, then no IP address will be allowed. To allow any IP address, create a rule and set `0.0.0.0/0`. The IP addresses have to be in one of the following formats: IPv4 address with four numbers or a CIDR address range.
+
+- **Autostart on an event as you create it**. When autostart is set to `true`, the live event will start after creation. That means the billing starts as soon as the live event starts running. You must explicitly call `Stop` on the live event resource to halt further billing. For more information, see [Live event states and billing](live-event-states-billing-concept.md).
 
   Standby modes are available to start the live event in a lower-cost "allocated" state that makes it faster to move to a running state. This is useful for situations like hot pools that need to hand out channels quickly to streamers.
-* **A static host name and a unique GUID**. For an ingest URL to be predictive and easier to maintain in a hardware-based live encoder, set the `useStaticHostname` property to `true`. For detailed information, see [Live event ingest URLs](live-event-outputs-concept.md#live-event-ingest-urls).
+
+- **A static host name and a unique GUID**. For an ingest URL to be predictive and easier to maintain in a hardware-based live encoder, set the `useStaticHostname` property to `true`. For detailed information, see [Live event ingest URLs](live-event-outputs-concept.md#live-event-ingest-urls).
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/Live/LiveEventWithDVR/Program.cs#CreateLiveEvent)]
 
@@ -132,7 +131,7 @@ The "tape" can be created at any time. It's just an empty asset that you'll hand
 
 The "tape recorder" can also be created at any time. You can create a live output before starting the signal flow, or after. If you need to speed up things, it's sometimes helpful to create the output before you start the signal flow.
 
-To stop the "tape recorder," you call `delete` on `LiveOutput`. This action doesn't delete the *contents* of the "tape" (asset). The asset is always kept with the archived video content until you call `delete` explicitly on the asset itself. 
+To stop the "tape recorder," you call `delete` on `LiveOutput`. This action doesn't delete the *contents* of the "tape" (asset). The asset is always kept with the archived video content until you call `delete` explicitly on the asset itself.
 
 The next section will walk through the creation of the asset and the live output.
 
@@ -197,7 +196,7 @@ If you no longer need any of the resources in your resource group, including the
 
 Run the following CLI command:
 
-```azurecli-interactive
+```cloudshell-bash
 az group delete --name amsResourceGroup
 ```
 

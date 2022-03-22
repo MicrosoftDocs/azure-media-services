@@ -49,7 +49,7 @@ Three Azure resource types are defined in the template:
 
 ## Set the account
 
-```azurecli-interactive
+```cloudshell-bash
 
 az account set --subscription {your subscription name or id}
 
@@ -57,7 +57,7 @@ az account set --subscription {your subscription name or id}
 
 ## Create a resource group
 
-```azurecli-interactive
+```cloudshell-bash
 
 az group create --name {the name you want to give your resource group} --location "{pick a location}"
 
@@ -67,7 +67,7 @@ az group create --name {the name you want to give your resource group} --locatio
 
 For convenience, create a variable that stores the path to the template file. This variable makes it easier for you to run the deployment commands because you don't have to retype the path every time you deploy.
 
-```azurecli-interactive
+```cloudshell-bash
 
 templateFile="{provide the path to the template file}"
 
@@ -77,7 +77,7 @@ templateFile="{provide the path to the template file}"
 
 You will be prompted to enter the media services account name.
 
-```azurecli-interactive
+```cloudshell-bash
 
 az deployment group create --name {the name you want to give to your deployment} --resource-group {the name of resource group you created} --template-file $templateFile
 
@@ -192,7 +192,7 @@ In the Azure portal, confirm that your resources have been created.
 
 If you aren't planning to use the resources you just created, you can delete the resource group.
 
-```azurecli-interactive
+```cloudshell-bash
 
 az group delete --name {name of the resource group}
 
