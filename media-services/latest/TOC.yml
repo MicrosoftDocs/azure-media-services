@@ -107,8 +107,6 @@
     items:
     - name: Enable trusted storage
       href: security-trusted-storage-rest-tutorial.md
-    - name: Encode and stream a remote file REST
-      href: stream-files-tutorial-with-rest.md
   - name: CLI
     items:
     - name: Encode and stream a remote file CLI
