@@ -51,7 +51,6 @@ The quickstarts show fundamental day-1 instructions for new customers to quickly
 
 The tutorials show scenario-based procedures for some of the top Media Services tasks.
 
-* [Encode remote file and stream video – REST](stream-files-tutorial-with-rest.md)
 * [Stream live - .NET](stream-live-tutorial-with-api.md)
 * [Analyze your video - .NET](analyze-videos-tutorial.md)
 * [AES-128 dynamic encryption - .NET](drm-playready-license-template-concept.md)

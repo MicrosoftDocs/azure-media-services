@@ -96,10 +96,6 @@ landingContent:
             url: assets-concept.md
           - text: Encoding
             url: encode-concept.md
-      - linkListType: tutorial
-        links:
-          - text: Encode uploaded file and stream
-            url: stream-files-tutorial-with-api.md
 
 # Card
   - title: Encrypt content
