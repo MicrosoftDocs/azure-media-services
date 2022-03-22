@@ -1,5 +1,5 @@
 - name: Media Services Documentation
-  href: ./index.yml  
+  href: ./index.yml
 - name: Overview
   items:
   - name: About Media Services v3
@@ -75,7 +75,7 @@
   - name: Deploy using an ARM template
     items:
     - name: Deploy an account with ARM
-      href: media-services-arm-template-quickstart.md   
+      href: media-services-arm-template-quickstart.md
       displayName: ARM, ARM Template, Azure Resource Manager, Azure Resource Manager Template
 - name: Tutorials
   items:
@@ -173,7 +173,7 @@
       displayName: paging, filtering, sorting, order, ordering, REST, SDK, client
     - name: Error codes
       items:
-      - name: Streaming endpoint error codes  
+      - name: Streaming endpoint error codes
         href: stream-streaming-endpoint-error-codes-reference.md
         displayName: error code, codes, errors, streaming error, debug, debugging, streaming endpoint, origin
       - name: Live event error codes
@@ -183,12 +183,12 @@
         href: job-error-codes-reference.md
         displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, encoding, job, job output, job error, encoding error, encoder error, transcode
   - name: Accounts
-    items:    
+    items:
     - name: Media Services account
       displayName: subscription, account, management
       href: account-move-account-how-to.md
     - name: Storage account
-      href: storage-account-concept.md  
+      href: storage-account-concept.md
       displayName: Storage side encryption, encryption, at rest, storage encrypt, security, management
     - name: Managed identities and media services
       displayName: content protection, managed identity, system assigned, user assigned, identities, management
@@ -200,54 +200,56 @@
       href: concept-use-customer-managed-keys-byok.md
       displayName: customer-managed keys, byok, customer keys, keys, management
   - name: Assets
-    items: 
+    items:
     - name: Assets
-      href: assets-concept.md  
+      href: assets-concept.md
       displayName: assets, containers, storage, media files, upload
   - name: Encoding
     items:
     - name: Overview
-      href: encode-concept.md   
+      href: encode-concept.md
       displayName: encode, transcode, encoding, presets, jobs, adaptive, bitrate, billing, h264, h265, aac, audio, video, MP4, HLS, DASH, Smooth
     - name: Transforms and jobs
-      href: transform-jobs-concept.md 
-      displayName: preset, schema, transform, job, template, encode, encoding, analyze, speech to text, captions, subtitles, transcode         
-    - name: Supported file formats  
+      href: transform-jobs-concept.md
+      displayName: preset, schema, transform, job, template, encode, encoding, analyze, speech to text, captions, subtitles, transcode
+    - name: Supported file formats
       href: encode-media-encoder-standard-formats-reference.md
       displayName: formats, codecs, MP4, TS, MOV, AAC, H264, H265, H.264, H.265, HEVC, WebM, Ogg, Theora, MP3, HE-AAC, Dolby, encode, encoder, transcode, transcoder, bitrate, resolution, formats, containers, codecs, audio, video, supported formats
     - name: Adaptive bitrate encoding
       href: encode-autogen-bitrate-ladder.md
-      displayName: automatic, encode, transcode, adaptive bitrate, streaming, bitrate, resolution, ABR, HLS, DASH, Smooth      
-    - name: Content-aware encoding 
+      displayName: automatic, encode, transcode, adaptive bitrate, streaming, bitrate, resolution, ABR, HLS, DASH, Smooth
+    - name: Content-aware encoding
       href: encode-content-aware-concept.md
       displayName: Content aware encoding, encode, transcode, ABR, adaptive bitrate, resolution, HLS, DASH, Smooth, per title encoding, per title, per scene encoding, scene based, QVBR, Quality Defined Variable Bitrate, Quality-Defined
     - name: Preset overrides
       href: encode-concept-preset-overrides.md
       displayName: preset, override, transform, job, per-job, language, encode, transcode, custom, per job, encoding settings, customize, job output, output
+    - name: Closed captioning and ad insertion
+      href: closed-captioning-ad-insertion-concept.md
     - name: Media reserved units (legacy)
       href: concept-media-reserved-units.md
-      displayName: MRU, reserved units, scaling, scale, encoding, media reserved units      
-  - name: Analyzing and redaction 
+      displayName: MRU, reserved units, scaling, scale, encoding, media reserved units
+  - name: Analyzing and redaction
     items:
     - name: Video and audio analysis
       href: analyze-video-audio-files-concept.md
       displayName: analyze, analyzing, presets, jobs, speech to text, language, captions, subtitles
     - name: Detect and Redact (blur) faces
       href: analyze-face-redaction-concept.md
-      displayName: analyze, redact, face, detect, presets, jobs, blur, faces, redaction   
-  - name: Live streaming 
+      displayName: analyze, redact, face, detect, presets, jobs, blur, faces, redaction
+  - name: Live streaming
     items:
     - name: Overview
       href: stream-live-streaming-concept.md
       displayName: basic pass-through, standard pass-through, pass through, pass, pass-through, cloud encoding, cloud transcoding, cloud encoding, encoding channel, 4K, 1080P, 720P, streaming, live, live event, low latency, RTMP, Smooth, RTMPS, HLS, LL-HLS, low latency HLS, low latency DASH, interactivity, timed metadata, translation, live speech, DVR, DASH, LL-DASH, live streaming, broadcast, channel, SRT, WebRTC, RTSP
-    - name: Live streaming best practices guide 
-      href: live-event-streaming-best-practices-guide.md 
+    - name: Live streaming best practices guide
+      href: live-event-streaming-best-practices-guide.md
       displayName: ingest, static, hostname, rtmp, ingest, streaming, live, live event, low latency, RTMP,RTMPS, stream key, hostname, Smooth, HLS, LL-HLS, low latency HLS, low latency DASH, interactivity, timed metadata, translation, live speech, DVR, DASH, LL-DASH, live streaming, broadcast, channel, SRT, WebRTC, RTSP, live output, outputs, DVR Window, time shift
-    - name: Live events and live outputs 
-      href: live-event-outputs-concept.md 
-      displayName: ingest, static, hostname, rtmp, ingest, streaming, live, live event, low latency, RTMP,RTMPS, stream key, hostname, Smooth, HLS, LL-HLS, low latency HLS, low latency DASH, interactivity, timed metadata, translation, live speech, DVR, DASH, LL-DASH, live streaming, broadcast, channel, SRT, WebRTC, RTSP, live output, outputs, DVR Window, time shift   
+    - name: Live events and live outputs
+      href: live-event-outputs-concept.md
+      displayName: ingest, static, hostname, rtmp, ingest, streaming, live, live event, low latency, RTMP,RTMPS, stream key, hostname, Smooth, HLS, LL-HLS, low latency HLS, low latency DASH, interactivity, timed metadata, translation, live speech, DVR, DASH, LL-DASH, live streaming, broadcast, channel, SRT, WebRTC, RTSP, live output, outputs, DVR Window, time shift
     - name: Tested on-premises live encoders
-      displayName: recommended, on-premises, live, encoder, OBS, FFMPEG, Wirecast, Elemental, OBS Studio, cloud transcoding, cloud encoding, encoding channel, 4K, 1080P, 720P, partners, partner program, verification, certification, recommended encoder, recommended, Antix, Blackmagic, Atem, Cambria, GoPro, GoPro hero, Haivision, makito, restream,streamlabs, switcher studio, Telestream,Vmix, Teradek, xStream, Ateme TITAN, Media Excel 
+      displayName: recommended, on-premises, live, encoder, OBS, FFMPEG, Wirecast, Elemental, OBS Studio, cloud transcoding, cloud encoding, encoding channel, 4K, 1080P, 720P, partners, partner program, verification, certification, recommended encoder, recommended, Antix, Blackmagic, Atem, Cambria, GoPro, GoPro hero, Haivision, makito, restream,streamlabs, switcher studio, Telestream,Vmix, Teradek, xStream, Ateme TITAN, Media Excel
       href: encode-recommended-on-premises-live-encoders.md
     - name: Time-shifting and live-to-VOD
       displayName: archive, dvr, dvr window, time shift, Time-shifting, replay, window, live to vod, recording, record
@@ -262,31 +264,31 @@
       href: live-event-states-billing-concept.md
       displayName: billing, live, pass-basic pass-through, standard pass-through, pass through, pass, pass-thru, live, cloud transcode, cloud transcoder, transcoder, live encoding, live encoder, states, live state, running, stopping, starting, stopped
     - name: Latency
-      href: live-event-latency-reference.md  
+      href: live-event-latency-reference.md
       displayName: latency, low latency, ultra low latency, LL-HLS, LL-DASH, low latency HLS, low latency DASH, MPEG-DASH, Smooth, interactive, WebRTC, SRT, RTMP, RTMPS
   - name: Packaging, origin and delivery
     items:
     - name: Dynamic packaging
-      displayName: origin, packager, HLS, DASH, CMAF, Smooth, manifest, deliver, format, URL, streaming, audio, video, LL-HLS, LL-DASH, ultra low latency, packaging, dynamic packaging, dynamic packager, encryption, dynamic encryption 
+      displayName: origin, packager, HLS, DASH, CMAF, Smooth, manifest, deliver, format, URL, streaming, audio, video, LL-HLS, LL-DASH, ultra low latency, packaging, dynamic packaging, dynamic packager, encryption, dynamic encryption
       href: encode-dynamic-packaging-concept.md
     - name: Dynamic manifests
-      href: filters-dynamic-manifest-concept.md 
+      href: filters-dynamic-manifest-concept.md
       displayName: origin, packager, HLS, DASH, CMAF, Smooth, manifest, deliver, format, URL, streaming, audio, video, LL-HLS, LL-DASH, ultra low latency, packaging, dynamic packaging, dynamic packager, encryption, dynamic encryption
     - name: Filters
       displayName: manifest, filters, account filters, asset filters, tracks, audio, video, text, dynamic manifest, filter, hls, dash, m3u8, mpd,	content delivery, encryption, sub clipping, trimming, live to vod, highlights, highlight creation, clips, sub clip, sub clipping
-      href: filters-concept.md   
+      href: filters-concept.md
     - name: Streaming endpoints
       displayName: origin, packager, cdn, delivery, streaming, Verizon, Akamai, AFD, Azure Front Door, Azure CDN, packaging, dynamic packaging, scaling, bandwidth, egress, data
       href: stream-streaming-endpoint-concept.md
     - name: Scaling streaming with CDN
       href: stream-scale-streaming-cdn-concept.md
       displayName: origin, packager, cdn, delivery, streaming, Verizon, Akamai, AFD, Azure Front Door, Azure CDN, packaging, dynamic packaging, scaling, bandwidth, egress, data, scale, large event, large audience, million, millions, viewers, audience
-    - name: Streaming locators 
+    - name: Streaming locators
       displayName: URLs, streaming locators, locator, streaming, publishing, publish, HLS manifest, DASH manifest, HLS, DASH, Smooth, LL-HLS, LL-DASH, content management, CMS, player, playback, progressive download, download
       href: stream-streaming-locators-concept.md
-    - name: Streaming policies 
-      href: stream-streaming-policy-concept.md     
-      displayName: streaming policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000,   
+    - name: Streaming policies
+      href: stream-streaming-policy-concept.md
+      displayName: streaming policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000,
   - name: Content protection
     items:
     - name: Dynamic encryption and key delivery
@@ -301,17 +303,17 @@
         href: drm-widevine-license-template-concept.md
         displayName: Widevine, Android, DRM, license, license template, access control, content protection, secure, encrypt, protect, authorization, keys, content keys, key delivery,
       - name: FairPlay license requirements
-        href: drm-fairplay-license-overview.md 
-        displayName: FairPlay, Apple, iOS, iPad, Apple TV,  DRM, license, license template, access control, content protection, secure, encrypt, protect, authorization, keys, content keys, key delivery, 
-    - name: Streaming policies 
-      href: stream-streaming-policy-concept.md    
-      displayName: streaming policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000         
-    - name: Content key policies 
-      href: drm-content-key-policy-concept.md 
-      displayName: content key, policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000   
+        href: drm-fairplay-license-overview.md
+        displayName: FairPlay, Apple, iOS, iPad, Apple TV,  DRM, license, license template, access control, content protection, secure, encrypt, protect, authorization, keys, content keys, key delivery,
+    - name: Streaming policies
+      href: stream-streaming-policy-concept.md
+      displayName: streaming policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000
+    - name: Content key policies
+      href: drm-content-key-policy-concept.md
+      displayName: content key, policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000
     - name: Key delivery IP allowlist
-      href: drm-content-protection-key-delivery-ip-allow.md   
-      displayName: DRM, AES, content key, allow list, IP, whitelist, access control, IP allow list, IP restriction, key delivery, license delivery, AES Key, AES-128, common encryption, security, secure, protect, encrypt                
+      href: drm-content-protection-key-delivery-ip-allow.md
+      displayName: DRM, AES, content key, allow list, IP, whitelist, access control, IP allow list, IP restriction, key delivery, license delivery, AES Key, AES-128, common encryption, security, secure, protect, encrypt
   - name: Monitoring
     items:
       - name: Monitor with Azure Monitor
@@ -325,11 +327,11 @@
       - name: Monitor with Event Grid
         items:
         - name: Events with Event Grid
-          href: ./monitoring/reacting-to-media-services-events.md  
+          href: ./monitoring/reacting-to-media-services-events.md
           displayName: Monitor, Events, Event Grid, notifications, web hook, monitoring, metrics, telemetry, troubleshooting, logging, support, diagnostics, debug, debugging, logs
         - name: Event Grid schemas
-          href: ./monitoring/media-services-event-schemas.md 
-          displayName: Events, Event Grid, schema, event schema, event grid schema, messages, event messages, event format, notifications, web hook, monitoring, metrics, telemetry, troubleshooting, logging, support, diagnostics, debug, debugging, charts, graphs, logs    
+          href: ./monitoring/media-services-event-schemas.md
+          displayName: Events, Event Grid, schema, event schema, event grid schema, messages, event messages, event format, notifications, web hook, monitoring, metrics, telemetry, troubleshooting, logging, support, diagnostics, debug, debugging, charts, graphs, logs
   - name: Security
     items:
       - name: Security baseline
@@ -345,7 +347,7 @@
           displayName: storage, managed identity, user assigned, system assigned, security, access, storage access
         - name: Give a Function App access to Media Services account
           href: security-function-app-managed-identity-cli-tutorial.md
-          displayName: managed identity, system assigned, user assigned, Azure Functions, Functions app, access, security, secure, authorization, roles   
+          displayName: managed identity, system assigned, user assigned, Azure Functions, Functions app, access, security, secure, authorization, roles
         - name: Azure Policy
           href: security-azure-policy.md
           displayName: Policy, Azure Policy, access, secure, security, public network, private link, vnet, content key, token authentication, HTTP input, HTTPS input, private DNS, DNS
@@ -372,24 +374,24 @@
           - name: Private Link with Azure Media Services
             href: security-private-link-concept.md
           - name: Key delivery IP allowlist
-            href: drm-content-protection-key-delivery-ip-allow.md   
-            displayName: DRM, AES, content key, allow list, IP, whitelist, access control, IP allow list, IP restriction, key delivery, license delivery, AES Key, AES-128, common encryption, security, secure, protect, encrypt                
+            href: drm-content-protection-key-delivery-ip-allow.md
+            displayName: DRM, AES, content key, allow list, IP, whitelist, access control, IP allow list, IP restriction, key delivery, license delivery, AES Key, AES-128, common encryption, security, secure, protect, encrypt
       - name: Secure streaming
         items:
         - name: Dynamic encryption and key delivery
           displayName: content protection, access control, streaming protocols, encryption types, PlayReady, Widevine, FairPlay, AES, AES-128,custom, DRM, CENC, CBCS, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000
-          href: drm-content-protection-concept.md  
-        - name: Streaming policies 
-          href: stream-streaming-policy-concept.md    
-          displayName: streaming policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000         
-        - name: Content key policies 
-          href: drm-content-key-policy-concept.md 
-          displayName: content key, policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000   
+          href: drm-content-protection-concept.md
+        - name: Streaming policies
+          href: stream-streaming-policy-concept.md
+          displayName: streaming policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000
+        - name: Content key policies
+          href: drm-content-key-policy-concept.md
+          displayName: content key, policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000
   - name: Compatible players
     items:
     - name: Media players for Media Services
       href: player-media-players-concept.md
-      displayName: player, javascript, iOS, Android, playback, accessibility, streaming, web page, HTML, HTML5, AvPlayer,hls.js, shaka, video.js, Bitmovin, Theo player, azure media player, AMP, 
+      displayName: player, javascript, iOS, Android, playback, accessibility, streaming, web page, HTML, HTML5, AvPlayer,hls.js, shaka, video.js, Bitmovin, Theo player, azure media player, AMP,
   - name: High availability
     items:
     - name: Availability Zones
@@ -443,7 +445,7 @@
         displayName: migration, media reserved units, migration guide, benefits, migration, v2 api, v2, v3, v2 to v3, v3 guidance, deprecation, retirement, legacy API, older API, old API, migrate, retire, deprecate, timeline, dates
     - name: Samples comparison
       href: migrate-v-2-v-3-migration-samples.md
-      displayName: migration, samples, migration guide, benefits, v2 api, v2, v3, v2 to v3, v3 guidance, deprecation, retirement, legacy API, older API, old API, migrate, retire, deprecate, timeline, dates    
+      displayName: migration, samples, migration guide, benefits, v2 api, v2, v3, v2 to v3, v3 guidance, deprecation, retirement, legacy API, older API, old API, migrate, retire, deprecate, timeline, dates
 - name: How-to guides
   items:
   - name: Find your tenant and subscription
@@ -455,8 +457,8 @@
       href: setup-azure-subscription-how-to.md
       displayName: how to, how-to, tutorial, find subscription, subscription, subscription id
     - name: Reset account credentials
-      href: account-reset-account-credentials.md   
-      displayName: reset, account credentials, remove credentials, security, restore, remove, credentials 
+      href: account-reset-account-credentials.md
+      displayName: reset, account credentials, remove credentials, security, restore, remove, credentials
   - name: Code snippets
     items:
       - name: Accounts and Storage
@@ -537,7 +539,7 @@
         - name: Delete an asset filter
           href: asset-delete-asset-filter-how-to.md
         - name: Create dynamic manifest filters
-          href: filters-dynamic-manifest-cli-how-to.md  
+          href: filters-dynamic-manifest-cli-how-to.md
       - name: Jobs
         items:
         - name: Create or start a job
@@ -642,7 +644,7 @@
       displayName: overlay, video overlay, audio overlay, audio silence, remove audio, redact video, logo, lower third, bug, brand, branding, text overlay, graphic overlay, graphics, image overlay, image
     - name: Create a copyAllBitrateNonInterleaved transform
       href: transform-create-copyallbitratenoninterleaved-how-to.md
-      displayName: Copy, copy bitrates, 
+      displayName: Copy, copy bitrates,
     - name: Use the content aware encoding preset
       href: encode-content-aware-how-to.md
       displayName: encode, encoder, transcode, custom preset, content aware, transform, CAE, scene based, shot based, qvbr, quality defined
@@ -655,16 +657,16 @@
     - name: HTTPS as job input
       href: job-input-from-http-how-to.md
     - name: Get content key policy
-      href: drm-get-content-key-policy-how-to.md   
+      href: drm-get-content-key-policy-how-to.md
       displayName: content protection, DRM, content keys, content key policy, .NET, how to, how-to, sample, tutorial
-    - name: Offline FairPlay for iOS 
+    - name: Offline FairPlay for iOS
       href: drm-offline-fairplay-for-ios-concept.md
       displayName: Content protection, DRM, content keys, content key policy, iOS, FairPlay, Apple, how to, how-to, sample, tutorial. offline DRM, offline FairPlay, offline, disconnect, disconnected, airplane, train, bus, car
     - name: Offline Widevine for Android
       href: drm-offline-widevine-for-android.md
       displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline Widevine, offline,disconnect, disconnected, airplane, train, bus, car
     - name: Offline PlayReady for Windows 10
-      href: drm-offline-playready-streaming-for-windows-10.md 
+      href: drm-offline-playready-streaming-for-windows-10.md
       displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline PlayReady, offline,disconnect, disconnected, airplane, train, bus, car
     - name: Create filters
       href: filters-dynamic-manifest-dotnet-how-to.md
@@ -704,23 +706,23 @@
       displayName: thumbnail, generate thumbnail, thumbnail job, job, image, jpg, png, bmp, sprite, VTT, WebVTT, best frame, automatic thumbnail, poster, poster frame, step, percentage
     - name: Crop videos
       href: transform-crop-how-to.md
-      displayName: encoder, transcoder, encode, custom preset, crop, resolution, aspect ratio, pixels, remove, 
+      displayName: encoder, transcoder, encode, custom preset, crop, resolution, aspect ratio, pixels, remove,
     - name: Generate thumbnails
       href: transform-generate-thumbnails-how-to.md
       displayName: thumbnail, generate thumbnail, thumbnail job, job, image, jpg, png, bmp, sprite, VTT, WebVTT, best frame, automatic thumbnail, poster, poster frame, step, percentage
   - name: Stream live
     items:
     - name: Live event with portal and Wirecast
-      href: live-event-wirecast-quickstart.md    
+      href: live-event-wirecast-quickstart.md
       displayName: Wirecast, Telestream, streaming, stream live, RTMP, RTMPS, ingest, streamkey, stream key, live event, live streaming, live
-    - name: Verify your on-premises encoder 
-      href: encode-on-premises-encoder-partner.md   
-      displayName: streaming, stream live, RTMP, RTMPS, ingest, live event, live streaming, live, partner, partners, on-premises, on premises, partner encoder, hardware encoder, hardware, verify, certification, certification, testing, partner testing, partner program 
+    - name: Verify your on-premises encoder
+      href: encode-on-premises-encoder-partner.md
+      displayName: streaming, stream live, RTMP, RTMPS, ingest, live event, live streaming, live, partner, partners, on-premises, on premises, partner encoder, hardware encoder, hardware, verify, certification, certification, testing, partner testing, partner program
     - name: Live event error codes
-      href: live-event-error-codes-reference.md  
+      href: live-event-error-codes-reference.md
       displayName: live event, error codes, error, codes, live streaming, debugging, troubleshooting live
     - name: Scale media reserved units
-      href: media-reserved-units-how-to.md   
+      href: media-reserved-units-how-to.md
       displayName: CLI, MRU, media reserved units, scaling
   - name: Use Event Grid
     items:
@@ -728,7 +730,7 @@
       href: monitoring/monitor-events-portal-how-to.md
       displayName: portal, event grid, monitor, monitoring, telemetry, logging, logs, events, notifications, web hook, webhooks, functions
     - name: Monitor events - CLI
-      href: monitoring/job-state-events-cli-how-to.md 
+      href: monitoring/job-state-events-cli-how-to.md
       displayName: CLI, event grid, monitor, monitoring, telemetry, logging, logs, events, notifications, web hook, webhooks, functions
   - name: Use Azure Monitor
     items:
@@ -737,7 +739,7 @@
       displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
     - name: Monitor diagnostic logs
       href: monitoring/media-services-diagnostic-logs-howto.md
-      displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging    
+      displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
   - name: Security
     items:
     - name: Account security
@@ -808,10 +810,10 @@
   - name: Standard Encoder schemas
     items:
     - name: Input metadata
-      href: input-metadata-schema.md   
-      displayName: MES schema, MES, Standard encoder, schema, metadata, input metadata, source metadata  
+      href: input-metadata-schema.md
+      displayName: MES schema, MES, Standard encoder, schema, metadata, input metadata, source metadata
     - name: Output metadata
-      href: output-metadata-schema.md      
+      href: output-metadata-schema.md
       displayName: MES schema, MES, Standard encoder, schema, metadata, output metadata, output description
 - name: Resources
   items:
@@ -823,12 +825,12 @@
     href: https://azure.microsoft.com/updates/?category=media
   - name: Pricing
     href: https://azure.microsoft.com/pricing/details/media-services/
-    displayName: billing, pricing, price, cost, cost estimate, calculator, tco 
+    displayName: billing, pricing, price, cost, cost estimate, calculator, tco
   - name: Videos
     href: https://azure.microsoft.com/resources/videos/index/?services=media-services
     displayName: videos, blogs, vlogs, help video, support video, tutorial video, video tutorial
   - name: OpenAPI Specification (Swagger)
-    href: https://aka.ms/ams-v3-rest-sdk  
+    href: https://aka.ms/ams-v3-rest-sdk
     displayName: Swagger, OpenAPI, open api, rest, rest reference, postman
   - name: SDKs/Tools
     items:
@@ -845,20 +847,20 @@
       href: https://aka.ms/ams-v3-python-sdk
       displayName:  SDK, install SDK, get SDK, client SDK, Python SDK, install Python SDK, Python, install, download SDK, pypi, pip, pip3 package, package manager, get started
     - name: Node.js
-      href: https://aka.ms/ams-v3-nodejs-sdk   
+      href: https://aka.ms/ams-v3-nodejs-sdk
       displayName: SDK, install SDK, get SDK, client SDK, Node.js SDK, install Node.js SDK, Node.js, TypeScript, JavaScript install, download SDK, npm, package, package manager, node package, get started
     - name: Go
-      href: https://aka.ms/ams-v3-go-sdk   
-      displayName: SDK, install SDK, get SDK, client SDK, Go SDK, install Go SDK, Go, Go install, download SDK, get started   
+      href: https://aka.ms/ams-v3-go-sdk
+      displayName: SDK, install SDK, get SDK, client SDK, Go SDK, install Go SDK, Go, Go install, download SDK, get started
     - name: Ruby
       href: https://aka.ms/ams-v3-ruby-sdk
-      displayName: SDK, install SDK, get SDK, client SDK, Ruby SDK, install Ruby SDK, Ruby, Ruby install, download SDK, get started   
+      displayName: SDK, install SDK, get SDK, client SDK, Ruby SDK, install Ruby SDK, Ruby, Ruby install, download SDK, get started
   - name: Azure Media Services Explorer
     href: https://github.com/Azure/Azure-Media-Services-Explorer
     displayName: AMSE, Azure Media Services Explorer, Explorer, tools, user interface, UI, tool, get started, sample, Media Explorer, .NET, power tool, power user
   - name: Quotas and limits
-    href: limits-quotas-constraints-reference.md    
-    displayName: quota, quotas, constraint, limits, limitations, performance, maximum, allowed, request quota, soft limits, hard limits   
+    href: limits-quotas-constraints-reference.md
+    displayName: quota, quotas, constraint, limits, limitations, performance, maximum, allowed, request quota, soft limits, hard limits
   - name: Azure clouds and regions
     href: azure-clouds-regions.md
     displayName: Azure clouds, Azure regions, regions, geographies, data centers, locations, region, geo, availability, government cloud, gov cloud, china, germany, soverign, soverign cloud,
