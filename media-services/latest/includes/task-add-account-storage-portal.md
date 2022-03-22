@@ -11,7 +11,7 @@ ms.author: inhenkel
 Before you add a storage account to a Media Services account, if the storage account doesn't already exist, [create a new storage account](../storage-create-how-to.md).
 
 #### Managed identity and storage accounts
-If you are using managed identities to secure your storage accounts, the attached storage accounts must first be assigned the [Storage Blob Contributor role](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+If you are using managed identities to secure your storage accounts, the attached storage accounts must first be assigned the [Storage Blob Contributor role](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 To check this setting in the portal, first find out which identity set you are using on the storage account by selecting "Storage accounts" from the menu of the Media Services account, this should be either "System-assigned" or the name of a user-assigned Managed Identity. Next, go to the storage account in the portal, select "Access Control (IAM)" from the menu, select "Role assignments", then add the role assignment. When adding the role assignment, the role should be set to "Storage Blob Data Contributor" and the members should be set to the managed identity used by the Media Services account to access the storage account.
 
