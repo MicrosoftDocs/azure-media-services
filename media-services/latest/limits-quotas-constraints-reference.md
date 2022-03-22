@@ -82,7 +82,7 @@ Any job record in your account older than 90 days will be automatically deleted,
 | Streaming policies | 100 <sup>(6)</sup> per Media Services account <br/> 3 per streaming locator |
 | Unique streaming locators associated with one asset at one time | 100<sup>(7)</sup> (fixed) |
 
-<sup>6</sup> When using a custom streaming policy, you should design a limited set of policies for your Media Service account, and re-use them for your streaming locators whenever the same encryption options and protocols are needed. You should not be creating a new streaming policy for each streaming locator.
+<sup>6</sup> When using a custom streaming policy, design a limited set of policies for your Media Service account, and re-use them for your streaming locators whenever the same encryption options and protocols are needed. You should not be creating a new streaming policy for each streaming locator.
 
 <sup>7</sup> Streaming locators are not designed for managing per-user access control. To give different access rights to individual users, use Digital Rights Management (DRM) solutions.
 
