@@ -674,9 +674,6 @@
     - name: Copy videos without re-encoding
       href: transform-create-copy-video-audio-how-to.md
       displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding
-    - name: Create filters
-      href: filters-dynamic-manifest-rest-howto.md
-      displayName: filters, dynamic manifest, sub-clip, clipping, highlights, tracks, track selection, track removal, editing, fast edit, fast clipping, fast subclip, subclip, clip, clipping, trimming, heads and tails, remove, removal
   - name: Encode media with transforms and jobs
     items:
     - name: Create thumbnail sprites
