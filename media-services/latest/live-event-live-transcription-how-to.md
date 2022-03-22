@@ -16,7 +16,7 @@ Azure Media Service delivers video, audio, and text in different protocols. When
 
 Additional charges apply when live transcription is turned on. Please review the pricing information in the Live Video section of the [Media Services pricing page](https://azure.microsoft.com/pricing/details/media-services/).
 
-This article describes how to enable live transcription when streaming a Live Event with Azure Media Services. Before you continue, make sure you're familiar with the use of Media Services v3 REST APIs (see [this tutorial](stream-files-tutorial-with-rest.md) for details). You should also be familiar with the [live streaming](stream-live-streaming-concept.md) concept. It's recommendeded to complete the [Stream live with Media Services](stream-live-tutorial-with-api.md) tutorial.
+This article describes how to enable live transcription when streaming a Live Event with Azure Media Services. Before you continue, make sure you are familiar with the [live streaming](stream-live-streaming-concept.md) concept. It's recommended to complete the [Stream live with Media Services](stream-live-tutorial-with-api.md) tutorial.
 
 ## Live transcription preview regions and languages
 
@@ -55,7 +55,7 @@ To create a live event with the transcription turned on, set the 'transcriptions
 
 You can start and stop, or change the language of live transcription while the live event is in running, standby or stopped state.
 
-To turn on live transcriptions or to update the transcription language, patch the live event to include a “[transcriptions](/rest/api/media/live-events/create#liveeventtranscription)” property with the correct language code on the 'language' property. See the list above to supported language codes. 
+To turn on live transcriptions or to update the transcription language, patch the live event to include a “[transcriptions](/rest/api/media/live-events/create#liveeventtranscription)” property with the correct language code on the 'language' property. See the list above to supported language codes.
 
 To turn off live transcriptions, remove the “transcriptions” property from the live event object.
 
@@ -65,7 +65,7 @@ To turn off live transcriptions, remove the “transcriptions” property from t
 
 ## Transcription delivery and playback
 
-Review the [Dynamic packaging overview](encode-dynamic-packaging-concept.md#to-prepare-your-source-files-for-delivery) article of how our service uses dynamic packaging to deliver video, audio, and text in different protocols. When you publish your live stream using MPEG-DASH or HLS/CMAF, then along with video and audio, our service delivers the transcribed text in IMSC1.1 compatible TTML. This delivery is packaged into MPEG-4 Part 30 (ISO/IEC 14496-30) fragments. If using delivery via HLS/TS, then the text is delivered as chunked VTT. You can use a web player such as the [Azure Media Player](player-use-azure-media-player-how-to.md) to play the stream.  
+Review the [Dynamic packaging overview](encode-dynamic-packaging-concept.md#to-prepare-your-source-files-for-delivery) article of how our service uses dynamic packaging to deliver video, audio, and text in different protocols. When you publish your live stream using MPEG-DASH or HLS/CMAF, then along with video and audio, our service delivers the transcribed text in IMSC1.1 compatible TTML. This delivery is packaged into MPEG-4 Part 30 (ISO/IEC 14496-30) fragments. If using delivery via HLS/TS, then the text is delivered as chunked VTT. You can use a web player such as the [Azure Media Player](player-use-azure-media-player-how-to.md) to play the stream.
 
 > [!NOTE]
 > If using Azure Media Player, use version 2.3.3 or later.

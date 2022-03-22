@@ -15,7 +15,7 @@ ms.author: inhenkel
 Azure Media Services is a cloud-based platform that enables you to build solutions that achieve broadcast-quality video streaming, enhance accessibility and distribution, analyze content, and much more. Whether you're an app developer, a call center, a government agency, or an entertainment company, Media Services helps you create apps that deliver media experiences of outstanding quality to large audiences on today's most popular mobile devices and browsers.
 
 The Media Services v3 SDKs are based on [Media Services v3 OpenAPI Specification (Swagger)](https://aka.ms/ams-v3-rest-sdk).
- 
+
 ## What can I do with Media Services?
 
 Media Services lets you build a variety of media workflows in the cloud. Some examples of what you can do with Media Services include:
@@ -39,7 +39,7 @@ Learn how to encode and package content, stream videos on-demand, broadcast live
 
 Start developing with [Azure Media Services v3 client SDKs](media-services-apis-overview.md#sdks).
 
-### Quickstarts  
+### Quickstarts
 
 The quickstarts show fundamental day-1 instructions for new customers to quickly try out Media Services.
 
@@ -51,8 +51,6 @@ The quickstarts show fundamental day-1 instructions for new customers to quickly
 
 The tutorials show scenario-based procedures for some of the top Media Services tasks.
 
-* [Encode remote file and stream video – REST](stream-files-tutorial-with-rest.md)
-* [Encode uploaded file and stream video - .NET](stream-files-tutorial-with-api.md)
 * [Stream live - .NET](stream-live-tutorial-with-api.md)
 * [Analyze your video - .NET](analyze-videos-tutorial.md)
 * [AES-128 dynamic encryption - .NET](drm-playready-license-template-concept.md)
@@ -67,9 +65,9 @@ How-to guides contain code samples that demonstrate how to complete a task. In t
 
 * [Create an account - CLI](./account-create-how-to.md)
 * [Access APIs - CLI](./access-api-howto.md)
-* [Encode with HTTPS as job input - .NET](job-input-from-http-how-to.md)  
+* [Encode with HTTPS as job input - .NET](job-input-from-http-how-to.md)
 * [Monitor events - Portal](monitoring/monitor-events-portal-how-to.md)
-* [Encrypt dynamically with multi-DRM - .NET](drm-protect-with-drm-tutorial.md) 
+* [Encrypt dynamically with multi-DRM - .NET](drm-protect-with-drm-tutorial.md)
 * [How to encode with a custom transform - CLI](transform-custom-transform-how-to.md)
 
 ## Ask questions, give feedback, get updates
@@ -78,5 +76,5 @@ Check out the [Azure Media Services community](media-services-community.md) arti
 
 ## Compliance, privacy and security
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Read the [Compliance, privacy and security document](media-services-compliance.md) before using Azure Media Services to deliver your media content.

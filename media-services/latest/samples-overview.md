@@ -105,8 +105,4 @@ You'll find description and links to the samples you may be looking for in each 
 
 ---
 
-## REST Postman collection
-
-The [REST Postman](https://github.com/Azure-Samples/media-services-v3-rest-postman) samples include a Postman environment and collection for you to import into the Postman client. The Postman collection samples are recommended for getting familiar with the API structure and how it works with Azure Resource Management (ARM), and the structure of calls from the client SDKs.
-
 [!INCLUDE [warning-rest-api-retry-policy.md](./includes/warning-rest-api-retry-policy.md)]

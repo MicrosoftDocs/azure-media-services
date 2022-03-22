@@ -95,7 +95,7 @@ The project template creates a project in your chosen language and installs requ
 
 ### HttpTriggerEncode.cs
 
-This is the C# code for your function. Its role is to take a Media Services asset or a source URL and launches an encoding job with Media Services. It uses a Transform that is created if it does not exist. When it is created, it used the preset provided in the input body. 
+This is the C# code for your function. Its role is to take a Media Services asset or a source URL and launches an encoding job with Media Services. It uses a Transform that is created if it does not exist. When it is created, it used the preset provided in the input body.
 
 >[!IMPORTANT]
 >Replace the full content of HttpTriggerEncode.cs file with [`HttpTriggerEncode.cs` from this repository](https://github.com/Azure-Samples/media-services-v3-dotnet-core-functions-integration/blob/main/Tutorial/HttpTriggerEncode.cs).
@@ -131,7 +131,7 @@ Update the file with the following content (and replace the values).
 
 ## Test your function
 
-When you run the function locally in VS Code, the function should be exposed as: 
+When you run the function locally in VS Code, the function should be exposed as:
 
 ```url
 http://localhost:7071/api/HttpTriggerEncode
@@ -150,5 +150,3 @@ JSON input body example:
 ```
 
 The function should return 200 OK with an output body containing the job and output asset names.
-
-![Test the function with Postman](./Media/integrate-azure-functions-dotnet-how-to/postman.png)

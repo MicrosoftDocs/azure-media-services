@@ -33,8 +33,6 @@ You specify a list of filter track property conditions based on which tracks of 
 
 The [Upload, encode, and stream files with .NET](stream-files-tutorial-with-api.md#get-streaming-urls) tutorial shows you how to build the streaming URLs with .NET. If you run the app, one of the URLs points to the Smooth Streaming manifest: `https://amsaccount-usw22.streaming.media.azure.net/00000000-0000-0000-0000-0000000000000/ignite.ism/manifest`.<br/> Copy and paste the URL into the address bar of a browser. The file will be downloaded. You can open it in any text editor.
 
-For a REST example, see [Upload, encode, and stream files with REST](stream-files-tutorial-with-rest.md#list-paths-and-build-streaming-urls).
-
 ### Monitor the bitrate of a video stream
 
 You can use the [Azure Media Player demo page](https://aka.ms/azuremediaplayer) to monitor the bitrate of a video stream. The demo page displays diagnostics info on the **Diagnostics** tab:
