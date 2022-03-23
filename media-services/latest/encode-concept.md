@@ -68,12 +68,6 @@ You can specify to create a [Job](/rest/api/media/jobs/create) with a single cli
 > [!TIP]
 > If you want to stream a sublip of your video without re-encoding the video, consider using [Pre-filtering manifests with Dynamic Packager](filters-dynamic-manifest-concept.md).
 
-#### Examples
-
-See examples:
-
-* [Subclip a video with .NET](transform-subclip-video-how-to.md)
-
 ## Built-in presets
 
 Media Services supports the following built-in encoding presets:

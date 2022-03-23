@@ -454,10 +454,6 @@ You can now trim or subclip a video when encoding it using a [Job](/rest/api/med
 
 This functionality works with any [Transform](/rest/api/media/transforms) that is built using either the [BuiltInStandardEncoderPreset](/rest/api/media/transforms/createorupdate#builtinstandardencoderpreset) presets, or the [StandardEncoderPreset](/rest/api/media/transforms/createorupdate#standardencoderpreset) presets.
 
-See examples:
-
-* [Subclip a video with REST](transform-subclip-video-how-to.md)
-
 ## May 2019
 
 ### Azure Monitor support for Media Services diagnostic logs and metrics

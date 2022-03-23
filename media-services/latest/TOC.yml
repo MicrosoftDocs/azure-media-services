@@ -659,21 +659,12 @@
     - name: Create thumbnail sprites
       href: transform-create-thumbnail-sprites-how-to.md
       displayName: thumbnail, thumbnails, encoder, encode, sprite, webVTT sprite, webVTT, web VTT, sprites, poster, VTT
-    - name: Subclip a video
-      href: transform-subclip-video-how-to.md
-      displayName: clip, highlight, clips, edit, edit decision list, edl, trim, head, tail, clipping, trimming, editing, subclipping, remove
     - name: Customize encoder transforms
       href: transform-custom-transform-how-to.md
       displayName: custom, preset, custom preset, custom encoding, user defined, customize, presets, transcode, encode, encoding, encoder, MES, Standard encoder, .NET, transform, custom transform
-    - name: Generate thumbnails
-      href: transform-generate-thumbnails-how-to.md
-      displayName: thumbnail, generate thumbnail, thumbnail job, job, image, jpg, png, bmp, sprite, VTT, WebVTT, best frame, automatic thumbnail, poster, poster frame, step, percentage
     - name: Crop videos
       href: transform-crop-how-to.md
-      displayName: encoder, transcoder, encode, custom preset, crop, resolution, aspect ratio, pixels, remove,
-    - name: Generate thumbnails
-      href: transform-generate-thumbnails-how-to.md
-      displayName: thumbnail, generate thumbnail, thumbnail job, job, image, jpg, png, bmp, sprite, VTT, WebVTT, best frame, automatic thumbnail, poster, poster frame, step, percentage
+      displayName: encoder, transcoder, encode, custom preset, crop, resolution, aspect ratio, pixels, remove
   - name: Stream live
     items:
     - name: Live event with portal and Wirecast
