@@ -11,9 +11,9 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Media Reserved Units (MRUs) were previously used in Azure Media Services v2 to control encoding concurrency and performance. You no longer need to manage MRUs or request quota increases for any media services account as the system will automatically scale up and down based on load. You'll also see performance that is equal to or improved in comparison to using MRUs. 
+Media Reserved Units (MRUs) were previously used in Azure Media Services v2 to control encoding concurrency and performance. You no longer need to manage MRUs or request quota increases for any media services account as the system will automatically scale up and down based on load. You'll also see performance that is equal to or improved in comparison to using MRUs.
 
-If you have an account that was created using a version prior to the 2020-05-01 API, you'll still have access to APIs for managing MRUs, however none of the MRU configuration that you set will be used to control encoding concurrency or performance. If you don’t see the option to manage MRUs in the Azure portal, you have an account that was created with the 2020-05-01 API or later. 
+If you have an account that was created using a version prior to the 2020-05-01 API, you'll still have access to APIs for managing MRUs, however none of the MRU configuration that you set will be used to control encoding concurrency or performance. If you don’t see the option to manage MRUs in the Azure portal, you have an account that was created with the 2020-05-01 API or later.
 
 ## Billing
 
@@ -24,4 +24,3 @@ For accounts created in with the **2020-05-01** version of the API, that is, the
 ## See also
 
 * [Migrate from Media Services v2 to v3](migrate-v-2-v-3-migration-introduction.md)
-* [Scale Media Reserved Units with CLI](media-reserved-units-how-to.md)

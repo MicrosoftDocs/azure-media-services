@@ -15,7 +15,7 @@ ms.author: inhenkel
 > [!NOTE]
 > Even though this tutorial uses [.NET SDK](/dotnet/api/microsoft.azure.management.media.models.liveevent) examples, the general steps are the same for [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event), or other supported [SDKs](media-services-apis-overview.md#sdks).
 
-Azure Media Services lets you encode your media files into formats that play on a wide variety of browsers and devices. For example, you might want to stream your content in Apple's HLS or MPEG DASH formats. Before streaming, you should encode your high-quality digital media file. For help with encoding, see [Encoding concept](encode-concept.md). This tutorial uploads a local video file and encodes the uploaded file. You can also encode content that you make accessible via an HTTPS URL. For more information, see [Create a job input from an HTTP(s) URL](job-input-from-http-how-to.md).
+Azure Media Services lets you encode your media files into formats that play on a wide variety of browsers and devices. For example, you might want to stream your content in Apple's HLS or MPEG DASH formats. Before streaming, you should encode your high-quality digital media file. For help with encoding, see [Encoding concept](encode-concept.md). This tutorial uploads a local video file and encodes the uploaded file. You can also encode content that you make accessible via an HTTPS URL.
 
 ![Play a video with Azure Media Player](./media/stream-files-tutorial-with-api/final-video.png)
 
@@ -37,7 +37,7 @@ This tutorial shows you how to:
 
 ## Download and configure the sample
 
-Clone a GitHub repository that has the streaming .NET sample to your machine using the following command:  
+Clone a GitHub repository that has the streaming .NET sample to your machine using the following command:
 
  ```bash
  git clone https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials.git
@@ -77,7 +77,7 @@ In the case of interactive authentication, the `GetCredentialsInteractiveAuthAsy
 
 ### Create an input asset and upload a local file into it
 
-The **CreateInputAsset** function creates a new input [Asset](/rest/api/media/assets) and uploads the specified local video file into it. This **Asset** is used as the input to your encoding job. In Media Services v3, the input to a **Job** can either be an **Asset** or content that you make available to your Media Services account via HTTPS URLs. To learn how to encode from an HTTPS URL, see [this](job-input-from-http-how-to.md) article.
+The **CreateInputAsset** function creates a new input asset and uploads the specified local video file into it. This asset is used as the input to your encoding job. In Media Services v3, the input to a job can either be an asset or content that you make available to your Media Services account via HTTPS URLs.
 
 In Media Services v3, you use Azure Storage APIs to upload files. The following .NET snippet shows how.
 
@@ -105,7 +105,7 @@ When encoding or processing content in Media Services, it's a common pattern to 
 
 When creating a new [Transform](/rest/api/media/transforms) instance, you need to specify what you want it to produce as an output. The required parameter is a **TransformOutput** object, as shown in the code below. Each **TransformOutput** contains a **Preset**. **Preset** describes the step-by-step instructions of video and/or audio processing operations that are to be used to generate the desired **TransformOutput**. The sample described in this article uses a built-in Preset called **AdaptiveStreaming**. The Preset encodes the input video into an auto-generated bitrate ladder (bitrate-resolution pairs) based on the input resolution and bitrate, and produces ISO MP4 files with H.264 video and AAC audio corresponding to each bitrate-resolution pair. For information about this Preset, see [auto-generating bitrate ladder](encode-autogen-bitrate-ladder.md).
 
-You can use a built-in EncoderNamedPreset or use custom presets. For more information, see [How to customize encoder presets](transform-custom-transform-how-to.md).
+You can use a built-in EncoderNamedPreset or use custom presets.
 
 When creating a [Transform](/rest/api/media/transforms), you should first check if one already exists using the **Get** method, as shown in the code that follows. In Media Services v3, **Get** methods on entities return **null** if the entity doesn’t exist (a case-insensitive check on the name).
 
@@ -115,7 +115,7 @@ When creating a [Transform](/rest/api/media/transforms), you should first check 
 
 As mentioned above, the [Transform](/rest/api/media/transforms) object is the recipe and a [Job](/rest/api/media/jobs) is the actual request to Media Services to apply that **Transform** to a given input video or audio content. The **Job** specifies information like the location of the input video, and the location for the output.
 
-In this example, the input video has been uploaded from your local machine. If you want to learn how to encode from an HTTPS URL, see [this](job-input-from-http-how-to.md) article.
+In this example, the input video has been uploaded from your local machine.
 
 [!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#SubmitJob)]
 

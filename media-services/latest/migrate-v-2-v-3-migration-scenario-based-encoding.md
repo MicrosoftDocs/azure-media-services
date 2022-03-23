@@ -89,7 +89,7 @@ If you require the advanced workflow features of the Premium Encoder, you're enc
 
 ## Jobs with inputs that are on HTTPS hosted URLs
 
-You can now submit jobs in V3 from files stored either in Azure storage, stored locally, or external web servers using the [HTTP(S) job input support](job-input-from-http-how-to.md).
+You can now submit jobs in V3 from files stored either in Azure storage, stored locally, or external web servers using the HTTP(S) job input support.
 
 If you previously used workflows to copy files from Azure blob files into empty assets before submitting jobs, you may be able to simplify your workflow by passing a SAS URL for the file in Azure blob storage directly into the job.
 
@@ -114,12 +114,6 @@ For customers using the Indexer v1 processor in the v2 API, you need to create a
 
 - [Tutorial: Encode a remote file based on URL and stream the video - .NET](stream-files-dotnet-quickstart.md)
 - [Tutorial: Upload, encode, and stream videos with Media Services v3](stream-files-tutorial-with-api.md)
-
-### How to guides
-
-- [Create a job input from an HTTPS URL](job-input-from-http-how-to.md)
-- [Create a job input from a local file](job-input-from-local-file-how-to.md)
-- [How to encode with a custom transform](transform-custom-transform-how-to.md)
 
 ## Samples
 
