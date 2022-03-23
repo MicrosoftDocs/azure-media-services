@@ -19,7 +19,7 @@ ms.author: inhenkel
 This article gives you MRU scenario based guidance that will assist you in migrating from Azure Media Services V2 to V3.
 
 > [!Important]
-> Media reserved units are no longer needed for any Media services account as the system will automatically scale up and down based on load. 
+> Media reserved units are no longer needed for any Media services account as the system will automatically scale up and down based on load.
 
 ## Scenario guidance
 
@@ -29,20 +29,16 @@ Please migrate your MRUs based on the following scenarios:
 * If you have an account that was created before the 2020-05-01 (or later) version of the API, you can still Have access to API’s for managing MRU’s, however none of the MRU configuration that you set will be used to control encoding concurrency or performance. For more information, see [Scaling Media Processing](../previous/media-services-scale-media-processing-overview.md). You can manage the MRUs using CLI 2.0 for Media Services V3, or using the Azure portal.
 * If you don't see the option to manage MRUs in the Azure portal, you're running an account that was created with the 2020-05-01 API or later.
 * If you are familiar with setting your MRU type to S3, your performance will improve or remain the same with the removal with MRUs.
-* If you are an existing V2 customer, you need to create a new V3 account to support your existing application prior to the completion of  migration. 
-* Indexer V1 or other media processors that are not fully deprecated yet may need to be enabled again. 
+* If you are an existing V2 customer, you need to create a new V3 account to support your existing application prior to the completion of  migration.
+* Indexer V1 or other media processors that are not fully deprecated yet may need to be enabled again.
 
-For more information about MRUs, see [Media Reserved Units](concept-media-reserved-units.md) and [How to scale media reserved units](media-reserved-units-how-to.md).
+For more information about MRUs, see [Media Reserved Units](concept-media-reserved-units.md).
 
 ## MRU concepts, tutorials and how to guides
 
 ### Concepts
 
 [Media Reserved Units](concept-media-reserved-units.md)
-
-### How to guides
-
-[How to scale media reserved units](media-reserved-units-how-to.md)
 
 ## Samples
 

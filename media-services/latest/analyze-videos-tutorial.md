@@ -24,7 +24,7 @@ This tutorial shows you how to:
 > * Clean up resources.
 
 ## Compliance, Privacy, and Security
- 
+
 As an important reminder, you must comply with all applicable laws in your use of Azure Video Analyzer for Media (formerly Video Indexer). You must not use Video Analyzer for Media or any other Azure service in a manner that violates the rights of others. Before uploading any videos, including any biometric data, to the Video Analyzer for Media service for processing and storage, you must have all the proper rights, including all appropriate consents, from the individuals in the video. To learn about compliance, privacy and security in Video Analyzer for Media, the Azure [Cognitive Services Terms](https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/). For Microsoft’s privacy obligations and handling of your data, review Microsoft’s [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) (OST) and [Data Processing Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67) (“DPA”). More privacy information, including on data retention, deletion/destruction, is available in the OST and [here](https://docs.microsoft.com/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-for-media-docs/faq.yml). By using Video Analyzer for Media, you agree to be bound by the Cognitive Services Terms, the OST, DPA, and the Privacy Statement.
 
 ## Prerequisites
@@ -36,7 +36,7 @@ As an important reminder, you must comply with all applicable laws in your use o
 
 ## Download and configure the sample
 
-Clone a GitHub repository that contains the .NET sample to your machine using the following command:  
+Clone a GitHub repository that contains the .NET sample to your machine using the following command:
 
  ```bash
  git clone https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials.git
@@ -75,7 +75,7 @@ In the case of interactive authentication, the `GetCredentialsInteractiveAuthAsy
 
 ### Create an input asset and upload a local file into it
 
-The **CreateInputAsset** function creates a new input [Asset](/rest/api/media/assets) and uploads the specified local video file into it. This Asset is used as the input to your encoding Job. In Media Services v3, the input to a Job can either be an Asset, or it can be content that you make available to your Media Services account via HTTPS URLs. To learn how to encode from an HTTPS URL, see [this](job-input-from-http-how-to.md) article.  
+The **CreateInputAsset** function creates a new input asset and uploads the specified local video file into it. This asset is used as the input to your encoding job. In Media Services v3, the input to a job can either be an asset, or it can be content that you make available to your Media Services account via HTTPS URLs.
 
 In Media Services v3, you use Azure Storage APIs to upload files. The following .NET snippet shows how.
 
@@ -111,7 +111,7 @@ When creating a **Transform**, check first if one already exists using the **Get
 
 As mentioned above, the [Transform](/rest/api/media/transforms) object is the recipe and a [Job](/rest/api/media/jobs) is the actual request to Media Services to apply that **Transform** to a given input video or audio content. The **Job** specifies information like the location of the input video and the location for the output. You can specify the location of your video using: HTTPS URLs, SAS URLs, or Assets that are in your Media Service account.
 
-In this example, the job input is a local video.  
+In this example, the job input is a local video.
 
 [!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/AnalyzeVideos/Program.cs#SubmitJob)]
 
