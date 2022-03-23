@@ -24,6 +24,7 @@
         href: frequently-asked-questions.yml
         displayName: faq, questions, frequently asked questions
 - name: Quickstarts
+  expanded: true
   items:
   - name: Set up your environment
     items:
@@ -151,7 +152,6 @@
     href: samples-overview.md
     displayName: samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
 - name: Concepts
-  expanded: true
   items:
   - name: Overview
     href: concepts-overview.md
@@ -641,8 +641,6 @@
     - name: Signal descriptive audio
       href: signal-descriptive-audio-howto.md
       displayName: descriptive audio, accessibility, access, accessible
-  - name: Encode media with transforms and jobs
-    items:
   - name: Stream live
     items:
     - name: Live event with portal and Wirecast
