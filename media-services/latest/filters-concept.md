@@ -11,30 +11,30 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-When delivering your content to customers (Live Streaming events or Video on Demand) your client might need more flexibility than what's described in the default asset's manifest file. Azure Media Services offers [Dynamic Manifests](filters-dynamic-manifest-concept.md) based on pre-defined filters. 
+When delivering your content to customers (Live Streaming events or Video on Demand) your client might need more flexibility than what's described in the default asset's manifest file. Azure Media Services offers [Dynamic Manifests](filters-dynamic-manifest-concept.md) based on pre-defined filters.
 
-Filters are server-side rules that allow your customers to do things like: 
+Filters are server-side rules that allow your customers to do things like:
 
 - Play back only a section of a video (instead of playing the whole video). For example:
   - Reduce the manifest to show a sub-clip of a live event ("sub-clip filtering"), or
   - Trim the start of a video ("trimming a video").
-- Deliver only the specified renditions and/or specified language tracks that are supported by the device that is used to play back the content ("rendition filtering"). 
+- Deliver only the specified renditions and/or specified language tracks that are supported by the device that is used to play back the content ("rendition filtering").
 - Adjust Presentation Window (DVR) in order to provide a limited length of the DVR window in the player ("adjusting presentation window").
 
 Media Services enables you to create **Account filters** and **Asset filters** for your content. In addition, you can associate your pre-created filters with a **Streaming Locator**.
 
 ## Defining filters
 
-There are two types of filters: 
+There are two types of filters:
 
 * [Account Filters](/rest/api/media/accountfilters) (global) - can be applied to any asset in the Azure Media Services account, have a lifetime of the account.
-* [Asset Filters](/rest/api/media/assetfilters) (local) - can only be applied to an asset with which the filter was associated upon creation, have a lifetime of the asset. 
+* [Asset Filters](/rest/api/media/assetfilters) (local) - can only be applied to an asset with which the filter was associated upon creation, have a lifetime of the asset.
 
 **Account Filters** and **Asset Filters** types have exactly the same properties for defining/describing the filter. Except when creating the **Asset Filter**, you need to specify the asset name with which you want to associate the filter.
 
 Depending on your scenario, you decide what type of a filter is more suitable (Asset Filter or Account Filter). Account Filters are suitable for device profiles (rendition filtering) where Asset Filters could be used to trim a specific asset.
 
-You use the following properties to describe the filters. 
+You use the following properties to describe the filters.
 
 |Name|Description|
 |---|---|
@@ -59,7 +59,7 @@ Use this property with **Asset Filters**. It is not recommended to set the prope
 
 You specify a list of filter track property conditions (FilterTrackPropertyConditions) based on which the tracks of your stream (Live Streaming or Video on Demand) should be included into dynamically created manifest. The filters are combined using a logical **AND** and **OR** operation.
 
-Filter track property conditions describe track types, values (described in the following table), and operations (Equal, NotEqual). 
+Filter track property conditions describe track types, values (described in the following table), and operations (Equal, NotEqual).
 
 |Name|Description|
 |---|---|
@@ -71,7 +71,7 @@ Filter track property conditions describe track types, values (described in the 
 
 ### Example
 
-The following example defines a Live Streaming filter: 
+The following example defines a Live Streaming filter:
 
 ```json
 {
@@ -128,17 +128,12 @@ The following example defines a Live Streaming filter:
 
 ## Associating filters with Streaming Locator
 
-You can specify a list of [asset or account filters](filters-concept.md) on your [Streaming Locator](/rest/api/media/streaminglocators/create#request-body). The [Dynamic Packager](encode-dynamic-packaging-concept.md) applies this list of filters together with those your client specifies in the URL. This combination generates a [Dynamic Manifest](filters-dynamic-manifest-concept.md), which is based on filters in the URL + filters you specify on the Streaming Locator. 
-
-See the following examples:
-
-* [Associate filters with Streaming Locator - .NET](filters-dynamic-manifest-dotnet-how-to.md#associate-filters-with-streaming-locator)
-* [Associate filters with Streaming Locator - CLI](filters-dynamic-manifest-cli-how-to.md#associate-filters-with-streaming-locator)
+You can specify a list of [asset or account filters](filters-concept.md) on your [Streaming Locator](/rest/api/media/streaminglocators/create#request-body). The [Dynamic Packager](encode-dynamic-packaging-concept.md) applies this list of filters together with those your client specifies in the URL. This combination generates a [Dynamic Manifest](filters-dynamic-manifest-concept.md), which is based on filters in the URL + filters you specify on the Streaming Locator.
 
 ## Updating filters
- 
-**Streaming Locators** are not updatable while filters can be updated. 
 
-It is not recommended to update the definition of filters associated with an actively published **Streaming Locator**, especially when CDN is enabled. Streaming servers and CDNs can have internal caches that may result in stale cached data to be returned. 
+**Streaming Locators** are not updatable while filters can be updated.
+
+It is not recommended to update the definition of filters associated with an actively published **Streaming Locator**, especially when CDN is enabled. Streaming servers and CDNs can have internal caches that may result in stale cached data to be returned.
 
 If the filter definition needs to be changed consider creating a new filter and adding it to the **Streaming Locator** URL or publishing a new **Streaming Locator** that references the filter directly.

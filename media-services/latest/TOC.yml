@@ -623,15 +623,6 @@
     - name: Manage multiple storage accounts
       href: storage-managing-multiple-storage-accounts-how-to.md
       displayName: how to, how-to, tutorial, storage accounts, multiple storage accounts
-    - name: Stitch two or more video files
-      href: transform-stitch-how-to.md
-      displayName: stitch, edit, edit decision list, edl, stitching, combine, merge, clips, highlight
-    - name: Create an overlay transform
-      href: transform-create-overlay-how-to.md
-      displayName: overlay, video overlay, audio overlay, audio silence, remove audio, redact video, logo, lower third, bug, brand, branding, text overlay, graphic overlay, graphics, image overlay, image
-    - name: Use the content aware encoding preset
-      href: encode-content-aware-how-to.md
-      displayName: encode, encoder, transcode, custom preset, content aware, transform, CAE, scene based, shot based, qvbr, quality defined
     - name: Create job input with a local file
       href: job-input-from-local-file-how-to.md
       displayName: upload, upload file, ingest file, local file, uploading, CLI
@@ -652,11 +643,6 @@
     - name: Offline PlayReady for Windows 10
       href: drm-offline-playready-streaming-for-windows-10.md
       displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline PlayReady, offline,disconnect, disconnected, airplane, train, bus, car
-    - name: Create filters
-      href: filters-dynamic-manifest-dotnet-how-to.md
-    - name: Create a streaming locator and build URLs
-      href: create-streaming-locator-build-url.md
-      displayName: streaming endpoint, sample, how-to, how to, manage, management
     - name: Download results
       href: job-download-results-how-to.md
       displayName: download, progressive download, encoding job, encoding results, job results, download results, download output
@@ -665,12 +651,6 @@
       displayName: descriptive audio, accessibility, access, accessible
   - name: REST
     items:
-    - name: Create a basic audio transform
-      href: transform-create-basic-audio-how-to.md
-      displayName: Transform, speech to text, audio, transcription, captions, subtitles, translation, language, accessibility
-    - name: Create a copyAllBitrateNonInterleaved transform
-      href: transform-create-copyallbitratenoninterleaved-how-to.md
-      displayName: Copy, copy bitrates
     - name: Copy videos without re-encoding
       href: transform-create-copy-video-audio-how-to.md
       displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding

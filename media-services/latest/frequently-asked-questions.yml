@@ -21,7 +21,7 @@ sections:
         - [Node.js](https://aka.ms/ams-v3-nodejs-sdk)
         - [Go](https://aka.ms/ams-v3-go-sdk)
         - [Ruby](https://aka.ms/ams-v3-ruby-sdk)
-    - question: Should I use the client SDKs or write directly to the REST API? 
+    - question: Should I use the client SDKs or write directly to the REST API?
       answer: |
         We don't recommend that you try to wrap the REST API for Media Services directly into your own library code. Doing so properly for production purposes would require you to implement the full Azure Resource Manager retry logic and understand how to manage long-running operations in Resource Manager APIs. The client SDKs for various languages - for example, .NET, Java, TypeScript, Python, and Ruby - handle this for you automatically, to reduce the chances of problems with retry logic or failed API calls. The Postman collection is provided more as a teaching tool, and to show you what the client SDKs are doing on the wire during your development with them.
     - question: Where can I find Media Services samples?
@@ -32,13 +32,13 @@ sections:
         When you're using pagination, you should always use the next link to enumerate the collection and not depend on a particular page size. For details and examples, see [Filtering, ordering, and paging entities](filter-order-page-entities-how-to.md).
   - name: Accounts
     questions:
-    - question: How do I use a managed identity to encrypt data to Media Services? 
+    - question: How do I use a managed identity to encrypt data to Media Services?
       answer: |
-        For information about using the Azure CLI to pair Media Services with Azure Key Vault to encrypt your data, see the [Use a Key Vault key to encrypt data into a Media Services account](security-encrypt-data-managed-identity-cli-tutorial.md) tutorial.  
-    - question: How do I use a managed identity to give Media Services access to a restricted storage account? 
+        For information about using the Azure CLI to pair Media Services with Azure Key Vault to encrypt your data, see the [Use a Key Vault key to encrypt data into a Media Services account](security-encrypt-data-managed-identity-cli-tutorial.md) tutorial.
+    - question: How do I use a managed identity to give Media Services access to a restricted storage account?
       answer: |
         If you want Media Services to access a storage account when the storage account is configured to block requests from unknown IP addresses, follow the steps in [Access storage with a Media Services managed identity](security-access-storage-managed-identity-cli-tutorial.md).
-    - question: What is the process for moving a Media Services account between subscriptions?  
+    - question: What is the process for moving a Media Services account between subscriptions?
       answer: |
         See [Moving a Media Services account between subscriptions](account-move-account-how-to.md).
   - name: Security
@@ -55,25 +55,25 @@ sections:
         - Media Services Policy Administrator
         - Media Services Streaming Endpoints Administrator
         - Media Services Live Events Administrator
-        
+
         These roles are detailed in [Azure role-based access control (Azure RBAC) for Media Services accounts](security-rbac-concept.md).
-        
+
         These roles can be used to give fine-grained access to a Media Services account. To allow all access to a Media Services account, the “Owner” or “Contributor” role can be used.
-        Media Services has an older API on the deprecation path that does not support fine-grained access control. 
-        Customers who require fine-grained access control should not select “Enable classic APIs” when creating a Media Services account using the portal (or use the 2020-05-01 API version if they are using the API to create accounts). 
-        
+        Media Services has an older API on the deprecation path that does not support fine-grained access control.
+        Customers who require fine-grained access control should not select “Enable classic APIs” when creating a Media Services account using the portal (or use the 2020-05-01 API version if they are using the API to create accounts).
+
         The following built-in Azure Policy can be used to block the creation of accounts that support the old API:
         [Azure Media Services accounts that allow access to the legacy v2 API should be blocked - Microsoft Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fccf93279-9c91-4143-a841-8d1f21505455)
- 
+
   - name: Assets, uploading, and storage
     questions:
     - question: What is a Media Services asset?
-      answer: | 
+      answer: |
         A Media Services asset is an Azure Storage account container that's used for each video file that you upload. It has a unique identifier that's used with transforms and other operations. See [Assets in Azure Media Services v3](assets-concept.md).
     - question: How do I create a Media Services asset?
-      answer: | 
+      answer: |
         Every time you want to upload a media file and do something with it, like encoding or streaming, you create an asset to store the media file and associated files. Assets are automatically created for you if you use the Azure portal. If you're not using the portal to upload files, you must create an asset first. For more information, see [Create an asset](asset-create-asset-how-to.md).
-  
+
   - name: Encoding
     questions:
     - question: What encoding formats are available with Media Services?
@@ -87,24 +87,23 @@ sections:
         Yes.  See [Encode with an auto-generated bitrate ladder](./encode-autogen-bitrate-ladder.md).
     - question: Does Media Services support content-aware encoding?
       answer: |
-        Yes. Media Services can perform a two-pass analysis on a video. It can then recommend the best adaptive bitrate set, resolutions, and encoding settings based on contents of the video. 
-        For more information, see [How to use the content-aware encoding preset](./encode-content-aware-how-to.md).
+        Yes. Media Services can perform a two-pass analysis on a video. It can then recommend the best adaptive bitrate set, resolutions, and encoding settings based on contents of the video.
     - question: Can I use an externally encoded or existing MP4 file in Media Services?
-      answer: | 
+      answer: |
         Yes. For details and links to a sample application that shows how to upload a single-bitrate MP4 file that's pre-encoded and generate the server manifest (.ism) and client manifest (.ismc), see the answer to the question "Can I stream existing MP4 files that are pre-encoded or encoded in another solution?" in the section about packaging and delivery. That answer also describes the performance impact on the origin.
     - question: Can Media Services be used for very short-form file content encoding?
-      answer: | 
-        We don't recommend it. Very short content that's less than a minute or two in duration is not ideal for adaptive bitrate streaming. If you intend to stream very short-form files, we recommend that you pre-encode the content into a format that's 
-        easily streamed using a single bitrate. 
-        
-        Because most adaptive bitrate players need time to buffer multiple segments of video, as well as time to analyze the network bandwidth before "shifting" up or down the adaptive bitrate ladder, it's often useless to provide 
-        a lot of bitrates for content that's under 30 seconds long. By the time the player locks its heuristic algorithm on the right bitrate to play based on network conditions, the file will be done streaming.  
-        
-        In addition, some players default to buffering up to three segments of video. Each segment can be two to six seconds long. For very short-format videos, the player is likely to buffer and begin playback of the first selected bitrate of the adaptive bitrate set. 
-        For this reason, we recommend using a single-bitrate MP4 file, and uploading it to an asset if you need HLS or DASH manifest generation. For details on how to achieve this, see the answer to the question "Can I stream existing MP4 files that are pre-encoded or encoded in another solution?" in the section about packaging and delivery. 
-        
+      answer: |
+        We don't recommend it. Very short content that's less than a minute or two in duration is not ideal for adaptive bitrate streaming. If you intend to stream very short-form files, we recommend that you pre-encode the content into a format that's
+        easily streamed using a single bitrate.
+
+        Because most adaptive bitrate players need time to buffer multiple segments of video, as well as time to analyze the network bandwidth before "shifting" up or down the adaptive bitrate ladder, it's often useless to provide
+        a lot of bitrates for content that's under 30 seconds long. By the time the player locks its heuristic algorithm on the right bitrate to play based on network conditions, the file will be done streaming.
+
+        In addition, some players default to buffering up to three segments of video. Each segment can be two to six seconds long. For very short-format videos, the player is likely to buffer and begin playback of the first selected bitrate of the adaptive bitrate set.
+        For this reason, we recommend using a single-bitrate MP4 file, and uploading it to an asset if you need HLS or DASH manifest generation. For details on how to achieve this, see the answer to the question "Can I stream existing MP4 files that are pre-encoded or encoded in another solution?" in the section about packaging and delivery.
+
         It's necessary to deliver the files in HLS or DASH format only if you want to benefit from the capabilities of those protocols. For single-bitrate streams, they can still offer a lot - such as faster seeking, digital rights management (DRM) support, and increased difficulty to download via URL (but still possible!) than a
-        progressive download MP4 in blob storage. Caption support for VTT and IMSC1 is another benefit. In addition, the ability to late bind additional audio renditions, or dubbings in alternate languages, makes this a valuable choice for some situations. 
+        progressive download MP4 in blob storage. Caption support for VTT and IMSC1 is another benefit. In addition, the ability to late bind additional audio renditions, or dubbings in alternate languages, makes this a valuable choice for some situations.
 
   - name: Live streaming
     questions:
@@ -124,19 +123,19 @@ sections:
         * [Subscribe](monitoring/reacting-to-media-services-events.md) to the stream-level [Microsoft.Media.LiveEventEncoderDisconnected](monitoring/media-services-event-schemas.md#liveeventencoderdisconnected) events and monitor that no reconnections come in for a while to stop and delete your live event.
         * [Subscribe](monitoring/reacting-to-media-services-events.md) to the track-level [heartbeat](monitoring/media-services-event-schemas.md#liveeventingestheartbeat) events. If all tracks have an incoming bitrate dropping to 0 or the last time stamp is no longer increasing, you can safely shut down the live event. The heartbeat events come in every 20 seconds for every track, so it might be a bit verbose.
     - question: Can I reuse the same streaming URL on restart of a live event?
-      answer: | 
-        No, you can't easily use the same streaming URL if you stop and start a live event. 
-        Each time you create and publish a new live output (and asset), a new streaming URL (GUID) will be used for the new locator. 
-        That way, you're sure there won't be any cache conflict in the streaming endpoint and the content delivery network (CDN). 
+      answer: |
+        No, you can't easily use the same streaming URL if you stop and start a live event.
+        Each time you create and publish a new live output (and asset), a new streaming URL (GUID) will be used for the new locator.
+        That way, you're sure there won't be any cache conflict in the streaming endpoint and the content delivery network (CDN).
         You can prepare (and know) the streaming URLs in advance because you can force a specific GUID for the streaming locator, and then decide the manifest name to use for the live output.
-        
+
         Let's say that you decide to use GUID 1a7ed69e-a361-433d-8a56-29c61872744f for the live output that you'll create tomorrow. When the day comes, you start the live event and create a live output. You can decide to use "conference1" for the manifest and force the GUID for the locator.
 
         The streaming URL is predictable and is `http://<youraccountname>-<azureregion>.streaming.media.azure.net/1a7ed69e-a361-433d-8a56-29c61872744f/conference1.ism/manifest`.
 
-        You can't reuse the same live output or asset multiple times. Think of the combination of the live output and asset as a tape recording. 
-        After the live output has been recorded to the asset, you can't reuse it for another recording. There will be blob conflict or overwrites if you do that again. 
-        Unless you plan to fully purge the blobs in the storage account, and purge the CDN completely, there will be problems. 
+        You can't reuse the same live output or asset multiple times. Think of the combination of the live output and asset as a tape recording.
+        After the live output has been recorded to the asset, you can't reuse it for another recording. There will be blob conflict or overwrites if you do that again.
+        Unless you plan to fully purge the blobs in the storage account, and purge the CDN completely, there will be problems.
         There will likely still be problems because the fragments are already cached downstream at the CDN or in client device caches (for example, the browser cache).
 
 
@@ -158,36 +157,36 @@ sections:
       answer: |
         Streaming policies enable you to define streaming protocols and encryption options for your streaming locators. Media Services v3 provides some predefined streaming policies. For more information, see [Streaming policies](./stream-streaming-policy-concept.md).
     - question: How do I create a Media Services streaming policy?
-      answer: | 
+      answer: |
         For a list of predefined policies that you can use to get started, see [Streaming policies](./stream-streaming-policy-concept.md).
     - question: How do I stream HLS-format content to Apple devices?
       answer: |
         Make sure you have **(format=m3u8-cmaf)** at the end of your path (after the **/manifest** portion of the URL) to tell the streaming origin server to return HLS content for consumption on Apple iOS-native devices. For details, see [Delivering content](encode-dynamic-packaging-concept.md).
     - question: Can I stream existing MP4 files that are pre-encoded or encoded in another solution?
-      answer: | 
-        Yes, the Media Services origin server (streaming endpoint) supports dynamic packaging of MP4 files to HLS or DASH streaming format. However, the content must be encoded in closed-GOP format, with short GOPs in the duration range of two to six seconds. 
-        We recommend the following settings: two-second GOPs, key frame maximum and minimum distance of two seconds, constant bitrate encoding (CBR mode). Most content in this format that's encoded through H.264 or HEVC video codec, along with AAC audio format, can be supported. 
-        Additional audio formats that are pre-encoded might also be supported, such as Dolby DD+. 
-        
-        The key to making it work is to create an asset, upload the pre-encoded assets into the asset's container by using Azure Blob Storage client SDKs, and then generate the required server manifest (.ism) and client manifest files. 
+      answer: |
+        Yes, the Media Services origin server (streaming endpoint) supports dynamic packaging of MP4 files to HLS or DASH streaming format. However, the content must be encoded in closed-GOP format, with short GOPs in the duration range of two to six seconds.
+        We recommend the following settings: two-second GOPs, key frame maximum and minimum distance of two seconds, constant bitrate encoding (CBR mode). Most content in this format that's encoded through H.264 or HEVC video codec, along with AAC audio format, can be supported.
+        Additional audio formats that are pre-encoded might also be supported, such as Dolby DD+.
+
+        The key to making it work is to create an asset, upload the pre-encoded assets into the asset's container by using Azure Blob Storage client SDKs, and then generate the required server manifest (.ism) and client manifest files.
         For details, see the .NET sample project in [Stream existing MP4 files](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/StreamExistingMp4).
 
         Keep in mind that there are performance implications when you use this approach, because the built-in encoder in Media Services also generates binary indexes (.mpi files) that improve the access time into the MP4 files. Without these files, the server can use slightly more CPU at high load. For more information, see [Streaming an existing single bitrate MP4 file with HLS or Dash](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/StreamExistingMp4).
-        
+
         When you're scaling up with this approach, you should monitor the streaming endpoint's CPU load. If you're planning to go to production with a large library of MP4 files that are pre-encoded outside Media Services, file a support ticket to have your architecture reviewed and
-        ask about ways to improve the origin server performance of pre-encoded MP4 content. 
+        ask about ways to improve the origin server performance of pre-encoded MP4 content.
     - question: Will v2 streaming locators continue to work after February 2024?
       answer: |
        Streaming locators created with v2 API will continue to work after our v2 API is turned off. Once the Streaming Locator data is created in the Media Services backend database, there is no dependency on the v2 REST API for streaming. We will not remove v2 specific records from the database when v2 is turned off in February 2024.
-       
+
        There are some properties of assets and locators created with v2 that cannot be accessed or updated using the new v3 API. For example, v2 exposes an **Asset Files** API that does not have an equivalent feature in the v3 API. Often this is not a problem for most of our customers, since it is not a widely used feature and you can still stream old locators and delete them when they are no longer needed.
-       
+
        After migration, you should avoid making any calls to the v2 API to modify streaming locators or assets.
 
   - name: Content protection
     questions:
     - question: How do I deliver my media content with dynamic encryption?
-      answer: | 
+      answer: |
         Dynamic encryption is securing your media from the time it leaves your computer all the way through storage, processing, and delivery. With Media Services, you can deliver your live and on-demand content encrypted dynamically with Advanced Encryption Standard (AES-128) or any of the three major DRM systems: Microsoft PlayReady, Google Widevine, and Apple FairPlay. For more information, see [Protect your content with Media Services dynamic encryption](./drm-content-protection-concept.md).
     - question: Should I use AES-128 clear key encryption or a DRM system?
       answer: |
@@ -197,7 +196,7 @@ sections:
     - question: How do I show a video to only users who have a specific permission, without using Azure AD?
       answer: |
         You don't have to use any specific token provider such as Azure Active Directory (Azure AD). You can create your own [JWT](https://docs.microsoft.com/active-directory/develop/security-tokens.md#json-web-tokens-and-claims) provider (so-called Secure Token Service, or STS) by using asymmetric key encryption. In your custom STS, you can add claims based on your business logic.
-        
+
         Make sure that the issuer, audience, and claims all match up exactly between what's in JWT and the `ContentKeyPolicyRestriction` value used in `ContentKeyPolicy`.
 
         For more information, see [Protect your content by using Media Services dynamic encryption](drm-content-protection-concept.md).
@@ -216,15 +215,15 @@ sections:
 
     - question: Why does only audio play and not video when I'm using FairPlay offline mode?
       answer: |
-        This behavior seems to be by design of the sample app. When an alternate audio track is present (which is the case for HLS) during offline mode, both iOS 10 and iOS 11 default to the alternate audio track. To compensate for this behavior in FPS offline mode, remove the alternate audio track from the stream. To do this on Media Services, add the dynamic manifest filter **audio-only=false**. In other words, an HLS URL ends with **.ism/manifest(format=m3u8-aapl,audio-only=false)**. 
+        This behavior seems to be by design of the sample app. When an alternate audio track is present (which is the case for HLS) during offline mode, both iOS 10 and iOS 11 default to the alternate audio track. To compensate for this behavior in FPS offline mode, remove the alternate audio track from the stream. To do this on Media Services, add the dynamic manifest filter **audio-only=false**. In other words, an HLS URL ends with **.ism/manifest(format=m3u8-aapl,audio-only=false)**.
     - question: Why does FairPlay offline play audio only without video mode after I add audio-only=false?
       answer: |
         Depending on the cache key design for the content delivery network, the content might be cached. Purge the cache.
     - question: What is the downloaded/offline file structure on iOS devices?
-      answer: |    
-        The downloaded file structure on an iOS device looks like the following screenshot. The *_keys* folder stores downloaded FPS licenses, with one stored file for each license service host. The *.movpkg* folder stores audio and video content. 
+      answer: |
+        The downloaded file structure on an iOS device looks like the following screenshot. The *_keys* folder stores downloaded FPS licenses, with one stored file for each license service host. The *.movpkg* folder stores audio and video content.
 
-        The first folder with a name that ends with a dash followed by a number contains video content. The numeric value is the peak bandwidth of the video renditions. The second folder with a name that ends with a dash followed by 0 contains audio content. The third folder named *Data* contains the master playlist of the FPS content. Finally, *boot.xml* provides a complete description of the *.movpkg* folder content. 
+        The first folder with a name that ends with a dash followed by a number contains video content. The numeric value is the peak bandwidth of the video renditions. The second folder with a name that ends with a dash followed by 0 contains audio content. The third folder named *Data* contains the master playlist of the FPS content. Finally, *boot.xml* provides a complete description of the *.movpkg* folder content.
 
         ![Screenshot that shows the offline file structure for the FairPlay iOS sample app.](media/drm-offline-fairplay-for-ios-concept/offline-fairplay-file-structure.png)
 
@@ -274,7 +273,7 @@ sections:
         contains `security_level`, and passes it to the Widevine global delivery service. The following table shows the mapping between the two sets of security levels.
 
         | **Security levels defined in the Widevine architecture** |**Security levels used in the Widevine API**|
-        |---|---| 
+        |---|---|
         | **Security Level 1**: All content processing, cryptography, and control are performed within the Trusted Execution Environment (TEE). In some implementation models, security processing might be performed in different chips.|**security_level=5**: The cryptography, decoding, and all handling of the media (compressed and uncompressed) must be handled within a hardware-backed TEE.<br/><br/>**security_level=4**: The cryptography and decoding of content must be performed within a hardware-backed TEE.|
         **Security Level 2**: Cryptography (but not video processing) is performed within the TEE. Decrypted buffers are returned to the application domain and processed through separate video hardware or software. At Level 2, however, cryptographic information is still processed only within the TEE.| **security_level=3**: The key material and cryptographic operations must be performed within a hardware-backed TEE. |
         | **Security Level 3**: There's no TEE on the device. Appropriate measures can be taken to protect the cryptographic information and decrypted content on the host operating system. A Level 3 implementation might also include a hardware cryptographic engine, but that enhances only performance, not security. | **security_level=2**: Software cryptography and an obfuscated decoder are required.<br/><br/>**security_level=1**: Software-based white-box cryptography is required.|
@@ -284,28 +283,28 @@ sections:
     - question: How do I monitor my Media Services resources?
       answer: |
         Use Azure Monitor to keep track of what's happening with your Media Services resources. For more information, see [Monitor Media Services](./monitoring/monitor-media-services.md). How-to guides include [Monitor Media Services metrics](./monitoring/media-services-metrics-howto.md) and [Monitor Media Services diagnostic logs](./monitoring/media-services-diagnostic-logs-howto.md).
-    - question: How do I monitor my Media Services live event? 
+    - question: How do I monitor my Media Services live event?
       answer: |
         Use [Azure Event Grid](./monitoring/reacting-to-media-services-events.md) to monitor your live event without a polling service. How-to guides include [Create and monitor Media Services events with Event Grid using the Azure portal](./monitoring/monitor-events-portal-how-to.md) and [Create and monitor Media Services events with Event Grid using the Azure CLI](./monitoring/job-state-events-cli-how-to.md).
 
   - name: Players
     questions:
-    - question: Which video players can I use with Media Services?  
+    - question: Which video players can I use with Media Services?
       answer: |
         Media Services works with Azure Media Player, Shaka, and Video.js. See the [Azure Media Player documentation](../azure-media-player/azure-media-player-overview.md), [How to use the Shaka player with Azure Media Services](./player-shaka-player-how-to.md), or [How to use the Video.js player with Azure Media Services](./player-media-players-concept.md).
-    
+
   - name: High availability
     questions:
     - question: Does Media Services support high availability?
       answer: |
         For information about Media Services and high availability, see [High availability with Media Services and Video on Demand (VOD)](./architecture-high-availability-encoding-concept.md).
-   
+
   - name: Migrating from v2
     questions:
-    - question: How do I migrate from Media Services v2 to Media Services v3? 
+    - question: How do I migrate from Media Services v2 to Media Services v3?
       answer: |
         We've created a [comprehensive guide for migration from v2 to v3](./migrate-v-2-v-3-migration-introduction.md). We're interested in knowing about your migration experience and needs, so feel free to provide feedback via GitHub issue or support ticket.
-  
+
   - name: Troubleshooting
     questions:
     - question: How do I find out what this error code means?
@@ -330,13 +329,13 @@ sections:
   - name: Compliance and customer data
     questions:
       - question: Does Media Services store any customer data outside the service region?
-        answer: | 
+        answer: |
           Customers attach their own storage accounts to their Azure Media Services accounts. All asset data is stored in these associated storage accounts, and the customer controls the location and replication type of this storage.
-          
-          Additional data associated with a Media Services account (including content encryption keys, token verification keys, JobInputHttp URLs, and other entity metadata) is stored in Microsoft-owned storage within the region selected for the Media Services account. 
-          
+
+          Additional data associated with a Media Services account (including content encryption keys, token verification keys, JobInputHttp URLs, and other entity metadata) is stored in Microsoft-owned storage within the region selected for the Media Services account.
+
           Due to [data residency requirements](https://azure.microsoft.com/global-infrastructure/data-residency/#more-information) in Brazil South and Southeast Asia, additional account data is stored in a zone-redundant fashion and is contained in a single region. For Southeast Asia, all the additional account data is stored in Singapore. For Brazil South, the data is stored in Brazil. In regions other than Brazil South and Southeast Asia, additional account data might also be stored in Microsoft-owned storage in the [paired region](https://docs.microsoft.com/availability-zones/cross-region-replication-azure.md).
-                    
-      - question: Does Media Services provide high availability or data replication? 
+
+      - question: Does Media Services provide high availability or data replication?
         answer: |
           Azure Media Services is a regional service and does not provide [high availability](architecture-high-availability-encoding-concept.md) or data replication. We encourage customers who need these features to build a solution by using Media Services accounts in multiple regions. A sample that shows how to build a solution for [high availability with Media Services video on demand](./architecture-high-availability-encoding-concept.md) is available as a guide.
