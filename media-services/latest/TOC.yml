@@ -55,10 +55,8 @@
       href: configure-connect-java-howto.md
       displayName: Java, SDK, client, library
   - name: Try an SDK sample
-    items:
-      - name: GitHub samples by language
-        href: samples-overview.md
-        displayName: samples, SDK, tutorial, GitHub, .NET, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
+    href: samples-overview.md
+    displayName: samples, SDK, tutorial, GitHub, .NET, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
   - name: Try Media Services in the portal
     items:
     - name: Basic Video On Demand (VOD) app
@@ -78,79 +76,65 @@
       displayName: ARM, ARM Template, Azure Resource Manager, Azure Resource Manager Template
 - name: Tutorials
   items:
-  - name: .NET
-    items:
-    - name: Encode and stream a remote file .NET
-      href: stream-files-dotnet-quickstart.md
-      displayName: Tutorial, .NET, remote ingest, SAS, HTTP, JobInputHttp, S3, URL, ingest, upload, SDK, sample
-    - name: Encode and stream an uploaded file .NET
-      href: stream-files-tutorial-with-api.md
-      displayName: SDK, Tutorial, .NET, stream, upload, ingest, sample
-    - name: Stream live with .NET
-      href: stream-live-tutorial-with-api.md
-      displayName: SDK, Tutorial, .NET, live, live event, streaming, sample
-    - name: Analyze your video with .NET
-      href: analyze-videos-tutorial.md
-      displayName: SDK, Tutorial, .NET, sample, analyze, video analyzer, audio analyzer, speech to text, captions, subtitles
-    - name: Encrypt dynamically with AES-128
-      href: drm-protect-with-aes128-tutorial.md
-      displayName: SDK, Tutorial, .NET, sample, streaming, content protection, AES-128, encrypt
-    - name: Encrypt dynamically with DRM
-      href: drm-protect-with-drm-tutorial.md
-      displayName: SDK, Tutorial, .NET, sample, DRM, PlayReady, Widevine, FairPlay, encrypt, CENC, CBCS
-    - name: Content protection with Azure AD
-      href: architecture-azure-ad-content-protection.md
-      displayName: SDK, Tutorial, .NET, sample, AAD, Active Directory, protect, content protection, DRM, encrypt, PlayReady, Widevine, FairPlay, encrypt, CENC, CBCS
-    - name: Use Azure Functions .NET
-      href: integrate-azure-functions-dotnet-how-to.md
-      displayName: Azure Functions, Functions, functions app, lambda, serverless, serverless functions, integrations, .NET
-  - name: REST
-    items:
-    - name: Enable trusted storage
-      href: security-trusted-storage-rest-tutorial.md
-  - name: CLI
-    items:
-    - name: Encode and stream a remote file CLI
-      href: stream-files-cli-quickstart.md
-      displayName: CLI, Tutorial, stream, upload, ingest, sample
-    - name: Use a Key Vault key to encrypt data
-      href: security-encrypt-data-managed-identity-cli-tutorial.md
-      displayName: CLI, Tutorial, key vault, encrypt, managed identity, sample, system assigned, user assigned
-    - name: Access storage with a Managed Identity
-      href: security-access-storage-managed-identity-cli-tutorial.md
-      displayName: CLI, Tutorial, managed identity, storage, system assigned, user assigned
-    - name: Give a Function App access to Media Services account
-      href: security-function-app-managed-identity-cli-tutorial.md
-      displayName: CLI, Tutorial, managed identity, Azure Functions, function app, function, system assigned, user assigned
-  - name: Node.js
-    items:
-    - name: Encode and stream a remote file Node.js
-      href: stream-files-nodejs-quickstart.md
-      displayName: Tutorial, Node.js, TypeScript, Node, JavaScript, remote ingest, SAS, HTTP, JobInputHttp, S3, URL, ingest, upload, SDK, sample
-    - name: Stream live with Node.js
-      href: stream-live-tutorial-with-nodejs.md
-      displayName: SDK, Tutorial, Node.js, TypeScript, Node, JavaScript, live, live event, streaming, sample
-  - name: Python
-    items:
-    - name: Python Basic Encoding
-      href: encode-basic-encoding-python-quickstart.md
-      displayName: Tutorial, Python, remote ingest, SAS, HTTP, JobInputHttp, S3, URL, ingest, upload, SDK, sample, encoding
-    - name: Event-based Face Redaction
-      href: face-redaction-event-based-python-quickstart.md
-      displayName: Tutorial, Python, Redact, face detect, face detection, blur face, blurring, redactor
-  - name: Azure portal
-    items:
-    - name: Customer managed keys or BYOK tutorial
-      href: security-customer-managed-keys-portal-tutorial.md
-      displayName: BYOK, managed keys, customer-managed keys, security, tutorial, portal
-    - name: Store AMS events in Azure Log Analytics
-      href: integrate-event-grid-log-analytics-tutorial.md
-      displayName: events, event grid, log analytics, tutorial, portal, monitoring, monitor
+  - name: Encode and stream a remote file -.NET
+    href: stream-files-dotnet-quickstart.md
+    displayName: Tutorial, .NET, remote ingest, SAS, HTTP, JobInputHttp, S3, URL, ingest, upload, SDK, sample
+  - name: Encode and stream an uploaded file - .NET
+    href: stream-files-tutorial-with-api.md
+    displayName: SDK, Tutorial, .NET, stream, upload, ingest, sample
+  - name: Stream live - .NET
+    href: stream-live-tutorial-with-api.md
+    displayName: SDK, Tutorial, .NET, live, live event, streaming, sample
+  - name: Analyze your video - .NET
+    href: analyze-videos-tutorial.md
+    displayName: SDK, Tutorial, .NET, sample, analyze, video analyzer, audio analyzer, speech to text, captions, subtitles
+  - name: Encrypt dynamically with AES-128 - NET
+    href: drm-protect-with-aes128-tutorial.md
+    displayName: SDK, Tutorial, .NET, sample, streaming, content protection, AES-128, encrypt
+  - name: Encrypt dynamically with DRM - .NET
+    href: drm-protect-with-drm-tutorial.md
+    displayName: SDK, Tutorial, .NET, sample, DRM, PlayReady, Widevine, FairPlay, encrypt, CENC, CBCS
+  - name: Content protection with Azure AD - NET
+    href: architecture-azure-ad-content-protection.md
+    displayName: SDK, Tutorial, .NET, sample, AAD, Active Directory, protect, content protection, DRM, encrypt, PlayReady, Widevine, FairPlay, encrypt, CENC, CBCS
+  - name: Use Azure Functions - .NET
+    href: integrate-azure-functions-dotnet-how-to.md
+    displayName: Azure Functions, Functions, functions app, lambda, serverless, serverless functions, integrations, .NET
+  - name: Enable trusted storage - CLI
+    href: security-trusted-storage-rest-tutorial.md
+  - name: Encode and stream a remote file - CLI
+    href: stream-files-cli-quickstart.md
+    displayName: CLI, Tutorial, stream, upload, ingest, sample
+  - name: Use a Key Vault key to encrypt data - CLI
+    href: security-encrypt-data-managed-identity-cli-tutorial.md
+    displayName: CLI, Tutorial, key vault, encrypt, managed identity, sample, system assigned, user assigned
+  - name: Access storage with a Managed Identity - CLI
+    href: security-access-storage-managed-identity-cli-tutorial.md
+    displayName: CLI, Tutorial, managed identity, storage, system assigned, user assigned
+  - name: Give a Function App access to Media Services account - CLI
+    href: security-function-app-managed-identity-cli-tutorial.md
+    displayName: CLI, Tutorial, managed identity, Azure Functions, function app, function, system assigned, user assigned
+  - name: Encode and stream a remote file - Node.js
+    href: stream-files-nodejs-quickstart.md
+    displayName: Tutorial, Node.js, TypeScript, Node, JavaScript, remote ingest, SAS, HTTP, JobInputHttp, S3, URL, ingest, upload, SDK, sample
+  - name: Stream live - Node.js
+    href: stream-live-tutorial-with-nodejs.md
+    displayName: SDK, Tutorial, Node.js, TypeScript, Node, JavaScript, live, live event, streaming, sample
+  - name: Basic Encoding - Python
+    href: encode-basic-encoding-python-quickstart.md
+    displayName: Tutorial, Python, remote ingest, SAS, HTTP, JobInputHttp, S3, URL, ingest, upload, SDK, sample, encoding
+  - name: Event-based Face Redaction - Python
+    href: face-redaction-event-based-python-quickstart.md
+    displayName: Tutorial, Python, Redact, face detect, face detection, blur face, blurring, redactor
+  - name: Customer managed keys or BYOK tutorial - Portal
+    href: security-customer-managed-keys-portal-tutorial.md
+    displayName: BYOK, managed keys, customer-managed keys, security, tutorial, portal
+  - name: Store AMS events in Azure Log Analytics - Portal
+    href: integrate-event-grid-log-analytics-tutorial.md
+    displayName: events, event grid, log analytics, tutorial, portal, monitoring, monitor
 - name: Samples
-  items:
-  - name: GitHub samples by language
-    href: samples-overview.md
-    displayName: samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
+  href: samples-overview.md
+  displayName: samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
 - name: Concepts
   items:
   - name: Overview
