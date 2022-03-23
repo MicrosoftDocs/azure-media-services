@@ -67,7 +67,7 @@ Click on the image below to see a larger version.
         - File name(s)
         - Output asset(s)
         - A resource group
-        - AMS account name  
+        - AMS account name
 1. Use [Event Grid](monitoring/monitor-events-portal-how-to.md) for monitoring your job.
 1. Submit the job.
 
@@ -95,7 +95,7 @@ If you previously used workflows to copy files from Azure blob files into empty 
 
 ## Indexer v1 audio transcription to the new AudioAnalyzer “basic mode”
 
-For customers using the Indexer v1 processor in the v2 API, you need to create a transform that invokes the new `AudioAnalyzer` in [basic mode](transform-create-basic-audio-how-to.md) prior to submitting a Job.
+For customers using the Indexer v1 processor in the v2 API, you need to create a transform that invokes the new `AudioAnalyzer` in basic mode prior to submitting a Job.
 
 ## Encoding, transforms and jobs concepts, tutorials and how to guides
 
@@ -119,11 +119,7 @@ For customers using the Indexer v1 processor in the v2 API, you need to create a
 
 - [Create a job input from an HTTPS URL](job-input-from-http-how-to.md)
 - [Create a job input from a local file](job-input-from-local-file-how-to.md)
-- [Create a basic audio transform](transform-create-basic-audio-how-to.md)
 - [How to encode with a custom transform](transform-custom-transform-how-to.md)
-- [How to create an overlay with Media Encoder Standard](transform-create-overlay-how-to.md)
-- [How to generate thumbnails using Encoder Standard](transform-generate-thumbnails-how-to.md)
-- [Subclip a video when encoding with Media Services - REST](transform-subclip-video-how-to.md)
 
 ## Samples
 

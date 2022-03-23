@@ -22,7 +22,7 @@ In ideal conditions, you want to be aware of the type of content you are encodin
 
 The next level of optimization that can be made is to select the resolutions based on the content – for example, a video of a PowerPoint presentation with small text would look blurry when encoded below 720 pixel lines in height. In addition, you may also have a video that changes motion and complexity throughout based on how it was shot and edited.  This provides an opportunity to tune and adjust the encoding settings at each scene or shot boundary. A smart encoder can be tasked to optimize encoding settings for each shot within the video.
 
-Azure Media Services provides an [Adaptive Streaming](encode-autogen-bitrate-ladder.md) preset that partially addresses the problem of the variability in the bitrate and resolution of the source videos. However, this preset does not analyze the source content to see how complex it is, or how much motion it contains. 
+Azure Media Services provides an [Adaptive Streaming](encode-autogen-bitrate-ladder.md) preset that partially addresses the problem of the variability in the bitrate and resolution of the source videos. However, this preset does not analyze the source content to see how complex it is, or how much motion it contains.
 
 The content-aware encoding preset improves on the more static "adaptive bitrate streaming" encoding preset by adding  logic that allows the encoder to seek an optimal bitrate value for a given resolution, but without requiring extensive computational analysis. This preset outputs a uniques "ladder" of GOP-aligned MP4s based on the source file. Given a source video, the preset performs an initial fast analysis of the input content and uses the results to determine the optimal number of layers, bitrate, and resolutions needed to deliver the highest-quality adaptive bitrate streaming experience. This preset is effective with low-to-medium complexity videos, where the output files will be at lower bitrates than the more static Adaptive Streaming preset but at a quality that still delivers a good experience to audiences. The output folder will contain several MP4 files with video and audio ready for streaming.
 
@@ -37,10 +37,6 @@ By using the **PresetConfigurations** class, developers can pass in a set of con
 The content-aware encoding preset is available for use with the following codecs:
 -  H.264
 -  HEVC (H.265)
-
-## How-to use
-
-See the [content-aware encoding how-to](./encode-content-aware-How-to.md) for details on using the preset in your code and links to complete samples.
 
 ## Technical details on content-aware preset
 
