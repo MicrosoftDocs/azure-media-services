@@ -76,7 +76,7 @@ Use this article to understand the concepts used by Media Services.
 
 ## I
 
-[!INCLUDE [term-imsc](includes/reference-glossary-imsc.md)]
+[!INCLUDE [term-imsc](includes/term-imsc.md)]
 
 - Identity
 - Input
