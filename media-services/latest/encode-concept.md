@@ -55,10 +55,6 @@ When you submit Jobs to process your videos, you have to tell Media Services whe
 
 The input video can be stored as a Media Service Asset, in which case you create an input asset based on a file (stored locally or in Azure Blob storage).
 
-#### Examples
-
-[Encode a local file using built-in presets](job-input-from-local-file-how-to.md)
-
 ### Creating job input with subclipping
 
 When encoding a video, you can specify to also trim or clip the source file and produce an output that has only a desired portion of the input video. This functionality works with any [Transform](/rest/api/media/transforms) that's built using either the [BuiltInStandardEncoderPreset](/rest/api/media/transforms/createorupdate#builtinstandardencoderpreset) presets, or the [StandardEncoderPreset](/rest/api/media/transforms/createorupdate#standardencoderpreset) presets.
