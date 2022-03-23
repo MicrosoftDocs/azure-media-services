@@ -625,6 +625,56 @@
             "redirect_url": "/azure/media-services/latest/security-private-link-arm-how-to",
             "redirect_document_id": false
           },
+          {
+            "source_path_from_root": "/media-services/latest/create-streaming-locator-build-url.md",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/encode-content-aware-how-to.md",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/filters-dynamic-manifest-dotnet-how-to.md",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/transform-create-basic-audio-how-to.md",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/transform-create-copyallbitratenoninterleaved-how-to.md",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/transform-create-overlay-how-to.md",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/transform-create-thumbnail-sprites-how-to.md",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/transform-generate-thumbnails-how-to.md",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/transform-stitch-how-to.md",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/transform-subclip-video-how-to.md",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
+            "redirect_document_id": false
+          },
         {
             "source_path_from_root": "/articles/media-services/latest/latest/questions-collection.md",
             "redirect_url": "/articles/media-services/latest/frequently-asked-questions.yml",
