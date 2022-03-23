@@ -36,14 +36,14 @@ Use this article to understand the concepts used by Media Services.
 
 ## B
 
-- Beacon
-- Bitrate
-- Buffering
+<!-- Beacon -->
+[!INCLUDE [term-bitrate](includes/term-bitrate.md)]
+[!INCLUDE [term-buffering](includes/term-buffering.md)]
 
 ## C
 
-- Cache
-- Captions
+[!INCLUDE [term-cache](includes/term-cache.md)]
+- Closed captioning
 - CEA 608/708
 - Clipping
 - CMAF

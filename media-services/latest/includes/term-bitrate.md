@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 03/23/2022
 ms.author: inhenkel
-title: Aspect ratio
+title: Bitrate
 ---
 
-**Aspect ratio** - The ratio between the height and width dimensions of a video.
+**Bitrate** - The number of bits per second of content in an encoded video.
