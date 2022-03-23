@@ -152,7 +152,7 @@ sections:
         To make videos available to clients for playback, you create a streaming locator and then build streaming URLs. Streaming locators are also used to apply streaming policies that contain rules for how the media files are consumed.
     - question: How do I create a Media Services streaming locator?
       answer: |
-        To build a streaming URL, you first create a streaming locator. You then concatenate the streaming endpoint's host name and the streaming locator's path. See [Create a streaming locator and build URLs](create-streaming-locator-build-url.md).
+        To build a streaming URL, you first create a streaming locator. You then concatenate the streaming endpoint's host name and the streaming locator's path.
     - question: What is a streaming policy?
       answer: |
         Streaming policies enable you to define streaming protocols and encryption options for your streaming locators. Media Services v3 provides some predefined streaming policies. For more information, see [Streaming policies](./stream-streaming-policy-concept.md).
