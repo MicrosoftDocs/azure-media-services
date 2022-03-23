@@ -22,22 +22,39 @@ Use this article to understand the concepts used by Media Services.
 
 ## A
 
+- AC-3
 [!INCLUDE [term-media-services-account](includes/term-media-services-account.md)]
 [!INCLUDE [term-adaptive-bitrate](includes/term-adaptive-bitrate.md)]
+- Advanced Audio Encoding (AAC)
+- Advanced Video Encoding (AVC)
+- Alliance for Open Media (AOM)
+- Alliance Video Codec version 1 (AV1)
+- Aspect ratio
 [!INCLUDE [term-asset](includes/term-asset.md)]
-
 - Authentication token
 - Availability zone
 
 ## B
 
+- Beacon
+- Bitrate
+- Buffering
+
 ## C
 
+- Cache
 - Captions
 - CEA 608/708
+- Clipping
 - CMAF
+- Codec
+- Common Encryption (CENC)
+- Constant Bitrate (CBR)
 - Content aware encoding
+- Content Decryption Module (CDM)
+- Content Delivery Network (CDN)
 - Content key policy
+- Content Management System (CMS)
 - CORS
 - Credential
 - Crop
@@ -46,39 +63,64 @@ Use this article to understand the concepts used by Media Services.
 ## D
 
 - DASH
-- Demuxing
+- Decoding
+- Demultiplexing/Demuxing
+- Demuxed
 - Descriptive audio
-- Digital rights management
+- Digital asset management (DAM)
+- Digital rights management (DRM)
+- Digital rights management licensing
+- Dimension
+- Dimension value
+- Dolby digital
+- Dolby digital plus
 - Dynamic encryption
 - Dynamic packaging
 - Dynamic manifest
 
 ## E
 
+- Edge
 - Encoder
 - Encoding
+- Encoding ladder
+- Encrypted Media Extensions (EME)
+- Enhanced AC-3 (eAC-3)
 - Entity
 - Event
 
 ## F
 
 - Fairplay license
+- FFmpeg
 - File
 - File format
 - Filter
+- Frame
 
 ## G
 
 ## H
 
+- H.264
+- H.265
+- H.266
 - High availability
-- HLS
+- High-bandwidth Digital Content Protection (HDCP)
+- High Dynamic Range (HDR)
+- High Efficiency Video Encoding (HEVC)
+- HTML5
+- Http Live Streaming (HLS)
+- Http Live Streaming with AES128 (HLSe)
+- Hue Saturation Lightness (HSL) color model
+- Hue Saturation Value (HSV) color model
 
 ## I
 
 [!INCLUDE [term-imsc](includes/term-imsc.md)]
 
 - Identity
+- Ingest
 - Input
 - IP allow list
 
@@ -105,26 +147,41 @@ Use this article to understand the concepts used by Media Services.
 
 ## M
 
+- M3u8
+- Media
+- Media Source Extensions (MSE)
 - Managed identity
 - Manifest
 - Mezzanine
+- Midroll
 - Monitor
+- Motion Picture Experts Group (MPEG)
+- MPEG Dynamic Adaptive Streaming over HTTP (MPEG DASH)
 - Mp4
-- Muxing
+- Multi-CDN
+- Multiplexing/Muxing
 
 ## N
 
 ## O
 
+- Online video platform (OVP)
+- On2 Technologies
+- Opus
+- Origin
 - Overlay
 
 ## P
 
 - Page
 - Pass-through
+- Per title encoding
+- Program Date and Time (PDT)
 - Player
 - Player client
 - PlayReady license
+- Postroll
+- Preroll
 - Preset
 - Private endpoint
 - Private link
@@ -132,10 +189,18 @@ Use this article to understand the concepts used by Media Services.
 
 ## Q
 
+- Quality of Experience (QoE)
+- Quality of Service (QoS)
 - Quota
 
 ## R
 
+- Red Green Blue (RGB) color model
+- Rebuffering
+- Rendition
+- Resolution
+- RTMP
+- RTMP pass-through
 - Redact
 
 ## S
@@ -143,8 +208,11 @@ Use this article to understand the concepts used by Media Services.
 - SAS token
 - Scale
 - Signal descriptive audio
-- Stitch
+- Slicing
+- Splicing
+- Stitching
 - Stream
+- Streaming
 - Streaming endpoint
 - Streaming locator
 - Streaming policy
@@ -162,14 +230,26 @@ Use this article to understand the concepts used by Media Services.
 
 ## U
 
+- Upload
+- User Generated Content (UGC)
+
 ## V
 
+- Variable Bitrate (VBR)
+- Versatile Video Coding (VVC)
 - Video
+- Video API
 - Video on demand (VOD)
+- Vorbis
+- VP8
+- VP9
 - VTT
 
 ## W
 
+- Webhook
+- WebM
+- Web Real-time Communication (WebRTC)
 - Widevine license
 
 ## X
