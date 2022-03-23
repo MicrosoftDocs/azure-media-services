@@ -656,9 +656,6 @@
       displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding
   - name: Encode media with transforms and jobs
     items:
-    - name: Create thumbnail sprites
-      href: transform-create-thumbnail-sprites-how-to.md
-      displayName: thumbnail, thumbnails, encoder, encode, sprite, webVTT sprite, webVTT, web VTT, sprites, poster, VTT
     - name: Customize encoder transforms
       href: transform-custom-transform-how-to.md
       displayName: custom, preset, custom preset, custom encoding, user defined, customize, presets, transcode, encode, encoding, encoder, MES, Standard encoder, .NET, transform, custom transform
