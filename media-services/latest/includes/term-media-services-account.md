@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Media Services account
 ---
 
-**Media Services Account** - A Media Services asset is an Azure Storage block blob container. It is used to hold MP4 files as well as manifests, captions, and other data. It can be used to store files for video on demand, encoding inputs and ouputs, live streaming outputs, etc.
+**Media Services Account** - A Media Services account is an Azure resource which allows you to work with the Media Services product.

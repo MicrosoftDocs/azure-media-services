@@ -23,17 +23,16 @@ Use this article to understand the concepts used by Media Services.
 
 ## A
 
-- AC-3
 [!INCLUDE [term-media-services-account](includes/term-media-services-account.md)]
 [!INCLUDE [term-adaptive-bitrate](includes/term-adaptive-bitrate.md)]
-- Advanced Audio Encoding (AAC)
-- Advanced Video Encoding (AVC)
-- Alliance for Open Media (AOM)
-- Alliance Video Codec version 1 (AV1)
-- Aspect ratio
+[!INCLUDE [term-advanced-audio-coding](includes/term-advanced-audio-coding.md)]
+[!INCLUDE [term-advanced-video-coding](includes/term-advanced-video-coding.md)]
+[!INCLUDE [term-alliance-for-open-media](includes/term-alliance-for-open-media.md)]
+[!INCLUDE [term-alliance-video-codec](includes/term-alliance-video-codec.md)]
+[!INCLUDE [term-aspect-ratio](includes/term-aspect-ratio.md)]
 [!INCLUDE [term-asset](includes/term-asset.md)]
-- Authentication token
-- Availability zone
+[!INCLUDE [term-authentication-token](includes/term-authentication-token.md)]
+[!INCLUDE [term-availability-zone](includes/term-availability-zone.md)]
 
 ## B
 
@@ -73,7 +72,7 @@ Use this article to understand the concepts used by Media Services.
 - Digital rights management licensing
 - Dimension
 - Dimension value
-- Dolby digital
+[!INCLUDE [term-dobly-digital](includes/term-dobly-digital.md)]
 - Dolby digital plus
 - Dynamic encryption
 - Dynamic packaging
