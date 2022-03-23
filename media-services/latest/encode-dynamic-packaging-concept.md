@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Azure Media Services provides built-in origin server and packaging capabilities to deliver content in HLS and MPEG DASH streaming protocol formats. In AMS, the [streaming endpoint](stream-streaming-endpoint-concept.md) acts as the "origin" server sending formatted HLS and DASH content to client players that support adaptive bitrate streaming using those popular formats. The Streaming Endpoint also supports many features such as just-in-time, dynamic packaging with or without content protection, to reach all major devices (like iOS and Android devices). 
+Azure Media Services provides built-in origin server and packaging capabilities to deliver content in HLS and MPEG DASH streaming protocol formats. In AMS, the [streaming endpoint](stream-streaming-endpoint-concept.md) acts as the "origin" server sending formatted HLS and DASH content to client players that support adaptive bitrate streaming using those popular formats. The Streaming Endpoint also supports many features such as just-in-time, dynamic packaging with or without content protection, to reach all major devices (like iOS and Android devices).
 
 Most browsers and mobile devices on the market today support and understand the HLS or DASH streaming protocols. For example, iOS requires streams to be delivered in HTTP Live Streaming (HLS) format and Android devices support HLS as well as MPEG DASH on certain models (or through the use of the application level player [Exoplayer](https://exoplayer.dev/) for Android devices.
 
@@ -24,7 +24,7 @@ The advantages of just-in-time packaging are the following:
 * You do not need to store multiple copies of static packaged HLS and DASH formats in blob storage, reducing the amount of video content stored and lowering your overall costs of storage
 * You can instantly take advantage of new protocol updates and changes to the specifications as they evolve over time without need of re-packaging the static content in your catalog
 * You can deliver content with or without encryption and DRM using the same MP4 files in storage
-* You can dynamically filter or alter the manifests with simple asset-level or global filters to remove specific tracks, resolutions, languages, or provide shorter highlight clips from the same MP4 files without re-encoding or re-rendering the content. 
+* You can dynamically filter or alter the manifests with simple asset-level or global filters to remove specific tracks, resolutions, languages, or provide shorter highlight clips from the same MP4 files without re-encoding or re-rendering the content.
 
 ## To prepare your source files for delivery
 
@@ -33,10 +33,10 @@ To take advantage of dynamic packaging, you need to [encode](encode-concept.md) 
 Typically, you will use the Azure Media Services standard encoder to generate this content using the Content Aware Encoding presets, or the Adaptive Bitrate presets.  Both generate a set of MP4 files ready for streaming and dynamic packaging.  Alternatively, you can choose to encode in an external service, on-premises, or on your own VM's or serverless function apps. Content encoded externally can be uploaded into an asset for streaming provided that it meets the encoding requirements for adaptive bitrate streaming formats. An example project of uploading a pre-encoded MP4 for streaming is available in the .NET SDK samples - see [Stream Existing Mp4 files](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/StreamExistingMp4).
 
 
-Azure Media Services dynamic packaging only supports video and audio file in the MP4 container format. Audio files must be encoded into an MP4 container as well when using alternate codecs like Dolby.  
+Azure Media Services dynamic packaging only supports video and audio file in the MP4 container format. Audio files must be encoded into an MP4 container as well when using alternate codecs like Dolby.
 
 > [!TIP]
-> One way to get the MP4 and streaming configuration files is to [encode your mezzanine file with Media Services](#encode-to-adaptive-bitrate-mp4s).  We recommend using the [content aware encoding preset](encode-content-aware-concept.md) to generate the best adaptive streaming layers and settings for your content. See code samples for encoding with the [.NET SDK in the VideoEncoding folder](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding) 
+> One way to get the MP4 and streaming configuration files is to [encode your mezzanine file with Media Services](#encode-to-adaptive-bitrate-mp4s).  We recommend using the [content aware encoding preset](encode-content-aware-concept.md) to generate the best adaptive streaming layers and settings for your content. See code samples for encoding with the [.NET SDK in the VideoEncoding folder](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding)
 
 To make videos in the encoded asset available to clients for playback, you have to publish the asset using a [Streaming Locator](stream-streaming-locators-concept.md) and build the appropriate HLS and DASH streaming URLs. By changing the protocol used on the URL format query, the service will delivery the appropriate streaming manifest (HLS, MPEG DASH.)
 
@@ -64,7 +64,7 @@ Your streaming client can specify the following HLS formats. We recommend using 
 
 To control the packing ratio of VOD content for older HLS formats, you can set the **fragmentsPerHLSSegment** metadata tag in the .ism file to control the default 3:1 packing ratio for TS segments delivered from the older v3 and v4 HLS format manifests. This setting change requires you to directly modify the .ism file in storage to adjust the packing ratio.
 
-Example .ism server manifest with **fragmentsPerHLSSegment** set to 1. 
+Example .ism server manifest with **fragmentsPerHLSSegment** set to 1.
 ``` xml
    <?xml version="1.0" encoding="utf-8" standalone="yes"?>
    <smil xmlns="http://www.w3.org/2001/SMIL20/Language">
@@ -95,7 +95,7 @@ Your streaming client can specify the following MPEG-DASH formats:
 
 Your streaming client can specify the following Smooth Streaming formats:
 
-|Protocol|Notes/examples| 
+|Protocol|Notes/examples|
 |---|---|
 |Smooth Streaming| `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest`|
 |Smooth Streaming 2.0 (legacy manifest)|By default, Smooth Streaming manifest format contains the repeat tag (r-tag). However, some players do not support the `r-tag`. Clients with these players can use a format that disables the r-tag:<br/><br/>`https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=fmp4-v20)`|
@@ -107,39 +107,36 @@ Your streaming client can specify the following Smooth Streaming formats:
 
 The following steps show a common Media Services streaming workflow where dynamic packaging is used along with the Standard Encoder in Azure Media Services.
 
-1. [Upload an input file](job-input-from-http-how-to.md) such as a MP4, QuickTime/MOV, or other supported file format. This file is also referred to as the mezzanine or source file. For the list of supported formats, see [Formats Supported by the Standard Encoder](encode-media-encoder-standard-formats-reference.md).
+1. Upload an input file such as a MP4, QuickTime/MOV, or other supported file format. This file is also referred to as the mezzanine or source file. For the list of supported formats, see [Formats Supported by the Standard Encoder](encode-media-encoder-standard-formats-reference.md).
 1. [Encode](#encode-to-adaptive-bitrate-mp4s) your mezzanine file into an H.264/AAC MP4 adaptive bitrate set.
 
     If you already have encoded files and just want to copy and stream the files, use: [CopyVideo](/rest/api/media/transforms/createorupdate#copyvideo) and [CopyAudio](/rest/api/media/transforms/createorupdate#copyaudio) APIs. A new MP4 file with a streaming manifest (.ism file) will be created as a result.
 
-    In addition, you can just generate the .ism and .ismc file on a pre-encoded file, as long as it is encoded using the right settings for adaptive bitrate streaming (this is typically 2-second GOPs, Key frame distances of 2s min and max, and Constant Bitrate (CBR) mode encoding.)  
+    In addition, you can just generate the .ism and .ismc file on a pre-encoded file, as long as it is encoded using the right settings for adaptive bitrate streaming (this is typically 2-second GOPs, Key frame distances of 2s min and max, and Constant Bitrate (CBR) mode encoding.)
 
     See the [stream existing Mp4 .NET SDK sample](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/StreamExistingMp4) for details on how to generate the .ism (server manifest) and .ismc (client manifests) for streaming from an existing, pre-encoded MP4 file.
 
 1. Publish the output asset that contains the adaptive bitrate MP4 set. You publish by creating a [streaming locator](stream-streaming-locators-concept.md).
 1. Build URLs that target different formats (HLS, MPEG-DASH, and Smooth Streaming). The *streaming endpoint* would take care of serving the correct manifest and requests for all these different formats.
-    
+
 The following diagram shows the on-demand streaming with dynamic packaging workflow.
 
 ![Diagram of a workflow for on-demand streaming with dynamic packaging](./media/encode-dynamic-packaging-concept/media-services-dynamic-packaging.svg)
 
-The download path is present in the above image just to show you that you can download an MP4 file directly through the *streaming endpoint* (origin) (you specify the downloadable [streaming policy](stream-streaming-policy-concept.md) on the streaming locator).<br/>The dynamic packager is not altering the file. You can optionally use the Azure blob storage APIs to access an MP4 directly for progressive downloading if you wish to bypass the *streaming endpoint* (origin) features. 
+The download path is present in the above image just to show you that you can download an MP4 file directly through the *streaming endpoint* (origin) (you specify the downloadable [streaming policy](stream-streaming-policy-concept.md) on the streaming locator).<br/>The dynamic packager is not altering the file. You can optionally use the Azure blob storage APIs to access an MP4 directly for progressive downloading if you wish to bypass the *streaming endpoint* (origin) features.
 
 ### Encode to adaptive bitrate MP4s
 
 The following articles show examples of [how to encode a video with Media Services](encode-concept.md):
 
 * [Use content aware encoding](encode-content-aware-concept.md).
-* [Encode from an HTTPS URL by using built-in presets](job-input-from-http-how-to.md).
-* [Encode a local file by using built-in presets](job-input-from-local-file-how-to.md).
-* [Build a custom preset to target your specific scenario or device requirements](transform-custom-transform-how-to.md).
 * [Code samples for encoding with Standard Encoder using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding)
 
 See the list of supported Standard Encoder input [formats and codecs](encode-media-encoder-standard-formats-reference.md).
 
 ## Live streaming workflow
 
-A live event can be set to either a *pass-through* (an on-premises live encoder sends a multiple bitrate stream) or *live encoding* (an on-premises live encoder sends a single bitrate stream). 
+A live event can be set to either a *pass-through* (an on-premises live encoder sends a multiple bitrate stream) or *live encoding* (an on-premises live encoder sends a single bitrate stream).
 
 Here's a common workflow for live streaming with *dynamic packaging*:
 
@@ -170,13 +167,13 @@ Dynamic packaging supports video files that are in the MP4 container file format
 
 Dynamic packaging also supports audio files that are stored in the MP4 file container format containing encoded audio stream in one of the following codecs:
 
-* [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) (AAC-LC, HE-AAC v1, or HE-AAC v2). 
+* [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) (AAC-LC, HE-AAC v1, or HE-AAC v2).
 * [Dolby Digital Plus](https://en.wikipedia.org/wiki/Dolby_Digital_Plus) (Enhanced AC-3 or E-AC3).  The encoded audio must be stored in the MP4 container format to work with Dynamic Packaging.
 * Dolby Atmos
 
    Streaming Dolby Atmos content is supported for standards like the MPEG-DASH protocol with either Common Streaming Format (CSF) or Common Media Application Format (CMAF) fragmented MP4, and via HTTP Live Streaming (HLS) with CMAF.
 * [DTS](https://en.wikipedia.org/wiki/DTS_%28sound_system%29)<br />
-   DTS codecs supported by DASH-CSF, DASH-CMAF, HLS-M2TS, and HLS-CMAF packaging formats are:  
+   DTS codecs supported by DASH-CSF, DASH-CMAF, HLS-M2TS, and HLS-CMAF packaging formats are:
 
     * DTS Digital Surround (dtsc)
     * DTS-HD High Resolution and DTS-HD Master Audio  (dtsh)
@@ -185,9 +182,9 @@ Dynamic packaging also supports audio files that are stored in the MP4 file cont
 
 Dynamic packaging supports multiple audio tracks with DASH or HLS (version 4 or later) for streaming assets that have multiple audio tracks with multiple codecs and languages.
 
-For all of the above audio codecs, the encoded audio must be stored in the MP4 container format to work with Dynamic Packaging. The service does not support raw elementary stream file formats on blob storage (for example the following would not be supported - .dts, .ac3.) 
+For all of the above audio codecs, the encoded audio must be stored in the MP4 container format to work with Dynamic Packaging. The service does not support raw elementary stream file formats on blob storage (for example the following would not be supported - .dts, .ac3.)
 
-Only files with the .mp4 of .mp4a extension are supported for audio packaging. 
+Only files with the .mp4 of .mp4a extension are supported for audio packaging.
 
 ### Limitations
 
@@ -206,7 +203,7 @@ Media Services dynamic packaging does not currently support files that contain [
 
 ## Manifests
 
-In Media Services *dynamic packaging*, the streaming client manifests for HLS, MPEG-DASH, and Smooth Streaming are dynamically generated based on the **format** query in the URL.  
+In Media Services *dynamic packaging*, the streaming client manifests for HLS, MPEG-DASH, and Smooth Streaming are dynamically generated based on the **format** query in the URL.
 
 A manifest file includes streaming metadata such as track type (audio, video, or text), track name, start and end time, bitrate (qualities), track languages, presentation window (sliding window of fixed duration), and video codec (FourCC). It also instructs the player to retrieve the next fragment by providing information about the next playable video fragments that are available and their location. Fragments (or segments) are the actual "chunks" of video content.
 
@@ -214,7 +211,7 @@ A manifest file includes streaming metadata such as track type (audio, video, or
 
 #### HLS
 
-Here's an example of an HLS manifest file, also called an HLS master playlist: 
+Here's an example of an HLS manifest file, also called an HLS master playlist:
 
 ```
 #EXTM3U
@@ -314,7 +311,7 @@ The player can use the `Label` element to display on its UI.
 
 ### Signaling audio description tracks
 
-You can add a narration track to your video to help visually impaired clients follow the video recording by listening to the narration. You need to annotate an audio track as audio description in the manifest. To do that, add “accessibility” and “role” parameters to the .ism file. It's your responsibility to set these parameters correctly to signal an audio track as audio description. For example, add `<param name="accessibility" value="description" />` and `<param name="role" value="alternate"` to the .ism file for a specific audio track. 
+You can add a narration track to your video to help visually impaired clients follow the video recording by listening to the narration. You need to annotate an audio track as audio description in the manifest. To do that, add “accessibility” and “role” parameters to the .ism file. It's your responsibility to set these parameters correctly to signal an audio track as audio description. For example, add `<param name="accessibility" value="description" />` and `<param name="role" value="alternate"` to the .ism file for a specific audio track.
 
 For more information, see the [How to signal a descriptive audio track](signal-descriptive-audio-howto.md) example.
 

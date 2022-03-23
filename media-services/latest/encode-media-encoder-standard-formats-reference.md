@@ -11,7 +11,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-This article contains a list of the most common import and export file formats that you can use with [StandardEncoderPreset](/rest/api/media/transforms/createorupdate#standardencoderpreset). For information on how to create custom presets using **StandardEncoderPreset**, see [Create a transform with a custom preset](transform-custom-transform-how-to.md).
+This article contains a list of the most common import and export file formats that you can use with the StandardEncoderPreset.
 
 ## Input container/file formats
 

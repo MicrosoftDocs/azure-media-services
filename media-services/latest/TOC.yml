@@ -24,6 +24,7 @@
         href: frequently-asked-questions.yml
         displayName: faq, questions, frequently asked questions
 - name: Quickstarts
+  expanded: true
   items:
   - name: Set up your environment
     items:
@@ -151,7 +152,6 @@
     href: samples-overview.md
     displayName: samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
 - name: Concepts
-  expanded: true
   items:
   - name: Overview
     href: concepts-overview.md
@@ -623,14 +623,9 @@
     - name: Manage multiple storage accounts
       href: storage-managing-multiple-storage-accounts-how-to.md
       displayName: how to, how-to, tutorial, storage accounts, multiple storage accounts
-    - name: Create job input with a local file
-      href: job-input-from-local-file-how-to.md
-      displayName: upload, upload file, ingest file, local file, uploading, CLI
     - name: Jobs with multiple transform outputs
       href: job-multiple-transform-outputs-how-to.md
       displayName: jobs, CLI, transform, multiple outputs, multi output
-    - name: HTTPS as job input
-      href: job-input-from-http-how-to.md
     - name: Get content key policy
       href: drm-get-content-key-policy-how-to.md
       displayName: content protection, DRM, content keys, content key policy, .NET, how to, how-to, sample, tutorial
@@ -643,25 +638,9 @@
     - name: Offline PlayReady for Windows 10
       href: drm-offline-playready-streaming-for-windows-10.md
       displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline PlayReady, offline,disconnect, disconnected, airplane, train, bus, car
-    - name: Download results
-      href: job-download-results-how-to.md
-      displayName: download, progressive download, encoding job, encoding results, job results, download results, download output
     - name: Signal descriptive audio
       href: signal-descriptive-audio-howto.md
       displayName: descriptive audio, accessibility, access, accessible
-  - name: REST
-    items:
-    - name: Copy videos without re-encoding
-      href: transform-create-copy-video-audio-how-to.md
-      displayName: copy videos, copy, copy codec, copy video codec, copy audio codec, fast encoding, fast remux, remuxing, re-package, packaging, re-encoding
-  - name: Encode media with transforms and jobs
-    items:
-    - name: Customize encoder transforms
-      href: transform-custom-transform-how-to.md
-      displayName: custom, preset, custom preset, custom encoding, user defined, customize, presets, transcode, encode, encoding, encoder, MES, Standard encoder, .NET, transform, custom transform
-    - name: Crop videos
-      href: transform-crop-how-to.md
-      displayName: encoder, transcoder, encode, custom preset, crop, resolution, aspect ratio, pixels, remove
   - name: Stream live
     items:
     - name: Live event with portal and Wirecast
@@ -673,9 +652,6 @@
     - name: Live event error codes
       href: live-event-error-codes-reference.md
       displayName: live event, error codes, error, codes, live streaming, debugging, troubleshooting live
-    - name: Scale media reserved units
-      href: media-reserved-units-how-to.md
-      displayName: CLI, MRU, media reserved units, scaling
   - name: Use Event Grid
     items:
     - name: Monitor events - Portal

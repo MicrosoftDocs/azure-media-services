@@ -76,9 +76,9 @@ In the case of interactive authentication, the `GetCredentialsInteractiveAuthAsy
 
 [!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/Common_Utils/Authentication.cs#GetCredentialsInteractiveAuthAsync)]
 
-## Create an output asset  
+## Create an output asset
 
-The output [Asset](/rest/api/media/assets) stores the result of your encoding job.  
+The output [Asset](/rest/api/media/assets) stores the result of your encoding job.
 
 [!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithAES/Program.cs#CreateOutputAsset)]
 
@@ -94,7 +94,7 @@ Before creating a new [Transform](/rest/api/media/transforms), first check if on
 
 As mentioned above, the [Transform](/rest/api/media/transforms) object is the recipe and a [Job](/rest/api/media/jobs) is the actual request to Media Services to apply that **Transform** to a given input video or audio content. The **Job** specifies information like the location of the input video and the location for the output.
 
-In this tutorial, we create the job's input based on a file that's ingested directly from an [HTTPs source URL](job-input-from-http-how-to.md).
+In this tutorial, we create the job's input based on a file that's ingested directly from an HTTPs source URL.
 
 [!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithAES/Program.cs#SubmitJob)]
 
