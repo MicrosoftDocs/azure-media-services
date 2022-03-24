@@ -57,7 +57,7 @@ Use this article to understand the concepts used by Media Services.
 [!INCLUDE [term-content-management-system](includes/term-content-management-system.md)]
 [!INCLUDE [term-cross-origin-resource-sharing](includes/term-cross-origin-resource-sharing.md)]
 [!INCLUDE [term-credential](includes/term-credential.md)]
-[!INCLUDE [term-credential](includes/term-credential.md)]
+[!INCLUDE [term-cropping](includes/term-cropping.md)]
 [!INCLUDE [term-customer-managed-key](includes/term-customer-managed-key.md)]
 
 ## D
