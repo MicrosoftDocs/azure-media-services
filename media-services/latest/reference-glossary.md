@@ -62,13 +62,12 @@ Use this article to understand the concepts used by Media Services.
 
 ## D
 
-- DASH
-- Decoding
-- Demultiplexing/Demuxing
-- Demuxed
-- Descriptive audio
-- Digital asset management (DAM)
-- Digital rights management (DRM)
+[!INCLUDE [term-dash](includes/term-dash.md)]
+[!INCLUDE [term-decoding](includes/term-decoding.md)]
+[!INCLUDE [term-demuxing](includes/term-demuxing.md)]
+[!INCLUDE [term-descriptive-audio](includes/term-descriptive-audio.md)]
+[!INCLUDE [term-digital-asset-management](includes/term-digital-asset-management.md)]
+[!INCLUDE [term-digital-rights-management](includes/term-digital-rights-management.md)]
 - Digital rights management licensing
 - Dimension
 - Dimension value
