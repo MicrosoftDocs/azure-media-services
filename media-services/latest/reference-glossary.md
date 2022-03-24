@@ -111,11 +111,9 @@ Use this article to understand the concepts used by Media Services.
 ## I
 
 [!INCLUDE [term-imsc](includes/term-imsc.md)]
-
-- Identity
-- Ingest
-- Input
-- IP allow list
+[!INCLUDE [term-ingest](includes/term-ingest.md)]
+[!INCLUDE [term-input-asset](includes/term-input-asset.md)]
+[!INCLUDE [term-ip-allow-list](includes/term-ip-allow-list.md)]
 
 ## J
 
@@ -162,6 +160,7 @@ Use this article to understand the concepts used by Media Services.
 - On2 Technologies
 - Opus
 - Origin
+- OUtput asset
 - Overlay
 
 ## P
