@@ -727,6 +727,8 @@
     - name: Output metadata
       href: output-metadata-schema.md
       displayName: MES schema, MES, Standard encoder, schema, metadata, output metadata, output description
+  - name: Glossary
+    href: reference-glossary.md
 - name: Resources
   items:
   - name: Azure Media Services community
