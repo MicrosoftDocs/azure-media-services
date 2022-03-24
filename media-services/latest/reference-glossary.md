@@ -100,7 +100,7 @@ Use this article to understand the concepts used by Media Services.
 [!INCLUDE [term-h265](includes/term-h265.md)]
 [!INCLUDE [term-h266](includes/term-h265.md)]
 [!INCLUDE [term-high-availability](includes/term-high-availability.md)]
-[!INCLUDE [term-high-bandwidth-content-protection](includes/term-high-bandwidth-content-protection.md)]
+[!INCLUDE [term-high-bandwidth-content-protection](includes/term-high-bandwidth-digital-content-protection.md)]
 [!INCLUDE [term-high-dynamic-range](includes/term-high-dynamic-range.md)]
 [!INCLUDE [term-html5](includes/term-html5.md)]
 [!INCLUDE [term-hls](includes/term-hls.md)]
@@ -117,7 +117,7 @@ Use this article to understand the concepts used by Media Services.
 
 ## J
 
-- Job
+[!INCLUDE [term-job](includes/term-job.md)]
 
 ## K
 
