@@ -121,20 +121,20 @@ Use this article to understand the concepts used by Media Services.
 
 ## K
 
-- Key
-- Key delivery
+[!INCLUDE [term-key](includes/term-key.md)]
+[!INCLUDE [term-key-delivery-service](includes/term-key-delivery-service.md)]
 
 ## L
 
-- Latency
-- Limit
-- Live encoder
-- Live output
-- Live event
-- Live stream
-- Live to VOD
-- Live transcription
-- Low latency
+[!INCLUDE [term-latency](includes/term-latency.md)]
+[!INCLUDE [term-live-encoder](includes/term-live-encoder.md)]
+[!INCLUDE [term-latency](includes/term-latency.md)]
+[!INCLUDE [term-live-output](includes/term-live-output.md)]
+[!INCLUDE [term-live-event](includes/term-live-event.md)]
+[!INCLUDE [term-live-stream](includes/term-live-stream.md)]
+[!INCLUDE [term-live-stream-to-vod](includes/term-live-stream-to-vod.md)]
+[!INCLUDE [term-live-transcription](includes/term-live-transcription.md)]
+[!INCLUDE [term-low-latency](includes/term-low-latency.md)]
 
 ## M
 
