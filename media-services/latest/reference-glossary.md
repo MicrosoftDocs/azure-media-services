@@ -31,6 +31,7 @@ Use this article to understand the concepts used by Media Services.
 [!INCLUDE [term-alliance-video-codec](includes/term-alliance-video-codec.md)]
 [!INCLUDE [term-aspect-ratio](includes/term-aspect-ratio.md)]
 [!INCLUDE [term-asset](includes/term-asset.md)]
+[!INCLUDE [term-asset-filter](includes/term-asset-filter.md)]
 [!INCLUDE [term-authentication-token](includes/term-authentication-token.md)]
 [!INCLUDE [term-availability-zone](includes/term-availability-zone.md)]
 
@@ -89,29 +90,23 @@ Use this article to understand the concepts used by Media Services.
 ## F
 
 [!INCLUDE [term-ffmpeg](includes/term-ffmpeg.md)]
-<abbr title="Filter">Filter</abbr>
-- Frame
-
-:::code language="rest" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsLiveEventStop" interactive="cloudshell-bash":::
-
-
+[!INCLUDE [term-filter](includes/term-filter.md)]
 
 ## G
 
 ## H
 
-- H.264
-- H.265
-- H.266
-- High availability
-- High-bandwidth Digital Content Protection (HDCP)
-- High Dynamic Range (HDR)
-- High Efficiency Video Encoding (HEVC)
-- HTML5
-- Http Live Streaming (HLS)
-- Http Live Streaming with AES128 (HLSe)
-- Hue Saturation Lightness (HSL) color model
-- Hue Saturation Value (HSV) color model
+[!INCLUDE [term-h264](includes/term-h264.md)]
+[!INCLUDE [term-h265](includes/term-h265.md)]
+[!INCLUDE [term-h266](includes/term-h265.md)]
+[!INCLUDE [term-high-availability](includes/term-high-availability.md)]
+[!INCLUDE [term-high-bandwidth-content-protection](includes/term-high-bandwidth-content-protection.md)]
+[!INCLUDE [term-high-dynamic-range](includes/term-high-dynamic-range.md)]
+[!INCLUDE [term-html5](includes/term-html5.md)]
+[!INCLUDE [term-hls](includes/term-hls.md)]
+[!INCLUDE [term-hlse](includes/term-hlse.md)]
+[!INCLUDE [term-hsl](includes/term-hsl.md)]
+[!INCLUDE [term-hsl](includes/term-hsv.md)]
 
 ## I
 
