@@ -68,14 +68,14 @@ Use this article to understand the concepts used by Media Services.
 [!INCLUDE [term-descriptive-audio](includes/term-descriptive-audio.md)]
 [!INCLUDE [term-digital-asset-management](includes/term-digital-asset-management.md)]
 [!INCLUDE [term-digital-rights-management](includes/term-digital-rights-management.md)]
-- Digital rights management licensing
-- Dimension
-- Dimension value
+[!INCLUDE [term-digital-rights-management-license](includes/term-digital-rights-management-license.md)]
+[!INCLUDE [term-dimension](includes/term-dimension.md)]
+[!INCLUDE [term-dimension](includes/term-dimension-value.md)]
 [!INCLUDE [term-dobly-digital](includes/term-dobly-digital.md)]
-- Dolby digital plus
-- Dynamic encryption
-- Dynamic packaging
-- Dynamic manifest
+[!INCLUDE [term-dobly-digital-plus](includes/term-dobly-digital-plus.md)]
+[!INCLUDE [term-dynamic-encryption](includes/term-dynamic-encryption.md)]
+[!INCLUDE [term-dynamic-packaging](includes/term-dynamic-packaging.md)]
+[!INCLUDE [term-dynamic-manifest](includes/term-dynamic-manifest.md)]
 
 ## E
 
