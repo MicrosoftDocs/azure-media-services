@@ -6,7 +6,7 @@ ms.author: inhenkel
 manager: femilia
 ms.topic: how-to
 ms.service: media-services
-ms.date: 3/16/2022
+ms.date: 3/23/2022
 ---
 
 # Monitor Media Services
@@ -92,7 +92,8 @@ Some things that you can examine with diagnostic logs are:
 
 - The number of licenses delivered by DRM type.
 - The number of licenses delivered by policy.
-- Errors by DRM or policy type.
+- The latency on key delivery requests
+- HTTP Status codes by DRM key type (PlayReady, WideVine, FairPlay, Clear) or policy type.
 - The number of unauthorized license requests from clients.
 
 ## Alerts
