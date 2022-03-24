@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Alliance for Open Media
 ---
 
-**Alliance for Open Media** - An organization founded by organizations including Google, Intel, Amazon, Nvidia, Netflix, and Mozilla to ensure royalty free media technologies for use on the Internet.
+**Alliance for Open Media (AOM)** - An organization founded by organizations including Google, Intel, Amazon, Nvidia, Netflix, and Mozilla to ensure royalty free media technologies for use on the Internet.

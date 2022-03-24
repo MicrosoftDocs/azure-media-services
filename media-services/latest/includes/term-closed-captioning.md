@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 03/23/2022
 ms.author: inhenkel
-title: Cache
+title: Closed captioning
 ---
 
-**Cache** - A cache is a way to store data so that it can be accessed more quickly after it has been accessed one time.  It is typically used with a Content Delivery Netork (CDN).
+**Closed Captioning (CC)** - The process of displaying either a verbatim or edited transcription of the audio in a video. It most commonly used to enhance the accessibility of video content.

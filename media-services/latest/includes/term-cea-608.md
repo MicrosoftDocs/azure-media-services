@@ -1,0 +1,10 @@
+---
+author: IngridAtMicrosoft
+ms.service: media-services
+ms.topic: include
+ms.date: 03/23/2022
+ms.author: inhenkel
+title: CEA 608/708
+---
+
+**CEA-608/708** - CEA-608 was the standard for closed captioning for NTSC TV broadcasts in the United States, Canada, and Mexico. CEA-708, now known as CTA-708, is the standard for closed caption for ATSC digital television streams in the United States and Canada.

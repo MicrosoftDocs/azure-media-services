@@ -43,22 +43,22 @@ Use this article to understand the concepts used by Media Services.
 ## C
 
 [!INCLUDE [term-cache](includes/term-cache.md)]
-- Closed captioning
-- CEA 608/708
-- Clipping
-- CMAF
-- Codec
-- Common Encryption (CENC)
-- Constant Bitrate (CBR)
-- Content aware encoding
-- Content Decryption Module (CDM)
-- Content Delivery Network (CDN)
-- Content key policy
-- Content Management System (CMS)
-- CORS
-- Credential
-- Crop
-- Customer managed key
+[!INCLUDE [term-closed-captioning](includes/term-closed-captioning.md)]
+[!INCLUDE [term-cea-608](includes/term-cea-608.md)]
+[!INCLUDE [term-clipping](includes/term-clipping.md)]
+[!INCLUDE [term-cmaf](includes/term-cmaf.md)]
+[!INCLUDE [term-codec](includes/term-codec.md)]
+[!INCLUDE [term-common-encryption](includes/term-common-encryption.md)]
+[!INCLUDE [term-constant-bitrate](includes/term-constant-bitrate.md)]
+[!INCLUDE [term-content-aware-encoding](includes/term-content-aware-encoding.md)]
+[!INCLUDE [term-content-decryption-module](includes/term-content-decryption-module.md)]
+[!INCLUDE [term-content-delivery-network](includes/term-content-delivery-network.md)]
+[!INCLUDE [term-content-key-policy](includes/term-content-key-policy.md)]
+[!INCLUDE [term-content-management-system](includes/term-content-management-system.md)]
+[!INCLUDE [term-cross-origin-resource-sharing](includes/term-cross-origin-resource-sharing.md)]
+[!INCLUDE [term-credential](includes/term-credential.md)]
+[!INCLUDE [term-credential](includes/term-credential.md)]
+[!INCLUDE [term-customer-managed-key](includes/term-customer-managed-key.md)]
 
 ## D
 
@@ -217,7 +217,7 @@ Use this article to understand the concepts used by Media Services.
 - Streaming locator
 - Streaming policy
 - Subclip
-- Subtitles
+[!INCLUDE [term-subtitles](includes/term-subtitles.md)]
 
 ## T
 
