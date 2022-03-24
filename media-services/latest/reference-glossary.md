@@ -94,7 +94,7 @@ Use this article to understand the concepts used by Media Services.
 
 :::code language="rest" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsLiveEventStop" interactive="cloudshell-bash":::
 
-:::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsLiveEventStop" interactive="cloudshell-bash":::
+
 
 ## G
 
