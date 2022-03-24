@@ -79,14 +79,12 @@ Use this article to understand the concepts used by Media Services.
 
 ## E
 
-- Edge
-- Encoder
-- Encoding
-- Encoding ladder
-- Encrypted Media Extensions (EME)
-- Enhanced AC-3 (eAC-3)
-- Entity
-- Event
+[!INCLUDE [term-edge](includes/term-edge.md)]
+[!INCLUDE [term-encoder](includes/term-encoder.md)]
+[!INCLUDE [term-encoding](includes/term-encoding.md)]
+[!INCLUDE [term-encoding-ladder](includes/term-encoding-ladder.md)]
+[!INCLUDE [term-encrypted-media-extensions](includes/term-encrypted-media-extensions.md)]
+[!INCLUDE [term-entity](includes/term-entity.md)]
 
 ## F
 
