@@ -10,7 +10,11 @@ ms.author: inhenkel
 
 # Trusted storage for Media Services
 
-When you create a Media Services account, you must associate it with a storage account. Media Services can access that storage account using system authentication or Managed Identity authentication. Media Services validates that the Media Services account and the storage account are in the same subscription and it validates that the user adding the association has access the storage account with Azure Resource Manager RBAC.
+When you create a Media Services account, you must associate it with a storage account. Media Services can access that storage account using system authentication or Managed Identity authentication. Media Services validates that the user adding the association has access the storage account with Azure Resource Manager RBAC.
+
+## Usage of cross-subscription storage accounts
+
+The Media Services account and associated storage accounts can be in any subscription within the same tenant if you are using managed identity to authenticate. Otherwise, if you are not using managed identity, the storage accounts must reside in the same subscription as the Media Service account. It's recommended to use storage accounts in the same region as the Media Services account to avoid additional data egress costs.
 
 >[!NOTE]
 >Trusted storage is only available in the API, and is not currently enabled in the Azure portal.

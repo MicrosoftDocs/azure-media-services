@@ -340,6 +340,10 @@ A customer may have multiple media service accounts across either a single or mu
 
 All you need to do is to ensure that you use the same set of parameters as you used in the section (Setup in Media Service Account) in creating the `ContentKeyPolicyRestriction` in all of the media service accounts.
 
+## Usage of cross-subscription storage accounts
+
+The Media Services account and associated storage accounts can be in any subscription within the same tenant if you are using managed identity to authenticate. Otherwise, if you are not using managed identity, the storage accounts must reside in the same subscription as the Media Service account. It's recommended to use storage accounts in the same region as the Media Services account to avoid additional data egress costs.
+
 ### Supporting a customer, its vendors, and/or subsidiaries across multiple AAD tenants
 
 As users of the solution, a customer's subsidiaries, vendors/partners may reside in different AAD tenants, such as `mycustomer.com`, `mysubsidiary.com`, and `myparther.com`. While this solution is built on a single specific AAD tenant, such as `mycustomer.com`, you can make it work for users from other tenants.

@@ -10,7 +10,7 @@ ms.date: 3/16/2022
 
 # Monitoring Media Services data reference
 
-This article covers the data that is useful for monitoring Media Services. For more information about all platform metrics supported in Azure Monitor, review [Supported metrics with Azure Monitor](https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md).
+This article covers the data that is useful for monitoring Media Services. For more information about all platform metrics supported in Azure Monitor, review [Supported metrics with Azure Monitor](/azure/azure-monitor/essentials/metrics-supported.md).
 
 ## Metrics
 
@@ -21,9 +21,9 @@ Media Services supports monitoring metrics for the following resources:
 
 |Metric Type | Resource Provider / Type Namespace<br/> and link to individual metrics |
 |-------|-----|
-| Media Services general | [General](https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md#microsoftmediamediaservices) |
-| Live Events | [Microsoft.Media/mediaservices/liveEvents](https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md#microsoftmediamediaservicesliveevents)
-| Streaming Endpoints | [Microsoft.Media/mediaservices/streamingEndpoints](https://docs.microsoft.com/azure-monitor/essentials/metrics-supported.md#microsoftmediamediaservicesstreamingendpoints), which are relevant to the [Streaming Endpoints REST API](/rest/api/media/streamingendpoints).
+| Media Services general | [General](https://docs.microsoft.com/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservices) |
+| Live Events | [Microsoft.Media/mediaservices/liveEvents](https://docs.microsoft.com/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesliveevents)
+| Streaming Endpoints | [Microsoft.Media/mediaservices/streamingEndpoints](https://docs.microsoft.com/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesstreamingendpoints), which are relevant to the [Streaming Endpoints REST API](/rest/api/media/streamingendpoints).
 
 
 You should also review [account quotas and limits](../limits-quotas-constraints-reference.md).
