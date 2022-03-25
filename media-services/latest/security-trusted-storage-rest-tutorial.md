@@ -26,7 +26,7 @@ Media Services can automatically access your storage account using system authen
 
 ## Usage of cross-subscription storage accounts
 
-[!INCLUDE][Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)]
+[!INCLUDE [Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)]
 
 ## Overview
 

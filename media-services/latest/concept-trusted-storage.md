@@ -14,7 +14,7 @@ When you create a Media Services account, you must associate it with a storage a
 
 ## Usage of cross-subscription storage accounts
 
-[!INCLUDE][Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)]
+[!INCLUDE [Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)]
 
 >[!NOTE]
 >Trusted storage is only available in the API, and is not currently enabled in the Azure portal.

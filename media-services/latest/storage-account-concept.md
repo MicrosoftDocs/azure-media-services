@@ -16,7 +16,7 @@ To start managing, encrypting, encoding, analyzing, and streaming media content 
 
 ## Usage of cross-subscription storage accounts
 
-[!INCLUDE][Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)]
+[!INCLUDE [Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)]
 
 ## Required storage account types and limits
 
