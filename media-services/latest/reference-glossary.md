@@ -153,6 +153,7 @@ Use this article to understand the concepts used by Media Services.
 
 ## O
 
+[!INCLUDE [term-odata](includes/term-odata.md)]
 [!INCLUDE [term-opus](includes/term-opus.md)]
 [!INCLUDE [term-origin](includes/term-origin.md)]
 [!INCLUDE [term-output-asset](includes/term-output-asset.md)]
@@ -164,7 +165,6 @@ Use this article to understand the concepts used by Media Services.
 - Pass-through
 - Per title encoding
 - Program Date and Time (PDT)
-- Player
 - Player client
 - Preset
 - Private endpoint
