@@ -14,7 +14,7 @@ When you create a Media Services account, you must associate it with a storage a
 
 ## Usage of cross-subscription storage accounts
 
-The Media Services account and associated storage accounts can be in any subscription within the same tenant if you are using managed identity to authenticate. Otherwise, if you are not using managed identity, the storage accounts must reside in the same subscription as the Media Service account. It's recommended to use storage accounts in the same region as the Media Services account to avoid additional data egress costs.
+[!INCLUDE][Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)
 
 >[!NOTE]
 >Trusted storage is only available in the API, and is not currently enabled in the Azure portal.
