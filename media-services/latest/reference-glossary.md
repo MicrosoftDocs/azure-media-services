@@ -161,15 +161,12 @@ Use this article to understand the concepts used by Media Services.
 
 ## P
 
-- Page
-- Pass-through
-- Per title encoding
-- Program Date and Time (PDT)
-- Player client
-- Preset
-- Private endpoint
-- Private link
-- Publish
+[!INCLUDE [term-pass-through](includes/term-pass-through.md)]
+[!INCLUDE [term-pdt](includes/term-pdt.md)]
+[!INCLUDE [term-player-client](includes/term-player-client.md)]
+[!INCLUDE [term-preset](includes/term-preset.md)]
+[!INCLUDE [term-private-endpoint](includes/term-private-endpoint.md)]
+[!INCLUDE [term-private-link](includes/term-private-link.md)]
 
 ## Q
 
