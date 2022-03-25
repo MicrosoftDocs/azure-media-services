@@ -181,18 +181,15 @@ Use this article to understand the concepts used by Media Services.
 
 ## S
 
-- SAS token
-- Scale
-- Signal descriptive audio
-- Slicing
-- Splicing
-- Stitching
-- Stream
-- Streaming
-- Streaming endpoint
-- Streaming locator
-- Streaming policy
-- Subclip
+[!INCLUDE [term-sas-token](includes/term-sas-token.md)]
+[!INCLUDE [term-slicing](includes/term-slicing.md)]
+[!INCLUDE [term-stitching](includes/term-stiching.md)]
+[!INCLUDE [term-stream](includes/term-stream.md)]
+[!INCLUDE [term-streaming](includes/term-streaming.md)]
+[!INCLUDE [term-streaming-endpoint](includes/term-streaming-endpoint.md)]
+[!INCLUDE [term-streaming-locator](includes/term-streaming-locator.md)]
+[!INCLUDE [term-streaming-policy](includes/term-streaming-policy.md)]
+[!INCLUDE [term-subclipping](includes/term-subclipping.md)]
 [!INCLUDE [term-subtitles](includes/term-subtitles.md)]
 
 ## T
