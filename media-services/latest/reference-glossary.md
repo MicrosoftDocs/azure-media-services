@@ -141,7 +141,7 @@ Use this article to understand the concepts used by Media Services.
 [!INCLUDE [term-m3u8](includes/term-m3u8.md)]
 [!INCLUDE [term-media-source-extension](includes/term-media-source-extension.md)]
 [!INCLUDE [term-managed-identity](includes/term-managed-identity.md)]
-[!INCLUDE [term-manifest](includes/term-managed-manifest.md)]
+[!INCLUDE [term-manifest](includes/term-manifest.md)]
 [!INCLUDE [term-mezzanine](includes/term-mezzanine.md)]
 [!INCLUDE [term-midroll](includes/term-midroll.md)]
 [!INCLUDE [term-mpeg](includes/term-mpeg.md)]
