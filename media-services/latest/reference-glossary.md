@@ -170,19 +170,14 @@ Use this article to understand the concepts used by Media Services.
 
 ## Q
 
-- Quality of Experience (QoE)
-- Quality of Service (QoS)
-- Quota
-
 ## R
 
-- Red Green Blue (RGB) color model
-- Rebuffering
-- Rendition
-- Resolution
-- RTMP
-- RTMP pass-through
-- Redact
+[!INCLUDE [term-rgb](includes/term-rgb.md)]
+[!INCLUDE [term-rebuffering](includes/term-rebuffering.md)]
+[!INCLUDE [term-rendition](includes/term-rendition.md)]
+[!INCLUDE [term-resolution](includes/term-resolution.md)]
+[!INCLUDE [term-rtmp](includes/term-rtmp.md)]
+[!INCLUDE [term-redaction](includes/term-redaction.md)]
 
 ## S
 
