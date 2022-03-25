@@ -138,19 +138,16 @@ Use this article to understand the concepts used by Media Services.
 
 ## M
 
-- M3u8
-- Media
-- Media Source Extensions (MSE)
-- Managed identity
-- Manifest
-- Mezzanine
-- Midroll
-- Monitor
-- Motion Picture Experts Group (MPEG)
-- MPEG Dynamic Adaptive Streaming over HTTP (MPEG DASH)
-- Mp4
-- Multi-CDN
-- Multiplexing/Muxing
+[!INCLUDE [term-m3u8](includes/term-m3u8.md)]
+[!INCLUDE [term-media-source-extension](includes/term-media-source-extension.md)]
+[!INCLUDE [term-managed-identity](includes/term-managed-identity.md)]
+[!INCLUDE [term-manifest](includes/term-managed-manifest.md)]
+[!INCLUDE [term-mezzanine](includes/term-mezzanine.md)]
+[!INCLUDE [term-midroll](includes/term-midroll.md)]
+[!INCLUDE [term-mpeg](includes/term-mpeg.md)]
+[!INCLUDE [term-mpeg-dash](includes/term-mpeg-dash.md)]
+[!INCLUDE [term-mp4](includes/term-mp4.md)]
+[!INCLUDE [term-muxing](includes/term-muxing.md)]
 
 ## N
 
@@ -171,9 +168,6 @@ Use this article to understand the concepts used by Media Services.
 - Program Date and Time (PDT)
 - Player
 - Player client
-- PlayReady license
-- Postroll
-- Preroll
 - Preset
 - Private endpoint
 - Private link
