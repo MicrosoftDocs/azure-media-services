@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Encoding ladder
 ---
 
-**Encoding ladder** - a table of resolutions and bitrates that tells the encoder what to generate.
+**Encoding ladder** - A table of resolutions and bitrates that tell the encoder what to generate.
