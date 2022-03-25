@@ -205,22 +205,19 @@ Use this article to understand the concepts used by Media Services.
 
 ## V
 
-- Variable Bitrate (VBR)
-- Versatile Video Coding (VVC)
-- Video
-- Video API
-- Video on demand (VOD)
-- Vorbis
-- VP8
-- VP9
-- VTT
+[!INCLUDE [term-vbr](includes/term-vbr.md)]
+[!INCLUDE [term-vvc](includes/term-vvc.md)]
+[!INCLUDE [term-vod](includes/term-vod.md)]
+[!INCLUDE [term-vorbis](includes/term-vorbis.md)]
+[!INCLUDE [term-vp8](includes/term-vp8.md)]
+[!INCLUDE [term-vp9](includes/term-vp9.md)]
+[!INCLUDE [term-vtt](includes/term-vtt.md)]
 
 ## W
 
-- Webhook
-- WebM
-- Web Real-time Communication (WebRTC)
-- Widevine license
+[!INCLUDE [term-webhook](includes/term-webhook.md)]
+[!INCLUDE [term-webm](includes/term-webm.md)]
+[!INCLUDE [term-webrtc](includes/term-webrtc.md)]
 
 ## X
 
