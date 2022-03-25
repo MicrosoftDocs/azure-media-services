@@ -183,7 +183,7 @@ Use this article to understand the concepts used by Media Services.
 
 [!INCLUDE [term-sas-token](includes/term-sas-token.md)]
 [!INCLUDE [term-slicing](includes/term-slicing.md)]
-[!INCLUDE [term-stitching](includes/term-stiching.md)]
+[!INCLUDE [term-stitching](includes/term-stitching.md)]
 [!INCLUDE [term-stream](includes/term-stream.md)]
 [!INCLUDE [term-streaming](includes/term-streaming.md)]
 [!INCLUDE [term-streaming-endpoint](includes/term-streaming-endpoint.md)]
