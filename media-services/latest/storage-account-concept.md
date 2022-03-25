@@ -14,14 +14,20 @@ ms.author: inhenkel
 
 To start managing, encrypting, encoding, analyzing, and streaming media content in Azure, you need to create a Media Services account. When creating a Media Services account, you need to supply the name of an Azure Storage account resource. The specified storage account is attached to your Media Services account.
 
-The Media Services account and all associated storage accounts must be in the same Azure subscription. It's strongly recommended to use storage accounts in the same location as the Media Services account to avoid additional latency and data egress costs.
+## Usage of cross-subscription storage accounts
 
-You must have one **Primary** storage account and you can have any number of **Secondary** storage accounts associated with your Media Services account. Media Services supports **General-purpose v2** (GPv2) or **General-purpose v1** (GPv1) accounts. Blob only accounts aren't allowed as **Primary**.
+[!INCLUDE [Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)]
 
-We recommend that you use GPv2, so you can take advantage of the latest features and performance. To learn more about storage accounts, see [Azure Storage account overview](https://docs.microsoft.com/storage/common/storage-account-overview.md).
+## Required storage account types and limits
+
+You must have one **Primary** storage account and you can have any number of **Secondary** storage accounts associated with your Media Services account. Media Services supports **General-purpose v2** (GPv2) or **General-purpose v1** (GPv1) accounts only. Azure Data Lake Gen2 or blob only accounts aren't allowed to be used as **Primary** or **Secondary**.
+
+We recommend that you use General-purpose v2, so you can take advantage of the latest features and performance. To learn more about storage account types, see [Azure Storage account overview](https://docs.microsoft.com/storage/common/storage-account-overview.md).
+
+Azure Data Lake Gen2 storage is not supported by Media Services. To ingest content from a storage account using hierarchical namespace support, you must submit encoding jobs using SAS URLs and the JobInputHttp feature in Media Services.
 
 > [!NOTE]
-> Only the hot access tier is supported for use with Azure Media Services, although the other access tiers can be used to reduce storage costs on content that isn't being actively used.
+> It is recommended to use the hot storage tier when streaming assets for live or VOD. Cool storage can be used for encoding jobs and long term storage of assets that are not actively being streamed, but keep in mind the higher costs of reading from cool storage if you plan to do a lot of reads on content. One strategy can be to move your master/mezzanine source assets into a secondary storage account that is configured as cool storage to reduce the long term costs of retention on your source files, and output your encoded files for streaming into a storage account configured for hot storage.
 
 There are different SKUs you can choose for your storage account. If you want to experiment with storage accounts, use `--sku Standard_LRS`. However, when picking a SKU for production, you should consider `--sku Standard_RAGRS`, which provides geographic replication for business continuity.
 
@@ -56,5 +62,5 @@ The following are the primary scenarios that would result in a Media Services ac
 
 |Issue|Solution|
 |---|---|
-|The Media Services account or attached storage account(s) were migrated to separate subscriptions. |Migrate the storage account(s) or Media Services account so that they're all in the same subscription. |
-|The Media Services account is using an attached storage account in a different subscription as it was an early Media Services account where this was supported. All early Media Services accounts were converted to modern Azure Resources Manager based accounts and will have a Disconnected state. |Migrate the storage account or Media Services account so that they're all in the same subscription.|
+|The Media Services account or attached storage account(s) were migrated to separate subscriptions. |Migrate the storage account(s) or Media Services account so that they're all in the same subscription or use managed identity for storage account authentication if your storage account is in the same tenant. |
+|The Media Services account is using an attached storage account in a different subscription as it was an early Media Services account where this was supported. All early Media Services accounts were converted to modern Azure Resources Manager based accounts and will have a Disconnected state. |Migrate the storage account or Media Services account so that they're all in the same subscription or use managed identity for storage account authentication if your storage account is in the same tenant.|

@@ -29,7 +29,7 @@ You can use either the Azure portal or the CLI to create a Media Services accoun
 
 <!-- NOTE: The following are in the includes folder and are reused in other How To articles. All task based content should be in the includes folder with the task- prefix prepended to the file name. -->
 
-[!INCLUDE [the media services account and storage account must be in the same subscription](./includes/note-account-storage-same-subscription.md)]
+[!INCLUDE [the media services account and storage account must be in the same subscription unless you are using managed identities.](./includes/note-account-storage-same-subscription.md)]
 
 ## [Portal](#tab/portal/)
 

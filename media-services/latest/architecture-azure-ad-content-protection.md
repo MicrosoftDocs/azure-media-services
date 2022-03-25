@@ -340,6 +340,10 @@ A customer may have multiple media service accounts across either a single or mu
 
 All you need to do is to ensure that you use the same set of parameters as you used in the section (Setup in Media Service Account) in creating the `ContentKeyPolicyRestriction` in all of the media service accounts.
 
+## Usage of cross-subscription storage accounts
+
+[!INCLUDE [Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)]
+
 ### Supporting a customer, its vendors, and/or subsidiaries across multiple AAD tenants
 
 As users of the solution, a customer's subsidiaries, vendors/partners may reside in different AAD tenants, such as `mycustomer.com`, `mysubsidiary.com`, and `myparther.com`. While this solution is built on a single specific AAD tenant, such as `mycustomer.com`, you can make it work for users from other tenants.
