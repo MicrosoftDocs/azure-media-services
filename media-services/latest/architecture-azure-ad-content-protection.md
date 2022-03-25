@@ -342,7 +342,7 @@ All you need to do is to ensure that you use the same set of parameters as you u
 
 ## Usage of cross-subscription storage accounts
 
-[!INCLUDE][Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)
+[!INCLUDE][Usage of cross-subscription storage accounts](./includes/note-account-storage-same-subscription.md)]
 
 ### Supporting a customer, its vendors, and/or subsidiaries across multiple AAD tenants
 
