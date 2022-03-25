@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Muxing
 ---
 
-**Muxing** - A way of combining multiples signals such as video, audio, and caption streams into one MP4 or TS segment.
+**Muxing** - A way of combining multiple signals such as video, audio, and caption streams into one MP4 or TS segment.
