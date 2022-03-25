@@ -194,17 +194,14 @@ Use this article to understand the concepts used by Media Services.
 
 ## T
 
-- Thumbnail
-- Thumbnail sprite
-- Time shift
-- Transform
-- Transcoding
-- Trusted storage
+[!INCLUDE [term-thumbnail](includes/term-thumbnail.md)]
+[!INCLUDE [term-thumbnail-sprite](includes/term-thumbnail-sprite.md)]
+[!INCLUDE [term-time-shift](includes/term-time-shift.md)]
+[!INCLUDE [term-transform](includes/term-transform.md)]
+[!INCLUDE [term-transcoding](includes/term-transcoding.md)]
+[!INCLUDE [term-trusted-storage](includes/term-trusted-storage.md)]
 
 ## U
-
-- Upload
-- User Generated Content (UGC)
 
 ## V
 
