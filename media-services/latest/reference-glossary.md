@@ -153,12 +153,10 @@ Use this article to understand the concepts used by Media Services.
 
 ## O
 
-- Online video platform (OVP)
-- On2 Technologies
-- Opus
-- Origin
-- OUtput asset
-- Overlay
+[!INCLUDE [term-opus](includes/term-opus.md)]
+[!INCLUDE [term-origin](includes/term-origin.md)]
+[!INCLUDE [term-output-asset](includes/term-output-asset.md)]
+[!INCLUDE [term-overlay](includes/term-overlay.md)]
 
 ## P
 
