@@ -20,11 +20,11 @@ Private Link allows Media Services to be accessed from private networks. When us
 
 ## Azure Private Endpoint and Azure Private Link
 
-An [Azure Private Endpoint](https://docs.microsoft.com/private-link/private-endpoint-overview.md) is a network interface that uses a private IP address from your virtual network.  This network interface connects you privately and securely to a service via Azure Private Link.
+An [Azure Private Endpoint](https://docs.microsoft.com/private-link/private-endpoint-overview) is a network interface that uses a private IP address from your virtual network.  This network interface connects you privately and securely to a service via Azure Private Link.
 
 Media Services endpoints may be accessed from a virtual network using private endpoints. Private endpoints may also be accessed from peered virtual networks or other networks connected to the virtual network using Express Route or VPN.
 
-[Azure Private Links](https://docs.microsoft.com/private-link/index.yml) allow access to Media Services private endpoints in your virtual network without exposing them to the public Internet. It routes traffic over the Microsoft backbone network.
+[Azure Private Links](https://docs.microsoft.com/private-link/) allow access to Media Services private endpoints in your virtual network without exposing them to the public Internet. It routes traffic over the Microsoft backbone network.
 
 ## Restricting access
 
