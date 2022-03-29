@@ -664,6 +664,8 @@
         href: account-show-encryption-how-to.md
     - name: Network security
       items:
+      - name: Streaming over a private network
+        href: security-streaming-private-network.md
       - name: Use a Private Link with a Streaming endpoint
         href: security-private-link-streaming-endpoint-how-to.md
       - name: How to use Private Link with and ARM template

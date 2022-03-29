@@ -4,7 +4,7 @@ description: This article gives an overview of using private links with Azure Me
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 03/29/2022
 ms.author: inhenkel
 ---
 
