@@ -55,9 +55,9 @@ Media Services uses Azure Storage to store media. You can use private link with 
 | Service                | Media Services integration                      | Private link documentation |
 | ---------------------- | ----------------------------------------------- | -------------------------- |
 | Azure Storage          | Used to store media                             | [Use private endpoints for Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-private-endpoints) |
-| Azure Key Vault        | Used to store [customer-managed keys](security-customer-managed-keys-portal-tutorial.md)             | [Configure Azure Key Vault networking settings](https://docs.microsoft.com/key-vault/general/how-to-azure-key-vault-network-security) |
+| Azure Key Vault        | Used to store [customer-managed keys](security-customer-managed-keys-portal-tutorial.md)             | [Configure Azure Key Vault networking settings](https://docs.microsoft.com/azure/key-vault/general/how-to-azure-key-vault-network-security) |
 | Azure Resource Manager | Provides access to Media Services APIs          | [Use REST API to create private link for managing Azure resources](https://docs.microsoft.com/azure/azure-resource-manager/management/create-private-link-access-rest) |
-| Event Grid             | Provides [notifications of Media Services events](./monitoring/job-state-events-cli-how-to.md) | [Configure private endpoints for Azure Event Grid topics or domains](https://docs.microsoft.com/event-grid/configure-private-endpoints)  |
+| Event Grid             | Provides [notifications of Media Services events](./monitoring/job-state-events-cli-how-to.md) | [Configure private endpoints for Azure Event Grid topics or domains](https://docs.microsoft.com/azure/event-grid/configure-private-endpoints)  |
 
 ## Private endpoints are created on the Media Services account
 
