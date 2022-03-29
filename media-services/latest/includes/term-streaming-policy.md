@@ -7,11 +7,4 @@ ms.author: inhenkel
 title: Streaming policy
 ---
 
-**Streaming policy** - Defines streaming protocols and encryption options for streaming locators.  Currently available streaming policies include:
-
-- Predefined_DownloadOnly
-- Predefined_ClearStreamingOnly
-- Predefined_DownloadAndClearStreaming
-- Predefined_ClearKey
-- Predefined_MultiDrmCencStreaming
-- Predefined_MultiDrmStreaming
+**Streaming policy** - Defines streaming protocols and encryption options for streaming locators.

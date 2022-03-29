@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Midroll
 ---
 
-**Midroll, preroll, postroll** - Media that is played during the playing of other content. Ads are the most common midrolls.
+**Midroll, preroll, postroll** - Media that is inserted during playback of primary content. Ads are the most common scenario.

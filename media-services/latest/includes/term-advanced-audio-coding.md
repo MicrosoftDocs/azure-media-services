@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Advanced Audio Encoding
 ---
 
-**Advanced Audio Coding (AAC)** - An audio coding standard for lossy digital compression.
+**Advanced Audio Coding (AAC)** - An audio coding standard for lossy digital audio compression.

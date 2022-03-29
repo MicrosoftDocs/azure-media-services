@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Cropping
 ---
 
-**Cross-origin Resource Sharing (CORS)** - Cropping is the process of selecting a rectangular window within the video frame, and encoding just the pixels within that window.
+**Cropping** - Cropping is the process of selecting a rectangular window within the video frame, and encoding just the pixels within that window.

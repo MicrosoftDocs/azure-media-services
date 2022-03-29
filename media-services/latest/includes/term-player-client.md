@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Player client
 ---
 
-**Player client** - A program that plays video and audio streams. Some examples are Azure Media Player, Shaka, and Video.js.
+**Player client** - An application that plays video and audio streams. Some examples are Azure Media Player, Apple AvPlayer framework, Shaka, and Video.js.

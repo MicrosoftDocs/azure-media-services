@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Time shift
 ---
 
-**Time shift** - The length of time a video player is able to rewind streaming content.
+**Time shift** - The length of time a video player is able to rewind streaming content. Also known as DVR window.

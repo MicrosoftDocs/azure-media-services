@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Media Source Exentions (MSE)
 ---
 
-**MSE** - Browser extensions that facilitate video playback.
+**Media Source Extensions (MSE)** - W3C specification for browser extensions that provides a standardized API for video playback.

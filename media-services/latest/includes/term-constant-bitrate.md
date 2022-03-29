@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Constant bitrate
 ---
 
-**Constant bitrate** - Encoding a video so that the bitrate stays the same as it plays.
+**Constant bitrate** - Encoding a video so that the bitrate varies as little as possible from a target desired bitrate.

@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Buffering
 ---
 
-**Buffering** - Buffering is a method of storing data temporarily while it is being transferred from one data store to another. Buffering happens when sufficient bandwidth isn't available to stream content.
+**Buffering** - Buffering happens when there is insufficient bandwidth to stream content with the selected bitrate.  This can be due to local ISP issues, CDN issues, or wider area network issues.

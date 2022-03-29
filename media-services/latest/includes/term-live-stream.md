@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Live stream
 ---
 
-**Live stream** - When live video and audio is transmitted by an on-premises encoder, and is received by a streaming service that serves the media content to client players.
+**Live stream** - the delivery of live video and/or audio content to an audience close to the time when the content is being produced.

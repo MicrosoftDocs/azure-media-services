@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Live output
 ---
 
-**Live output** - A live output holds the encoded streams that are delivered to your live event viewers.
+**Live output** - a recording function that is created when a live event is intended to be saved after a live event. The recorded video is written to an output asset.

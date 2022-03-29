@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Origin
 ---
 
-**Origin** - A server that delivers media content.  It can be storage for files that are to be ingested into Media Services, or it can be the storage for files that are to be copied to an edge server with a CDN.
+**Origin** - A server that delivers media content.  It stores files that are to be ingested into Media Services, or files that are to be copied to an edge server with a CDN. In addition, the origin handles dynamic packaging, encryption, and filtering.

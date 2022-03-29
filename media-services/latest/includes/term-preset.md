@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Preset
 ---
 
-**Preset** - A built in encoder setting offered by Media Services.
+**Preset** - A set of configuration settings for an encoding job or other transformation done on media. Presets are offered by Media Services as a convenience to customers who don't want to define custom presets.

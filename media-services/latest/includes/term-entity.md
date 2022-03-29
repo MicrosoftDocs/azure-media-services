@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Entity
 ---
 
-**Entity** - Any object that is part of an API that has its own methods and properties.
+**Entity** - Any object that is part of an API that has its own methods and properties. Also referred to as a resource in the Azure Resource Management API.

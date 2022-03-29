@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Versatile Video Coding
 ---
 
-**Versatile Video Coding (VVC)** - A new codec intended to improve on H.265 or High Efficiency Coding released as a standard in 2020.
+**Versatile Video Coding (VVC)** - A new codec intended to improve on H.265 or High Efficiency Coding released as a standard in 2020.  It is not widely deployed yet, nor supported by Media Services at this time.

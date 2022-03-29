@@ -65,6 +65,7 @@ Use this article to understand the concepts used by Media Services.
 
 [!INCLUDE [term-dash](includes/term-dash.md)]
 [!INCLUDE [term-decoding](includes/term-decoding.md)]
+[!INCLUDE [term-decoding](includes/term-decode-time-stamp.md)]
 [!INCLUDE [term-demuxing](includes/term-demuxing.md)]
 [!INCLUDE [term-descriptive-audio](includes/term-descriptive-audio.md)]
 [!INCLUDE [term-digital-asset-management](includes/term-digital-asset-management.md)]
@@ -98,7 +99,7 @@ Use this article to understand the concepts used by Media Services.
 
 [!INCLUDE [term-h264](includes/term-h264.md)]
 [!INCLUDE [term-h265](includes/term-h265.md)]
-[!INCLUDE [term-h266](includes/term-h265.md)]
+[!INCLUDE [term-h266](includes/term-h266.md)]
 [!INCLUDE [term-high-availability](includes/term-high-availability.md)]
 [!INCLUDE [term-high-bandwidth-content-protection](includes/term-high-bandwidth-digital-content-protection.md)]
 [!INCLUDE [term-high-dynamic-range](includes/term-high-dynamic-range.md)]
@@ -128,7 +129,6 @@ Use this article to understand the concepts used by Media Services.
 
 [!INCLUDE [term-latency](includes/term-latency.md)]
 [!INCLUDE [term-live-encoder](includes/term-live-encoder.md)]
-[!INCLUDE [term-latency](includes/term-latency.md)]
 [!INCLUDE [term-live-output](includes/term-live-output.md)]
 [!INCLUDE [term-live-event](includes/term-live-event.md)]
 [!INCLUDE [term-live-stream](includes/term-live-stream.md)]
@@ -162,7 +162,7 @@ Use this article to understand the concepts used by Media Services.
 ## P
 
 [!INCLUDE [term-pass-through](includes/term-pass-through.md)]
-[!INCLUDE [term-pdt](includes/term-pdt.md)]
+[!INCLUDE [term-pdt](includes/term-presentation-time-stamp.md)]
 [!INCLUDE [term-player-client](includes/term-player-client.md)]
 [!INCLUDE [term-preset](includes/term-preset.md)]
 [!INCLUDE [term-private-endpoint](includes/term-private-endpoint.md)]

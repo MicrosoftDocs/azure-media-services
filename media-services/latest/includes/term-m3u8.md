@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: M3u8
 ---
 
-**M3u8** - A multimedia playlist.
+**M3u8** - A multimedia playlist file format that is used with Apple HTTP Streaming (HLS).

@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Encoding ladder
 ---
 
-**Encoding ladder** - A table of resolutions and bitrates that tell the encoder what to generate.
+**Encoding ladder** - A table of recommended resolutions and bitrates for adaptive streaming.

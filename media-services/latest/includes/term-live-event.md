@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Live event
 ---
 
-**Live event** - Ingest and process live video feeds. A live event can be set to either a basic or standard pass-through (an on-premises live encoder sends a multiple bitrate stream) or live encoding (an on-premises live encoder sends a single bitrate stream).
+**Live event** - Ingests, (optionally) encodes and archives live video feeds. A live event can be set to either a basic or standard pass-through (an on-premises live encoder sends a multiple bitrate stream) or live encoding (an on-premises live encoder sends a single bitrate stream and the cloud service provides the encoding).

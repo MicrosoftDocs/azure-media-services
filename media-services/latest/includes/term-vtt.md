@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: VTT/WebVTT
 ---
 
-**VTT/WebVTT** - A text file containing subtitle, caption, description, chapter and metadata for a video in WebVTT format.
+**VTT/WebVTT** - A text file containing subtitles, captions, a description, as well as chapter and metadata for a video in WebVTT format.

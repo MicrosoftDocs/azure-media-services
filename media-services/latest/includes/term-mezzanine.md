@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Mezzanine file
 ---
 
-**Mezzanine file** - Media that is uploaded or ingested by Media Services for encoding.
+**Mezzanine file** - a lightly compressed rendition of a source video from either a camera, editing system, or other source of raw video and audio data.  Typically this is a high quality copy, or the primary source video, that is ingested by Media Services for encoding.

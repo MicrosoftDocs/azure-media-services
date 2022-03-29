@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Asset
 ---
 
-**Asset** - A Media Services asset is an Azure Storage block blob container. It is used to hold MP4 files as well as manifests, captions, and other data. It can be used to store files for video on demand, encoding inputs and ouputs, live streaming outputs, etc.
+**Asset** - A Media Services asset is an Azure Storage block blob container. It contains all the files related to one piece of media such as MP4 files as well as manifests, captions, and other data. It can be used to store files for video on demand, encoding inputs and outputs, live streaming outputs, etc.
