@@ -4,7 +4,7 @@ description: This article explains about encoding video and audio with Azure Med
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 3/24/2022
 ms.author: inhenkel
 ---
 
@@ -85,9 +85,9 @@ The following built-in presets are currently supported:
 - **EncoderNamedPreset.H264MultipleBitrate1080p**: produces a set of eight GOP-aligned MP4 files, ranging from 6000 kbps to 400 kbps, and stereo AAC audio. Resolution starts at 1080p and goes down to 360p.
 - **EncoderNamedPreset.H264MultipleBitrate720p**: produces a set of six GOP-aligned MP4 files, ranging from 3400 kbps to 400 kbps, and stereo AAC audio. Resolution starts at 720p and goes down to 360p.
 - **EncoderNamedPreset.H264MultipleBitrateSD**: produces a set of five GOP-aligned MP4 files, ranging from 1600 kbps to 400 kbps, and stereo AAC audio. Resolution starts at 480p and goes down to 360p.
-- **EncoderNamedPreset.H264SingleBitrate1080p**: produces an MP4 file where the video is encoded with H.264 codec at 6750 kbps and a picture height of 1080 pixels, and the stereo audio is encoded with AAC-LC codec at 64 kbps.
-- **EncoderNamedPreset.H264SingleBitrate720p**: produces an MP4 file where the video is encoded with H.264 codec at 4500 kbps and a picture height of 720 pixels, and the stereo audio is encoded with AAC-LC codec at 64 kbps.
-- **EncoderNamedPreset.H264SingleBitrateSD**: produces an MP4 file where the video is encoded with H.264 codec at 2200 kbps and a picture height of 480 pixels, and the stereo audio is encoded with AAC-LC codec at 64 kbps.
+- **EncoderNamedPreset.H264SingleBitrate1080p**: produces an MP4 file where the video is encoded with H.264 codec at 6750 kbps and a picture height of 1080 pixels, and the stereo audio is encoded with AAC-LC codec at 128 kbps. If you desire lower bitrates for audio, you can build a custom encoding preset in your transform and adjust the sampling rate or channel count to get down to lower values for AAC-LC.
+- **EncoderNamedPreset.H264SingleBitrate720p**: produces an MP4 file where the video is encoded with H.264 codec at 4500 kbps and a picture height of 720 pixels, and the stereo audio is encoded with AAC-LC codec at 128 kbps. If you desire lower bitrates for audio, you can build a custom encoding preset in your transform and adjust the sampling rate or channel count to get down to lower values for AAC-LC.
+- **EncoderNamedPreset.H264SingleBitrateSD**: produces an MP4 file where the video is encoded with H.264 codec at 2200 kbps and a picture height of 480 pixels, and the stereo audio is encoded with AAC-LC codec at 128 kbps. If you desire lower bitrates for audio, you can build a custom encoding preset in your transform and adjust the sampling rate or channel count to get down to lower values for AAC-LC.
 - **EncoderNamedPreset.H265SingleBitrate720P**: produces an MP4 file where the video is encoded with HEVC (H.265) codec at 1800 kbps and a picture height of 720 pixels, and the stereo audio is encoded with AAC-LC codec at 128 kbps.
 - **EncoderNamedPreset.H265SingleBitrate1080p**: produces an MP4 file where the video is encoded with HEVC (H.265) codec at 3500 kbps and a picture height of 1080 pixels, and the stereo audio is encoded with AAC-LC codec at 128 kbps.
 - **EncoderNamedPreset.H265SingleBitrate4K**: produces an MP4 file where the video is encoded with HEVC (H.265) codec at 9500 kbps and a picture height of 2160 pixels, and the stereo audio is encoded with AAC-LC codec at 128 kbps.
