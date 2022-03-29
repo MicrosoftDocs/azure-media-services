@@ -27,7 +27,6 @@ Use this article to understand the concepts used by Media Services.
 [!INCLUDE [term-adaptive-bitrate](includes/term-adaptive-bitrate.md)]
 [!INCLUDE [term-advanced-audio-coding](includes/term-advanced-audio-coding.md)]
 [!INCLUDE [term-advanced-video-coding](includes/term-advanced-video-coding.md)]
-[!INCLUDE [term-alliance-for-open-media](includes/term-alliance-for-open-media.md)]
 [!INCLUDE [term-alliance-video-codec](includes/term-alliance-video-codec.md)]
 [!INCLUDE [term-aspect-ratio](includes/term-aspect-ratio.md)]
 [!INCLUDE [term-asset](includes/term-asset.md)]
@@ -55,7 +54,6 @@ Use this article to understand the concepts used by Media Services.
 [!INCLUDE [term-content-decryption-module](includes/term-content-decryption-module.md)]
 [!INCLUDE [term-content-delivery-network](includes/term-content-delivery-network.md)]
 [!INCLUDE [term-content-key-policy](includes/term-content-key-policy.md)]
-[!INCLUDE [term-content-management-system](includes/term-content-management-system.md)]
 [!INCLUDE [term-cross-origin-resource-sharing](includes/term-cross-origin-resource-sharing.md)]
 [!INCLUDE [term-credential](includes/term-credential.md)]
 [!INCLUDE [term-cropping](includes/term-cropping.md)]
@@ -68,11 +66,8 @@ Use this article to understand the concepts used by Media Services.
 [!INCLUDE [term-decoding](includes/term-decode-time-stamp.md)]
 [!INCLUDE [term-demuxing](includes/term-demuxing.md)]
 [!INCLUDE [term-descriptive-audio](includes/term-descriptive-audio.md)]
-[!INCLUDE [term-digital-asset-management](includes/term-digital-asset-management.md)]
 [!INCLUDE [term-digital-rights-management](includes/term-digital-rights-management.md)]
 [!INCLUDE [term-digital-rights-management-license](includes/term-digital-rights-management-license.md)]
-[!INCLUDE [term-dimension](includes/term-dimension.md)]
-[!INCLUDE [term-dimension](includes/term-dimension-value.md)]
 [!INCLUDE [term-dobly-digital](includes/term-dobly-digital.md)]
 [!INCLUDE [term-dobly-digital-plus](includes/term-dobly-digital-plus.md)]
 [!INCLUDE [term-dynamic-encryption](includes/term-dynamic-encryption.md)]
@@ -106,13 +101,11 @@ Use this article to understand the concepts used by Media Services.
 [!INCLUDE [term-html5](includes/term-html5.md)]
 [!INCLUDE [term-hls](includes/term-hls.md)]
 [!INCLUDE [term-hlse](includes/term-hlse.md)]
-[!INCLUDE [term-hsl](includes/term-hsl.md)]
-[!INCLUDE [term-hsl](includes/term-hsv.md)]
 
 ## I
 
 [!INCLUDE [term-imsc](includes/term-imsc.md)]
-[!INCLUDE [term-ingest](includes/term-ingest.md)]
+[!INCLUDE [term-ingestion](includes/term-ingestion.md)]
 [!INCLUDE [term-input-asset](includes/term-input-asset.md)]
 [!INCLUDE [term-ip-allow-list](includes/term-ip-allow-list.md)]
 
@@ -181,7 +174,7 @@ Use this article to understand the concepts used by Media Services.
 
 ## S
 
-[!INCLUDE [term-sas-token](includes/term-sas-token.md)]
+[!INCLUDE [term-sas-token](includes/term-sas-url.md)]
 [!INCLUDE [term-slicing](includes/term-slicing.md)]
 [!INCLUDE [term-stitching](includes/term-stitching.md)]
 [!INCLUDE [term-stream](includes/term-stream.md)]
