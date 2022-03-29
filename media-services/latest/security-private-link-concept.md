@@ -50,7 +50,7 @@ Internet access to the endpoints in the Media Services account can be restricted
 
 ## Other Private Link enabled Azure services
 
-A Media Services uses Azure Storage to store media. You can use private link with Azure Storage.
+Media Services uses Azure Storage to store media. You can use private link with Azure Storage.
 
 | Service                | Media Services integration                      | Private link documentation |
 | ---------------------- | ----------------------------------------------- | -------------------------- |
