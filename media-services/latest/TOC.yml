@@ -727,6 +727,8 @@
     - name: Output metadata
       href: output-metadata-schema.md
       displayName: MES schema, MES, Standard encoder, schema, metadata, output metadata, output description
+  - name: Glossary
+    href: reference-glossary.md
 - name: Resources
   items:
   - name: Azure Media Services community
@@ -756,7 +758,7 @@
       href: https://docs.microsoft.com/java/api/com.azure.resourcemanager.mediaservices?view=azure-java-stable
       displayName: SDK, install SDK, get SDK, client SDK, Java SDK, install Java SDK, Java, install, download SDK, maven, package, package manager, get started
     - name: Python
-      href: https://docs.microsoft.com/python/api/overview/azure/media-services?view=azure-python
+      href: https://docs.microsoft.com/python/api/azure-mgmt-media/?view=azure-python
       displayName:  SDK, install SDK, get SDK, client SDK, Python SDK, install Python SDK, Python, install, download SDK, pypi, pip, pip3 package, package manager, get started
     - name: Node.js
       href: https://docs.microsoft.com/javascript/api/overview/azure/media-services?view=azure-node-latest
