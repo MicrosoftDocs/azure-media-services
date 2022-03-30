@@ -26,4 +26,12 @@ You can use the following methods to get a Media Services asset encryption key.
 
 [!INCLUDE [task-get-asset-encryption-key-cli.md](./includes/task-get-asset-encryption-key-cli.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
+
+:::code language="python" source="~/../media-services-v3-python/all/assets.py" id="AssetImports":::
+
+[!INCLUDE [task-get-asset-encryption-key-python.md](./includes/task-get-asset-encryption-key-python.md)]
+
 ---

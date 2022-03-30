@@ -1,10 +1,10 @@
 ---
-title: Azure CLI Script Example - Create a transform
+title: Create a Media Services transform
 description: Transforms describe a simple workflow of tasks for processing your video or audio files (often referred to as a recipe). The Azure CLI script in this article shows how to create a transform.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 03/30/2022
 ms.author: inhenkel
 ---
 
@@ -34,5 +34,17 @@ You can use the following methods to create a transform.
 ## [REST](#tab/rest/)
 
 [!INCLUDE [task-create-transform-rest.md](includes/task-create-transform-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
+
+:::code language="python" source="~/../media-services-v3-python/all/transforms.py" id="TransformsImports":::
+
+[!INCLUDE [task-create-transform-python.md](./includes/task-create-transform-python.md)]
+
+You can also just update a transform.
+
+[!INCLUDE [task-update-transform-python.md](./includes/task-update-transform-python.md)]
 
 ---
