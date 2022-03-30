@@ -48,6 +48,8 @@ Creating assets in the portal is as simple as uploading a file.
 
 ## [Python](#tab/python/)
 
+[!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
+
 [!INCLUDE [task-create-asset-python.md](./includes/task-create-asset-python.md)]
 
 ---
