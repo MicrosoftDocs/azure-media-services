@@ -48,9 +48,26 @@ Internet access to the endpoints in the Media Services account can be restricted
 > [!NOTE]
 > Media Services accounts created with API versions prior to 2020-05-01 also have an endpoint for the legacy RESTv2 API endpoint (pending deprecation).  This endpoint does not support private links.
 
-## Other Private Link enabled Azure services
+## Private endpoints, Azure Storage and Media Services
 
-Media Services uses Azure Storage to store media. You can use private link with Azure Storage.
+Media Services always uses the public endpoint to access storage accounts. Creating a private endpoint for a storage account does not affect how Media Services accesses the storage account.
+
+Customers who configure a private endpoint for a storage account often also choose to restrict public network access to their storage account (using either the *publicNetworkAccess* or *networkAcls* properties of the storage account). Media Services is still able to access storage accounts using the public endpoint when the *publicNetworkAccess* or *networkAcls* properties would normally prevent this access, if all of the following conditions are met:
+
+- The storage account *bypass* property under *networkAcls* is set to *AzureServices*, and
+- The Media Services account has a Managed Identity, and
+- The Managed Identity of the Media Services account has been granted the *Storage Blob Data Contributor* and *Reader* roles for the storage account, and
+- Media Services is configured to access the storage account using Managed Identity.
+
+This may appear to be a lot of conditions, but it is also the default options the portal will configure when creating accounts.
+
+Consider the network architecture shown here:
+
+:::image type="content" source="media/private-endpoint-link-diagrams/private-endpoint-storage.png" alt-text="A diagram showing how private endpoints and links protect content but allow Media Services access to the storage account." lightbox="media/private-endpoint-link-diagrams/private-endpoint-storage.png":::
+
+With a VNet with private endpoints for storage accounts and for Media Services resources, you would use the private endpoint to access the storage account from your on-premises network. As you would have a private endpoint for your storage account, you would block all internet access to the storage account. As a trusted service, Media Services is still able to access the storage account via the public interface.
+
+## More information about private link enabled Azure services
 
 | Service                | Media Services integration                      | Private link documentation |
 | ---------------------- | ----------------------------------------------- | -------------------------- |

@@ -4,10 +4,9 @@ description: This article gives an overview of streaming to a private network wi
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 3/16/2022
+ms.date: 03/29/2022
 ms.author: inhenkel
 ---
-
 
 # Streaming to a private network with Media Services
 
@@ -60,7 +59,7 @@ Media Services defines a set of [built-in Azure Policy definitions](https://docs
 
 ## Azure Policy for Private Endpoints in the portal
 
-The [Configure Azure Media Services with private endpoints](https://ms.portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fc5632066-946d-4766-9544-cd79bcc1286e) policy can be used to automatically create private endpoints for Media Services resources. The parameters for the policy set the subnet where the private link should be created and the group ID to use when creating the private endpoint. To automatically create private endpoints for Key Delivery, Live Events, and Streaming Endpoints, the policy must be assigned separately for each of the group IDs (i.e., a policy assignment would be created with the group ID set to *keydelivery*, a second policy assignment would be created with the group ID set to *liveevent* and a third assignment would set the group ID to *streamingendpoint*). As this policy deploys resources, the policy must be created with a Managed Identity.
+The [Configure Azure Media Services with private endpoints](https://ms.portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fc5632066-946d-4766-9544-cd79bcc1286e) policy can be used to automatically create private endpoints for Media Services resources. The parameters for the policy set the subnet where the private link should be created and the group ID to use when creating the private endpoint. To automatically create private endpoints for key delivery, live events, and streaming endpoints, the policy must be assigned separately for each of the group IDs (i.e., a policy assignment would be created with the group ID set to *keydelivery*, a second policy assignment would be created with the group ID set to *liveevent* and a third assignment would set the group ID to *streamingendpoint*). As this policy deploys resources, the policy must be created with a Managed Identity.
 
 The [Configure Azure Media Services to use private DNS zones](https://ms.portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fb4a7f6c1-585e-4177-ad5b-c2c93f4bb991) policy can be used to create private DNS zones for Media Services private endpoints. This policy is also applied separately for each group ID.
 
@@ -68,7 +67,7 @@ The [Azure Media Services should use private link](https://ms.portal.azure.com/#
 
 ## Azure Policy for network security
 
-When private link is used to access Media Services resources, a common requirement is to limit access to these resources from the internet. The [Azure Media Services accounts should disable public network access](https://ms.portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F8bfe3603-0888-404a-87ff-5c1b6b4cc5e3)” policy can be used to audit Media Services accounts that permit public network access.
+When private link is used to access Media Services resources, a common requirement is to limit access to these resources from the internet. The [Azure Media Services accounts should disable public network access](https://ms.portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F8bfe3603-0888-404a-87ff-5c1b6b4cc5e3) policy can be used to audit Media Services accounts that permit public network access.
 
 ## Outbound network security
 
