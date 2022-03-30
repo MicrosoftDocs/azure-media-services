@@ -29,3 +29,11 @@ You can use the following methods to update a Media Services transform.
 ## [REST](#tab/rest/)
 
 [!INCLUDE [task-update-transform-rest.md)](./includes/task-update-transform-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
+
+:::code language="python" source="~/../media-services-v3-python/all/transforms.py" id="TransformsImports":::
+
+[!INCLUDE [task-update-transform-python.md](./includes/task-update-transform-python.md)]
