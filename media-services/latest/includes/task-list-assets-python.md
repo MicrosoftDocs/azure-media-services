@@ -9,4 +9,4 @@ title: List assets with the CLI
 
 ### List assets with Python
 
-:::code language="python" source="~/../media-services-v3-python/cli/assets.py" id="AmsAssetList":::
+:::code language="python" source="~/../media-services-v3-python/all/assets.py" id="AmsAssetList":::
