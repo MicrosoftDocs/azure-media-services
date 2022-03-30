@@ -46,4 +46,8 @@ Creating assets in the portal is as simple as uploading a file.
 
 [!INCLUDE [task-create-asset-dotnet.md](./includes/task-create-asset-dotnet.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-create-asset-python.md](./includes/task-create-asset-python.md)]
+
 ---
