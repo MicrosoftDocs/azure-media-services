@@ -1,17 +1,14 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
-ms.date: 08/18/2020
+ms.date: 03/30/2022
 ms.author: inhenkel
-
 ---
-
-<!--Create a media services asset portal-->
 
 ### Upload videos
 
-You should have a media services account, a storage account, and a default streaming endpoint.  
+You should have a media services account, a storage account, and a default streaming endpoint.
 
 1. Navigate to the Media Services account you want to work with.
 1. Select **Assets**. Assets are the containers that are used to house your media content.

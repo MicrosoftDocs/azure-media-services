@@ -29,3 +29,11 @@ You can use the following methods to delete a Media Services asset.
 ## [REST](#tab/rest/)
 
 [!INCLUDE [task-create-asset-rest.md](./includes/task-delete-asset-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
+
+:::code language="python" source="~/../media-services-v3-python/all/assets.py" id="AssetImports":::
+
+[!INCLUDE [task-delete-asset-python.md](./includes/task-delete-asset-python.md)]
