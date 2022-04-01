@@ -1,7 +1,7 @@
 {
     "redirections": [
         {
-            "source_path_from_root": "/articles/media-services/previous/media-services-azure-media-clipper-getting-started.md",
+            "source_path_from_root": "/media-services/previous/media-services-azure-media-clipper-getting-started.md",
             "redirect_url": "/azure/media-services/latest/",
             "redirect_document_id": false
         },
