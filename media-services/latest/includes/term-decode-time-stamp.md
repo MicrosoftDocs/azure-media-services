@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Decode Time Stamp (PTS)
 ---
 
-**Decode Time Stamp (PTS)** - The time that the decoder should be decode the video frame.
+**Decode Time Stamp (DTS)** - The time that the decoder should be decode the video frame.
