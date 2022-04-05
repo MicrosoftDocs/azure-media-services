@@ -44,12 +44,12 @@ Use these icons in your architectural diagrams.
 |Private link hub                        | :::image type="content" source="media/icons/private-link-hub.svg" alt-text="private link hub icon"::: | Official |
 |Private link service                    | :::image type="content" source="media/icons/private-link-service.svg" alt-text="private link service icon"::: | Official |
 |Quota                                   | :::image type="content" source="media/icons/quota.svg" alt-text="quota icon"::: | Official |
-|Resource group                          | :::image type="content" source="media/icons/resource-group.svg" alt-text="certificate or secret icon"::: | Official |
+|Resource group                          | :::image type="content" source="media/icons/resource-group.svg" alt-text="resource group icon"::: | Official |
 |Streaming endpoint/service endpoint     | :::image type="content" source="media/icons/service-endpoint.svg" alt-text="streaming endpoint icon"::: | Official |
-|Storage account                         | :::image type="content" source="media/icons/storage-account.svg" alt-text="certificate or secret icon"::: | Official |
-|Streaming policy                        | :::image type="content" source="media/icons/streaming-policy.svg" alt-text="certificate or secret icon"::: | Created |
-|Subscription                            | :::image type="content" source="media/icons/subscription.svg" alt-text="certificate or secret icon"::: | Official |
-|Transform                               | :::image type="content" source="media/icons/transform.svg" alt-text="certificate or secret icon"::: | Created |
-|User                                    | :::image type="content" source="media/icons/user.svg" alt-text="certificate or secret icon"::: | Official |
-|Virtual network firewall                | :::image type="content" source="media/icons/virtual-network-firewall.svg" alt-text="certificate or secret icon"::: | Official |
-|VTT file                                | :::image type="content" source="media/icons/vtt.svg" alt-text="certificate or secret icon"::: | Created |
+|Storage account                         | :::image type="content" source="media/icons/storage-account.svg" alt-text="storage account icon"::: | Official |
+|Streaming policy                        | :::image type="content" source="media/icons/streaming-policy.svg" alt-text="streaming policy icon"::: | Created |
+|Subscription                            | :::image type="content" source="media/icons/subscription.svg" alt-text="subscription icon"::: | Official |
+|Transform                               | :::image type="content" source="media/icons/transform.svg" alt-text="transform icon"::: | Created |
+|User                                    | :::image type="content" source="media/icons/user.svg" alt-text="user icon"::: | Official |
+|Virtual network firewall                | :::image type="content" source="media/icons/virtual-network-firewall.svg" alt-text="virtual network firewall icon"::: | Official |
+|VTT file                                | :::image type="content" source="media/icons/vtt.svg" alt-text="VTT file icon"::: | Created |
