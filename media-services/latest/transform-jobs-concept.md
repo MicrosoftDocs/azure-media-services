@@ -55,14 +55,6 @@ You can create Transforms using REST, CLI, or any of the published SDKs. The Med
 
 If you need to update your [Transform](/rest/api/media/transforms), use the **Update** operation. It's intended for making changes to the description, or the priorities of the underlying TransformOutputs. It's recommended that such updates be done when all in-progress jobs have completed. If you intend to rewrite the recipe, you need to create a new Transform.
 
-### Transform object diagram
-
-The following diagram shows the **Transform** object and the objects it references, including the derivation relationships. The gray arrows show a type that the Job references and the green arrows show class derivation relationships.
-
-Select the image to view it full size.
-
-[![Diagram showing the Transform object and the objects it references, including the class derivation relationships between the objects.](./media/api-diagrams/transform-small.png)](./media/api-diagrams/transform-large.png#lightbox)
-
 ## Jobs
 
 A **Job** is the actual request to Media Services to apply the **Transform** to a given input video or audio content. Once the Transform has been created, you can submit jobs using Media Services APIs, or any of the published SDKs. The **Job** specifies information like the location of the input video and the location for the output. You can specify the location of your input video using: HTTPS URLs, SAS URLs, or [Assets](/rest/api/media/assets).
@@ -82,11 +74,3 @@ The progress and state of jobs can be obtained by monitoring events with Event G
 ### Updating Jobs
 
 The Update operation on the [Job](/rest/api/media/jobs) entity can be used to modify the *description* and the *priority* properties after the job has been submitted. A change to the *priority* property is effective only if the job is still in a queued state. If the job has begun processing, or has finished, changing priority has no effect.
-
-### Job object diagram
-
-The following diagram shows the **Job** object and the objects it references including the derivation relationships.
-
-Click the image to view it full size.
-
-[![Diagram showing the Job object and the objects it references, including the class derivation relationships between the objects.](./media/api-diagrams/job-small.png)](./media/api-diagrams/job-large.png#lightbox)
