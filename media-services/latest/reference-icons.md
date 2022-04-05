@@ -33,6 +33,7 @@ Icons for architectural diagrams
 | :::image type="content" source="media/icons/ip-groups.svg" alt-text="IP groups icon"::: <br/>**IP groups**<br/> Official |
 | :::image type="content" source="media/icons/ism.svg" alt-text="ism file icon"::: <br/>**ISM file**<br/> *Created* |
 | :::image type="content" source="media/icons/ismc.svg" alt-text="ismc file icon"::: <br/>**ISMC file**<br/> *Created* |
+| :::image type="content" source="media/icons/job.svg" alt-text="job icon"::: <br/>**Job**<br/> *Created* |
 | :::image type="content" source="media/icons/keyvault.svg" alt-text="keyvault icon"::: <br/>**Keyvault**<br/> Official |
 | :::image type="content" source="media/icons/live-event.svg" alt-text="live event icon"::: <br/>**Live event**<br/> Official |
 | :::image type="content" source="media/icons/managed-identity.svg" alt-text="managed identity icon"::: <br/>**Managed identity**<br/> Official |
