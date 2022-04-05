@@ -14,7 +14,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Use these icons in your architectural diagrams.
+Icons for architectural diagrams
 
 
 |Icon  |
