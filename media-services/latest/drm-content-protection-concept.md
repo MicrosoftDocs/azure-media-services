@@ -21,8 +21,6 @@ When a stream is requested by a player, Media Services uses the specified key to
 
 You can use the REST API, or a Media Services client library to configure authorization and authentication policies for your licenses and keys.
 
-*Dynamic encryption supports AES-128 clear key, CBCS, and CENC. For details, see the [support matrix](#streaming-protocols-and-encryption-types).*
-
 This article explains concepts and terminology that help you understand content protection with Media Services.
 
 ## Main components of a content protection system
