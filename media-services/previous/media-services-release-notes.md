@@ -319,7 +319,6 @@ The following new features were announced:
 ## <a id="april_changes_15"></a>April 2015 release
 ### General Media Services updates
 * [Media Player](https://azure.microsoft.com/blog/2015/04/15/announcing-azure-media-player/) was announced.
-* Starting with the Media Services REST 2.10, channels that are configured to ingest a Real-Time Messaging Protocol (RTMP) are created with primary and secondary ingest URLs. For more information, see [Channel ingest configurations](media-services-live-streaming-with-onprem-encoders.md#channel_input).
 * Azure Media Indexer was updated.
 * Support for Spanish language was added.
 * A new configuration for the XML format was added.
