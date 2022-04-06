@@ -18,7 +18,7 @@ Azure Media Services lets you deliver live events to your customers on the Azure
 
 ## Live events
 
-[Live events](/rest/api/media/liveevents) are responsible for ingesting and processing the live video feeds. When you create a live event, a primary and secondary input endpoint is created that you can use to send a live signal from a remote encoder. The remote live encoder sends the contribution feed to that input endpoint using either the [RTMP](https://helpx.adobe.com/adobe-media-server/dev/stream-live-media-rtmp.html) or [Smooth Streaming](/openspecs/windows_protocols/ms-sstr/8383f27f-7efe-4c60-832a-387274457251) (fragmented-MP4) input protocol. For the RTMP ingest protocol, the content can be sent in the clear (`rtmp://`) or securely encrypted on the wire(`rtmps://`). For the Smooth Streaming ingest protocol, the supported URL schemes are `http://` or `https://`.  
+[Live events](/rest/api/media/liveevents) are responsible for ingesting and processing the live video feeds. When you create a live event, a primary and secondary input endpoint is created that you can use to send a live signal from a remote encoder. The remote live encoder sends the contribution feed to that input endpoint using either the [RTMP](https://helpx.adobe.com/adobe-media-server/dev/stream-live-media-rtmp.html) or [Smooth Streaming](/openspecs/windows_protocols/ms-sstr/8383f27f-7efe-4c60-832a-387274457251) (fragmented-MP4) input protocol. For the RTMP ingest protocol, the content can be sent in the clear (`rtmp://`) or securely encrypted on the wire(`rtmps://`). For the Smooth Streaming ingest protocol, the supported URL schemes are `http://` or `https://`.
 
 ## Live event types
 
@@ -31,8 +31,6 @@ A [live event](/rest/api/media/liveevents) can be set to either a basic or stand
 
 ### Pass-through
 
-![pass-through live event with Media Services example diagram](./media/live-streaming/pass-through.svg)
-
 When using the basic or standard pass-through **live event**, you rely on your on-premises live encoder to generate a multiple bitrate video stream and send that as the contribution feed to the live event (using RTMP or fragmented-MP4 protocol). The live event then carries through the incoming video streams without any further processing. Such a pass-through live event is optimized for long-running live events or 24x365 linear live streaming. When creating this type of live event, specify pass-through "basic" or "standard". (LiveEventEncodingType.PassThroughStandard).
 
 You can send the contribution feed at resolutions up to 4K and at a frame rate of 60 frames/second, with either H.264/AVC or H.265/HEVC (Smooth ingest only) video codecs, and AAC (AAC-LC, HE-AACv1, or HE-AACv2) audio codec. For more information, see [Live event types comparison](live-event-types-comparison-reference.md).
@@ -43,9 +41,7 @@ You can send the contribution feed at resolutions up to 4K and at a frame rate o
 
 See the .NET code example for creating a pass-through Live Event in [Live Event with DVR](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/4a436376e77bad57d6cbfdc02d7df6c615334574/Live/LiveEventWithDVR/Program.cs#L214).
 
-### Live encoding  
-
-![live encoding with Media Services example diagram](./media/live-streaming/live-encoding.svg)
+### Live encoding
 
 When using live encoding with Media Services, you configure your on-premises live encoder to send a single bitrate video as the contribution feed to the live event (using RTMP or Fragmented-Mp4 protocol). You then set up a live event so that it encodes that incoming single bitrate stream to a [multiple bitrate video stream](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming), and makes the output available for delivery to play back devices via protocols like MPEG-DASH, HLS, and Smooth Streaming.
 
@@ -109,7 +105,7 @@ Once the live event is created, you can get ingest URLs that you'll provide to t
 
 
 > [!NOTE]
-> For an ingest URL to be static and predictable for use in a hardware encoder setup, set the **useStaticHostname** property to true and set the **accessToken** property to the same GUID on each creation. 
+> For an ingest URL to be static and predictable for use in a hardware encoder setup, set the **useStaticHostname** property to true and set the **accessToken** property to the same GUID on each creation.
 
 ### Example LiveEvent and LiveEventInput configuration settings for a static (non random) ingest RTMP URL.
 
@@ -117,14 +113,14 @@ Once the live event is created, you can get ingest URLs that you'll provide to t
              LiveEvent liveEvent = new LiveEvent(
                     location: mediaService.Location,
                     description: "Sample LiveEvent from .NET SDK sample",
-                    // Set useStaticHostname to true to make the ingest and preview URL host name the same. 
-                    // This can slow things down a bit. 
+                    // Set useStaticHostname to true to make the ingest and preview URL host name the same.
+                    // This can slow things down a bit.
                     useStaticHostname: true,
 
                     // 1) Set up the input settings for the Live event...
                     input: new LiveEventInput(
                         streamingProtocol: LiveEventInputProtocol.RTMP,  // options are RTMP or Smooth Streaming ingest format.
-                                                                         // This sets a static access token for use on the ingest path. 
+                                                                         // This sets a static access token for use on the ingest path.
                                                                          // Combining this with useStaticHostname:true will give you the same ingest URL on every creation.
                                                                          // This is helpful when you only want to enter the URL into a single encoder one time for this Live Event name
                         accessToken: "acf7b6ef-8a37-425f-b8fc-51c2d6a5a86a",  // Use this value when you want to make sure the ingest URL is static and always the same. If omitted, the service will generate a random GUID value.
@@ -139,9 +135,9 @@ Once the live event is created, you can get ingest URLs that you'll provide to t
 
     If a client app doesn't need to pre-generate an ingest URL before the live event is created, let Media Services auto-generate the Access Token for the live event.
 
-* Static Hostnames 
+* Static Hostnames
 
-    Static hostname mode is preferred by most operators that wish to pre-configure their live encoding hardware or software with an RTMP ingest URL that never changes on creation or stop/start of a specific live event. These operators want a predictive RTMP ingest URL which doesn't change over time. This is also very useful when you need to push a static RTMP ingest URL into the configuration settings of a hardware encoding device like the BlackMagic Atem Mini Pro, or similar hardware encoding and production tools. 
+    Static hostname mode is preferred by most operators that wish to pre-configure their live encoding hardware or software with an RTMP ingest URL that never changes on creation or stop/start of a specific live event. These operators want a predictive RTMP ingest URL which doesn't change over time. This is also very useful when you need to push a static RTMP ingest URL into the configuration settings of a hardware encoding device like the BlackMagic Atem Mini Pro, or similar hardware encoding and production tools.
 
     > [!NOTE]
     > In the Azure portal, the static hostname URL is called "*Static hostname prefix*".
@@ -152,7 +148,7 @@ Once the live event is created, you can get ingest URLs that you'll provide to t
 
     The access token needs to be unique in your Azure region and Media Services account. If your app needs to use a static hostname ingest URL, it's recommended to always create fresh GUID instance for use with a specific combination of region, media services account, and live event.
 
-    Use the following APIs to enable the static hostname URL and set the access token to a valid GUID (for example, `"accessToken": "1fce2e4b-fb15-4718-8adc-68c6eb4c26a7"`).  
+    Use the following APIs to enable the static hostname URL and set the access token to a valid GUID (for example, `"accessToken": "1fce2e4b-fb15-4718-8adc-68c6eb4c26a7"`).
 
     |Language|Enable static hostname URL|Set access token|
     |---|---|---|
@@ -209,7 +205,7 @@ For details, see [long-running operations](media-services-apis-overview.md#long-
 
 ## Live outputs
 
-Once you have the stream flowing into the live event, you can begin the streaming event by creating an [Asset](/rest/api/media/assets), [live output](/rest/api/media/liveoutputs), and [Streaming Locator](/rest/api/media/streaminglocators). Live output will archive the stream and make it available to viewers through the [Streaming Endpoint](/rest/api/media/streamingendpoints). 
+Once you have the stream flowing into the live event, you can begin the streaming event by creating an [Asset](/rest/api/media/assets), [live output](/rest/api/media/liveoutputs), and [Streaming Locator](/rest/api/media/streaminglocators). Live output will archive the stream and make it available to viewers through the [Streaming Endpoint](/rest/api/media/streamingendpoints).
 
 AMS's default allocation is 5 live events per Media Services account. If you would like to increase this limit, please file a support ticket in the Azure portal. AMS is able to increase your live event limit depending on your streaming situation and regional datacenter availabilities.
 
