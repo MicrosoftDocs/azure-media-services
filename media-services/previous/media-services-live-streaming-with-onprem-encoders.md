@@ -81,24 +81,7 @@ The following steps describe tasks involved in creating common live-streaming ap
 ## <a id="channel"></a>Description of a channel and its related components
 ### <a id="channel_input"></a>Channel input (ingest) configurations
 #### <a id="ingest_protocols"></a>Ingest streaming protocol
-Media Services supports ingesting live feeds by using multi-bitrate fragmented MP4 and multi-bitrate RTMP as streaming protocols. When the RTMP ingest streaming protocol is selected, two ingest (input) endpoints are created for the channel:
-
-* **Primary URL**: Specifies the fully qualified URL of the channel's primary RTMP ingest endpoint.
-* **Secondary URL** (optional): Specifies the fully qualified URL of the channel's secondary RTMP ingest endpoint.
-
-Use the secondary URL if you want to improve the durability and fault tolerance of your ingest stream (as well as encoder failover and fault tolerance), especially for the following scenarios:
-
-- Single encoder double-pushing to both primary and secondary URLs:
-
-    The main purpose of this scenario is to provide more resiliency to network fluctuations and jitters. Some RTMP encoders don't handle network disconnects well. When a network disconnect happens, an encoder might stop encoding and then not send the buffered data when a reconnect happens. This causes discontinuities and data loss. Network disconnects can happen because of a bad network or maintenance on the Azure side. Primary/secondary URLs reduce the network problems and provide a controlled upgrade process. Each time a scheduled network disconnect happens, Media Services manages the primary and secondary disconnects and provides a delayed disconnect between the two. Encoders then have time to keep sending data and reconnect again. The order of the disconnects can be random, but there will always be a delay between primary/secondary or secondary/primary URLs. In this scenario, the encoder is still the single point of failure.
-
-- Multiple encoders, with each encoder pushing to a dedicated point:
-
-    This scenario provides both encoder and ingests redundancy. In this scenario, encoder1 pushes to the primary URL, and encoder2 pushes to the secondary URL. When an encoder fails, the other encoder can keep sending data. Data redundancy can be maintained because Media Services does not disconnect primary and secondary URLs at the same time. This scenario assumes that encoders are time synced and provide exactly the same data.  
-
-- Multiple encoders double-pushing to both primary and secondary URLs:
-
-    In this scenario, both encoders push data to both primary and secondary URLs. This provides the best reliability and fault tolerance, as well as data redundancy. This scenario can tolerate both encoder failures and disconnects, even if one encoder stops working. It assumes that encoders are time synced and provide exactly the same data.  
+Media Services supports ingesting live feeds by using multi-bitrate fragmented MP4 and multi-bitrate RTMP as streaming protocols.  
 
 For information about RTMP live encoders, see [Azure Media Services RTMP Support and Live Encoders](https://go.microsoft.com/fwlink/?LinkId=532824).
 
@@ -199,7 +182,6 @@ The following table demonstrates supported standards for closed captioning and a
 When you're using an on-premises live encoder to send a multi-bitrate stream to a channel, the following constraints apply:
 
 * Make sure you have sufficient free Internet connectivity to send data to the ingest points.
-* Using a secondary ingest URL requires additional bandwidth.
 * The incoming multi-bitrate stream can have a maximum of 10 video quality levels (layers) and a maximum of 5 audio tracks.
 * The highest average bitrate for any of the video quality levels should be below 10 Mbps.
 * The aggregate of the average bitrates for all the video and audio streams should be below 25 Mbps.
