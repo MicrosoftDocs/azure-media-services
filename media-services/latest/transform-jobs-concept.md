@@ -30,12 +30,6 @@ Suppose you wanted to extract the first frame of all your videos as a thumbnail 
     1. Where to find that video.
     1. Where to write the output thumbnail image.
 
-### Transforms/Jobs workflow
-
-The following diagram shows transforms/jobs workflow:
-
-![Transforms and jobs workflow in Azure Media Services](./media/encoding/transforms-jobs.png)
-
 > [!NOTE]
 > Properties of **Transform** and **Job** of the Datetime type are always in UTC format.
 
@@ -54,14 +48,6 @@ You can create Transforms using REST, CLI, or any of the published SDKs. The Med
 ### Updating Transforms
 
 If you need to update your [Transform](/rest/api/media/transforms), use the **Update** operation. It's intended for making changes to the description, or the priorities of the underlying TransformOutputs. It's recommended that such updates be done when all in-progress jobs have completed. If you intend to rewrite the recipe, you need to create a new Transform.
-
-### Transform object diagram
-
-The following diagram shows the **Transform** object and the objects it references, including the derivation relationships. The gray arrows show a type that the Job references and the green arrows show class derivation relationships.
-
-Select the image to view it full size.
-
-[![Diagram showing the Transform object and the objects it references, including the class derivation relationships between the objects.](./media/api-diagrams/transform-small.png)](./media/api-diagrams/transform-large.png#lightbox)
 
 ## Jobs
 
@@ -82,11 +68,3 @@ The progress and state of jobs can be obtained by monitoring events with Event G
 ### Updating Jobs
 
 The Update operation on the [Job](/rest/api/media/jobs) entity can be used to modify the *description* and the *priority* properties after the job has been submitted. A change to the *priority* property is effective only if the job is still in a queued state. If the job has begun processing, or has finished, changing priority has no effect.
-
-### Job object diagram
-
-The following diagram shows the **Job** object and the objects it references including the derivation relationships.
-
-Click the image to view it full size.
-
-[![Diagram showing the Job object and the objects it references, including the class derivation relationships between the objects.](./media/api-diagrams/job-small.png)](./media/api-diagrams/job-large.png#lightbox)
