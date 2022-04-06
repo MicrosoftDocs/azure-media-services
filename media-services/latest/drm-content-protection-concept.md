@@ -21,11 +21,7 @@ When a stream is requested by a player, Media Services uses the specified key to
 
 You can use the REST API, or a Media Services client library to configure authorization and authentication policies for your licenses and keys.
 
-The following image illustrates the workflow for Media Services content protection:
-
-![Workflow for Media Services content protection](./media/content-protection/content-protection.svg)
-  
-&#42; *Dynamic encryption supports AES-128 clear key, CBCS, and CENC. For details, see the [support matrix](#streaming-protocols-and-encryption-types).*
+*Dynamic encryption supports AES-128 clear key, CBCS, and CENC. For details, see the [support matrix](#streaming-protocols-and-encryption-types).*
 
 This article explains concepts and terminology that help you understand content protection with Media Services.
 
@@ -37,16 +33,16 @@ To successfully complete your content protection system, you need to fully under
 > We highly recommended that you focus and fully test each part in the following sections before you move on to the next part. To test your content protection system, use the tools specified in the sections.
 
 ### Media Services code
-  
+
 The [DRM sample](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs) shows you how to implement a multi-DRM system with Media Services v3 by using .NET. It also shows how to use the Media Services license/key delivery service.
-  
+
 You can encrypt each asset with multiple encryption types (AES-128, PlayReady, Widevine, FairPlay). To see what makes sense to combine, see [Streaming protocols and encryption types](#streaming-protocols-and-encryption-types).
 
 The example shows how to:
 
 1. Create and configure a [content key policy](drm-content-key-policy-concept.md).
 
-   You create a content key policy to configure how the content key (which provides secure access to your assets) is delivered to end clients:  
+   You create a content key policy to configure how the content key (which provides secure access to your assets) is delivered to end clients:
 
    * Define license delivery authorization. Specify the logic of the authorization check based on claims in JSON Web Token (JWT).
    * Configure [PlayReady](drm-playready-license-template-concept.md), [Widevine](drm-widevine-license-template-concept.md), and/or [FairPlay](drm-fairplay-license-overview.md) licenses. The templates let you configure rights and permissions for each of the DRMs.
@@ -58,7 +54,7 @@ The example shows how to:
      ```
 
 2. Create a [streaming locator](stream-streaming-locators-concept.md) that's configured to stream the encrypted asset.
-  
+
    The streaming locator has to be associated with a [streaming policy](stream-streaming-policy-concept.md). In the example, we set `StreamingLocator.StreamingPolicyName` to the "Predefined_MultiDrmCencStreaming" policy.
 
    The PlayReady and Widevine encryptions are applied, and the key is delivered to the playback client based on the configured DRM licenses. If you also want to encrypt your stream with CBCS (FairPlay), use the "Predefined_MultiDrmStreaming" policy.
@@ -146,7 +142,7 @@ The Smooth Streaming protocol supports the following container formats and encry
 |fMP4 | PIFF 1.1 (PlayReady) |`https://amsv3account-usw22.streaming.media.azure.net/00000000-0000-0000-0000-000000000000/ignite.ism/manifest(encryption=piff)`|
 
 > [!NOTE]
-> PIFF 1.1 support is provided as a backwards compatible solution for Smart TV (Samsung, LG) that implemented the early "Silverlight" version of Common Encryption. It is recommended to only use the PIFF format where needed for support of legacey Samsung or LG Smart TVs shipped between 2009-2015 that supported the PIFF 1.1 version of PlayReady encryption. 
+> PIFF 1.1 support is provided as a backwards compatible solution for Smart TV (Samsung, LG) that implemented the early "Silverlight" version of Common Encryption. It is recommended to only use the PIFF format where needed for support of legacey Samsung or LG Smart TVs shipped between 2009-2015 that supported the PIFF 1.1 version of PlayReady encryption.
 
 ### Browsers
 
@@ -164,7 +160,7 @@ Common browsers support the following DRM clients:
 
 You can control who has access to your content by configuring the content key policy. Media Services supports multiple ways of authorizing users who make key requests. The client (player) must meet the policy before the key can be delivered to the client. The content key policy can have *open* or *token* restriction.
 
-An open-restricted content key policy may be used when you want to issue license to anyone without authorization. For example, if your revenue is ad-based and not subscription-based.  
+An open-restricted content key policy may be used when you want to issue license to anyone without authorization. For example, if your revenue is ad-based and not subscription-based.
 
 With a token-restricted content key policy, the content key is sent only to a client that presents a valid JWT token or a simple web token (SWT) in the license/key request. This token must be issued by an STS.
 
@@ -178,7 +174,7 @@ When you configure the token-restricted policy, you must specify the primary ver
 ### Token replay prevention
 
 The *Token Replay Prevention* feature allows Media Services customers to set a limit on how many times the same token can be used to request a key or a license. The customer can add a claim of type `urn:microsoft:azure:mediaservices:maxuses` in the token, where the value is the number of times the token can be used to acquire a license or key. All subsequent requests with the same token to Key Delivery will return an unauthorized response. See how to add the claim in the [DRM sample](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs#L591).
- 
+
 #### Considerations
 
 * Customers must have control over token generation. The claim needs to be placed in the token itself.
@@ -214,20 +210,20 @@ If you use .NET Framework/C# as your development platform, the X509 certificate 
 
 ## Custom key and license acquisition URL
 
-Use the following templates if you want to specify a different license/key delivery service (not Media Services). The two replaceable fields in the templates are there so that you can share your streaming policy across many assets instead of creating a streaming policy per asset. 
+Use the following templates if you want to specify a different license/key delivery service (not Media Services). The two replaceable fields in the templates are there so that you can share your streaming policy across many assets instead of creating a streaming policy per asset.
 
-* `EnvelopeEncryption.CustomKeyAcquisitionUrlTemplate`: Template for the URL of the custom service that delivers keys to end-user players. It isn't required when you're using Azure Media Services for issuing keys. 
+* `EnvelopeEncryption.CustomKeyAcquisitionUrlTemplate`: Template for the URL of the custom service that delivers keys to end-user players. It isn't required when you're using Azure Media Services for issuing keys.
 
    The template supports replaceable tokens that the service will update at runtime with the value specific to the request.  The currently supported token values are:
    * `{AlternativeMediaId}`, which is replaced with the value of StreamingLocatorId.AlternativeMediaId.
    * `{ContentKeyId}`, which is replaced with the value of the identifier of the requested key.
 * `StreamingPolicyPlayReadyConfiguration.CustomLicenseAcquisitionUrlTemplate`: Template for the URL of the custom service that delivers licenses to end-user players. It isn't required when you're using Azure Media Services for issuing licenses.
 
-   The template supports replaceable tokens that the service will update at runtime with the value specific to the request. The currently supported token values are:  
+   The template supports replaceable tokens that the service will update at runtime with the value specific to the request. The currently supported token values are:
    * `{AlternativeMediaId}`, which is replaced with the value of StreamingLocatorId.AlternativeMediaId.
-   * `{ContentKeyId}`, which is replaced with the value of the identifier of the requested key. 
-* `StreamingPolicyWidevineConfiguration.CustomLicenseAcquisitionUrlTemplate`: Same as the previous template, only for Widevine. 
-* `StreamingPolicyFairPlayConfiguration.CustomLicenseAcquisitionUrlTemplate`: Same as the previous template, only for FairPlay.  
+   * `{ContentKeyId}`, which is replaced with the value of the identifier of the requested key.
+* `StreamingPolicyWidevineConfiguration.CustomLicenseAcquisitionUrlTemplate`: Same as the previous template, only for Widevine.
+* `StreamingPolicyFairPlayConfiguration.CustomLicenseAcquisitionUrlTemplate`: Same as the previous template, only for FairPlay.
 
 For example:
 
