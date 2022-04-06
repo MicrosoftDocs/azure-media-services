@@ -119,10 +119,6 @@ The following steps show a common Media Services streaming workflow where dynami
 1. Publish the output asset that contains the adaptive bitrate MP4 set. You publish by creating a [streaming locator](stream-streaming-locators-concept.md).
 1. Build URLs that target different formats (HLS, MPEG-DASH, and Smooth Streaming). The *streaming endpoint* would take care of serving the correct manifest and requests for all these different formats.
 
-The following diagram shows the on-demand streaming with dynamic packaging workflow.
-
-![Diagram of a workflow for on-demand streaming with dynamic packaging](./media/encode-dynamic-packaging-concept/media-services-dynamic-packaging.svg)
-
 The download path is present in the above image just to show you that you can download an MP4 file directly through the *streaming endpoint* (origin) (you specify the downloadable [streaming policy](stream-streaming-policy-concept.md) on the streaming locator).<br/>The dynamic packager is not altering the file. You can optionally use the Azure blob storage APIs to access an MP4 directly for progressive downloading if you wish to bypass the *streaming endpoint* (origin) features.
 
 ### Encode to adaptive bitrate MP4s
@@ -327,8 +323,6 @@ For DASH manifest, the following two elements would be added to signal the audio
 #### HLS playlist
 
 For HLS v7 and above `(format=m3u8-cmaf)`, its playlist would carry `AUTOSELECT=YES,CHARACTERISTICS="public.accessibility.describes-video"` when the audio description track is signaled.
-
-
 
 #### Example
 
