@@ -150,10 +150,6 @@ Here's a common workflow for live streaming with *dynamic packaging*:
 1. Get the host name for the streaming endpoint you want to stream from.
 1. Build URLs that target different formats (HLS, MPEG-DASH, and Smooth Streaming). The *streaming endpoint* takes care of serving the correct manifest and requests for the different formats.
 
-This diagram shows the workflow for live streaming with *dynamic packaging*:
-
-![Diagram of a workflow for pass-through encoding with dynamic packaging](./media/live-streaming/pass-through.svg)
-
 For information about live streaming in Media Services v3, see [Live streaming overview](stream-live-streaming-concept.md).
 
 ## Video codecs supported by Dynamic Packaging
