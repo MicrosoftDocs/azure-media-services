@@ -30,12 +30,6 @@ Suppose you wanted to extract the first frame of all your videos as a thumbnail 
     1. Where to find that video.
     1. Where to write the output thumbnail image.
 
-### Transforms/Jobs workflow
-
-The following diagram shows transforms/jobs workflow:
-
-![Transforms and jobs workflow in Azure Media Services](./media/encoding/transforms-jobs.png)
-
 > [!NOTE]
 > Properties of **Transform** and **Job** of the Datetime type are always in UTC format.
 
