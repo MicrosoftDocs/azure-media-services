@@ -2,12 +2,14 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.author: inhenkel
-title: Create an Azure Storage account with Python
+title: Add a storage account to a Media Services account with Python
 ---
 
-### Create an Azure Storage account with Python
+<!--Add a storage account to a media services account-->
+
+### Add a storage account to a Media Services account with Python
 
 :::code language="python" source="~/../media-services-v3-python/all/storage.py" id="StorageImports":::
 
@@ -17,4 +19,4 @@ title: Create an Azure Storage account with Python
 
 :::code language="python" source="~/../media-services-v3-python/all/storage.py" id="CreateStorageClient":::
 
-:::code language="python" source="~/../media-services-v3-python/all/storage.py" id="CreateStorage":::
+:::code language="python" source="~/../media-services-v3-python/all/storage.py" id="AddStorage":::

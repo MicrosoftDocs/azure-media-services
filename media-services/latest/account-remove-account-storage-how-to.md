@@ -30,4 +30,8 @@ You can use the following methods to remove a storage account from a Media Servi
 
 [!INCLUDE [task-remove-account-storage-rest.md](./includes/task-remove-account-storage-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-remove-account-storage-python.md](./includes/task-remove-account-storage-python.md)]
+
 ---
