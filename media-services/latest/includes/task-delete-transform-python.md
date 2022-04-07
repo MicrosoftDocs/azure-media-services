@@ -9,4 +9,12 @@ title: Delete a transform with Python
 
 ### Delete a transform with Python
 
+:::code language="python" source="~/../media-services-v3-python/all/transforms.py" id="TransformsImports":::
+
+[!INCLUDE [python-snippets-env](python-snippets-env.md)]
+
+:::code language="python" source="~/../media-services-v3-python/all/transforms.py" id="EnvironmentVariables":::
+
+:::code language="python" source="~/../media-services-v3-python/all/transforms.py" id="CreateAMSClient":::
+
 :::code language="python" source="~/../media-services-v3-python/all/transforms.py" id="TransformDelete":::
