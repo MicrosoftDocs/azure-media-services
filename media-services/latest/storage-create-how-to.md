@@ -33,4 +33,8 @@ You can use additional storage accounts with a Media Services account.
 
 [!INCLUDE [task-create-storage-account-portal.md](./includes/task-create-storage-account-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-create-storage-account-python.md](./includes/task-create-storage-account-python.md)]
+
 ---
