@@ -689,9 +689,9 @@
             "source_path_from_root": "/media-services/latest/latest/asset-publish-cli-how-to.md",
             "redirect_url": "/azure/media-services/latest/video-on-demand-simple-portal-quickstart",
             "redirect_document_id": false
-      },
+        },
         {
-          "source_path_from_root": "/media-services/video-indexer/upload-index-video.md",
+          "source_path_from_root": "/media-services/video-indexer/upload-index-videos.md",
           "redirect_url": "/azure/azure-video-analyzer/video-analyzer-for-media-docs/upload-index-video",
           "redirect_document_id": false
         }
