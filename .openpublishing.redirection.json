@@ -692,7 +692,7 @@
         },
         {
           "source_path_from_root": "/media-services/video-indexer/upload-index-videos.md",
-          "redirect_url": "/azure/azure-video-analyzer/video-analyzer-for-media-docs/upload-index-video",
+          "redirect_url": "/azure/azure-video-analyzer/video-analyzer-for-media-docs/upload-index-videos",
           "redirect_document_id": false
         }
     ]
