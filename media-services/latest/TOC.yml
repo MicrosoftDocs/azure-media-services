@@ -767,7 +767,7 @@
       href: https://docs.microsoft.com/python/api/azure-mgmt-media/?view=azure-python
       displayName:  SDK, install SDK, get SDK, client SDK, Python SDK, install Python SDK, Python, install, download SDK, pypi, pip, pip3 package, package manager, get started
     - name: Node.js
-      href: https://docs.microsoft.com/javascript/api/overview/azure/media-services?view=azure-node-latest
+      href: https://docs.microsoft.com/en-us/javascript/api/@azure/arm-mediaservices/?view=azure-node-latest
       displayName: SDK, install SDK, get SDK, client SDK, Node.js SDK, install Node.js SDK, Node.js, TypeScript, JavaScript install, download SDK, npm, package, package manager, node package, get started
     - name: Go
       href: https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mediaservices/armmediaservices
