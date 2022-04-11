@@ -33,15 +33,15 @@ Before subscribing to the events for the Media Services account, let's create th
 
 1. Select **Deploy to Azure** to deploy the solution to your subscription. In the Azure portal, provide values for the parameters.
 
-   [![Image showing a button labeled "Deploy to Azure".](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-event-grid-viewer%2Fmaster%2Fazuredeploy.json)
+[Deploy to Azure](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fazure-event-grid-viewer%2Fmaster%2Fazuredeploy.json)
 
-1. The deployment may take a few minutes to complete. After the deployment has succeeded, view your web app to make sure it's running. In a web browser, navigate to: 
+1. The deployment may take a few minutes to complete. After the deployment has succeeded, view your web app to make sure it's running. In a web browser, navigate to:
 `https://<your-site-name>.azurewebsites.net`
 
 If you switch to the "Azure Event Grid Viewer" site, you see it has no events yet.
 
 <!--
-   
+
 [!INCLUDE [event-grid-register-provider-portal.md](../../includes/event-grid-register-provider-portal.md)]
 -->
 
@@ -55,9 +55,9 @@ az account set --subscription mySubscriptionId
 
 ## Subscribe to Media Services events
 
-You subscribe to an article to tell Event Grid which events you want to track. The following example subscribes to the Media Services account you created, and passes the URL from the website you created as the endpoint for event notification. 
+You subscribe to an article to tell Event Grid which events you want to track. The following example subscribes to the Media Services account you created, and passes the URL from the website you created as the endpoint for event notification.
 
-Replace `<event_subscription_name>` with a unique name for your event subscription. For `<resource_group_name>` and `<ams_account_name>`, use the values you used when creating the Media Services account. For the `<endpoint_URL>`, provide the URL of your web app and add `api/updates` to the home page URL. By specifying the endpoint when subscribing, Event Grid handles the routing of events to that endpoint. 
+Replace `<event_subscription_name>` with a unique name for your event subscription. For `<resource_group_name>` and `<ams_account_name>`, use the values you used when creating the Media Services account. For the `<endpoint_URL>`, provide the URL of your web app and add `api/updates` to the home page URL. By specifying the endpoint when subscribing, Event Grid handles the routing of events to that endpoint.
 
 1. Get the resource id
 
@@ -84,7 +84,7 @@ Replace `<event_subscription_name>` with a unique name for your event subscripti
 
     ```
     az eventgrid event-subscription create --source-resource-id $amsResourceId --name amsTestEventSubscription --endpoint https://amstesteventgrid.azurewebsites.net/api/updates/
-    ```    
+    ```
 
     > [!TIP]
     > You might get validation handshake warning. Give it a few minutes and the handshake should validate.
@@ -93,7 +93,7 @@ Now, let's trigger events to see how Event Grid distributes the message to your 
 
 ## Send an event to your endpoint
 
-You can trigger events for the Media Services account by running an encoding job. You can follow [this quickstart](../stream-files-dotnet-quickstart.md) to encode a file and start sending events. 
+You can trigger events for the Media Services account by running an encoding job. You can follow [this quickstart](../stream-files-dotnet-quickstart.md) to encode a file and start sending events.
 
 View your web app again, and notice that a subscription validation event has been sent to it. Event Grid sends the validation event so the endpoint can verify that it wants to receive event data. The endpoint has to set `validationResponse` to `validationCode`. For more information, see [Event Grid security and authentication](https://docs.microsoft.com/event-grid/security-authentication.md). You can view the web app code to see how it validates the subscription.
 
