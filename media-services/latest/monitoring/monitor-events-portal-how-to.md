@@ -61,4 +61,4 @@ Now, let's trigger events to see how Event Grid distributes the message to your 
 
 ## Send an event to your endpoint
 
-You can trigger events for the Media Services account by running an encoding job. Create a [transform](transform-create-transform-how-to.md?tabs=portal) and a [job](job-create-how-to.md?tabs=portal) in the portal to trigger events.
+You can trigger events for the Media Services account by running an encoding job. Create a [transform](../transform-create-transform-how-to.md?tabs=portal) and a [job](../job-create-how-to.md?tabs=portal) in the portal to trigger events.
