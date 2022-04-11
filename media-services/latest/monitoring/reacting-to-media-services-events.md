@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.date: 3/16/2022
 ms.author: inhenkel
 ---
- 
+
 # Handling Event Grid events
 
 [!INCLUDE [media services api v3 logo](../includes/v3-hr.md)]
 
 Media Services events allow applications to react to different events (for example, the job state change event) using modern serverless architectures. It does so without the need for complicated code or expensive and inefficient polling services. Instead, events are pushed through [Azure Event Grid](https://azure.microsoft.com/services/event-grid/) to event handlers such as [Azure Functions](https://azure.microsoft.com/services/functions/), [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/), or even to your own Webhook, and you only pay for what you use. For information about pricing, see [Event Grid pricing](https://azure.microsoft.com/pricing/details/event-grid/).
 
-Availability for Media Services events is tied to Event Grid [availability](https://docs.microsoft.com/event-grid/overview.md) and will become available in other regions as Event Grid does.  
+Availability for Media Services events is tied to Event Grid [availability](https://docs.microsoft.com/event-grid/overview.md) and will become available in other regions as Event Grid does.
 
 ## Media Services events and schemas
 
@@ -26,10 +26,7 @@ For more information, see [Media Services event schemas](media-services-event-sc
 
 The Media Services [samples repository for .NET](https://github.com/Azure-Samples/media-services-v3-dotnet) demonstrates how to use the latest Event Grid and Event Hubs client libraries to receive events in your own custom applications.
 
-In addition, the following how-to articles demonstrate the use of Event Grid through the CLI and Azure portal.
-
-* [Monitor events - portal](monitor-events-portal-how-to.md)
-* [Monitor events - CLI](job-state-events-cli-how-to.md)
+Use Event Grid to [monitor Media Services events in the Azure portal](monitor-events-portal-how-to.md).
 
 ## Practices for consuming events
 
