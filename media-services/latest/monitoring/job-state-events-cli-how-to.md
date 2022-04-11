@@ -49,7 +49,7 @@ If you switch to the "Azure Event Grid Viewer" site, you see it has no events ye
 
 In the following command, provide the Azure subscription ID that you want to use for the Media Services account. You can see a list of subscriptions that you have access to by navigating to [Subscriptions](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
 
-```azurecli
+```azurecli-interactive
 az account set --subscription mySubscriptionId
 ```
 
@@ -61,7 +61,7 @@ Replace `<event_subscription_name>` with a unique name for your event subscripti
 
 1. Get the resource id
 
-    ```azurecli
+    ```azurecli-interactive
     amsResourceId=$(az ams account show --name <ams_account_name> --resource-group <resource_group_name> --query id --output tsv)
     ```
 
@@ -73,7 +73,7 @@ Replace `<event_subscription_name>` with a unique name for your event subscripti
 
 2. Subscribe to the events
 
-    ```azurecli
+    ```azurecli-interactive
     az eventgrid event-subscription create \
     --source-resource-id $amsResourceId \
     --name <event_subscription_name> \
