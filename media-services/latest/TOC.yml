@@ -758,22 +758,22 @@
       href: https://docs.microsoft.com/rest/api/media/cli/azure/install-azure-cli
       displayName: CLI, command line, install cli, use cli, how to cli, cli how to, cli install, azure cli, get started
     - name: .NET
-      href: https://docs.microsoft.com/dotnet/api/overview/azure/media-services?view=azure-dotnet
+      href: https://www.nuget.org/packages/Microsoft.Azure.Management.Media
       displayName: SDK, install SDK, get SDK, client SDK, .NET SDK, install .NET SDK, .NET, dotnet, install, download SDK, nuget, package manager, get started
     - name: Java
-      href: https://docs.microsoft.com/java/api/com.azure.resourcemanager.mediaservices?view=azure-java-stable
+      href: http://search.maven.org/artifact/com.azure.resourcemanager/azure-resourcemanager-mediaservices/2.0.0/jar
       displayName: SDK, install SDK, get SDK, client SDK, Java SDK, install Java SDK, Java, install, download SDK, maven, package, package manager, get started
     - name: Python
-      href: https://docs.microsoft.com/python/api/azure-mgmt-media/?view=azure-python
+      href: https://pypi.org/project/azure-mgmt-media/9.0.0/
       displayName:  SDK, install SDK, get SDK, client SDK, Python SDK, install Python SDK, Python, install, download SDK, pypi, pip, pip3 package, package manager, get started
     - name: Node.js
-      href: https://docs.microsoft.com/en-us/javascript/api/@azure/arm-mediaservices/?view=azure-node-latest
+      href: https://www.npmjs.com/package/@azure/arm-mediaservices
       displayName: SDK, install SDK, get SDK, client SDK, Node.js SDK, install Node.js SDK, Node.js, TypeScript, JavaScript install, download SDK, npm, package, package manager, node package, get started
     - name: Go
       href: https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mediaservices/armmediaservices
       displayName: SDK, install SDK, get SDK, client SDK, Go SDK, install Go SDK, Go, Go install, download SDK, get started
     - name: Ruby
-      href: https://github.com/Azure/azure-sdk-for-ruby
+      href: https://rubygems.org/gems/azure_mgmt_media_services/versions/0.21.0
       displayName: SDK, install SDK, get SDK, client SDK, Ruby SDK, install Ruby SDK, Ruby, Ruby install, download SDK, get started
   - name: Azure Media Services Explorer
     href: https://github.com/Azure/Azure-Media-Services-Explorer
