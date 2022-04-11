@@ -46,7 +46,7 @@ Icons for architectural diagrams
 | :::image type="content" source="media/icons/private-link-service.svg" alt-text="private link service icon"::: <br/>**Private link service**<br/> Official |
 | :::image type="content" source="media/icons/quota.svg" alt-text="quota icon"::: <br/>**Quota**<br/> Official |
 | :::image type="content" source="media/icons/resource-group.svg" alt-text="resource group icon"::: <br/>**Resource group**<br/> Official |
-| :::image type="content" source="media/icons/service-endpoint.svg" alt-text="streaming endpoint icon"::: <br/>**Streaming endpoint/service endpoint**<br/> Official |
+| :::image type="content" source="media/icons/streaming-endpoint.svg" alt-text="streaming endpoint icon"::: <br/>**Streaming endpoint/service endpoint**<br/> Official |
 | :::image type="content" source="media/icons/storage-account.svg" alt-text="storage account icon"::: <br/>**Storage account**<br/> Official |
 | :::image type="content" source="media/icons/streaming-policy.svg" alt-text="streaming policy icon"::: <br/>**Streaming policy**<br/> *Created* |
 | :::image type="content" source="media/icons/subscription.svg" alt-text="subscription icon"::: <br/>**Subscription**<br/> Official |
