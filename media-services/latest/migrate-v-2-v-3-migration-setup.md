@@ -121,10 +121,6 @@ Read the article, [Connect to Azure Media Services v3 API - Python](configure-co
 
 Read the article [Connect to Azure Media Services v3 API - Node.js](configure-connect-nodejs-howto.md) to set up your environment.
 
-## [Ruby](#tab/ruby)
-
-- Get the [Ruby](https://github.com/Azure/azure-sdk-for-ruby/blob/master/README.md) SDK on GitHub.
-
 ## [Go](#tab/go)
 
 Download the [Go](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/mediaservices/mgmt/2018-07-01/media) SDK.

@@ -116,7 +116,6 @@ Only one long-running operation is supported for a given Live Event or any of it
 |[Python SDK](https://aka.ms/ams-v3-python-sdk)|[Python ref](/python/api/overview/azure/mediaservices/management)|
 |[Node.js SDK](https://aka.ms/ams-v3-nodejs-sdk) |[Node.js ref](/javascript/api/overview/azure/arm-mediaservices-readme)|
 |[Go SDK](https://aka.ms/ams-v3-go-sdk) |[Go ref](https://aka.ms/ams-v3-go-ref)|
-|[Ruby SDK](https://aka.ms/ams-v3-ruby-sdk)||
 
 ### See also
 
