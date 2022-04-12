@@ -22,5 +22,4 @@ You can use the following SDKs with Media Services.
 | [Node.JS/JavaScript](configure-connect-nodejs-howto.md) | [Node.JS/JavaScript SDK](https://www.npmjs.com/package/@azure/arm-mediaservices)|
 | [Python](configure-connect-python-howto.md) | [Python SDK](https://pypi.org/project/azure-mgmt-media/9.0.0/)|
 | [Java](configure-connect-java-howto.md) | [Java SDK](http://search.maven.org/artifact/com.azure.resourcemanager/azure-resourcemanager-mediaservices/2.0.0/jar)|
-| Ruby | [Ruby SDK](https://rubygems.org/gems/azure_mgmt_media_services/versions/0.21.0)|
 |Go | [Go SDK](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mediaservices/armmediaservices)|

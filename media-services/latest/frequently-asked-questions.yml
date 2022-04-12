@@ -20,10 +20,9 @@ sections:
         - [Python](https://aka.ms/ams-v3-python-sdk)
         - [Node.js](https://aka.ms/ams-v3-nodejs-sdk)
         - [Go](https://aka.ms/ams-v3-go-sdk)
-        - [Ruby](https://aka.ms/ams-v3-ruby-sdk)
     - question: Should I use the client SDKs or write directly to the REST API?
       answer: |
-        We don't recommend that you try to wrap the REST API for Media Services directly into your own library code. Doing so properly for production purposes would require you to implement the full Azure Resource Manager retry logic and understand how to manage long-running operations in Resource Manager APIs. The client SDKs for various languages - for example, .NET, Java, TypeScript, Python, and Ruby - handle this for you automatically, to reduce the chances of problems with retry logic or failed API calls. 
+        We don't recommend that you try to wrap the REST API for Media Services directly into your own library code. Doing so properly for production purposes would require you to implement the full Azure Resource Manager retry logic and understand how to manage long-running operations in Resource Manager APIs. The client SDKs for various languages - for example, .NET, Java, TypeScript, Python, and Ruby - handle this for you automatically, to reduce the chances of problems with retry logic or failed API calls.
     - question: Where can I find Media Services samples?
       answer: |
         See the article [Media Services v3 samples](samples-overview.md) for a listing of samples.

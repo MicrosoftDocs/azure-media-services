@@ -769,9 +769,6 @@
     - name: Go
       href: https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mediaservices/armmediaservices
       displayName: SDK, install SDK, get SDK, client SDK, Go SDK, install Go SDK, Go, Go install, download SDK, get started
-    - name: Ruby
-      href: https://rubygems.org/gems/azure_mgmt_media_services/versions/0.21.0
-      displayName: SDK, install SDK, get SDK, client SDK, Ruby SDK, install Ruby SDK, Ruby, Ruby install, download SDK, get started
   - name: Azure Media Services Explorer
     href: https://github.com/Azure/Azure-Media-Services-Explorer
     displayName: AMSE, Azure Media Services Explorer, Explorer, tools, user interface, UI, tool, get started, sample, Media Explorer, .NET, power tool, power user
