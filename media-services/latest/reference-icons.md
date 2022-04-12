@@ -14,8 +14,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Icons for architectural diagrams
-
+Icons for architectural diagrams. These may or may not match the icons in the portal.
 
 |Icon  |
 |---------|
