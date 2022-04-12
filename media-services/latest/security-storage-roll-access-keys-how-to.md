@@ -3,9 +3,10 @@ title: Update Media Services v3 after rolling storage access keys | Microsoft Do
 description: This article gives you guidance on how to update Media Services v3 after rolling storage access keys.
 author: IngridAtMicrosoft
 ms.service: media-services
-ms.topic: article
+ms.topic: how-to
 ms.date: 3/16/2022
 ms.author: inhenkel
+ms.custom: contperf-fy22q4
 ---
 # Update Media Services v3 after rolling storage access keys
 
@@ -30,19 +31,19 @@ Media Services depends on a storage key provided to it. Specifically, the locato
 >
 
 ## Steps to rotate storage keys
- 
+
  1. Change the storage account Primary key through the PowerShell cmdlet or [Azure](https://portal.azure.com/) portal.
  2. Call the `Sync-AzMediaServiceStorageKeys` cmdlet with appropriate parameters to force the media account to pick up storage account keys
- 
+
     The following example shows how to sync keys to storage accounts.
-  
+
     `Sync-AzMediaServiceStorageKeys -ResourceGroupName $resourceGroupName -AccountName $mediaAccountName -StorageAccountId $storageAccountId`
-  
+
  3. Wait an hour or so. Verify the streaming scenarios are working.
  4. Change the storage account secondary key through the PowerShell cmdlet or Azure portal.
  5. Call `Sync-AzMediaServiceStorageKeys` PowerShell with appropriate parameters to force the media account to pick up new storage account keys.
  6. Wait an hour or so. Verify the streaming scenarios are working.
- 
+
 ### A PowerShell cmdlet example
 
 The following example demonstrates how to get the storage account and sync it with the AMS account.
