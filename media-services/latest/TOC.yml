@@ -683,17 +683,15 @@
   items:
   - name: Error codes
     items:
-    - name: Error codes
-      items:
-      - name: Streaming endpoint error codes
-        href: stream-streaming-endpoint-error-codes-reference.md
-        displayName: error code, codes, errors, streaming error, debug, debugging, streaming endpoint, origin
-      - name: Live event error codes
-        href: live-event-error-codes-reference.md
-        displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, origin, live, live stream error
-      - name: Job error codes
-        href: job-error-codes-reference.md
-        displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, encoding, job, job output, job error, encoding error, encoder error, transcode
+    - name: Streaming endpoint error codes
+      href: stream-streaming-endpoint-error-codes-reference.md
+      displayName: error code, codes, errors, streaming error, debug, debugging, streaming endpoint, origin
+    - name: Live event error codes
+      href: live-event-error-codes-reference.md
+      displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, origin, live, live stream error
+    - name: Job error codes
+      href: job-error-codes-reference.md
+      displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, encoding, job, job output, job error, encoding error, encoder error, transcode
 - name: Reference
   items:
   - name: OpenAPI Specification (Swagger)
