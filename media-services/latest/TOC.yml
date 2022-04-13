@@ -690,7 +690,7 @@
       href: live-event-error-codes-reference.md
       displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, origin, live, live stream error
     - name: Job error codes
-      href: job-error-codes-reference.md
+      href: /rest/api/media/jobs/get?#joberrorcode
       displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, encoding, job, job output, job error, encoding error, encoder error, transcode
 - name: Reference
   items:
