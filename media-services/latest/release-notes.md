@@ -19,6 +19,32 @@ To stay up to date with the most recent developments, this article provides you 
 * Bug fixes
 * Deprecated functionality
 
+## March 2022
+
+### .NET SDK version 6.0.0
+
+The .NET SDK version 6.0.0 is now available on Nuget. 
+[Microsoft.Azure.Management.Media](https://www.nuget.org/packages/Microsoft.Azure.Management.Media)
+
+To install using the Package Manager:
+
+```
+Install-Package Microsoft.Azure.Management.Media -Version 6.0.0
+```
+
+To install using .NET CLI
+
+```dotnetcli
+dotnet add package Microsoft.Azure.Management.Media --version 6.0.0
+```
+
+Changes in the 6.0.0 SDK include:
+    - Added new tracks API under asset to manage the tracks available in the asset.
+    - Added Main10 Encoding Profile for H265 encoding.
+    - Exposed RateControlMode for H264 encoding, enabling 2 new rate-control modes - CBR (Constant Bit Rate) and CRF (Constant Rate Factor).
+    - Added "skus" property to streaming endpoint to indicate the type of streaming endpoint and its scale. This allows configuration of manual or auto scaling of streaming units in a streaming endpoint.
+    - Added "LowLatencyV2" stream option on the live event to be used for low latency live streaming using Apple's Low Latency HLS format (LL-HLS)
+
 ## December 2021
 
 ### Updated JavaScript SDK version 10.0.0
