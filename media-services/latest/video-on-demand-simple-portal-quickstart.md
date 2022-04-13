@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 This article shows you how to do the basic steps for delivering a basic video on demand (VOD) application with Azure Media Services and a GitHub repository.  All the steps happen with your web browser from our documentation, the Azure portal, and GitHub.
 
-# Final application
+## Final application
 
 The basic VOD application you will be creating will have:
 
@@ -23,7 +23,7 @@ The basic VOD application you will be creating will have:
 - One streaming locator that will provide streaming URLs
 - One very simple web application that streams the encoded file with the URL
 
-:::image type="content" source="media/architecture-diagrams/basic-vod-architecture.svg" alt-text="basic video on demand streaming architcture diagram":::
+:::image type="content" source="media/architecture-diagrams/basic-vod-architecture.svg" alt-text="basic video on demand streaming architecture diagram":::
 
 ## Workflow
 
@@ -38,7 +38,7 @@ The basic VOD application you will be creating will have:
 1. Start the streaming endpoint.
 1. Watch the video.
 
-:::image type="content" source="media/process-diagrams/vod-process.svg" alt-text="basic video on demand streaming architcture diagram":::
+:::image type="content" source="media/process-diagrams/vod-process.svg" alt-text="basic video on demand streaming workflow diagram":::
 
 ## Prerequisites
 
