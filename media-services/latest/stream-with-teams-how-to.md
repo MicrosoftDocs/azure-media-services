@@ -19,7 +19,7 @@ This article describes how to set up Microsoft Teams with Media Services to stre
 >[!IMPORTANT]
 > By default, the RTMP out feature is disabled in all Microsoft Teams tenants. The administrators of your MS Teams tenant must either enable it globally or for a select set of users. See [Stream Teams meetings](https://docs.microsoft.com/microsoftteams/stream-teams-meetings). If this is not enabled for you, contact your Teams administrator.
 
-1. Create a [media services account](account-create-how-to.md).
+1. Create a [Media Services account](account-create-how-to.md).
 1. Create a [live event](live-event-create-how-to.md?tabs=portal).
 1. Either [create a new streaming endpoint](streaming-endpoint-create-how-to.md?tabs=portal) or use the default streaming endpoint that is created when you create your Media Services account.
 1. Start the streaming endpoint by selecting **Start**.
@@ -28,19 +28,19 @@ This article describes how to set up Microsoft Teams with Media Services to stre
 
 1. If you didn't start the live event when you created it. Start it by navigating to the new live event, then select **Start**.
 1. Once the live event has started, select either **RTMP** or **RTMPS** from the input protocol selections.
-1. Copy the **Inputt URL** below the ingest protocol selections.
+1. Copy the **Input URL** below the ingest protocol selections.
 
-Keep this tab open in your browser because you will come back to it in a later step.
+Keep this tab open in your browser because you'll come back to it in a later step.
 
 ## Add the Custom Streaming app to your Teams meeting
 
-You can only do this if your Teams administrator has given you the appropriate permissions.
+You can only add the app if your Teams administrator has given you the appropriate permissions.
 
 1. Start a Teams meeting.
 1. Either from the menu bar or More options, select **Add an app**. Apps that you have permission to use in Teams will appear.
 1. Select the **Custom Streaming app** from the list.  The Custom Streaming app details will appear.
 1. Select **Add**. The Custom STreaming app start screen will appear.
-1. Select **Save**. The Custom Streaming app setting screen will appear. If you don't have streaming permissions, you will get a message to contact your IT administrator.
+1. Select **Save**. The Custom Streaming app setting screen will appear. If you don't have streaming permissions, you'll get a message to contact your IT administrator.
 1. Paste the Input URL into the **Stream URL** field.
 1. Enter any string into the **Stream key** field.
 1. Select **Start streaming**.
