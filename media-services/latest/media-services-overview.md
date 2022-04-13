@@ -44,7 +44,7 @@ Quickstarts allow you to try out Media Services using the Azure portal.
 
 ### SDKs
 
-See the documentation for setting up your environment in Quickstarts, then start developing with [Azure Media Services v3 client SDKs](all-sdks).
+See the documentation for setting up your environment in Quickstarts, then start developing with [Azure Media Services v3 client SDKs](all-sdks.md).
 
 ### Samples
 
