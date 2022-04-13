@@ -43,7 +43,7 @@ When you submit Jobs to process your videos, you have to tell Media Services whe
 
 * [Encode from an HTTPS URL with .NET](stream-files-dotnet-quickstart.md)
 * [Encode from an HTTPS URL with CLI](stream-files-cli-quickstart.md)
-* [Encode from an HTTPS URL with Node.js](stream-files-nodejs-quickstart.md)
+* [Encode from an HTTPS URL with Node.js](samples-overview.md)
 
 ### Creating job input from a local file
 
