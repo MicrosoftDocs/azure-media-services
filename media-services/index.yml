@@ -115,9 +115,6 @@ conceptualContent:
           - url: ./latest/analyze-video-audio-files-concept.md
             itemType: concept
             text: Media analytics
-          - url: ./latest/analyze-videos-tutorial.md
-            itemType: tutorial
-            text: Analyze videos
           - url: ./latest/analyze-face-redaction-concept.md
             itemType: concept
             text: Face Detect and Redaction

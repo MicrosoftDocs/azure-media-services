@@ -124,7 +124,5 @@ landingContent:
             url: https://docs.microsoft.com/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-docs/overview.md
       - linkListType: tutorial
         links:
-          - text: Analyze videos
-            url: analyze-videos-tutorial.md
           - text: Redact faces in videos
             url: analyze-face-redaction-concept.md

@@ -704,6 +704,11 @@
             "source_path_from_root": "/media-services/latest/monitoring/job-error-codes-reference.md",
             "redirect_url": "/rest/api/media/jobs/get?#joberrorcode",
             "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/monitoring/analyze-videos-tutorial.md",
+            "redirect_url": "/azure/media-services/latest/analyze-video-audio-files-concept",
+            "redirect_document_id": false
           }
     ]
 }

@@ -18,7 +18,7 @@ Media Services lets you extract insights from your video and audio files using t
 
 There are two modes for the Audio Analyzer preset, basic and standard. See the description of the differences in the table below.
 
-To analyze your content using Media Services v3 presets, you create a **Transform** and submit a **Job** that uses one of these presets: [VideoAnalyzerPreset](/rest/api/media/transforms/createorupdate#videoanalyzerpreset) or **AudioAnalyzerPreset**. For a tutorial demonstrating how to use **VideoAnalyzerPreset**, see [Analyze videos with Azure Media Services](analyze-videos-tutorial.md).
+To analyze your content using Media Services v3 presets, you create a **Transform** and submit a **Job** that uses one of these presets: [VideoAnalyzerPreset](/rest/api/media/transforms/createorupdate#videoanalyzerpreset) or **AudioAnalyzerPreset**.
 
 ## Compliance, Privacy, and Security
 
@@ -26,13 +26,13 @@ You must comply with all applicable laws in your use of Video Analyzer for Media
 
 ## Built-in presets
 
-Media Services currently supports the following built-in analyzer presets:  
+Media Services currently supports the following built-in analyzer presets:
 
 |**Preset name**|**Scenario / Mode**|**Details**|
 |---|---|---|
 |[AudioAnalyzerPreset](/rest/api/media/transforms/createorupdate#audioanalyzerpreset)|Analyzing audio Standard mode|The preset applies a predefined set of AI-based analysis operations, including speech transcription. Currently, the preset supports processing content with a single audio track that contains speech in a single language. Specify the language for the audio payload in the input using the BCP-47 format of 'language tag-region'. See supported languages list below for available language codes. The automatic language detection chooses the first language detected and continues with the selected language for the whole file if it not set, or set to null. The automatic language detection feature currently supports: English, Chinese, French, German, Italian, Japanese, Spanish, Russian, and Brazilian Portuguese. It doesn't support dynamically switching between languages after the first language is detected. The automatic language detection feature works best with audio recordings with clearly discernible speech. If automatic language detection fails to find the language, the transcription falls back to English.|
 |[AudioAnalyzerPreset](/rest/api/media/transforms/createorupdate#audioanalyzerpreset)|Analyzing audio Basic mode|This preset mode performs speech-to-text transcription and generation of a VTT subtitle/caption file. The output of this mode includes an Insights JSON file including only the keywords, transcription, and timing information. Automatic language detection and speaker diarization are not included in this mode. The list of supported languages is identical to the Standard mode above.|
-|[VideoAnalyzerPreset](/rest/api/media/transforms/createorupdate#videoanalyzerpreset)|Analyzing audio and video|Extracts insights (rich metadata) from both audio and video, and outputs a JSON format file. You can specify whether you only want to extract audio insights when processing a video file. For more information, see [Analyze video](analyze-videos-tutorial.md).|
+|[VideoAnalyzerPreset](/rest/api/media/transforms/createorupdate#videoanalyzerpreset)|Analyzing audio and video|Extracts insights (rich metadata) from both audio and video, and outputs a JSON format file. You can specify whether you only want to extract audio insights when processing a video file.
 |[FaceDetectorPreset](/rest/api/media/transforms/createorupdate#facedetectorpreset)|Detecting faces present in video|Describes the settings to be used when analyzing a video to detect all the faces present.|
 
 ## Supported languages
@@ -127,7 +127,7 @@ Example:
     }
     ]
 }
-] 
+]
 ```
 
 ### ocr
@@ -244,7 +244,7 @@ Example:
       ],
       "instances": [
         {
-	        "thumbnailId": "00000000-0000-0000-0000-000000000000",	
+	        "thumbnailId": "00000000-0000-0000-0000-000000000000",
           "start": "00: 00: 00.2000000",
           "end": "00: 00: 05.0330000"
         }
@@ -257,7 +257,7 @@ Example:
           "id": 1,
           "instances": [
             {
-	            "thumbnailId": "00000000-0000-0000-0000-000000000000",	    
+	            "thumbnailId": "00000000-0000-0000-0000-000000000000",
               "start": "00: 00: 05.2670000",
               "end": "00: 00: 05.3000000"
             }
@@ -378,7 +378,7 @@ Sentiments are aggregated by their sentimentType field (Positive/Neutral/Negativ
         }
       ]
     }
-  ] 
+  ]
 ```
 
 ### keywords
@@ -425,7 +425,7 @@ Sentiments are aggregated by their sentimentType field (Positive/Neutral/Negativ
     }
     ]
 }
-] 
+]
 ```
 
 #### visualContentModeration
@@ -465,5 +465,5 @@ Videos that are found to contain adult or racy content might be available for pr
     }
     ]
 }
-] 
+]
 ```
