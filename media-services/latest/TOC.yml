@@ -631,6 +631,8 @@
       displayName: descriptive audio, accessibility, access, accessible
   - name: Stream live
     items:
+    - name: Stream with Teams
+      href: stream-with-teams-how-to.md
     - name: Live event with portal and Wirecast
       href: live-event-wirecast-quickstart.md
       displayName: Wirecast, Telestream, streaming, stream live, RTMP, RTMPS, ingest, streamkey, stream key, live event, live streaming, live
