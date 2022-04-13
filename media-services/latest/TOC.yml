@@ -111,9 +111,6 @@
   - name: Give a Function App access to Media Services account - CLI
     href: security-function-app-managed-identity-cli-tutorial.md
     displayName: CLI, Tutorial, managed identity, Azure Functions, function app, function, system assigned, user assigned
-  - name: Encode and stream a remote file - Node.js
-    href: stream-files-nodejs-quickstart.md
-    displayName: Tutorial, Node.js, TypeScript, Node, JavaScript, remote ingest, SAS, HTTP, JobInputHttp, S3, URL, ingest, upload, SDK, sample
   - name: Stream live - Node.js
     href: stream-live-tutorial-with-nodejs.md
     displayName: SDK, Tutorial, Node.js, TypeScript, Node, JavaScript, live, live event, streaming, sample
