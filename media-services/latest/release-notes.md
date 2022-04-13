@@ -47,7 +47,7 @@ Changes in the 6.0.0 SDK include:
 
 ### New Docs content: Stream a Microsoft Teams Meeting
 
-It's easy to stream a Teams meeting with a Media Services live event. See [Stream a Microsoft Teams Meeting](https://docs.microsoft.com/azure/media-services/latest/stream-with-teams-how-to)
+It's easy to stream a Microsoft Teams meeting with a Media Services live event. See [Stream a Microsoft Teams Meeting](https://docs.microsoft.com/azure/media-services/latest/stream-with-teams-how-to).
 
 
 ## December 2021
