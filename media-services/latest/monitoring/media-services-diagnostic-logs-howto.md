@@ -24,22 +24,14 @@ This article shows you how to route data to the storage account and then view th
 ## Route data to the storage account using the portal
 
 1. Log in to the [Azure portal](https://portal.azure.com).
-1. Navigate to your Media Services account in and click **Diagnostic Settings** under **Monitor**. Here you see a list of all resources in your subscription that produce monitoring data through Azure Monitor.
-
-    ![Screenshot that highlights Diagnostic settings under the Monitoring section.](../media/media-services-diagnostic-logs/logs01.png)
-
-1. Click **Add diagnostic setting**.
-
-   A resource diagnostic setting is a definition of *what* monitoring data should be routed from a particular resource and *where* that monitoring data should go.
-
+1. Navigate to the Media Services account you want to work with.
+1. Select **Diagnostic Settings** under **Monitor**. Here you see a list of all resources in your subscription that produce monitoring data through Azure Monitor.
+1. Select **Add diagnostic setting**. A resource diagnostic setting is a definition of *what* monitoring data should be routed from a particular resource and *where* that monitoring data should go.
 1. In the section that appears, give your setting a **name** and check the box for **Archive to a storage account**.
-
-    Select the storage account to which you want to send logs and press **OK**.
+1. Select the storage account to which you want to send logs and press **OK**.
 1. Check all the boxes under **Log** and **Metric**. Depending on the resource type, you may only have one of these options. These checkboxes control what categories of log and metric data available for that resource type are sent to the destination you've selected, in this case, a storage account.
-
-   ![Diagnostic settings section](../media/media-services-diagnostic-logs/logs02.png)
 1. Set the **Retention (days)** slider to 30. This slider sets a number of days to retain the monitoring data in the storage account. Azure Monitor automatically deletes data older than the number of days specified. A retention of zero days stores the data indefinitely.
-1. Click **Save**.
+1. Select **Save**.
 
 Monitoring data from your resource is now flowing into the storage account.
 
@@ -81,8 +73,9 @@ You may need to wait up to five minutes before the event appears in the storage 
 
 1. In the portal, navigate to the **Storage Accounts** section by finding it on the left-hand navigation bar.
 1. Identify the storage account you created in the preceding section and click on it.
-1. Click on **Blobs**, then on the container labeled **insights-logs-keydeliveryrequests**. This is the container that has your logs in it. Monitoring data is broken out into containers by resource ID, then by date and time.
-1. Navigate to the PT1H.json file by clicking into the containers for resource ID, date, and time. Click on the PT1H.json file and click **Download**.
+1. Select **Blobs**, then on the container labeled **insights-logs-keydeliveryrequests**. This is the container that has your logs in it. Monitoring data is broken out into containers by resource ID, then by date and time.
+1. Navigate to the PT1H.json file by selecting a container for resource ID, date, and time.
+1. Select the PT1H.json file and click **Download**.
 
  You can now view the JSON event that was stored in the storage account.
 
@@ -166,10 +159,10 @@ You may need to wait up to five minutes before the event appears in the storage 
 
 ## Additional notes
 
-* Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
 
-## See also
+## See also from Azure Monitor
 
-* [Azure Monitor Metrics](https://docs.microsoft.com/azure-monitor/data-platform.md)
-* [Azure Monitor Diagnostic logs](https://docs.microsoft.com/azure-monitor/essentials/platform-logs-overview.md)
-* [How to collect and consume log data from your Azure resources](https://docs.microsoft.com/azure-monitor/essentials/platform-logs-overview.md)
+- [Azure Monitor Metrics](https://docs.microsoft.com/azure-monitor/data-platform.md)
+- [Azure Monitor Diagnostic logs](https://docs.microsoft.com/azure-monitor/essentials/platform-logs-overview.md)
+- [How to collect and consume log data from your Azure resources](https://docs.microsoft.com/azure-monitor/essentials/platform-logs-overview.md)
