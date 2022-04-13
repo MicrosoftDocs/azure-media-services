@@ -114,12 +114,6 @@
   - name: Stream live - Node.js
     href: stream-live-tutorial-with-nodejs.md
     displayName: SDK, Tutorial, Node.js, TypeScript, Node, JavaScript, live, live event, streaming, sample
-  - name: Basic Encoding - Python
-    href: encode-basic-encoding-python-quickstart.md
-    displayName: Tutorial, Python, remote ingest, SAS, HTTP, JobInputHttp, S3, URL, ingest, upload, SDK, sample, encoding
-  - name: Event-based Face Redaction - Python
-    href: face-redaction-event-based-python-quickstart.md
-    displayName: Tutorial, Python, Redact, face detect, face detection, blur face, blurring, redactor
   - name: Customer managed keys or BYOK tutorial - Portal
     href: security-customer-managed-keys-portal-tutorial.md
     displayName: BYOK, managed keys, customer-managed keys, security, tutorial, portal
