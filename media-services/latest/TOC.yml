@@ -147,17 +147,6 @@
     - name: Page, filter, order entities
       href: filter-order-page-entities-how-to.md
       displayName: paging, filtering, sorting, order, ordering, REST, SDK, client
-    - name: Error codes
-      items:
-      - name: Streaming endpoint error codes
-        href: stream-streaming-endpoint-error-codes-reference.md
-        displayName: error code, codes, errors, streaming error, debug, debugging, streaming endpoint, origin
-      - name: Live event error codes
-        href: live-event-error-codes-reference.md
-        displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, origin, live, live stream error
-      - name: Job error codes
-        href: job-error-codes-reference.md
-        displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, encoding, job, job output, job error, encoding error, encoder error, transcode
   - name: Accounts
     items:
     - name: Media Services account
@@ -639,9 +628,6 @@
     - name: Verify your on-premises encoder
       href: encode-on-premises-encoder-partner.md
       displayName: streaming, stream live, RTMP, RTMPS, ingest, live event, live streaming, live, partner, partners, on-premises, on premises, partner encoder, hardware encoder, hardware, verify, certification, certification, testing, partner testing, partner program
-    - name: Live event error codes
-      href: live-event-error-codes-reference.md
-      displayName: live event, error codes, error, codes, live streaming, debugging, troubleshooting live
   - name: Use Event Grid
     items:
     - name: Monitor events - Portal
@@ -693,6 +679,21 @@
     - name: Pass authentication tokens
       href: security-pass-authentication-tokens-how-to.md
       displayName: token auth, token, token authentication, player
+- name: Troubleshooting
+  items:
+  - name: Error codes
+    items:
+    - name: Error codes
+      items:
+      - name: Streaming endpoint error codes
+        href: stream-streaming-endpoint-error-codes-reference.md
+        displayName: error code, codes, errors, streaming error, debug, debugging, streaming endpoint, origin
+      - name: Live event error codes
+        href: live-event-error-codes-reference.md
+        displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, origin, live, live stream error
+      - name: Job error codes
+        href: job-error-codes-reference.md
+        displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, encoding, job, job output, job error, encoding error, encoder error, transcode
 - name: Reference
   items:
   - name: OpenAPI Specification (Swagger)
