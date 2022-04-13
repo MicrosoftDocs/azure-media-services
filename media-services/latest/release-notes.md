@@ -43,7 +43,7 @@ Changes in the 6.0.0 SDK include:
     - Added Main10 Encoding Profile for H265 encoding.
     - Exposed RateControlMode for H264 encoding, enabling 2 new rate-control modes - CBR (Constant Bit Rate) and CRF (Constant Rate Factor).
     - Added "skus" property to streaming endpoint to indicate the type of streaming endpoint and its scale. This allows configuration of manual or auto scaling of streaming units in a streaming endpoint.
-    - Added LowLatencyV2 stream option on the live event to be used for low latency live streaming
+    - Added "LowLatencyV2" stream option on the live event to be used for low latency live streaming using Apple's Low Latency HLS format (LL-HLS)
 
 ## December 2021
 
