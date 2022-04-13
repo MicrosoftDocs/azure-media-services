@@ -32,7 +32,7 @@ This quickstart shows you how to create a content key policy where you specify w
 
 ## Prerequisites
 
-Upload and process your content as described in [create an asset in the Azure portal](asset-create-asset-how-to?tabs=portal)
+Upload and process your content as described in [create an asset in the Azure portal](asset-create-asset-how-to.md?tabs=portal)
 
 ## Create a content key policy
 
