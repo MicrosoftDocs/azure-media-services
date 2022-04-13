@@ -35,7 +35,7 @@ The sample in this article encodes content that you make accessible via an HTTPS
 
 ## Download and configure the sample
 
-Clone a GitHub repository that contains the streaming Node.js sample to your machine using the following command:  
+Clone a GitHub repository that contains the streaming Node.js sample to your machine using the following command:
 
  ```bash
  git clone https://github.com/Azure-Samples/media-services-v3-node-tutorials.git
@@ -63,11 +63,11 @@ The sample performs the following actions:
 1. The application downloads encoded files. Create a folder where you want the output files to go and update the value of the **outputFolder** variable in the [index.ts](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/StreamFilesSample/index.ts#L65) file. It is set to "./Temp" by default.
 1. Open a **command prompt**, browse to the sample's directory.
 1. Make a copy of the sample.env file and rename it to ".env"
-1. Update the contents of the .env file to match your account settings and subscription information for accessing the Media Services account. You can find this information in the API Access menu in the portal for the Media Services account. 
+1. Update the contents of the .env file to match your account settings and subscription information for accessing the Media Services account. You can find this information in the API Access menu in the portal for the Media Services account.
 1. Install the packages used in the *packages.json* file.
 
     ```bash
-    npm install 
+    npm install
     ```
 
 1. Launch Visual Studio Code from the root folder of the samples
@@ -108,10 +108,3 @@ az group delete --name amsResourceGroup
 - [Azure for JavaScript & Node.js developers](/azure/developer/javascript/)
 - [Media Services source code in the @azure/azure-sdk-for-js Git Hub repo](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
 - [Azure Package Documentation for Node.js developers](/javascript/api/overview/azure/)
-
-## See also
-
-- [Job error codes](/rest/api/media/jobs/get#joberrorcode).
-- [npm install @azure/arm-mediaservices](https://www.npmjs.com/package/@azure/arm-mediaservices)
-- [Azure for JavaScript & Node.js developers](/azure/developer/javascript/)
-- [Media Services source code in the @azure/azure-sdk-for-js repo](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
