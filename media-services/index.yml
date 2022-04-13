@@ -112,8 +112,9 @@ conceptualContent:
 
     - title: Analyze content
       links:
-            itemType: tutorial
-            text: Analyze videos
+          - url: ./latest/analyze-video-audio-files-concept.md
+            itemType: concept
+            text: Media analytics
           - url: ./latest/analyze-face-redaction-concept.md
             itemType: concept
             text: Face Detect and Redaction
