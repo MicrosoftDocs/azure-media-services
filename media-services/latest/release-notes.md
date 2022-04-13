@@ -23,7 +23,7 @@ To stay up to date with the most recent developments, this article provides you 
 
 ### .NET SDK version 6.0.0
 
-The .NET SDK version 6.0.0 is now available on Nuget. 
+The .NET SDK version 6.0.0 is now available on Nuget.
 [Microsoft.Azure.Management.Media](https://www.nuget.org/packages/Microsoft.Azure.Management.Media)
 
 To install using the Package Manager:
@@ -45,6 +45,11 @@ Changes in the 6.0.0 SDK include:
 * Exposed RateControlMode for H264 encoding, enabling 2 new rate-control modes - CBR (Constant Bit Rate) and CRF (Constant Rate Factor).
 * Added "skus" property to streaming endpoint to indicate the type of streaming endpoint and its scale. This allows configuration of manual or auto scaling of streaming units in a streaming endpoint.
 * Added "LowLatencyV2" stream option on the live event to be used for low latency live streaming using Apple's Low Latency HLS format (LL-HLS)
+
+### New Docs content: Stream a Microsoft Teams Meeting
+
+It's easy to stream a Microsoft Teams meeting with a Media Services live event. See [Stream a Microsoft Teams Meeting](https://docs.microsoft.com/azure/media-services/latest/stream-with-teams-how-to).
+
 
 ## December 2021
 
@@ -672,7 +677,6 @@ If you created Assets or Account Filters between 09/28 and 10/12 with Media Serv
 
 The following features are present in the .NET SDK:
 
-* **Transforms** and **Jobs** to encode or analyze media content. For examples, see [Stream files](stream-files-tutorial-with-api.md) and [Analyze](analyze-videos-tutorial.md).
 * **Streaming Locators** for publishing and streaming content to end-user devices
 * **Streaming Policies** and **Content Key Policies** to configure key delivery and content protection (DRM) when delivering content.
 * **Live Events** and **Live Outputs** to configure the ingest and archiving of live streaming content.
