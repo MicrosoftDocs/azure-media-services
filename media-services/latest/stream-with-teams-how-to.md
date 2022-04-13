@@ -37,9 +37,9 @@ Keep this tab open in your browser because you'll come back to it in a later ste
 You can only add the app if your Teams administrator has given you the appropriate permissions.
 
 1. Start a Teams meeting.
-1. Either from the menu bar or More options, select **Add an app**. Apps that you have permission to use in Teams will appear.
+1. Either from the menu bar or More options, select **Add an app**. A list of apps for Teams will appear.
 1. Select the **Custom Streaming app** from the list.  The Custom Streaming app details will appear.
-1. Select **Add**. The Custom STreaming app start screen will appear.
+1. Select **Add**. The Custom Streaming app start screen will appear.
 1. Select **Save**. The Custom Streaming app setting screen will appear. If you don't have streaming permissions, you'll get a message to contact your IT administrator.
 1. Paste the Input URL into the **Stream URL** field.
 1. Enter any string into the **Stream key** field.
