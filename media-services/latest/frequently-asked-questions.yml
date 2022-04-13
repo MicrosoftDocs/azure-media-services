@@ -308,7 +308,7 @@ sections:
     questions:
     - question: How do I find out what this error code means?
       answer: |
-        We've documented error codes in the following references: [Streaming endpoint error codes](./stream-streaming-endpoint-error-codes-reference.md), [Live event error codes](./live-event-error-codes-reference.md), and [Job error codes](./job-error-codes-reference.md). If you can't find answers there, please create a support ticket.
+        We've documented error codes in the following references: [Streaming endpoint error codes](./stream-streaming-endpoint-error-codes-reference.md), [Live event error codes](./live-event-error-codes-reference.md), and [Job error codes](https://docs.microsoft.com/rest/api/media/jobs/get?#joberrorcode). If you can't find answers there, please create a support ticket.
     - question: How do I reset my account credentials?
       answer: |
         You can [reset your account credentials by using the Azure CLI](./account-reset-account-credentials.md).
