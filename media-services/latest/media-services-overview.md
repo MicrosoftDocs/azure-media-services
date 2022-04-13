@@ -36,7 +36,7 @@ Review [Fundamental concepts](concepts-overview.md) which includes important con
 
 Quickstarts allow you to try out Media Services using the Azure portal.
 
-- [Basic video-on-demand (VOD) application](video-on-demand-simple-portal-quickstartmd)
+- [Basic video-on-demand (VOD) application](video-on-demand-simple-portal-quickstart.md)
 - [Live event with portal and OBS](live-event-obs-quickstart.md)
 - [Live event with portal and Wirecast](live-event-wirecast-quickstart.md)
 - [Use portal to encrypt content](drm-encrypt-content-how-to.md)
