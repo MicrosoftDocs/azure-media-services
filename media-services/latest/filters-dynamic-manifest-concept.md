@@ -37,7 +37,8 @@ The [Upload, encode, and stream files with .NET](stream-files-tutorial-with-api.
 
 You can use the [Azure Media Player demo page](https://aka.ms/azuremediaplayer) to monitor the bitrate of a video stream. The demo page displays diagnostics info on the **Diagnostics** tab:
 
-![Azure Media Player diagnostics][amp_diagnostics]
+<!--![Azure Media Player diagnostics][amp_diagnostics]-->
+:::image type="content" source="media/diagrams/amp_diagnostics.png" alt-text="azure media player diagnostics":::
 
 ### Examples: URLs with filters in query string
 
@@ -55,20 +56,28 @@ You can choose to encode your asset to multiple encoding profiles (H.264 Baselin
 
 With Dynamic Manifest, you can create device profiles (such as mobile, console, or HD/SD) and include the tracks and qualities that you want to be a part of each profile. That's called rendition filtering. The following diagram shows an example of it.
 
-![Example of rendition filtering with Dynamic Manifest][renditions2]
+<!--![Example of rendition filtering with Dynamic Manifest][renditions2]-->
+
+:::image type="content" source="media/diagrams/media-services-rendition-filter2.png" alt-text="rendition filter 2 diagram":::
 
 In the following example, an encoder was used to encode a mezzanine asset into seven ISO MP4s video renditions (from 180p to 1080p). The encoded asset can be [dynamically packaged](encode-dynamic-packaging-concept.md) into any of the following streaming protocols: HLS, MPEG DASH, and Smooth.
 
 The top of the following diagram shows the HLS manifest for the asset with no filters. (It contains all seven renditions.)  In the lower left, the diagram shows an HLS manifest to which a filter named "ott" was applied. The "ott" filter specifies the removal of all bitrates below 1 Mbps, so the bottom two quality levels were stripped off in the response. In the lower right, the diagram shows the HLS manifest to which a filter named "mobile" was applied. The "mobile" filter specifies the removal of renditions where the resolution is larger than 720p, so the two 1080p renditions were stripped off.
 
-![Rendition filtering with Dynamic Manifest][renditions1]
+<!--![Rendition filtering with Dynamic Manifest][renditions1]-->
+
+:::image type="content" source="media/diagrams/media-services-rendition-filter.png" alt-text="rendition filter diagram":::
+
 
 ## Removing language tracks
+
 Your assets might include multiple audio languages such as English, Spanish, French, and so on. Usually, the Player SDK manages default audio track selection and available audio tracks per user selection.
 
 Developing such Player SDKs is challenging because it requires different implementations across device-specific player frameworks. Also, on some platforms, Player APIs are limited and don't include the audio selection feature where users can't select or change the default audio track. With asset filters, you can control the behavior by creating filters that only include desired audio languages.
 
-![Filtering of language tracks with Dynamic Manifest][language_filter]
+<!--![Filtering of language tracks with Dynamic Manifest][language_filter]-->
+
+:::image type="content" source="media/diagrams/media-services-language-filter.png" alt-text="language filter diagram":::
 
 ## Trimming the start of an asset
 
@@ -76,7 +85,9 @@ In most live streaming events, operators run some tests before the actual event.
 
 If the program is archiving, the test and slate data are also archived and included in the presentation. However, this information shouldn't be shown to the clients. With Dynamic Manifest, you can create a start time filter and remove the unwanted data from the manifest.
 
-![Trimming start of an asset with Dynamic Manifest][trim_filter]
+<!--![Trimming start of an asset with Dynamic Manifest][trim_filter]-->
+
+:::image type="content" source="media/diagrams/media-services-trim-filter.png" alt-text="trim filter diagram":::
 
 ## Creating subclips (views) from a live archive
 
@@ -86,17 +97,23 @@ You can publish these virtual programs separately without post processing the li
 
 With Dynamic Manifest, you can create filters by using start/end times and create virtual views over the top of your live archive.
 
-![Subclip filter with Dynamic Manifest][subclip_filter]
+<!--![Subclip filter with Dynamic Manifest][subclip_filter]-->
+
+:::image type="content" source="media/diagrams/media-services-subclips-filter.png" alt-text="subsclips filter diagram":::
 
 Here's the filtered asset:
 
-![Filtered asset with Dynamic Manifest][skiing]
+<!--![Filtered asset with Dynamic Manifest][skiing]-->
+
+:::image type="content" source="media/diagrams/media-services-skiing.png" alt-text="skiing filter diagram":::
 
 ## Adjusting the presentation window (DVR)
 
 Currently, Azure Media Services offers circular archive where the duration can be configured between 1 minute - 25 hours. Manifest filtering can be used to create a rolling DVR window over the top of the archive, without deleting media. There are many scenarios where broadcasters want to provide a limited DVR window to move with the live edge and at the same time keep a bigger archiving window. A broadcaster may want to use the data that's out of the DVR window to highlight clips, or they may want to provide different DVR windows for different devices. For example, most of the mobile devices don't handle large DVR windows (you can have a 2-minute DVR window for mobile devices and one hour for desktop clients).
 
-![DVR window with Dynamic Manifest][dvr_filter]
+<!--![DVR window with Dynamic Manifest][dvr_filter]-->
+
+:::image type="content" source="media/diagrams/media-services-dvr-filter.png" alt-text="dvr filter diagram":::
 
 ## Adjusting LiveBackoff (live position)
 
@@ -104,13 +121,15 @@ Manifest filtering can be used to remove several seconds from the live edge of a
 
 In addition to the advertisement support, the live back-off setting can be used to adjust the viewers' position so that when clients drift and hit the live edge, they can still get fragments from the server. That way, clients won't get an HTTP 404 or 412 error.
 
-![Filter for live back-off with Dynamic Manifest][livebackoff_filter]
+<!--![Filter for live back-off with Dynamic Manifest][livebackoff_filter]-->
+:::image type="content" source="media/diagrams/media-services-livebackoff-filter.png" alt-text="live backoff filter diagram":::
 
 ## Combining multiple rules in a single filter
 
 You can combine multiple filtering rules in a single filter. For example, you can define a "range rule" to remove slates from a live archive and also filter out available bitrates. When you're applying multiple filtering rules, the end result is the intersection of all rules.
 
-![Multiple filtering rules with Dynamic Manifest][multiple-rules]
+<!--![Multiple filtering rules with Dynamic Manifest][multiple-rules]-->
+:::image type="content" source="media/diagrams/media-services-multiple-rules-filters.png" alt-text="dvr filter diagram":::
 
 ## Combining multiple filters (filter composition)
 
