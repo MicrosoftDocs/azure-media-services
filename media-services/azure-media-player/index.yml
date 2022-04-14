@@ -4,8 +4,8 @@ title: Azure Media Player
 summary: Learn more about using the Azure Media Player
 
 metadata:
-  title: Azure Media Player landing page 
-  description: Learn more about using the Azure Media Player on your web pages. 
+  title: Azure Media Player landing page
+  description: Learn more about using the Azure Media Player on your web pages.
   ms.service: media-services
   ms.topic: landing-page
   author: IngridAtMicrosoft
@@ -46,7 +46,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Playback technology
-            url: azure-media-player-playback-technology.md 
+            url: azure-media-player-playback-technology.md
           - text: Protected content
             url: azure-media-player-protected-content.md
           - text: Feature list
@@ -69,8 +69,6 @@ landingContent:
         links:
           - text: Samples
             url: https://github.com/Azure-Samples/azure-media-player-samples
-          - text: API
-            url: /javascript/api/azuremediaplayer/
           - text: API methods
             url: azure-media-player-api-methods.md
           - text: Options
