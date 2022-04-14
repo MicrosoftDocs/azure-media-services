@@ -78,7 +78,7 @@ For a list of the metrics collected for Media Services, see [Monitoring Media Se
 
 Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.
 
-All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](/azure/azure-monitor/essentials/resource-logs-schema.md#top-level-common-schema).
+All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](/azure/azure-monitor/essentials/resource-logs-schema#top-level-common-schema).
 
 The schema for Media Services resource logs is found in [Monitoring Media Services Data Reference](monitor-media-services-data-reference.md).
 

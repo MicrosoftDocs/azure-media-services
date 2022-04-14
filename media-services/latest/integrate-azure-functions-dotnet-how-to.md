@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-This article shows you how to get started with creating Azure Functions that use Media Services. The Azure Function defined in this article encodes a video file with Media Encoder Standard. As soon as the encoding job has been created, the function returns the job name and output asset name. To review Azure Functions, see [Overview](/azure/azure-functions/functions-overview.md) and other topics in the **Azure Functions** section.
+This article shows you how to get started with creating Azure Functions that use Media Services. The Azure Function defined in this article encodes a video file with Media Encoder Standard. As soon as the encoding job has been created, the function returns the job name and output asset name. To review Azure Functions, see [Overview](/azure/azure-functions/functions-overview) and other topics in the **Azure Functions** section.
 
 If you want to explore and deploy existing Azure Functions that use Azure Media Services, check out [Media Services Azure Functions](https://github.com/Azure-Samples/media-services-v3-dotnet-core-functions-integration). This repository contains examples that use Media Services to show workflows related to ingesting content directly from blob storage, encoding, and live streaming operations.
 
@@ -30,7 +30,7 @@ These prerequisites are only required to run and debug your functions locally. T
 
 - [.NET Core 3.1 and .NET 5 SDKs](https://dotnet.microsoft.com/download/dotnet).
 
-- The [Azure Functions Core Tools](/azure/azure-functions/functions-run-local.md#install-the-azure-functions-core-tools) version 3.x or later. The Core Tools package is downloaded and installed automatically when you start the project locally. Core Tools includes the entire Azure Functions runtime, so download and installation might take some time.
+- The [Azure Functions Core Tools](/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools) version 3.x or later. The Core Tools package is downloaded and installed automatically when you start the project locally. Core Tools includes the entire Azure Functions runtime, so download and installation might take some time.
 
 - The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
 
