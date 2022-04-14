@@ -34,7 +34,7 @@ In Media Services v3, you use Azure Storage APIs to upload files. The following 
 The following function performs these actions:
 
 * Creates an **Asset**
-* Gets a writable [SAS URL](https://docs.microsoft.com/storage/common/storage-sas-overview.md) to the asset’s [container in storage](https://docs.microsoft.com/storage/blobs/storage-quickstart-blobs-dotnet.md#upload-a-blob-to-a-container)
+* Gets a writable [SAS URL](/azure/storage/common/storage-sas-overview) to the asset’s [container in storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet#upload-a-blob-to-a-container)
 * Uploads the file into the container in storage using the SAS URL
 
 [!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/UploadEncodeAndStreamFiles/Program.cs#CreateInputAsset)]

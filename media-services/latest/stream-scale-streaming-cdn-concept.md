@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Azure Content Delivery Network (CDN) offers developers a global solution for rapidly delivering high-bandwidth content to users by caching their content at strategically placed physical nodes across the world.  
+Azure Content Delivery Network (CDN) offers developers a global solution for rapidly delivering high-bandwidth content to users by caching their content at strategically placed physical nodes across the world.
 
 CDN caches content streamed from a Media Services [Streaming Endpoint (origin)](stream-streaming-endpoint-concept.md) per codec, per streaming protocol, per bitrate, per container format, and per encryption/DRM. For each combination of codec-streaming protocol-container format-bitrate-encryption, there will be a separate CDN cache.
 
@@ -50,7 +50,7 @@ When the Standard streaming endpoint is created, it's configured by default with
 Azure Media Services integration with Azure CDN is implemented on **Azure CDN from Verizon** for standard streaming endpoints. Premium streaming endpoints can be configured using all **Azure CDN pricing tiers and providers**.
 
 > [!NOTE]
-> For details about Azure CDN, see the [CDN overview](https://docs.microsoft.com/cdn/cdn-overview.md).
+> For details about Azure CDN, see the [CDN overview](/azure/cdn/cdn-overview).
 
 ## Determine if a DNS change was made
 
@@ -139,7 +139,7 @@ The `Origin-Assist CDN-Prefetch` feature supports the following streaming protoc
     Yes, since this feature works at the HTTP level, it doesn't decode or parse any segment/fragment. It doesn't care whether the content is encrypted or not.
 
 * Does this feature work with Server Side Ad Insertion (SSAI)?
-    
+
     It does for original/main content (the original video content before ad insertion) works, since SSAI doesn't change the timestamp of the source content from the Media Services origin. Whether this feature works with ad contents depends on whether ad origin supports Origin-Assist. For example, if ad contents are also hosted in Azure Media Services (same or separate origin), ad contents will also be prefetched.
 
 * Does this feature work with UHD/HEVC contents?

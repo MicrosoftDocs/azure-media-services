@@ -55,7 +55,7 @@ It is also possible to create a private endpoint for a live event, while using a
 
 ## Azure Policy and Media Services
 
-Media Services defines a set of [built-in Azure Policy definitions](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#media-services) to help enforce organizational standards and to assess compliance at-scale.
+Media Services defines a set of [built-in Azure Policy definitions](/azure/governance/policy/samples/built-in-policies#media-services) to help enforce organizational standards and to assess compliance at-scale.
 
 ## Azure Policy for Private Endpoints in the portal
 

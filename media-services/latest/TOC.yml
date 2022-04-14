@@ -286,7 +286,7 @@
   - name: Security
     items:
       - name: Security baseline
-        href: https://docs.microsoft.com/security/benchmark/azure/baselines/media-services-security-baseline
+        href: /azure/security/benchmark/azure/baselines/media-services-security-baseline
         displayName: security, baseline
       - name: Account security
         items:
@@ -686,30 +686,30 @@
     href: https://aka.ms/ams-v3-rest-sdk
     displayName: schema, Swagger, OpenAPI, open api, rest, api, Postman
   - name: REST
-    href: https://docs.microsoft.com/rest/api/media/
+    href: /rest/api/media/
     displayName: schema, Swagger, OpenAPI, open api, rest, api,
   - name: Azure CLI
-    href: https://docs.microsoft.com/cli/azure/ams
+    href: /cli/azure/ams
     displayName: CLI, command line, client, SDK, manage, management
   - name: SDKs
     items:
     - name: .NET
-      href: https://docs.microsoft.com/en-us/dotnet/api/overview/azure/media-services?view=azure-dotnet
+      href: /dotnet/api/overview/azure/media-services?view=azure-dotnet
       displayName: SDK, .NET SDK, .NET, .NET reference, .NET docs, reference .NET, developer, develop, .NET library, nuget, package
     - name: Java
-      href: https://docs.microsoft.com/rest/api/media/java/api/overview/azure/mediaservices/management
+      href: /rest/api/media/java/api/overview/azure/mediaservices/management
       displayName: SDK, Java SDK, Java, Java docs, Java reference, reference Java, developer, develop, Java library, maven, package
     - name: Python
-      href: https://docs.microsoft.com/rest/api/media/python/api/overview/azure/mediaservices/management
+      href: /rest/api/media/python/api/overview/azure/mediaservices/management
       displayName: SDK, Python SDK, Python, Python docs, Python reference, reference Python, developer, develop, Python library, pypi, package, pip, pip install
     - name: Node.js
-      href: https://docs.microsoft.com/rest/api/media/javascript/api/overview/azure/arm-mediaservices-readme
+      href: /rest/api/media/javascript/api/overview/azure/arm-mediaservices-readme
       displayName: SDK, Node SDK, Node.js, Nodejs, Nodejs SDk, Node.js SDk, JavaScript, JavaScript SDK, TypeScript, TypeScript SDK, JavaScript docs, Node docs, Node.js Docs, Node.js reference, reference Node, developer, develop, Node.js library, TypeScript library, package, npm, npm install
     - name: Go
       href: https://aka.ms/ams-v3-go-ref
       displayName: Go, Go SDK, SDK, Go reference, Go docs, Go Documentation, Go library, go package
   - name: Resource Manager template
-    href: https://docs.microsoft.com/rest/api/media/azure/templates/microsoft.media/allversions
+    href: /rest/api/media/azure/templates/microsoft.media/allversions
     displayName: ARM, ARM template, Azure Resource Manager, Azure Resource Manager template, template, Terraform, deployment, deploy, deployment template
   - name: Standard Encoder schemas
     items:
@@ -741,7 +741,7 @@
   - name: SDKs/Tools
     items:
     - name: Azure CLI
-      href: https://docs.microsoft.com/rest/api/media/cli/azure/install-azure-cli
+      href: /cli/azure/install-azure-cli
       displayName: CLI, command line, install cli, use cli, how to cli, cli how to, cli install, azure cli, get started
     - name: .NET
       href: https://www.nuget.org/packages/Microsoft.Azure.Management.Media

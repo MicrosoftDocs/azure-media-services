@@ -28,16 +28,16 @@ DNS names, ensure these configurations are removed within a year of deleting a M
 
 ## Moving a Media Services account between subscriptions
 
-If you need to move a Media Services account to a new subscription, you need to first move the entire resource group that contains the Media Services account to the new subscription. You must move all attached resources: Azure Storage accounts, Azure CDN profiles, etc. For more information, see [Move resources to new resource group or subscription](https://docs.microsoft.com/azure-resource-manager/management/move-resource-group-and-subscription.md). As with any resources in Azure, resource group moves can take some time to complete.
+If you need to move a Media Services account to a new subscription, you need to first move the entire resource group that contains the Media Services account to the new subscription. You must move all attached resources: Azure Storage accounts, Azure CDN profiles, etc. For more information, see [Move resources to new resource group or subscription](/azure/azure-resource-manager/management/move-resource-group-and-subscription). As with any resources in Azure, resource group moves can take some time to complete.
 
 ### Considerations
 
 * Create backups of all data in your account before migrating to a different subscription.
-* You need to stop all the Streaming Endpoints and live streaming resources. Your users will not be able to access your content for the duration of the resource group move. 
+* You need to stop all the Streaming Endpoints and live streaming resources. Your users will not be able to access your content for the duration of the resource group move.
 
 > [!IMPORTANT]
 > Do not start the Streaming Endpoint until the move completes successfully.
 
 ### Troubleshoot
 
-If a Media Services account or an associated Azure Storage account become "disconnected" following the resource group move, try rotating the Storage Account keys. If rotating the Storage Account keys does not resolve the "disconnected" status of the Media Services account, file a new support request from the "Support + troubleshooting" menu in the Media Services account.  
+If a Media Services account or an associated Azure Storage account become "disconnected" following the resource group move, try rotating the Storage Account keys. If rotating the Storage Account keys does not resolve the "disconnected" status of the Media Services account, file a new support request from the "Support + troubleshooting" menu in the Media Services account.
