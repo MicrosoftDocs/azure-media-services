@@ -36,7 +36,7 @@ The benefits of CENC with multi-DRM are that it:
 Microsoft is an active promoter of DASH and CENC together with some major industry players. Azure Media Services provides support for DASH and CENC. For recent announcements, see the following blogs:
 
 *  [Announcing Google Widevine license delivery services in Azure Media Services](https://azure.microsoft.com/blog/announcing-general-availability-of-google-widevine-license-services/)
-* [Azure Media Services adds Google Widevine packaging for delivering a multi-DRM stream](https://azure.microsoft.com/blog/azure-media-services-adds-google-widevine-packaging-for-delivering-multi-drm-stream/)  
+* [Azure Media Services adds Google Widevine packaging for delivering a multi-DRM stream](https://azure.microsoft.com/blog/azure-media-services-adds-google-widevine-packaging-for-delivering-multi-drm-stream/)
 
 ### Goals of the article
 
@@ -50,7 +50,7 @@ In the article, the term "multi-DRM" covers the following products:
 
 * Microsoft PlayReady
 * Google Widevine
-* Apple FairPlay 
+* Apple FairPlay
 
 The following table summarizes the native platform/native app and browsers supported by each DRM.
 
@@ -218,12 +218,12 @@ Implementation includes the following steps:
 
 For information on how to set up Azure AD for an ASP.NET MVC player app, see [Integrate an Azure Media Services OWIN MVC-based app with Azure Active Directory and restrict content key delivery based on JWT claims](http://gtrifonov.com/2015/01/24/mvc-owin-azure-media-services-ad-integration/).
 
-For more information, see [JWT token authentication in Azure Media Services and dynamic encryption](http://gtrifonov.com/2015/01/03/jwt-token-authentication-in-azure-media-services-and-dynamic-encryption/).  
+For more information, see [JWT token authentication in Azure Media Services and dynamic encryption](http://gtrifonov.com/2015/01/03/jwt-token-authentication-in-azure-media-services-and-dynamic-encryption/).
 
 For information on Azure AD:
 
-* You can find developer information in the [Azure Active Directory developer's guide](https://docs.microsoft.com/active-directory/azuread-dev/v1-overview.md).
-* You can find administrator information in [Administer your Azure AD tenant directory](https://docs.microsoft.com/active-directory/fundamentals/active-directory-whatis.md).
+* You can find developer information in the [Azure Active Directory developer's guide](/azure/active-directory/azuread-dev/v1-overview).
+* You can find administrator information in [Administer your Azure AD tenant directory](/azure/active-directory/fundamentals/active-directory-whatis).
 
 ### Some issues in implementation
 Use the following troubleshooting information for help with implementation issues.
@@ -257,7 +257,7 @@ Use the following troubleshooting information for help with implementation issue
 
     The GUID is the Azure AD tenant ID. The GUID can be found in the **Endpoints** pop-up menu in the Azure portal.
 
-* Grant group membership claims privileges. Make sure the following is in the Azure AD application manifest file: 
+* Grant group membership claims privileges. Make sure the following is in the Azure AD application manifest file:
 
     "groupMembershipClaims": "All"    (the default value is null)
 
@@ -292,7 +292,7 @@ Signing key rollover is an important point to take into consideration in your im
 
 Azure AD uses industry standards to establish trust between itself and applications that use Azure AD. Specifically, Azure AD uses a signing key that consists of a public and private key pair. When Azure AD creates a security token that contains information about the user, it's signed by Azure AD with a private key before it's sent back to the application. To verify that the token is valid and originated from Azure AD, the application must validate the token's signature. The application uses the public key exposed by Azure AD that is contained in the tenant's federation metadata document. This public key, and the signing key from which it derives, is the same one used for all tenants in Azure AD.
 
-For more information on Azure AD key rollover, see [Important information about signing key rollover in Azure AD](https://docs.microsoft.com/active-directory/develop/active-directory-signing-key-rollover.md).
+For more information on Azure AD key rollover, see [Important information about signing key rollover in Azure AD](/azure/active-directory/develop/active-directory-signing-key-rollover).
 
 Between the [public-private key pair](https://login.microsoftonline.com/common/discovery/keys/):
 
@@ -317,15 +317,15 @@ What if the key rollover happens after Azure AD generates a JWT but before the J
 Because a key can be rolled over at any moment, more than one valid public key is always available in the federation metadata document. Media Services license delivery can use any of the keys specified in the document. Because one key might be rolled soon, another might be its replacement, and so forth.
 
 ### Where is the access token?
-If you look at how a web app calls an API app under [Application identity with OAuth 2.0 client credentials grant](https://docs.microsoft.com/active-directory/azuread-dev/web-api.md), the authentication flow is as follows:
+If you look at how a web app calls an API app under [Application identity with OAuth 2.0 client credentials grant](/azure/active-directory/azuread-dev/web-api), the authentication flow is as follows:
 
-* A user signs in to Azure AD in the web application. For more information, see [Web browser to web application](https://docs.microsoft.com/active-directory/azuread-dev/web-app.md).
+* A user signs in to Azure AD in the web application. For more information, see [Web browser to web application](/azure/active-directory/azuread-dev/web-app).
 * The Azure AD authorization endpoint redirects the user agent back to the client application with an authorization code. The user agent returns the authorization code to the client application's redirect URI.
 * The web application needs to acquire an access token so that it can authenticate to the web API and retrieve the desired resource. It makes a request to the Azure AD token endpoint and provides the credential, client ID, and web API's application ID URI. It presents the authorization code to prove that the user consented.
 * Azure AD authenticates the application and returns a JWT access token that's used to call the web API.
 * Over HTTPS, the web application uses the returned JWT access token to add the JWT string with a "Bearer" designation in the "Authorization" header of the request to the web API. The web API then validates the JWT. If validation is successful, it returns the desired resource.
 
-In this application identity flow, the web API trusts that the web application authenticated the user. For this reason, this pattern is called a trusted subsystem. The [authorization flow diagram](https://docs.microsoft.com/active-directory/azuread-dev/v1-protocols-oauth-code.md) describes how authorization-code-grant flow works.
+In this application identity flow, the web API trusts that the web application authenticated the user. For this reason, this pattern is called a trusted subsystem. The [authorization flow diagram](/azure/active-directory/azuread-dev/v1-protocols-oauth-code) describes how authorization-code-grant flow works.
 
 License acquisition with token restriction follows the same trusted subsystem pattern. The license delivery service in Media Services is the web API resource, or the "back-end resource" that a web application needs to access. So where is the access token?
 
@@ -335,7 +335,7 @@ To register and configure the pointer app in Azure AD, take the following steps:
 
 1. In the Azure AD tenant:
 
-   * Add an application (resource) with the sign-on URL https://[resource_name].azurewebsites.net/. 
+   * Add an application (resource) with the sign-on URL https://[resource_name].azurewebsites.net/.
    * Add an app ID with the URL https://[aad_tenant_name].onmicrosoft.com/[resource_name].
 
 2. Add a new key for the resource app.
@@ -367,7 +367,7 @@ A customer might choose to use a custom STS to provide JWTs. Reasons include:
 
 When you use a custom STS, two changes must be made:
 
-* When you configure license delivery service for an asset, you need to specify the security key used for verification by the custom STS instead of the current key from Azure AD. (More details follow.) 
+* When you configure license delivery service for an asset, you need to specify the security key used for verification by the custom STS instead of the current key from Azure AD. (More details follow.)
 * When a JTW token is generated, a security key is specified instead of the private key of the current X509 certificate in Azure AD.
 
 There are two types of security keys:
@@ -377,7 +377,7 @@ There are two types of security keys:
 
 > [!NOTE]
 > If you use .NET Framework/C# as your development platform, the X509 certificate used for an asymmetric security key must have a key length of at least 2048. This is a requirement of the class System.IdentityModel.Tokens.X509AsymmetricSecurityKey in .NET Framework. Otherwise, the following exception is thrown:
-> 
+>
 > IDX10630: The 'System.IdentityModel.Tokens.X509AsymmetricSecurityKey' for signing cannot be smaller than '2048' bits.
 
 ## The completed system and test

@@ -14,28 +14,28 @@ ms.topic: conceptual
 ms.date: 3/10/2021
 ms.author: inhenkel
 ---
-# Upload files into an Azure Media Services account from Azure StorSimple 
+# Upload files into an Azure Media Services account from Azure StorSimple
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)] 
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 >
-> 
-> Azure StorSimple Data Manager is currently in private preview. 
-> 
+>
+> Azure StorSimple Data Manager is currently in private preview.
+>
 
 ## Overview
 
 In Media Services, you upload your digital files into an asset. The Asset  can contain video, audio, images, thumbnail collections, text tracks and closed caption files (and the metadata about these files.) Once the files are uploaded, your content is stored securely in the cloud for further processing and streaming.
 
-[Azure StorSimple](https://docs.microsoft.com/storsimple/index.yml) uses cloud storage as an extension of the on-premises solution and automatically tiers data across the on-premises storage and cloud storage. The StorSimple device dedupes and compresses your data before sending it to the cloud making it very efficient for sending large files to the cloud. The [StorSimple Data Manager](https://docs.microsoft.com/storsimple/storsimple-data-manager-overview.md) service provides APIs that enable you to extract data from StorSimple and present it as AMS assets.
+[Azure StorSimple](/azure/storsimple/) uses cloud storage as an extension of the on-premises solution and automatically tiers data across the on-premises storage and cloud storage. The StorSimple device dedupes and compresses your data before sending it to the cloud making it very efficient for sending large files to the cloud. The [StorSimple Data Manager](/azure/storsimple/storsimple-data-manager-overview) service provides APIs that enable you to extract data from StorSimple and present it as AMS assets.
 
 ## Get started
 
 1. [Create a Media Services account](media-services-portal-create-account.md) into which you want to transfer the assets.
-2. Sign up for Data Manager preview, as described in the [StorSimple Data Manager](https://docs.microsoft.com/storsimple/storsimple-data-manager-overview.md) article.
+2. Sign up for Data Manager preview, as described in the [StorSimple Data Manager](/azure/storsimple/storsimple-data-manager-overview) article.
 3. Create a StorSimple Data Manager account.
-4. Create a data transformation job that when runs, extracts data from a StorSimple device and transfers it into an AMS account as assets. 
+4. Create a data transformation job that when runs, extracts data from a StorSimple device and transfers it into an AMS account as assets.
 
 	When the job starts running, a storage queue is created. This queue is populated with messages about transformed blobs as they are ready. The name of this queue is the same as the name of the job definition. You can use this queue to determine when as asset is ready and call your desired Media Services operation to run on it. For example, you can use this queue to trigger an Azure Function that has the necessary Media Services code in it.
 

@@ -23,13 +23,13 @@ Learn how to use the Azure portal to access Azure Active Directory (Azure AD) au
 
 ## Prerequisites
 
-- An Azure account. If you don't have an account, start with an [Azure free trial](https://azure.microsoft.com/pricing/free-trial/). 
+- An Azure account. If you don't have an account, start with an [Azure free trial](https://azure.microsoft.com/pricing/free-trial/).
 - A Media Services account. For more information, see [Create an Azure Media Services account by using the Azure portal](media-services-portal-create-account.md).
 
 When you use Azure AD authentication with Azure Media Services, you have two authentication options:
 
 - **Service principal authentication**. Authenticate a service. Applications that commonly use this authentication method are apps that run daemon services, middle-tier services, or scheduled jobs: web apps, function apps, logic apps, APIs, or a microservice.
-- **User authentication**. Authenticate a person who is using the app to interact with Media Services resources. The interactive application should first prompt the user for credentials. An example is a management console app used by authorized users to monitor encoding jobs or live streaming. 
+- **User authentication**. Authenticate a person who is using the app to interact with Media Services resources. The interactive application should first prompt the user for credentials. An example is a management console app used by authorized users to monitor encoding jobs or live streaming.
 
 ## Access the Media Services API
 
@@ -47,7 +47,7 @@ Authenticates a service using an Azure Active Directory (Azure AD) app and secre
 
 The **Manage your AAD app and secret** section lets you select or create a new Azure AD app and generate a secret. For security purposes, the secret cannot be shown after the blade is closed. The application uses the application ID and secret for authentication to obtain a valid token for media services.
 
-Make sure that you have sufficient permissions to register an application with your Azure AD tenant and to assign the application to a role in your Azure subscription. For more information, see [Required permissions](https://docs.microsoft.com/active-directory/develop/howto-create-service-principal-portal.md#permissions-required-for-registering-an-app).
+Make sure that you have sufficient permissions to register an application with your Azure AD tenant and to assign the application to a role in your Azure subscription. For more information, see [Required permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
 ### Connect to Media Services API
 
