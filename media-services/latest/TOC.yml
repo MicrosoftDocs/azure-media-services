@@ -694,7 +694,7 @@
   - name: SDKs
     items:
     - name: .NET
-      href: /dotnet/api/overview/azure/media-services?view=azure-dotnet
+      href: /dotnet/api/overview/azure/media-services?view=azure-dotnet&preserve-view=true
       displayName: SDK, .NET SDK, .NET, .NET reference, .NET docs, reference .NET, developer, develop, .NET library, nuget, package
     - name: Java
       href: /rest/api/media/java/api/overview/azure/mediaservices/management
