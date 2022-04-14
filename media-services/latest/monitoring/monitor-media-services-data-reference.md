@@ -10,7 +10,7 @@ ms.date: 3/16/2022
 
 # Monitoring Media Services data reference
 
-This article covers the data that is useful for monitoring Media Services. For more information about all platform metrics supported in Azure Monitor, review [Supported metrics with Azure Monitor](/azure/azure-monitor/essentials/metrics-supported.md).
+This article covers the data that is useful for monitoring Media Services. For more information about all platform metrics supported in Azure Monitor, review [Supported metrics with Azure Monitor](/azure/azure-monitor/essentials/metrics-supported).
 
 ## Metrics
 
