@@ -129,7 +129,7 @@ In addition to the advertisement support, the live back-off setting can be used 
 You can combine multiple filtering rules in a single filter. For example, you can define a "range rule" to remove slates from a live archive and also filter out available bitrates. When you're applying multiple filtering rules, the end result is the intersection of all rules.
 
 <!--![Multiple filtering rules with Dynamic Manifest][multiple-rules]-->
-:::image type="content" source="media/diagrams/media-services-multiple-rules-filters.png" alt-text="dvr filter diagram":::
+:::image type="content" source="media/diagrams/media-services-multiple-rules-filters.png" alt-text="multiple rules filter diagram":::
 
 ## Combining multiple filters (filter composition)
 
