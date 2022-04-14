@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Media Services lets you extract insights from your video and audio files using the audio and video analyzer presets. This article describes the analyzer presets used to extract insights. If you want more detailed insights from your videos, use the [Azure Video Analyzer for Media service](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-for-media-docs/video-indexer-overview). To understand when to use Video Analyzer for Media vs. Media Services analyzer presets, check out the [comparison document](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-for-media-docs/compare-video-indexer-with-media-services-presets).
+Media Services lets you extract insights from your video and audio files using the audio and video analyzer presets. This article describes the analyzer presets used to extract insights. If you want more detailed insights from your videos, use the [Azure Video Analyzer for Media service](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-indexer-overview). To understand when to use Video Analyzer for Media vs. Media Services analyzer presets, check out the [comparison document](/azure/azure-video-analyzer/video-analyzer-for-media-docs/compare-video-indexer-with-media-services-presets).
 
 There are two modes for the Audio Analyzer preset, basic and standard. See the description of the differences in the table below.
 
