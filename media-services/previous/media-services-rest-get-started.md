@@ -16,7 +16,7 @@ ms.author: inhenkel
 ---
 # Get started with delivering content on demand using REST
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)] 
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
@@ -26,7 +26,7 @@ The tutorial introduces the basic Media Services workflow and the most common pr
 
 The following image shows some of the most commonly used objects when developing VoD applications against the Media Services OData model.
 
-Click the image to view it full size.  
+Click the image to view it full size.
 
 [![Diagram showing some of the most commonly used objects in the Azure Media Services object data model for developing Video on Demand applications.](./media/media-services-rest-get-started/media-services-overview-object-model-small.png)](./media/media-services-rest-get-started/media-services-overview-object-model.png#lightbox)
 
@@ -75,7 +75,7 @@ To start the streaming endpoint, do the following:
 
 ## <a id="connect"></a>Connect to the Media Services account with REST API
 
-For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md). 
+For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 ## <a id="upload"></a>Create a new asset and upload a video file with REST API
 
@@ -132,7 +132,7 @@ X-Powered-By: ASP.NET
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Date: Sun, 18 Jan 2015 22:06:40 GMT
 
-{  
+{
     odata.metadata":"https://wamsbayclus001rest-hs.cloudapp.net/api/$metadata#Assets/@Element",
    "Id":"nb:cid:UUID:9bc8ff20-24fb-4fdb-9d7c-b04c7ee573a1",
    "State":0,
@@ -165,7 +165,7 @@ x-ms-version: 2.19
 Host: wamsbayclus001rest-hs.cloudapp.net
 Content-Length: 164
 
-{  
+{
    "IsEncrypted":"false",
    "IsPrimary":"false",
    "MimeType":"video/mp4",
@@ -191,7 +191,7 @@ X-Powered-By: ASP.NET
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Date: Mon, 19 Jan 2015 00:34:07 GMT
 
-{  
+{
    "odata.metadata":"https://wamsbayclus001rest-hs.cloudapp.net/api/$metadata#Files/@Element",
    "Id":"nb:cid:UUID:f13a0137-0a62-9d4c-b3b9-ca944b5142c5",
    "Name":"BigBuckBunny.mp4",
@@ -251,7 +251,7 @@ X-Powered-By: ASP.NET
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Date: Sun, 18 Jan 2015 22:18:06 GMT
 
-{  
+{
    "odata.metadata":"https://wamsbayclus001rest-hs.cloudapp.net/api/$metadata#AccessPolicies/@Element",
    "Id":"nb:pid:UUID:be0ac48d-af7d-4877-9d60-1805d68bffae",
    "Created":"2015-01-18T22:18:06.6370575Z",
@@ -272,9 +272,9 @@ A SAS URL has the following format:
 
 Some considerations apply:
 
-* You cannot have more than five unique Locators associated with a given Asset at one time. 
-* If you need to upload your files immediately, you should set your StartTime value to five minutes before the current time. This is because there may be clock skew between your client machine and Media Services. Also, your StartTime value must be in the following DateTime format: YYYY-MM-DDTHH:mm:ssZ (for example, "2014-05-23T17:53:50Z").    
-* There may be a 30-40 second delay after a Locator is created to when it is available for use. This issue applies to both [SAS URL](https://docs.microsoft.com/storage/common/storage-sas-overview.md) and Origin Locators.
+* You cannot have more than five unique Locators associated with a given Asset at one time.
+* If you need to upload your files immediately, you should set your StartTime value to five minutes before the current time. This is because there may be clock skew between your client machine and Media Services. Also, your StartTime value must be in the following DateTime format: YYYY-MM-DDTHH:mm:ssZ (for example, "2014-05-23T17:53:50Z").
+* There may be a 30-40 second delay after a Locator is created to when it is available for use. This issue applies to both [SAS URL](/azure/storage/common/storage-sas-overview) and Origin Locators.
 
 The following example shows how to create a SAS URL Locator, as defined by the Type property in the request body ("1" for a SAS locator and "2" for an On-Demand origin locator). The **Path** property returned contains the URL that you must use to upload your file.
 
@@ -292,7 +292,7 @@ x-ms-version: 2.19
 Host: wamsbayclus001rest-hs.cloudapp.net
 Content-Length: 178
 
-{  
+{
    "AccessPolicyId":"nb:pid:UUID:be0ac48d-af7d-4877-9d60-1805d68bffae",
    "AssetId":"nb:cid:UUID:9bc8ff20-24fb-4fdb-9d7c-b04c7ee573a1",
    "StartTime":"2015-02-18T16:45:53",
@@ -319,7 +319,7 @@ X-Powered-By: ASP.NET
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Date: Mon, 19 Jan 2015 03:01:29 GMT
 
-{  
+{
    "odata.metadata":"https://wamsbayclus001rest-hs.cloudapp.net/api/$metadata#Locators/@Element",
    "Id":"nb:lid:UUID:af57bdd8-6751-4e84-b403-f3c140444b54",
    "ExpirationDateTime":"2015-02-19T00:05:53",
@@ -335,7 +335,7 @@ Date: Mon, 19 Jan 2015 03:01:29 GMT
 ```
 
 ### Upload a file into a blob storage container
-Once you have the AccessPolicy and Locator set, the actual file is uploaded to an Azure blob storage container using the Azure Storage REST APIs. You must upload the files as block blobs. Page blobs are not supported by Azure Media Services.  
+Once you have the AccessPolicy and Locator set, the actual file is uploaded to an Azure blob storage container using the Azure Storage REST APIs. You must upload the files as block blobs. Page blobs are not supported by Azure Media Services.
 
 > [!NOTE]
 > You must add the file name for the file you want to upload to the Locator **Path** value received in the previous section. For example, `https://storagetestaccount001.blob.core.windows.net/asset-e7b02da4-5a69-40e7-a8db-e8f4f697aac0/BigBuckBunny.mp4?`.
@@ -358,7 +358,7 @@ Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 Host: wamsbayclus001rest-hs.cloudapp.net
 
-{  
+{
    "ContentFileSize":"1186540",
    "Id":"nb:cid:UUID:f13a0137-0a62-9d4c-b3b9-ca944b5142c5",
    "MimeType":"video/mp4",
@@ -463,10 +463,10 @@ X-Powered-By: ASP.NET
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Date: Mon, 19 Jan 2015 07:54:09 GMT
 
-{  
+{
    "odata.metadata":"https://wamsbayclus001rest-hs.cloudapp.net/api/$metadata#MediaProcessors",
-   "value":[  
-      {  
+   "value":[
+      {
          "Id":"nb:mpid:UUID:ff4df607-d419-42f0-bc17-a481b1331e56",
          "Description":"Media Encoder Standard",
          "Name":"Media Encoder Standard",
@@ -481,7 +481,7 @@ Date: Mon, 19 Jan 2015 07:54:09 GMT
 ### Create a job
 Each Job can have one or more Tasks depending on the type of processing that you want to accomplish. Through the REST API, you can create Jobs and their related Tasks in one of two ways: Tasks can be defined inline through the Tasks navigation property on Job entities, or through OData batch processing. The Media Services SDK uses batch processing. However, for the readability of the code examples in this article, tasks are defined inline. For information on batch processing, see [Open Data Protocol (OData) Batch Processing](https://www.odata.org/documentation/odata-version-3-0/batch-processing/).
 
-The following example shows you how to create and post a Job with one Task set to encode a video at a specific resolution and quality. The following documentation section contains the list of all the [task presets](./media-services-mes-presets-overview.md) supported by the Media Encoder Standard processor.  
+The following example shows you how to create and post a Job with one Task set to encode a video at a specific resolution and quality. The following documentation section contains the list of all the [task presets](./media-services-mes-presets-overview.md) supported by the Media Encoder Standard processor.
 
 **HTTP Request**
 
@@ -497,17 +497,17 @@ x-ms-version: 2.19
 Host: wamsbayclus001rest-hs.cloudapp.net
 Content-Length: 482
 
-{  
+{
    "Name":"NewTestJob",
-   "InputMediaAssets":[  
-      {  
-         "__metadata":{  
+   "InputMediaAssets":[
+      {
+         "__metadata":{
             "uri":"https://wamsbayclus001rest-hs.net/api/Assets('nb%3Acid%3AUUID%3A9bc8ff20-24fb-4fdb-9d7c-b04c7ee573a1')"
          }
       }
    ],
-   "Tasks":[  
-      {  
+   "Tasks":[
+      {
          "Configuration":"Adaptive Streaming",
          "MediaProcessorId":"nb:mpid:UUID:ff4df607-d419-42f0-bc17-a481b1331e56",
          "TaskBody":"<?xml version=\"1.0\" encoding=\"utf-8\"?><taskBody><inputAsset>JobInputAsset(0)</inputAsset>
@@ -536,25 +536,25 @@ X-Powered-By: ASP.NET
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Date: Mon, 19 Jan 2015 08:04:35 GMT
 
-{  
-   "d":{  
-      "__metadata":{  
+{
+   "d":{
+      "__metadata":{
          "id":"https://wamsbayclus001rest-hs.cloudapp.net/api/Jobs('nb%3Ajid%3AUUID%3A71d2dd33-efdf-ec43-8ea1-136a110bd42c')",
          "uri":"https://wamsbayclus001rest-hs.cloudapp.net/api/Jobs('nb%3Ajid%3AUUID%3A71d2dd33-efdf-ec43-8ea1-136a110bd42c')",
          "type":"Microsoft.Cloud.Media.Vod.Rest.Data.Models.Job"
       },
-      "Tasks":{  
-         "__deferred":{  
+      "Tasks":{
+         "__deferred":{
             "uri":"https://wamsbayclus001rest-hs.cloudapp.net/api/Jobs('nb%3Ajid%3AUUID%3A71d2dd33-efdf-ec43-8ea1-136a110bd42c')/Tasks"
          }
       },
-      "OutputMediaAssets":{  
-         "__deferred":{  
+      "OutputMediaAssets":{
+         "__deferred":{
             "uri":"https://wamsbayclus001rest-hs.cloudapp.net/api/Jobs('nb%3Ajid%3AUUID%3A71d2dd33-efdf-ec43-8ea1-136a110bd42c')/OutputMediaAssets"
          }
       },
-      "InputMediaAssets":{  
-         "__deferred":{  
+      "InputMediaAssets":{
+         "__deferred":{
             "uri":"https://wamsbayclus001rest-hs.cloudapp.net/api/Jobs('nb%3Ajid%3AUUID%3A9bc8ff20-24fb-4fdb-9d7c-b04c7ee573a1')/InputMediaAssets"
          }
       },
@@ -568,11 +568,11 @@ Date: Mon, 19 Jan 2015 08:04:35 GMT
       "StartTime":null,
       "State":0,
       "TemplateId":null,
-      "JobNotificationSubscriptions":{  
-         "__metadata":{  
+      "JobNotificationSubscriptions":{
+         "__metadata":{
             "type":"Collection(Microsoft.Cloud.Media.Vod.Rest.Data.Models.JobNotificationSubscription)"
          },
-         "results":[  
+         "results":[
 
          ]
       }
@@ -704,10 +704,10 @@ X-Powered-By: ASP.NET
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Date: Mon, 19 Jan 2015 08:28:13 GMT
 
-{  
+{
    "odata.metadata":"https://wamsbayclus001rest-hs.cloudapp.net/api/$metadata#Assets",
-   "value":[  
-      {  
+   "value":[
+      {
          "Id":"nb:cid:UUID:71d2dd33-efdf-ec43-8ea1-136a110bd42c",
          "State":0,
          "Created":"2015-01-19T07:52:15.603",
@@ -724,7 +724,7 @@ Date: Mon, 19 Jan 2015 08:28:13 GMT
 
 ## <a id="publish_get_urls"></a>Publish the asset and get streaming and progressive download URLs with REST API
 
-To stream or download an asset, you first need to "publish" it by creating a locator. Locators provide access to files contained in the asset. Media Services supports two types of locators: OnDemandOrigin locators, used to stream media (for example, MPEG DASH, HLS, or Smooth Streaming) and Access Signature (SAS) locators, used to download media files. 
+To stream or download an asset, you first need to "publish" it by creating a locator. Locators provide access to files contained in the asset. Media Services supports two types of locators: OnDemandOrigin locators, used to stream media (for example, MPEG DASH, HLS, or Smooth Streaming) and Access Signature (SAS) locators, used to download media files.
 
 Once you create the locators, you can build the URLs that are used to stream or download your files.
 
@@ -755,7 +755,7 @@ A SAS URL used to download files has the following format:
 {blob container name}/{asset name}/{file name}/{SAS signature}
 ```
 
-This section shows how to perform the following tasks necessary to "publish" your assets.  
+This section shows how to perform the following tasks necessary to "publish" your assets.
 
 * Creating the AccessPolicy with read permission
 * Creating a SAS URL for downloading content
@@ -822,20 +822,20 @@ X-AspNet-Version: 4.0.30319
 X-Powered-By: ASP.NET
 Date: Mon, 14 May 2012 21:41:32 GMT
 
-{  
-   "d":{  
-      "__metadata":{  
+{
+   "d":{
+      "__metadata":{
          "id":"https://wamsbayclus001rest-hs.net/api/Locators('nb%3Alid%3AUUID%3A8e5a821d-2194-4d00-8884-adf979856874')",
          "uri":"https://wamsbayclus001rest-hs.net/api/Locators('nb%3Alid%3AUUID%3A8e5a821d-2194-4d00-8884-adf979856874')",
          "type":"Microsoft.Cloud.Media.Vod.Rest.Data.Models.Locator"
       },
-      "AccessPolicy":{  
-         "__deferred":{  
+      "AccessPolicy":{
+         "__deferred":{
             "uri":"https://wamsbayclus001rest-hs.net/api/Locators('nb%3Alid%3AUUID%3A8e5a821d-2194-4d00-8884-adf979856874')/AccessPolicy"
          }
       },
-      "Asset":{  
-         "__deferred":{  
+      "Asset":{
+         "__deferred":{
             "uri":"https://wamsbayclus001rest-hs.net/api/Locators('nb%3Alid%3AUUID%3A71d2dd33-efdf-ec43-8ea1-136a110bd42c')/Asset"
          }
       },
@@ -858,14 +858,14 @@ The returned **Path** property contains the SAS URL.
 >
 
 ### Download files
-Once you have the AccessPolicy and Locator set, you can download files using the Azure Storage REST APIs.  
+Once you have the AccessPolicy and Locator set, you can download files using the Azure Storage REST APIs.
 
 > [!NOTE]
 > You must add the file name for the file you want to download to the Locator **Path** value received in the previous section. For example, `https://storagetestaccount001.blob.core.windows.net/asset-e7b02da4-5a69-40e7-a8db-e8f4f697aac0/BigBuckBunny.mp4`? . . .
 
 For more information on working with Azure storage blobs, see [Blob Service REST API](/rest/api/storageservices/blob-service-rest-api).
 
-As a result of the encoding job that you performed earlier (encoding into Adaptive MP4 set), you have multiple MP4 files that you can progressively download. For example:    
+As a result of the encoding job that you performed earlier (encoding into Adaptive MP4 set), you have multiple MP4 files that you can progressively download. For example:
 
 * `https://storagetestaccount001.blob.core.windows.net/asset-38058602-a4b8-4b33-b9f0-6880dc1490ea/BigBuckBunny_H264_650kbps_AAC_und_ch2_96kbps.mp4?sv=2012-02-12&sr=c&si=166d5154-b801-410b-a226-ee2f8eac1929&sig=P2iNZJAvAWpp%2Bj9yV6TQjoz5DIIaj7ve8ARynmEM6Xk%3D&se=2015-02-14T01:13:05Z`
 
@@ -917,20 +917,20 @@ X-AspNet-Version: 4.0.30319
 X-Powered-By: ASP.NET
 Date: Mon, 14 May 2012 21:41:39 GMT
 
-{  
-   "d":{  
-      "__metadata":{  
+{
+   "d":{
+      "__metadata":{
          "id":"https://wamsbayclus001rest-hs.net/api/Locators('nb%3Alid%3AUUID%3A52034bf6-dfae-4d83-aad3-3bd87dcb1a5d')",
          "uri":"https://wamsbayclus001rest-hs.net/api/Locators('nb%3Alid%3AUUID%3A52034bf6-dfae-4d83-aad3-3bd87dcb1a5d')",
          "type":"Microsoft.Cloud.Media.Vod.Rest.Data.Models.Locator"
       },
-      "AccessPolicy":{  
-         "__deferred":{  
+      "AccessPolicy":{
+         "__deferred":{
             "uri":"https://wamsbayclus001rest-hs.net/api/Locators('nb%3Alid%3AUUID%3A52034bf6-dfae-4d83-aad3-3bd87dcb1a5d')/AccessPolicy"
          }
       },
-      "Asset":{  
-         "__deferred":{  
+      "Asset":{
+         "__deferred":{
             "uri":"https://wamsbayclus001rest-hs.net/api/Locators('nb%3Alid%3AUUID%3A52034bf6-dfae-4d83-aad3-3bd87dcb1a5d')/Asset"
          }
       },

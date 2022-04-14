@@ -22,13 +22,13 @@ ms.custom: devx-track-csharp
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
-When you run encoding jobs, you often require a way to track job progress. You can configure Media Services to deliver notifications to [Azure Queue storage](https://docs.microsoft.com/storage/queues/storage-dotnet-how-to-use-queues.md). You can monitor job progress by getting notifications from the Queue storage. 
+When you run encoding jobs, you often require a way to track job progress. You can configure Media Services to deliver notifications to [Azure Queue storage](/azure/storage/queues/storage-dotnet-how-to-use-queues). You can monitor job progress by getting notifications from the Queue storage.
 
 Messages delivered to Queue storage can be accessed from anywhere in the world. The Queue storage messaging architecture is reliable and highly scalable. Polling Queue storage for messages is recommended over using other methods.
 
 One common scenario for listening to Media Services notifications is if you are developing a content management system that needs to perform some additional task after an encoding job completes (for example, to trigger the next step in a workflow, or to publish content).
 
-This article shows how to get notification messages from Queue storage.  
+This article shows how to get notification messages from Queue storage.
 
 ## Considerations
 Consider the following when developing Media Services applications that use Queue storage:
@@ -36,7 +36,7 @@ Consider the following when developing Media Services applications that use Queu
 * Queue storage does not provide a guarantee of first-in-first-out (FIFO) ordered delivery. For more information, see [Azure Queues and Azure Service Bus Queues Compared and Contrasted](/previous-versions/azure/hh767287(v=azure.100)).
 * Queue storage is not a push service. You have to poll the queue.
 * You can have any number of queues. For more information, see [Queue Service REST API](/rest/api/storageservices/queue-service-rest-api).
-* Queue storage has some limitations and specifics to be aware of. These are described in [Azure Queues and Azure Service Bus Queues Compared and Contrasted](https://docs.microsoft.com/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted.md).
+* Queue storage has some limitations and specifics to be aware of. These are described in [Azure Queues and Azure Service Bus Queues Compared and Contrasted](/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted).
 
 ## .NET code example
 
@@ -66,7 +66,7 @@ The code example in this section does the following:
 
 ### Create and configure a Visual Studio project
 
-1. Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+1. Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 2. Create a new folder (folder can be anywhere on your local drive) and copy a .mp4 file that you want to encode and stream or progressively download. In this example, the "C:\Media" path is used.
 3. Add a reference to the **System.Runtime.Serialization** library.
 
@@ -133,7 +133,7 @@ namespace JobNotification
         private static readonly string _AMSClientSecret =
             ConfigurationManager.AppSettings["AMSClientSecret"];
 
-        private static readonly string _StorageConnectionString = 
+        private static readonly string _StorageConnectionString =
             ConfigurationManager.AppSettings["StorageConnectionString"];
 
         private static CloudMediaContext _context = null;
@@ -149,7 +149,7 @@ namespace JobNotification
             string queueName = "queueName";
 
             // Create the context.
-            AzureAdTokenCredentials tokenCredentials = 
+            AzureAdTokenCredentials tokenCredentials =
                 new AzureAdTokenCredentials(_AADTenantDomain,
                     new AzureAdClientSymmetricKey(_AMSClientId, _AMSClientSecret),
                     AzureEnvironments.AzureCloudEnvironment);
@@ -157,7 +157,7 @@ namespace JobNotification
             var tokenProvider = new AzureAdTokenProvider(tokenCredentials);
 
             _context = new CloudMediaContext(new Uri(_RESTAPIEndpoint), tokenProvider);
-            
+
             // Create the queue that will be receiving the notification messages.
             _queue = CreateQueue(_StorageConnectionString, queueName);
 
@@ -217,7 +217,7 @@ namespace JobNotification
             task.OutputAssets.AddNew("Output asset",
                 AssetCreationOptions.None);
 
-            // Add a notification point to the job. You can add multiple notification points.  
+            // Add a notification point to the job. You can add multiple notification points.
             job.JobNotificationSubscriptions.AddNew(NotificationJobState.FinalStatesOnly,
                 _notificationEndPoint);
 

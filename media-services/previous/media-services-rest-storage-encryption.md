@@ -27,24 +27,24 @@ This article gives an overview of AMS storage encryption and shows you how to up
 
 * Create a content key.
 * Create an Asset. Set the AssetCreationOption to StorageEncryption when creating the Asset.
-  
+
      Encrypted assets are associated with content keys.
-* Link the content key to the asset.  
+* Link the content key to the asset.
 * Set the encryption-related parameters on the AssetFile entities.
 
-## Considerations 
+## Considerations
 
 If you want to deliver a storage encrypted asset, you must configure the asset’s delivery policy. Before your asset can be streamed, the streaming server removes the storage encryption and streams your content using the specified delivery policy. For more information, see [Configuring Asset Delivery Policies](media-services-rest-configure-asset-delivery-policy.md).
 
-When accessing entities in Media Services, you must set specific header fields and values in your HTTP requests. For more information, see [Setup for Media Services REST API Development](media-services-rest-how-to-use.md). 
+When accessing entities in Media Services, you must set specific header fields and values in your HTTP requests. For more information, see [Setup for Media Services REST API Development](media-services-rest-how-to-use.md).
 
 ### Storage side encryption
 
 |Encryption option|Description|Media Services v2|Media Services v3|
 |---|---|---|---|
 |Media Services Storage Encryption|AES-256 encryption, key managed by Media Services|Supported<sup>(1)</sup>|Not supported<sup>(2)</sup>|
-|[Storage Service Encryption for Data at Rest](https://docs.microsoft.com/storage/common/storage-service-encryption.md)|Server-side encryption offered by Azure Storage, key managed by Azure or by customer|Supported|Supported|
-|[Storage Client-Side Encryption](https://docs.microsoft.com/storage/common/storage-client-side-encryption.md)|Client-side encryption offered by Azure storage, key managed by customer in Key Vault|Not supported|Not supported|
+|[Storage Service Encryption for Data at Rest](/azure/storage/common/storage-service-encryption)|Server-side encryption offered by Azure Storage, key managed by Azure or by customer|Supported|Supported|
+|[Storage Client-Side Encryption](/azure/storage/common/storage-client-side-encryption)|Client-side encryption offered by Azure storage, key managed by customer in Key Vault|Not supported|Not supported|
 
 <sup>1</sup> While Media Services does support handling of content in the clear/without any form of encryption, doing so is not recommended.
 
@@ -52,7 +52,7 @@ When accessing entities in Media Services, you must set specific header fields a
 
 ## Connect to Media Services
 
-For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md). 
+For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 ## Storage encryption overview
 The AMS storage encryption applies **AES-CTR** mode encryption to the entire file.  AES-CTR mode is a block cipher that can encrypt arbitrary length data without need for padding. It operates by encrypting a counter block with the AES algorithm and then XOR-ing the output of AES with the data to encrypt or decrypt.  The counter block used is constructed by copying the value of the InitializationVector to bytes 0 to 7 of the counter value and bytes 8 to 15 of the counter value are set to zero. Of the 16-byte counter block, bytes 8 to 15 (that is, the least significant bytes) are used as a simple 64-bit unsigned integer that is incremented by one for each subsequent block of data processed and is kept in network byte order. If this integer reaches the maximum value (0xFFFFFFFFFFFFFFFF), then incrementing it resets the block counter to zero (bytes 8 to 15) without affecting the other 64 bits of the counter (that is, bytes 0 to 7).   In order to maintain the security of the AES-CTR mode encryption, the InitializationVector value for a given Key Identifier for each content key shall be unique for each file and files shall be less than 2^64 blocks in length.  This unique value is to ensure that a counter value is never reused with a given key. For more information about the CTR mode, see [this wiki page](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#CTR) (the wiki article uses the term "Nonce" instead of "InitializationVector").
@@ -64,14 +64,14 @@ In order to deliver a storage encrypted asset, you must configure the asset’s 
 ## Create ContentKeys used for encryption
 Encrypted assets are associated with Storage Encryption keys. Create the content key to be used for encryption before creating the asset files. This section describes how to create a content key.
 
-The following are general steps for generating content keys that you associate with assets that you want to be encrypted. 
+The following are general steps for generating content keys that you associate with assets that you want to be encrypted.
 
-1. For storage encryption, randomly generate a 32-byte AES key. 
-   
-    The 32-byte AES Key is the content key for your asset, which means all files associated with that asset need to use the same content key during decryption. 
+1. For storage encryption, randomly generate a 32-byte AES key.
+
+    The 32-byte AES Key is the content key for your asset, which means all files associated with that asset need to use the same content key during decryption.
 2. Call the [GetProtectionKeyId](/rest/api/media/operations/rest-api-functions#getprotectionkeyid) and [GetProtectionKey](/rest/api/media/operations/rest-api-functions#getprotectionkey) methods to get the correct X.509 Certificate that must be used to encrypt your content key.
-3. Encrypt your content key with the public key of the X.509 Certificate. 
-   
+3. Encrypt your content key with the public key of the X.509 Certificate.
+
    Media Services .NET SDK uses RSA with OAEP when doing the encryption.  You can see a .NET example in the [EncryptSymmetricKeyData function](https://github.com/Azure/azure-sdk-for-media-services/blob/dev/src/net/Client/Common/Common.FileEncryption/EncryptionUtils.cs).
 4. Create a checksum value calculated using the key identifier and content key. The following .NET example calculates the checksum using the GUID part of the key identifier and the clear content key.
 
@@ -163,7 +163,7 @@ MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
 User-Agent: Microsoft ADO.NET Data Services
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: 78d1247a-58d7-40e5-96cc-70ff0dfa7382
 Host: media.windows.net
@@ -193,9 +193,9 @@ Date: Thu, 05 Feb 2015 07:52:30 GMT
 ### Create the content key
 After you have retrieved the X.509 certificate and used its public key to encrypt your content key, create a **ContentKey** entity and set its property values accordingly.
 
-One of the values that you must set when create the content key is the type. When using storage encryption, the value should be set to '1'. 
+One of the values that you must set when create the content key is the type. When using storage encryption, the value should be set to '1'.
 
-The following example shows how to create a **ContentKey** with a **ContentKeyType** set for storage encryption ("1") and the **ProtectionKeyType** set to "0" to indicate that the protection key ID is the X.509 certificate thumbprint.  
+The following example shows how to create a **ContentKey** with a **ContentKeyType** set for storage encryption ("1") and the **ProtectionKeyType** set to "0" to indicate that the protection key ID is the X.509 certificate thumbprint.
 
 Request
 
@@ -212,8 +212,8 @@ x-ms-version: 2.19
 Host: media.windows.net
 {
 "Name":"ContentKey",
-"ProtectionKeyId":"7D9BB04D9D0A4A24800CADBFEF232689E048F69C", 
-"ContentKeyType":"1", 
+"ProtectionKeyId":"7D9BB04D9D0A4A24800CADBFEF232689E048F69C",
+"ContentKeyType":"1",
 "ProtectionKeyType":"0",
 "EncryptedContentKey":"your encrypted content key",
 "Checksum":"calculated checksum"
@@ -285,7 +285,7 @@ X-Content-Type-Options: nosniff
 DataServiceVersion: 3.0;
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Date: Sun, 18 Jan 2015 22:06:40 GMT
-{  
+{
    "odata.metadata":"https://wamsbayclus001rest-hs.cloudapp.net/api/$metadata#Assets/@Element",
    "Id":"nb:cid:UUID:9bc8ff20-24fb-4fdb-9d7c-b04c7ee573a1",
    "State":0,
@@ -321,7 +321,7 @@ Host: media.windows.net
 Response:
 
 ```console
-HTTP/1.1 204 No Content 
+HTTP/1.1 204 No Content
 ```
 
 ## Create an AssetFile
@@ -329,7 +329,7 @@ The [AssetFile](/rest/api/media/operations/assetfile) entity represents a video 
 
 The **AssetFile** instance and the actual media file are two distinct objects. The AssetFile instance contains metadata about the media file, while the media file contains the actual media content.
 
-After you upload your digital media file into a blob container, you will use the **MERGE** HTTP request to update the AssetFile with information about your media file (not shown in this article). 
+After you upload your digital media file into a blob container, you will use the **MERGE** HTTP request to update the AssetFile with information about your media file (not shown in this article).
 
 **HTTP Request**
 
@@ -345,10 +345,10 @@ x-ms-version: 2.19
 Host: media.windows.net
 Content-Length: 164
 
-{  
+{
    "IsEncrypted":"true",
-   "EncryptionScheme" : "StorageEncryption", 
-   "EncryptionVersion" : "1.0",       
+   "EncryptionScheme" : "StorageEncryption",
+   "EncryptionVersion" : "1.0",
    "EncryptionKeyId" : "nb:kid:UUID:32e6efaf-5fba-4538-b115-9d1cefe43510",
    "InitializationVector" : "397304628502661816</d:InitializationVector",
    "Options":0,
@@ -376,7 +376,7 @@ X-Powered-By: ASP.NET
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Date: Mon, 19 Jan 2015 00:34:07 GMT
 
-{  
+{
    "odata.metadata":"https://wamsbayclus001rest-hs.cloudapp.net/api/$metadata#Files/@Element",
    "Id":"nb:cid:UUID:f13a0137-0a62-9d4c-b3b9-ca944b5142c5",
    "Name":"BigBuckBunny.mp4",
