@@ -40,6 +40,6 @@ Try these tutorials to get some hands-on experience with using a Managed Identit
 
 ## Further reading
 
-To learn more about what managed identities can do for you and your Azure applications, see [Azure AD Managed Identities](https://docs.microsoft.com/active-directory/managed-identities-azure-resources/overview.md).
+To learn more about what managed identities can do for you and your Azure applications, see [Azure AD Managed Identities](/azure/active-directory/managed-identities-azure-resources/overview).
 
-To learn more about Azure Functions, see [About Azure Functions](https://docs.microsoft.com/azure-functions/functions-overview.md)
+To learn more about Azure Functions, see [About Azure Functions](/azure/azure-functions/functions-overview)

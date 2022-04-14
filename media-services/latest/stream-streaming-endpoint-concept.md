@@ -10,7 +10,7 @@ ms.author: inhenkel
 
 # Streaming Endpoints (Origin) in Azure Media Services
 
-In Microsoft Azure Media Services, a [Streaming Endpoint](/rest/api/media/streamingendpoints) represents a dynamic (just-in-time) packaging and origin service that can deliver your live and on-demand content directly to a client player app, using one of the common streaming media protocols (HLS or DASH). The **Streaming Endpoint** also provides dynamic (just-in-time) encryption to industry-leading DRMs. 
+In Microsoft Azure Media Services, a [Streaming Endpoint](/rest/api/media/streamingendpoints) represents a dynamic (just-in-time) packaging and origin service that can deliver your live and on-demand content directly to a client player app, using one of the common streaming media protocols (HLS or DASH). The **Streaming Endpoint** also provides dynamic (just-in-time) encryption to industry-leading DRMs.
 
 When you create a Media Services account, a **default** streaming endpoint is created for you in a stopped state. You can create more streaming endpoints can be created under the account (see [Quotas and limits](limits-quotas-constraints-reference.md)).
 
@@ -22,7 +22,7 @@ Make sure to also review the article [Dynamic packaging](encode-dynamic-packagin
 
 ## Naming convention
 
-The host name format of the streaming URL is `{servicename}-{accountname}-{regionname}.streaming.media.azure.net`, where 
+The host name format of the streaming URL is `{servicename}-{accountname}-{regionname}.streaming.media.azure.net`, where
 `servicename` = the streaming endpoint name or the live event name.
 
 When using the default streaming endpoint, `servicename` is omitted so the URL is: `{accountname}-{regionname}.streaming.azure.net`.
@@ -41,7 +41,7 @@ The maximum streaming unit limit is usually 10. Contact [Azure support](https://
 The following table describes the Premium and Standard streaming endpoint types.
 
 |Type|Scale units|Description|
-|--------|--------|--------|  
+|--------|--------|--------|
 |**Standard**|0|The default streaming endpoint is a **Standard** type. You can change it to the Premium type by adjusting the `scaleUnits`.|
 |**Premium**|> 0|**Premium** streaming endpoints are suitable for advanced workloads and providing dedicated and scalable bandwidth capacity. You can move to a **Premium** type by adjusting the `scaleUnits` (streaming units). The `scaleUnits` provides a dedicated egress capacity that you can purchase in increments of 200 Mbps. When using the **Premium** type, each enabled unit provides an additional bandwidth capacity to the app. |
 
@@ -100,7 +100,7 @@ This section discusses some of the properties of streaming endpoints. For exampl
 * `accessControl` - Configures the following security settings for this streaming endpoint: Akamai Signature Header Authentication keys and IP addresses that are allowed to connect to this endpoint. This property can only be set when `cdnEnabled` is set to false.
 
 - `cdnEnabled` - Indicates if the Azure CDN integration for this streaming endpoint is enabled (disabled by default). If you set `cdnEnabled` to true, the following configurations get disabled: `customHostNames` and `accessControl`.
-    
+
     Not all data centers support the Azure CDN integration. To check if your data center has the Azure CDN integration available, do the following steps:
 
     - Try to set the `cdnEnabled` to true.
@@ -119,12 +119,12 @@ This section discusses some of the properties of streaming endpoints. For exampl
     * The ownership of the domain name must be confirmed by Media Services. Media Services verifies the domain name ownership with the help of the `CName` record that contains the Media Services account ID as a component to be added to the domain in use. For example, if you use "sports.contoso.com" as a custom host name for the streaming endpoint, configure a record for `<accountId>.contoso.com` to point to one of Media Services verification host names. The verification host name is composed of `verifydns.<mediaservices-dns-zone>`.
 
       Following are the expected DNS zones to be used in the verify record for different Azure regions.
-  
+
       - North America, Europe, Singapore, Hong Kong SAR, and Japan:
 
         - `media.azure.net`
         - `verifydns.media.azure.net`
-    
+
       - China:
 
         - `mediaservices.chinacloudapi.cn`
@@ -160,22 +160,22 @@ A single streaming endpoint can stream both live and on-demand videos and most c
 
 * Each reserved unit allows for 200 Mbps of bandwidth. If you need more than 2,000 Mbps (2 Gbps) of bandwidth, use the second streaming endpoint and load balance that provides an additional bandwidth.
 
-  CDN is the best way to achieve the scale out for streaming content. However, if you are delivering so much content that the CDN is pulling more than 2 Gbps, you can add additional streaming endpoints (origins). In this case, you would need to hand out content URLs that are balanced across the two streaming endpoints. This approach gives better caching than trying to send requests to each origin randomly (for example, via a traffic manager). 
-    
+  CDN is the best way to achieve the scale out for streaming content. However, if you are delivering so much content that the CDN is pulling more than 2 Gbps, you can add additional streaming endpoints (origins). In this case, you would need to hand out content URLs that are balanced across the two streaming endpoints. This approach gives better caching than trying to send requests to each origin randomly (for example, via a traffic manager).
+
   > [!TIP]
   > Usually, when the CDN is pulling more than 2 Gbps, then something might be misconfigured (for example, no origin shielding).
-    
-* Load balancing different CDN providers - For example, you could set up the default streaming endpoint to use the Verizon CDN and create a second one to use Akamai. Now, add load balancing between the two endpoints to achieve multi-CDN balancing. 
+
+* Load balancing different CDN providers - For example, you could set up the default streaming endpoint to use the Verizon CDN and create a second one to use Akamai. Now, add load balancing between the two endpoints to achieve multi-CDN balancing.
 
     However, the customer often does load balancing across multiple CDN providers using a single origin.
 
 * Streaming mixed content - Live streaming and video on-demand. The access patterns for live and on-demand content are different. The live content tends to get a lot of demand for the same content all at once. The video on-demand content (for example, a long tail archive content) has low usage on the same content. Thus, caching works very well on the live content but not as well on the long tail content.
 
     Consider a scenario in which your customers are mainly watching live content but are only occasionally watching on-demand content and it is served from the same streaming endpoint. The low usage of on-demand content would occupy cache space that would be better saved for the live content. In this scenario, we would recommend serving the live content from one streaming endpoint and the long tail content from another streaming endpoint. This will improve the performance of the live event content.
-    
+
 ## Scaling streaming with CDN
 
 See the following articles:
 
-- [CDN overview](https://docs.microsoft.com/cdn/cdn-overview.md)
+- [CDN overview](/azure/cdn/cdn-overview)
 - [Scaling streaming with CDN](stream-scale-streaming-cdn-concept.md)

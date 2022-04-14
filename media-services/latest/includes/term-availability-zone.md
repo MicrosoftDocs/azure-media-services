@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Availability zone
 ---
 
-**Availability zone** - Azure availability zones are physically separate locations within each Azure region that are tolerant to local failures. See [Regions and availability zones](https://docs.microsoft.com/azure/availability-zones/az-overview) for more information.
+**Availability zone** - Azure availability zones are physically separate locations within each Azure region that are tolerant to local failures. See [Regions and availability zones](/azure/availability-zones/az-overview) for more information.

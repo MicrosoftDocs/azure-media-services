@@ -59,4 +59,4 @@ with open(source_file, "rb") as data:
 
 ---
 <!-- add these to the tabs when available -->
-For other methods see the [Azure Storage documentation](https://docs.microsoft.com/storage/blobs/index.yml) for working with blobs in [.NET](https://docs.microsoft.com/storage/blobs/storage-quickstart-blobs-dotnet.md), [Java](https://docs.microsoft.com/storage/blobs/storage-quickstart-blobs-java.md), [Python](https://docs.microsoft.com/storage/blobs/storage-quickstart-blobs-python.md), and [JavaScript (Node.js)](https://docs.microsoft.com/storage/blobs/storage-quickstart-blobs-nodejs.md).
+For other methods see the [Azure Storage documentation](/azure/storage/blobs/) for working with blobs in [.NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet), [Java](/azure/storage/blobs/storage-quickstart-blobs-java), [Python](/azure/storage/blobs/storage-quickstart-blobs-python), and [JavaScript (Node.js)](/azure/storage/blobs/storage-quickstart-blobs-nodejs).

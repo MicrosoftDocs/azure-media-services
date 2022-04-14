@@ -19,12 +19,12 @@ To start encrypting, encoding, analyzing, managing, and streaming media content 
 
 If you aren't familiar with the Azure Managed Identity platform, take some time to understand the platform and the differences between identity types.  A Media Services account default managed identity type is a user-managed identity.
 
-- Read about the [Microsoft identity platform](https://docs.microsoft.com/active-directory/develop/app-objects-and-service-principals.md). 
-- Read about [managed identities for Azure resources](https://docs.microsoft.com/active-directory/managed-identities-azure-resources/overview.md).
-- You might also want to take a few moments to read about [applications and service principals](https://docs.microsoft.com/active-directory/develop/app-objects-and-service-principals.md).
+- Read about the [Microsoft identity platform](/azure/active-directory/develop/app-objects-and-service-principals).
+- Read about [managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview).
+- You might also want to take a few moments to read about [applications and service principals](/azure/active-directory/develop/app-objects-and-service-principals).
 
 ## Create an account
- 
+
 You can use either the Azure portal or the CLI to create a Media Services account. Choose the tab for the method you would like to use.
 
 <!-- NOTE: The following are in the includes folder and are reused in other How To articles. All task based content should be in the includes folder with the task- prefix prepended to the file name. -->

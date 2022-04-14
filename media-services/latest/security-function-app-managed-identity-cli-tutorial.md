@@ -33,7 +33,7 @@ Use this command to set the subscription that you want to work with.
 ## Prerequisites
 
 > [!IMPORTANT]
-> You are strongly encouraged to work through the [Create a C# function in Azure from the command line quickstart](https://docs.microsoft.com/azure-functions/create-first-function-cli-csharp.md) before attempting this tutorial.  That is because the set up steps included there are the same steps needed here.  It will also give you a chance to work with a simple example on which this tutorial is based.
+> You are strongly encouraged to work through the [Create a C# function in Azure from the command line quickstart](/azure/azure-functions/create-first-function-cli-csharp) before attempting this tutorial.  That is because the set up steps included there are the same steps needed here.  It will also give you a chance to work with a simple example on which this tutorial is based.
 
 ## Resource names
 
