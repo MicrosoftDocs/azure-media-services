@@ -26,6 +26,8 @@ To stay up to date with the most recent developments, this article provides you 
 The .NET SDK version 6.0.0 is now available on Nuget.
 [Microsoft.Azure.Management.Media](https://www.nuget.org/packages/Microsoft.Azure.Management.Media)
 
+This SDK supports the new [2021-11-01 stable](https://github.com/Azure/azure-rest-api-specs/blob/fb31972c13cf183c43414d2b4736a5d70aa8af68/specification/mediaservices/resource-manager/Microsoft.Media/stable/2021-11-01/) version of the AMS REST OpenAPI specification.
+
 To install using the Package Manager:
 
 ```
@@ -48,8 +50,17 @@ Changes in the 6.0.0 SDK include:
 
 ### New Docs content: Stream a Microsoft Teams Meeting
 
-It's easy to stream a Microsoft Teams meeting with a Media Services live event. See [Stream a Microsoft Teams Meeting](stream-with-teams-how-to.md).
+It's easy to relay your meeting broadcast from Microsoft Teams with a Media Services live event. Easily place your live Teams meeting on a public website, or use DRM to protect your stream. Capture and record the stream as a VOD asset for use with the Media Services encoding platform.  See [Stream a Microsoft Teams Meeting](stream-with-teams-how-to.md).
 
+### Late-bind captions and subtitle tracks on assets with the new Tracks API
+
+A new tracks API on assets allows you to list available tracks inside of an asset.  This allows you to discover the available audio, video, and text tracks stored in an asset. 
+The tracks API allows you to late-bind caption and subtitle files in IMSC1 text profile and WebVTT format to your streaming assets.  In the past, customers needed to modify the .ism file in the blob storage account to add new late-bound tracks to their assets. This replaces that manual task and provides a supported SDK route to enable the addition of late-bound subtitle and caption files. 
+
+For technical details on the new track API, see the [2021-11-01 version of the AMS REST OpenAPI specification here](https://github.com/Azure/azure-rest-api-specs/blob/fb31972c13cf183c43414d2b4736a5d70aa8af68/specification/mediaservices/resource-manager/Microsoft.Media/stable/2021-11-01/AssetsAndAssetFilters.json#L1427).
+
+A basic list tracks sample is provide in Javascript [each](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts)
+Additional samples and documentation will be provided for each SDK soon. 
 
 ## December 2021
 
