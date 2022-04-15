@@ -724,7 +724,16 @@
             "source_path_from_root": "/media-services/latest/monitoring/face-redaction-event-based-python-quickstart.md",
             "redirect_url": "/azure/media-services/latest/samples-overview?tabs=python",
             "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/video-indexer/connect-to-azure.md",
+            "redirect_url": "/azure/cognitive-services/video-indexer/connect-to-azure",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/video-indexer/manage-account-connected-to-azure.md",
+            "redirect_url": "/azure/cognitive-services/video-indexer/manage-account-connected-to-azure",
+            "redirect_document_id": false
           }
-
     ]
 }
