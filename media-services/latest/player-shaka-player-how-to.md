@@ -4,7 +4,7 @@ description: This article explains how to use the Shaka player with Azure Media 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 4/15/2022
 ms.author: inhenkel
 ---
 
@@ -16,9 +16,7 @@ ms.author: inhenkel
 
 Shaka Player is an open-source JavaScript library for adaptive media. It plays adaptive media formats (such as DASH and HLS) in a browser, without using plugins or Flash. Instead, the Shaka Player uses the open web standards Media Source Extensions and Encrypted Media Extensions.
 
-We recommend using [Mux.js](https://github.com/videojs/mux.js/) as, without it, the Shaka player would support HLS CMAF format, but not HLS TS.
-
-Its official documentation can be found at [Shaka player documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html).
+Official documentation can be found at [Shaka player documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html).
 
 ## Sample code
 
@@ -28,13 +26,12 @@ Sample code for this article is available at [Azure-Samples/media-services-3rdpa
 
 Follow these instructions if you need to implement your own instance of the player:
 
-1. Create an `index.html` file where you'll host the player. Add the following lines of code (you can replace the versions for newer if applicable):
+1. Create an `index.html` file where you'll host the player. You should check to [confirm that the latest version of the CDN hosted Shaka player](https://www.jsdelivr.com/package/npm/shaka-player) is being used or compile your own version from the Github repo (as of this publishing we are using version 3.3.2). Add the following lines of code (you can replace the versions for newer if applicable):
 
     ```html
     <html>
       <head>
-        <script src="//cdn.jsdelivr.net/npm/shaka-player@3.0.1/dist/shaka-player.compiled.js"></script>
-        <script src="//cdn.jsdelivr.net/npm/mux.js@5.6.3/dist/mux.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/shaka-player@3.3.2/dist/shaka-player.compiled.min.js"></script>
         <script type="module" src="index.js"></script>
       </head>
       <body>
@@ -53,13 +50,13 @@ Follow these instructions if you need to implement your own instance of the play
     var player = new shaka.Player(video);
     window.player = player;
 
-    var manifestUrl = 'https://amsplayeraccount-usw22.streaming.media.azure.net/00000000-0000-0000-0000-000000000000/sample-vod.ism/manifest(format=m3u8-aapl)';
+    var manifestUrl = '//amssamples.streaming.mediaservices.windows.net/55034fb3-11af-43e4-a4de-d1b3ca56c5aa/ElephantsDream_MultiAudio.ism/manifest(format=m3u8-cmaf)';    
+
     player.load(manifestUrl);
     ```
 
-1. Replace `manifestUrl` with the HLS or DASH URL from the streaming locator of your asset, which can be found on the streaming locator page in the Azure portal.
-    ![streaming locator URLs](media/player-shaka-player-how-to/streaming-urls.png)
-
+1. Replace `manifestUrl` with the HLS CMAF or DASH CMAF URL from the streaming locator of your asset, which can be found on the streaming locator page in the Azure portal. For HLS, use the **format=m3u8-cmaf** manifest.
+   
 1. Run a server (for example with `npm http-server`) and your player should be working...
 
 ## Set up captions
@@ -99,9 +96,10 @@ player.getNetworkingEngine().registerRequestFilter(function (type, request) {
 
 ## Set up AES-128 encryption
 
-Shaka Player doesn't currently support AES-128 encryption.
+Shaka Player doesn't currently support the format of AES-128 encryption that is delivered by Azure Media Services. 
+Check back on updates as there is ongoing work to support the Common Encryption Clear-key format with both CTR and CBC encryption modes to allow for playback of AES-128 ClearKey content in the Shaka player. 
 
-A link to a GitHub [issue](https://github.com/google/shaka-player/issues/850) to follow the status of this feature.
+A link to a GitHub [issue](https://github.com/google/shaka-player/issues/850) to follow the status of this feature.  It is currently closed as resolved, but work is ongoing to support this format in the future on both Media Services and Shaka player. 
 
 ## Set up DRM protection
 
