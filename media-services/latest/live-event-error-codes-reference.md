@@ -96,9 +96,6 @@ event.
 >|**MPE_CLIENT_TERMINATED_SESSION** ||Yes|
 >| Description|The encoder disconnected the session.  ||
 >|Suggested solution|This is not error. The encoder initiated disconnection, including graceful disconnection. If this is an unexpected disconnect, check the encoder logs. |
->|**MPE_INGEST_BITRATE_NOT_MATCH** ||No|
->| Description|The incoming data rate does not match with expected bitrate. ||
->|Suggested solution|This is a warning which happens when incoming data rate is too slow or fast. Check encoder log or system log.||
 >|**MPE_INGEST_DISCONTINUITY** ||No|
 >| Description| There is discontinuty in incoming data.||
 >|Suggested solution| This is a warning that the encoder drops data due to a network issue or a system resource issue. Check the encoder log or system log. Monitor the system resource (CPU, memory or network) as well. If the system CPU is too high, try to lower the bitrate or use the H/W encoder option from the system graphics card.||
