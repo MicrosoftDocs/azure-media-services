@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot issues with analyzing media files with Media Services
-description: Find the causes and solutions for problems with analyzing media files with Media Services.
+title: Troubleshoot issues with Media Services account management
+description: Find the causes and solutions for problems with Media Services account management.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: troubleshooting
@@ -9,7 +9,7 @@ ms.author: inhenkel
 ---
 # Troubleshoot issues Media Services account management
 
-Find the causes and solutions for problems with analyzing media files with Media Services.
+Find the causes and solutions for problems with Media Services account management.
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
