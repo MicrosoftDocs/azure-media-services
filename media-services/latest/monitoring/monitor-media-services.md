@@ -61,7 +61,7 @@ Metrics available for Media Services are:
 
 For more information on what metric dimensions are, see [Multi-dimensional metrics](/azure/azure-monitor/essentials/data-platform-metrics#multi-dimensional-metrics).
 
-Media services has the following metric dimensions.  They are self-explantory based on the metrics they support.  See the [metrics links](#metrics) above for more information.
+Media services has the following metric dimensions.  They are self-explantory based on the metrics they support.
 
 - OutputFormat
 - HttpStatusCode
@@ -79,11 +79,7 @@ Data in Azure Monitor Logs is stored in tables where each table has its own set 
 
 All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](/azure/azure-monitor/essentials/resource-logs-schema#top-level-common-schema).
 
-The schema for Media Services resource logs is found in [Monitoring Media Services Data Reference](monitor-media-services-data-reference.md).
-
 The [Activity log](/azure/azure-monitor/essentials/activity-log) is a platform log in Azure that provides insight into subscription-level events. You can view it independently or route it to Azure Monitor Logs, where you can do much more complex queries using Log Analytics.
-
-For a list of the types of resource logs collected for Media Services, see [Monitoring Media Services data reference](monitor-media-services-data-reference.md).
 
 ## Resource logs
 

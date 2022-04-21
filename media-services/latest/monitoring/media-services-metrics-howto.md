@@ -19,7 +19,7 @@ Azure Monitor provides several ways to interact with metrics, including charting
 ## Prerequisites
 
 - [Create a Media Services account](../account-create-how-to.md)
-- Review  [Monitor Media Services metrics and diagnostic logs](monitor-media-services-data-reference.md)
+- Review  [Monitor Media Services](monitor-media-services.md)
 
 ## View metrics in Azure portal
 
@@ -33,7 +33,7 @@ Azure Monitor provides several ways to interact with metrics, including charting
     - &lt;Media Services account name&gt;/&lt;streaming endpoint name&gt;
     - &lt;storage account name&gt;
 
-    Filter then select the resource and press **Apply**. For details about supported resources and metrics, see [Monitor Media Services metrics](monitor-media-services-data-reference.md).
+    Filter then select the resource and press **Apply**.
 
     > [!NOTE]
     > To switch between resources you want to monitor, click on the **Source** box again and repeat this step.

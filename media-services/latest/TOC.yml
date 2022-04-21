@@ -268,13 +268,8 @@
   - name: Monitoring
     items:
       - name: Monitor with Azure Monitor
-        items:
-        - name: Monitor Media Services
-          href: ./monitoring/monitor-media-services.md
-          displayName: Monitor, Azure monitor, monitoring, metrics, telemetry, Troubleshooting, logging, events, support, debug, debugging, charts, graphs, logs
-        - name: Monitoring Media Services data reference
-          href: ./monitoring/monitor-media-services-data-reference.md
-          displayName: Monitor, Azure monitor, monitoring, metrics, telemetry, Troubleshooting, logging, events, support, debug, debugging, charts, graphs, logs
+        href: ./monitoring/monitor-media-services.md
+        displayName: Monitor, Azure monitor, monitoring, metrics, telemetry, Troubleshooting, logging, events, support, debug, debugging, charts, graphs, logs
       - name: Monitor with Event Grid
         items:
         - name: Events with Event Grid
