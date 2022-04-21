@@ -619,7 +619,7 @@
   - name: Use Azure Monitor
     items:
     - name: Monitor metrics
-      href: monitoring/media-services-metrics-howto.md
+      href: monitoring/media-services-metrics-how-to.md
       displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
   - name: Security
     items:
