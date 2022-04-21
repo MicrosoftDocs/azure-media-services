@@ -676,7 +676,7 @@
     href: troubleshoot-account-administration.md
     displayName: connect to azure
   - name: Troubleshoot account management
-    href: troubleshoot-account-administration.md
+    href: troubleshoot-account-management.md
     displayName: account creation, account deletion, authentication, access control, linking to storage, subscription move, resource group move
   - name: Troubleshoot analyzing and indexing files
     href: troubleshoot-analyze-index.md
