@@ -1770,7 +1770,7 @@
             "source_path_from_root": "/media-services/latest/monitoring/media-services-diagnostic-logs-howto.md",
             "redirect_url": "/media-services/latest/monitoring/monitor-media-services",
             "redirect_document_id": false
-          }
+          },
           {
             "source_path_from_root": "/media-services/latest/monitoring/media-services-metrics-howto.md",
             "redirect_url": "/media-services/latest/monitoring/monitor-metrics-how-to",
