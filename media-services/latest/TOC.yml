@@ -618,7 +618,7 @@
       displayName: portal, event grid, monitor, monitoring, telemetry, logging, logs, events, notifications, web hook, webhooks, functions
   - name: Use Azure Monitor
     items:
-    - name: Monitor Media Services metrics
+    - name: Monitor metrics
       href: ./monitoring/monitor-metrics-how-to.md
       displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
   - name: Security
