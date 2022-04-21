@@ -706,7 +706,7 @@
     href: troubleshoot-insights.md
     displayName: audio transcription, transcription, extracting insights, face identification
   - name: Troubleshoot limits and quotas
-    href: troubleshoot-limits-quota-management
+    href: troubleshoot-limits-quota-management.md
     displayName: asset total count, live event quotas, encoding limits
   - name: Troubleshoot videos
     href: troubleshoot-videos.md
