@@ -672,6 +672,45 @@
     - name: Job error codes
       href: /rest/api/media/jobs/get?#joberrorcode
       displayName: error code, codes, errors, streaming error, debug, debugging, live event, channel, event, telemetry, encoding, job, job output, job error, encoding error, encoder error, transcode
+  - name: Troubleshoot account administration
+    href: troubleshoot-account-administration.md
+    displayName: connect to azure
+  - name: Troubleshoot account management
+    href: troubleshoot-account-administration.md
+    displayName: account creation, account deletion, authentication, access control, linking to storage, subscription move, resource group move
+  - name: Troubleshoot analyzing and indexing files
+    href: troubleshoot-analyze-index.md
+    displayName: analyze, index, performance
+  - name: Troubleshoot API integration
+    href: troubleshoot-api-integration.md
+    displayName: api integration
+  - name: Troubleshoot client playback
+    href: troubleshoot-client-playback.md
+    displayName: browser compatibility, os compatibility, client latency, closed captions, embedding the player, azure media player, playback issues
+  - name: Troubleshoot content management
+    href: troubleshoot-content-management.md
+    displayName: asset creation, asset deletion, ingest from HTTP, upload files
+  - name: Troubleshoot content protection
+    href: troubleshoot-content-protection.md
+    displayName: AES encryption, FairPlay, PlayReady, Widevine
+  - name: Troubleshoot deploying Function Apps
+    href: troubleshoot-deploying-function-apps.md
+    displayName: continuous deployment
+  - name: Troubleshoot encoding files
+    href: troubleshoot-encoding-files.md
+    displayName: encoding performance issues, premium encoder configuration or management, standard encoder configuration or management
+  - name: Troubleshoot streaming
+    href: troubleshoot-streaming.md
+    displayName: archiving, client latency, live cloud encoding, on-premises encoding, live streaming ingest configuration or management
+  - name: Troubleshoot insights
+    href: troubleshoot-insights.md
+    displayName: audio transcription, transcription, extracting insights, face identification
+  - name: Troubleshoot limits and quotas
+    href: troubleshoot-limits-quota-management
+    displayName: asset total count, live event quotas, encoding limits
+  - name: Troubleshoot videos
+    href: troubleshoot-videos.md
+    displayName: idexing a video with API, indexing a video with the portal, playing video, process time
 - name: Reference
   items:
   - name: OpenAPI Specification (Swagger)
