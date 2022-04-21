@@ -116,4 +116,4 @@ Azure Monitor alerts proactively notify you when important conditions are found 
 
 ## How-tos
 
-[Monitor Media Services metrics](media-services-metrics-how-to.md)
+[Monitor Media Services metrics](monitor-metrics-how-to.md)
