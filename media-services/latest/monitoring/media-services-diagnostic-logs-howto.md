@@ -33,7 +33,7 @@ This article shows you how to route data to the storage account and then view th
 1. Set the **Retention (days)** slider to 30. This slider sets a number of days to retain the monitoring data in the storage account. Azure Monitor automatically deletes data older than the number of days specified. A retention of zero days stores the data indefinitely.
 1. Select **Save**.
 
-Monitoring data from your resource is now flowing into the storage account.
+Monitoring data from your resource is now streaming to the storage account.
 
 ## Route data to the storage account using the Azure CLI
 
