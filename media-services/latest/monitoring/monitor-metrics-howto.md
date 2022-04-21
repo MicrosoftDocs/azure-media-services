@@ -1,6 +1,6 @@
 ---
 title: Monitor Media Services metrics with Azure Monitor
-description: This article demonstrates how to route and view diagnostic logs via Azure Monitor.
+description: This article shows you how to route data to the storage account and then view the data.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
