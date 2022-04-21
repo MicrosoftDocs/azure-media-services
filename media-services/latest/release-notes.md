@@ -54,13 +54,13 @@ It's easy to relay your meeting broadcast from Microsoft Teams with a Media Serv
 
 ### Late-bind captions and subtitle tracks on assets with the new Tracks API
 
-A new tracks API on assets allows you to list available tracks inside of an asset.  This allows you to discover the available audio, video, and text tracks stored in an asset. 
-The tracks API allows you to late-bind caption and subtitle files in IMSC1 text profile and WebVTT format to your streaming assets.  In the past, customers needed to modify the .ism file in the blob storage account to add new late-bound tracks to their assets. This replaces that manual task and provides a supported SDK route to enable the addition of late-bound subtitle and caption files. 
+A new tracks API on assets allows you to list available tracks inside of an asset.  This allows you to discover the available audio, video, and text tracks stored in an asset.
+The tracks API allows you to late-bind caption and subtitle files in IMSC1 text profile and WebVTT format to your streaming assets.  In the past, customers needed to modify the .ism file in the blob storage account to add new late-bound tracks to their assets. This replaces that manual task and provides a supported SDK route to enable the addition of late-bound subtitle and caption files.
 
 For technical details on the new track API, see the [2021-11-01 version of the AMS REST OpenAPI specification here](https://github.com/Azure/azure-rest-api-specs/blob/fb31972c13cf183c43414d2b4736a5d70aa8af68/specification/mediaservices/resource-manager/Microsoft.Media/stable/2021-11-01/AssetsAndAssetFilters.json#L1427).
 
 A basic list tracks sample is provide in Javascript [each](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts)
-Additional samples and documentation will be provided for each SDK soon. 
+Additional samples and documentation will be provided for each SDK soon.
 
 ## December 2021
 
@@ -506,7 +506,7 @@ You can now use Azure Monitor to view telemetry data emitted by Media Services.
 * Use the Azure Monitor diagnostic logs to monitor requests sent by the Media Services Key Delivery endpoint.
 * Monitor metrics emitted by Media Services [Streaming Endpoints](stream-streaming-endpoint-concept.md).
 
-For details, see [Monitor Media Services metrics and diagnostic logs](monitoring/monitor-media-services-data-reference.md).
+For details, see [Monitor Media Services](monitoring/monitor-media-services.md).
 
 ### Multi audio tracks support in Dynamic Packaging
 

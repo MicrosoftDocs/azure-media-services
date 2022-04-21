@@ -281,7 +281,7 @@ sections:
     questions:
     - question: How do I monitor my Media Services resources?
       answer: |
-        Use Azure Monitor to keep track of what's happening with your Media Services resources. For more information, see [Monitor Media Services](./monitoring/monitor-media-services.md). How-to guides include [Monitor Media Services metrics](./monitoring/media-services-metrics-howto.md) and [Monitor Media Services diagnostic logs](./monitoring/media-services-diagnostic-logs-howto.md).
+        Use Azure Monitor to keep track of what's happening with your Media Services resources. For more information, see [Monitor Media Services](./monitoring/monitor-media-services.md). How to guides are listed at the end of the page.
     - question: How do I monitor my Media Services live event?
       answer: |
         Use [Azure Event Grid](./monitoring/reacting-to-media-services-events.md) to monitor your live event without a polling service. How-to guides include [Create and monitor Media Services events with Event Grid using the Azure portal](./monitoring/monitor-events-portal-how-to.md) and [Create and monitor Media Services events with Event Grid using the Azure CLI](./monitoring/job-state-events-cli-how-to.md).
