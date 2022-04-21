@@ -17,6 +17,6 @@ Find the causes and solutions for problems with Media Services account administr
 
 [!INCLUDE [trouble-template](includes/trouble-template.md)]
 
-## Some other thing with account administration
+## There has to be two H2s
 
 [!INCLUDE [trouble-template](includes/trouble-template.md)]
