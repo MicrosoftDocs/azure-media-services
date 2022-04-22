@@ -47,4 +47,4 @@ Find the causes and solutions for problems with Media Services streaming.
 
 ## Performance or scale
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+[!INCLUDE [trouble-cannot-stop-streaming-endpoint](includes/trouble-cannot-stop-streaming-endpoint.md)]
