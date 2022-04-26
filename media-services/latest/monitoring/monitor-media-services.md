@@ -104,6 +104,80 @@ Some things that you can examine with diagnostic logs are:
 
 For detailed description of the top-level diagnostic logs schema, see [Supported services, schemas, and categories for Azure Diagnostic Logs](/azure/azure-monitor/essentials/resource-logs-schema).
 
+### Key delivery
+
+These properties are specific to the key delivery log schema.
+
+|Name|Description|
+|---|---|
+|keyId|The ID of the requested key.|
+|keyType|Could be one of the following values: "Clear" (no encryption), "FairPlay", "PlayReady", or "Widevine".|
+|policyName|The Azure Resource Manager name of the policy.|
+|tokenType|The token type.|
+|statusMessage|The status message.|
+
+### Example
+
+Properties of the key delivery requests schema.
+
+```json
+{
+    "time": "2019-01-11T17:59:10.4908614Z",
+    "resourceId": "/SUBSCRIPTIONS/00000000-0000-0000-0000-0000000000/RESOURCEGROUPS/SBKEY/PROVIDERS/MICROSOFT.MEDIA/MEDIASERVICES/SBDNSTEST",
+    "operationName": "MICROSOFT.MEDIA/MEDIASERVICES/CONTENTKEYS/READ",
+    "operationVersion": "1.0",
+    "category": "KeyDeliveryRequests",
+    "resultType": "Succeeded",
+    "resultSignature": "OK",
+    "durationMs": 315,
+    "identity": {
+        "authorization": {
+            "issuer": "http://testacs",
+            "audience": "urn:test"
+        },
+        "claims": {
+            "urn:microsoft:azure:mediaservices:contentkeyidentifier": "3321e646-78d0-4896-84ec-c7b98eddfca5",
+            "iss": "http://testacs",
+            "aud": "urn:test",
+            "exp": "1547233138"
+        }
+    },
+    "level": "Informational",
+    "location": "uswestcentral",
+    "properties": {
+        "requestId": "b0243468-d8e5-4edf-a48b-d408e1661050",
+        "keyType": "Clear",
+        "keyId": "3321e646-78d0-4896-84ec-c7b98eddfca5",
+        "policyName": "56a70229-82d0-4174-82bc-e9d3b14e5dbf",
+        "tokenType": "JWT",
+        "statusMessage": "OK"
+    }
+}
+```
+
+```json
+ {
+    "time": "2019-01-11T17:59:33.4676382Z",
+    "resourceId": "/SUBSCRIPTIONS/00000000-0000-0000-0000-0000000000/RESOURCEGROUPS/SBKEY/PROVIDERS/MICROSOFT.MEDIA/MEDIASERVICES/SBDNSTEST",
+    "operationName": "MICROSOFT.MEDIA/MEDIASERVICES/CONTENTKEYS/READ",
+    "operationVersion": "1.0",
+    "category": "KeyDeliveryRequests",
+    "resultType": "Failed",
+    "resultSignature": "Unauthorized",
+    "durationMs": 2,
+    "level": "Error",
+    "location": "uswestcentral",
+    "properties": {
+        "requestId": "875af030-b77c-416b-b7e1-58f23ebec182",
+        "keyType": "Clear",
+        "keyId": "3321e646-78d0-4896-84ec-c7b98eddfca5",
+        "policyName": "56a70229-82d0-4174-82bc-e9d3b14e5dbf",
+        "tokenType": "None",
+        "statusMessage": "No token present in authorization header or URL."
+    }
+}
+```
+
 ### Analyzing logs
 
 Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.
