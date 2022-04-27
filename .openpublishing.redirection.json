@@ -1775,6 +1775,16 @@
             "source_path_from_root": "/media-services/latest/monitoring/media-services-metrics-howto.md",
             "redirect_url": "/media-services/latest/monitoring/monitor-metrics-how-to",
             "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/setup-azure-tenant-how-to.md",
+            "redirect_url": "/azure/azure-portal/get-subscription-tenant-id",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/setup-azure-subscription-how-to.md",
+            "redirect_url": "/azure/azure-portal/get-subscription-tenant-id",
+            "redirect_document_id": false
           }
     ]
 }
