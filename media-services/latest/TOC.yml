@@ -394,16 +394,10 @@
 - name: How-to guides
   items:
   - name: Find your tenant and subscription
-    items:
-    - name: Find your tenant ID
-      href: setup-azure-tenant-how-to.md
-      displayName: how to, how-to, tutorial, find tenant, find subscription, subscription, tenant
-    - name: Find your subscription ID
-      href: setup-azure-subscription-how-to.md
-      displayName: how to, how-to, tutorial, find subscription, subscription, subscription id
-    - name: Reset account credentials
-      href: account-reset-account-credentials.md
-      displayName: reset, account credentials, remove credentials, security, restore, remove, credentials
+    href: /azure/azure-portal/get-subscription-tenant-id
+  - name: Reset account credentials
+    href: account-reset-account-credentials.md
+    displayName: reset, account credentials, remove credentials, security, restore, remove, credentials
   - name: Code snippets
     items:
       - name: Accounts and Storage
