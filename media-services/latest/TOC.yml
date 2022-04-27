@@ -28,10 +28,8 @@
   items:
   - name: Set up your environment
     items:
-    - name: Find your tenant ID
-      href: setup-azure-tenant-how-to.md
-    - name: Find your Azure subscription
-      href: setup-azure-subscription-how-to.md
+    - name: Find your tenant and subscription
+      href: /azure/azure-portal/get-subscription-tenant-id
     - name: Create a Media Services account
       href: account-create-how-to.md
       displayName: account, create account

@@ -31,7 +31,7 @@ Customers previously using the 2015-10-01 version of the ARM management API to m
 
 ## Create a new media services account for testing
 
-Follow the quickstart steps for [setting up your environment](setup-azure-subscription-how-to.md?tabs=portal) using the Azure portal. Select API access and service principal authentication to generate a new Azure AD application ID and secrets for use with this test account.
+Find your [tenant and subscription ids](/azure/azure-portal/get-subscription-tenant-id) in the portal and [create a Media Services account](account-create-how-to.md). Then, select API access and service principal authentication to generate a new Azure AD application ID and secrets for use with this test account.
 
 [Create a media services account](account-create-how-to.md?tabs=portal).
 [Get credentials to access Media Services API](access-api-howto.md?tabs=portal).
