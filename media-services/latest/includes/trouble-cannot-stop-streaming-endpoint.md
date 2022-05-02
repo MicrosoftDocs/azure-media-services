@@ -11,7 +11,7 @@ title: Cannot stop streaming endpoint.
 
 ### Problem
 
-A streaming endpoint with a CDN will not stop.
+A streaming endpoint with a CDN won't stop.
 
 ### Cause
 

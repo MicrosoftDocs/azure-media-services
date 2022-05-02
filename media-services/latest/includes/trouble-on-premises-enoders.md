@@ -11,7 +11,7 @@ title: Streaming endpoints not appearing after moving account to a different sub
 
 ### Problem
 
-On-premises encoder is not sending data to the live event.
+On-premises encoder isn't sending data to the live event.
 
 ### Cause
 

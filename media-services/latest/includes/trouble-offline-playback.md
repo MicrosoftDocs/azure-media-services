@@ -11,11 +11,11 @@ title: Cannot stop streaming endpoint.
 
 ### Problem
 
-Encrypted content will not play in offline mode.
+Encrypted content won't play in offline mode.
 
 ### Cause
 
-Unknown. The player that you are using to play the downloaded AES encrypted videos in offline mode on iOS devices handles how those videos play.
+The player that you are using to play the downloaded AES encrypted videos in offline mode on iOS devices handles how those videos play. The cause isn't with Media Services.
 
 ### Solution
 
