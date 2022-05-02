@@ -52,4 +52,4 @@ No troubleshooting information available yet.
 ||
 | [!INCLUDE [trouble-cannot-stop-streaming-endpoint](./includes/trouble-cannot-stop-streaming-endpoint.md)]|
 ||
-| [!INCLUDE [trouble-latency-nontested-onpremises-enoders](includes/trouble-latency-nontested-onpremises-enoders.md)]|
+| [!INCLUDE [trouble-on-premises-enoders](includes/trouble-on-premises-enoders.md)]|
