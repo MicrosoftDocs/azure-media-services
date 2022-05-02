@@ -13,7 +13,7 @@ Streaming endpoints not appearing after moving account to a different subscripti
 
 ### Cause
 
-missing cause
+Unknown
 
 ### Resolution
 

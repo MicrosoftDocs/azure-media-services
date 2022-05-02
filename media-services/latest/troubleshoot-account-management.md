@@ -31,4 +31,7 @@ No troubleshooting information available yet.
 
 ## Subscription or resource group moves
 
-[!INCLUDE [trouble-move-subscription-streaming-endpoints.md](./includes/trouble-move-subscription-streaming-endpoints.md)]
+| Issues |
+| ------ |
+||
+| [!INCLUDE [trouble-move-subscription-streaming-endpoints.md](./includes/trouble-move-subscription-streaming-endpoints.md)] |
