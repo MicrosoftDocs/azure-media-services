@@ -27,7 +27,9 @@ No troubleshooting information available yet.
 
 ## On-premises encoding
 
-No troubleshooting information available yet.
+| Issues |
+||
+| [!INCLUDE [trouble-on-premises-enoders](includes/trouble-on-premises-enoders.md)]|
 
 ## Live streaming ingest configuration or management
 
@@ -51,5 +53,3 @@ No troubleshooting information available yet.
 | --- |
 ||
 | [!INCLUDE [trouble-cannot-stop-streaming-endpoint](./includes/trouble-cannot-stop-streaming-endpoint.md)]|
-||
-| [!INCLUDE [trouble-on-premises-enoders](includes/trouble-on-premises-enoders.md)]|
