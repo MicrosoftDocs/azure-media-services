@@ -2,12 +2,12 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 03/24/2022
+ms.date: 05/02/2022
 ms.author: inhenkel
 title: Streaming endpoints not appearing after moving account to a different subscription.
 ---
 
-<!-- 2111190060000436 -->
+<!-- 2111190060000436, 2201310060002530 -->
 
 ### Problem
 
@@ -15,8 +15,10 @@ On-premises encoder is not sending data to the live event.
 
 ### Cause
 
-You may be using an encoder that has not been tested with Media Services.
+1. You may be using an encoder that has not been tested with Media Services.
+1. The on-premises encoder may not be configured correctly.
 
 ### Solution
 
-Please see [Verified on-premises live streaming encoders](../encode-recommended-on-premises-live-encoders.md) and the especially [configuration settings](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings).
+1. Please see [Verified on-premises live streaming encoders](../encode-recommended-on-premises-live-encoders.md).
+1. Confirm that you have correctly [configured the on-premises encoder](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings).
