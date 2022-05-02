@@ -15,36 +15,38 @@ Find the causes and solutions for problems with Media Services streaming.
 
 ## Archiving
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Client latency
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Live encoding
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## On-premises encoding
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Live streaming ingest configuration or management
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Live streaming ingest errors
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Packaging, origin or streaming endpoint configuration
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Packaging, origin or streaming endpoint errors
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Performance or scale
 
 [!INCLUDE [trouble-cannot-stop-streaming-endpoint](includes/trouble-cannot-stop-streaming-endpoint.md)]
+
+[!INCLUDE [trouble-latency-nontested-onpremises-enoders](includes/trouble-latency-nontested-onpremises-enoders.md)
