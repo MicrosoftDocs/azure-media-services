@@ -19,4 +19,4 @@ You may be using an encoder that has not been tested with Media Services.
 
 ### Solution
 
-Please see [Verified on-premises live streaming encoders](encode-recommended-on-premises-live-encoders.md) and the especially [configuration settings](encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings).
+Please see [Verified on-premises live streaming encoders](../encode-recommended-on-premises-live-encoders.md) and the especially [configuration settings](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings).
