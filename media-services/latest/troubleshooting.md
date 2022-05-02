@@ -28,7 +28,7 @@ Find the causes and solutions for problems with Media Services account administr
 
 ## Live streaming best practices
 
-See the [live streaming best practices guide](live-event-streaming-best-practices-guide).
+See the [live streaming best practices guide](live-event-streaming-best-practices-guide.md).
 
 ## Migration
 
