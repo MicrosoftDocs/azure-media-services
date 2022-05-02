@@ -15,7 +15,7 @@ On-premises encoder is not sending data to the live event.
 
 ### Cause
 
-1. You may be using an encoder that has not been tested with Media Services.
+1. You may be using an encoder that hasn't been tested with Media Services.
 1. The on-premises encoder may not be configured correctly.
 
 ### Solution
