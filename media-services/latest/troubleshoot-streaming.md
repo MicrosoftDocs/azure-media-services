@@ -49,7 +49,7 @@ No troubleshooting information available yet.
 
 |Issues |
 | --- |
-|Issue|
+||
 | [!INCLUDE [trouble-cannot-stop-streaming-endpoint](./includes/trouble-cannot-stop-streaming-endpoint.md)]|
-|Issue|
+||
 | [!INCLUDE [trouble-latency-nontested-onpremises-enoders](includes/trouble-latency-nontested-onpremises-enoders.md)]|
