@@ -32,7 +32,3 @@ Find the causes and solutions for problems with Media Services.
 ## Live streaming best practices
 
 See the [live streaming best practices guide](live-event-streaming-best-practices-guide.md).
-
-## Migration
-
-See the [v2 to v3 migration guide](migrate-v-2-v-3-migration-introduction.md).
