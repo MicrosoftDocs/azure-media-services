@@ -15,7 +15,10 @@ Find the causes and solutions for problems with analyzing media files with Media
 
 ## AES encryption
 
-No troubleshooting information available yet.
+|Issues |
+| --- |
+||
+| [!INCLUDE [trouble-offline-playback](includes/trouble-offline-playback.md)] |
 
 ## Fairplay DRM
 
