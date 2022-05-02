@@ -183,8 +183,8 @@ namespace ConsoleApp1
 
                 Console.Error.WriteLine($"{exception.Message}");
 
-                ApiErrorException apiException = exception.GetBaseException() as ApiErrorException;
-                if (apiException != null)
+                
+                if (exception.GetBaseException() is ErrorResponseException apiException)
                 {
                     Console.Error.WriteLine(
                         $"ERROR: API call failed with error code '{apiException.Body.Error.Code}' and message '{apiException.Body.Error.Message}'.");

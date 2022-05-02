@@ -100,10 +100,9 @@ videojs.Hls.xhr.beforeRequest = setupTokenForDecrypt;
 
 ### Set up AES-128 encryption
 
-Video.js supports AES-128 encryption without any additional configuration. 
+Video.js supports AES-128 encryption without any additional configuration.
 
-> [!NOTE] 
-> There's currently an [issue](https://github.com/videojs/video.js/issues/6717) with encryption and HLS/DASH CMAF content, which are not playable.
+Azure Media Services currently does not support the Common Encryption (CENC) clear key with CBC encryption which can result in failures in some players. 
 
 ### Set up DRM protection
 
