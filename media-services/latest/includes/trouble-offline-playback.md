@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 05/02/2022
 ms.author: inhenkel
-title: Cannot stop streaming endpoint.
+title: Encrypted content won't play in offline mode.
 ---
 
 <!-- 2201160050000370 -->

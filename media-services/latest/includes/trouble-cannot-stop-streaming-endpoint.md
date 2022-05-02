@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 03/24/2022
 ms.author: inhenkel
-title: Cannot stop streaming endpoint.
+title: A streaming endpoint with a CDN won't stop.
 ---
 
 <!-- 2201160050000370 -->
