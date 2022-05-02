@@ -1,30 +1,33 @@
 ---
-title: Troubleshoot Media Services account administration
-description: Find the causes and solutions for problems with Media Services account administration.
+title: Troubleshoot Media Services
+description: Find the causes and solutions for problems with Media Services.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: troubleshooting
 ms.date: 04/21/2022
 ms.author: inhenkel
 ---
-# Troubleshoot Media Services account administration
+# Troubleshoot Media Services
 
-Find the causes and solutions for problems with Media Services account administration.
+Find the causes and solutions for problems with Media Services.
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-## Issues
+## A streaming endpoint with a CDN will not stop
 
-|Issues |
-| --- |
-||
-| [!INCLUDE [trouble-cannot-stop-streaming-endpoint](./includes/trouble-cannot-stop-streaming-endpoint.md)]|
-||
-| [!INCLUDE [trouble-on-premises-enoders](includes/trouble-on-premises-enoders.md)]|
-||
-| [!INCLUDE [trouble-offline-playback](includes/trouble-offline-playback.md)] |
-||
-| [!INCLUDE [trouble-move-subscription-streaming-endpoints.md](./includes/trouble-move-subscription-streaming-endpoints.md)] |
+[!INCLUDE [trouble-cannot-stop-streaming-endpoint](./includes/trouble-cannot-stop-streaming-endpoint.md)]
+
+## On-premises encoder is not sending data to the live event
+
+[!INCLUDE [trouble-on-premises-enoders](includes/trouble-on-premises-enoders.md)]
+
+## Encrypted content will not play in offline mode
+
+[!INCLUDE [trouble-offline-playback](includes/trouble-offline-playback.md)]
+
+## Streaming endpoints not appearing after moving account to a different subscription
+
+[!INCLUDE [trouble-move-subscription-streaming-endpoints.md](./includes/trouble-move-subscription-streaming-endpoints.md)]
 
 ## Live streaming best practices
 
