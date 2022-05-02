@@ -15,4 +15,4 @@ Find the causes and solutions for problems with deploying Function Apps with Med
 
 ## Continuous deployment
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.

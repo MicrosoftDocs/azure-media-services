@@ -15,16 +15,16 @@ Find the causes and solutions for problems with Media Services videos.
 
 ## Indexing a video with the API
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Indexing a video with the portal
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Playing a video
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Processing time
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.

@@ -15,20 +15,20 @@ Find the causes and solutions for problems with Media Services client playback.
 
 ## Browser and OS Compatibility
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Client latency
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Closed captions
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Embedding the player
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Playback issues
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.

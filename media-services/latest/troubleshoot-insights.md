@@ -15,16 +15,16 @@ Find the causes and solutions for problems with Media Services insights.
 
 ## Audio and transcription
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Extracting insights
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Face identification
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Other insights
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.

@@ -15,16 +15,16 @@ Find the causes and solutions for problems with Media Services quotas and limita
 
 ## Asset quotas and limits
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Live event quotas and limits
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Encoding quotas and limits
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Streaming endpoint quotas and limits
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.

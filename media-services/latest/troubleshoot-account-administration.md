@@ -13,10 +13,10 @@ Find the causes and solutions for problems with Media Services account administr
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
+## Account creation
+
+No troubleshooting information available yet.
+
 ## Account connection
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
-
-## There has to be two H2s
-
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.

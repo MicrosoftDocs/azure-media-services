@@ -15,8 +15,8 @@ Find the causes and solutions for problems with Media Services API Integration.
 
 ## Errors
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## How to
 
-List of api integration how tos go here.
+Please see the How to section of this documentation.

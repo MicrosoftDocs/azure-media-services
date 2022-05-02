@@ -15,12 +15,12 @@ Find the causes and solutions for problems with encoding files with Media Servic
 
 ## Performance
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Premium encoder configuration or management
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
 
 ## Standard encoder configuration or management
 
-[!INCLUDE [trouble-template](includes/trouble-template.md)]
+No troubleshooting information available yet.
