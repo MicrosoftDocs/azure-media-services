@@ -29,4 +29,4 @@ title: The live stream shows a black screen.
 
 #### Filters solution
 
-1. Add audio-only=false to the streaming URL like so *https://streamingtest.streaming.media.azure.net/00000000-0000-0000-0000-000000000000/sample.ism/manifest(format-m3u8-aapl,audio-only=false)*
+1. Add audio-only=false to the streaming URL like so `https://streamingtest.streaming.media.azure.net/00000000-0000-0000-0000-000000000000/sample.ism/manifest(format-m3u8-aapl,audio-only=false)`

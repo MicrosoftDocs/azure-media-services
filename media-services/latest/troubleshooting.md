@@ -41,6 +41,10 @@ Find the causes and solutions for problems with Media Services.
 
 [!INCLUDE [trouble-transform-failure](includes/trouble-transform-failure.md)]
 
+[!INCLUDE [trouble-unable-to-play-mp4](includes/trouble-unable-to-play-mp4.md)]
+
+[!INCLUDE [trouble-closed-captions-subtitles](includes/trouble-closed-captions-subtitles.md)]
+
 ## Additional assistance
 
 See the [live streaming best practices guide](live-event-streaming-best-practices-guide.md).
