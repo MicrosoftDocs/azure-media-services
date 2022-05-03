@@ -27,7 +27,19 @@ Find the causes and solutions for problems with Media Services.
 
 ## Streaming endpoints don't appear after moving account to a different subscription.
 
-[!INCLUDE [trouble-move-subscription-streaming-endpoints.md](./includes/trouble-move-subscription-streaming-endpoints.md)]
+[!INCLUDE [trouble-move-subscription-streaming-endpoints](./includes/trouble-move-subscription-streaming-endpoints.md)]
+
+## Content has been flagged as inappropriate.
+
+[!INCLUDE [trouble-move-subscription-streaming-endpoints](./includes/trouble-content-flagged-inappropriate.md)]
+
+## A network error caused the video download to fail part-way.
+
+[!INCLUDE [trouble-move-subscription-streaming-endpoints](./includes/trouble-network-connection-error.md)]
+
+## When creating a new Media Services account, the error “LocationNotAvailableForResourceType” appears.
+
+[!INCLUDE [trouble-move-subscription-streaming-endpoints](./includes/trouble-resource-location-unavailable.md)]
 
 ## Live streaming best practices
 
