@@ -27,6 +27,20 @@ Find the causes and solutions for problems with Media Services.
 
 [!INCLUDE [trouble-resource-location-unavailable](./includes/trouble-resource-location-unavailable.md)]
 
-## Live streaming best practices
+[!INCLUDE [trouble-excessive-5xx-errors](includes/trouble-excessive-5xx-errors.md)]
+
+[!INCLUDE [trouble-live-stream-black-screen](includes/trouble-live-stream-black-screen.md)]
+
+[!INCLUDE [trouble-slow-encoding](includes/trouble-slow-encoding.md)]
+
+[!INCLUDE [trouble-azure-media-indexer-2-not-listed](includes/trouble-azure-media-indexer-2-not-listed.md)]
+
+[!INCLUDE [trouble-cannot-start-streaming-endpoint](includes/trouble-cannot-start-streaming-endpoint.md)]
+
+[!INCLUDE [trouble-audio-out-of-sync](includes/trouble-audio-out-of-sync.md)]
+
+## Additional assistance
 
 See the [live streaming best practices guide](live-event-streaming-best-practices-guide.md).
+
+Update your code to use the v3 API. For more detailed assistance, see the [Migration guide](migrate-v-2-v-3-migration-introduction.md).
