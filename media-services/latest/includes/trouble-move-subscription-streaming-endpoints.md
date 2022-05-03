@@ -9,9 +9,7 @@ title: Streaming endpoints not appearing after moving account to a different sub
 
 <!-- 2202090060001982 -->
 
-### Problem
-
-Streaming endpoints don't appear after moving account to a different subscription.
+## Streaming endpoints don't appear after moving account to a different subscription.
 
 ### Cause
 

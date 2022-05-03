@@ -9,9 +9,7 @@ title: On-premises encoder isn't sending data to the live event.
 
 <!-- 2111190060000436, 2201310060002530 -->
 
-### Problem
-
-On-premises encoder isn't sending data to the live event.
+## On-premises encoder isn't sending data to the live event.
 
 ### Cause
 

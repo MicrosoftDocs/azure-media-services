@@ -9,9 +9,7 @@ title: When creating a new Media Services account, the error “LocationNotAvail
 
 <!-- 2201280050000141 -->
 
-### Problem
-
-When creating a new Media Services account, the error “LocationNotAvailableForResourceType” appears.
+## When creating a new Media Services account, the error “LocationNotAvailableForResourceType” appears.
 
 ### Cause
 

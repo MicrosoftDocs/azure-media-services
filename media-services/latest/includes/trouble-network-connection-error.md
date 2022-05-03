@@ -9,9 +9,7 @@ title: A network error caused the video download to fail part-way.
 
 <!-- 2202180060000756 -->
 
-### Problem
-
-A network error caused the video download to fail part-way.
+## A network error caused the video download to fail part-way.
 
 ### Cause
 

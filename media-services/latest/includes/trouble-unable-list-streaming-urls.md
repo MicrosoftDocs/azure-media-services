@@ -9,9 +9,7 @@ title: Unable to list streaming URLs.
 
 <!-- 2203160050001645 -->
 
-### Problem
-
-Unable to list streaming URLs.
+## Unable to list streaming URLs.
 
 ### Cause
 

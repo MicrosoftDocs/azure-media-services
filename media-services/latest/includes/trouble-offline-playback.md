@@ -9,9 +9,7 @@ title: Encrypted content won't play in offline mode.
 
 <!-- 2201160050000370 -->
 
-### Problem
-
-Encrypted content won't play in offline mode.
+## Encrypted content won't play in offline mode.
 
 ### Cause
 

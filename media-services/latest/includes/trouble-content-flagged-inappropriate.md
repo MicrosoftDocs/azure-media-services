@@ -9,9 +9,7 @@ title: Content is flagged as inappropriate
 
 <!-- 2204180010001600 -->
 
-### Problem
-
-Content has been flagged as inappropriate.
+## Content has been flagged as inappropriate.
 
 ### Cause
 

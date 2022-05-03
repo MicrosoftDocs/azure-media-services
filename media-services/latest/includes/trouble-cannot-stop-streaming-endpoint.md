@@ -9,9 +9,7 @@ title: A streaming endpoint with a CDN won't stop.
 
 <!-- 2201160050000370 -->
 
-### Problem
-
-A streaming endpoint with a CDN won't stop.
+## A streaming endpoint with a CDN won't stop.
 
 ### Cause
 
