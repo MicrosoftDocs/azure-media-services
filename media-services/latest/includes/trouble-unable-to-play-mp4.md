@@ -17,4 +17,4 @@ Azure Media Services is designed to use a manifest file rather than playing full
 
 ### Solution
 
-Use one of the provided media encoders to create media fragments and manifest file. For more information about encoding see [Content-aware encoding](encode-content-aware-concept) and [Encode with an auto-generated bitrate ladder](encode-autogen-bitrate-ladder) encoding.
+Use one of the provided media encoders to create media fragments and manifest file. For more information about encoding see [Content-aware encoding](../encode-content-aware-concept.md) and [Encode with an auto-generated bitrate ladder](../encode-autogen-bitrate-ladder.md) encoding.

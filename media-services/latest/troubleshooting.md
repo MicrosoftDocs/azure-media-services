@@ -45,6 +45,8 @@ Find the causes and solutions for problems with Media Services.
 
 [!INCLUDE [trouble-closed-captions-subtitles](includes/trouble-closed-captions-subtitles.md)]
 
+[!INCLUDE [trouble-video-playback](includes/trouble-video-playback.md)]
+
 ## Additional assistance
 
 See the [live streaming best practices guide](live-event-streaming-best-practices-guide.md).
