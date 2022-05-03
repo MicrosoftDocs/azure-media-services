@@ -47,6 +47,14 @@ Find the causes and solutions for problems with Media Services.
 
 [!INCLUDE [trouble-video-playback](includes/trouble-video-playback.md)]
 
+[!INCLUDE [trouble-general-code-errors](includes/trouble-general-code-errors.md)]
+
+[!INCLUDE [trouble-cors-errors](includes/trouble-cors-errors.md)]
+
+[!INCLUDE [trouble-upload-media-issues](includes/trouble-upload-media-issues.md)]
+
+[!INCLUDE [trouble-source-unavailable](includes/trouble-source-unavailable.md)]
+
 ## Additional assistance
 
 See the [live streaming best practices guide](live-event-streaming-best-practices-guide.md).
