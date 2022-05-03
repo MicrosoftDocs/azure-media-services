@@ -39,6 +39,8 @@ Find the causes and solutions for problems with Media Services.
 
 [!INCLUDE [trouble-audio-out-of-sync](includes/trouble-audio-out-of-sync.md)]
 
+[!INCLUDE [trouble-transform-failure](includes/trouble-transform-failure.md)]
+
 ## Additional assistance
 
 See the [live streaming best practices guide](live-event-streaming-best-practices-guide.md).

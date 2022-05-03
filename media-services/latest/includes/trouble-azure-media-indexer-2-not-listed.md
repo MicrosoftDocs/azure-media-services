@@ -17,4 +17,4 @@ Azure Media Indexer 2 was deprecated on January 1st, 2020.
 
 ### Solution
 
-Migrate to the [Media Services v3 API](migrate-v-2-v-3-migration-introduction.md).
+Migrate to the [Media Services v3 API](../migrate-v-2-v-3-migration-introduction.md).

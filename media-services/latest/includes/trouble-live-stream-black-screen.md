@@ -25,7 +25,7 @@ title: The live stream shows a black screen.
 
 #### API implementation solution
 
-1. Update your code to use the v3 API. For more detailed assistance, see the [Migration guide](migrate-v-2-v-3-migration-introduction.md).
+1. Update your code to use the v3 API. For more detailed assistance, see the [Migration guide](../migrate-v-2-v-3-migration-introduction.md).
 
 #### Filters solution
 
