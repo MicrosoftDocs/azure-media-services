@@ -11,10 +11,6 @@ title: Encrypted content won't play in offline mode.
 
 ## Encrypted content won't play in offline mode.
 
-### Cause
-
-The player that you are using to play the downloaded AES encrypted videos in offline mode on iOS devices handles how those videos play. The cause isn't with Media Services.
-
-### Solution
-
-Review the documentation for your chosen offline video player.
+| Cause | Solution |
+| ----- | -------- |
+| The player that you are using to play the downloaded AES encrypted videos in offline mode on iOS devices handles how those videos play. The cause isn't with Media Services. | Review the documentation for your chosen offline video player. |

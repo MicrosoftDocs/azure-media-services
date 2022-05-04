@@ -9,13 +9,10 @@ title: Closed caption and subtitles issues
 
 <!-- 2204220040000581 -->
 
-## Closed captions and subtitles issues
+## The player request for the VTT file caused CORS errors.
 
-### Cause
+| Cause | Solution |
+| ----- | -------- |
+| CORS rules setup | Set up [CORS rules](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services) for your storage account or [CDN](/azure/cdn/cdn-cors). |
 
-The player request for the VTT file caused CORS errors.
-
-### Solution
-
-1. Get the download URL of the VTT file from the asset.
-1. Set up [CORS rules](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services) for your storage account or [CDN](/azure/cdn/cdn-cors).
+YOu can also get the download URL of the VTT file from the asset.

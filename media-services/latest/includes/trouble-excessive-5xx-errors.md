@@ -11,15 +11,11 @@ title: Excessive and intermittent 5xx errors.
 
 ## Excessive and intermittent 5xx errors
 
-### Cause
+| Cause | Solution |
+| ----- | -------- |
+| On-premises encoding may have been implemented improperly. | Check that your encoder is [configured properly](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings). |
+| You may be using a non-tested on-premises encoder | Use a [tested on-premises encoder](../encode-recommended-on-premises-live-encoders.md) and check that it is [configured properly](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings).
+| The caching ratio between streaming endpoint and CDN may be insufficient. | 1. Adjust the caching ratio so that the CDN is handling more traffic. <br/> Adjust the [streaming optimization](/azure/cdn/cdn-media-streaming-optimization) rule for the CDN. |
+| Filter configuration may be incorrect. | Check that your [filters configured properly](../filters-concept.md). |
 
-1. On-premises encoding may have been implemented improperly.
-1. The caching ratio between streaming endpoint and CDN may be insufficient.
-1. Filter configuration may be incorrect.
-
-### Solution
-
-1. See the [Live streaming best practices guide](../live-event-streaming-best-practices-guide.md).
-1. Use a [tested on-premises encoder](../encode-recommended-on-premises-live-encoders.md) and check that it is [configured properly](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings).
-1. Adjust the caching ratio so that the CDN is handling more traffic.
-1. Adjust the [streaming optimization](/azure/cdn/cdn-media-streaming-optimization) rule for the CDN.
+See the [Live streaming best practices guide](../live-event-streaming-best-practices-guide.md).

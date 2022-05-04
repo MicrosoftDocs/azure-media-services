@@ -11,10 +11,6 @@ title: The audio is out of sync
 
 ## The audio is out of sync.
 
-### Cause
-
-You may have implemented a storage versioning policy that was turned on automatically which causes buffering and disconnects.
-
-### Solution
-
-Remove the policy and turn off automatic storage versioning.
+| Cause | Solution |
+| ----- | -------- |
+| You may have implemented a storage versioning policy that was turned on automatically which causes buffering and disconnects. | Remove the policy and turn off automatic storage versioning. |

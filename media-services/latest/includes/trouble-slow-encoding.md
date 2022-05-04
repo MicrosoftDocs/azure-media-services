@@ -9,14 +9,13 @@ title: Encoding seems to be too slow
 
 <!-- 2112020040001414 -->
 
-## Encoding seems to be too slow.
+## Encoding seems to be taking a long time.
 
-### Cause
+Most encoding duration issues can be resolved by configuring the encoder settings to control the balance between speed and quality. For faster encoding, set it to *speed* mode.
 
-1. Encoding may be complex.
-1. There may be a lot of output layers.
-
-### Solution
-
-1. Configure the encoder settings to control the balance between speed and quality. For faster encoding, set it to *speed* mode.
-1. Reduce the number of output layers.
+| Cause | Solution |
+| ----- | -------- |
+| The mezzanine file may be very large. File size is equal to the bitrate multiplied by duration. |  |
+| There are a high number of output layers. | Reduce the number of output layers. |
+| Output layers have high resolution. | Reduce the resolution of the output layer to the bitrate you intend to stream media. | |
+| The mezzanine file may be complex, especially if you are encoding a 4k resolution file. | |
