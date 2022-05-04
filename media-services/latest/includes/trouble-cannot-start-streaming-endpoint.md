@@ -9,7 +9,7 @@ title: Can't start a streaming endpoint
 
 <!-- 2203080030000664 -->
 
-## Can't start a streaming endpoint
+## A streaming endpoint won't start.
 
 | Cause | Solution |
 | ----- | -------- |

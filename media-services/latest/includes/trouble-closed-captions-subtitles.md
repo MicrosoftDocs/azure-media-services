@@ -15,4 +15,4 @@ title: Closed caption and subtitles issues
 | ----- | -------- |
 | CORS rules setup | Set up [CORS rules](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services) for your storage account or [CDN](/azure/cdn/cdn-cors). |
 
-YOu can also get the download URL of the VTT file from the asset.
+Yuu can also get the download URL of the VTT file from the asset.
