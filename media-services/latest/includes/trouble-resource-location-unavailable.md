@@ -13,4 +13,4 @@ title: When creating a new Media Services account, the error “LocationNotAvail
 
 | Cause | Solution |
 | ----- | -------- |
-| Not all Media Services features are available in all regions. | View [Azure Media Services v3 clouds and regions availability](../azure-clouds-regions.md) to see what features are available in regions around the world. |
+| Not all Media Services features are available in all regions. | View [Azure Media Services v3 clouds and regions availability](../azure-clouds-regions.md?amspage=troubleshooting) to see what features are available in regions around the world. |

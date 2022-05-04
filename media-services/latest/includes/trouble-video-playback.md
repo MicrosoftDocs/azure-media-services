@@ -19,15 +19,15 @@ title: Video playback issues
 
 | Cause | Solution |
 | ----- | -------- |
-| You may be attempting to reach a large audience without using a CDN which is causing latency issues. | Add a CDN to your streaming locator. For more information about using a CDN, see [Stream content with CDN integration](../stream-scale-streaming-cdn-concept.md). |
-| You may not have implemented dynamic packaging. |  For more information on implementing dynamic packaging, see [Dynamic packaging in Media Services v3](../encode-dynamic-packaging-concept.md). |
+| You may be attempting to reach a large audience without using a CDN which is causing latency issues. | Add a CDN to your streaming locator. For more information about using a CDN, see [Stream content with CDN integration](../stream-scale-streaming-cdn-concept.md?amspage=troubleshooting). |
+| You may not have implemented dynamic packaging. |  For more information on implementing dynamic packaging, see [Dynamic packaging in Media Services v3](../encode-dynamic-packaging-concept.md?amspage=troubleshooting). |
 | You may have what is known as "noisy neighbors", which means that you are sharing compute resources with other customers. | To avoid "noisy neighbors" upgrade from a standard streaming endpoint to a premium streaming endpoint with dedicated streaming units. |
 | You may be using an older browser to view videos. | Upgrade your browser. |
-| You may be attempting to use the features of the v3 API with a v2 account or a v2 API implementation. | Update your code to use the v3 API. For more detailed assistance, see the [Migration guide](../migrate-v-2-v-3-migration-introduction.md). |
+| You may be attempting to use the features of the v3 API with a v2 account or a v2 API implementation. | Update your code to use the v3 API. For more detailed assistance, see the [Migration guide](../migrate-v-2-v-3-migration-introduction.md?amspage=troubleshooting). |
 | You may be using a 3rd party player and filters. | Add `audio-only=false` to the streaming URL like so `https://streamingtest.streaming.media.azure.net/00000000-0000-0000-0000-000000000000/sample.ism/manifest(format-m3u8-aapl,audio-only=false)` |
 
 ## You can't play an MP4 file from the asset
 
 | Cause | Solution |
 | ----- | -------- |
-| Azure Media Services is designed to use a manifest file rather than playing full size MP4 streams directly.  The manifest file tells the player which encoded media fragments to play and in what order. | Use one of the provided media encoders to create media fragments and manifest file. For more information about encoding see [Content-aware encoding](../encode-content-aware-concept.md) and [Encode with an auto-generated bitrate ladder](../encode-autogen-bitrate-ladder.md) encoding. |
+| Azure Media Services is designed to use a manifest file rather than playing full size MP4 streams directly.  The manifest file tells the player which encoded media fragments to play and in what order. | Use one of the provided media encoders to create media fragments and manifest file. For more information about encoding see [Content-aware encoding](../encode-content-aware-concept.md?amspage=troubleshooting) and [Encode with an auto-generated bitrate ladder](../encode-autogen-bitrate-ladder.md?amspage=troubleshooting) encoding. |

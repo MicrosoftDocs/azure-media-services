@@ -13,9 +13,9 @@ title: Excessive and intermittent 5xx errors.
 
 | Cause | Solution |
 | ----- | -------- |
-| On-premises encoding may have been implemented improperly. | Check that your encoder is [configured properly](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings). |
-| You may be using a non-tested on-premises encoder | Use a [tested on-premises encoder](../encode-recommended-on-premises-live-encoders.md) and check that it is [configured properly](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings).
+| On-premises encoding may have been implemented improperly. | Check that your encoder is [configured properly](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings?amspage=troubleshooting). |
+| You may be using a non-tested on-premises encoder | Use a [tested on-premises encoder](../encode-recommended-on-premises-live-encoders.md?amspage=troubleshooting) and check that it is [configured properly](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings?amspage=troubleshooting).
 | The caching ratio between streaming endpoint and CDN may be insufficient. | 1. Adjust the caching ratio so that the CDN is handling more traffic. <br/> Adjust the [streaming optimization](/azure/cdn/cdn-media-streaming-optimization) rule for the CDN. |
-| Filter configuration may be incorrect. | Check that your [filters configured properly](../filters-concept.md). |
+| Filter configuration may be incorrect. | Check that your [filters configured properly](../filters-concept.md?amspage=troubleshooting). |
 
-See the [Live streaming best practices guide](../live-event-streaming-best-practices-guide.md).
+See the [Live streaming best practices guide](../live-event-streaming-best-practices-guide.md?amspage=troubleshooting).
