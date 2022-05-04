@@ -15,7 +15,7 @@ Most encoding duration issues can be resolved by configuring the encoder setting
 
 | Cause | Solution |
 | ----- | -------- |
-| The mezzanine file may be very large. File size is equal to the bitrate multiplied by duration. |  |
+| The mezzanine file may be very large. File size is equal to the bitrate multiplied by duration. | None |
 | There are a high number of output layers. | Reduce the number of output layers. |
-| Output layers have high resolution. | Reduce the resolution of the output layer to the bitrate you intend to stream media. | |
-| The mezzanine file may be complex, especially if you are encoding a 4k resolution file. | |
+| Output layers have high resolution. | Reduce the resolution of the output layer to the bitrate you intend to stream media. |
+| The mezzanine file may be complex, especially if you are encoding a 4k resolution file. | None |
