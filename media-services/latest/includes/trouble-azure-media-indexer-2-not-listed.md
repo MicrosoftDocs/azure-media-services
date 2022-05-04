@@ -13,4 +13,4 @@ title: Azure Media Indexer 2 isn't being returned in the list of media processor
 
 | Cause | Solution |
 | ----- | -------- |
-| Azure Media Indexer 2 was deprecated on January 1st, 2020.| Migrate to the [Media Services v3 API](../migrate-v-2-v-3-migration-introduction.md). |
+| Azure Media Indexer 2 was deprecated on January 1st, 2020.| Migrate to the [Media Services v3 API](../migrate-v-2-v-3-migration-introduction.md?referrer=troubleshooting). |
