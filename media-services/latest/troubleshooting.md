@@ -13,7 +13,8 @@ ms.author: inhenkel
 
 Find the causes and solutions for problems with Media Services.
 
-Many issues can be resolved by [migrating to the Media Services v3 API](migrate-v-2-v-3-migration-introduction.md) or by reading the [live streaming best practices guide](live-event-streaming-best-practices-guide.md).
+> [!NOTE]
+> Many issues can be resolved by [**migrating to the Media Services v3 API**](migrate-v-2-v-3-migration-introduction.md) or by reading the [**live streaming best practices guide**](live-event-streaming-best-practices-guide.md).
 
 <!-- Video playback and downloading issues =-->
 
