@@ -1,17 +1,17 @@
 ---
 title: Troubleshoot Media Services
-description: Find the causes and solutions for problems with Media Services.
+description: Find the causes and solutions for issues with Media Services.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: troubleshooting
-ms.date: 04/21/2022
+ms.date: 05/09/2022
 ms.author: inhenkel
 ---
 # Troubleshoot Media Services
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Find the causes and solutions for problems with Media Services.
+Find the causes and solutions for issues with Media Services.
 
 > [!NOTE]
 > Many issues can be resolved by [**migrating to the Media Services v3 API**](migrate-v-2-v-3-migration-introduction.md) or by reading the [**live streaming best practices guide**](live-event-streaming-best-practices-guide.md).
