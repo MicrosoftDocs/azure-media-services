@@ -16,13 +16,13 @@ This article shows you how to use Bicep to create a media services account.
 
 ## Introduction
 
-[!INCLUDE [About Bicep](./includes/resource-manager-quickstart-bicep-introduction.md)]
+[Bicep](/azure/azure-resource-manager/bicep/overview) is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. It provides concise syntax, reliable type safety, and support for code reuse. Bicep offers the best authoring experience for your infrastructure-as-code solutions in Azure.
 
 ## Prerequisites
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
-If you have never deployed a Bicep file before, it is helpful to read about [Bicep](/azure/azure-resource-manager/bicep/overview) and go through the [quickstart](/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code?tabs=CLI).
+If you have never deployed a Bicep file before, it is helpful to read about [Bicep files](/azure/azure-resource-manager/bicep/file) and go through the [quickstart](/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code?tabs=CLI).
 
 ## Review the Bicep file
 
