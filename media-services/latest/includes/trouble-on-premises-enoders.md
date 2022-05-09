@@ -11,12 +11,7 @@ title: On-premises encoder isn't sending data to the live event.
 
 ## On-premises encoder isn't sending data to the live event.
 
-### Cause
-
-1. You may be using an encoder that hasn't been tested with Media Services.
-1. The on-premises encoder may not be configured correctly.
-
-### Solution
-
-1. Please see [Verified on-premises live streaming encoders](../encode-recommended-on-premises-live-encoders.md).
-1. Confirm that you have correctly [configured the on-premises encoder](../encode-recommended-on-premises-live-encoders.md#configuring-on-premises-live-encoder-settings).
+| Cause | Solution |
+| ----- | -------- |
+| You may be using an encoder that hasn't been tested with Media Services. | Please see [Verified on-premises live streaming encoders](../encode-recommended-on-premises-live-encoders.md?amspage=troubleshooting).|
+| The on-premises encoder may not be configured correctly.| Confirm that you have correctly [configured the on-premises encoder](../encode-recommended-on-premises-live-encoders.md?amspage=troubleshooting#configuring-on-premises-live-encoder-settings). |
