@@ -18,6 +18,8 @@ Most browsers and mobile devices on the market today support and understand the 
 
 In Media Services, a [streaming endpoint](stream-streaming-endpoint-concept.md) (origin) represents a dynamic (just-in-time) packaging and origin service that can deliver your live and on-demand content directly to a client player app. It uses one of the common streaming media protocols mentioned in the following section. *Dynamic packaging* is a feature that comes standard on all streaming endpoints.
 
+:::image type="content" source="media/diagrams/media-services-dynamic-packaging.svg" alt-text="dynamic packaging":::
+
 The advantages of just-in-time packaging are the following:
 
 * You can store all your files in standard MP4 file format
