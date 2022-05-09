@@ -50,6 +50,33 @@ You'll find description and links to the samples you may be looking for in each 
 | [Video Analytics](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoAnalytics/index.ts)|This sample illustrates how to create a video and audio analyzer transform, upload a video file to an input asset, submit a job with the transform and download the results for verification.|
 | [Audio Analytics basic with per-job language override](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/AudioAnalytics/index.ts)|This sample illustrates how to create a audio analyzer transform using the basic mode.  It also shows how you can override the preset language on a per-job basis to avoid creating a transform for every language.  It also shows how to upload a media file to an input asset, submit a job with the transform and download the results for verification.|
 
+## [Python](#tab/python/)
+
+| Sample | Description |
+|-------------|-------------|
+| **Encoding** | |
+| [Basic Encoding](https://github.com/Azure-Samples/media-services-v3-python/blob/main/BasicEncoding/basic-encoding.py) | Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
+| [CreateTransform_Job_PresetOverride](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/CreateTransform_Job_PresetOverride/create-transform-job-preset-override.py) |If you need a workflow where you desire to submit custom preset jobs to a single queue, you can use this base sample that shows how to create a (mostly) empty Transform, and then you can use the preset override property on the Job to submit custom presets to the same transform. This allows you to treat the v3 AMS API a lot more like the legacy v2 API Job queue if you desire. |
+| [Encoding_AAC_AudioOnly](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_AAC_AudioOnly/encoding-aac-audio-only.py) ||
+| [Encoding_BuiltIn_CopyCodec](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodec/encoding-builtin-copycodec.py) ||
+| [Encoding_BuiltIn_CopyCodecWithProxy](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodecWithProxy/encoding-builtin-copycodecwithproxy.py) ||
+| [Encoding_Custom_CopyCodec_Sprite+Proxy](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_Custom_CopyCodec_Sprite%2BProxy/encoding-custom-copycodec-sprite%2Bproxy.py) ||
+| [Encoding_H264 _with_EventHub](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264%20_with_EventHub/encoding-h264-with-eventhub.py) |Shows how to use the standard encoder and receive and process Event Grid events from Media Services through an Event Hubs. First set up an Event Grid subscription that pushes events into an Event Hubs using the Azure portal or CLI to use this sample.|
+| [Encoding_H264](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264/encoding-h264.py) |Shows how to use the standard encoder to encode a source file into H264 format with AAC audio and PNG thumbnails|
+| [Encoding_H264_ContentAware](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_ContentAware/encoding-h264-contentaware.py) |Example of using the standard encoder with Content Aware encoding to automatically generate the best quality adaptive bitrate streaming set based on an analysis of the source files contents|
+| [Encoding_H264_ContentAware_Constrained](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_ContentAware_Constrained/encoding-h264-contentaware-constrained.py) |Demonstrates how to control the output settings of the Content Aware encoding preset to make the outputs more deterministic to your encoding needs and costs. This will still auto generate the best quality adaptive bitrate streaming set based on an analysis of the source files contents, but constrain the output to your desired ranges. |
+| [Encoding_H264_OverlayImage](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_OverlayImage/encoding-h264-overlayimage.py) |Shows how to upload an image file and overlay on top of video with output to MP4 container. |
+| [Encoding_H264_Rotate90degrees](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_Rotate90degrees/encoding-h264-rotate90degrees.py) |Shows how to use the rotation filter to rotate a video by 90 degrees. |
+| [Encoding_H264_To_TransportStream](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/encoding-h264-to-transportstream.py) |Shows how to use the standard encoder to encode a source file and output to MPEG Transport Stream format using H264 format with AAC audio and PNG thumbnail |
+| [Encoding_HEVC](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_HEVC/encoding-hevc.py) |Shows how to use the standard encoder to encode a source file into HEVC format with AAC audio and PNG thumbnails |
+| [Encoding_HEVC_ContentAware](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_HEVC_ContentAware/encoding-hevc-contentaware.py) |Example of using the standard encoder with Content Aware encoding to automatically generate the best quality HEVC (H.265) adaptive bitrate streaming set based on an analysis of the source files contents |
+| [Encoding_HEVC_ContentAware_Constrained](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_HEVC_ContentAware_Constrained/encoding-hevc-contentaware-constrained.py) | Demonstrates how to control the output settings of the Content Aware encoding preset to make the outputs more deterministic to your encoding needs and costs. This will still auto generate the best quality adaptive bitrate streaming set based on an analysis of the source files contents, but constrain the output to your desired ranges. |
+| [Encoding_MultiChannel_Audio](https://github.com/Azure-Samples/media-services-v3-python/tree/main/VideoEncoding/Encoding_MultiChannel_Audio) |  |
+| [Encoding_Sprite_Thumbnail](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_Sprite_Thumbnail/encoding-sprite-thumbnail.py) | |
+| Encoding_Stitch_Two_Assets | |
+| **Video Analytics** | |
+| [FaceRedatorEventBased](https://github.com/Azure-Samples/media-services-v3-python/tree/main/VideoAnalytics/FaceRedactorEventBased) | This is an example of an event-based approach that triggers an Azure Media Services Face Redactor job on a video as soon as it lands on an Azure Storage Account. It uses Azure Media Services, Azure Function, Event Grid, and Azure Storage for the solution. For the full description of the solution, see the [README](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoAnalytics/FaceRedactorEventBased/README.md)|
+
 ## [.NET](#tab/net/)
 
 | Sample | Description |
@@ -74,14 +101,6 @@ You'll find description and links to the samples you may be looking for in each 
 | [Streaming/StreamHLSAndDASH](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/StreamHLSAndDASH)|This sample demonstrates how to create a transform with built-in AdaptiveStreaming preset, submit a job, publish output asset for HLS and DASH streaming.|
 | [HighAvailabilityEncodingStreaming](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/HighAvailabilityEncodingStreaming/) | This sample provides guidance and best practices for a production system using on-demand encoding or analytics. Readers should start with the companion article [High Availability with Media Services and VOD](architecture-high-availability-encoding-concept.md). There is a separate solution file provided for the [HighAvailabilityEncodingStreaming](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/main/HighAvailabilityEncodingStreaming/README.md) sample. |
 | [Azure Functions for Media Services](https://github.com/xpouyat/media-services-v3-dotnet-core-functions-integration/tree/main/Functions)|This project contains examples of Azure Functions that connect to Azure Media Services v3 for video processing. You can use Visual Studio 2019 or Visual Studio Code to develop and run the functions. An Azure Resource Manager (ARM) template and a GitHub Actions workflow are provided for the deployment of the Function resources and to enable continuous deployment.|
-
-## [Python](#tab/python)
-
-|Sample|Description|
-|---|---|
-|[Basic Encoding with Python](https://github.com/Azure-Samples/media-services-v3-python)| Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
-|[Face Redaction using events and functions](https://github.com/Azure-Samples/media-services-v3-python/tree/main/VideoAnalytics/FaceRedactorEventBased)| This is an example of an event-based approach that triggers an Azure Media Services Face Redactor job on a video as soon as it lands on an Azure Storage Account. It uses Azure Media Services, Azure Function, Event Grid, and Azure Storage for the solution. For the full description of the solution, see the [README.md](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoAnalytics/FaceRedactorEventBased/README.md)|
-
 
 ## [Java](#tab/java)
 
