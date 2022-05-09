@@ -28,7 +28,11 @@ If you have never deployed a Bicep file before, it is helpful to read about [Bic
 
 The Bicep file used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/media-services-create/).
 
+<!--
+The syntax for the Bicep file code fence is:
+
 :::code language="bicep" source="~/../quickstart-templates/quickstarts/microsoft.media/media-services-create/main.bicep":::
+-->
 
 The following Azure resources are defined in the Bicep file:
 
