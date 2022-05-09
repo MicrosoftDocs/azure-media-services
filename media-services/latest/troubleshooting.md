@@ -52,4 +52,4 @@ Find the causes and solutions for problems with Media Services.
 [!INCLUDE [trouble-excessive-5xx-errors](includes/trouble-excessive-5xx-errors.md)]
 [!INCLUDE [trouble-general-code-errors](includes/trouble-general-code-errors.md)]
 
-If you haven't found the solution to your problem, contact [Media Services Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest?referrer=troubleshootingdoc).
+If you haven't found the solution to your problem, contact [Media Services Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest?amspage=troubleshootingdoc).
