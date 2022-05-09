@@ -683,13 +683,13 @@
       href: /dotnet/api/overview/azure/media-services?view=azure-dotnet&preserve-view=true
       displayName: SDK, .NET SDK, .NET, .NET reference, .NET docs, reference .NET, developer, develop, .NET library, nuget, package
     - name: Java
-      href: /rest/api/media/java/api/overview/azure/mediaservices/management
+      href: /java/api/overview/azure/mediaservices/management?view=azure-java-legacy&preserve-view=true
       displayName: SDK, Java SDK, Java, Java docs, Java reference, reference Java, developer, develop, Java library, maven, package
     - name: Python
-      href: /rest/api/media/python/api/overview/azure/mediaservices/management
+      href: /python/api/azure-mgmt-media/azure.mgmt.media?view=azure-python&preserve-view=true
       displayName: SDK, Python SDK, Python, Python docs, Python reference, reference Python, developer, develop, Python library, pypi, package, pip, pip install
     - name: Node.js
-      href: /rest/api/media/javascript/api/overview/azure/arm-mediaservices-readme
+      href: /javascript/api/overview/azure/arm-mediaservices-readme
       displayName: SDK, Node SDK, Node.js, Nodejs, Nodejs SDk, Node.js SDk, JavaScript, JavaScript SDK, TypeScript, TypeScript SDK, JavaScript docs, Node docs, Node.js Docs, Node.js reference, reference Node, developer, develop, Node.js library, TypeScript library, package, npm, npm install
     - name: Go
       href: https://aka.ms/ams-v3-go-ref

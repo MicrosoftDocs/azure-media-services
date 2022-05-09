@@ -16,6 +16,8 @@ The term encoding in Media Services applies to the process of converting files c
 
 Videos are typically delivered to devices and apps by [progressive download](https://en.wikipedia.org/wiki/Progressive_download) or through [adaptive bitrate streaming](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming).
 
+:::image type="content" source="media/diagrams/transforms-jobs.png" alt-text="transforms and jobs":::
+
 > [!IMPORTANT]
 > Media Services does not bill for canceled or errored jobs. For example, a job that has reached 50% progress and is canceled is not billed at 50% of the job minutes. You are only charged for finished jobs.
 

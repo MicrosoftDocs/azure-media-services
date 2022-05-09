@@ -19,6 +19,8 @@ In Media Services v3, a content key is associated with Streaming Locator (see [t
 
 When a stream is requested by a player, Media Services uses the specified key to dynamically encrypt your content by using AES clear key or DRM encryption. To decrypt the stream, the player requests the key from Media Services key delivery service or the key delivery service you specified. To decide if the user is authorized to get the key, the service evaluates the content key policy that you specified for the key.
 
+:::image type="content" source="media/diagrams/content-protection.svg" alt-text="content protection system":::
+
 You can use the REST API, or a Media Services client library to configure authorization and authentication policies for your licenses and keys.
 
 This article explains concepts and terminology that help you understand content protection with Media Services.

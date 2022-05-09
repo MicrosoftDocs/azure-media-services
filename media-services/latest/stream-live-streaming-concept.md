@@ -48,9 +48,13 @@ Dynamic filtering is used to control the number of tracks, formats, bitrates, an
 
 When using the pass-through **Live Event** (basic or standard), you rely on your on-premises live encoder to generate a multiple bitrate video stream and send that as the contribution feed to the Live Event (using RTMP or fragmented-MP4 input protocol). The Live Event then carries through the incoming video streams  to the dynamic packager (Streaming Endpoint) without any further transcoding. Such a pass-through Live Event is optimized for long-running live events or 24x365 linear live streaming.
 
+:::image type="content" source="media/diagrams/pass-through.svg" alt-text="pass through streaming":::
+
 ### Live encoding
 
 When using cloud encoding with Media Services, you would configure your on-premises live encoder to send a single bitrate video as the contribution feed (up to 32Mbps aggregate) to the Live Event (using RTMP or fragmented-MP4 input protocol). The Live Event transcodes the incoming single bitrate stream into [multiple bitrate video streams](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming) at varying resolutions to improve delivery and makes it available for delivery to playback devices via industry standard protocols like MPEG-DASH, Apple HTTP Live Streaming (HLS), and Microsoft Smooth Streaming.
+
+:::image type="content" source="media/diagrams/live-encoding.svg" alt-text="live encoding streaming":::
 
 ### Live transcription (preview)
 
