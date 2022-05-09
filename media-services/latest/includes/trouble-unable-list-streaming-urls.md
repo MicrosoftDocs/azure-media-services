@@ -11,10 +11,6 @@ title: Unable to list streaming URLs.
 
 ## Unable to list streaming URLs.
 
-### Cause
-
-An account may have been moved between subscriptions and the new managed identity doesn't have assigned roles for the storage account.
-
-### Solution
-
-Assign the missing Reader and Storage Blog Data Contributor roles to the managed identity.
+| Cause | Solution |
+| ----- | -------- |
+| An account may have been moved between subscriptions and the new managed identity doesn't have assigned roles for the storage account. | Assign the missing *Reader* and *Storage Blog Data Contributor* roles to the managed identity. |
