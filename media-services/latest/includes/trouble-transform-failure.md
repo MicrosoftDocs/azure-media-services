@@ -13,4 +13,4 @@ title: Transform failures
 
 | Cause | Solution |
 | ----- | -------- |
-| You may have gone over the quota for transforms per account which is 100. | Delete unused transforms or create additional Media Services accounts. |
+| You may have gone over the quota for transforms per account which is 100. | Delete unused transforms. |

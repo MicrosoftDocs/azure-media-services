@@ -13,4 +13,4 @@ title: The audio is out of sync
 
 | Cause | Solution |
 | ----- | -------- |
-| You may have implemented a storage versioning policy that was turned on automatically which causes buffering and disconnects. | Remove the policy and turn off automatic storage versioning. |
+| Video packets are being delivered late. | Possible solutions: 1. You may have implemented a storage versioning policy that was turned on automatically which causes buffering and disconnects. Remove the policy and turn off automatic storage versioning. <br/> 2. Enable a CDN. <br/> 3. Use a Premium streaming endpoint with enough reserved units.  |

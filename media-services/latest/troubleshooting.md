@@ -16,7 +16,11 @@ Find the causes and solutions for problems with Media Services.
 > [!NOTE]
 > Many issues can be resolved by [**migrating to the Media Services v3 API**](migrate-v-2-v-3-migration-introduction.md) or by reading the [**live streaming best practices guide**](live-event-streaming-best-practices-guide.md).
 
-<!-- Video playback and downloading issues =-->
+<!-- Account issues -->
+
+[!INCLUDE [trouble-account](includes/trouble-account.md)]
+
+<!-- Video playback and downloading issues -->
 
 [!INCLUDE [trouble-video-playback](includes/trouble-video-playback.md)]
 [!INCLUDE [trouble-offline-playback](includes/trouble-offline-playback.md)]
@@ -43,7 +47,6 @@ Find the causes and solutions for problems with Media Services.
 <!-- Miscellaneous issues -->
 
 [!INCLUDE [trouble-azure-media-indexer-2-not-listed](includes/trouble-azure-media-indexer-2-not-listed.md)]
-[!INCLUDE [trouble-content-flagged-inappropriate](./includes/trouble-content-flagged-inappropriate.md)]
 [!INCLUDE [trouble-network-connection-error](./includes/trouble-network-connection-error.md)]
 [!INCLUDE [trouble-resource-location-unavailable](./includes/trouble-downloading.md)]
 [!INCLUDE [trouble-excessive-5xx-errors](includes/trouble-excessive-5xx-errors.md)]
