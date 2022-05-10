@@ -27,18 +27,17 @@ You'll find description and links to the samples you may be looking for in each 
 | **Account** ||
 |[Create an account](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Account/create-account.ts)|The sample shows how to create a Media Services account and set the primary storage account, in addition to advanced configuration settings including Key Delivery IP allowlist, Managed Identity, storage auth, and bring your own encryption key.|
 |[Create an account with user assigned managed identity](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Account/create-account_with_managed_identity.ts)|The sample shows how to create a Media Services account and set the primary storage account, in addition to advanced configuration settings including Key Delivery IP allowlist, user or system assigned Managed Identity, storage auth, and bring your own encryption key.|
-| **Asset** ||
+| **Assets** ||
 |[Hello World - list assets](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/HelloWorld-ListAssets/list-assets.ts)|Basic example of how to connect and list assets |
-| **Live streaming** ||
+| **Streaming** ||
 |[Live stream with standard passthrough](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/Standard_Passthrough_Live_Event/index.ts)| Standard passthrough live streaming example. |
 |[Live stream with standard passthrough with Event Hubs](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/Standard_Passthrough_Live_Event_with_EventHub/index.ts)| Demonstrates how to use Event Hubs to subscribe to events on the live streaming channel. Events include encoder connections, disconnections, heartbeat, latency, discontinuity, and drift issues. |
 |[Live stream with basic passthrough](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/Basic_Passthrough_Live_Event/index.ts)| Shows how to set up the basic passthrough live event if you only need to broadcast a low-cost UGC channel. |
 |[Live stream with 720P standard encoding](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/720P_Encoding_Live_Event/index.ts)| Use live encoding in the cloud with the 720P HD adaptive bitrate encoding preset. |
 |[Live stream with 1080P encoding](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/720P_Encoding_Live_Event/index.ts)| Use live encoding in the cloud with the 1080P HD adaptive bitrate encoding preset. |
+|[Stream HLS and DASH](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesSample/index.ts)| Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
 | **Content protection** ||
-|[Upload and stream HLS and DASH](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesSample/index.ts)| Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
-|[Upload and stream HLS and DASH with PlayReady and Widevine DRM](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesWithDRMSample/index.ts)| Demonstrates how to encode and stream using Widevine and PlayReady DRM |
-|[Upload and use AI to index videos and audio](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoAnalytics/index.ts)| Example of using the Video and Audio Analyzer presets to generate metadata and insights from a video or audio file |
+|[Stream HLS and DASH with PlayReady and Widevine DRM](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesWithDRMSample/index.ts)| Demonstrates how to encode and stream using Widevine and PlayReady DRM |
 | **Encoding** ||
 |[Create transform, use job preset overrides (v2-to-v3 API migration)](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/CreateTransform_Job_PresetOverride/index.ts)| If you need a workflow where you desire to submit custom preset jobs to a single queue, you can use this base sample that shows how to create a (mostly) empty Transform, and then you can use the preset override property on the Job to submit custom presets to the same transform. This allows you to treat the v3 AMS API a lot more like the legacy v2 API Job queue if you desire.|
 |[Encode with H264](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264/index.ts)| Shows how to use the standard encoder to encode a source file into H264 format with AAC audio and PNG thumbnails |
@@ -64,11 +63,13 @@ You'll find description and links to the samples you may be looking for in each 
 |-------------|-------------|
 | **Account** ||
 | [Create an account](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Account/create-account.py) |The sample shows how to create a Media Services account and set the primary storage account, in addition to advanced configuration settings including Key Delivery IP allowlist, Managed Identity, storage auth, and bring your own encryption key.|
-|[Create an account with a user managed identity](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Account/create-account-with-managed-identity.py)||
+|[Create an account with a user managed identity](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Account/create-account-with-managed-identity.py)|The sample shows how to create a Media Services account and set the primary storage account, in addition to advanced configuration settings including Key Delivery IP allowlist, user or system assigned Managed Identity, storage auth, and bring your own encryption key.|
 | **Asset** ||
 | [List assets](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/list-assets-filtered.py) | Basic example of how to connect and list assets |
 | [Get container from asset](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/get-container-from-asset.py) | Get the container name from the asset. |
-| **Live streaming** ||
+| **Streaming** ||
+|[Stream HLS and DASH](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesSample/stream-files-sample.py)| Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
+|[Use asset filters](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/AssetFilters/asset-filters.py)| Use a filter to stream assets.|
 | **Content protection** ||
 | **Encoding** | |
 | [Basic encoding](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/BasicEncoding/basic-encoding.py) | Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
