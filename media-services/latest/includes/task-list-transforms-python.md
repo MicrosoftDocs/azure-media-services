@@ -9,7 +9,7 @@ title: List all transforms with Python
 
 ### List all transforms with Python
 
-:::code language="python" source="~/../media-services-v3-python/all/transforms.py" id="TransformsImports":::
+:::code language="python" source="~/..//media-services-v3-python/snippets/transforms.py" id="TransformsImports":::
 
 [!INCLUDE [python-snippets-env](python-snippets-env.md)]
 
@@ -17,4 +17,4 @@ title: List all transforms with Python
 
 :::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="CreateAMSClient":::
 
-:::code language="python" source="~/../media-services-v3-python/all/transforms.py" id="TransformList":::
+:::code language="python" source="~/..//media-services-v3-python/snippets/transforms.py" id="TransformList":::

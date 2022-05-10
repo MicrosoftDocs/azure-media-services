@@ -1,6 +1,6 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 03/11/2022
 ms.author: inhenkel
@@ -10,8 +10,8 @@ ms.author: inhenkel
 
 Set up imports, environment variables, authentication and create the client.
 
-:::code language="python" source="~/../media-services-v3-python/all/jobs.py" id="JobSetup":::
+:::code language="python" source="~/..//media-services-v3-python/snippets/jobs.py" id="JobSetup":::
 
 Update the job.
 
-:::code language="python" source="~/../media-services-v3-python/all/jobs.py" id="JobUpdate" :::
+:::code language="python" source="~/..//media-services-v3-python/snippets/jobs.py" id="JobUpdate" :::
