@@ -35,7 +35,7 @@ You can use the following methods to list the streaming locators of a Media Serv
 
 [!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
 
-:::code language="python" source="~/../media-services-v3-python/all/assets.py" id="AssetImports":::
+:::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="AssetImports":::
 
 [!INCLUDE [task-list-asset-streaming-locators-python.md](./includes/task-list-asset-streaming-locators-python.md)]
 

@@ -34,6 +34,6 @@ You can use the following methods to list the assets in a Media Services account
 
 [!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
 
-:::code language="python" source="~/../media-services-v3-python/all/assets.py" id="AssetImports":::
+:::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="AssetImports":::
 
 [!INCLUDE [task-list-assets-python.md](./includes/task-list-assets-python.md)]
