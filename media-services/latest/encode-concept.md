@@ -4,13 +4,15 @@ description: This article explains about encoding video and audio with Azure Med
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/24/2022
+ms.date: 05/10/2022
 ms.author: inhenkel
 ---
 
 # Encoding video and audio with Media Services
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
+
+[!INCLUDE [tip-samples](includes/tip-samples.md)]
 
 The term encoding in Media Services applies to the process of converting files containing digital video and/or audio from one standard format to another, with the purpose of (a) reducing the size of the files, and/or (b) producing a format that's compatible with a broad range of devices and apps. This process is also referred to as video compression, or transcoding. See the [Data compression](https://en.wikipedia.org/wiki/Data_compression) and the [What Is Encoding and Transcoding?](https://www.streamingmedia.com/Articles/Editorial/What-Is-/What-Is-Encoding-and-Transcoding-75025.aspx) for further discussion of the concepts.
 
@@ -36,29 +38,6 @@ Starting with January 2019, when encoding with the Standard  Encoder to produce 
 
 > [!NOTE]
 > You shouldn't modify or remove the MPI file, or take any dependency in your service on the existence (or not) of such a file.
-
-### Creating job input from an HTTPS URL
-
-When you submit Jobs to process your videos, you have to tell Media Services where to find the input video. One of the options is to specify an HTTPS URL as a job input. Currently, Media Services v3 doesn't support chunked transfer encoding over HTTPS URLs.
-
-#### Examples
-
-* [Encode from an HTTPS URL with .NET](stream-files-dotnet-quickstart.md)
-* [Encode from an HTTPS URL with CLI](stream-files-cli-quickstart.md)
-* [Encode from an HTTPS URL with Node.js](samples-overview.md)
-
-### Creating job input from a local file
-
-The input video can be stored as a Media Service Asset, in which case you create an input asset based on a file (stored locally or in Azure Blob storage).
-
-### Creating job input with subclipping
-
-When encoding a video, you can specify to also trim or clip the source file and produce an output that has only a desired portion of the input video. This functionality works with any [Transform](/rest/api/media/transforms) that's built using either the [BuiltInStandardEncoderPreset](/rest/api/media/transforms/createorupdate#builtinstandardencoderpreset) presets, or the [StandardEncoderPreset](/rest/api/media/transforms/createorupdate#standardencoderpreset) presets.
-
-You can specify to create a [Job](/rest/api/media/jobs/create) with a single clip of a video on-demand or live archive (a recorded event). The job input could be an Asset or an HTTPS URL.
-
-> [!TIP]
-> If you want to stream a sublip of your video without re-encoding the video, consider using [Pre-filtering manifests with Dynamic Packager](filters-dynamic-manifest-concept.md).
 
 ## Built-in presets
 
@@ -120,3 +99,28 @@ For accounts created with the **2020-05-01** or later version of the API or thro
 Media Services does not bill for canceled or errored jobs. For example, a job that has reached 50% progress and is canceled is not billed at 50% of the job minutes. You are only charged for finished jobs.
 
 For more information, see [pricing](https://azure.microsoft.com/pricing/details/media-services/).
+
+## Tutorials
+
+### Creating job input from an HTTPS URL
+
+When you submit Jobs to process your videos, you have to tell Media Services where to find the input video. One of the options is to specify an HTTPS URL as a job input. Currently, Media Services v3 doesn't support chunked transfer encoding over HTTPS URLs.
+
+#### Examples
+
+* [Encode from an HTTPS URL with .NET](stream-files-dotnet-quickstart.md)
+* [Encode from an HTTPS URL with CLI](stream-files-cli-quickstart.md)
+* [Encode from an HTTPS URL with Node.js](samples-overview.md)
+
+### Creating job input from a local file
+
+The input video can be stored as a Media Service Asset, in which case you create an input asset based on a file (stored locally or in Azure Blob storage).
+
+### Creating job input with subclipping
+
+When encoding a video, you can specify to also trim or clip the source file and produce an output that has only a desired portion of the input video. This functionality works with any [Transform](/rest/api/media/transforms) that's built using either the [BuiltInStandardEncoderPreset](/rest/api/media/transforms/createorupdate#builtinstandardencoderpreset) presets, or the [StandardEncoderPreset](/rest/api/media/transforms/createorupdate#standardencoderpreset) presets.
+
+You can specify to create a [Job](/rest/api/media/jobs/create) with a single clip of a video on-demand or live archive (a recorded event). The job input could be an Asset or an HTTPS URL.
+
+> [!TIP]
+> If you want to stream a sublip of your video without re-encoding the video, consider using [Pre-filtering manifests with Dynamic Packager](filters-dynamic-manifest-concept.md).

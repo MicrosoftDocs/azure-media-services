@@ -10,6 +10,10 @@ ms.author: inhenkel
 
 # Transforms and Jobs in Media Services
 
+[!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
+
+[!INCLUDE [tip-samples](includes/tip-samples.md)]
+
 This topic gives details about [Transforms](/rest/api/media/transforms) and [Jobs](/rest/api/media/jobs) and explains the relationship between these entities.
 
 ## Typical workflow
@@ -68,3 +72,7 @@ The progress and state of jobs can be obtained by monitoring events with Event G
 ### Updating Jobs
 
 The Update operation on the [Job](/rest/api/media/jobs) entity can be used to modify the *description* and the *priority* properties after the job has been submitted. A change to the *priority* property is effective only if the job is still in a queued state. If the job has begun processing, or has finished, changing priority has no effect.
+
+## Code Samples
+
+[!INCLUDE [note-samples](includes/note-samples.md)]
