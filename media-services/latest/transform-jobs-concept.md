@@ -10,6 +10,10 @@ ms.author: inhenkel
 
 # Transforms and Jobs in Media Services
 
+[!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
+
+[!INCLUDE [tip-samples](includes/tip-samples.md)]
+
 This topic gives details about [Transforms](/rest/api/media/transforms) and [Jobs](/rest/api/media/jobs) and explains the relationship between these entities.
 
 ## Typical workflow
