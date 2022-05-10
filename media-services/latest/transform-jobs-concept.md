@@ -72,7 +72,3 @@ The progress and state of jobs can be obtained by monitoring events with Event G
 ### Updating Jobs
 
 The Update operation on the [Job](/rest/api/media/jobs) entity can be used to modify the *description* and the *priority* properties after the job has been submitted. A change to the *priority* property is effective only if the job is still in a queued state. If the job has begun processing, or has finished, changing priority has no effect.
-
-## Code Samples
-
-[!INCLUDE [note-samples](includes/note-samples.md)]

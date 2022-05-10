@@ -43,10 +43,6 @@ See the [Analyze a media file with a audio analyzer preset](https://github.com/A
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/AudioAnalytics/AudioAnalyzer/program.cs#PresetOverride)]
 
-## Code Samples
-
-[!INCLUDE [note-samples](includes/note-samples.md)]
-
 ## Ask questions, give feedback, get updates
 
 Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
