@@ -11,6 +11,8 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
+[!INCLUDE [tip-samples](includes/tip-samples.md)]
+
 ## Overview
 
 This article explains how to use the Standard Encoder in Media Services to encode an input video into an auto-generated bitrate ladder (bitrate-resolution pairs) based on the input resolution and bitrate. This built-in encoder setting, or preset, will never exceed the input resolution and bitrate. For example, if the input is 720p at 3 Mbps, output remains 720p at best, and will start at rates lower than 3 Mbps.
