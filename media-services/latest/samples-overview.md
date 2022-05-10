@@ -70,7 +70,7 @@ You'll find description and links to the samples you may be looking for in each 
 | **Streaming** ||
 |[Stream HLS and DASH](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesSample/stream-files-sample.py)| Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
 |[Use asset filters](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/AssetFilters/asset-filters.py)| Use a filter to stream assets.|
-| **Content protection** ||
+| **Content protection** | Samples in development. |
 | **Encoding** | |
 | [Basic encoding](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/BasicEncoding/basic-encoding.py) | Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
 | [Create transform, use job preset overrides (v2-to-v3 API migration)](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/CreateTransform_Job_PresetOverride/create-transform-job-preset-override.py) |If you need a workflow where you desire to submit custom preset jobs to a single queue, you can use this base sample that shows how to create a (mostly) empty Transform, and then you can use the preset override property on the Job to submit custom presets to the same transform. This allows you to treat the v3 AMS API a lot more like the legacy v2 API Job queue if you desire. |
@@ -93,6 +93,7 @@ You'll find description and links to the samples you may be looking for in each 
 | [Stitch two assets](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_Stitch_Two_Assets/encoding-stitch-two-assets.py) | This example shows you how to stitch two assets together.|
 | **Analytics** | |
 | [Event based Face Redactor](https://github.com/Azure-Samples/media-services-v3-python/tree/main/VideoAnalytics/FaceRedactorEventBased) | This is an example of an event-based approach that triggers an Azure Media Services Face Redactor job on a video as soon as it lands on an Azure Storage Account. It uses Azure Media Services, Azure Function, Event Grid, and Azure Storage for the solution. For the full description of the solution, see the [README](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoAnalytics/FaceRedactorEventBased/README.md)|
+| [Video Analytics](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoAnalytics/video-analytics.py) |This sample illustrates how to create a video analyzer transform using the basic mode.|
 | [Audio anlyics](https://github.com/Azure-Samples/media-services-v3-python/blob/main/AudioAnalytics/audio-analytics.py)|This sample illustrates how to create a audio analyzer transform using the basic mode. It also shows how you can override the preset language on a per-job basis to avoid creating a transform for every language. It also shows how to upload a media file to an input asset, submit a job with the transform and download the results for verification.|
 
 ## [.NET](#tab/net/)
