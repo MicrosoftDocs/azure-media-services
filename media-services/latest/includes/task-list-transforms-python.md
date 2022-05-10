@@ -13,8 +13,8 @@ title: List all transforms with Python
 
 [!INCLUDE [python-snippets-env](python-snippets-env.md)]
 
-:::code language="python" source="~/../media-services-v3-python/all/assets.py" id="EnvironmentVariables":::
+:::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="EnvironmentVariables":::
 
-:::code language="python" source="~/../media-services-v3-python/all/assets.py" id="CreateAMSClient":::
+:::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="CreateAMSClient":::
 
 :::code language="python" source="~/../media-services-v3-python/all/transforms.py" id="TransformList":::
