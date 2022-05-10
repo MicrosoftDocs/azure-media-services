@@ -9,4 +9,4 @@ title: Update an asset with Python
 
 ### Update an asset with Python
 
-:::code language="python" source="~/../media-services-v3-python/all/assets.py" id="UpdateAsset":::
+:::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="UpdateAsset":::

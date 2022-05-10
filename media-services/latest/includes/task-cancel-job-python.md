@@ -10,8 +10,8 @@ ms.author: inhenkel
 
 [!INCLUDE [python-snippets-env](python-snippets-env.md)]
 
-:::code language="python" source="~/../media-services-v3-python/all/jobs.py" id="JobSetup":::
+:::code language="python" source="~/..//media-services-v3-python/snippets/jobs.py" id="JobSetup":::
 
 Cancel the job.
 
-:::code language="python" source="~/../media-services-v3-python/all/jobs.py" id="JobCancel":::
+:::code language="python" source="~/..//media-services-v3-python/snippets/jobs.py" id="JobCancel":::
