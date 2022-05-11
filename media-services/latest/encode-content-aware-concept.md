@@ -4,7 +4,7 @@ description: This article discusses content-aware encoding in Microsoft Azure Me
 author: jiayali-ms
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 

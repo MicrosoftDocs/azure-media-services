@@ -4,7 +4,7 @@ description: This article gives an explanation of what Streaming Policies are, a
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 

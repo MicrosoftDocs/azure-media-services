@@ -4,7 +4,7 @@ description: Find the causes and solutions for issues with Media Services.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: troubleshooting
-ms.date: 05/09/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 # Troubleshoot Media Services

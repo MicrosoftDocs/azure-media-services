@@ -4,7 +4,7 @@ description: This topic gives an overview of LiveEvent low latency settings and 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 3/16/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 
@@ -40,7 +40,7 @@ The following tables show typical results for latency (when the LowLatency flag 
 > [!NOTE]
 > The end-to-end latency can vary depending on local network conditions or by introducing a CDN caching layer. You should test your exact configurations.
 
-## Low Latency How-tos and Tutorials
+## How-tos and Tutorials
 
 - [Live Event with DVR - .NET](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/main/Live/LiveEventWithDVR/Program.cs)
 - [Low Latency - Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/720P_Low_Latency_Encoding_Live_Event/index.ts)

@@ -4,7 +4,7 @@ description: Transforms describe the rules for processing your videos in Azure M
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 
@@ -79,8 +79,8 @@ See the extensive list of coding [Samples](samples-overview.md?amspage=transform
 
 ## How tos and Tutorials
 
-[Create a transform](transform-create-transform-how-to.md?ampapge=transform-jobs-concept)
-[List transforms](account-list-transforms-how-to.md?ampapge=transform-jobs-concept)
-[Update a transform](transform-update-transform-how-to.md?ampapge=transform-jobs-concept)
-[Delete a transform](transform-delete-transform-how-to.md?ampapge=transform-jobs-concept)
-[Add a custom transform output](transform-add-custom-transform-output-how-to.md?ampapge=transform-jobs-concept)
+- [Create a transform](transform-create-transform-how-to.md?ampapge=transform-jobs-concept)
+- [List transforms](account-list-transforms-how-to.md?ampapge=transform-jobs-concept)
+- [Update a transform](transform-update-transform-how-to.md?ampapge=transform-jobs-concept)
+- [Delete a transform](transform-delete-transform-how-to.md?ampapge=transform-jobs-concept)
+- [Add a custom transform output](transform-add-custom-transform-output-how-to.md?ampapge=transform-jobs-concept)

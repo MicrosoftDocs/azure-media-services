@@ -4,7 +4,7 @@ description: To protect your assets at rest, the assets should be encrypted by t
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 

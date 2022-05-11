@@ -4,7 +4,7 @@ description: This topic shows how to use the Standard Encoder in Media Services 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 #  Encode with an auto-generated bitrate ladder
