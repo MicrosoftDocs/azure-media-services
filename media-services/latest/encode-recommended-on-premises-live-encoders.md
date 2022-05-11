@@ -12,7 +12,7 @@ ms.service: media-services
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-In Azure Media Services, a [Live Event](/rest/api/media/liveevents) (channel) represents a pipeline for processing live-streaming content. The Live Event receives live input streams in one of two ways.
+In Azure Media Services, a [Live Event](/rest/api/media/liveevents) (previously called a channel in v2) represents a pipeline for processing live-streaming content. The Live Event receives live input streams in one of two ways.
 
 * An on-premises live encoder sends a multi-bitrate RTMP or Smooth Streaming (fragmented MP4) stream to the Live Event that is not enabled to perform live encoding with Media Services. The ingested streams pass through Live Events without any further processing. This method is called **pass-through**. We recommend for the live encoder to send multi-bitrate streams instead of a single-bitrate stream to a pass-through live event to allow for adaptive bitrate streaming to the client.
 

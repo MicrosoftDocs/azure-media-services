@@ -4,7 +4,7 @@ description: This topic describes how to create filters so your client can use t
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 # Filters
@@ -23,7 +23,7 @@ Filters are server-side rules that allow your customers to do things like:
 
 Media Services enables you to create **Account filters** and **Asset filters** for your content. In addition, you can associate your pre-created filters with a **Streaming Locator**.
 
-## Defining filters
+## Filter types
 
 There are two types of filters:
 
@@ -137,3 +137,16 @@ You can specify a list of [asset or account filters](filters-concept.md) on your
 It is not recommended to update the definition of filters associated with an actively published **Streaming Locator**, especially when CDN is enabled. Streaming servers and CDNs can have internal caches that may result in stale cached data to be returned.
 
 If the filter definition needs to be changed consider creating a new filter and adding it to the **Streaming Locator** URL or publishing a new **Streaming Locator** that references the filter directly.
+
+## How-tos and Tutorials
+
+- [Create an account filter](account-filter-create-how-to.md?amspage=filters-concept)
+- [Delete an account filter](account-filter-delete-how-to.md?amspage=filters-concept)
+- [List account filters](account-filter-list-how-to.md?amspage=filters-concept)
+- [Show or get the details of an account filter](account-filter-show-how-to.md?amspage=filters-concept)
+- [Update an account filter](account-filter-update-how-to.md?amspage=filters-concept)
+- [Create an asset filter](asset-create-asset-filter-how-to.md?amspage=filters-concept)
+- [Update an asset filter](asset-update-asset-filter-how-to.md?amspage=filters-concept)
+- [List asset filters](asset-list-asset-filters-how-to.md?amspage=filters-concept)
+- [Delete an asset filter](asset-delete-asset-filter-how-to.md?amspage=filters-concept)
+- [Create dynamic manifest filters](filters-dynamic-manifest-cli-how-to.md?amspage=filters-concept)
