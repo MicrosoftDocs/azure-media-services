@@ -4,7 +4,7 @@ description: This article explains about encoding video and audio with Azure Med
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/10/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 
@@ -100,27 +100,17 @@ Media Services does not bill for canceled or errored jobs. For example, a job th
 
 For more information, see [pricing](https://azure.microsoft.com/pricing/details/media-services/).
 
-## Tutorials
+## How-tos and Tutorials
 
-### Creating job input from an HTTPS URL
+### .NET
 
-When you submit Jobs to process your videos, you have to tell Media Services where to find the input video. One of the options is to specify an HTTPS URL as a job input. Currently, Media Services v3 doesn't support chunked transfer encoding over HTTPS URLs.
+- [Encode a remote file based on URL and stream the video](stream-files-dotnet-quickstart.md?amspage=encode-concept)
+- [Upload, encode, and stream videos with Media Services v3](stream-files-tutorial-with-api.md?amspage=encode-concept)
 
-#### Examples
+### CLI
 
-* [Encode from an HTTPS URL with .NET](stream-files-dotnet-quickstart.md)
-* [Encode from an HTTPS URL with CLI](stream-files-cli-quickstart.md)
-* [Encode from an HTTPS URL with Node.js](samples-overview.md)
+- [Encode a remote file based on URL and stream the video](stream-files-cli-quickstart.md?amspage=encode-concept)
 
-### Creating job input from a local file
+### Encoding samples
 
-The input video can be stored as a Media Service Asset, in which case you create an input asset based on a file (stored locally or in Azure Blob storage).
-
-### Creating job input with subclipping
-
-When encoding a video, you can specify to also trim or clip the source file and produce an output that has only a desired portion of the input video. This functionality works with any [Transform](/rest/api/media/transforms) that's built using either the [BuiltInStandardEncoderPreset](/rest/api/media/transforms/createorupdate#builtinstandardencoderpreset) presets, or the [StandardEncoderPreset](/rest/api/media/transforms/createorupdate#standardencoderpreset) presets.
-
-You can specify to create a [Job](/rest/api/media/jobs/create) with a single clip of a video on-demand or live archive (a recorded event). The job input could be an Asset or an HTTPS URL.
-
-> [!TIP]
-> If you want to stream a sublip of your video without re-encoding the video, consider using [Pre-filtering manifests with Dynamic Packager](filters-dynamic-manifest-concept.md).
+See also the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for an encoding.

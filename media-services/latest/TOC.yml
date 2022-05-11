@@ -151,10 +151,8 @@
       href: concept-use-customer-managed-keys-byok.md
       displayName: customer-managed keys, byok, customer keys, keys, management
   - name: Assets
-    items:
-    - name: Assets
-      href: assets-concept.md
-      displayName: assets, containers, storage, media files, upload
+    href: assets-concept.md
+    displayName: assets, containers, storage, media files, upload
   - name: Encoding
     items:
     - name: Overview
