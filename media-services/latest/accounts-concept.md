@@ -28,7 +28,7 @@ There are multiple ways to create a Media Services account.  See [Create a Media
 
 ## Associated storage
 
-When creating a Media Services account, you attach an Azure Storage account to the Media Services account. The Media Services account and all associated storage accounts must be in the same Azure subscription. For more information about storage accounts, see [Storage accounts](storage-account-concept.mdamspage=accounts-concept).
+When creating a Media Services account, you attach an Azure Storage account to the Media Services account. The Media Services account and all associated storage accounts must be in the same Azure subscription. For more information about storage accounts, see [Storage accounts](storage-account-concept.md?amspage=accounts-concept).
 
 ## Associate streaming endpoint
 

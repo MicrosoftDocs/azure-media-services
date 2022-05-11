@@ -43,6 +43,7 @@ Find the causes and solutions for issues with Media Services.
 
 [!INCLUDE [trouble-upload-media-issues](includes/trouble-upload-media-issues.md)]
 [!INCLUDE [trouble-cors-errors](includes/trouble-cors-errors.md)]
+[!INCLUDE [trouble-storage-issues](includes/trouble-storage-issues.md)]
 
 <!-- Miscellaneous issues -->
 

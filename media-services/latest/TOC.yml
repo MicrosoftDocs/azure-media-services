@@ -308,6 +308,8 @@
         - name: Enable trusted storage
           href: security-trusted-storage-rest-tutorial.md
           displayName: trusted storage, storage, access, storage access, security
+        - name: Storage side encryption
+          href: storage-side-encryption-concept.md
       - name: Network security
         items:
           - name: Stream to a private network
