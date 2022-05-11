@@ -137,7 +137,7 @@
     items:
     - name: Media Services account
       displayName: subscription, account, management
-      href: account-move-account-how-to.md
+      href: accounts-concept.md
     - name: Storage account
       href: storage-account-concept.md
       displayName: Storage side encryption, encryption, at rest, storage encrypt, security, management
@@ -393,6 +393,8 @@
   items:
   - name: Find your tenant and subscription
     href: /azure/azure-portal/get-subscription-tenant-id
+  - name: Move a Media Services account
+    href: account-move-account-how-to.md?amspage=toc
   - name: Reset account credentials
     href: account-reset-account-credentials.md
     displayName: reset, account credentials, remove credentials, security, restore, remove, credentials
