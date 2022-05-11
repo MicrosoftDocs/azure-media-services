@@ -100,6 +100,10 @@ Media Services does not bill for canceled or errored jobs. For example, a job th
 
 For more information, see [pricing](https://azure.microsoft.com/pricing/details/media-services/).
 
+## Encoding samples
+
+See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.
+
 ## How-tos and Tutorials
 
 ### .NET
@@ -110,7 +114,3 @@ For more information, see [pricing](https://azure.microsoft.com/pricing/details/
 ### CLI
 
 - [Encode a remote file based on URL and stream the video](stream-files-cli-quickstart.md?amspage=encode-concept)
-
-### Encoding samples
-
-See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.

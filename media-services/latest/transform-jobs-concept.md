@@ -67,7 +67,7 @@ Use an asset as a job input if the input content is already in an Asset or the c
 
 ### Checking Job progress
 
-The progress and state of jobs can be obtained by monitoring events with Event Grid. For more information, see [Monitor events using EventGrid](monitoring/job-state-events-cli-how-to.md).
+The progress and state of jobs can be obtained by monitoring events with Event Grid. For more information, see [Monitor events using EventGrid](monitoring/job-state-events-cli-how-to.md?ampapge=transform-jobs-concept).
 
 ### Updating Jobs
 
@@ -76,3 +76,11 @@ The Update operation on the [Job](/rest/api/media/jobs) entity can be used to mo
 ## Encoding samples
 
 See the extensive list of coding [Samples](samples-overview.md?amspage=transform-jobs-concept) for an encoding.
+
+## How tos and Tutorials
+
+[Create a transform](transform-create-transform-how-to.md?ampapge=transform-jobs-concept)
+[List transforms](account-list-transforms-how-to.md?ampapge=transform-jobs-concept)
+[Update a transform](transform-update-transform-how-to.md?ampapge=transform-jobs-concept)
+[Delete a transform](transform-delete-transform-how-to.md?ampapge=transform-jobs-concept)
+[Add a custom transform output](transform-add-custom-transform-output-how-to.md?ampapge=transform-jobs-concept)

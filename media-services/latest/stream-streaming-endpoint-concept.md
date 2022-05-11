@@ -178,4 +178,15 @@ A single streaming endpoint can stream both live and on-demand videos and most c
 See the following articles:
 
 - [CDN overview](/azure/cdn/cdn-overview)
-- [Scaling streaming with CDN](stream-scale-streaming-cdn-concept.md)
+- [Scaling streaming with CDN](stream-scale-streaming-cdn-concept.md?amspage=stream-streaming-endpoint-concept)
+
+## How-Tos and Tutorials
+
+- [Create a streaming endpoint](streaming-endpoint-create-how-to.md?amspage=stream-streaming-endpoint-concept)
+- [Delete a streaming endpoint](streaming-endpoint-delete-how-to.md?amspage=stream-streaming-endpoint-concept)
+- [List streaming endpoints](streaming-endpoint-list-how-to.md?amspage=stream-streaming-endpoint-concept)
+- [Show or get the details of a streaming endpoint](streaming-endpoint-show-how-to.md?amspage=stream-streaming-endpoint-concept)
+- [Start a streaming endpoint](streaming-endpoint-start-how-to.md?amspage=stream-streaming-endpoint-concept)
+- [Stop a streaming endpoint](streaming-endpoint-stop-how-to.md?amspage=stream-streaming-endpoint-concept)
+- [Update a streaming endpoint](streaming-endpoint-update-how-to.md?amspage=stream-streaming-endpoint-concept)
+- [Manage streaming endpoints](stream-manage-streaming-endpoints-how-to.md?amspage=stream-streaming-endpoint-concept)

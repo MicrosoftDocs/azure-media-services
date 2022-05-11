@@ -224,7 +224,7 @@
     - name: Streaming endpoints
       displayName: origin, packager, cdn, delivery, streaming, Verizon, Akamai, AFD, Azure Front Door, Azure CDN, packaging, dynamic packaging, scaling, bandwidth, egress, data
       href: stream-streaming-endpoint-concept.md
-    - name: Scaling streaming with CDN
+    - name: Content Delivery Networks (CDN)
       href: stream-scale-streaming-cdn-concept.md
       displayName: origin, packager, cdn, delivery, streaming, Verizon, Akamai, AFD, Azure Front Door, Azure CDN, packaging, dynamic packaging, scaling, bandwidth, egress, data, scale, large event, large audience, million, millions, viewers, audience
     - name: Streaming locators
