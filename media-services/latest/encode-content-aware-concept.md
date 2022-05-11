@@ -61,3 +61,7 @@ Below are the results for another category of source content, where the encoder 
 ![RD curve using VMAF](media/encode-content-aware-concept/msrv4.png)
 
 **Figure 4: RD curve using VMAF for low-quality input (at 1080p)**
+
+## Encoding samples
+
+See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for an encoding.

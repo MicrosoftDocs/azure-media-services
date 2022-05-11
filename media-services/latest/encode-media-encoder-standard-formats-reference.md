@@ -91,3 +91,7 @@ The following table lists the codecs and file formats that are supported for exp
 <!-- captions and ad insertion-->
 
 [!INCLUDE [reference-closed-captioning-ad-insertion-table](includes/reference-closed-captioning-ad-insertion-table.md)]
+
+## Encoding samples
+
+See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.

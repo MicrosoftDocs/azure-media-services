@@ -113,4 +113,4 @@ For more information, see [pricing](https://azure.microsoft.com/pricing/details/
 
 ### Encoding samples
 
-See also the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for an encoding.
+See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.

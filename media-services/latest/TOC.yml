@@ -198,9 +198,6 @@
     - name: Tested on-premises live encoders
       displayName: recommended, on-premises, live, encoder, OBS, FFMPEG, Wirecast, Elemental, OBS Studio, cloud transcoding, cloud encoding, encoding channel, 4K, 1080P, 720P, partners, partner program, verification, certification, recommended encoder, recommended, Antix, Blackmagic, Atem, Cambria, GoPro, GoPro hero, Haivision, makito, restream,streamlabs, switcher studio, Telestream,Vmix, Teradek, xStream, Ateme TITAN, Media Excel
       href: encode-recommended-on-premises-live-encoders.md
-    - name: Time-shifting and live-to-VOD
-      displayName: archive, dvr, dvr window, time shift, Time-shifting, replay, window, live to vod, recording, record
-      href: live-event-cloud-dvr-time-how-to.md
     - name: Live transcription
       href: live-event-live-transcription-how-to.md
       displayName: speech to text, live transcription, live captions, captions, subtitles, language, transcription, transcribe, translate, translation
@@ -604,6 +601,9 @@
     - name: Live event with portal and Wirecast
       href: live-event-wirecast-quickstart.md
       displayName: Wirecast, Telestream, streaming, stream live, RTMP, RTMPS, ingest, streamkey, stream key, live event, live streaming, live
+    - name: Time-shifting and live-to-VOD
+      displayName: archive, dvr, dvr window, time shift, Time-shifting, replay, window, live to vod, recording, record
+      href: live-event-cloud-dvr-time-how-to.md
     - name: Verify your on-premises encoder
       href: encode-on-premises-encoder-partner.md
       displayName: streaming, stream live, RTMP, RTMPS, ingest, live event, live streaming, live, partner, partners, on-premises, on premises, partner encoder, hardware encoder, hardware, verify, certification, certification, testing, partner testing, partner program

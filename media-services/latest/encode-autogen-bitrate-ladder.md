@@ -59,8 +59,11 @@ Source with height "360" and framerate "29.970" produces 3 video layers:
 |2|270|480|440|
 |3|180|320|230|
 
-
 ## Content-aware encoding comparison
 
 The [content-aware encoding presets](./encode-content-aware-concept.md) offer a better solution over the adaptive streaming presets by analyzing the source content prior to deciding the right set of output bitrates and resolutions to use in the ladder.
 It's recommended to test out the [content-aware encoding presets](./encode-content-aware-concept.md) first before using the more static and fixed ladder provided by the adaptive bitrate streaming presets.
+
+## Encoding samples
+
+See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.
