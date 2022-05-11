@@ -137,7 +137,7 @@
     items:
     - name: Media Services account
       displayName: subscription, account, management
-      href: account-move-account-how-to.md
+      href: accounts-concept.md
     - name: Storage account
       href: storage-account-concept.md
       displayName: Storage side encryption, encryption, at rest, storage encrypt, security, management
@@ -151,10 +151,8 @@
       href: concept-use-customer-managed-keys-byok.md
       displayName: customer-managed keys, byok, customer keys, keys, management
   - name: Assets
-    items:
-    - name: Assets
-      href: assets-concept.md
-      displayName: assets, containers, storage, media files, upload
+    href: assets-concept.md
+    displayName: assets, containers, storage, media files, upload
   - name: Encoding
     items:
     - name: Overview
@@ -200,9 +198,6 @@
     - name: Tested on-premises live encoders
       displayName: recommended, on-premises, live, encoder, OBS, FFMPEG, Wirecast, Elemental, OBS Studio, cloud transcoding, cloud encoding, encoding channel, 4K, 1080P, 720P, partners, partner program, verification, certification, recommended encoder, recommended, Antix, Blackmagic, Atem, Cambria, GoPro, GoPro hero, Haivision, makito, restream,streamlabs, switcher studio, Telestream,Vmix, Teradek, xStream, Ateme TITAN, Media Excel
       href: encode-recommended-on-premises-live-encoders.md
-    - name: Time-shifting and live-to-VOD
-      displayName: archive, dvr, dvr window, time shift, Time-shifting, replay, window, live to vod, recording, record
-      href: live-event-cloud-dvr-time-how-to.md
     - name: Live transcription
       href: live-event-live-transcription-how-to.md
       displayName: speech to text, live transcription, live captions, captions, subtitles, language, transcription, transcribe, translate, translation
@@ -229,7 +224,7 @@
     - name: Streaming endpoints
       displayName: origin, packager, cdn, delivery, streaming, Verizon, Akamai, AFD, Azure Front Door, Azure CDN, packaging, dynamic packaging, scaling, bandwidth, egress, data
       href: stream-streaming-endpoint-concept.md
-    - name: Scaling streaming with CDN
+    - name: Content Delivery Networks (CDN)
       href: stream-scale-streaming-cdn-concept.md
       displayName: origin, packager, cdn, delivery, streaming, Verizon, Akamai, AFD, Azure Front Door, Azure CDN, packaging, dynamic packaging, scaling, bandwidth, egress, data, scale, large event, large audience, million, millions, viewers, audience
     - name: Streaming locators
@@ -308,6 +303,8 @@
         - name: Enable trusted storage
           href: security-trusted-storage-rest-tutorial.md
           displayName: trusted storage, storage, access, storage access, security
+        - name: Storage side encryption
+          href: storage-side-encryption-concept.md
       - name: Network security
         items:
           - name: Stream to a private network
@@ -393,6 +390,8 @@
   items:
   - name: Find your tenant and subscription
     href: /azure/azure-portal/get-subscription-tenant-id
+  - name: Move a Media Services account
+    href: account-move-account-how-to.md?amspage=toc
   - name: Reset account credentials
     href: account-reset-account-credentials.md
     displayName: reset, account credentials, remove credentials, security, restore, remove, credentials
@@ -602,6 +601,9 @@
     - name: Live event with portal and Wirecast
       href: live-event-wirecast-quickstart.md
       displayName: Wirecast, Telestream, streaming, stream live, RTMP, RTMPS, ingest, streamkey, stream key, live event, live streaming, live
+    - name: Time-shifting and live-to-VOD
+      displayName: archive, dvr, dvr window, time shift, Time-shifting, replay, window, live to vod, recording, record
+      href: live-event-cloud-dvr-time-how-to.md
     - name: Verify your on-premises encoder
       href: encode-on-premises-encoder-partner.md
       displayName: streaming, stream live, RTMP, RTMPS, ingest, live event, live streaming, live, partner, partners, on-premises, on premises, partner encoder, hardware encoder, hardware, verify, certification, certification, testing, partner testing, partner program
