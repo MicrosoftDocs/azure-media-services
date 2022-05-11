@@ -593,6 +593,8 @@
     - name: Signal descriptive audio
       href: signal-descriptive-audio-howto.md
       displayName: descriptive audio, accessibility, access, accessible
+    - name: Crop a video
+      href: transform-crop-how-to.md
   - name: Stream live
     items:
     - name: Stream with Teams
