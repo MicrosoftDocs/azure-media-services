@@ -28,5 +28,5 @@ The names of files/blobs within an asset must follow both the [blob name require
 
 ## Asset How-Tos and Tutorials
 
-[Upload media for streaming or encoding](asset-upload-media-how-to?amspage=assets-concept)
+[Upload media for streaming or encoding](asset-upload-media-how-to.md?amspage=assets-concept)
 [Create an asset](asset-create-asset-how-to.md?amspage=assets-concept)

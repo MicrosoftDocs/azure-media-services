@@ -33,6 +33,6 @@ You can also specify the start and end time on your Streaming Locator, which wil
 - [Create a streaming locator](/streaming-locator-create-how-to?amspage=stream-streaming-locators-concept)
 - [Show the details of a streaming locator](streaming-locator-show-how-to.md?amspage=stream-streaming-locators-concept)
 - [List streaming locators](streaming-locator-list-how-to.md?amspage=stream-streaming-locators-concept)
-- [List streaming locator paths](streaming-locator-list-paths-how-to.mdb?amspage=stream-streaming-locators-concept)
+- [List streaming locator paths](streaming-locator-list-paths-how-to.md?amspage=stream-streaming-locators-concept)
 - [List streaming locator content keys](streaming-locator-list-content-keys-how-to.md?amspage=stream-streaming-locators-concept)
 - [Delete a streaming locator](streaming-locator-delete-how-to.md?amspage=stream-streaming-locators-concept)

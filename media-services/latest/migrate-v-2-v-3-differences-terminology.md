@@ -18,10 +18,6 @@ ms.author: inhenkel
 
 This article describes the terminology differences between Azure Media Services v2 to v3.
 
-## Naming conventions
-
-Review the naming conventions that are applied to Media Services V3 resources. Also review [naming blobs](assets-concept.md#naming)
-
 ## Terminology changes
 
 - A *Locator* is now called a *Streaming Locator*.
@@ -75,7 +71,7 @@ Review the naming conventions that are applied to Media Services V3 resources. A
 | Live event latency <!--new row --> |<!-- empty -->| New low latency live streaming support on live events. |
 | Live Event Preview <!--new row --> |<!-- empty -->| Live Event Preview supports Dynamic Packaging and Dynamic Encryption. This enables content protection on Preview as well as DASH and HLS packaging. |
 | Live event RTMPS <!--new row --> |<!-- empty-->| Improved RTMPS support with increased stability and more source encoder support. |
-| Live event RTMPS secure ingest <!--new row --> | | When you create a live event, you get 4 ingest URLs. The 4 ingest URLs are almost identical, have the same streaming token `AppId`, only the port number part is different. Two of the URLs are primary and backup for RTMPS.| 
+| Live event RTMPS secure ingest <!--new row --> | | When you create a live event, you get 4 ingest URLs. The 4 ingest URLs are almost identical, have the same streaming token `AppId`, only the port number part is different. Two of the URLs are primary and backup for RTMPS.|
 | Live event transcription <!--new row --> |<!-- empty--> | Azure Media Service delivers video, audio, and text in different protocols. When you publish your live stream using MPEG-DASH or HLS/CMAF, then along with video and audio, our service delivers the transcribed text in IMSC1.1 compatible TTML.|
 | Live event standby mode <!--new row --> | There was no standby mode for V2. | Stand-by mode is a new v3 feature that helps manage hot pools of Live Events. Customers can now start a Live Event in stand-by mode at lower cost before transitioning it to the running state. This improves channel start times and reduces costs of operating hot pools for faster start ups. |
 | Live event billing <!--new row --> | <!-- empty-->| Live events billing is based on Live Channel meters. |
