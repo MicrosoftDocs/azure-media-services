@@ -613,7 +613,7 @@ The data object has the following properties:
 | `transcriptionLanguage` | string  | The language code (in BCP-47 format) of the transcription language. For example, “de-de” indicates German (Germany). The value is empty for the video track heartbeats, or when live transcription is turned off. |
 
 
-### LiveEventChannelArchiveHeartbeatEvent
+### LiveEventChannelArchiveHeartbeat
 
 The following example shows the schema of the **LiveEventChannelArchiveHeartbeatEvent** event:
 
@@ -622,7 +622,7 @@ The following example shows the schema of the **LiveEventChannelArchiveHeartbeat
   {
     "topic": "/subscriptions/<subscription-id>/resourceGroups/<rg-name>/providers/Microsoft.Media/mediaservices/<account-name>",
     "subject": "liveEvent/mle1",
-    "eventType": "Microsoft.Media.LiveEventChannelArchiveHeartbeatEvent",
+    "eventType": "Microsoft.Media.LiveEventChannelArchiveHeartbeat",
     "eventTime": "2021-05-14T23:50:00.324",
     "id": "7f450938-491f-41e1-b06f-c6cd3965d786",
     "data": {
