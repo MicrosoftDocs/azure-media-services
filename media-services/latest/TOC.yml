@@ -120,7 +120,7 @@
     displayName: events, event grid, log analytics, tutorial, portal, monitoring, monitor
 - name: Samples
   href: samples-overview.md
-  displayName: samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
+  displayName: samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS, rotate, subclip, stitch, overlay, thumbnails
 - name: Concepts
   items:
   - name: Overview
