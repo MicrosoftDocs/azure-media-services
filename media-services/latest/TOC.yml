@@ -72,6 +72,11 @@
     - name: Deploy an account with ARM
       href: media-services-arm-template-quickstart.md
       displayName: ARM, ARM Template, Azure Resource Manager, Azure Resource Manager Template
+  - name: Deploy using Bicep
+    items:
+    - name: Deploy an account with Bicep
+      href: media-services-bicep-quickstart.md
+      displayName: ARM, Resource Manager, Template
 - name: Tutorials
   items:
   - name: Encode and stream a remote file -.NET
