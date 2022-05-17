@@ -4,7 +4,7 @@ description: This article shows how to List streaming locators.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 05/17/2022
 ms.author: inhenkel
 ---
 
@@ -27,5 +27,9 @@ Use the following methods to list the content keys of a streaming locator.
 ## [REST](#tab/rest/)
 
 [!INCLUDE [task-list-streaming-locator-rest.md](./includes/task-list-streaming-locator-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-list-streaming-locator-python.md](./includes/task-list-streaming-locator-python.md)]
 
 ---
