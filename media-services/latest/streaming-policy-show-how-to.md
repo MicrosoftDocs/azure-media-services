@@ -4,7 +4,7 @@ description: This article shows how to show or get the details of a streaming po
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 05/17/2022
 ms.author: inhenkel
 ---
 
@@ -27,5 +27,9 @@ Streaming policies aren't listed in the portal except when you apply them to a s
 ## [REST](#tab/rest/)
 
 [!INCLUDE [task-get-streaming-policy-rest.md](./includes/task-get-streaming-policy-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-get-streaming-policy-python.md](./includes/task-get-streaming-policy-python.md)]
 
 ---
