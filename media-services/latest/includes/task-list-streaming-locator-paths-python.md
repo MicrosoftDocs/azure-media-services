@@ -14,4 +14,4 @@ title: List streaming locator paths with Python
 :::code language="python" source="~/../media-services-v3-python/snippets/streaming-locators.py" id="StreamingLocatorsImports" :::
 :::code language="python" source="~/../media-services-v3-python/snippets/streaming-locators.py" id="EnvironmentVariables" :::
 :::code language="python" source="~/../media-services-v3-python/snippets/streaming-locators.py" id="CreateAMSClient" :::
-:::code language="python" source="~/../media-services-v3-python/snippets/streaming-locators.py" id="ListStreamingLocatorContentKeys" :::
+:::code language="python" source="~/../media-services-v3-python/snippets/streaming-locators.py" id="ListStreamingLocatorPaths" :::

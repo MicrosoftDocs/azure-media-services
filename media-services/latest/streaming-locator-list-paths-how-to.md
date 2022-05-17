@@ -30,6 +30,6 @@ Use the following methods to show or list the URLs of a streaming locator.
 
 ## [Python](#tab/python/)
 
-[!INCLUDE [task-list-paths-streaming-locator-python.md](./includes/task-list-paths-streaming-locator-python.md)]
+[!INCLUDE [task-list-streaming-locator-paths-python.md](./includes/task-list-streaming-locator-paths-python.md)]
 
 ---

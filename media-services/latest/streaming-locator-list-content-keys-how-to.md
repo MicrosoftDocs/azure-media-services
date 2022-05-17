@@ -30,6 +30,6 @@ Use the following methods to list the content keys of a streaming locator.
 
 ## [Python](#tab/python/)
 
-[!INCLUDE [task-list-content-keys-streaming-locator-python.md](./includes/task-list-content-keys-streaming-locator-python.md)]
+[!INCLUDE [task-list-streaming-locator-content-keys-python.md](./includes/task-list-streaming-locator-content-keys-python.md)]
 
 ---
