@@ -4,7 +4,7 @@ description: This article shows how to stop a streaming endpoint.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 05/17/2022
 ms.author: inhenkel
 ---
 
@@ -27,5 +27,9 @@ Use the following methods to stop a streaming endpoint.
 ## [REST](#tab/rest/)
 
 [!INCLUDE [task-stop-streaming-endpoint-rest.md](./includes/task-stop-streaming-endpoint-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-stop-streaming-endpoint-python.md](./includes/task-stop-streaming-endpoint-python.md)]
 
 ---
