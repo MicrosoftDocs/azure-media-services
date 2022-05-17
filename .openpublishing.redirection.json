@@ -1788,7 +1788,12 @@
           },
           {
             "source_path_from_root": "/media-services/latest/drm-get-content-key-policy-how-to.md",
-            "redirect_url": "/azure/azure-portal/drm-get-content-signing-key-policy-net-how-to",
+            "redirect_url": "/media-services/latest/drm-get-content-signing-key-policy-net-how-to",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/stream-manage-streaming-endpoints-how-to.md",
+            "redirect_url": "/media-services/latest/streaming-endpoint-create-how-to",
             "redirect_document_id": false
           }
     ]
