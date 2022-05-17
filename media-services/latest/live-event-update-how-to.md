@@ -28,4 +28,8 @@ Use the following methods to update a live event.
 
 [!INCLUDE [task-update-live-event-rest.md](./includes/task-update-live-event-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-update-live-event-python.md](./includes/task-update-live-event-python.md)]
+
 ---

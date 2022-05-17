@@ -28,4 +28,7 @@ Use the following methods to start a live event.
 
 [!INCLUDE [task-start-live-event-rest.md](./includes/task-start-live-event-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-start-live-event-python.md](./includes/task-start-live-event-python.md)]
 ---
