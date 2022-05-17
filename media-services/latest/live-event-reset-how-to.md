@@ -24,4 +24,8 @@ Use the following methods to reset a live event.
 
 [!INCLUDE [reset an asset with CLI](./includes/task-reset-live-event-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-reset-live-event-python.md](./includes/task-reset-live-event-python.md)]
+
 ---

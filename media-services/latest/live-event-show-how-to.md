@@ -28,4 +28,7 @@ Use the following methods to delete a live event.
 
 [!INCLUDE [task-get-live-event-rest.md](./includes/task-get-live-event-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-get-live-event-python.md](./includes/task-get-live-event-python.md)]
 ---
