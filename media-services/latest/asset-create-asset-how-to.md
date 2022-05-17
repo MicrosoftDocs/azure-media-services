@@ -48,14 +48,6 @@ Creating assets in the portal is as simple as uploading a file.
 
 ## [Python](#tab/python/)
 
-[!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
-
-:::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="AssetImports":::
-
 [!INCLUDE [task-create-asset-python.md](./includes/task-create-asset-python.md)]
-
-You can also just update an asset.
-
-[!INCLUDE [task-update-asset-python.md](./includes/task-update-asset-python.md)]
 
 ---

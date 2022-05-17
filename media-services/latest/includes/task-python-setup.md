@@ -2,7 +2,7 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 03/30/2022
+ms.date: 05/17/2022
 ms.author: inhenkel
 title: Create an asset
 ---
