@@ -9,6 +9,8 @@ title: Delete a live event with Python
 
 ### Delete a live event with Python
 
+[!INCLUDE [task-python-setup.md](python-snippets-env.md)]
+
 :::code language="python" source="~/..//media-services-v3-python/snippets/live-event.py" id="LiveEventImports":::
 :::code language="python" source="~/..//media-services-v3-python/snippets/live-event.py" id="EnvironmentVariables":::
 :::code language="python" source="~/..//media-services-v3-python/snippets/live-event.py" id="CreateAMSClient":::
