@@ -30,4 +30,8 @@ You can use the following methods to list the asset filters of a Media Services 
 
 [!INCLUDE [task-list-asset-filters-rest.md](./includes/task-list-asset-filters-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-list-asset-filters-python.md](./includes/task-list-asset-filters-python.md)]
+
 ---

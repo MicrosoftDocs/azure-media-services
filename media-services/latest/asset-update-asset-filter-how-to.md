@@ -31,4 +31,8 @@ You can use the following methods to update a Media Services asset filter.
 
 [!INCLUDE [task-update-asset-filter-rest.md](./includes/task-update-asset-filter-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-update-asset-filter-python.md](./includes/task-update-asset-filter-python.md)]
+
 ---
