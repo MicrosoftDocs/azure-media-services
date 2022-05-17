@@ -28,4 +28,8 @@ Use the following methods to update an option in a content key policy.
 
 [!INCLUDE [task-update-option-content-key-policy-rest.md](includes/task-update-content-key-policy-rest.md)]
 
+## [REST](#tab/rest/)
+
+See [Create a content key policy](drm-create-content-key-policy-how-to.md?amspage=drm-update-option-key-policy-how-to) for available parameters and [Update a content key policy](drm-update-content-key-policy-how-to.md?amspage=drm-update-option-key-policy-how-to) for updating.
+
 ---
