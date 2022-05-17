@@ -4,7 +4,7 @@ description: This article shows how to delete a streaming policy.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 05/17/2022
 ms.author: inhenkel
 ---
 
@@ -27,5 +27,9 @@ You cannot delete a streaming policy in the portal, they are offered by the serv
 ## [REST](#tab/rest/)
 
 [!INCLUDE [task-delete-streaming-policy-rest.md](./includes/task-delete-streaming-policy-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-delete-streaming-policy-python.md](./includes/task-delete-streaming-policy-python.md)]
 
 ---
