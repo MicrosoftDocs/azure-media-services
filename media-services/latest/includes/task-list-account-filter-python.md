@@ -9,7 +9,7 @@ title: List account filters with Python
 
 ### List account filters with Python
 
-[!INCLUDE [task-python-setup.md](task-python-setup.md)]
+[!INCLUDE [task-python-setup.md](python-snippets-env.md)]
 
 :::code language="python" source="~/../media-services-v3-python/snippets/filters.py" id="FiltersImports" :::
 :::code language="python" source="~/../media-services-v3-python/snippets/filters.py" id="EnvironmentVariables" :::

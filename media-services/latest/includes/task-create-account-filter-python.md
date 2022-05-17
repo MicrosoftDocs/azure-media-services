@@ -9,7 +9,7 @@ title: Create an account filter with Python
 
 ### Create an account filter with Python
 
-[!INCLUDE [task-python-setup.md](task-python-setup.md)]
+[!INCLUDE [task-python-setup.md](python-snippets-env.md)]
 
 :::code language="python" source="~/../media-services-v3-python/snippets/filters.py" id="FiltersImports" :::
 :::code language="python" source="~/../media-services-v3-python/snippets/filters.py" id="EnvironmentVariables" :::
