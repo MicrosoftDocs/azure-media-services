@@ -4,7 +4,7 @@ description: This article shows how to create a streaming policy.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 05/17/2022
 ms.author: inhenkel
 ---
 
@@ -27,5 +27,9 @@ Use the following methods to create a streaming policy.
 ## [REST](#tab/rest/)
 
 [!INCLUDE [task-create-streaming-policy-rest.md](./includes/task-create-streaming-policy-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-create-streaming-policy-python.md](./includes/task-create-streaming-policy-python.md)]
 
 ---
