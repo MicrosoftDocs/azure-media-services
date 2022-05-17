@@ -9,9 +9,9 @@ title: List assets with Python
 
 ### List assets with Python
 
-:::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="AssetImports":::
-
 [!INCLUDE [python-snippets-env](python-snippets-env.md)]
+
+:::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="AssetImports":::
 
 :::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="EnvironmentVariables":::
 

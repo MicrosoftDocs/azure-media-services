@@ -59,7 +59,7 @@ The results of the `ListStreamingLocators` method will provide you the `Name` an
 
 ## Find the content keys
 
-To find the `ContentKeys` used with your `StreamingLocators`, you can call the [StreamingLocator.ListContentKeysAsync](/dotnet/api/microsoft.azure.management.media.streaminglocatorsoperationsextensions.listcontentkeysasync?preserve-view=true&view=azure-dotnet) method.  
+To find the `ContentKeys` used with your `StreamingLocators`, you can call the [StreamingLocator.ListContentKeysAsync](/dotnet/api/microsoft.azure.management.media.streaminglocatorsoperationsextensions.listcontentkeysasync?preserve-view=true&view=azure-dotnet) method.
 
 For more information on content protection in the v3 API, see the article [Protect your content with Media Services dynamic encryption.](./drm-content-protection-concept.md)
 
@@ -94,7 +94,7 @@ You should first unpublish (remove all Streaming Locators) on the Asset via the 
 
 ### How to guides
 
-- [Get a signing key from the existing policy](drm-get-content-key-policy-how-to.md)
+- [Get a signing key from the existing policy](drm-get-content-signing-key-policy-net-how-to.md)
 - [Offline FairPlay Streaming for iOS with Media Services v3](drm-offline-fairplay-for-ios-concept.md)
 - [Offline Widevine streaming for Android with Media Services v3](drm-offline-widevine-for-android.md)
 - [Offline PlayReady Streaming for Windows 10 with Media Services v3](drm-offline-playready-streaming-for-windows-10.md)

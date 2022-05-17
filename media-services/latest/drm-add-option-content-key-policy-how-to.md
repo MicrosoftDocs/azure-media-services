@@ -28,4 +28,8 @@ Use the following methods to add an option to a content key policy.
 
 [!INCLUDE [task-add-option-content-key-policy-rest.md](includes/task-add-option-content-key-policy-rest.md)]
 
+## [Python](#tab/python/)
+
+See [Create a content key policy](drm-create-content-key-policy-how-to.md?amspage=drm-update-option-key-policy-how-to) for available parameters and [Update a content key policy](drm-update-content-key-policy-how-to.md?amspage=drm-update-option-key-policy-how-to) for updating.
+
 ---
