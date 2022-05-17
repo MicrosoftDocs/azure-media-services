@@ -28,4 +28,8 @@ Use the following methods to create a content key policy.
 
 [!INCLUDE [task-create-content-key-policy-rest.md](includes/task-create-content-key-policy-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-create-content-key-policy-python.md](includes/task-create-content-key-policy-python.md)]
+
 ---
