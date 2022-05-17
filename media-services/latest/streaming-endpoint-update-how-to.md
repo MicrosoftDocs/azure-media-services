@@ -4,7 +4,7 @@ description: This article shows how to update a streaming endpoint.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 05/17/2022
 ms.author: inhenkel
 ---
 
@@ -30,5 +30,9 @@ Use the following methods to update a streaming endpoint.
 ## [REST](#tab/rest/)
 
 [!INCLUDE [task-update-streaming-endpoint-rest.md](./includes/task-update-streaming-endpoint-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-update-streaming-endpoint-python.md](./includes/task-update-streaming-endpoint-python.md)]
 
 ---

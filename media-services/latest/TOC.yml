@@ -531,9 +531,6 @@
           href: streaming-endpoint-stop-how-to.md
         - name: Update a streaming endpoint
           href: streaming-endpoint-update-how-to.md
-        - name: Manage streaming endpoints
-          href: stream-manage-streaming-endpoints-how-to.md
-          displayName: streaming endpoint, sample, how-to, how to, manage, management
       - name: Streaming locators
         items:
         - name: Create a streaming locator
