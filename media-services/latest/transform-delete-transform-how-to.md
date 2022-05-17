@@ -32,10 +32,6 @@ You can use the following methods to delete a Media Services transform.
 
 ## [Python](#tab/python/)
 
-[!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
-
-:::code language="python" source="~/..//media-services-v3-python/snippets/transforms.py" id="TransformsImports":::
-
 [!INCLUDE [task-delete-transform-python.md](./includes/task-delete-transform-python.md)]
 
 ---
