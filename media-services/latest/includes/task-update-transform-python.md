@@ -9,9 +9,9 @@ title: Update a transform with Python
 
 ### Update a transform with Python
 
-:::code language="python" source="~/..//media-services-v3-python/snippets/transforms.py" id="TransformsImports":::
-
 [!INCLUDE [python-snippets-env](python-snippets-env.md)]
+
+:::code language="python" source="~/..//media-services-v3-python/snippets/transforms.py" id="TransformsImports":::
 
 :::code language="python" source="~/..//media-services-v3-python/snippets/transforms.py" id="EnvironmentVariables":::
 
