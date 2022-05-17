@@ -28,4 +28,8 @@ Use the following methods to update an existing content key policy.
 
 [!INCLUDE [task-update-content-key-policy-rest.md](includes/task-update-content-key-policy-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-update-content-key-policy-python.md](includes/task-update-content-key-policy-python.md)]
+
 ---
