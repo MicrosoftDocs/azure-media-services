@@ -30,6 +30,6 @@ Use the following methods to update an existing content key policy.
 
 ## [Python](#tab/python/)
 
-[!INCLUDE [task-update-content-key-policy-python.md](includes/task-update-content-key-policy-python.md)]
+[!INCLUDE [task-update-content-key-policy-python.md](includes/task-update-existing-content-key-policy-python.md)]
 
 ---
