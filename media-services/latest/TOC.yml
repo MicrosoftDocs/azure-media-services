@@ -582,8 +582,8 @@
     - name: Jobs with multiple transform outputs
       href: job-multiple-transform-outputs-how-to.md
       displayName: jobs, CLI, transform, multiple outputs, multi output
-    - name: Get content key policy
-      href: drm-get-content-key-policy-how-to.md
+    - name: Get content signing key
+      href: drm-get-content-signing-key-policy-net-how-to.md
       displayName: content protection, DRM, content keys, content key policy, .NET, how to, how-to, sample, tutorial
     - name: Offline FairPlay for iOS
       href: drm-offline-fairplay-for-ios-concept.md
