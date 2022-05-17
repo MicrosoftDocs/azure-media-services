@@ -32,10 +32,6 @@ You can use the following methods to list the transforms in a Media Services acc
 
 ## [Python](#tab/python/)
 
-[!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
-
-:::code language="python" source="~/..//media-services-v3-python/snippets/transforms.py" id="TransformsImports":::
-
 [!INCLUDE [task-list-transform-python.md](./includes/task-list-transforms-python.md)]
 
 ---
