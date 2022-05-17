@@ -14,4 +14,4 @@ title: Stop a streaming endpoint with Python
 :::code language="python" source="~/../media-services-v3-python/snippets/streaming-endpoints.py" id="StreamingEndpointsImports" :::
 :::code language="python" source="~/../media-services-v3-python/snippets/streaming-endpoints.py" id="EnvironmentVariables" :::
 :::code language="python" source="~/../media-services-v3-python/snippets/streaming-endpoints.py" id="CreateAMSClient" :::
-:::code language="python" source="~/../media-services-v3-python/snippets/streaming-endpoints.py" id="BeginStartStreamingEndpoint" :::
+:::code language="python" source="~/../media-services-v3-python/snippets/streaming-endpoints.py" id="BeginStopStreamingEndpoint" :::
