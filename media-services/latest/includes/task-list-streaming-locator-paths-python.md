@@ -4,7 +4,7 @@ ms.service: media-services
 ms.topic: include
 ms.date: 05/17/2022
 ms.author: inhenkel
-title: List streaming locator paths with Python
+title: List the streaming locator paths with Python
 ---
 
 ### List streaming locator paths with Python
