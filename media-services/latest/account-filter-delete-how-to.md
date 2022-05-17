@@ -28,4 +28,8 @@ You cannot delete an account filter with the portal.
 
 [!INCLUDE [task-create-account-filter-rest.md](./includes/task-delete-account-filter-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-create-account-filter-python.md](./includes/task-delete-account-filter-python.md)]
+
 ---

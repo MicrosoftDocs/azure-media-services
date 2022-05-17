@@ -4,7 +4,7 @@ description: This article shows how to update account filters.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 05/17/2022
 ms.author: inhenkel
 ---
 
@@ -22,10 +22,14 @@ You cannot update an account filter in the portal.
 
 ## [CLI](#tab/cli/)
 
-[!INCLUDE [task-create-account-filter-cli.md](./includes/task-update-account-filter-cli.md)]
+[!INCLUDE [task-update-account-filter-cli.md](./includes/task-update-account-filter-cli.md)]
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [task-create-account-filter-rest.md](./includes/task-update-account-filter-rest.md)]
+[!INCLUDE [task-update-account-filter-rest.md](./includes/task-update-account-filter-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-update-account-filter-python.md](./includes/task-update-account-filter-python.md)]
 
 ---

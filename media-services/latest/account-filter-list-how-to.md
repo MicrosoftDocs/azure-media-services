@@ -28,4 +28,8 @@ You cannot list account filters in the portal.
 
 [!INCLUDE [task-create-account-filter-rest.md](./includes/task-list-account-filter-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-list-account-filter-python.md](./includes/task-list-account-filter-python.md)]
+
 ---
