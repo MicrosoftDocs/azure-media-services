@@ -18,12 +18,12 @@ The example in this article shows how to get a signing key from the existing pol
 
 ## Download
 
-Clone a GitHub repository that contains the full .NET sample to your machine using the following command:  
+Clone a GitHub repository that contains the full .NET sample to your machine using the following command:
 
  ```bash
  git clone https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials.git
  ```
- 
+
 The ContentKeyPolicy with secrets example is located in the [EncryptWithDRM](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) folder.
 
 ## [.NET](#tab/net/)

@@ -37,14 +37,6 @@ You can use the following methods to create a transform.
 
 ## [Python](#tab/python/)
 
-[!INCLUDE [task-python-setup.md](./includes/task-python-setup.md)]
-
-:::code language="python" source="~/..//media-services-v3-python/snippets/transforms.py" id="TransformsImports":::
-
 [!INCLUDE [task-create-transform-python.md](./includes/task-create-transform-python.md)]
-
-You can also just update a transform.
-
-[!INCLUDE [task-update-transform-python.md](./includes/task-update-transform-python.md)]
 
 ---

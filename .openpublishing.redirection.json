@@ -1785,6 +1785,11 @@
             "source_path_from_root": "/media-services/latest/setup-azure-subscription-how-to.md",
             "redirect_url": "/azure/azure-portal/get-subscription-tenant-id",
             "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/drm-get-content-key-policy-how-to.md",
+            "redirect_url": "/azure/azure-portal/drm-get-content-signing-key-policy-net-how-to",
+            "redirect_document_id": false
           }
     ]
 }
