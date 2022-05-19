@@ -19,6 +19,18 @@ To stay up to date with the most recent developments, this article provides you 
 * Bug fixes
 * Deprecated functionality
 
+## April 2022
+
+### Live transcriptions
+
+Live Transcription is now Generally Available (GA) and supports all available languages in the speech-to-text API.  A full list of languages is available in the article [Live transcription regions and languages](live-event-live-transcription-how-to.md)
+
+### Low Latency HLS (LL-HLS)
+
+Low latency HLS (LL-HLS) is now available in the API and in the Azure Portal. To enable LL-HLS, use the "LowLatencyV2" Stream Option when creating a live stream. See the Node.js sample for how to configure [Create a Low latency HLS live encoding event](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/720P_Low_Latency_Encoding_Live_Event/index.ts)
+In the Azure portal select the new "Low Latency" option when creating a live event.  The new LL-HLS feature can provide reduced latency in the 4-7 second range when using a player framework that supports the LL-HLS protocol.
+Low latency HLS is only available on live transcoding channels and not yet available for "pass-through" mode live events.
+
 ## March 2022
 
 ### .NET SDK version 6.0.0

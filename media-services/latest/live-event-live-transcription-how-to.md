@@ -1,10 +1,10 @@
 ---
 title: Live transcription
-description: Learn about Azure Media Services live transcription.
+description: Learn about Azure Media Services live transcription. Supported languages availability list.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 5/19/2022
 ms.author: inhenkel
 ---
 
@@ -18,33 +18,137 @@ Additional charges apply when live transcription is turned on. Please review the
 
 This article describes how to enable live transcription when streaming a Live Event with Azure Media Services. Before you continue, make sure you are familiar with the [live streaming](stream-live-streaming-concept.md) concept. It's recommended to complete the [Stream live with Media Services](stream-live-tutorial-with-api.md) tutorial.
 
-## Live transcription preview regions and languages
+## Live transcription regions and languages
 
 Live transcription is available in the regions as documented [here](azure-clouds-regions.md).
 
 This is the list of available languages that can be transcribed, use the language code in the API.
 
-| Language | Language code |
-| -------- | ------------- |
-| Catalan  | ca-ES |
-| Danish (Denmark) | da-DK |
-| German (Germany) | de-DE |
-| English (Australia) | en-AU |
-| English (Canada) | en-CA |
-| English (United Kingdom) | en-GB |
-| English (India) | en-IN |
-| English (New Zealand) | en-NZ |
-| English (United States) | en-US |
-| Spanish (Spain) | es-ES |
-| Spanish (Mexico) | es-MX |
-| Finnish (Finland) | fi-FI |
-| French (Canada) | fr-CA |
-| French (France) | fr-FR |
-| Italian (Italy) | it-IT |
-| Dutch (Netherlands) | nl-NL |
-| Portuguese (Brazil) | pt-BR |
-| Portuguese (Portugal) | pt-PT |
-| Swedish (Sweden) | sv-SE |
+| Language                          | Locale (BCP-47) |
+|-----------------------------------|-----------------|
+| Afrikaans (South Africa)          | `af-ZA`         |
+| Amharic (Ethiopia)                | `am-ET`         |
+| Arabic (Algeria)                  | `ar-DZ`         |
+| Arabic (Bahrain), modern standard | `ar-BH`         |
+| Arabic (Egypt)                    | `ar-EG`         |
+| Arabic (Iraq)                     | `ar-IQ`         |
+| Arabic (Israel)                   | `ar-IL`         |
+| Arabic (Jordan)                   | `ar-JO`         |
+| Arabic (Kuwait)                   | `ar-KW`         |
+| Arabic (Lebanon)                  | `ar-LB`         |
+| Arabic (Libya)                    | `ar-LY`         |
+| Arabic (Morocco)                  | `ar-MA`         |
+| Arabic (Oman)                     | `ar-OM`         |
+| Arabic (Palestinian Authority)    | `ar-PS`         |
+| Arabic (Qatar)                    | `ar-QA`         |
+| Arabic (Saudi Arabia)             | `ar-SA`         |
+| Arabic (Syria)                    | `ar-SY`         |
+| Arabic (Tunisia)                  | `ar-TN`         |
+| Arabic (United Arab Emirates)     | `ar-AE`         |
+| Arabic (Yemen)                    | `ar-YE`         |
+| Bengali (India)                   | `bn-IN`         |
+| Bulgarian (Bulgaria)              | `bg-BG`         |
+| Burmese (Myanmar)                 | `my-MM`         |
+| Catalan (Spain)                   | `ca-ES`         |
+| Chinese (Cantonese, Traditional)  | `zh-HK`         |
+| Chinese (Mandarin, Simplified)    | `zh-CN`         |
+| Chinese (Taiwanese Mandarin)      | `zh-TW`         |
+| Croatian (Croatia)                | `hr-HR`         |
+| Czech (Czech)                     | `cs-CZ`         |
+| Danish (Denmark)                  | `da-DK`         |
+| Dutch (Belgium)                   | `nl-BE`         |
+| Dutch (Netherlands)               | `nl-NL`         |
+| English (Australia)               | `en-AU`         |
+| English (Canada)                  | `en-CA`         |
+| English (Ghana)                   | `en-GH`         |
+| English (Hong Kong)               | `en-HK`         |
+| English (India)                   | `en-IN`         |
+| English (Ireland)                 | `en-IE`         |
+| English (Kenya)                   | `en-KE`         |
+| English (New Zealand)             | `en-NZ`         |
+| English (Nigeria)                 | `en-NG`         |
+| English (Philippines)             | `en-PH`         |
+| English (Singapore)               | `en-SG`         |
+| English (South Africa)            | `en-ZA`         |
+| English (Tanzania)                | `en-TZ`         |
+| English (United Kingdom)          | `en-GB`         |
+| English (United States)           | `en-US`         |
+| Estonian (Estonia)                | `et-EE`         |
+| Filipino (Philippines)            | `fil-PH`        |
+| Finnish (Finland)                 | `fi-FI`         |
+| French (Belgium)                  | `fr-BE`         |
+| French (Canada)                   | `fr-CA`         |
+| French (France)                   | `fr-FR`         |
+| French (Switzerland)              | `fr-CH`         |
+| German (Austria)                  | `de-AT`         |
+| German (Germany)                  | `de-DE`         |
+| German (Switzerland)              | `de-CH`         |
+| Greek (Greece)                    | `el-GR`         |
+| Gujarati (Indian)                 | `gu-IN`         |
+| Hebrew (Israel)                   | `he-IL`         |
+| Hindi (India)                     | `hi-IN`         |
+| Hungarian (Hungary)               | `hu-HU`         |
+| Icelandic (Iceland)               | `is-IS`         |
+| Indonesian (Indonesia)            | `id-ID`         |
+| Irish (Ireland)                   | `ga-IE`         |
+| Italian (Italy)                   | `it-IT`         |
+| Japanese (Japan)                  | `ja-JP`         |
+| Javanese (Indonesia)              | `jv-ID`         |
+| Kannada (India)                   | `kn-IN`         |
+| Khmer (Cambodia)                  | `km-KH`         |
+| Korean (Korea)                    | `ko-KR`         |
+| Lao (Laos)                        | `lo-LA`         |
+| Latvian (Latvia)                  | `lv-LV`         |
+| Lithuanian (Lithuania)            | `lt-LT`         |
+| Macedonian (North Macedonia)      | `mk-MK`         |
+| Malay (Malaysia)                  | `ms-MY`         |
+| Maltese (Malta)                   | `mt-MT`         |
+| Marathi (India)                   | `mr-IN`         |
+| Norwegian (Bokmål, Norway)        | `nb-NO`         |
+| Persian (Iran)                    | `fa-IR`         |
+| Polish (Poland)                   | `pl-PL`         |
+| Portuguese (Brazil)               | `pt-BR`         |
+| Portuguese (Portugal)             | `pt-PT`         |
+| Romanian (Romania)                | `ro-RO`         |
+| Russian (Russia)                  | `ru-RU`         |
+| Serbian (Serbia)                  | `sr-RS`         |
+| Sinhala (Sri Lanka)               | `si-LK`         |
+| Slovak (Slovakia)                 | `sk-SK`         |
+| Slovenian (Slovenia)              | `sl-SI`         |
+| Spanish (Argentina)               | `es-AR`         |
+| Spanish (Bolivia)                 | `es-BO`         |
+| Spanish (Chile)                   | `es-CL`         |
+| Spanish (Colombia)                | `es-CO`         |
+| Spanish (Costa Rica)              | `es-CR`         |
+| Spanish (Cuba)                    | `es-CU`         |
+| Spanish (Dominican Republic)      | `es-DO`         |
+| Spanish (Ecuador)                 | `es-EC`         |
+| Spanish (El Salvador)             | `es-SV`         |
+| Spanish (Equatorial Guinea)       | `es-GQ`         |
+| Spanish (Guatemala)               | `es-GT`         |
+| Spanish (Honduras)                | `es-HN`         |
+| Spanish (Mexico)                  | `es-MX`         |
+| Spanish (Nicaragua)               | `es-NI`         |
+| Spanish (Panama)                  | `es-PA`         |
+| Spanish (Paraguay)                | `es-PY`         |
+| Spanish (Peru)                    | `es-PE`         |
+| Spanish (Puerto Rico)             | `es-PR`         |
+| Spanish (Spain)                   | `es-ES`         |
+| Spanish (Uruguay)                 | `es-UY`         |
+| Spanish (USA)                     | `es-US`         |
+| Spanish (Venezuela)               | `es-VE`         |
+| Swahili (Kenya)                   | `sw-KE`         |
+| Swahili (Tanzania)                | `sw-TZ`         |
+| Swedish (Sweden)                  | `sv-SE`         |
+| Tamil (India)                     | `ta-IN`         |
+| Telugu (India)                    | `te-IN`         |
+| Thai (Thailand)                   | `th-TH`         |
+| Turkish (Turkey)                  | `tr-TR`         |
+| Ukrainian (Ukraine)               | `uk-UA`         |
+| Uzbek (Uzbekistan)                | `uz-UZ`         |
+| Vietnamese (Vietnam)              | `vi-VN`         |
+| Zulu (South Africa)               | `zu-ZA`         |
+
 
 ## Create the live event with live transcription
 
