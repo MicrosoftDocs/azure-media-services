@@ -71,6 +71,12 @@ You'll find description and links to the samples you may be looking for in each 
 | **Streaming** ||
 |[Stream HLS and DASH](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesSample/stream-files-sample.py)| Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
 |[Use asset filters](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/AssetFilters/asset-filters.py)| Use a filter to stream assets.|
+|[Live stream with standard passthrough](/Live/Standard_Passthrough_Live_Event/standard_passthrough_live_event.py)| Standard passthrough live streaming example. |
+|[Live stream with standard passthrough with Event Hubs](/Live/Standard_Passthrough_Live_Event_Event_Hub/standard_passthrough_live_event_with_eventhub.py)| Demonstrates how to use Event Hubs to subscribe to events on the live streaming channel. Events include encoder connections, disconnections, heartbeat, latency, discontinuity, and drift issues. |
+|[Live stream with basic passthrough](/Live/Basic_Passthrough_Live_Event/basic_passthrough_live_event.py)| Shows how to set up the basic passthrough live event if you only need to broadcast a low-cost UGC channel. |
+|[Live stream with 720P standard encoding](/Live/720P_Encoding_Live_Event/720p_encoding_live_event.py)| Use live encoding in the cloud with the 720P HD adaptive bitrate encoding preset. |
+|[Live stream with 720P standard encoding with Low Latency](/Live/720P_Encoding_Live_Event_Low_Latency/720p_low_latency_encoding_live_event.py)| Use live encoding in the cloud with the 720P HD adaptive bitrate encoding preset. |
+|[Live stream with 1080P encoding](/Live/1080p_Encoding_Live_Event/1080p_encoding_live_event.py)| Use live encoding in the cloud with the 1080P HD adaptive bitrate encoding preset. |
 | **Content protection** | Samples in development. |
 | **Encoding** | |
 | [Basic encoding](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/BasicEncoding/basic-encoding.py) | Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
