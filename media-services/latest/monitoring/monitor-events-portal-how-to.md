@@ -15,7 +15,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](../includes/v3-hr.md)]
 
-Azure Event Grid is an eventing service for the cloud. This service uses [event subscriptions](https://docs.microsoft.com/event-grid/concepts.md#event-subscriptions) to route event messages to subscribers. Media Services events contain all the information you need to respond to changes in your data. You can identify a  Media Services event because the eventType property starts with "Microsoft.Media.". For more information, see [Media Services event schemas](media-services-event-schemas.md).
+Azure Event Grid is an eventing service for the cloud. This service uses [event subscriptions](/azure/event-grid/concepts#event-subscriptions) to route event messages to subscribers. Media Services events contain all the information you need to respond to changes in your data. You can identify a  Media Services event because the eventType property starts with "Microsoft.Media.". For more information, see [Media Services event schemas](media-services-event-schemas.md).
 
 In this article, you use the Azure portal to subscribe to events for your Azure Media Services account. Then, you trigger events to view the result. Typically, you send events to an endpoint that processes the event data and takes actions. In the article, we send events to a web app that collects and displays the messages.
 
@@ -55,7 +55,7 @@ You subscribe to a topic to tell Event Grid which events you want to track, and 
 1. Give your subscription a name.
 1. View your web app again, and notice that a subscription validation event has been sent to it.
 
-    Event Grid sends the validation event so the endpoint can verify that it wants to receive event data. The endpoint has to set `validationResponse` to `validationCode`. For more information, see [Event Grid security and authentication](https://docs.microsoft.com/event-grid/security-authentication.md). You can view the web app code to see how it validates the subscription.
+    Event Grid sends the validation event so the endpoint can verify that it wants to receive event data. The endpoint has to set `validationResponse` to `validationCode`. For more information, see [Event Grid security and authentication](/azure/event-grid/security-authentication). You can view the web app code to see how it validates the subscription.
 
 Now, let's trigger events to see how Event Grid distributes the message to your endpoint.
 

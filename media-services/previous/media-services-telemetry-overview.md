@@ -15,15 +15,15 @@ ms.date: 3/10/2021
 ms.author: inhenkel
 ---
 
-# Azure Media Services telemetry  
+# Azure Media Services telemetry
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
-Azure Media Services (AMS) enables you to access telemetry/metrics data for its services. The current version of AMS lets you collect telemetry data for live **Channel**, **StreamingEndpoint**, and live **Archive** entities. 
+Azure Media Services (AMS) enables you to access telemetry/metrics data for its services. The current version of AMS lets you collect telemetry data for live **Channel**, **StreamingEndpoint**, and live **Archive** entities.
 
-Telemetry is written to a storage table in an Azure Storage account that you specify (typically, you would use the storage account associated with your AMS account). 
+Telemetry is written to a storage table in an Azure Storage account that you specify (typically, you would use the storage account associated with your AMS account).
 
 The telemetry system does not manage data retention. You can remove the old telemetry data by deleting the storage tables.
 
@@ -31,11 +31,11 @@ This topic discusses how to configure and consume the AMS telemetry.
 
 ## Configuring telemetry
 
-You can configure telemetry on a component level granularity. There are two detail levels "Normal" and "Verbose". Currently, both levels return the same information. It is recommended to use "Normal. 
+You can configure telemetry on a component level granularity. There are two detail levels "Normal" and "Verbose". Currently, both levels return the same information. It is recommended to use "Normal.
 
 The following topics show how to enable telemetry:
 
-[Enabling telemetry with .NET](media-services-dotnet-telemetry.md) 
+[Enabling telemetry with .NET](media-services-dotnet-telemetry.md)
 
 [Enabling telemetry with REST](media-services-rest-telemetry.md)
 
@@ -49,7 +49,7 @@ You can consume telemetry data in one of the following ways:
 
 Or
 
-- Use the support in the Media Services .NET SDK for reading storage data, as described in [this](media-services-dotnet-telemetry.md) topic. 
+- Use the support in the Media Services .NET SDK for reading storage data, as described in [this](media-services-dotnet-telemetry.md) topic.
 
 
 The telemetry schema described below is designed to give good performance within the limits of Azure Table Storage:
@@ -66,12 +66,12 @@ This should allow many of the common queries to be efficient:
 
 ### Telemetry table storage output schema
 
-Telemetry data is stored in aggregate in one table, "TelemetryMetrics20160321" where "20160321" is date of the created table. Telemetry system creates a separate table for each new day based at 00:00 UTC. The table is used to store recurring values such as ingest bitrate within a given window of time, bytes sent, etc. 
+Telemetry data is stored in aggregate in one table, "TelemetryMetrics20160321" where "20160321" is date of the created table. Telemetry system creates a separate table for each new day based at 00:00 UTC. The table is used to store recurring values such as ingest bitrate within a given window of time, bytes sent, etc.
 
 Property|Value|Examples/notes
 ---|---|---
 PartitionKey|{account ID}_{entity ID}|e49bef329c29495f9b9570989682069d_64435281c50a4dd8ab7011cb0f4cdf66<br/<br/>The account ID is included in the partition key to simplify workflows where multiple Media Services accounts are writing to the same storage account.
-RowKey|{seconds to midnight}_{random value}|01688_00199<br/><br/>The row key starts with the number of seconds to midnight to allow top n style queries within a partition. For more information, see [this](https://docs.microsoft.com/cosmos-db/table-storage-design-guide.md#log-tail-pattern) article. 
+RowKey|{seconds to midnight}_{random value}|01688_00199<br/><br/>The row key starts with the number of seconds to midnight to allow top n style queries within a partition. For more information, see [this](/azure/cosmos-db/table-storage-design-guide#log-tail-pattern) article.
 Timestamp|Date/Time|Auto timestamp from the Azure table 2016-09-09T22:43:42.241Z
 Type|The type of the entity providing telemetry data|Channel/StreamingEndpoint/Archive<br/><br/>Event type is just a string value.
 Name|The name of the telemetry event|ChannelHeartbeat/StreamingEndpointRequestLog
@@ -120,7 +120,7 @@ ServiceID|Service ID|f70bd731-691d-41c6-8f2d-671d0bdc9c7e
 TrackType|Type of track video/audio/text|video/audio
 TrackName|Name of the track|video/audio_1
 Bitrate|Track bitrate|785000
-CustomAttributes||	 
+CustomAttributes||
 IncomingBitrate|Actual incoming bitrate|784548
 OverlapCount|Overlap in the ingest|0
 DiscontinuityCount|Discontinuity for track|0
@@ -179,8 +179,8 @@ Channel health can be defined as a composite Boolean function such that it is fa
 - OverlapCount > 0
 - DiscontinuityCount > 0
 - NonincreasingCount > 0
-- UnalignedKeyFrames == True 
-- UnalignedPresentationTime == True 
+- UnalignedKeyFrames == True
+- UnalignedPresentationTime == True
 - UnexpectedBitrate == True
 
 

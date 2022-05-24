@@ -26,15 +26,15 @@ When you run jobs, you often require a way to track job progress. You can monito
 
 This article shows how to
 
-*  Define an Azure Function that is customized to respond to webhooks. 
-	
-	In this case, the webhook is triggered by Media Services when your encoding job changes status. The function listens for the webhook call back from Media Services notifications and publishes the output asset once the job finishes. 
-	
+*  Define an Azure Function that is customized to respond to webhooks.
+
+	In this case, the webhook is triggered by Media Services when your encoding job changes status. The function listens for the webhook call back from Media Services notifications and publishes the output asset once the job finishes.
+
 	>[!TIP]
-	>Before continuing, make sure you understand how [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/azure-functions/functions-bindings-http-webhook.md) work.
+	>Before continuing, make sure you understand how [Azure Functions HTTP and webhook bindings](/azure/azure-functions/functions-bindings-http-webhook) work.
 	>
-	
-* Add a webhook to your encoding task and specify the webhook URL and secret key that this webhook responds to. You will find an example that adds a webhook to your encoding task at the end of the article.  
+
+* Add a webhook to your encoding task and specify the webhook URL and secret key that this webhook responds to. You will find an example that adds a webhook to your encoding task at the end of the article.
 
 You can find definitions of various Media Services .NET Azure Functions (including the one shown in this article) [here](https://github.com/Azure-Samples/media-services-dotnet-functions-integration).
 
@@ -44,20 +44,20 @@ The following are required to complete the tutorial:
 
 * An Azure account. For details, see [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/).
 * A Media Services account. To create a Media Services account, see [How to Create a Media Services Account](media-services-portal-create-account.md).
-* Understanding of [how to use Azure Functions](https://docs.microsoft.com/azure-functions/functions-overview.md). Also, review [Azure Functions HTTP and webhook bindings](https://docs.microsoft.com/azure-functions/functions-bindings-http-webhook.md).
+* Understanding of [how to use Azure Functions](/azure/azure-functions/functions-overview). Also, review [Azure Functions HTTP and webhook bindings](/azure/azure-functions/functions-bindings-http-webhook).
 
 ## Create a function app
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign-in with your Azure account.
-2. Create a function app as described [here](https://docs.microsoft.com/azure-functions/functions-create-function-app-portal.md).
+2. Create a function app as described [here](/azure/azure-functions/functions-create-function-app-portal).
 
 ## Configure function app settings
 
-When developing Media Services functions, it is handy to add environment variables that will be used throughout your functions. To configure app settings, click the Configure App Settings link. 
+When developing Media Services functions, it is handy to add environment variables that will be used throughout your functions. To configure app settings, click the Configure App Settings link.
 
-The [application settings](media-services-dotnet-how-to-use-azure-functions.md#configure-function-app-settings) section defines parameters that are used in the webhook defined in this article. Also add the following parameters to the app settings. 
+The [application settings](media-services-dotnet-how-to-use-azure-functions.md#configure-function-app-settings) section defines parameters that are used in the webhook defined in this article. Also add the following parameters to the app settings.
 
-|Name|Definition|Example| 
+|Name|Definition|Example|
 |---|---|---|
 |SigningKey |A signing key.| j0txf1f8msjytzvpe40nxbpxdcxtqcgxy0nt|
 |WebHookEndpoint | A webhook endpoint address. Once your webhook function is created, you can copy the URL from the **Get function URL** link. | https:\//juliakofuncapp.azurewebsites.net/api/Notification_Webhook_Function?code=iN2phdrTnCxmvaKExFWOTulfnm4C71mMLIy8tzLr7Zvf6Z22HHIK5g==.|
@@ -67,7 +67,7 @@ The [application settings](media-services-dotnet-how-to-use-azure-functions.md#c
 Once your function app is deployed, you can find it among **App Services** Azure Functions.
 
 1. Select your function app and click **New Function**.
-2. Select **C#** code and **API & Webhooks** scenario. 
+2. Select **C#** code and **API & Webhooks** scenario.
 3. Select **Generic Webhook - C#**.
 4. Name your webhook and press **Create**.
 
@@ -79,7 +79,7 @@ Your Azure Function is associated with code files and other files that are descr
 
 #### function.json
 
-The function.json file defines the function bindings and other configuration settings. The runtime uses this file to determine the events to monitor and how to pass data into and return data from function execution. 
+The function.json file defines the function bindings and other configuration settings. The runtime uses this file to determine the events to monitor and how to pass data into and return data from function execution.
 
 ```json
 {
@@ -102,7 +102,7 @@ The function.json file defines the function bindings and other configuration set
 
 #### project.json
 
-The project.json file contains dependencies. 
+The project.json file contains dependencies.
 
 ```json
 {
@@ -118,14 +118,14 @@ The project.json file contains dependencies.
    }
 }
 ```
-	
+
 #### run.csx
 
 The code in this section shows an implementation of an Azure Function that is a webhook. In this sample, the function listens for the webhook call back from Media Services notifications and publishes the output asset once the job finishes.
 
-The webhook expects a signing key (credential) to match the one you pass when you configure the notification endpoint. The signing key is the 64-byte Base64 encoded value that is used to protect and secure your WebHooks callbacks from Azure Media Services. 
+The webhook expects a signing key (credential) to match the one you pass when you configure the notification endpoint. The signing key is the 64-byte Base64 encoded value that is used to protect and secure your WebHooks callbacks from Azure Media Services.
 
-In the webhook definition code that follows, the **VerifyWebHookRequestSignature** method does the verification of the notification message. The purpose of this validation is to ensure that the message was sent by Azure Media Services and hasn't been tampered with. The signature is optional for Azure Functions as it has the **Code** value as a query parameter over Transport Layer Security (TLS). 
+In the webhook definition code that follows, the **VerifyWebHookRequestSignature** method does the verification of the notification message. The purpose of this validation is to ensure that the message was sent by Azure Media Services and hasn't been tampered with. The signature is optional for Azure Functions as it has the **Code** value as a query parameter over Transport Layer Security (TLS).
 
 >[!NOTE]
 >There is a limit of 1,000,000 policies for different AMS policies (for example, for Locator policy or ContentKeyAuthorizationPolicy). You should use the same policy ID if you are always using the same days / access permissions, for example, policies for locators that are intended to remain in place for a long time (non-upload policies). For more information, see [this](media-services-dotnet-manage-entities.md#limit-access-policies) topic.
@@ -186,7 +186,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
             NotificationMessage msg = JsonConvert.DeserializeObject<NotificationMessage>(requestMessageContents);
 
             if (VerifyHeaders(req, msg, log))
-            { 
+            {
                 string newJobStateStr = (string)msg.Properties.Where(j => j.Key == "NewState").FirstOrDefault().Value;
                 if (newJobStateStr == "Finished")
                 {
@@ -198,8 +198,8 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
                     _context = new CloudMediaContext(new Uri(_RESTAPIEndpoint), tokenProvider);
 
-                    if(_context!=null)   
-                    {                        
+                    if(_context!=null)
+                    {
                         string urlForClientStreaming = PublishAndBuildStreamingURLs(msg.Properties["JobId"]);
                         log.Info($"URL to the manifest for client streaming using HLS protocol: {urlForClientStreaming}");
                     }
@@ -228,25 +228,25 @@ private static string PublishAndBuildStreamingURLs(String jobID)
     IJob job = _context.Jobs.Where(j => j.Id == jobID).FirstOrDefault();
     IAsset asset = job.OutputMediaAssets.FirstOrDefault();
 
-    // Create a 30-day readonly access policy. 
+    // Create a 30-day readonly access policy.
     // You cannot create a streaming locator using an AccessPolicy that includes write or delete permissions.
     IAccessPolicy policy = _context.AccessPolicies.Create("Streaming policy",
     TimeSpan.FromDays(30),
     AccessPermissions.Read);
 
-    // Create a locator to the streaming content on an origin. 
+    // Create a locator to the streaming content on an origin.
     ILocator originLocator = _context.Locators.CreateLocator(LocatorType.OnDemandOrigin, asset,
     policy,
     DateTime.UtcNow.AddMinutes(-5));
 
-    // Get a reference to the streaming manifest file from the  
-    // collection of files in the asset. 
+    // Get a reference to the streaming manifest file from the
+    // collection of files in the asset.
     var manifestFile = asset.AssetFiles.ToList().Where(f => f.Name.ToLower().
                 EndsWith(".ism")).
                 FirstOrDefault();
 
     // Create a full URL to the manifest file. Use this for playback
-    // in streaming media clients. 
+    // in streaming media clients.
     string urlForClientStreaming = originLocator.Path + manifestFile.Name + "/manifest" +  "(format=m3u8-aapl)";
     return urlForClientStreaming;
 
@@ -352,7 +352,7 @@ Once the webhook is triggered, the example above produces the following output, 
 
 ```output
 C# HTTP trigger function processed a request. RequestUri=https://juliako001-functions.azurewebsites.net/api/otification_Webhook_Function?code=9376d69kygoy49oft81nel8frty5cme8hb9xsjslxjhalwhfrqd79awz8ic4ieku74dvkdfgvi
-Request Body = 
+Request Body =
 {
   "MessageVersion": "1.1",
   "ETag": "b8977308f48858a8f224708bc963e1a09ff917ce730316b4e7ae9137f78f3b20",
@@ -374,15 +374,15 @@ URL to the manifest for client streaming using HLS protocol: http://mediapkeewmg
 
 ## Add a webhook to your encoding task
 
-In this section, the code that adds a webhook notification to a Task is shown. You can also add a job level notification, which would be more useful for a job with chained tasks.  
+In this section, the code that adds a webhook notification to a Task is shown. You can also add a job level notification, which would be more useful for a job with chained tasks.
 
 1. Create a new C# Console Application in Visual Studio. Enter the Name, Location, and Solution name, and then click OK.
 2. Use [NuGet](https://www.nuget.org/packages/windowsazure.mediaservices) to install Azure Media Services.
-3. Update App.config file with appropriate values: 
-	
-   * Azure Media Services connection information, 
-   * webhook URL that expects to get the notifications, 
-   * the signing key that matches the key that your webhook expects. The signing key is the 64-byte Base64 encoded value that is used to protect and secure your webhooks callbacks from Azure Media Services. 
+3. Update App.config file with appropriate values:
+
+   * Azure Media Services connection information,
+   * webhook URL that expects to get the notifications,
+   * the signing key that matches the key that your webhook expects. The signing key is the 64-byte Base64 encoded value that is used to protect and secure your webhooks callbacks from Azure Media Services.
 
      ```xml
            <appSettings>
@@ -462,7 +462,7 @@ In this section, the code that adds a webhook notification to a Task is shown. Y
                     // Declare a new encoding job with the Standard encoder
                     IJob job = _context.Jobs.Create("MES Job");
 
-                    // Get a media processor reference, and pass to it the name of the 
+                    // Get a media processor reference, and pass to it the name of the
                     // processor to use for the specific task.
                     IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
 
@@ -474,14 +474,14 @@ In this section, the code that adds a webhook notification to a Task is shown. Y
                     // Specify the input asset to be encoded.
                     task.InputAssets.Add(newAsset);
 
-                    // Add an output asset to contain the results of the job. 
-                    // This output is specified as AssetCreationOptions.None, which 
-                    // means the output asset is not encrypted. 
+                    // Add an output asset to contain the results of the job.
+                    // This output is specified as AssetCreationOptions.None, which
+                    // means the output asset is not encrypted.
                     task.OutputAssets.AddNew(newAsset.Name, AssetCreationOptions.None);
 
                     // Add the WebHook notification to this Task and request all notification state changes.
                     // Note that you can also add a job level notification
-                    // which would be more useful for a job with chained tasks.  
+                    // which would be more useful for a job with chained tasks.
                     if (endpoint != null)
                     {
                     task.TaskNotificationSubscriptions.AddNew(NotificationJobState.All, endpoint, true);

@@ -28,4 +28,8 @@ Use the following methods to stop a live event.
 
 [!INCLUDE [task-stop-live-event-rest.md](./includes/task-stop-live-event-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-stop-live-event-python.md](./includes/task-stop-live-event-python.md)]
+
 ---

@@ -194,7 +194,7 @@ sections:
         DRM systems like PlayReady, Widevine, and FairPlay provide an additional level of encryption on the key that's used to decrypt the content, compared to an AES-128 clear key. The content key is encrypted to a key protected by the DRM runtime in addition to any transport-level encryption that TLS provides. Decryption is handled in a secure environment at the operating system level, where it's more difficult for a malicious user to attack. We recommend DRM for use cases where the viewer might not be a trusted party and you need the highest level of security.
     - question: How do I show a video to only users who have a specific permission, without using Azure AD?
       answer: |
-        You don't have to use any specific token provider such as Azure Active Directory (Azure AD). You can create your own [JWT](https://docs.microsoft.com/active-directory/develop/security-tokens.md#json-web-tokens-and-claims) provider (so-called Secure Token Service, or STS) by using asymmetric key encryption. In your custom STS, you can add claims based on your business logic.
+        You don't have to use any specific token provider such as Azure Active Directory (Azure AD). You can create your own [JWT](https://docs.microsoft.com/azure/active-directory/develop/security-tokens#json-web-tokens-and-claims) provider (so-called Secure Token Service, or STS) by using asymmetric key encryption. In your custom STS, you can add claims based on your business logic.
 
         Make sure that the issuer, audience, and claims all match up exactly between what's in JWT and the `ContentKeyPolicyRestriction` value used in `ContentKeyPolicy`.
 
@@ -281,7 +281,7 @@ sections:
     questions:
     - question: How do I monitor my Media Services resources?
       answer: |
-        Use Azure Monitor to keep track of what's happening with your Media Services resources. For more information, see [Monitor Media Services](./monitoring/monitor-media-services.md). How-to guides include [Monitor Media Services metrics](./monitoring/media-services-metrics-howto.md) and [Monitor Media Services diagnostic logs](./monitoring/media-services-diagnostic-logs-howto.md).
+        Use Azure Monitor to keep track of what's happening with your Media Services resources. For more information, see [Monitor Media Services](./monitoring/monitor-media-services.md). How to guides are listed at the end of the page.
     - question: How do I monitor my Media Services live event?
       answer: |
         Use [Azure Event Grid](./monitoring/reacting-to-media-services-events.md) to monitor your live event without a polling service. How-to guides include [Create and monitor Media Services events with Event Grid using the Azure portal](./monitoring/monitor-events-portal-how-to.md) and [Create and monitor Media Services events with Event Grid using the Azure CLI](./monitoring/job-state-events-cli-how-to.md).
@@ -308,7 +308,7 @@ sections:
     questions:
     - question: How do I find out what this error code means?
       answer: |
-        We've documented error codes in the following references: [Streaming endpoint error codes](./stream-streaming-endpoint-error-codes-reference.md), [Live event error codes](./live-event-error-codes-reference.md), and [Job error codes](./job-error-codes-reference.md). If you can't find answers there, please create a support ticket.
+        We've documented error codes in the following references: [Streaming endpoint error codes](./stream-streaming-endpoint-error-codes-reference.md), [Live event error codes](./live-event-error-codes-reference.md), and [Job error codes](https://docs.microsoft.com/rest/api/media/jobs/get?#joberrorcode). If you can't find answers there, please create a support ticket.
     - question: How do I reset my account credentials?
       answer: |
         You can [reset your account credentials by using the Azure CLI](./account-reset-account-credentials.md).

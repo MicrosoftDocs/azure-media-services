@@ -12,6 +12,34 @@ ms.author: inhenkel
 
 This article shows you how to do the basic steps for delivering a basic video on demand (VOD) application with Azure Media Services and a GitHub repository.  All the steps happen with your web browser from our documentation, the Azure portal, and GitHub.
 
+## Final application
+
+The basic VOD application you will be creating will have:
+
+- One Media Services account
+- One started streaming endpoint
+- One storage account mapped to Media Services
+- One asset that will contain encoded media files as well as manifests and other files needed for streaming
+- One streaming locator that will provide streaming URLs
+- One very simple web application that streams the encoded file with the URL
+
+:::image type="content" source="media/architecture-diagrams/basic-vod-architecture.svg" alt-text="basic video on demand streaming architecture diagram":::
+
+## Workflow
+
+1. Upload files.
+1. Media Services creates an asset to house the mezzanine file. This will be the input asset.
+1. Choose an encoding preset.
+1. Create a transform that uses the chosen preset.
+1. Create a job that runs the transform on the uploaded file in the asset.
+1. The job creates an output asset that houses the transformed files along with files needed for streaming.
+1. Create a streaming locator that uses a streaming policy. The streaming locator provides streaming URLs for the streaming application to use.
+1. Create a streaming application on GitHub and use the streaming URLs with the media player.
+1. Start the streaming endpoint.
+1. Watch the video.
+
+:::image type="content" source="media/process-diagrams/vod-process.svg" alt-text="basic video on demand streaming workflow diagram":::
+
 ## Prerequisites
 
 - [Create a Media Services account](account-create-how-to.md). When you set up the Media Services account, a storage account, a user managed identity, and a default streaming endpoint will also be created.
@@ -47,6 +75,8 @@ In order to stream your videos you need a streaming locator.
 [!INCLUDE [task-create-asset-portal](includes/task-create-streaming-locator-portal.md)]
 
 On this screen, you'll see that the streaming endpoint that was created when you created your account is in the Streaming endpoint dropdown list along with other data about the streaming locator.
+
+If the streaming endpoint is not yet started, start it now.
 
 In the streaming and download section, you'll see the URLs to use for your streaming application. For the following steps, you'll use the URL that ends with `(format=m3u8-cmaf)`. Keep this browser tab open as you'll be coming back to it in a later step.
 

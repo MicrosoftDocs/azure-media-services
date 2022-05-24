@@ -48,13 +48,17 @@ Dynamic filtering is used to control the number of tracks, formats, bitrates, an
 
 When using the pass-through **Live Event** (basic or standard), you rely on your on-premises live encoder to generate a multiple bitrate video stream and send that as the contribution feed to the Live Event (using RTMP or fragmented-MP4 input protocol). The Live Event then carries through the incoming video streams  to the dynamic packager (Streaming Endpoint) without any further transcoding. Such a pass-through Live Event is optimized for long-running live events or 24x365 linear live streaming.
 
+:::image type="content" source="media/diagrams/pass-through.svg" alt-text="pass through streaming":::
+
 ### Live encoding
 
 When using cloud encoding with Media Services, you would configure your on-premises live encoder to send a single bitrate video as the contribution feed (up to 32Mbps aggregate) to the Live Event (using RTMP or fragmented-MP4 input protocol). The Live Event transcodes the incoming single bitrate stream into [multiple bitrate video streams](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming) at varying resolutions to improve delivery and makes it available for delivery to playback devices via industry standard protocols like MPEG-DASH, Apple HTTP Live Streaming (HLS), and Microsoft Smooth Streaming.
 
+:::image type="content" source="media/diagrams/live-encoding.svg" alt-text="live encoding streaming":::
+
 ### Live transcription (preview)
 
-Live transcription is a feature you can use with live events that are either pass-through or live encoding. For more information, see [live transcription](live-event-live-transcription-how-to.md). When this feature is enabled, the service uses the [Speech-To-Text](https://docs.microsoft.com/cognitive-services/speech-service/speech-to-text.md) feature of Cognitive Services to transcribe the spoken words in the incoming audio into text. This text is then made available for delivery along with video and audio in MPEG-DASH and HLS protocols.
+Live transcription is a feature you can use with live events that are either pass-through or live encoding. For more information, see [live transcription](live-event-live-transcription-how-to.md). When this feature is enabled, the service uses the [Speech-To-Text](/azure/cognitive-services/speech-service/speech-to-text) feature of Cognitive Services to transcribe the spoken words in the incoming audio into text. This text is then made available for delivery along with video and audio in MPEG-DASH and HLS protocols.
 
 > [!NOTE]
 > Currently, live transcription is available as a preview feature in West US 2.
@@ -92,7 +96,7 @@ To understand the live streaming workflow in Media Services v3, you have to firs
 
     * Stop pushing the stream from the encoder.
     * Stop the live event. Once the live event is stopped, it will not incur any charges. When you need to start it again, it will have the same ingest URL so you won't need to reconfigure your encoder.
-    * You can stop your streaming endpoint, unless you want to continue to provide the archive of your live event as an on-demand stream. If the live event is in stopped state, it will not incur any charges.
+    * You can stop your streaming endpoint, unless you want to continue to provide the archive of your live event as an on-demand stream. If the live event is in stopped state, it will not incur any charges. However, if the streaming endpoint is still running, it will incur charges.
 
 The asset that the live output is archiving to, automatically becomes an on-demand asset when the live output is deleted. You must delete all live outputs before a live event can be stopped. You can use an optional flag [removeOutputsOnStop](/rest/api/media/liveevents/stop#request-body) to automatically remove live outputs on stop.
 

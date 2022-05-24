@@ -4,13 +4,15 @@ description: This article discusses content-aware encoding in Microsoft Azure Me
 author: jiayali-ms
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 
 # Content-aware encoding
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
+
+[!INCLUDE [tip-samples](includes/tip-samples.md)]
 
 ## Overview of the content-aware encoding preset
 
@@ -59,3 +61,7 @@ Below are the results for another category of source content, where the encoder 
 ![RD curve using VMAF](media/encode-content-aware-concept/msrv4.png)
 
 **Figure 4: RD curve using VMAF for low-quality input (at 1080p)**
+
+## Encoding samples
+
+See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for an encoding.

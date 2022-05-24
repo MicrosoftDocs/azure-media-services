@@ -34,10 +34,10 @@ You can specify a key name and key version, or just a key name. When you use onl
 
 ## Double encryption
 
-Media Services automatically supports double encryption. For data at rest, the first layer of encryption uses a customer-managed key or a Microsoft managed key depending on the `AccountEncryption` setting on the account.  The second layer of encryption for data at rest is provided automatically using a separate Microsoft managed key. To learn more about double encryption, see [Azure double encryption](https://docs.microsoft.com/security/fundamentals/double-encryption.md).
+Media Services automatically supports double encryption. For data at rest, the first layer of encryption uses a customer-managed key or a Microsoft managed key depending on the `AccountEncryption` setting on the account.  The second layer of encryption for data at rest is provided automatically using a separate Microsoft managed key. To learn more about double encryption, see [Azure double encryption](/azure/security/fundamentals/double-encryption).
 
 > [!NOTE]
-> Double encryption is enabled automatically on the Media Services account. However, you need to configure the customer-managed key and double encryption on your storage account separately. To learn more, see [Storage encryption](https://docs.microsoft.com/storage/common/storage-service-encryption.md).
+> Double encryption is enabled automatically on the Media Services account. However, you need to configure the customer-managed key and double encryption on your storage account separately. To learn more, see [Storage encryption](/azure/storage/common/storage-service-encryption).
 
 ## Tutorials
 

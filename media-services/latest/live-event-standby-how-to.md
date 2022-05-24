@@ -31,4 +31,8 @@ Use the following methods to allocate a live event in standby mode.
 
 [!INCLUDE [task-allocate-live-event-rest.md](./includes/task-allocate-live-event-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-allocate-live-event-python.md](./includes/task-allocate-live-event-python.md)]
+
 ---

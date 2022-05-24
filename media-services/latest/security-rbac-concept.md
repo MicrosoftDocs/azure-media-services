@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Currently, Azure Media Services does not define any custom roles specific to the service. To get full access to the Media Services account, customers can use the built-in roles of **Owner** or **Contributor**. The main difference between these roles is: the **Owner** can control who has access to a resource and the **Contributor** cannot. The built-in **Reader** role can also be used but the user or application will only have read access to the Media Services APIs. 
+Currently, Azure Media Services does not define any custom roles specific to the service. To get full access to the Media Services account, customers can use the built-in roles of **Owner** or **Contributor**. The main difference between these roles is: the **Owner** can control who has access to a resource and the **Contributor** cannot. The built-in **Reader** role can also be used but the user or application will only have read access to the Media Services APIs.
 
 ## Design principles
 
@@ -27,11 +27,11 @@ foreach (Microsoft.Azure.Management.Media.Models.Operation a in client.Operation
 }
 ```
 
-The [built-in role definitions](https://docs.microsoft.com/role-based-access-controle/built-in-roles.md) article tells you exactly what the role grants. 
+The [built-in role definitions](/azure/role-based-access-controle/built-in-roles) article tells you exactly what the role grants.
 
 See the following articles for more information:
 
-- [Classic subscription administrator roles, Azure roles, and Azure AD roles](https://docs.microsoft.com/role-based-access-controle/rbac-and-directory-admin-roles.md)
-- [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/role-based-access-controle/overview.md)
-- [Add or remove Azure role assignments using the REST API](https://docs.microsoft.com/role-based-access-controle/role-assignments-rest.md)
-- [Media Services resource provider operations](https://docs.microsoft.com/role-based-access-controle/resource-provider-operations.md#microsoftmedia)
+- [Classic subscription administrator roles, Azure roles, and Azure AD roles](/azure/role-based-access-controle/rbac-and-directory-admin-roles)
+- [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-controle/overview)
+- [Add or remove Azure role assignments using the REST API](/azure/role-based-access-controle/role-assignments-rest)
+- [Media Services resource provider operations](/azure/role-based-access-control/resource-provider-operations#microsoftmedia)

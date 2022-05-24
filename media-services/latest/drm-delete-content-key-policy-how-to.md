@@ -28,4 +28,8 @@ Use the following methods to delete a content key policy.
 
 [!INCLUDE [task-delete-content-key-policy-rest.md](includes/task-delete-content-key-policy-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-delete-content-key-policy-python.md](includes/task-delete-content-key-policy-python.md)]
+
 ---

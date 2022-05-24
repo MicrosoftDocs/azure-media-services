@@ -28,4 +28,8 @@ Use the following methods to create a live event.
 
 [!INCLUDE [task-create-live-event-rest.md](./includes/task-create-live-event-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-create-live-event-python.md](./includes/task-create-live-event-python.md)]
+
 ---

@@ -28,4 +28,8 @@ Use the following methods to list the content key policies.
 
 [!INCLUDE [task-list-content-key-policy-rest.md](includes/task-list-content-key-policy-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-list-content-key-policy-python.md](includes/task-list-content-key-policy-python.md)]
+
 ---

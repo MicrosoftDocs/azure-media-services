@@ -115,9 +115,6 @@ conceptualContent:
           - url: ./latest/analyze-video-audio-files-concept.md
             itemType: concept
             text: Media analytics
-          - url: ./latest/analyze-videos-tutorial.md
-            itemType: tutorial
-            text: Analyze videos
           - url: ./latest/analyze-face-redaction-concept.md
             itemType: concept
             text: Face Detect and Redaction
@@ -144,16 +141,16 @@ additionalContent:
     - items:
       - title: Azure Storage
         summary: Learn about block blobs and containers
-        url: https://docs.microsoft.com/azure/storage
+        url: /azure/storage
       - title: CDN
         summary: Use the power of the Azure CDN to stream content at scale with services from Akamai and Verizon or load balance across multiple content delivery networks
-        url: https://docs.microsoft.com/azure/cdn
+        url: /azure/cdn
       - title: Event Grid
         summary: Learn how to use Azure Event Grid to react to relevant events
-        url: https://docs.microsoft.com/azure/event-grid
+        url: /azure/event-grid
       - title: Azure Monitor
         summary: Learn how to aggregate and analyze metrics, logs, and traces. Fire alerts and send notifications or call automated solutions.
-        url: https://docs.microsoft.com/azure/azure-monitor
+        url: /azure/azure-monitor
       - title: Azure Event Hubs
         summary: Learn how to use Event Hubs to ingest millions of events per second from connected devices and applications.
-        url: https://docs.microsoft.com/azure/event-hubs
+        url: /azure/event-hubs

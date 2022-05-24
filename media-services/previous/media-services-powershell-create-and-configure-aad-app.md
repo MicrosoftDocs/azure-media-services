@@ -11,7 +11,7 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.date: 03/10/2021
-ms.author: inhenkel 
+ms.author: inhenkel
 ms.custom: devx-track-azurepowershell
 ---
 
@@ -21,18 +21,18 @@ ms.custom: devx-track-azurepowershell
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
-Learn how to use a PowerShell script to create an Azure Active Directory (Azure AD) application and service principal to access Azure Media Services resources.  
+Learn how to use a PowerShell script to create an Azure Active Directory (Azure AD) application and service principal to access Azure Media Services resources.
 
 ## Prerequisites
 
-- An Azure account. If you don't have an account, start with an [Azure free trial](https://azure.microsoft.com/pricing/free-trial/). 
+- An Azure account. If you don't have an account, start with an [Azure free trial](https://azure.microsoft.com/pricing/free-trial/).
 - A Media Services account. For more information, see [Create an Azure Media Services account in the Azure portal](media-services-portal-create-account.md).
 
 - Azure PowerShell. For more information, see [How to use Azure PowerShell](/powershell/azure/).
 
 [!INCLUDE [updated-for-az](../latest/includes/updated-for-az.md)]
 
-## Create an Azure AD app by using PowerShell  
+## Create an Azure AD app by using PowerShell
 
 ```powershell
 Connect-AzAccount
@@ -40,7 +40,7 @@ Import-Module Az.Resources
 Set-AzContext -SubscriptionId $SubscriptionId
 $ServicePrincipal = New-AzADServicePrincipal -DisplayName $ApplicationDisplayName -Password $Password
 
-Get-AzADServicePrincipal -ObjectId $ServicePrincipal.Id 
+Get-AzADServicePrincipal -ObjectId $ServicePrincipal.Id
 $NewRole = $null
 $Scope = "/subscriptions/your subscription id/resourceGroups/userresourcegroup/providers/microsoft.media/mediaservices/your media account"
 
@@ -56,6 +56,6 @@ $Retries = 0;While ($NewRole -eq $null -and $Retries -le 6)
 
 For more information, see the following articles:
 
-- [Use Azure PowerShell to create a service principal to access resources](https://docs.microsoft.com/active-directory/develop/howto-authenticate-service-principal-powershell.md)
-- [Add or remove Azure role assignments using Azure PowerShell](https://docs.microsoft.com/role-based-access-control/role-assignments-powershell.md)
+- [Use Azure PowerShell to create a service principal to access resources](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
+- [Add or remove Azure role assignments using Azure PowerShell](/azure/role-based-access-control/role-assignments-powershell)
 - [How to manually configure daemon apps by using certificates](https://github.com/azure-samples/active-directory-dotnetcore-daemon-v2)

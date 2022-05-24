@@ -19,6 +19,61 @@ To stay up to date with the most recent developments, this article provides you 
 * Bug fixes
 * Deprecated functionality
 
+## April 2022
+
+### Live transcriptions
+
+Live Transcription is now Generally Available (GA) and supports all available languages in the speech-to-text API.  A full list of languages is available in the article [Live transcription regions and languages](live-event-live-transcription-how-to.md)
+
+### Low Latency HLS (LL-HLS)
+
+Low latency HLS (LL-HLS) is now available in the API and in the Azure Portal. To enable LL-HLS, use the "LowLatencyV2" Stream Option when creating a live stream. See the Node.js sample for how to configure [Create a Low latency HLS live encoding event](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/720P_Low_Latency_Encoding_Live_Event/index.ts)
+In the Azure portal select the new "Low Latency" option when creating a live event.  The new LL-HLS feature can provide reduced latency in the 4-7 second range when using a player framework that supports the LL-HLS protocol.
+Low latency HLS is only available on live transcoding channels and not yet available for "pass-through" mode live events.
+
+## March 2022
+
+### .NET SDK version 6.0.0
+
+The .NET SDK version 6.0.0 is now available on Nuget.
+[Microsoft.Azure.Management.Media](https://www.nuget.org/packages/Microsoft.Azure.Management.Media)
+
+This SDK supports the new [2021-11-01 stable](https://github.com/Azure/azure-rest-api-specs/blob/fb31972c13cf183c43414d2b4736a5d70aa8af68/specification/mediaservices/resource-manager/Microsoft.Media/stable/2021-11-01/) version of the AMS REST OpenAPI specification.
+
+To install using the Package Manager:
+
+```
+Install-Package Microsoft.Azure.Management.Media -Version 6.0.0
+```
+
+To install using .NET CLI
+
+```dotnetcli
+dotnet add package Microsoft.Azure.Management.Media --version 6.0.0
+```
+
+Changes in the 6.0.0 SDK include:
+
+* Added new tracks API under asset to manage the tracks available in the asset.
+* Added Main10 Encoding Profile for H265 encoding.
+* Exposed RateControlMode for H264 encoding, enabling 2 new rate-control modes - CBR (Constant Bit Rate) and CRF (Constant Rate Factor).
+* Added "skus" property to streaming endpoint to indicate the type of streaming endpoint and its scale. This allows configuration of manual or auto scaling of streaming units in a streaming endpoint.
+* Added "LowLatencyV2" stream option on the live event to be used for low latency live streaming using Apple's Low Latency HLS format (LL-HLS)
+
+### New Docs content: Stream a Microsoft Teams Meeting
+
+It's easy to relay your meeting broadcast from Microsoft Teams with a Media Services live event. Easily place your live Teams meeting on a public website, or use DRM to protect your stream. Capture and record the stream as a VOD asset for use with the Media Services encoding platform.  See [Stream a Microsoft Teams Meeting](stream-with-teams-how-to.md).
+
+### Late-bind captions and subtitle tracks on assets with the new Tracks API
+
+A new tracks API on assets allows you to list available tracks inside of an asset.  This allows you to discover the available audio, video, and text tracks stored in an asset.
+The tracks API allows you to late-bind caption and subtitle files in IMSC1 text profile and WebVTT format to your streaming assets.  In the past, customers needed to modify the .ism file in the blob storage account to add new late-bound tracks to their assets. This replaces that manual task and provides a supported SDK route to enable the addition of late-bound subtitle and caption files.
+
+For technical details on the new track API, see the [2021-11-01 version of the AMS REST OpenAPI specification here](https://github.com/Azure/azure-rest-api-specs/blob/fb31972c13cf183c43414d2b4736a5d70aa8af68/specification/mediaservices/resource-manager/Microsoft.Media/stable/2021-11-01/AssetsAndAssetFilters.json#L1427).
+
+A basic list tracks sample is provide in Javascript [each](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts)
+Additional samples and documentation will be provided for each SDK soon.
+
 ## December 2021
 
 ### Updated JavaScript SDK version 10.0.0
@@ -156,7 +211,7 @@ New **Python** sample demonstrating how to use Azure Functions, and Event Grid t
 
 ### Availability Zones default support in Media Services
 
-Media Services now supports [Availability Zones](concept-availability-zones.md), providing fault-isolated locations within the same Azure region.  Media Services accounts are zone redundant by default now and there is no extra configuration or settings required. This only applies to regions that have [Availability Zones support](https://docs.microsoft.com/availability-zones/az-region.md#azure-regions-with-availability-zones)
+Media Services now supports [Availability Zones](concept-availability-zones.md), providing fault-isolated locations within the same Azure region.  Media Services accounts are zone redundant by default now and there is no extra configuration or settings required. This only applies to regions that have [Availability Zones support](/azure/availability-zones/az-region#azure-regions-with-availability-zones)
 
 
 ## March 2021
@@ -375,7 +430,7 @@ To see part of the header exchange in action, you can try the following steps:
 
 Live transcription is now in public preview and available for use in the West US 2 region.
 
-Live transcription is designed to work with live events as an add-on capability.  It is supported on both pass-through and Standard or Premium encoding live events.  When this feature is enabled, the service uses the [Speech-To-Text](https://docs.microsoft.com/cognitive-services/speech-service/speech-to-text.md) feature of Cognitive Services to transcribe the spoken words in the incoming audio into text. This text is then made available for delivery along with video and audio in MPEG-DASH and HLS protocols. Billing is based on a new add-on meter that is extra cost to the live event when it is in the "Running" state.  For details on Live transcription and billing, see [Live transcription](live-event-live-transcription-how-to.md)
+Live transcription is designed to work with live events as an add-on capability.  It is supported on both pass-through and Standard or Premium encoding live events.  When this feature is enabled, the service uses the [Speech-To-Text](/azure/cognitive-services/speech-service/speech-to-text) feature of Cognitive Services to transcribe the spoken words in the incoming audio into text. This text is then made available for delivery along with video and audio in MPEG-DASH and HLS protocols. Billing is based on a new add-on meter that is extra cost to the live event when it is in the "Running" state.  For details on Live transcription and billing, see [Live transcription](live-event-live-transcription-how-to.md)
 
 > [!NOTE]
 > Currently, live transcription is only available as a preview feature in the West US 2 region. It supports transcription of spoken words in English (en-us) only at this time.
@@ -463,7 +518,7 @@ You can now use Azure Monitor to view telemetry data emitted by Media Services.
 * Use the Azure Monitor diagnostic logs to monitor requests sent by the Media Services Key Delivery endpoint.
 * Monitor metrics emitted by Media Services [Streaming Endpoints](stream-streaming-endpoint-concept.md).
 
-For details, see [Monitor Media Services metrics and diagnostic logs](monitoring/monitor-media-services-data-reference.md).
+For details, see [Monitor Media Services](monitoring/monitor-media-services.md).
 
 ### Multi audio tracks support in Dynamic Packaging
 
@@ -625,7 +680,7 @@ CMAF and 'cbcs' encryption support for Apple HLS (iOS 11+) and MPEG-DASH players
 
 ### Video Indexer
 
-Video Indexer GA release was announced in August. For new information about currently supported features, see [What is Video Indexer](https://docs.microsoft.com/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-for-media-docs/video-indexer-overview.md?bc=%2fazure%2fmedia-services%2fvideo-indexer%2fbreadcrumb%2ftoc.json&toc=%2fazure%2fmedia-services%2fvideo-indexer%2ftoc.json).
+Video Indexer GA release was announced in August. For new information about currently supported features, see [What is Video Indexer](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-indexer-overview).
 
 ### Plans for changes
 
@@ -645,7 +700,6 @@ If you created Assets or Account Filters between 09/28 and 10/12 with Media Serv
 
 The following features are present in the .NET SDK:
 
-* **Transforms** and **Jobs** to encode or analyze media content. For examples, see [Stream files](stream-files-tutorial-with-api.md) and [Analyze](analyze-videos-tutorial.md).
 * **Streaming Locators** for publishing and streaming content to end-user devices
 * **Streaming Policies** and **Content Key Policies** to configure key delivery and content protection (DRM) when delivering content.
 * **Live Events** and **Live Outputs** to configure the ingest and archiving of live streaming content.

@@ -4,7 +4,7 @@ description: This article explains about encoding video and audio with Azure Med
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/24/2022
+ms.date: 05/11/2022
 ms.author: inhenkel
 ---
 
@@ -12,14 +12,18 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
+[!INCLUDE [tip-samples](includes/tip-samples.md)]
+
 The term encoding in Media Services applies to the process of converting files containing digital video and/or audio from one standard format to another, with the purpose of (a) reducing the size of the files, and/or (b) producing a format that's compatible with a broad range of devices and apps. This process is also referred to as video compression, or transcoding. See the [Data compression](https://en.wikipedia.org/wiki/Data_compression) and the [What Is Encoding and Transcoding?](https://www.streamingmedia.com/Articles/Editorial/What-Is-/What-Is-Encoding-and-Transcoding-75025.aspx) for further discussion of the concepts.
 
 Videos are typically delivered to devices and apps by [progressive download](https://en.wikipedia.org/wiki/Progressive_download) or through [adaptive bitrate streaming](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming).
 
+:::image type="content" source="media/diagrams/transforms-jobs.png" alt-text="transforms and jobs":::
+
 > [!IMPORTANT]
 > Media Services does not bill for canceled or errored jobs. For example, a job that has reached 50% progress and is canceled is not billed at 50% of the job minutes. You are only charged for finished jobs.
 
-* To deliver by progressive download, you can use Azure Media Services to convert a digital media file (mezzanine) into an [MP4](https://en.wikipedia.org/wiki/MPEG-4_Part_14) file, which contains video that's been encoded with the [H.264](https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC) codec, and audio that's been encoded with the [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) codec. This MP4 file is written to an Asset in your storage account. You can use the Azure Storage APIs or SDKs  (for example, [Storage REST API](https://docs.microsoft.com/storage/common/storage-rest-api-auth.md) or [.NET SDK](https://docs.microsoft.com/storage/blobs/storage-quickstart-blobs-dotnet.md)) to download the file directly. If you created the output Asset with a specific container name in storage, use that location. Otherwise, you can use Media Services to [list the asset container URLs](/rest/api/media/assets/listcontainersas).
+* To deliver by progressive download, you can use Azure Media Services to convert a digital media file (mezzanine) into an [MP4](https://en.wikipedia.org/wiki/MPEG-4_Part_14) file, which contains video that's been encoded with the [H.264](https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC) codec, and audio that's been encoded with the [AAC](https://en.wikipedia.org/wiki/Advanced_Audio_Coding) codec. This MP4 file is written to an Asset in your storage account. You can use the Azure Storage APIs or SDKs  (for example, [Storage REST API](/azure/storage/common/storage-rest-api-auth) or [.NET SDK](/azure/storage/blobs/storage-quickstart-blobs-dotnet)) to download the file directly. If you created the output Asset with a specific container name in storage, use that location. Otherwise, you can use Media Services to [list the asset container URLs](/rest/api/media/assets/listcontainersas).
 * To prepare content for delivery by adaptive bitrate streaming, the mezzanine file needs to be encoded at multiple bitrates (high to low). To ensure graceful transition of quality, the resolution of the video is lowered as the bitrate is lowered. This results in a so-called encoding ladder–a table of resolutions and bitrates (see [auto-generated adaptive bitrate ladder](encode-autogen-bitrate-ladder.md) or use the recommended content aware encoding preset). You can use Media Services to encode your mezzanine files at multiple bitrates. In doing so, you'll get a set of MP4 files and associated streaming configuration files written to an Asset in your storage account. You can then use the [Dynamic Packaging](encode-dynamic-packaging-concept.md) capability in Media Services to deliver the video via streaming protocols like [MPEG-DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) and [HLS](https://en.wikipedia.org/wiki/HTTP_Live_Streaming). This requires you to create a [Streaming Locator](stream-streaming-locators-concept.md) and build streaming URLs corresponding to the supported protocols, which can then be handed off to devices/apps based on their capabilities.
 
 ## Transforms and jobs
@@ -34,29 +38,6 @@ Starting with January 2019, when encoding with the Standard  Encoder to produce 
 
 > [!NOTE]
 > You shouldn't modify or remove the MPI file, or take any dependency in your service on the existence (or not) of such a file.
-
-### Creating job input from an HTTPS URL
-
-When you submit Jobs to process your videos, you have to tell Media Services where to find the input video. One of the options is to specify an HTTPS URL as a job input. Currently, Media Services v3 doesn't support chunked transfer encoding over HTTPS URLs.
-
-#### Examples
-
-* [Encode from an HTTPS URL with .NET](stream-files-dotnet-quickstart.md)
-* [Encode from an HTTPS URL with CLI](stream-files-cli-quickstart.md)
-* [Encode from an HTTPS URL with Node.js](stream-files-nodejs-quickstart.md)
-
-### Creating job input from a local file
-
-The input video can be stored as a Media Service Asset, in which case you create an input asset based on a file (stored locally or in Azure Blob storage).
-
-### Creating job input with subclipping
-
-When encoding a video, you can specify to also trim or clip the source file and produce an output that has only a desired portion of the input video. This functionality works with any [Transform](/rest/api/media/transforms) that's built using either the [BuiltInStandardEncoderPreset](/rest/api/media/transforms/createorupdate#builtinstandardencoderpreset) presets, or the [StandardEncoderPreset](/rest/api/media/transforms/createorupdate#standardencoderpreset) presets.
-
-You can specify to create a [Job](/rest/api/media/jobs/create) with a single clip of a video on-demand or live archive (a recorded event). The job input could be an Asset or an HTTPS URL.
-
-> [!TIP]
-> If you want to stream a sublip of your video without re-encoding the video, consider using [Pre-filtering manifests with Dynamic Packager](filters-dynamic-manifest-concept.md).
 
 ## Built-in presets
 
@@ -118,3 +99,18 @@ For accounts created with the **2020-05-01** or later version of the API or thro
 Media Services does not bill for canceled or errored jobs. For example, a job that has reached 50% progress and is canceled is not billed at 50% of the job minutes. You are only charged for finished jobs.
 
 For more information, see [pricing](https://azure.microsoft.com/pricing/details/media-services/).
+
+## Encoding samples
+
+See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.
+
+## How-tos and Tutorials
+
+### .NET
+
+- [Encode a remote file based on URL and stream the video](stream-files-dotnet-quickstart.md?amspage=encode-concept)
+- [Upload, encode, and stream videos with Media Services v3](stream-files-tutorial-with-api.md?amspage=encode-concept)
+
+### CLI
+
+- [Encode a remote file based on URL and stream the video](stream-files-cli-quickstart.md?amspage=encode-concept)

@@ -28,4 +28,8 @@ Use the following methods to List live events.
 
 [!INCLUDE [task-list-live-event-rest.md](./includes/task-list-live-event-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-list-live-event-python.md](./includes/task-list-live-event-python.md)]
+
 ---

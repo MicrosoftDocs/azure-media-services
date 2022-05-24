@@ -12,7 +12,7 @@ ms.author: johndeu
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Azure Media Services provides several built-in [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview.md) definitions to help enforce organizational standards and compliance at-scale.
+Azure Media Services provides several built-in [Azure Policy](/azure/governance/policy/overview) definitions to help enforce organizational standards and compliance at-scale.
 Common use cases for Azure Policy include implementing governance for resource consistency,regulatory compliance, security, cost and management.
 
 Media Services provides several common use case definitions for Azure Policy that a built-in to help you get started.
@@ -23,7 +23,7 @@ Several built in policy definitions are available for use with Media Services to
 
 [!INCLUDE [Azure Policy Media Services](./includes/policies-media-services.md)]
 
-The [list of built-in policy definitions for Media Services](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies.md#media-services) provides the latest definitions and links the code definitions and how to access them in the Portal.
+The [list of built-in policy definitions for Media Services](/azure/governance/policy/samples/built-in-policies#media-services) provides the latest definitions and links the code definitions and how to access them in the Portal.
 
 ## Common scenarios that require Azure Policy
 
@@ -38,7 +38,7 @@ See the [built-in policy definitions for Media Services](https://github.com/Azur
 
 See the following articles for more information:
 
-- [What is Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview.md)
-- [Quickstart:Create a policy in the Portal](https://docs.microsoft.com/azure/governance/policy/assign-policy-portal.md)
-- [List of built-in policy definitions for Media Services](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies.md#media-services)
-- 
+- [What is Azure Policy](/azure/governance/policy/overview)
+- [Quickstart:Create a policy in the Portal](/azure/governance/policy/assign-policy-portal)
+- [List of built-in policy definitions for Media Services](/azure/governance/policy/samples/built-in-policies#media-services)
+-

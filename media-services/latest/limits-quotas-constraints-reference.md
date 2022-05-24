@@ -8,7 +8,7 @@ ms.date: 03/22/2022
 ms.author: inhenkel
 ---
 
-<!-- If you update limits in this topic, make sure to also update https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#media-services-limits -->
+<!-- If you update limits in this topic, make sure to also update /azure/azure-resource-manager/management/azure-subscription-service-limits#media-services-limits -->
 
 # Azure Media Services quotas and limits
 

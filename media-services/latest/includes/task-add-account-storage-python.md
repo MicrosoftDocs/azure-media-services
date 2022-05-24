@@ -9,14 +9,14 @@ title: Add a storage account to a Media Services account with Python
 
 ### Add a storage account to a Media Services account with Python
 
-:::code language="python" source="~/../media-services-v3-python/all/storage.py" id="StorageImports":::
+:::code language="python" source="~/..//media-services-v3-python/snippets/storage.py" id="StorageImports":::
 
 [!INCLUDE [python-snippets-env](python-snippets-env.md)]
 
-:::code language="python" source="~/../media-services-v3-python/all/storage.py" id="EnvironmentVariables":::
+:::code language="python" source="~/..//media-services-v3-python/snippets/storage.py" id="EnvironmentVariables":::
 
-:::code language="python" source="~/../media-services-v3-python/all/storage.py" id="CreateAMSClient":::
+:::code language="python" source="~/..//media-services-v3-python/snippets/storage.py" id="CreateAMSClient":::
 
-:::code language="python" source="~/../media-services-v3-python/all/storage.py" id="CreateStorageClient":::
+:::code language="python" source="~/..//media-services-v3-python/snippets/storage.py" id="CreateStorageClient":::
 
-:::code language="python" source="~/../media-services-v3-python/all/storage.py" id="AddStorage":::
+:::code language="python" source="~/..//media-services-v3-python/snippets/storage.py" id="AddStorage":::

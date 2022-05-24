@@ -29,3 +29,9 @@ You can use the following methods to delete a Media Services asset filter.
 ## [REST](#tab/rest/)
 
 [!INCLUDE [task-delete-asset-filter-rest.md](./includes/task-delete-asset-filter-rest.md)]
+
+## [Python](#tab/python/)
+
+[!INCLUDE [task-delete-asset-filter-python.md](./includes/task-delete-asset-filter-python.md)]
+
+---

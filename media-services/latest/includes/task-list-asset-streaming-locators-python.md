@@ -9,4 +9,4 @@ title: List the streaming locators for an asset with Python
 
 ### List the streaming locators for an asset with Python
 
-:::code language="python" source="~/../media-services-v3-python/all/assets.py" id="ListAssetStreamingLocators":::
+:::code language="python" source="~/../media-services-v3-python/snippets/assets.py" id="ListAssetStreamingLocators":::

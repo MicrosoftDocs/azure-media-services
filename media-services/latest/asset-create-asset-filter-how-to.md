@@ -32,4 +32,8 @@ You can use the following methods to create a Media Services asset filter.
 
 [!INCLUDE [task-create-asset-filter-rest.md](./includes/task-create-asset-filter-rest.md)]
 
+## [Python](#tab/python/)
+
+[!INCLUDE [task-create-asset-filter-python.md](./includes/task-create-asset-filter-python.md)]
+
 ---

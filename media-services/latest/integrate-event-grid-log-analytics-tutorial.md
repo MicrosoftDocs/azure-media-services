@@ -29,20 +29,20 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 
 ## Prerequisites
 
-> * An [Azure subscription](setup-azure-subscription-how-to.md)
+> * An Azure subscription.
 > * A [Media Services](account-create-how-to.md) account and resource group.
 > * An installation of [FFmpeg](https://ffmpeg.org/download.html) for your OS.
-> * A [Log Analytics](https://docs.microsoft.com/azure-monitor/logs/quick-create-workspace.md) workspace
+> * A [Log Analytics](/azure/azure-monitor/logs/quick-create-workspace) workspace
 
 ## Subscribe to a Media Services event with Logic App
 
-1. In the Azure portal, if you haven't done so already, create a [Log Analytics](https://docs.microsoft.com/azure-monitor/logs/quick-create-workspace.md) workspace. You'll need the Workspace ID and one of the keys, so keep that browser window open. Then, open the portal in another tab or window.
+1. In the Azure portal, if you haven't done so already, create a [Log Analytics](/azure/azure-monitor/logs/quick-create-workspace) workspace. You'll need the Workspace ID and one of the keys, so keep that browser window open. Then, open the portal in another tab or window.
 
 1. Navigate to your Azure Media Services account and select **Events**. This will show all the methods for subscribing to Azure Media Services events.
     > [!div class="mx-imgBorder"]
     > ![Azure Media Services Portal](media/tutorial-events-log-analytics/select-events-01a.png)
 
-1. Select the **Logic Apps icon** to create a Logic App. This will open the Logic App Designer where you can create the flow to capture the events and push them to Log Analytics. 
+1. Select the **Logic Apps icon** to create a Logic App. This will open the Logic App Designer where you can create the flow to capture the events and push them to Log Analytics.
     > [!div class="mx-imgBorder"]
     > ![Create Logic App](media/tutorial-events-log-analytics/select-logic-app-02.png)
 
@@ -129,7 +129,7 @@ Now that you are subscribed to the event(s), create an action.
     > [!div class="mx-imgBorder"]
     > ![Verify Body and Function steps](media/tutorial-events-log-analytics/verify-changes-to-json.png)
 
-1. When you examine all the resources in the resource group, there will be a Logic App and two Logic App API connectors listed, one for the Events and one for Log Analytics. For more information about Event Grid system topics, read [Event Grid System Topics](https://docs.microsoft.com/event-grid/system-topics.md).
+1. When you examine all the resources in the resource group, there will be a Logic App and two Logic App API connectors listed, one for the Events and one for Log Analytics. For more information about Event Grid system topics, read [Event Grid System Topics](/azure/event-grid/system-topics).
     > [!div class="mx-imgBorder"]
     > ![See all new resources in Resource Group](media/tutorial-events-log-analytics/contoso-rg-listing.png)
 

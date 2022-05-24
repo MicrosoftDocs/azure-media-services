@@ -30,7 +30,7 @@ If your environment meets the prerequisites and you're familiar with using ARM t
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
-If you have never deployed an ARM template before, it is helpful to read about [Azure ARM templates](https://docs.microsoft.com/azure-resource-manager/templates/index.yml) and go through the [tutorial](https://docs.microsoft.com/azure-resource-manager/templates/template-tutorial-create-first-template.md?tabs=azure-powershell).
+If you have never deployed an ARM template before, it is helpful to read about [Azure ARM templates](/azure/azure-resource-manager/templates/) and go through the [tutorial](/azure/azure-resource-manager/templates/template-tutorial-create-first-template?tabs=azure-powershell).
 
 ## Review the template
 
@@ -185,8 +185,6 @@ You should see a JSON response similar to the below:
 ```
 
 In the Azure portal, confirm that your resources have been created.
-
-![quickstart resources created](./media/media-services-arm-template-quickstart/quickstart-arm-template-resources.png)
 
 ## Clean up resources
 
