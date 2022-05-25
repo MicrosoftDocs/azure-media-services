@@ -94,31 +94,31 @@ The following examples describe the configurations that you can use for private 
 
 When private endpoints are not used, requests from viewers to access media content and keys are routed via the internet.
 
-:::image type="content" source="media/diagrams/private-link-network-diagram-no-private-endpoints.svg" alt-text="A diagram that show that when there is no private endpoint, internet access is available for both the streaming endpoint and the key delivery endpoint":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-no-private-endpoints.svg" alt-text="A diagram that show that when there is no private endpoint, internet access is available for both the streaming endpoint and the key delivery endpoint" lightbox="media/diagrams/private-link-network-diagram-no-private-endpoints.svg":::
 
 ### Private endpoints for streaming and key delivery
 
 Private endpoints can be created for streaming endpoints and the key delivery service to allow these resources to be accessed directly, rather than via the internet. This can be useful when users inside a network do not have access to the internet.
 
-:::image type="content" source="media/diagrams/private-link-network-diagram-private-endpoints-streaming-key-delivery.svg" alt-text="A diagram that shows viewers accessing content through the streaming endpoint private endpoint and through the key delivery endpoint private endpoint.":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-private-endpoints-streaming-key-delivery.svg" alt-text="A diagram that shows viewers accessing content through the streaming endpoint private endpoint and through the key delivery endpoint private endpoint." lightbox="media/diagrams/private-link-network-diagram-private-endpoints-streaming-key-delivery.svg":::
 
 ### Disabled internet access
 
 If all users access Media Services resources using private endpoints, internet access to these resources can be disabled.
 
-:::image type="content" source="media/diagrams/private-link-network-diagram-disabled-internet-access.svg" alt-text="A diagram showing internet access blocked to the streaming endpoint and the key delivery endpoint.":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-disabled-internet-access.svg" alt-text="A diagram showing internet access blocked to the streaming endpoint and the key delivery endpoint." lightbox="media/diagrams/private-link-network-diagram-disabled-internet-access.svg":::
 
 ### Private endpoints for live events
 
 Private Endpoints can also be created for Live Events, allowing live content to be ingested to Media Services without the internet.
 
-:::image type="content" source="media/diagrams/private-link-network-diagram-live-events.svg" alt-text="A diagram showing the live event with internet access blocked.":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-live-events.svg" alt-text="A diagram showing the live event with internet access blocked." lightbox="media/diagrams/private-link-network-diagram-live-events.svg":::
 
 ### Private endpoints for live events while streaming to the Internet
 
 It is also possible to create a private endpoint for a live event, while using a streaming endpoint to stream to the internet. This may be useful for scenarios that require secure ingest while targeting a large audience.
 
-:::image type="content" source="media/diagrams/private-link-network-diagram-live-events-stream-internet.svg" alt-text="A diagram showing the live event blocked but streaming accessed via the internet.":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-live-events-stream-internet.svg" alt-text="A diagram showing the live event blocked but streaming accessed via the internet." lightbox="media/diagrams/private-link-network-diagram-live-events-stream-internet.svg":::
 
 ## Private Link pricing
 
