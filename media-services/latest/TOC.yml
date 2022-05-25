@@ -123,7 +123,7 @@
   - name: Store AMS events in Azure Log Analytics - Portal
     href: integrate-event-grid-log-analytics-tutorial.md
     displayName: events, event grid, log analytics, tutorial, portal, monitoring, monitor
-- name: Samples
+- name: CODE SAMPLES
   href: samples-overview.md
   displayName: create an account, user managed identity, list assets, live stream, standard passthrough, basic, event hub, encode, transcode, 720p, 1080p, HLS, DASH, PlayReady, Widevine, H264, content aware encoding, HEVC, bulk encoding, SAS URL, Copy, video analytics, language override,  rotate, subclip, stitch, overlay, thumbnails, samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
 - name: Concepts
