@@ -123,9 +123,6 @@
   - name: Store AMS events in Azure Log Analytics - Portal
     href: integrate-event-grid-log-analytics-tutorial.md
     displayName: events, event grid, log analytics, tutorial, portal, monitoring, monitor
-- name: Samples
-  href: samples-overview.md
-  displayName: create an account, user managed identity, list assets, live stream, standard passthrough, basic, event hub, encode, transcode, 720p, 1080p, HLS, DASH, PlayReady, Widevine, H264, content aware encoding, HEVC, bulk encoding, SAS URL, Copy, video analytics, language override,  rotate, subclip, stitch, overlay, thumbnails, samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
 - name: Concepts
   items:
   - name: Overview
@@ -391,6 +388,9 @@
     - name: Samples comparison
       href: migrate-v-2-v-3-migration-samples.md
       displayName: migration, samples, migration guide, benefits, v2 api, v2, v3, v2 to v3, v3 guidance, deprecation, retirement, legacy API, older API, old API, migrate, retire, deprecate, timeline, dates
+- name: CODE SAMPLES
+  href: samples-overview.md
+  displayName: create an account, user managed identity, list assets, live stream, standard passthrough, basic, event hub, encode, transcode, 720p, 1080p, HLS, DASH, PlayReady, Widevine, H264, content aware encoding, HEVC, bulk encoding, SAS URL, Copy, video analytics, language override,  rotate, subclip, stitch, overlay, thumbnails, samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
 - name: How-to guides
   items:
   - name: Find your tenant and subscription
