@@ -14,7 +14,7 @@ ms.author: inhenkel
 
 This article gives an overview of creating a private endpoint and using Private Links with Azure Media Services. We encourage you to learn about [Azure Private Endpoint](/azure/private-link/private-endpoint-overview) before reading this article.
 
-## Azure Private Endpoint and Azure Private Link
+## Azure private endpoints and Azure Private Link
 
 An [Azure private endpoint](/azure/private-link/private-endpoint-overview) is a network interface that uses a private IP address from your virtual network.  This network interface connects you privately and securely to a service via Azure Private Link.
 
@@ -23,7 +23,7 @@ Media Services endpoints may be accessed from a virtual network using private en
 [Azure Private Links](/azure/private-link/) allow access to Media Services private endpoints in your virtual network without exposing them to the public Internet. It routes traffic over the Microsoft backbone network.
 
 > [!NOTE]
-> Media Services accounts created with API versions prior to 2020-05-01 also have an endpoint for the legacy RESTv2 API endpoint (pending deprecation). I doesn't support private links.
+> Media Services accounts created with API versions prior to 2020-05-01 also have an endpoint for the legacy RESTv2 API endpoint (pending deprecation). It doesn't support private links.
 
 ## When to use private endpoints
 
@@ -54,7 +54,7 @@ The following table shows the services that are typically used with Media Servic
 | Streaming endpoint          | The origin server for streaming video and formats media into HLS and DASH | Yes                   | IP allowlist            |
 | Streaming endpoint with CDN | Stream media to many viewers                                              | No                    | Managed by CDN          |
 
-## Private endpoints for resources in a Media Services account
+## Private endpoints for Media Services account resources
 
 Internet access to the Media Services account should be restricted. Private endpoints for key delivery, streaming endpoints, and live events are created on the Media Services account instead of being created individually.
 
@@ -66,7 +66,7 @@ See [Azure Policy for Media Services](security-azure-policy.md#azure-policies-pr
 
 ## Azure Storage private endpoints and Media Services
 
-With a virtual network and private endpoints for storage accounts, use the private endpoint to access the storage account from your on-premises network. The private endpoint will block all internet access to the storage account. As a trusted service, Media Services is still able to access the storage account via the public interface.
+With a virtual network and private endpoints for storage accounts, use the private endpoint and Private Link service to access the storage account from your on-premises network. This will block all internet access to the storage account. As a trusted service, Media Services is still able to access the storage account via the public interface.
 
 > [!NOTE]
 > Media Services always uses the public endpoint to access storage accounts. Creating a private endpoint for a storage account does not affect how Media Services accesses the storage account.
@@ -94,31 +94,31 @@ The following examples describe the configurations that you can use for private 
 
 When private endpoints are not used, requests from viewers to access media content and keys are routed via the internet.
 
-:::image type="content" source="media/private-endpoint-link-diagrams/no-private-endpoint.png" alt-text="A diagram that show that when there is no private endpoint, internet access is available for both the streaming endpoint and the key delivery endpoint":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-no-private-endpoints.svg" alt-text="A diagram that show that when there is no private endpoint, internet access is available for both the streaming endpoint and the key delivery endpoint":::
 
 ### Private endpoints for streaming and key delivery
 
 Private endpoints can be created for streaming endpoints and the key delivery service to allow these resources to be accessed directly, rather than via the internet. This can be useful when users inside a network do not have access to the internet.
 
-:::image type="content" source="media/private-endpoint-link-diagrams/private-endpoint-key-delivery-streaming.png" alt-text="A diagram that shows viewers accessing content through the streaming endpoint private endpoint and through the key delivery endpoint private endpoint.":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-private-endpoints-streaming-key-delivery.svg" alt-text="A diagram that shows viewers accessing content through the streaming endpoint private endpoint and through the key delivery endpoint private endpoint.":::
 
 ### Disabled internet access
 
 If all users access Media Services resources using private endpoints, internet access to these resources can be disabled.
 
-:::image type="content" source="media/private-endpoint-link-diagrams/internet-access-blocked.png" alt-text="A diagram showing internet access blocked to the streaming endpoint and the key delivery endpoint.":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-disabled-internet-access.svg" alt-text="A diagram showing internet access blocked to the streaming endpoint and the key delivery endpoint.":::
 
 ### Private endpoints for live events
 
 Private Endpoints can also be created for Live Events, allowing live content to be ingested to Media Services without the internet.
 
-:::image type="content" source="media/private-endpoint-link-diagrams/live-event-blocked.png" alt-text="A diagram showing the live event with internet access blocked.":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-live-events.svg" alt-text="A diagram showing the live event with internet access blocked.":::
 
 ### Private endpoints for live events while streaming to the Internet
 
 It is also possible to create a private endpoint for a live event, while using a streaming endpoint to stream to the internet. This may be useful for scenarios that require secure ingest while targeting a large audience.
 
-:::image type="content" source="media/private-endpoint-link-diagrams/live-event-blocked-stream-internet.png" alt-text="A diagram showing the live event blocked but streaming accessed via the internet.":::
+:::image type="content" source="media/diagrams/live-event-blocked-stream-internet.png" alt-text="A diagram showing the live event blocked but streaming accessed via the internet.":::
 
 ## Private Link pricing
 
