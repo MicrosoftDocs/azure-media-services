@@ -118,7 +118,7 @@ Private Endpoints can also be created for Live Events, allowing live content to 
 
 It is also possible to create a private endpoint for a live event, while using a streaming endpoint to stream to the internet. This may be useful for scenarios that require secure ingest while targeting a large audience.
 
-:::image type="content" source="media/diagrams/live-event-blocked-stream-internet.png" alt-text="A diagram showing the live event blocked but streaming accessed via the internet.":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-live-events-stream-internet.svg" alt-text="A diagram showing the live event blocked but streaming accessed via the internet.":::
 
 ## Private Link pricing
 
