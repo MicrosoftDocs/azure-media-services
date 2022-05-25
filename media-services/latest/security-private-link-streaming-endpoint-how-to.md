@@ -21,6 +21,17 @@ The virtual network created for this walk-though is just to assist with the exam
 > [!NOTE]
 > As you follow along with the steps, name your resources similarly so that they can be easily understood as having a similar purpose.  For example, *privatelink1stor* for your storage account and *privatelink1mi* for your Managed Identity.
 
+## Restricting access
+
+> [!Important]
+> Creating a private endpoint **DOES NOT** implicitly disable internet access to it.
+
+Internet access to the endpoints in the Media Services account can be restricted in one of two ways:
+
+- Restricting access to all resources within the Media Services account.
+- Restricting access separately for each resource by using the IP allowlist.
+
+
 ## Create a resource group and a Media Services account
 
 1. Create an Azure resource group.
