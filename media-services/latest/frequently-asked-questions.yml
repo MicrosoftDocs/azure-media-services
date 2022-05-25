@@ -103,7 +103,12 @@ sections:
 
         It's necessary to deliver the files in HLS or DASH format only if you want to benefit from the capabilities of those protocols. For single-bitrate streams, they can still offer a lot - such as faster seeking, digital rights management (DRM) support, and increased difficulty to download via URL (but still possible!) than a
         progressive download MP4 in blob storage. Caption support for VTT and IMSC1 is another benefit. In addition, the ability to late bind additional audio renditions, or dubbings in alternate languages, makes this a valuable choice for some situations.
-
+    - question: How to rotate a video, subclip a video, stitch videos, create thumbnails and sprites, etc?
+      answer: |
+        If you are looking for ways to use a Media Services encoder to do things like rotate a video, subclip a video, stitch videos, create thumbnails and sprites, we have a ton of code samples on the [Code Samples](https://docs.microsoft.com/azure/media-services/latest/samples-overview) page. Available sample languages include Node.JS, Python, .NET, and Java.
+    - question: Where are the SDK examples?
+      answer: |
+        Only the REST API includes examples, so we have created [code snippets](https://docs.microsoft.com/en-us/azure/media-services/latest/storage-create-how-to?tabs=portal) for each SDK as well as step-by-step instructions for working with Media Services in the Azure portal.
   - name: Live streaming
     questions:
     - question: What is a Media Services live event?
