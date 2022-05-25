@@ -550,9 +550,6 @@
       displayName: media services v2, v2, version 2
   - name: Troubleshoot
     items:
-    - name: Frequently asked questions
-      href: media-services-frequently-asked-questions.yml
-      displayName: media services v2, v2, version 2
     - name: Troubleshooting guide for live streaming
       href: media-services-troubleshooting-live-streaming.md
       displayName: media services v2, v2, version 2
