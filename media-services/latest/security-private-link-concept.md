@@ -108,7 +108,7 @@ If all users access Media Services resources using private endpoints, internet a
 
 Private Endpoints can also be created for Live Events, allowing live content to be ingested to Media Services without the internet.
 
-:::image type="content" source="media/diagrams/private-endpoint-live-events-private-link-horizontal.svg" alt-text="A diagram showing the live event with internet access blocked." lightbox="media/diagrams/private-endpoint-live-events-private-link-horizontal.svg":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-live-events-horizontal.svg" alt-text="A diagram showing the live event with internet access blocked." lightbox="media/diagrams/private-link-network-diagram-live-events-horizontal.svg":::
 
 ### Private endpoints for live events while streaming to the Internet
 
