@@ -637,7 +637,7 @@
       - name: Use a Private Link with a Streaming endpoint
         href: security-private-link-streaming-endpoint-how-to.md
         displayName: security, private link, links, firewall, storage account, storage, private, links, secure
-      - name: How to use Private Link with and ARM template
+      - name: How to use Private Link with an ARM template
         href: security-private-link-arm-how-to.md
         displayName: security, private link, links, firewall, storage account, storage, private, links, secure
     - name: Secure streaming

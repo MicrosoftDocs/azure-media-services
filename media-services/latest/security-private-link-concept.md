@@ -1,6 +1,6 @@
 ---
 title: Azure Private endpoints and Private Link with Azure Media Services
-description: This article gives an overview of creating a private endpoint and using Private Links with Azure Media Services. Media Services endpoints include streaming endpoints which are origin servers for streaming video and formats media into HLS and DASH, key delivery which provides media content keys and DRM licenses to media viewers, live events which ingest media content for live streaming, and the Media Services storage account which stores media blobs and associated streaming files in an asset (container).
+description: This article gives an overview of creating a private endpoint and using Private Links with Azure Media Services. Media Services endpoints include streaming endpoints that are origin servers for streaming video and formats media into HLS and DASH, key delivery that provides media content keys and DRM licenses to media viewers, live events that ingest media content for live streaming, and the Media Services storage account that stores media blobs and associated streaming files in an asset (container).
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
@@ -25,6 +25,10 @@ Media Services endpoints may be accessed from a virtual network using private en
 > [!NOTE]
 > Media Services accounts created with API versions prior to 2020-05-01 also have an endpoint for the legacy RESTv2 API endpoint (pending deprecation). It doesn't support private links.
 
+## Practice with Azure private endpoints and Private Link Service
+
+Try the [Create a private endpoint in the portal quickstart](/azure/private-link/create-private-endpoint-portal) and the [Create a Private Link in the portal quickstart](/azure/private-link/create-private-link-service-portal) to get some hands-on experience before attempting to use them with Media Services.
+
 ## When to use private endpoints
 
 Use private endpoints and Private Link when you want to secure a virtual network with resources behind a firewall.
@@ -33,7 +37,7 @@ Use private endpoints and Private Link when you want to secure a virtual network
 
 You can still protect your content by using [dynamic encryption and key delivery](drm-content-protection-concept.md) and [digital rights management licenses]() such as [Widevine](drm-widevine-license-template-concept.md), [FairPlay](drm-fairplay-license-overview.md), and [PlayReady](drm-playready-license-template-concept.md) even if you aren't using a virtual network and a firewall.  DRM can also be used in addition to private endpoints.
 
-## Private link enabled Azure services
+## Private Link enabled Azure services
 
 The following table shows the services that are typically used with Media Services.  Review the documentation in the table below to understand how private endpoints and Private Link are used for each.
 
@@ -56,11 +60,11 @@ The following table shows the services that are typically used with Media Servic
 
 ## Private endpoints for Media Services account resources
 
-Internet access to the Media Services account should be restricted. Private endpoints for key delivery, streaming endpoints, and live events are created on the Media Services account instead of being created individually.
+Private endpoints for key delivery, streaming endpoints, and live events are created on the Media Services account instead of being created individually.
 
-Resources can be connected to multiple virtual networks at the same time. A private IP address is created for each streaming endpoint or live event in the Media Services account when a Media Services private endpoint resource is created. For example, if you have started two streaming endpoints, a single private endpoint should be created to connect both streaming endpoints to the virtual network.
+Resources can be connected to multiple virtual networks at the same time. A private IP address is created for each streaming endpoint or live event in the Media Services account when a Media Services private endpoint resource is created. For example, if you've started two streaming endpoints, a single private endpoint should be created to connect both streaming endpoints to the virtual network.
 
-See [Private endpoint connections overview](security-private-link-connect-private-endpoint-concept.md) for a discussion of network access flags, DNS NAME changes, and IP level allow lists.
+See [Private endpoint connections overview](security-private-link-connect-private-endpoint-concept.md) for a discussion of network access flags, DNS NAME changes, and IP level allowlists.
 
 See [Azure Policy for Media Services](security-azure-policy.md#azure-policies-private-endpoints-and-media-services) to understand the application of Azure Policy for private endpoint scenarios.
 
@@ -78,27 +82,19 @@ Customers who configure a private endpoint for a storage account often also choo
 - The Managed Identity of the Media Services account has been granted the *Storage Blob Data Contributor* and *Reader* roles for the storage account, and
 - Media Services is configured to access the storage account using Managed Identity.
 
-This may appear to be a lot of conditions, but they are also the default options the Azure portal configures when creating accounts.
-
-<!--
-Consider the network architecture shown here:
-
-:::image type="content" source="media/private-endpoint-link-diagrams/private-endpoint-storage.png" alt-text="A diagram showing how private endpoints and links protect content but allow Media Services access to the storage account." lightbox="media/private-endpoint-link-diagrams/private-endpoint-storage.png":::
--->
-
 ## Streaming and private endpoint configurations
 
 The following examples describe the configurations that you can use for private streaming.
 
 ### No private endpoints
 
-When private endpoints are not used, requests from viewers to access media content and keys are routed via the internet.
+When private endpoints aren't used, requests from viewers to access media content and keys are routed via the internet.
 
 :::image type="content" source="media/diagrams/private-link-network-diagram-no-private-endpoints.svg" alt-text="A diagram that show that when there is no private endpoint, internet access is available for both the streaming endpoint and the key delivery endpoint" lightbox="media/diagrams/private-link-network-diagram-no-private-endpoints.svg":::
 
 ### Private endpoints for streaming and key delivery
 
-Private endpoints can be created for streaming endpoints and the key delivery service to allow these resources to be accessed directly, rather than via the internet. This can be useful when users inside a network do not have access to the internet.
+Private endpoints can be created for streaming endpoints and the key delivery service to allow these resources to be accessed directly, rather than via the internet. This can be useful when users inside a network don't have access to the internet.
 
 :::image type="content" source="media/diagrams/private-link-network-diagram-private-endpoints-streaming-key-delivery.svg" alt-text="A diagram that shows viewers accessing content through the streaming endpoint private endpoint and through the key delivery endpoint private endpoint." lightbox="media/diagrams/private-link-network-diagram-private-endpoints-streaming-key-delivery.svg":::
 
@@ -116,7 +112,7 @@ Private Endpoints can also be created for Live Events, allowing live content to 
 
 ### Private endpoints for live events while streaming to the Internet
 
-It is also possible to create a private endpoint for a live event, while using a streaming endpoint to stream to the internet. This may be useful for scenarios that require secure ingest while targeting a large audience.
+It's also possible to create a private endpoint for a live event, while using a streaming endpoint to stream to the internet. This may be useful for scenarios that require secure ingest while targeting a large audience.
 
 :::image type="content" source="media/diagrams/private-link-network-diagram-live-events-stream-internet.svg" alt-text="A diagram showing the live event blocked but streaming accessed via the internet." lightbox="media/diagrams/private-link-network-diagram-live-events-stream-internet.svg":::
 
