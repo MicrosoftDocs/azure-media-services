@@ -16,20 +16,15 @@ This article gives an overview of using private endpoints and Private Link with 
 
 ## Azure private endpoints vs Azure Private Link
 
-An [Azure private endpoint](/azure/private-link/private-endpoint-overview) is a network interface that uses a private IP address from your virtual network. It routes traffic over the Internet. In contrast, an [Azure Private Link](/azure/private-link/) allows access to Media Services private endpoints in your virtual network without exposing them to the public Internet. It routes traffic over the Microsoft backbone network and extends the security of private endpoints.
+An [Azure private endpoint](/azure/private-link/private-endpoint-overview) is a network interface that uses a private IP address from your virtual network. In contrast, an [Azure Private Link](/azure/private-link/) allows access to Media Services private endpoints in your virtual network without exposing them to the public Internet. It routes traffic over the Microsoft backbone network and extends the security of private endpoints.
 
 This video explains the details:
 
 > [!VIDEO https://www.youtube.com/embed/AZ0iFcyPDkc]
 
-Media Services endpoints may be accessed from a virtual network using private endpoints. Private endpoints may also be accessed from peered virtual networks or other networks connected to the virtual network using Express Route or VPN. You can also use Private Links with Media Services endpoints.
-
-> [!NOTE]
-> Media Services accounts created with API versions prior to 2020-05-01 also have an endpoint for the legacy RESTv2 API endpoint (pending deprecation). It doesn't support private links.
-
 ## Practice with Azure private endpoints and Private Link Service
 
-Before you start adding private endpoints to your Media Services resources, work through the following tutorials and quickstarts. Pay special attention to the prerequisites and don't skp them! Depending on your subscription, you may not be able to create VMs in other regions than what is suggested.
+Before you start adding private endpoints to your Media Services resources, work through the following tutorials and quickstarts. Pay special attention to the prerequisites and don't skip them! Depending on your subscription, you may not be able to create VMs in other regions than what is suggested.
 
 - [Connect to a web app using an Azure Private Endpoint](/azure/private-link/tutorial-private-endpoint-webapp-portal).
 - [Connect to a storage account using an Azure Private Endpoint](/azure/private-link/tutorial-private-endpoint-storage-portal).
@@ -57,6 +52,8 @@ The following table shows the services that are typically used with Media Servic
 
 ## Media Services endpoints
 
+Media Services endpoints may be accessed from a virtual network using private endpoints. Private endpoints may also be accessed from peered virtual networks or other networks connected to the virtual network using Express Route or VPN. You can also use Private Links with Media Services endpoints.
+
 | Endpoint                    | Description                                                               | Supports private link | Internet access control |
 | --------------------------- | ------------------------------------------------------------------------- | --------------------- | ----------------------- |
 | Key delivery                | Provides media content keys and DRM licenses to media viewers             | Yes                   | IP allowlist            |
@@ -64,6 +61,9 @@ The following table shows the services that are typically used with Media Servic
 | Storage account             | Stores media blobs and associated streaming files in an asset (container) | Yes                   | ACLs, Managed Identity  |
 | Streaming endpoint          | The origin server for streaming video and formats media into HLS and DASH | Yes                   | IP allowlist            |
 | Streaming endpoint with CDN | Stream media to many viewers                                              | No                    | Managed by CDN          |
+
+> [!NOTE]
+> Media Services accounts created with API versions prior to 2020-05-01 also have an endpoint for the legacy RESTv2 API endpoint (pending deprecation). It doesn't support private links.
 
 ## Private endpoints for Media Services account resources
 
@@ -75,7 +75,7 @@ See [Private endpoint connections overview](security-private-link-connect-privat
 
 See [Azure Policy for Media Services](security-azure-policy.md#azure-policies-private-endpoints-and-media-services) to understand the application of Azure Policy for private endpoint scenarios.
 
-## Azure Storage private endpoints and Media Services
+## Media Services storage private endpoints
 
 With a virtual network and private endpoints for storage accounts, you can use the private endpoint to access the storage account from your on-premises network. This will block all Internet access to the storage account.
 
@@ -89,7 +89,7 @@ Customers who configure a private endpoint for a storage account can restrict pu
 - The Managed Identity of the Media Services account has been granted the *Storage Blob Data Contributor* and *Reader* roles for the storage account, and
 - Media Services is configured to access the storage account using Managed Identity.
 
-## Streaming and private endpoint configurations
+## Media Services streaming and live event private endpoint configurations
 
 The following examples describe the configurations that you can use for private streaming.
 
