@@ -45,18 +45,20 @@ You can have up to 100 storage accounts. All storage accounts must be in the sam
 
 An individual file that you upload to be encoded should be no larger than 260 GB.
 
-## Jobs (encoding & analyzing) limits
+## Jobs and transforms (encoding & analyzing) limits
 
 | Resource | Default Limit |
 | --- | --- |
 | Jobs per Media Services account | 500,000 <sup>(3)</sup> (fixed)|
 | Job inputs per job | 50  (fixed)|
 | Job outputs per job | 20 (fixed) |
+| Clips per job | 100 <sup>(4)</sup> (fixed) |
 | Transforms per Media Services account | 100  (fixed)|
 | Transform outputs in a transform | 20 (fixed) |
 | Files per job input|10 (fixed)|
 
 <sup>3</sup> This number includes queued, finished, active, and canceled jobs. It does not include deleted jobs.
+<sup>4</sup> There is an exception to this limit. The limit of 50 job inputs per job supersedes the limit of 100 clips per job. For example, if there are 51 job inputs and each job input contains 1 clip, then that will violate the limit of 50 job inputs per job, even though the clips per job limit has not been met. 
 
 Any job record in your account older than 90 days will be automatically deleted, even if the total number of records is below the maximum quota.
 
@@ -64,13 +66,13 @@ Any job record in your account older than 90 days will be automatically deleted,
 
 | Resource | Default Limit |
 | --- | --- |
-| Live events <sup>(4)</sup> per Media Services account |5|
-| Live outputs per live event |3 <sup>(5)</sup> |
+| Live events <sup>(5)</sup> per Media Services account |5|
+| Live outputs per live event |3 <sup>(6)</sup> |
 | Max live output duration | [Size of the DVR window](live-event-cloud-dvr-time-how-to.md) |
 
-<sup>4</sup> For detailed information about live event limits, see [Live Event types comparison and limits](live-event-types-comparison-reference.md). Depending on your streaming use case and regional datacenter of choice, AMS is able to accommodate more than 5 live events per Media Services account. Please file a support request to increase your account quota.
+<sup>5</sup> For detailed information about live event limits, see [Live Event types comparison and limits](live-event-types-comparison-reference.md). Depending on your streaming use case and regional datacenter of choice, AMS is able to accommodate more than 5 live events per Media Services account. Please file a support request to increase your account quota.
 
-<sup>5</sup> Live outputs start on creation and stop when deleted.
+<sup>6</sup> Live outputs start on creation and stop when deleted.
 
 ## Packaging & delivery limits
 
@@ -79,12 +81,12 @@ Any job record in your account older than 90 days will be automatically deleted,
 | Streaming endpoints (stopped or running) per Media Services account | 2 |
 | Premium streaming units | 10 |
 | Dynamic manifest filters |100|
-| Streaming policies | 100 <sup>(6)</sup> per Media Services account <br/> 3 per streaming locator |
-| Unique streaming locators associated with one asset at one time | 100<sup>(7)</sup> (fixed) |
+| Streaming policies | 100 <sup>(7)</sup> per Media Services account <br/> 3 per streaming locator |
+| Unique streaming locators associated with one asset at one time | 100<sup>(8)</sup> (fixed) |
 
-<sup>6</sup> When using a custom streaming policy, design a limited set of policies for your Media Service account, and re-use them for your streaming locators whenever the same encryption options and protocols are needed. You should not be creating a new streaming policy for each streaming locator.
+<sup>7</sup> When using a custom streaming policy, design a limited set of policies for your Media Service account, and re-use them for your streaming locators whenever the same encryption options and protocols are needed. You should not be creating a new streaming policy for each streaming locator.
 
-<sup>7</sup> Streaming locators are not designed for managing per-user access control. To give different access rights to individual users, use Digital Rights Management (DRM) solutions.
+<sup>8</sup> Streaming locators are not designed for managing per-user access control. To give different access rights to individual users, use Digital Rights Management (DRM) solutions.
 
 ## Protection limits
 
