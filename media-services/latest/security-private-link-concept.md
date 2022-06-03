@@ -24,7 +24,10 @@ This video explains the details:
 
 ## Practice with Azure private endpoints and Private Link Service
 
-Before you start adding private endpoints to your Media Services resources, work through the following tutorials and quickstarts. Pay special attention to the prerequisites and don't skip them! Depending on your subscription, you may not be able to create VMs in other regions than what is suggested.
+If you aren't already familier with using private endpoints and Private Link, work through the following tutorials and quickstarts.
+
+> [!TIP]
+> Pay special attention to the prerequisites and don't skip them! Depending on your subscription, you may not be able to create VMs in other regions than what is suggested.
 
 - [Connect to a web app using an Azure Private Endpoint](/azure/private-link/tutorial-private-endpoint-webapp-portal).
 - [Connect to a storage account using an Azure Private Endpoint](/azure/private-link/tutorial-private-endpoint-storage-portal).
@@ -62,8 +65,8 @@ Media Services endpoints may be accessed from a virtual network using private en
 | Streaming endpoint          | The origin server for streaming video and formats media into HLS and DASH | Yes                   | IP allowlist            |
 | Streaming endpoint with CDN | Stream media to many viewers                                              | No                    | Managed by CDN          |
 
-> [!NOTE]
-> Media Services accounts created with API versions prior to 2020-05-01 also have an endpoint for the legacy RESTv2 API endpoint (pending deprecation). It doesn't support private links.
+> [!IMPORTANT]
+> Media Services accounts created with API versions prior to 2020-05-01 also have an endpoint for the legacy RESTv2 API endpoint (pending deprecation). However, Private Link isn't supported.
 
 ## Private endpoints for Media Services account resources
 
@@ -99,17 +102,17 @@ When private endpoints aren't used, requests from viewers to access media conten
 
 :::image type="content" source="media/diagrams/private-link-network-diagram-no-private-endpoints.svg" alt-text="A diagram that show that when there is no private endpoint, internet access is available for both the streaming endpoint and the key delivery endpoint" lightbox="media/diagrams/private-link-network-diagram-no-private-endpoints.svg":::
 
-### Private endpoints for streaming and key delivery
+### Private endpoints and Private Link for streaming and key delivery
 
 Private endpoints can be created for streaming endpoints and the key delivery service to allow these resources to be accessed directly, rather than via the internet. This can be useful when users inside a network don't have access to the internet.
 
-:::image type="content" source="media/diagrams/private-link-network-diagram-private-endpoints-streaming-key-delivery.svg" alt-text="A diagram that shows viewers accessing content through the streaming endpoint private endpoint and through the key delivery endpoint private endpoint." lightbox="media/diagrams/private-link-network-diagram-private-endpoints-streaming-key-delivery.svg":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-streaming-key-delivery-horizontal.svg" alt-text="A diagram that shows viewers accessing content through the streaming endpoint private endpoint and through the key delivery endpoint private endpoint." lightbox="media/diagrams/private-link-network-diagram-streaming-key-delivery-horizontal.svg":::
 
 ### Disabled internet access
 
 If all users access Media Services resources using private endpoints, internet access to these resources can be disabled.
 
-:::image type="content" source="media/diagrams/private-link-network-diagram-disabled-internet-access.svg" alt-text="A diagram showing internet access blocked to the streaming endpoint and the key delivery endpoint." lightbox="media/diagrams/private-link-network-diagram-disabled-internet-access.svg":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-disabled-internet-horizontal.svg" alt-text="A diagram showing internet access blocked to the streaming endpoint and the key delivery endpoint." lightbox="media/diagrams/private-link-network-diagram-disabled-internet-horizontal.svg":::
 
 ### Private endpoints for live events
 
