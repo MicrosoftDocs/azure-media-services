@@ -20,7 +20,7 @@ An [Azure private endpoint](/azure/private-link/private-endpoint-overview) is a 
 
 This video explains the details:
 
-> [!VIDEO https://www.youtube.com/embed/AZ0iFcyPDkc]
+<iframe src="https://learn-video.azurefd.net/vod/player?id=e55a92da-40e1-4168-ba1c-001b307b4d2a" width="1080" height="530"></iframe>
 
 ## Practice with Azure private endpoints and Private Link Service
 
