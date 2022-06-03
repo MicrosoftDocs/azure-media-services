@@ -18,9 +18,7 @@ This article gives an overview of using private endpoints and Private Link with 
 
 An [Azure private endpoint](/azure/private-link/private-endpoint-overview) is a network interface that uses a private IP address from your virtual network. In contrast, an [Azure Private Link](/azure/private-link/) allows access to Media Services private endpoints in your virtual network without exposing them to the public Internet. It routes traffic over the Microsoft backbone network and extends the security of private endpoints.
 
-This video explains the details:
-
-<iframe src="https://learn-video.azurefd.net/vod/player?id=e55a92da-40e1-4168-ba1c-001b307b4d2a" width="1080" height="530"></iframe>
+The video [How to connect and deliver services privately on Azure with Azure Private Link](/shows/azure-friday/how-to-connect-and-deliver-services-privately-on-azure-with-azure-private-link) discusses the details.
 
 ## Practice with Azure private endpoints and Private Link Service
 
