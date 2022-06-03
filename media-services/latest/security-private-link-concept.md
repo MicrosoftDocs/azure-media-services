@@ -22,7 +22,7 @@ The video [How to connect and deliver services privately on Azure with Azure Pri
 
 ## Practice with Azure private endpoints and Private Link Service
 
-If you aren't already familier with using private endpoints and Private Link, work through the following tutorials and quickstarts.
+If you aren't already familiar with using private endpoints and Private Link, work through the following tutorials and quickstarts.
 
 > [!TIP]
 > Pay special attention to the prerequisites and don't skip them! Depending on your subscription, you may not be able to create VMs in other regions than what is suggested.
@@ -47,7 +47,6 @@ The following table shows the services that are typically used with Media Servic
 | Azure Resource Manager | Provides access to Media Services APIs          | [Use REST API to create private link for managing Azure resources](/azure/azure-resource-manager/management/create-private-link-access-rest) |
 | Event Grid             | Provides [notifications of Media Services events](./monitoring/job-state-events-cli-how-to.md) | [Configure private endpoints for Azure Event Grid topics or domains](/azure/event-grid/configure-private-endpoints)  |
 
-
 > [!TIP]
 > You can still protect your content by using [dynamic encryption and key delivery](drm-content-protection-concept.md) and [Digital Rights Management (DRM) licenses](drm-playready-license-template-concept.md) such as [Widevine](drm-widevine-license-template-concept.md), [FairPlay](drm-fairplay-license-overview.md), and [PlayReady](drm-playready-license-template-concept.md) even if you aren't using a virtual network.  DRM can be used in addition to private endpoints.
 
@@ -59,7 +58,6 @@ Media Services endpoints may be accessed from a virtual network using private en
 | --------------------------- | ------------------------------------------------------------------------- | --------------------- | ----------------------- |
 | Key delivery                | Provides media content keys and DRM licenses to media viewers             | Yes                   | IP allowlist            |
 | Live event                  | Ingests media content for live streaming                                  | Yes                   | IP allowlist            |
-| Storage account             | Stores media blobs and associated streaming files in an asset (container) | Yes                   | ACLs, Managed Identity  |
 | Streaming endpoint          | The origin server for streaming video and formats media into HLS and DASH | Yes                   | IP allowlist            |
 | Streaming endpoint with CDN | Stream media to many viewers                                              | No                    | Managed by CDN          |
 
@@ -68,9 +66,9 @@ Media Services endpoints may be accessed from a virtual network using private en
 
 ## Private endpoints for Media Services account resources
 
-Private endpoints for key delivery, streaming endpoints, and live events are created on the Media Services account. You generally create one private endpoint for each type of Media Services endpoint. For example, you can create a private endpoint for several streaming endpoints. The same is true for Media Services storage accounts.
+Private endpoints for key delivery, streaming endpoints, and live events are created on the Media Services account. You generally create one private endpoint for each type of Media Services endpoint. For example, you can create one private endpoint for several streaming endpoints.
 
-In this way, resources can be connected to multiple virtual networks at the same time. For example, if you've started two streaming endpoints, a single private endpoint should be created to connect both streaming endpoints to the virtual network.
+In this way, multiple instances of a resource, for example, live events within a Media Services account, can be connected to a virtual network with a singe private endpoint. To connect to multiple virtual networks, you would create multiple private endpoints.
 
 See [Private endpoint connections overview](security-private-link-connect-private-endpoint-concept.md) for a discussion of network access flags, DNS NAME changes, and IP level allowlists.
 
@@ -78,10 +76,9 @@ See [Azure Policy for Media Services](security-azure-policy.md#azure-policies-pr
 
 ## Media Services storage private endpoints
 
-With a virtual network and private endpoints for storage accounts, you can use the private endpoint to access the storage account from your on-premises network. This will block all Internet access to the storage account.
+With a virtual network and private endpoints for storage accounts, you can use the private endpoint to access the storage account from your on-premises network.
 
-> [!NOTE]
-> Media Services always uses the public endpoint to access storage accounts. Creating a private endpoint for a storage account does not affect how Media Services accesses the storage account.
+Media Services always uses the public endpoint to access storage accounts. Media Services accounts can be configured to work with storage accounts that block access from the internet by meeting the requirements below:
 
 Customers who configure a private endpoint for a storage account can restrict public network access to their storage account (using either the *publicNetworkAccess* or *networkAcls* properties of the storage account). Media Services is still able to access storage accounts using the public endpoint when the *publicNetworkAccess* or *networkAcls* properties would normally prevent this access, if all of the following conditions are met:
 
