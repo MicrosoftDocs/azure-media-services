@@ -100,7 +100,7 @@ The following examples describe the configurations that you can use for private 
 
 When private endpoints aren't used, requests from viewers to access media content and keys are routed via the internet.
 
-:::image type="content" source="media/diagrams/private-link-network-diagram-no-private-endpoints-horizontal.svg" alt-text="A diagram that show that when there is no private endpoint, internet access is available for both the streaming endpoint and the key delivery endpoint" lightbox="media/diagrams/private-link-network-diagram-no-private-endpoints-horizontal.svg":::
+:::image type="content" source="media/diagrams/private-link-network-diagram-no-private-endpoints-horizontal2.svg" alt-text="A diagram that show that when there is no private endpoint, internet access is available for both the streaming endpoint and the key delivery endpoint" lightbox="media/diagrams/private-link-network-diagram-no-private-endpoints-horizontal2.svg":::
 
 ### Private endpoints and Private Link for streaming and key delivery
 
