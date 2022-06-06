@@ -1,14 +1,14 @@
 ---
-title: Azure Private endpoints and Private Link with Azure Media Services
+title: Azure Private endpoints with Azure Media Services
 description: This article gives an overview of using a private endpoint with Azure Media Services. Media Services endpoints include streaming endpoints that are origin servers for streaming video and formats media into HLS and DASH, key delivery that provides media content keys and DRM licenses to media viewers, live events that ingest media content for live streaming, and the Media Services storage account that stores media blobs and associated streaming files in an asset (container).
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/25/2022
+ms.date: 06/06/2022
 ms.author: inhenkel
 ---
 
-# Azure private endpoints and Private Link with Azure Media Services
+# Azure private endpoints with Azure Media Services
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
@@ -18,7 +18,7 @@ This article gives an overview of using a private endpoint with Azure Media Serv
 
 An [Azure private endpoint](/azure/private-link/private-endpoint-overview) is a network interface that uses a private IP address from your virtual network.
 
-## Practice with Azure private endpoints and Private Link Service
+## Practice with Azure private endpoints
 
 If you aren't already familiar with using private endpoints, work through the following tutorials and quickstarts.
 
@@ -37,7 +37,7 @@ Use private endpoints when you want to make your resources accessible to a virtu
 
 The following table shows the services that are typically used with Media Services.  Review the documentation in the table below to understand how private endpoints and Private Link are used for each.
 
-| Service                | Media Services integration                      | Private endpoint and Private Link documentation |
+| Service                | Media Services integration                      | Private endpoint documentation |
 | ---------------------- | ----------------------------------------------- | -------------------------- |
 | Azure Storage          | Used to store media                             | [Use private endpoints for Azure Storage](/azure/storage/common/storage-private-endpoints) |
 | Azure Key Vault        | Used to store [customer-managed keys](security-customer-managed-keys-portal-tutorial.md)             | [Configure Azure Key Vault networking settings](/azure/key-vault/general/how-to-azure-key-vault-network-security) |
@@ -50,7 +50,7 @@ The following table shows the services that are typically used with Media Servic
 
 Media Services endpoints may be accessed from a virtual network using private endpoints. Private endpoints may also be accessed from peered virtual networks or other networks connected to the virtual network using Express Route or VPN. You can also use Private Links with Media Services endpoints.
 
-| Endpoint                    | Description                                                               | Supports private link | Internet access control |
+| Endpoint                    | Description                                                               | Supports private endpoint | Internet access control |
 | --------------------------- | ------------------------------------------------------------------------- | --------------------- | ----------------------- |
 | Key delivery                | Provides media content keys and DRM licenses to media viewers             | Yes                   | IP allowlist            |
 | Live event                  | Ingests media content for live streaming                                  | Yes                   | IP allowlist            |
@@ -66,7 +66,7 @@ Private endpoints for key delivery, streaming endpoints, and live events are cre
 
 In this way, multiple instances of a resource, for example, live events within a Media Services account, can be connected to a virtual network with a singe private endpoint. To connect to multiple virtual networks, you would create multiple private endpoints.
 
-See [Private endpoint connections overview](security-private-link-connect-private-endpoint-concept.md) for a discussion of network access flags, DNS NAME changes, and IP level allowlists.
+See [Private endpoint connections overview](security-private-endpoint-connect-private-endpoint-concept.md) for a discussion of network access flags, DNS NAME changes, and IP level allowlists.
 
 See [Azure Policy for Media Services](security-azure-policy.md#azure-policies-private-endpoints-and-media-services) to understand the application of Azure Policy for private endpoint scenarios.
 
@@ -119,5 +119,4 @@ It's also possible to create a private endpoint for a live event, while using a 
 
 ## How-tos and tutorials
 
-- [Create a private endpoint for a streaming endpoint in the portal](security-private-link-streaming-endpoint-how-to.md)
-- [Create a Media Services account and storage with a private endpoint using an ARM template](security-private-link-arm-how-to.md)
+- [Create a private endpoint for a streaming endpoint in the portal](security-private-endpoint-streaming-endpoint-how-to.md)

@@ -16,7 +16,7 @@ This article is an overview of Private Endpoint connections with Media Services.
 
 ## Clients using VNet
 
-Clients on a VNet using the private endpoint should use the same DNS name to connect to Media Services as clients connecting to the public Media Services endpoints. Media Services relies upon DNS resolution to automatically route the connections from the VNet to the Media Services endpoints over a private link.
+Clients on a VNet using the private endpoint should use the same DNS name to connect to Media Services as clients connecting to the public Media Services endpoints. Media Services relies upon DNS resolution to automatically route the connections from the VNet to the Media Services endpoints.
 
 > [!IMPORTANT]
 > Use the same DNS names to the Media Services endpoints when using private endpoints as you’d otherwise use. Please don't connect to the Media Services endpoints using its privatelink subdomain URL.

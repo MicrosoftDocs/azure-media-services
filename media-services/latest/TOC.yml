@@ -291,7 +291,7 @@
           displayName: managed identity, system assigned, user assigned, Azure Functions, Functions app, access, security, secure, authorization, roles
         - name: Azure Policy
           href: security-azure-policy.md
-          displayName: Policy, Azure Policy, access, secure, security, public network, private link, vnet, content key, token authentication, HTTP input, HTTPS input, private DNS, DNS
+          displayName: Policy, Azure Policy, access, secure, security, public network, private endpoint, vnet, content key, token authentication, HTTP input, HTTPS input, private DNS, DNS
       - name: Keys
         items:
         - name: Roll storage access keys
@@ -310,11 +310,11 @@
       - name: Network security
         items:
           - name: Media Services private endpoints
-            href: security-private-link-concept.md
-            displayName: security, private link, links, firewall, storage account, storage, private, links, secure
+            href: security-private-endpoint-concept.md
+            displayName: security, private endpoint, vnet, storage account, storage, private, secure
           - name: Private endpoint connections
-            href: security-private-link-connect-private-endpoint-concept.md
-            displayName: security, private link, links, firewall, storage account, storage, private, links, secure
+            href: security-private-endpoint-connect-private-endpoint-concept.md
+            displayName: security, links, vnet, storage account, storage, private endpoint, links, secure
           - name: Azure policy and private endpoints
             href: security-azure-policy.md#azure-policies-private-endpoints-and-media-services
             displayName: security, private link, links, firewall, storage account, storage, private, links, secure
@@ -634,12 +634,9 @@
         href: account-show-encryption-how-to.md
     - name: Network security
       items:
-      - name: Use a Private Link with a Streaming endpoint
-        href: security-private-link-streaming-endpoint-how-to.md
-        displayName: security, private link, links, firewall, storage account, storage, private, links, secure
-      - name: How to use Private Link with an ARM template
-        href: security-private-link-arm-how-to.md
-        displayName: security, private link, links, firewall, storage account, storage, private, links, secure
+      - name: Use a private endpoint for Streaming Endpoint
+        href: security-private-endpoint-streaming-endpoint-how-to.md
+        displayName: security, private endpoint, links, vnet, storage account, storage, private, secure, network
     - name: Secure streaming
       items:
       - name: Pass authentication tokens to key delivery service

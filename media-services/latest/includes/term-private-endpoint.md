@@ -7,4 +7,4 @@ ms.author: inhenkel
 title: Private endpoint
 ---
 
-**Private endpoint** - A network interface that uses a private IP address from your virtual network. This network interface connects you privately and securely to a service that's powered by Azure Private Link.
+**Private endpoint** - A network interface that uses a private IP address from your virtual network.

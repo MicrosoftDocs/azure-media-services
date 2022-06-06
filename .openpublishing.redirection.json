@@ -1805,6 +1805,21 @@
             "source_path_from_root": "/media-services/latest/security-private-link-arm-how-to.md",
             "redirect_url": "/media-services/latest/security-private-endpoint-streaming-endpoint-how-to",
             "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/security-private-link-concept.md",
+            "redirect_url": "/media-services/latest/security-private-endpoint-concept",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/security-private-link-connect-private-endpoint-concept.md",
+            "redirect_url": "/media-services/latest/security-private-endpoint-connect-private-endpoint-concept",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/security-private-link-streaming-endpoint-how-to.md",
+            "redirect_url": "/media-services/latest/security-private-endpoint-streaming-endpoint-how-to",
+            "redirect_document_id": false
           }
     ]
 }

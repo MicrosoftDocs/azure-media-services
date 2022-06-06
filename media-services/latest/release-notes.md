@@ -130,7 +130,7 @@ The key management portal page for Media Services now supports configuration and
    [ ![Bring your own keys for account encryption](./media/release-notes/byok-managed-identity.png)](./media/release-notes/byok-managed-identity.png)
 
 
-### Private Link support for Media services
+### Private endpoint support for Media services
 You can now restrict public access to your live events, streaming endpoints, and key delivery services endpoint for content protection and DRM by creating a private endpoint for each of the services. This will limit public access to each of these services. Only traffic originating from your configured virtual network (VNET), configured in Private Endpoint, will be able reach these endpoints.
 
 ### IP allowlist for Key Service
@@ -168,13 +168,15 @@ More live event ingest heartbeat properties have been added to the Event Grid me
 
 See the [LiveEventIngestHeartbeat schema](./monitoring/media-services-event-schemas.md#liveeventingestheartbeat) for more details.
 
-### Private links support is now GA
+### Private Link support is now GA
 
-Support for using Media Services with [private links](https://docs.microsfot.com/private-link/index.yml) is now GA and available in all Azure regions including Azure Government clouds.
+Support for using Media Services with [Private Links](https://docs.microsfot.com/private-link/index.yml) is now GA and available in all Azure regions including Azure Government clouds.
+
 Azure Private Link enables you to access Azure PaaS Services and Azure hosted customer-owned/partner services over a Private Endpoint in your virtual network.
+
 Traffic between your virtual network and the service traverses over the Microsoft backbone network, eliminating exposure from the public Internet.
 
-For details on how to use Media Services with private links, see [Create a Media Services and Storage account with a Private Link](security-private-link-concept.md)
+For details on how to use Media Services with private endpoints, see [Create a Media Services and Storage account with a private endpoint](security-private-endpoint-concept.md)
 
 ### New US West 3 region is GA
 
