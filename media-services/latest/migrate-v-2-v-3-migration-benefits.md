@@ -33,7 +33,7 @@ There have been significant improvements to Media Services with V3.
 | **Accounts and Storage** | |
 | Azure role-based access control (RBAC) | Customers can now define their own roles and control access to each entity in the Media Services ARM API. This helps control access to resources by AAD accounts. |
 | Managed Identities | Managed identities eliminate the need for developers to manage credentials by providing an identity for the Azure resource in Azure AD. See details on managed identities [here](/azure/active-directory/managed-identities-azure-resources/overview). |
-| Private link support | Customers will access Media Services endpoints for Key Delivery, LiveEvents, and StreamingEndpoints via a PrivateEndpoint on their VNet. |
+| Private endpoint support | Customers will access Media Services endpoints for Key Delivery, LiveEvents, and StreamingEndpoints via a PrivateEndpoint on their VNet. |
 | [Customer-manged keys](concept-use-customer-managed-keys-byok.md) or bring your own key (BYOK) support | Customers can encrypt the data in their Media Services account using a key in their Azure Key Vault. |
 | **Assets** | |
 | An Asset can have multiple [streaming locators](stream-streaming-locators-concept.md) each with different [dynamic packaging](encode-dynamic-packaging-concept.md) and dynamic encryption settings. | There's a limit of 100 streaming locators allowed on each asset. Customers can store a single copy of the media content in the asset, but share different streaming URLs with different streaming policies or content protection policies that are based on a targeted audience.
