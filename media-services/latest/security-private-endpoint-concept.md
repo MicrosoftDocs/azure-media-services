@@ -103,7 +103,7 @@ Private endpoints can be created for streaming endpoints and the key delivery se
 
 If all users access Media Services resources using private endpoints, internet access to these resources can be disabled.
 
-:::image type="content" source="media/diagrams/private-link-network-diagram-disabled-internet-horizontal.svg" alt-text="A diagram showing internet access blocked to the streaming endpoint and the key delivery endpoint." lightbox="media/diagrams/private-link-network-diagram-disabled-internet-horizontal.svg":::
+:::image type="content" source="media/diagrams/private-endpoint-disabled-internet-horizontal.svg" alt-text="A diagram showing internet access blocked to the streaming endpoint and the key delivery endpoint." lightbox="media/diagrams/private-endpoint-disabled-internet-horizontal.svg":::
 
 ### Private endpoints for live events
 
