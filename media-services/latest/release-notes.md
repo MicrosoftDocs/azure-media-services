@@ -170,7 +170,7 @@ See the [LiveEventIngestHeartbeat schema](./monitoring/media-services-event-sche
 
 ### Private Link support is now GA
 
-Support for using Media Services with [Private Links](https://docs.microsfot.com/private-link/index.yml) is now GA and available in all Azure regions including Azure Government clouds.
+Support for using Media Services with [private links](/azure/private-link/) is now GA and available in all Azure regions including Azure Government clouds.
 
 Azure Private Link enables you to access Azure PaaS Services and Azure hosted customer-owned/partner services over a Private Endpoint in your virtual network.
 
