@@ -95,7 +95,7 @@ When private endpoints aren't used, requests from viewers to access media conten
 
 ### Private endpoints for streaming and key delivery
 
-Private endpoints can be created for streaming endpoints and the key delivery service to allow these resources to be accessed directly, rather than via the internet. This can be useful when users inside a network don't have access to the internet.
+Private endpoints can be created for streaming endpoints and the key delivery service to allow these resources to be accessed directly, rather than via the internet. This can be useful when users inside a network don't have access to the Internet.
 
 :::image type="content" source="media/diagrams/private-endpoint-streaming-key-delivery-horizontal.svg" alt-text="A diagram that shows viewers accessing content through the streaming endpoint private endpoint and through the key delivery endpoint private endpoint." lightbox="media/diagrams/private-endpoint-streaming-key-delivery-horizontal.svg":::
 
