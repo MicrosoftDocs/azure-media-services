@@ -18,27 +18,20 @@ It's assumed that you already know how to create an [Azure resource group](/azur
 
 The virtual network created for this walk-though is just to assist with the example.  It's assumed that you have an existing virtual network that you'll use for production.
 
-> [!IMPORTANT]
-> All resources created for this exercise must be in the same region.  When creating a VNet and a VM make sure it is in the same region as the Media Services account.
-
 ## Prerequisites
 
 - Read about how private endpoints can be applied to Media Services resources.
-- Practice creating private endpoints by completing the following tutorials and quickstarts:
-    - [Quickstart: Create a private endpoint by using the Azure portal](/azure/private-link/create-private-endpoint-portal)
-    - [Tutorial: Connect to a storage account using an Azure Private Endpoint](/azure/private-link/tutorial-private-endpoint-storage-portal)
-    - [Tutorial: Connect to a web app using an Azure Private Endpoint](/azure/private-link/tutorial-private-endpoint-webapp-portal)
-
-## Restricting access
+- Create a Web App using this tutorial: [Connect to a web app using an Azure Private Endpoint](/azure/private-link/tutorial-private-endpoint-webapp-portal). You will be using it to test the connection to the streaming endpoint.
 
 > [!IMPORTANT]
-> Creating a private endpoint **DOES NOT** implicitly disable internet access to it.
+> All resources created for this exercise must be in the same region.  When creating a VNet and a VM make sure it is in the same region as the Media Services account.
+
+## Restricting access
 
 Internet access to the endpoints in the Media Services account can be restricted in one of two ways:
 
 - Restricting access to all resources within the Media Services account.
 - Restricting access separately for each resource by using the IP allowlist.
-
 
 ## Create a resource group and a Media Services account
 
@@ -46,7 +39,7 @@ Internet access to the endpoints in the Media Services account can be restricted
 1. Create a Media Services account.  A default Streaming Endpoint is created when you create the account. Creating a Managed Identity is required during the setup process.
 1. Create an Azure virtual network with the default settings.
 
-At this point, there's nothing in your virtual network. Your Media Services account has Internet facing endpoints which include a Streaming Endpoint, and Key Delivery.  The next step will make the Streaming Endpoint private.
+Your Media Services account has Internet facing endpoints which include a Streaming Endpoint, and Key Delivery.  The next step will make the Streaming Endpoint private.
 
 ## Start the streaming endpoint
 
@@ -81,6 +74,9 @@ At this point, there's nothing in your virtual network. Your Media Services acco
 1. Stay on this screen.
 
 ## Create DNS zones to use with the private endpoint
+
+> [!IMPORTANT]
+> Creating a private endpoint **DOES NOT** implicitly disable internet access to it.
 
 To use the streaming endpoint inside your virtual network, create private DNS zones. You can use the same DNS name and get back the private IP address of the streaming endpoint.
 
