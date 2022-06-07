@@ -29,7 +29,7 @@ ms.author: inhenkel
     1. The earliest timestamp that should appear in the playback manifest.
     1. The last timestamp that should appear in the playback manifest.
     1. The limit for rewinding content.
-    1. How much time to daley your live broadcast.
+    1. How much time to delay your live broadcast.
 
 ### Track constraints
 
