@@ -1,6 +1,6 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
 ms.date: 10/28/2020
 ms.author: inhenkel
@@ -18,4 +18,4 @@ ms.author: inhenkel
 | [StandardEncoderPreset](../encode-concept.md) | ![africa north StandardEncoderPreset general availability](../media/azure-clouds-regions/ga.svg) | ![africa south StandardEncoderPreset general availability](../media/azure-clouds-regions/ga.svg) |
 | [LiveEvents](../stream-live-streaming-concept.md) | ![africa north LiveEvents general availability](../media/azure-clouds-regions/ga.svg) | ![africa south LiveEvents general availability](../media/azure-clouds-regions/ga.svg) |
 | [StreamingEndpoints](../stream-streaming-endpoint-concept.md) | ![africa north StreamingEndpoints general availability](../media/azure-clouds-regions/ga.svg) | ![africa south StreamingEndpoints general availability](../media/azure-clouds-regions/ga.svg) |
-| [LiveTranscription](../live-event-live-transcription-how-to.md) |  |  |
+| [LiveTranscription](../live-event-live-transcription-how-to.md) |![africa south LiveTranscription general availability](../media/azure-clouds-regions/ga.svg)  |![africa south LiveTranscription general availability](../media/azure-clouds-regions/ga.svg)  |
