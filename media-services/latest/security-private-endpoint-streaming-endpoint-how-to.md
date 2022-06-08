@@ -4,7 +4,7 @@ description: This article shows you how to use a private endpoint with a Streami
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 06/07/2022
+ms.date: 06/08/2022
 ms.author: inhenkel
 ---
 
@@ -18,8 +18,7 @@ You'll be creating a private endpoint resource which is a link between a virtual
 
 The virtual network created for this walk-though is just to assist with the example.
 
-- Read about how private endpoints can be applied to Media Services resources.
-- Create a Web App using this tutorial: [Connect to a web app using an Azure Private Endpoint](/azure/private-link/tutorial-private-endpoint-webapp-portal). You will be using it to test the connection to the streaming endpoint.
+## Restricting access
 
 Internet access to the endpoints in the Media Services account can be restricted in one of two ways:
 
@@ -51,17 +50,21 @@ A default Streaming Endpoint (called *default*) is created when you create the a
 
 [!INCLUDE [Upload files with the portal](./includes/task-upload-file-to-asset-portal.md)]
 
-## Create a transform and a job
+## Create a transform, job and streaming locator
 
 In order to stream media, the video you uploaded needs to be encoded. A transform is an encoding method for the video.
 
 [!INCLUDE [task-create-transform-portal.md](includes/task-create-transform-portal.md)]
 
-## Create a Job
+<!-- Create a job in the portal -->
 
 To encode the video, you must create an encoding job, that uses the transform to encode the video.
 
 [!INCLUDE [task-create-job-portal.md](./includes/task-create-job-portal.md)]
+
+<!-- Create a streaming locator in the portal -->
+
+[!INCLUDE [task-create-streaming-locator-portal.md](includes/task-create-streaming-locator-portal.md)]
 
 ## Start the streaming endpoint
 
@@ -72,14 +75,44 @@ To encode the video, you must create an encoding job, that uses the transform to
 1. Select **None** from the CDN pricing tier dropdown list.
 1. Select **Start**.  The Streaming endpoint will start running. The endpoint is still Internet facing.
 
+## Get the streaming URL
+
+Once you have started the streaming endpoint, you can get the streaming URLs for use with a media player.
+
+1. In the streaming locators list for the asset you are working with, select **Show URLs**. The Streaming URLs sceen will appear.
+1. Copy the HLS streaming URL into your clipboard.
+
+## Test without an IP allow list or a private endpoint
+
+Before creating a private endpoint, we will see how this works without it.
+
+1. In a new browser window or tab on your development device, go to the [Azure Media Player demo](https://azuremediaplayerdemo.azurewebsites.net/) page.
+1. Paste the URL into the URL field of the player interface.
+1. Select Update.
+
+Your video now streams to the Internet.  This is because we haven't yet locked down the IP addresses.
+
+## Change the IP allow list for the streaming endpoint
+
+1. In the portal, navigate to the default streaming endpoint for the Media Services account you are working with.
+1. Select **Settings**. The Settings screen will appear.
+1. Select the **Specified IP addresses** radio button.
+1. In the **Name** field, enter a name for your addresses, such as *Allow none*.
+1. In the **Addresses** field, enter *0.0.0.0*.
+1. In the **Subnet Prefix Length** field, enter *32*.
+1. Select **Save**.
+1. Refresh the Azure Media Player. You should receive a streaming error.
+
 ## Create a private endpoint
 
-1. Navigate back to your Media Services account.
+Now you'll create a private endpoint for the streaming endpoint and be able to stream the video within the VNet, using the VM.
+
+1. In the portal, navigate to the Media Services account you are working with.
 1. Select **Networking** from the menu
 1. Select the **private endpoint connections** tab.  The private endpoint connection screen will appear.
 1. Select **Add a private endpoint**. The Create a private endpoint screen will appear.
-1. In the **Name** field, give the private endpoint a name such as *privatelinkpe*.
-1. From the **Region** dropdown list, select a region such as *West US 2*.
+1. In the **Name** field, give the private endpoint a name.
+1. From the **Region** dropdown list, select the same region you have been working with (it may already be selected).
 1. Select **Next: Resource**. The Resource screen will appear.
 
 ## Assign the private endpoint to a resource
@@ -87,29 +120,28 @@ To encode the video, you must create an encoding job, that uses the transform to
 1. From the **Connection methods** radio buttons, select the *Connect to an Azure resource in my directory* radio button.
 1. From the **Resource type** dropdown list, select *Microsoft.Media/mediaservices*.
 1. From the **Resource** dropdown list, select the Media Services account you created.
-1. From the **Target sub-resource** dropdown list, select the Streaming endpoint you created.
+1. From the **Target sub-resource** dropdown list, select *streaming endpoint*.
+1. Select **Next: Virtual Network**.
 
 ## Deploy the private endpoint to the virtual network
 
-1. From the **Virtual network** dropdown list, select the virtual network you created.
-1. From the **Subnet** dropdown list, select the subnet you want to work with.
-1. Stay on this screen.
+1. From the **Virtual network** dropdown list, select the virtual network you created earlier.
+1. From the **Subnet** dropdown list, select the subnet your created earlier.
+1. Select **Next: DNS**.
 
-## Create DNS zones to use with the private endpoint
-
-> [!IMPORTANT]
-> Creating a private endpoint **DOES NOT** implicitly disable internet access to it.
+## Create the DNS zone
 
 To use the streaming endpoint inside your virtual network, create private DNS zones. You can use the same DNS name and get back the private IP address of the streaming endpoint.
 
-1. On the same screen, for the **media-azure-net** configuration, select the resource group you created from the **Resource group** dropdown list.
-1. For the **privatelink-media-azure-net** configuration, select the same resource group from the **Resource group** dropdown list.
-1. Select **Next: Tags**. If you want to add tags to your resources, do that here.
-1. Select **Next: Review + create**. The Review + create screen will appear.
-1. Review your settings and make sure they're correct.
-1. Select **Create**. The private endpoint deployment screen appears.
+On this screen, the **Configuration name**, **Subscription**, **Resource group**, **Private DNS zone** should already be pre-populated.
 
-While the deployment is in progress, it's also creating an [Azure Resource Manager (ARM) template](/azure/azure-resource-manager/templates/overview). You can use ARM templates to automate deployment. To see the template, select **Template** from the menu.
+- Leave all the settings as they are and select **Next: Tags**.
+- Optionally, add tags, the select **Review + create**.
+- Double-check your settings, then select **Create**.
+
+## ARM template
+
+You can use ARM templates to automate deployment. While the deployment is in progress, it's also creating an [Azure Resource Manager (ARM) template](/azure/azure-resource-manager/templates/overview). To see the template, select **Template** from the menu.
 
 ## Clean up resources
 
