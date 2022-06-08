@@ -14,33 +14,53 @@ ms.author: inhenkel
 
 This article shows you how to use a private endpoint with a Streaming Endpoint. You'll be creating a private endpoint resource which is a link between a virtual network and a streaming endpoint. This deployment creates a network interface IP address inside the virtual network. The private endpoint allows you to connect the network interface in the private network to the streaming endpoint in the Media Services account. You'll also be creating DNS zones which pass the private IP addresses.
 
-It's assumed that you already know how to create an [Azure resource group](/azure/azure-resource-manager/management/manage-resource-groups-portal), a [Media Services account](account-create-how-to.md), and an [Azure virtual network](/azure/virtual-network/quick-create-portal).
-
 You'll be creating a private endpoint resource which is a link between a virtual network and a streaming endpoint. This deployment creates a network interface IP address inside the virtual network. The private link allows you to connect the network interface in the private network to the streaming endpoint in the Media Services account. You'll also be creating DNS zones which pass the private IP addresses.
 
-The virtual network created for this walk-though is just to assist with the example.  It's assumed that you have an existing virtual network that you'll use for production.
-
-> [!NOTE]
-> As you follow along with the steps, name your resources similarly so that they can be easily understood as having a similar purpose.  For example, *privatelink1stor* for your storage account and *privatelink1mi* for your Managed Identity.
+The virtual network created for this walk-though is just to assist with the example.
 
 ## Restricting access
-
-> [!Important]
-> Creating a private endpoint **DOES NOT** implicitly disable internet access to it.
 
 Internet access to the endpoints in the Media Services account can be restricted in one of two ways:
 
 - Restricting access to all resources within the Media Services account.
 - Restricting access separately for each resource by using the IP allowlist.
 
+Creating a private endpoint **DOES NOT** implicitly disable internet access to it.
 
-## Create a resource group and a Media Services account
+>[!WARNING]
+> Completing this exercise will incur costs.
 
-1. Create an Azure resource group.
-1. Create a Media Services account.  A default Streaming Endpoint is created when you create the account. Creating a Managed Identity is required during the setup process.
-1. Create an Azure virtual network with the default settings.
+## Prerequisites
 
-At this point, there's nothing in your virtual network your Media Services account has an Internet facing endpoint which includes an Internet facing Streaming Endpoint, Key Delivery, and Live Events.  The next step will make the Streaming Endpoint private.
+### Create a resource group for this exercise
+
+> [!IMPORTANT]
+> It is important that you create all of the resources for this exercise in the same region.  Otherwise, the VNet and VM steps will not work. Decide which region you want to work with based on your subscription VM allowances. For example, your subscription may allow you to create a Windows Server 2019 VM in the West Europe region, but not in the US West 2 region.
+
+### Create a VNet and a VM
+
+Complete the [Quickstart: Create a private endpoint by using the Azure portal](/azure/private-link/create-private-endpoint-portal) to create the VNet and a VM for this exercise. In other words, don't delete the resources at the end.
+
+<!-- Create a media services account -->
+[!INCLUDE [create a media services account in the portal](./includes/task-create-media-services-account-portal.md)]
+
+A default Streaming Endpoint (called *default*) is created when you create the account. Creating a User Managed Identity is also required during the setup process.
+
+## Upload files
+
+[!INCLUDE [Upload files with the portal](./includes/task-upload-file-to-asset-portal.md)]
+
+## Create a transform and a job
+
+In order to stream media, the video you uploaded needs to be encoded. A transform is an encoding method for the video.
+
+[!INCLUDE [task-create-transform-portal.md](includes/task-create-transform-portal.md)]
+
+## Create a Job
+
+To encode the video, you must create an encoding job, that uses the transform to encode the video.
+
+[!INCLUDE [task-create-job-portal.md](./includes/task-create-job-portal.md)]
 
 ## Start the streaming endpoint
 
