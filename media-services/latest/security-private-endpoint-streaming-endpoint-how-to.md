@@ -41,7 +41,10 @@ Creating a private endpoint **DOES NOT** implicitly disable internet access to i
 
 Complete the [Quickstart: Create a private endpoint by using the Azure portal](/azure/private-link/create-private-endpoint-portal) to create the VNet and a VM for this exercise. In other words, don't delete the resources at the end.
 
-<!-- Create a media services account -->
+After you have created the VNet and the VM, return to this page and continue.
+
+## Create a media services account
+
 [!INCLUDE [create a media services account in the portal](./includes/task-create-media-services-account-portal.md)]
 
 A default Streaming Endpoint (called *default*) is created when you create the account. Creating a User Managed Identity is also required during the setup process.
