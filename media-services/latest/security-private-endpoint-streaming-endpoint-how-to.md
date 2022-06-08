@@ -1,10 +1,10 @@
 ---
 title: Create a private endpoint for a Streaming Endpoint
-description: This article shows you how to use a private endpoint with a Streaming Endpoint. You'll be creating a private endpoint resource which is a link between a virtual network and a streaming endpoint. This deployment creates a network interface IP address inside the virtual network. The private endpoint allows you to connect the network interface in the private network to the streaming endpoint in the Media Services account. You'll also be creating DNS zones which pass the private IP addresses.
+description: This article shows you how to use a private endpoint with a Streaming Endpoint. This deployment creates a network interface IP address inside the virtual network. The private endpoint allows you to connect the network interface in the private network to the streaming endpoint in the Media Services account. You'll also be creating DNS zones which pass the private IP addresses.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 06/06/2022
+ms.date: 06/07/2022
 ms.author: inhenkel
 ---
 
@@ -12,13 +12,14 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-This article shows you how to use a private endpoint with a Streaming Endpoint. You'll be creating a private endpoint resource which is a link between a virtual network and a streaming endpoint. This deployment creates a network interface IP address inside the virtual network. The private endpoint allows you to connect the network interface in the private network to the streaming endpoint in the Media Services account. You'll also be creating DNS zones which pass the private IP addresses.
+This article shows you how to use a private endpoint with a Streaming Endpoint. This deployment creates a network interface IP address inside the virtual network. The private endpoint allows you to connect the network interface in the private network to the streaming endpoint in the Media Services account. You'll also be creating DNS zones which pass the private IP addresses.
 
 You'll be creating a private endpoint resource which is a link between a virtual network and a streaming endpoint. This deployment creates a network interface IP address inside the virtual network. The private link allows you to connect the network interface in the private network to the streaming endpoint in the Media Services account. You'll also be creating DNS zones which pass the private IP addresses.
 
 The virtual network created for this walk-though is just to assist with the example.
 
-## Restricting access
+- Read about how private endpoints can be applied to Media Services resources.
+- Create a Web App using this tutorial: [Connect to a web app using an Azure Private Endpoint](/azure/private-link/tutorial-private-endpoint-webapp-portal). You will be using it to test the connection to the streaming endpoint.
 
 Internet access to the endpoints in the Media Services account can be restricted in one of two ways:
 
@@ -95,6 +96,9 @@ To encode the video, you must create an encoding job, that uses the transform to
 1. Stay on this screen.
 
 ## Create DNS zones to use with the private endpoint
+
+> [!IMPORTANT]
+> Creating a private endpoint **DOES NOT** implicitly disable internet access to it.
 
 To use the streaming endpoint inside your virtual network, create private DNS zones. You can use the same DNS name and get back the private IP address of the streaming endpoint.
 

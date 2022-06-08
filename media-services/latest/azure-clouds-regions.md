@@ -12,11 +12,11 @@ ms.author: johndeu
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Azure Media Services v3 is available via Azure Resource Manager. However, not all Media Services features are available in all the Azure clouds. This document outlines availabilities of main Media Services v3 components. The following tables show which Media Services features are available in each region.  
+Azure Media Services v3 is available via Azure Resource Manager. However, not all Media Services features are available in all the Azure clouds. This document outlines availabilities of main Media Services v3 components. The following tables show which Media Services features are available in each region.
 
 [!INCLUDE [reference-feature-availability-us](./includes/regions-availability-table-key.md)]
 
-Use the navigation on the right to find the region you are interested in.
+Use the links on the right to find the region you are interested in.
 
 <!-- US and US Gov -->
 [!INCLUDE [reference-feature-availability-us](./includes/reference-feature-availability-us.md)]
