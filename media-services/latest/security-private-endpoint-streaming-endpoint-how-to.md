@@ -101,7 +101,8 @@ Your video now streams to the Internet.  This is because we haven't yet locked d
 1. In the **Addresses** field, enter *0.0.0.0*.
 1. In the **Subnet Prefix Length** field, enter *32*.
 1. Select **Save**.
-1. Refresh the Azure Media Player. You should receive a streaming error.
+1. Clear your browser cache.
+1. Refresh the Azure Media Player browser window. You should receive a streaming error.
 
 ## Create a private endpoint
 
@@ -115,7 +116,7 @@ Now you'll create a private endpoint for the streaming endpoint and be able to s
 1. From the **Region** dropdown list, select the same region you have been working with (it may already be selected).
 1. Select **Next: Resource**. The Resource screen will appear.
 
-## Assign the private endpoint to a resource
+## Assign the private endpoint to the streaming resource type
 
 1. From the **Connection methods** radio buttons, select the *Connect to an Azure resource in my directory* radio button.
 1. From the **Resource type** dropdown list, select *Microsoft.Media/mediaservices*.
@@ -138,6 +139,14 @@ On this screen, the **Configuration name**, **Subscription**, **Resource group**
 - Leave all the settings as they are and select **Next: Tags**.
 - Optionally, add tags, the select **Review + create**.
 - Double-check your settings, then select **Create**.
+
+## Test the streaming URL with the VM in the Vnet
+
+1. Copy the URL from the Azure Media Player window on your desktop.
+1. Connect to your VM using the bastion host as you did before in the quickstart.
+1. Open a browser in your VM and paste the URL in the URL field.
+
+You should see the video playing since the VM is part of the VNet.
 
 ## ARM template
 
