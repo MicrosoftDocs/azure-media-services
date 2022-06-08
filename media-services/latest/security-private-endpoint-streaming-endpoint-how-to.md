@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-This article shows you how to use a private endpoint for a Media Services Streaming Endpoint. You'll be creating a private endpoint resource which is a link between a virtual network and a streaming endpoint. This deployment creates a network interface IP address inside the virtual network. The private link allows you to connect the network interface in the private network to the streaming endpoint in the Media Services account. You'll also be creating DNS zones which pass the private IP addresses.
+This article shows you how to use a private endpoint for a Media Services Streaming Endpoint. You'll be creating a private endpoint resource which is a link between a virtual network and a streaming endpoint. This deployment creates a network interface IP address inside the virtual network. The private link allows devices in your VNet to connect to the streaming endpoint in the Media Services account.
 
 Although a private link is used with the Azure products Private Link and Private Link service, the private link used for this exercise is simply the link between the resource and the private endpoint.
 
@@ -35,7 +35,7 @@ Creating a private endpoint **DOES NOT** implicitly disable internet access to i
 ### Create a resource group for this exercise
 
 > [!IMPORTANT]
-> It is important that you create all of the resources for this exercise in the same region.  Otherwise, the VNet and VM steps will not work. Decide which region you want to work with based on your subscription VM allowances. For example, your subscription may allow you to create a Windows Server 2019 VM in the West Europe region, but not in the US West 2 region.
+> It is important that you create all of the resources for this exercise in the same region.  Otherwise, the VNet and VM steps will not work. Decide which region you want to work with based on your subscription VM allowances.
 
 ### Create a VNet and a VM
 
@@ -93,9 +93,11 @@ Before creating a private endpoint, we will see how this works without it.
 1. Paste the URL into the URL field of the player interface.
 1. Select Update.
 
-Your video now streams to the Internet.  This is because we haven't yet locked down the IP addresses.
+Your video now streams to the Internet.  This is because default streaming endpoints allow access to the Internet.
 
 ## Change the IP allow list for the streaming endpoint
+
+Now you will change the IP allow list to block all access from the Internet.
 
 1. In the portal, navigate to the default streaming endpoint for the Media Services account you are working with.
 1. Select **Settings**. The Settings screen will appear.
@@ -149,7 +151,7 @@ On this screen, the **Configuration name**, **Subscription**, **Resource group**
 1. Connect to your VM using the bastion host as you did before in the quickstart.
 1. Open a browser in your VM and paste the URL in the URL field.
 
-You should see the video playing since the VM is part of the VNet.
+You should see the video playing since the VM is part of the VNet and is using the private endpoint so it isn't blocked by the IP allow list.
 
 ## ARM template
 
