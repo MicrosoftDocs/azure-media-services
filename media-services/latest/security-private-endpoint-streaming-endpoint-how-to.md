@@ -101,7 +101,7 @@ Your video now streams to the Internet.  This is because we haven't yet locked d
 1. In the **Addresses** field, enter *0.0.0.0*.
 1. In the **Subnet Prefix Length** field, enter *32*.
 1. Select **Save**.
-1. Clear your browser cache.
+1. **IMPORTANT!** Clear your browser cache. Otherwise you will be playing video fragments that are in the cache.
 1. Refresh the Azure Media Player browser window. You should receive a streaming error.
 
 ## Create a private endpoint
