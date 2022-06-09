@@ -55,9 +55,9 @@ Media Services metrics are collected at regular intervals whether or not the val
 
 Metrics available for Media Services are:
 
-[Media Services account metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservices)
-[Live event metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesliveevents)
-[Streaming endpoint metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesstreamingendpoints)
+- [Media Services account metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservices)
+- [Live event metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesliveevents)
+- [Streaming endpoint metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesstreamingendpoints)
 
 >[!NOTE]
 >At the time of this writing, you cannot create diagnostic settings for Live event metrics or streaming endpoint metrics in the Azure portal.
@@ -94,11 +94,11 @@ Media Services supports the following resource logs:
 
 Some things that you can examine with diagnostic logs are:
 
-- The number of licenses delivered by DRM type.
-- The number of licenses delivered by policy.
+- The number of licenses delivered by DRM type
+- The number of licenses delivered by policy
 - The latency on key delivery requests
-- HTTP Status codes by DRM key type (PlayReady, WideVine, FairPlay, Clear) or policy type.
-- The number of unauthorized license requests from clients.
+- HTTP Status codes by DRM key type (PlayReady, WideVine, FairPlay, Clear) or policy type
+- The number of unauthorized license requests from clients
 
 ### Schemas
 
@@ -186,7 +186,8 @@ All resource logs in Azure Monitor have the same fields followed by service-spec
 
 ## Alerts
 
-Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system. You can set alerts on [metrics](/azure/azure-monitor/alerts/alerts-metric-overview), [logs](/azure/azure-monitor/alerts/alerts-unified-log), and the [activity log](/azure/azure-monitor/alerts/activity-log-alerts).
+Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system. You can set alerts on [metrics](/azure/azure-monitor/alerts/alerts-metric-overview), [logs](/azure/azure-monitor/alerts/git status
+alerts-unified-log), and the [activity log](/azure/azure-monitor/alerts/activity-log-alerts).
 
 ## How-tos
 
