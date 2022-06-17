@@ -4,7 +4,7 @@ description: This article describes best practices for achieving low-latency liv
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 06/17/2022
 ms.author: inhenkel
 ---
 
@@ -13,67 +13,44 @@ ms.author: inhenkel
 Customers often ask how they can reduce the latency of their live stream. There are many factors that
 determine the end-to-end latency of a stream. Here are some that you should consider:
 
-1. Delays on the contribution encoder side. When customers use an
-    encoding software such as OBS Studio, Wirecast, or others to send an
-    RTMP live stream to Media Services. Settings on this software is critical in affecting the end-to-end latency of a live
-    stream.
+1. Delays on the contribution encoder side. When customers use an encoding software such as OBS Studio, Wirecast, or others to send an RTMP live stream to Media Services. Settings on this software affect the end-to-end latency of a live stream.
 
-2. Delays in the live streaming pipeline within Azure Media Services.
+2. Delays in the live streaming pipeline within Azure Media Services
 
 3. CDN performance
 
-4. Buffering algorithms of the video player and network conditions on
-    the client side
+4. Buffering algorithms of the video player and network conditions on the client side
 
 5. Timing of provisioning
 
 ## Contribution encoder
 
-As a customer, you are in control of the settings of the source encoder
-settings before the RTMP stream reaches Media Services. Here are some
-recommendations for the settings that would give you the lowest possible
-latency:
+You are in control of the settings of the source encoder settings before the RTMP stream reaches Media Services. Here are some recommendations for the settings that would give you the lowest possible latency:
 
-1. **Pick the same region physically** **closest to your contribution
-    encoder for your Media Services account.** This will ensure
-    that you have a great network connection to the Media Services
-    account.
+1. **Pick the physical region closest to your contribution encoder for your Media Services account**. This will ensure that you have a great network connection to the Media Services account.
 
-2. **Use a consistent fragment size.** We recommend a GOP size of 2
-    seconds. The default on some encoders, such as OBS, is 8 seconds.
-    Make sure that you change this setting.
+2. **Use a consistent fragment size.** We recommend a GOP size of 2 seconds. The default on some encoders, such as OBS, is 8 seconds. Make sure that you change this setting.
 
-3. **Use the GPU encoder if your encoding software allows you to do
-    that.** This would allow you to offload CPU work to the GPU.
+3. **Use the GPU encoder if your encoding software allows you to do that.** This would allow you to offload CPU work to the GPU.
 
-4. **Use an encoding profile that is optimized for low-latency.** For
-    example, with OBS Studio, if you use the Nvidia H.264 encoder, you
-    may see the “zero latency” preset.
+4. **Use an encoding profile that is optimized for low-latency.** For example, with OBS Studio, if you use the Nvidia H.264 encoder, you may see the “zero latency” preset.
 
-5. **Send content that is no higher in resolution than what you plan to
-    stream.** For example, if you're using 720p standard encoding live
-    events, send a stream that is already at 720p.
+5. **Send content that is no higher in resolution than what you plan to stream.** For example, if you're using 720p standard encoding live events, send a stream that is already at 720p.
 
-6. **Keep your framerate at 30fps or lower unless using pass-through
-    live events.** While we support 60 fps input for live events, our
-    encoding live event output is still not above 30 fps.
+6. **Keep your framerate at 30fps or lower unless using pass-through live events.** While we support 60 fps input for live events, our encoding live event output is still not above 30 fps.
 
 ## Configuration of the Azure Media Services live event
 
-Here are some configurations that will help you reduce the latency in
-our pipeline:
+Here are some configurations that will help you reduce the latency in our pipeline:
 
-1. **Use the ‘LowLatency’ StreamOption on the live event.**
+1. **Use the `LowLatency` Stream Option on the live event.**
 
-2. **We recommend that you choose CMAF output for both HLS and DASH
-    playback.** This allows you to share the same fragments for both
-    formats. It increases your cache hit ratio when CDN is used. For example:
+2. **We recommend that you choose CMAF output for both HLS and DASH playback.** This allows you to share the same fragments for both formats. It increases your cache hit ratio when CDN is used. For example:
 
-
-| Type  | Format  | URL example  |
-|---------|---------|---------|
-|HLS CMAF (recommended)     | format=m3u8-cmaf        | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=m3u8-cmaf)`        |
-| MPEG-DASH CMAF (recommended) | format=mpd-time-cmaf | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=mpd-time-cmaf)` |
+    | Type  | Format  | URL example  |
+    |---------|---------|---------|
+    |HLS CMAF (recommended)     | format=m3u8-cmaf        | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=m3u8-cmaf)`        |
+    | MPEG-DASH CMAF (recommended) | format=mpd-time-cmaf | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=mpd-time-cmaf)` |
 
 3. **If you must choose TS output, use an HLS packing ratio of 1.** This allows us to pack only one fragment into one HLS segment. You won't get the full benefits of LL-HLS in native Apple players.
 
@@ -81,8 +58,7 @@ our pipeline:
 
 **When choosing and configuring a video player, make sure you use settings that are optimized for lower latency.**
 
-Media Services supports different streaming protocols outputs – DASH, HLS with TS output and HLS with CMAF fragments. Depending on the player’s implementation, buffering decisions impact the latency a viewer observes. Poor network conditions or default algorithms that
-favor quality and stability of playback could cause players to decide to buffer more content upfront to prevent interruptions during playback. These buffers before and during the playback sessions would add to the end-to-end latency.
+Media Services supports different streaming protocol outputs – DASH, HLS with TS output and HLS with CMAF fragments. Depending on the player’s implementation, buffering decisions impact the latency a viewer observes. Poor network conditions or default algorithms that favor quality and stability of playback could cause players to decide to buffer more content upfront to prevent interruptions during playback. These buffers, before and during the playback sessions, would add to the end-to-end latency.
 
 When Azure Media Player is used, the *Low Latency Heuristics* profile optimizes the player to have the lowest possible latency on the player side.
 
@@ -105,7 +81,7 @@ While you can concurrently stream many live events at once using the same stream
 
 ## Determine the premium streaming units needed
 
-There are three steps to determine the number of streaming endpoints and streaming units needed:
+There are two steps to determine the number of streaming endpoints and streaming units needed:
 
 1. Determine the total egress needed.
 
@@ -117,7 +93,7 @@ Determine the total egress needed by using the following formula.
 
 *Total egress needed = average bandwidth x number of concurrent viewers x percent* *handled by the streaming endpoint.*
 
-Let’s take a look at each of the multipliers in turn.
+Let’s take a look at each of the multipliers in turn:
 
 **Average bandwidth.** What is the *average* bitrate you plan to stream? In other words, if you're going to have multiple bitrates available what bit rate is the average of all the bitrates you're planning for? You can estimate this using one of the following methods:
 
