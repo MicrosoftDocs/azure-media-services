@@ -19,7 +19,7 @@ Azure Media Services is a cloud-based platform that enables you to build solutio
 Media Services lets you build a variety of media workflows in the cloud. Some examples of what you can do with Media Services include:
 
 * Deliver videos in various formats so they can be played on a wide variety of browsers and devices. For both on-demand and live streaming delivery to various clients (mobile devices, TV, PC, and so on), the video and audio content needs to be encoded and packaged appropriately. To see how to deliver and stream such content, see [Quickstart: Encode and stream files](stream-files-dotnet-quickstart.md).
-* Stream live sporting events to a large online audience, like soccer, baseball, college and high school sports, and more.
+* Stream live sporting events to a large audience, like soccer, baseball, college and high school sports, and more.
 * Broadcast public meetings and events, like town halls, city council meetings, and legislative bodies.
 * Analyze recorded videos or audio content. For example, to achieve higher customer satisfaction, organizations can extract speech-to-text and build search indexes and dashboards. Then, they can extract intelligence around common complaints, sources of complaints, and other relevant data.
 * Create a subscription video service and stream DRM protected content when a customer (for example, a movie studio) needs to restrict the access and use of proprietary copyrighted work.
@@ -48,7 +48,7 @@ See the documentation for setting up your environment in Quickstarts, then start
 
 ### Samples
 
-If you would like to dive in to code, check out the [Samples](/samples/browse/?products=azure-media-services) to browse Azure Media Services code samples.
+If you would like to dive in to code, check out the [Samples](samples-overview.md) to browse Azure Media Services code samples.
 
 ## Ask questions, give feedback, get updates
 
