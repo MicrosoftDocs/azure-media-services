@@ -35,14 +35,14 @@ The following tables show typical results for latency in Media Services, measure
 
 ### Pass-through with LowLatency stream option
 
-||2 second GOP|1 second GOP|
+| Format | 2 second GOP latency | 1 second GOP latency |
 |---|---|---|
 |**DASH in AMP**|10 seconds|8 seconds|
 |**HLS on native iOS player**|14 seconds|10 seconds|
 
 ### Live encoding with LowLatency stream option
 
-||2 second GOP |1 second GOP |
+| Format |2 second GOP latency |1 second GOP latency |
 |---|---|---|
 |**DASH in AMP**|14 seconds |10 seconds|
 |**HLS on native iOS player**|18 seconds |13 seconds|
@@ -51,7 +51,7 @@ The following tables show typical results for latency in Media Services, measure
 
 GOP size doesn't affect latency with the LowLatencyV2 option.
 
-| | |
+| Format | Latency |
 |---|---|
 |**DASH in AMP**| 4-8 seconds|
 |**HLS on native iOS player**| 3-7 seconds|
