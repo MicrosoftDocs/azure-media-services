@@ -49,10 +49,12 @@ The following tables show typical results for latency in Media Services, measure
 
 ### Live encoding with LowLatencyV2 option
 
-||GOP size not relevant | |
-|---|---|---|
-|**DASH in AMP**| 4-8 seconds||
-|**HLS on native iOS player**| 3-7 seconds||
+GOP size doesn't affect latency with the LowLatencyV2 option.
+
+| | |
+|---|---|
+|**DASH in AMP**| 4-8 seconds|
+|**HLS on native iOS player**| 3-7 seconds|
 
 > [!NOTE]
 > The end-to-end latency can vary depending on local network conditions or by introducing a CDN caching layer. You should test your exact configurations.
