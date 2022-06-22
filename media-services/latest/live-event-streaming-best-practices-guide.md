@@ -45,7 +45,7 @@ You are in control of the settings of the source encoder settings before the RTM
 
 Here are some configurations that will help you reduce the latency in our pipeline:
 
-1. **If you are using a passthrough live event, use the `LowLatency` Stream Option on the live event.** For all encoding live events, use the `LowLatencyV2` stream option unless you need a DVR window longer than 6 hours or smooth streaming output. Certain encryption formats are also not available with this option. Check **TO DO encryption document** for details.
+1. **If you are using a passthrough live event, use the `LowLatency` Stream Option on the live event.** For all encoding live events, use the `LowLatencyV2` stream option unless you need a DVR window longer than 6 hours or smooth streaming output. Certain encryption formats are also not available with this option. Check [Dynamic encryption and key delivery](drm-content-protection-concept.md) for details.
 
 2. **We recommend that you choose CMAF output for both HLS and DASH playback.** This allows you to share the same fragments for both formats. It increases your cache hit ratio when CDN is used. For example:
 
