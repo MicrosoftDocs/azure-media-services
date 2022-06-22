@@ -240,6 +240,9 @@
     - name: Dynamic encryption and key delivery
       displayName: content protection, access control, streaming protocols, encryption types, PlayReady, Widevine, FairPlay, AES, AES-128,custom, DRM, CENC, CBCS, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000
       href: drm-content-protection-concept.md
+    - name: Streaming protocol encryption types
+      displayName: streaming protocol, encryption types, low latency
+      href: drm-streaming-protocol-encryption-types-reference.md
     - name: DRM licenses
       items:
       - name: PlayReady license template

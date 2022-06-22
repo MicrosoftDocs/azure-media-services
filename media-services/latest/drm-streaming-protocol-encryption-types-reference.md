@@ -1,6 +1,6 @@
 ---
 title: Low latency streaming protocols and encryption types
-description: This article shows you how to create a content protection system for testing digital rights management.
+description: This reference article lists the low latency streaming protocols and encryption types.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
@@ -9,6 +9,8 @@ ms.author: inhenkel
 ---
 
 # Low latency streaming protocols and encryption types
+
+This reference article lists the low latency streaming protocols and encryption types.
 
 ## HLS and DASH
 
