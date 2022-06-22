@@ -96,4 +96,14 @@ You can edit key policy templates if you want to use a different license/key del
 
 ## How-tos, tutorials and samples
 
-[Create a test content protection system](drm-test-system-tutorial.md)
+- [Use DRM dynamic encryption and license delivery service tutorial](drm-protect-with-drm-tutorial.md) which uses the following sample.
+- The [DRM sample](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs) shows you how to implement a multi-DRM system with Media Services v3 by using .NET. It also shows you how to use the Media Services license/key delivery service. You can encrypt each asset with multiple encryption types (AES-128, PlayReady, Widevine, FairPlay). The sample shows you how to create and configure a [content key policy](drm-content-key-policy-concept.md), create a [streaming locator](stream-streaming-locators-concept.md) that's configured to stream the encrypted asset, create a test token, and build a streaming URL.
+- [Protect content with AES 128](drm-protect-with-aes128-tutorial.md) tutorial.
+
+There are additional content protection samples available for Node.JS and Python:
+
+| **Node.JS** | **Python** | Description |
+|---|---| ---|
+|[Node.JS Upload and stream HLS and DASH with PlayReady and Widevine DRM](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesWithDRMSample/index.ts)|[Python Upload and stream HLS and DASH with PlayReady and Widevine DRM](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesWithDRM/stream-files-with-drm-sample.py)| Demonstrates how to encode and stream using Widevine and PlayReady DRM |
+|[Node.JS Basic Playready DRM content protection and streaming](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicPlayready/index.ts)|[Python Basic Playready DRM content protection and streaming](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicPlayReady/basic-play-ready.py)| Demonstrates how to encode and stream using PlayReady DRM |
+|[Node.JS Basic Widevine DRM content protection and streaming](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicWidevine/index.ts)| [Python Basic Widevine DRM content protection and streaming](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicWidevine/basic-widevine.py) | Demonstrates how to encode and stream using Widevine DRM |
