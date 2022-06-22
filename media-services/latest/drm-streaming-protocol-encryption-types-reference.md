@@ -8,7 +8,7 @@ ms.date: 06/22/2022
 ms.author: inhenkel
 ---
 
-# Supported streaming protocols and encryption types for low latency
+# Low latency supported streaming protocols and encryption types
 
 This reference article lists the low latency streaming protocols and encryption types.
 
