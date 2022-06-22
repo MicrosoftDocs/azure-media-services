@@ -28,7 +28,7 @@ HLS/CMAF + FairPlay (including HEVC/H.265) is supported on the following devices
 - iPhone 8 or later.
 - macOS High Sierra with Intel 7th Generation CPU.
 
-[!INCLUDE [Widevine is not available in the GovCloud region.](./includes/widevine-not-available-govcloud.md)]
+[!INCLUDE [Widevine is not available in the GovCloud region.](widevine-not-available-govcloud.md)]
 
 ## Smooth Streaming
 
