@@ -243,6 +243,8 @@
     - name: Streaming protocol encryption types
       displayName: streaming protocol, encryption types, low latency
       href: drm-streaming-protocol-encryption-types-reference.md
+    - name: DRM test system considerations
+      href: drm-test-system-concept.md
     - name: DRM licenses
       items:
       - name: PlayReady license template

@@ -94,6 +94,10 @@ There are two types of security keys:
 
 You can edit key policy templates if you want to use a different license/key delivery service.
 
+## Test content protection system
+
+Read this [overview of creating a test content protection system](drm-test-system-concept.md), and then try some of the following instructional content.
+
 ## How-tos, tutorials and samples
 
 - [Use DRM dynamic encryption and license delivery service tutorial](drm-protect-with-drm-tutorial.md) which uses the following sample.
