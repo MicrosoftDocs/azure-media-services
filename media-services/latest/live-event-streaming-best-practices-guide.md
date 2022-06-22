@@ -4,14 +4,16 @@ description: This article describes best practices for achieving low-latency liv
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 06/17/2022
+ms.date: 06/22/2022
 ms.author: inhenkel
 ---
 
 # Media Services live streaming best practices guide
 
 Customers often ask how they can reduce the latency of their live stream. There are many factors that
-determine the end-to-end latency of a stream. Here are some that you should consider:
+determine the end-to-end latency of a stream. This article describes best practices for achieving low-latency live streams with Azure Media Services.
+
+Here are some that you should consider:
 
 1. Delays on the contribution encoder side. When customers use an encoding software such as OBS Studio, Wirecast, or others to send an RTMP live stream to Media Services. Settings on this software affect the end-to-end latency of a live stream.
 
@@ -43,7 +45,7 @@ You are in control of the settings of the source encoder settings before the RTM
 
 Here are some configurations that will help you reduce the latency in our pipeline:
 
-1. **Use the `LowLatency` Stream Option on the live event.**
+1. **If you are using a passthrough live event, use the `LowLatency` Stream Option on the live event.** For all encoding live events, use the `LowLatencyV2` stream option unless you need a DVR window longer than 6 hours or smooth streaming output. Certain encryption formats are also not available with this option. Check <encryption doc link > for details.
 
 2. **We recommend that you choose CMAF output for both HLS and DASH playback.** This allows you to share the same fragments for both formats. It increases your cache hit ratio when CDN is used. For example:
 
@@ -58,9 +60,9 @@ Here are some configurations that will help you reduce the latency in our pipeli
 
 **When choosing and configuring a video player, make sure you use settings that are optimized for lower latency.**
 
-Media Services supports different streaming protocol outputs – DASH, HLS with TS output and HLS with CMAF fragments. Depending on the player’s implementation, buffering decisions impact the latency a viewer observes. Poor network conditions or default algorithms that favor quality and stability of playback could cause players to decide to buffer more content upfront to prevent interruptions during playback. These buffers, before and during the playback sessions, would add to the end-to-end latency.
+Media Services supports different streaming protocol outputs – DASH, HLS with TS output and HLS with CMAF fragments. When using the `LowLatencyV2` stream option, be sure to find a player that supports Low Latency HLS (LL-HLS). Depending on the player’s implementation, buffering decisions impact the latency a viewer observes. Poor network conditions or default algorithms that favor quality and stability of playback could cause players to decide to buffer more content upfront to prevent interruptions during playback. These buffers, before and during the playback sessions, would add to the end-to-end latency.
 
-When Azure Media Player is used, the *Low Latency Heuristics* profile optimizes the player to have the lowest possible latency on the player side.
+When Azure Media Player is used, the *Low Latency Heuristics* profile optimizes the player to have the lowest possible latency on the player side. This player only supports DASH unless it is being used on Safari on Apple devices.
 
 ## CDN choice
 
