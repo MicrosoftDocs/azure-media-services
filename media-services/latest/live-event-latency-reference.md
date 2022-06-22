@@ -63,7 +63,7 @@ GOP size doesn't affect latency with the LowLatencyV2 option.
 
 Media Services can currently only support the following encryption formats for live events with LowLatencyV2 stream option:
 
-**TO DO  Need encryption formats.**
+[!INCLUDE [low-latency-supported-encryption-types](includes/low-latency-supported-encryption-types.md)]
 
 ## How-tos, tutorials and samples
 
