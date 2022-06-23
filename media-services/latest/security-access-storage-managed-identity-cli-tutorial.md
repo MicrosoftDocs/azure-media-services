@@ -31,7 +31,7 @@ To secure access to a storage account used by Media Services:
 - Configure the storage account to allow access to “AzureServices”
 - Configure Media Services to access the storage account using Managed Identity
 - Upload media content to Media Services Assets
-- Create encoding jobs which use Media Services Assets as the job input.  DO NOT USE SAS URLS or JobInputHTTP
+- Create encoding jobs which use Media Services Assets as the job input.  **DO NOT** use SAS URLS or JobInputHTTP.
 
 ## Sign in to Azure
 
