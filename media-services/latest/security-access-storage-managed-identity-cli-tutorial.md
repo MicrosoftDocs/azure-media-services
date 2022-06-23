@@ -20,6 +20,19 @@ If you would like to access a storage account when the storage account is config
 
 This tutorial uses the 2020-05-01 Media Services API.
 
+## Overview
+
+> [!WARNING]
+> You cannot use JobInputHTTP or SAS URLs with a storage account that isn't associated with a Media Services account. These are intended as a convenience for customers who have *existing content* that can be accessed using HTTP(S), for example if you have media files on a public facing server or stored with another cloud provider. If you are building new solutions, use Assets for job inputs.
+
+To secure access to a storage account used by Media Services:
+
+- Configure the storage account to deny all IP addresses (or only allow IP addresses in the customer’s network)
+- Configure the storage account to allow access to “AzureServices”
+- Configure Media Services to access the storage account using Managed Identity
+- Upload media content to Media Services Assets
+- Create encoding jobs which use Media Services Assets as the job input.  **DO NOT** use SAS URLS or JobInputHTTP.
+
 ## Sign in to Azure
 
 To use any of the commands in this article, you first have to be signed in to the subscription that you want to use.
