@@ -23,7 +23,7 @@ The following are the primary scenarios that would result in a Media Services ac
 |The Media Services account or attached storage account(s) were migrated to separate subscriptions. |Migrate the storage account(s) or Media Services account so that they're all in the same subscription or use managed identity for storage account authentication if your storage account is in the same tenant. |
 |The Media Services account is using an attached storage account in a different subscription as it was an early Media Services account where this was supported. All early Media Services accounts were converted to modern Azure Resources Manager based accounts and will have a Disconnected state. |Migrate the storage account or Media Services account so that they're all in the same subscription or use managed identity for storage account authentication if your storage account is in the same tenant.|
 
-### Media Service account cannot access storage account
+### Media Services account cannot access storage account
 
 | Cause | Solution |
 | ----- | -------- |
