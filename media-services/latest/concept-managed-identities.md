@@ -24,6 +24,8 @@ There are three scenarios where Managed Identities can be used with Media Servic
 
 In the first two scenarios, the Managed Identity is used to grant the *Media Services account* access to other services.  In the third scenario, *the service* has a Managed Identity which is used to access Media Services.
 
+For the first scenario, the Managed Identity of the Media Services account must have the `Storage Blob Contributor` role for the storage account.
+
 :::image type="content" source="media/diagrams/managed-identities-scenario-comparison.svg" alt-text="Managed Identities Scenario Comparison":::
 
 > [!NOTE]
