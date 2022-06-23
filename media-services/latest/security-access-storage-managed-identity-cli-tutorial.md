@@ -20,6 +20,8 @@ If you would like to access a storage account when the storage account is config
 
 This tutorial uses the 2020-05-01 Media Services API.
 
+## Overview
+
 > [!WARNING]
 > You cannot use JobInputHTTP or SAS URLs with a storage account that isn't associated with a Media Services account. These are intended as a convenience for customers who have *existing content* that can be accessed using HTTP(S), for example if you have media files on a public facing server or stored with another cloud provider. If you are building new solutions, use Assets for job inputs.
 
