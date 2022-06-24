@@ -26,6 +26,8 @@ The **Archive** storage tier is only recommended for very large source files tha
 
 The names of files/blobs within an asset must follow both the [blob name requirements](/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata) and the [NTFS name requirements](/windows/win32/fileio/naming-a-file). The reason for these requirements is the files can get copied from blob storage to a local NTFS disk for processing.
 
+[!INCLUDE [reserved_characters](./includes/reserved_characters.md)]
+
 ## Asset How-Tos and Tutorials
 
 - [Upload media for streaming or encoding](asset-upload-media-how-to.md?amspage=assets-concept)
