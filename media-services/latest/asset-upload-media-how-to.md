@@ -26,7 +26,7 @@ Before you get started, you'll need to collect or think about a few values.
 
 ## File naming
 
-[!INCLUDE [reserved_characters](includes/reserved_characters.md)]
+[!INCLUDE [reserved_characters](./includes/reserved_characters.md)]
 
 ## [Portal](#tab/portal/)
 
