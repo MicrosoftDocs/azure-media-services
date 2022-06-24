@@ -30,3 +30,6 @@ title: Video playback issues
 | Cause | Solution |
 | ----- | -------- |
 | Azure Media Services is designed to use a manifest file rather than playing full size MP4 streams directly.  The manifest file tells the player which encoded media fragments to play and in what order. | Use one of the provided media encoders to create media fragments and manifest file. For more information about encoding see [Content-aware encoding](../encode-content-aware-concept.md?amspage=troubleshooting) and [Encode with an auto-generated bitrate ladder](../encode-autogen-bitrate-ladder.md?amspage=troubleshooting) encoding. |
+| The file name contains reserved characters | Remove the reserved characters from the file name. |
+
+[!INCLUDE [reserved_characters](includes/reserved_characters.md)]

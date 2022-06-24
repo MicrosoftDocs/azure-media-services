@@ -14,13 +14,19 @@ ms.author: inhenkel
 
 In Media Services, you upload your digital files (media) into a blob container associated with an asset. The [Asset](/rest/api/media/operations/asset) entity can contain video, audio, images, thumbnail collections, text tracks and closed caption files (and the metadata about these files). Once the files are uploaded into the asset's container, your content is stored securely in the cloud for further processing  and streaming.
 
-Before you get started though, you'll need to collect or think about a few values.
+## Collect values
+
+Before you get started, you'll need to collect or think about a few values.
 
 1. The local file path to the file you want to upload
 1. The asset ID for the asset (container)
 1. The name you want to use for the uploaded file including the extension
 1. The name of the storage account you are using
 1. The access key for your storage account
+
+## File naming
+
+[!INCLUDE [reserved_characters](includes/reserved_characters.md)]
 
 ## [Portal](#tab/portal/)
 
