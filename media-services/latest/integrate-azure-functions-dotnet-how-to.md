@@ -4,7 +4,7 @@ description: This article shows how to start developing Azure Functions with Med
 author: xpouyat
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 05/04/2022
+ms.date: 06/27/2022
 ms.author: inhenkel
 ms.custom: contperf-fy22q4
 ---
@@ -138,7 +138,7 @@ When you run the function locally in VS Code, the function should be exposed as:
 http://localhost:7071/api/HttpTriggerEncode
 ```
 
-To test it, you can use Postman to do a POST on this URL using a JSON input body.
+To test it, you can use the REST client of your choice to do a POST on this URL using a JSON input body.
 
 JSON input body example:
 

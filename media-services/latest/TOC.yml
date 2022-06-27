@@ -675,7 +675,7 @@
   items:
   - name: OpenAPI Specification (Swagger)
     href: https://aka.ms/ams-v3-rest-sdk
-    displayName: schema, Swagger, OpenAPI, open api, rest, api, Postman
+    displayName: schema, Swagger, OpenAPI, open api, rest, api
   - name: REST
     href: /rest/api/media/
     displayName: schema, Swagger, OpenAPI, open api, rest, api,

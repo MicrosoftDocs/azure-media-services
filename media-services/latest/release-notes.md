@@ -423,7 +423,7 @@ Added CDN support for *Origin-Assist Prefetch* headers for both live and video o
 
 To see part of the header exchange in action, you can try the following steps:
 
-1. Use Postman or curl to issue a request to Media Services origin for an audio or video segment or fragment. Make sure to add the header CDN-Origin-Assist-Prefetch-Enabled: 1 in the request.
+1. Use curl to issue a request to Media Services origin for an audio or video segment or fragment. Make sure to add the header CDN-Origin-Assist-Prefetch-Enabled: 1 in the request.
 2. In the response, you should see the header CDN-Origin-Assist-Prefetch-Path with a relative path as its value.
 
 ## November 2019
