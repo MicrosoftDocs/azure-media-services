@@ -4,7 +4,7 @@ description: This article will assist you with setting up your environment for m
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 06/27/2022
 ms.author: inhenkel
 ---
 
@@ -56,7 +56,7 @@ Find your [tenant and subscription ids](/azure/azure-portal/get-subscription-ten
 
 Read the [REST API reference pages](/rest/api/media/).
 
-You should use the 2020-05-01 (or later) version string in the Postman collection.
+You should use the 2020-05-01 (or later) version.
 
 ## [.NET](#tab/net)
 

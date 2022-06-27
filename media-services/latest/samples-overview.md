@@ -4,7 +4,7 @@ description: This article is a listing of all of the Media Services code samples
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 3/16/2022
+ms.date: 06/27/2022
 ms.author: inhenkel
 ---
 
@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-This article contains a list of all the samples available for Media Services organized by method and SDK.  Samples include .NET, Node.js (TypeScript), Python, Java, and also examples using REST with Postman.
+This article contains a list of all the samples available for Media Services organized by method and SDK.
 
 ## Samples by SDK
 
