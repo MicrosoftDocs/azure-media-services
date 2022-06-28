@@ -14,17 +14,17 @@ ms.author: inhenkel
 
 This article discusses low latency on a [live event](/rest/api/media/liveevents). It also discusses typical results that you see when using the low latency settings in various players. The results vary based on CDN and network latency.
 
-For *pass-through* live events, we recommend that you always use the `LowLatency` option. It is recommended only if you require the Smooth Streaming output format, or require a DVR window longer than 6 hours.
+For *pass-through* live events, we recommend that you always use the *LowLatency* stream option.
 
-For *encoding* live events, you can choose between `LowLatency` or `LowLatencyV2`. LowLatencyV2 setting is recommended if you wish to go down to 3-7 seconds of end to end latency for your live stream. This setting is currently only available for DASH or Low Latency HLS outputs. Although it is optimized for CMAF LL-HLS playback (format=aapl-cmaf), the setting still supports all other streaming formats other than smooth. You will see latency improvements regardless of the format used.
+For *encoding* live events, you can choose between *LowLatency* or *LowLatencyV2* stream options. The *LowLatencyV2* setting is recommended if you wish to go down to 3-7 seconds of end to end latency for your live stream. (**In the portal**, you may see the LowLatency stream option as "Regular latency" and LowLatencyv2 stream option as the low latency option.) The supported output formats are DASH CMAF (format=mpd-time-cmaf) or Low Latency HLS (format=m3u8-cmaf). See [dynamic packaging](encode-dynamic-packaging-concept.md) page for streaming URL formats.
 
-When using TS outputs with HLS v3 (format=aapl-m3u8-v3) and HLS v4 (format=aapl-m3u8-v4), be sure to set the `LiveOutput.Hls.fragmentsPerTsSegment` setting to 1 to ensure that Media Services packs only 1 mp4 fragment into one TS segment.
+Choose the *LowLatency* stream option if you need Smooth Streaming output, or require a DVR window longer than 6 hours. When using TS outputs with HLS v3 (format=aapl-m3u8-v3) and HLS v4 (format=aapl-m3u8-v4), be sure to set the `LiveOutput.Hls.fragmentsPerTsSegment` setting to 1 to ensure that Media Services packs only one mp4 fragment into one TS segment.
 
-You will need proper settings on your LL-HLS or DASH capable players to see the best latency numbers.
+For all streams, you will need proper settings on your LL-HLS or DASH capable players to see the best latency numbers.
 
-We have tested with the following media players:
+We have tested the LowLatencyV2 options with the following media players:
 
-- Video.js - Choose CMAF LL-HLS playback for best results. Please use the LL-HLS support and experimental ABR options.
+- Video.js - Choose CMAF LL-HLS playback for best results. Please use the LL-HLS support and buffer level ABR options.
 - HLS.js - Choose CMAF LL-HLS playback for best results.
 - Shaka player - From version xxxx, which contains fixes for CMAF LL-HLS playback.
 - Azure Media Player - Only on native Safari. It falls back to the native LL-HLS player.  On other platforms, it will choose to play DASH with approximately 1 second added latency compared to LL-HLS.  Choose "Low Latency Heuristic Profile".

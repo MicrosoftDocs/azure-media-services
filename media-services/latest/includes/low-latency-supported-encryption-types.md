@@ -14,7 +14,6 @@ The following container formats and encryption schemes are supported.
 | Packaging format | Container format | Condition | Encryption scheme | Format string |
 | ---------------- | ---------------- | -------------------- | ----------------- | ------------- |
 | HLS v3           | MPG2-TS          | Requires playlist proxy for HLS when token auth is used | AES             | (format=m3u8-aapl-v3,encryption=cbc) |
-|                  |                  |                                                         | CBCS (FairPlay) | (format=m3u8-aapl-v3,encryption=cbcs-aapl) |
 | HLS v4           | MPG2-TS          | Requires playlist proxy for HLS when token auth is used | AES             | (format=m3u8-aapl-v4,encryption=cbc) |
 |                  |                  | Non LL-HLS scenario                                     | CBCS (FairPlay) | (format=m3u8-aapl-v4,encryption=cbcs-aapl) |
 | HLS v7 and above | CMAF             | Requires playlist proxy for HLS                         | AES             | (format=m3u8-cmaf,encryption=cbc) |
@@ -22,7 +21,7 @@ The following container formats and encryption schemes are supported.
 | Dash             | CMAF             |                                                         | AES             | (format=mpd-time-cmaf,encryption=cbc) |
 |                  |                  |                                                         | CENC (PlayReady or Widevine)	(format=mpd-time-cmaf,encryption=cenc)
 
-HLS/CMAF + FairPlay (including HEVC/H.265) is supported on the following devices:
+HLS/CMAF + FairPlay (including HEVC/H.265) should enable both Dash and HLS protocols, and is supported on the following devices:
 
 - iOS 11 or later.
 - iPhone 8 or later.
