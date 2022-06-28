@@ -16,7 +16,7 @@ This article discusses low latency on a [live event](/rest/api/media/liveevents)
 
 For *pass-through* live events, we recommend that you always use the *LowLatency* stream option.
 
-For *encoding* live events, you can choose between *LowLatency* or *LowLatencyV2* stream options. The *LowLatencyV2* setting is recommended if you wish to go down to 3-7 seconds of end to end latency for your live stream. (**In the portal**, you may see the LowLatency stream option as "Regular latency" and LowLatencyv2 stream option as the low latency option.) The supported output formats are DASH CMAF (format=mpd-time-cmaf) or Low Latency HLS (format=m3u8-cmaf). See [dynamic packaging](encode-dynamic-packaging-concept.md) page for streaming URL formats.
+For *encoding* live events, you can choose between *LowLatency* or *LowLatencyV2* stream options. The *LowLatencyV2* setting is the best option if you wish to go down to 3-7 seconds of end to end latency for your live stream. (**In the portal**, you may see the LowLatency stream option as "Regular latency" and LowLatencyv2 stream option as the low latency option.) The supported output formats are DASH CMAF (format=mpd-time-cmaf) or Low Latency HLS (format=m3u8-cmaf). See [dynamic packaging](encode-dynamic-packaging-concept.md) page for streaming URL formats.
 
 Choose the *LowLatency* stream option if you need Smooth Streaming output, or require a DVR window longer than 6 hours. When using TS outputs with HLS v3 (format=aapl-m3u8-v3) and HLS v4 (format=aapl-m3u8-v4), be sure to set the `LiveOutput.Hls.fragmentsPerTsSegment` setting to 1 to ensure that Media Services packs only one mp4 fragment into one TS segment.
 

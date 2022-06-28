@@ -18,7 +18,7 @@ ms.reviewer: cenkdin;anilmur
 # Use the Wirecast encoder to send a single bitrate live stream
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
- 
+
 > [!div class="op_single_selector"]
 > * [Wirecast](media-services-configure-wirecast-live-encoder.md)
 >
@@ -96,7 +96,7 @@ In this tutorial, the following output settings are used. The rest of this secti
     ![Screenshot shows the Choose a template dialog box with BlobTrigger selected.](./media/media-services-wirecast-live-encoder/media-services-wirecast3.png)
 5. Configure encoder presets.
 
-    Name the preset, and check for the following recommended settings:
+    Name the preset, and check for the following settings:
 
     **Video**
 
@@ -122,7 +122,7 @@ In this tutorial, the following output settings are used. The rest of this secti
     Navigate back to the AMSE tool, and check on the channel completion status. Once the State has changed from **Starting** to **Running**, you can get the input URL.
 
     When the channel is running, right-click the channel name, navigate down to hover over **Copy Input URL to clipboard** and then select **Primary Input
-    URL**.  
+    URL**.
 
     ![Screenshot shows the Copy Input U R L to clipboard option for Primary Input U  R L.](./media/media-services-wirecast-live-encoder/media-services-wirecast6.png)
 8. In the Wirecast **Output Settings** window, paste this information in the **Address** field of the output section, and assign a stream name.
@@ -142,29 +142,29 @@ In this tutorial, the following output settings are used. The rest of this secti
 
 ## Test playback
 
-Navigate to the AMSE tool, and right-click the channel to be tested. From the menu, hover over **Playback the Preview** and select **with Azure Media Player**.  
+Navigate to the AMSE tool, and right-click the channel to be tested. From the menu, hover over **Playback the Preview** and select **with Azure Media Player**.
 
 ![Screenshot shows Playback the Preview with Azure Media Player option selected.](./media/media-services-wirecast-live-encoder/media-services-wirecast8.png)
 
 If the stream appears in the player, then the encoder has been properly configured to connect to AMS.
 
-If an error is received, the channel needs to be reset and encoder settings adjusted. See the [troubleshooting](media-services-troubleshooting-live-streaming.md) article for guidance.  
+If an error is received, the channel needs to be reset and encoder settings adjusted. See the [troubleshooting](media-services-troubleshooting-live-streaming.md) article for guidance.
 
 ## Create a program
-1. Once channel playback is confirmed, create a program. Under the **Live** tab in the AMSE tool, right-click within the program area and select **Create New Program**.  
+1. Once channel playback is confirmed, create a program. Under the **Live** tab in the AMSE tool, right-click within the program area and select **Create New Program**.
 
     ![Screenshot shows the Create program option selected.](./media/media-services-wirecast-live-encoder/media-services-wirecast9.png)
-2. Name the program and, if needed, adjust the **Archive Window Length** (which defaults to four hours). You can also specify a storage location or leave as the default.  
+2. Name the program and, if needed, adjust the **Archive Window Length** (which defaults to four hours). You can also specify a storage location or leave as the default.
 3. Check the **Start the Program now** box.
-4. Click **Create Program**.  
+4. Click **Create Program**.
 
    >[!NOTE]
    >Program creation takes less time than channel creation.
-       
-5. Once the program is running, confirm playback by right-clicking the program and navigating to **Playback the program(s)** and then selecting **with Azure Media Player**.  
+
+5. Once the program is running, confirm playback by right-clicking the program and navigating to **Playback the program(s)** and then selecting **with Azure Media Player**.
 6. Once confirmed, right-click the program again and select **Copy the Output URL to Clipboard** (or retrieve this information from the **Program information and settings** option from the menu).
 
-The stream is now ready to be embedded in a player, or distributed to an audience for live viewing.  
+The stream is now ready to be embedded in a player, or distributed to an audience for live viewing.
 
 ## Troubleshooting
 See the [troubleshooting](media-services-troubleshooting-live-streaming.md) article for guidance.

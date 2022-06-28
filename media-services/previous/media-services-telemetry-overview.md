@@ -31,7 +31,7 @@ This topic discusses how to configure and consume the AMS telemetry.
 
 ## Configuring telemetry
 
-You can configure telemetry on a component level granularity. There are two detail levels "Normal" and "Verbose". Currently, both levels return the same information. It is recommended to use "Normal.
+You can configure telemetry on a component level granularity. There are two detail levels "Normal" and "Verbose". Currently, both levels return the same information.
 
 The following topics show how to enable telemetry:
 

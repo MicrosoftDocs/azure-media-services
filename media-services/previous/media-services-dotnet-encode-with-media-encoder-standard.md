@@ -20,20 +20,20 @@ ms.custom: devx-track-csharp
 
 # Encode an asset with Media Encoder Standard using .NET
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]  
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-Encoding jobs are one of the most common processing operations in Media Services. You create encoding jobs to convert media files from one encoding to another. When you encode, you can use the Media Services built-in Media Encoder. You can also use an encoder provided by a Media Services partner; third-party encoders are available through the Azure Marketplace. 
+Encoding jobs are one of the most common processing operations in Media Services. You create encoding jobs to convert media files from one encoding to another. When you encode, you can use the Media Services built-in Media Encoder. You can also use an encoder provided by a Media Services partner; third-party encoders are available through the Azure Marketplace.
 
 This article shows how to use .NET to encode your assets with Media Encoder Standard (MES). Media Encoder Standard is configured using one of the encoders presets described [here](./media-services-mes-presets-overview.md).
 
-It is recommended to always encode your source files into an adaptive bitrate MP4 set and then convert the set to the desired format using the [Dynamic Packaging](media-services-dynamic-packaging-overview.md). 
+Always encode your source files into an adaptive bitrate MP4 set and then convert the set to the desired format using the [Dynamic Packaging](media-services-dynamic-packaging-overview.md).
 
 If your output asset is storage encrypted, you must configure asset delivery policy. For more information, see [Configuring asset delivery policy](media-services-dotnet-configure-asset-delivery-policy.md).
 
 > [!NOTE]
 > MES produces an output file with a name that contains the first 32 characters of the input file name. The name is based on what is specified in the preset file. For example, "FileName": "{Basename}_{Index}{Extension}". {Basename} is replaced by the first 32 characters of the input file name.
-> 
-> 
+>
+>
 
 ### MES Formats
 [Formats and codecs](media-services-media-encoder-standard-formats.md)
@@ -59,8 +59,8 @@ The following code example uses Media Services .NET SDK to perform the following
 
 * Create an encoding job.
 * Get a reference to the Media Encoder Standard encoder.
-* Specify to use the [Adaptive Streaming](media-services-autogen-bitrate-ladder-with-mes.md) preset. 
-* Add a single encoding task to the job. 
+* Specify to use the [Adaptive Streaming](media-services-autogen-bitrate-ladder-with-mes.md) preset.
+* Add a single encoding task to the job.
 * Specify the input asset to be encoded.
 * Create an output asset that contains the encoded asset.
 * Add an event handler to check the job progress.
@@ -68,9 +68,9 @@ The following code example uses Media Services .NET SDK to perform the following
 
 #### Create and configure a Visual Studio project
 
-Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 
-#### Example 
+#### Example
 
 ```csharp
 using System;
@@ -124,7 +124,7 @@ namespace MediaEncoderStandardSample
         {
             // Declare a new job.
             IJob job = _context.Jobs.Create("Media Encoder Standard Job");
-            // Get a media processor reference, and pass to it the name of the 
+            // Get a media processor reference, and pass to it the name of the
             // processor to use for the specific task.
             IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
 
@@ -137,9 +137,9 @@ namespace MediaEncoderStandardSample
 
             // Specify the input asset to be encoded.
             task.InputAssets.Add(asset);
-            // Add an output asset to contain the results of the job. 
-            // This output is specified as AssetCreationOptions.None, which 
-            // means the output asset is not encrypted. 
+            // Add an output asset to contain the results of the job.
+            // This output is specified as AssetCreationOptions.None, which
+            // means the output asset is not encrypted.
             task.OutputAssets.AddNew("Output asset",
                 AssetCreationOptions.None);
 

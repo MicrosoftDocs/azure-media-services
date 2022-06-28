@@ -3,7 +3,7 @@ title: Live streaming encoders recommended by Media Services
 description: Learn about live streaming on-premises encoders recommended by Media Services
 author: johndeu
 ms.author: inhenkel
-ms.date: 3/16/2022
+ms.date: 06/28/2022
 ms.topic: conceptual
 ms.service: media-services
 ---
@@ -107,7 +107,7 @@ To play back content, both an audio and video stream must be present. Playback o
 - Stick to supported resolutions and frame rates for the type of Live Event you are broadcasting to (for example, 60fps is currently rejected.)
 - Ensure that there is key frame or GOP temporal alignment across video qualities.
 - Make sure there is a unique stream name for each video quality.
-- Use strict CBR encoding recommended for optimum adaptive bitrate performance.
+- Use strict CBR encoding for optimum adaptive bitrate performance.
 
 > [!IMPORTANT]
 > Watch the physical condition of the machine (CPU / Memory / etc) as uploading fragments to cloud involves CPU and IO operations.

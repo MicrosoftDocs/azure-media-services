@@ -4,7 +4,7 @@ description: This article gives an overview of dynamic packaging in Azure Media 
 author: myoungerman
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 06/28/2022
 ms.author: inhenkel
 ---
 
@@ -53,7 +53,7 @@ Your streaming client can specify the following HLS formats. We recommend using 
 
 |Protocol| Format string| Example|
 |---|---|---|
-|HLS CMAF (recommended)| format=m3u8-cmaf | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=m3u8-cmaf)`|
+|HLS CMAF | format=m3u8-cmaf | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=m3u8-cmaf)`|
 |HLS V4	|  format=m3u8-aapl | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=m3u8-aapl)`|
 |HLS V3	| format=m3u8-aapl-v3 | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=m3u8-aapl-v3)`|
 
@@ -89,7 +89,7 @@ Your streaming client can specify the following MPEG-DASH formats:
 
 |Protocol| Format string| Example|
 |---|---|---|
-|MPEG-DASH CMAF  (recommended)| format=mpd-time-cmaf | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=mpd-time-cmaf)` |
+|MPEG-DASH CMAF | format=mpd-time-cmaf | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=mpd-time-cmaf)` |
 |MPEG-DASH CSF (legacy)| format=mpd-time-csf | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=mpd-time-csf)` |
 
 ## Deliver Smooth Streaming manifests

@@ -40,7 +40,7 @@ Starting with the Media Services 2.10 release, when you create a channel, you ca
 > [!NOTE]
 > This article discusses attributes of channels that are not enabled to perform live encoding. For information about working with channels that are enabled to perform live encoding, see [Live streaming using Azure Media Services to create multi-bitrate streams](media-services-manage-live-encoder-enabled-channels.md).
 >
->For information about recommended on premises encoders, see [Recommended on premises encoders](media-services-recommended-encoders.md).
+>For information about on-premises encoders, see [Recommended on-premises encoders](media-services-recommended-encoders.md).
 
 The following diagram represents a live-streaming workflow that uses an on-premises live encoder to have multi-bitrate RTMP or fragmented MP4 (Smooth Streaming) streams as output.
 
@@ -65,7 +65,7 @@ The following steps describe tasks involved in creating common live-streaming ap
     When you use the Azure portal, creating a program also creates an asset.
 
     When you use the .NET SDK or REST, you need to create an asset and specify to use this asset when creating a program.
-6. Publish the asset that's associated with the program.   
+6. Publish the asset that's associated with the program.
 
 	>[!NOTE]
 	>When your Azure Media Services account is created, a **default** streaming endpoint is added to your account in the **Stopped** state. The streaming endpoint from which you want to stream content has to be in the **Running** state.
@@ -76,17 +76,17 @@ The following steps describe tasks involved in creating common live-streaming ap
 
 9. Stop the program whenever you want to stop streaming and archiving the event.
 
-10. Delete the program (and optionally delete the asset).     
+10. Delete the program (and optionally delete the asset).
 
 ## <a id="channel"></a>Description of a channel and its related components
 ### <a id="channel_input"></a>Channel input (ingest) configurations
 #### <a id="ingest_protocols"></a>Ingest streaming protocol
-Media Services supports ingesting live feeds by using multi-bitrate fragmented MP4 and multi-bitrate RTMP as streaming protocols.  
+Media Services supports ingesting live feeds by using multi-bitrate fragmented MP4 and multi-bitrate RTMP as streaming protocols.
 
 For information about RTMP live encoders, see [Azure Media Services RTMP Support and Live Encoders](https://go.microsoft.com/fwlink/?LinkId=532824).
 
 #### Ingest URLs (endpoints)
-A channel provides an input endpoint (ingest URL) that you specify in the live encoder, so the encoder can push streams to your channels.   
+A channel provides an input endpoint (ingest URL) that you specify in the live encoder, so the encoder can push streams to your channels.
 
 You can get the ingest URLs when you create the channel. For you to get these URLs, the channel does not have to be in the **Running** state. When you're ready to start pushing data to the channel, the channel must be in the **Running** state. After the channel starts ingesting data, you can preview your stream through the preview URL.
 
@@ -105,7 +105,7 @@ The following table shows how the segment duration is calculated:
 
 You can change the fragments-per-segment ratio by configuring the channel’s output and setting FragmentsPerSegment on ChannelOutputHls.
 
-You can also change the keyframe interval value by setting the KeyFrameInterval property on ChannelInput. If you explicitly set KeyFrameInterval, the HLS segment packaging ratio FragmentsPerSegment is calculated via the rules described previously.  
+You can also change the keyframe interval value by setting the KeyFrameInterval property on ChannelInput. If you explicitly set KeyFrameInterval, the HLS segment packaging ratio FragmentsPerSegment is calculated via the rules described previously.
 
 If you explicitly set both KeyFrameInterval and FragmentsPerSegment, Media Services uses the values that you set.
 
@@ -193,14 +193,14 @@ Here are other considerations related to working with channels and related compo
 * Every time you reconfigure the live encoder, call the **Reset** method on the channel. Before you reset the channel, you have to stop the program. After you reset the channel, restart the program.
 
   > [!NOTE]
-  > When you restart the program, you need to associate it with a new asset and create a new locator. 
-  
+  > When you restart the program, you need to associate it with a new asset and create a new locator.
+
 * A channel can be stopped only when it's in the **Running** state and all programs on the channel have been stopped.
 * By default, you can add only five channels to your Media Services account. For more information, see [Quotas and limitations](media-services-quotas-and-limitations.md).
 * You are billed only when your channel is in the **Running** state. For more information, see the [Channel states and billing](media-services-live-streaming-with-onprem-encoders.md#states) section.
 
 ## Related topics
-[Recommended on premises encoders](media-services-recommended-encoders.md)
+[Recommended on-premises encoders](media-services-recommended-encoders.md)
 
 [Azure Media Services fragmented MP4 lives ingest specification](media-services-fmp4-live-ingest-overview.md)
 

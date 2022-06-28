@@ -11,18 +11,18 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-In Azure Media Services, a  [Live Event](/rest/api/media/liveevents) can be set to either a *pass-through* (an on-premises live encoder sends a multiple bitrate stream) or *live encoding* (an on-premises live encoder sends a single bitrate stream). 
+In Azure Media Services, a  [Live Event](/rest/api/media/liveevents) can be set to either a *pass-through* (an on-premises live encoder sends a multiple bitrate stream) or *live encoding* (an on-premises live encoder sends a single bitrate stream).
 
 This articles compares features of the live event types.
 
-## Types comparison 
+## Types comparison
 
 The following table compares features of the Live Event types. The types are set during creation using [LiveEventEncodingType](/rest/api/media/liveevents/create#liveeventencodingtype):
 
 * **LiveEventEncodingType.PassthroughBasic**: An on-premises live encoder sends a multiple bitrate stream. The basic pass-through is limited to a peak ingress of 5Mbps, up to 8-hour DVR window, and live transcription is not supported.
 * **LiveEventEncodingType.PassthroughStandard**: An on-premises live encoder sends a multiple bitrate stream. The standard pass-through has higher ingest limits, up to 25-hour DVR window, and support for live transcriptions.
 * **LiveEventEncodingType.Standard** - An on-premises live encoder sends a single bitrate stream to the Live Event and Media Services creates multiple bitrate streams. If the contribution feed is of 720p or higher resolution, the **Default720p** preset will encode a set of 6 resolution/bitrate pairs (details follow later in the article).
-* **LiveEventEncodingType.Premium1080p** - An on-premises live encoder sends a single bitrate stream to the Live Event and Media Services creates multiple bitrate streams. The Default1080p preset specifies the output set of resolution/bitrate pairs (details follow later in the article). 
+* **LiveEventEncodingType.Premium1080p** - An on-premises live encoder sends a single bitrate stream to the Live Event and Media Services creates multiple bitrate streams. The Default1080p preset specifies the output set of resolution/bitrate pairs (details follow later in the article).
 
 | Feature                                                                           | Basic pass-through                                                                                                | Standard pass-through                                                                                             | Standard 720P or Premium 1080P Encoding Event                                                                                                                          |
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -108,11 +108,11 @@ The previous section describes the properties of the live encoder that can be co
 
 ### Group of pictures (GOP) duration
 
-The live encoder follows the [GOP](https://en.wikipedia.org/wiki/Group_of_pictures) structure of the contribution feed - which means the output layers will have the same GOP duration. Hence, it is recommended that you configure the on-premises encoder to produce a contribution feed that has fixed GOP duration (typically 2 seconds). This will ensure that the outgoing HLS and MPEG DASH streams from the service also has fixed GOP durations. Small variations in GOP durations are likely to be tolerated by most devices.
+The live encoder follows the [GOP](https://en.wikipedia.org/wiki/Group_of_pictures) structure of the contribution feed - which means the output layers will have the same GOP duration. Hence, you are encouraged to configure the on-premises encoder to produce a contribution feed that has fixed GOP duration (typically 2 seconds). This will ensure that the outgoing HLS and MPEG DASH streams from the service also has fixed GOP durations. Small variations in GOP durations are likely to be tolerated by most devices.
 
 ### Frame rate limits
 
-The live encoder also follows the durations of the individual video frames in the contribution feed - which means the output layers will have frames with the same durations. Hence, it is recommended that you configure the on-premises encoder to produce a contribution feed that has fixed frame rate (at most 30 frames/second). This will ensure that the outgoing HLS and MPEG DASH streams from the service also has fixed frame rates durations. Small variations in frame rates may be tolerated by most devices, but there is no guarantee that the live encoder will produce an output that will play correctly. Your on-premises live encoder should not be dropping frames (eg. under low battery conditions) or varying the frame rate in any way.
+The live encoder also follows the durations of the individual video frames in the contribution feed - which means the output layers will have frames with the same durations. Hence, you should configure the on-premises encoder to produce a contribution feed that has fixed frame rate (at most 30 frames/second). This will ensure that the outgoing HLS and MPEG DASH streams from the service also has fixed frame rates durations. Small variations in frame rates may be tolerated by most devices, but there is no guarantee that the live encoder will produce an output that will play correctly. Your on-premises live encoder should not be dropping frames (eg. under low battery conditions) or varying the frame rate in any way.
 
 If the source frame rate on input is >30 fps, the frame rate will be reduced to match half of the input frame rate.  For example 60 fps would be reduced to 30fps.  50 fps would be reduced to 25 fps, etc.
 

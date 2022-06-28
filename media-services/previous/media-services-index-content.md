@@ -22,16 +22,16 @@ ms.custom: devx-track-csharp
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 > [!IMPORTANT]
-> It is recommended that customers migrate from Indexer v1 and Indexer v2 to using the [Media Services v3 AudioAnalyzerPreset Basic mode](../latest/analyze-video-audio-files-concept.md). The [Azure Media Indexer](media-services-index-content.md) media processor and [Azure Media Indexer 2 Preview](./legacy-components.md) media processors are being retired. For the retirement dates, see this [legacy components](legacy-components.md) topic.
+> You should migrate from Indexer v1 and Indexer v2 to using the [Media Services v3 AudioAnalyzerPreset Basic mode](../latest/analyze-video-audio-files-concept.md). The [Azure Media Indexer](media-services-index-content.md) media processor and [Azure Media Indexer 2 Preview](./legacy-components.md) media processors are being retired. For the retirement dates, see this [legacy components](legacy-components.md) topic.
 
-Azure Media Indexer enables you to make content of your media files searchable and to generate a full-text transcript for closed captioning and keywords. You can process one media file or multiple media files in a batch.  
+Azure Media Indexer enables you to make content of your media files searchable and to generate a full-text transcript for closed captioning and keywords. You can process one media file or multiple media files in a batch.
 
 When indexing content, make sure to use media files that have clear speech (without background music, noise, effects, or microphone hiss). Some examples of appropriate content are: recorded meetings, lectures, or presentations. The following content might not be suitable for indexing: movies, TV shows, anything with mixed audio and sound effects, poorly recorded content with background noise (hiss).
 
 An indexing job can generate the following outputs:
 
 * Closed caption files in the following formats: **TTML**, and **WebVTT**.
-  
+
     Closed caption files include a tag called Recognizability, which scores an indexing job based on how recognizable the speech in the source video is.  You can use the value of Recognizability to screen output files for usability. A low score would mean poor indexing results due to audio quality.
 * Keyword file (XML).
 
@@ -79,7 +79,7 @@ If no configuration file is specified, the media file is indexed with all defaul
         // Add an output asset to contain the results of the job.
         task.OutputAssets.AddNew("My Indexing Output Asset", AssetCreationOptions.None);
 
-        // Use the following event handler to check job progress.  
+        // Use the following event handler to check job progress.
         job.StateChanged += new EventHandler<JobStateChangedEventArgs>(StateChanged);
 
         // Launch the job.
@@ -135,7 +135,7 @@ If no configuration file is specified, the media file is indexed with all defaul
                                                        mediaProcessorName));
 
         return processor;
-    }  
+    }
 ```
 
 <!-- __ -->
@@ -166,7 +166,7 @@ A manifest file with the ".lst" extension is created and uploading into the asse
             AssetCreationOptions.None);
 
         // Create a manifest file that contains all the asset file names and upload to storage.
-        string manifestFile = "input.lst";            
+        string manifestFile = "input.lst";
         File.WriteAllLines(manifestFile, asset.AssetFiles.Select(f => f.Name).ToArray());
         var assetFile = asset.AssetFiles.Create(Path.GetFileName(manifestFile));
         assetFile.Upload(manifestFile);
@@ -193,7 +193,7 @@ A manifest file with the ".lst" extension is created and uploading into the asse
         // Add an output asset to contain the results of the job.
         task.OutputAssets.AddNew("My Indexing Output Asset - Batch Mode", AssetCreationOptions.None);
 
-        // Use the following event handler to check job progress.  
+        // Use the following event handler to check job progress.
         job.StateChanged += new EventHandler<JobStateChangedEventArgs>(StateChanged);
 
         // Launch the job.
@@ -263,4 +263,4 @@ In the case of an error, Azure Media Indexer should report back one of the follo
 | other |Internal errors |Please contact support team. indexer@microsoft.com |
 
 ## <a id="supported_languages"></a>Supported Languages
-Currently, the English and Spanish languages are supported.  
+Currently, the English and Spanish languages are supported.
