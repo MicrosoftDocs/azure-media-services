@@ -746,7 +746,7 @@ You can take any of the MES presets documented in [this](media-services-mes-pres
 ## <a id="deinterlacing"></a>Disable auto de-interlacing
 Customers don't need to do anything if they like the interlace contents to be automatically de-interlaced. When the auto de-interlacing is on (default) the MES does the auto detection of interlaced frames and only de-interlaces frames marked as interlaced.
 
-You can turn the auto de-interlacing off. **This option is not encouraged**.
+You can turn the auto de-interlacing off. **Using this option is not encouraged**.
 
 ### JSON preset
 

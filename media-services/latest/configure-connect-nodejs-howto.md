@@ -74,7 +74,7 @@ For this example, you will use the following packages in the `package.json` file
 
 ### Sample *.env* file
 
-You will keep your authentication values in a *.env* file. Read [Access the API](./access-api-howto.md) to learn how to get and copy these values. You can get the values from the API Access page for your Media Services account in the portal, or use the CLI to get the values needed.
+You will keep your authentication values in a file named *.env*. (That's right, no file name, just the extension.) Read [Access the API](./access-api-howto.md) to learn how to get and copy these values. You can get the values from the API Access page for your Media Services account in the portal, or use the CLI to get the values needed.
 
 Copy and paste the values into a file named *.env*. The file should be stored at the root of your working repository.
 
