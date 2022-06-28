@@ -16,7 +16,7 @@ ms.date: 3/10/2021
 ms.author: inhenkel
 ms.custom: devx-track-csharp
 ---
-# Using Azure Media Packager to accomplish static packaging tasks  
+# Using Azure Media Packager to accomplish static packaging tasks
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
@@ -25,20 +25,15 @@ ms.custom: devx-track-csharp
 
 ## Overview
 
-In order to deliver digital video over the internet, you must compress the media. Digital video files are large and may be too large to deliver over the internet or for your customers’ devices to display properly. Encoding is the process of compressing video and audio so your customers can view your media. Once a video has been encoded, it can be placed into different file containers. The process of placing encoded media into a container is called packaging. For example, you can take an MP4 file and convert it into Smooth Streaming or HLS content by using the Azure Media Packager. 
+In order to deliver digital video over the internet, you must compress the media. Digital video files are large and may be too large to deliver over the internet or for your customers’ devices to display properly. Encoding is the process of compressing video and audio so your customers can view your media. Once a video has been encoded, it can be placed into different file containers. The process of placing encoded media into a container is called packaging. For example, you can take an MP4 file and convert it into Smooth Streaming or HLS content by using the Azure Media Packager.
 
 Media Services supports dynamic and static packaging. When using static packaging, you need to create a copy of your content in each format required by your customers. With dynamic packaging, all you need is to create an asset that contains a set of adaptive bitrate MP4 or Smooth Streaming files. Then, based on the specified format in the manifest or fragment request, the On-Demand Streaming server ensures that your users receive the stream in the protocol they have chosen. As a result, you only need to store and pay for the files in single storage format and Media Services service will build and serve the appropriate response based on requests from a client.
 
-> [!NOTE]
-> It is recommended to use [dynamic packaging](media-services-dynamic-packaging-overview.md).
-> 
-> 
-
-However, there are some scenarios that require static packaging: 
+However, there are some scenarios that require static packaging:
 
 * Validating adaptive bitrate MP4s encoded with external encoders (for example, using third-party encoders).
 
-You can also use static packaging to perform the following tasks: However it is recommended to use dynamic encryption.
+You can also use static packaging to perform the following tasks: However it is better to use dynamic encryption.
 
 * Using static encryption to protect your Smooth and MPEG DASH with PlayReady
 * Using static encryption to protect HLSv3 with AES-128
@@ -49,8 +44,8 @@ If you want to use a set of adaptive bitrate (multi-bitrate) MP4 files that were
 
 > [!NOTE]
 > Use the Media Encoder Standard to produce or the Media Services Packager to validate your content in order to avoid runtime issues. If the On-Demand Streaming server is not able to parse your source files at runtime, you receive HTTP 1.1 error “415 Unsupported Media Type.” Repeatedly causing the server to fail to parse your source files affects performance of the On-Demand Streaming server and may reduce the bandwidth available to serving other requests. Azure Media Services offers a Service Level Agreement (SLA) on its On-Demand Streaming services; however, this SLA cannot be honored if the server is misused in the fashion described above.
-> 
-> 
+>
+>
 
 This section shows how to process the validation task. It also shows how to see the status and the error message of the job that completes with JobStatus.Error.
 
@@ -61,7 +56,7 @@ To validate your MP4 files with Media Services Packager, you must create your ow
     <smil xmlns="https://www.w3.org/2001/SMIL20/Language">
       <head>
     <!-- Tells the server that these input files are MP4s – specific to Dynamic Packaging -->
-        <meta name="formats" content="mp4" /> 
+        <meta name="formats" content="mp4" />
       </head>
       <body>
         <switch>
@@ -135,7 +130,7 @@ The following code sample uses Azure Media Services .NET SDK Extensions.  Make s
 
                 // Ingest a set of multibitrate MP4s.
                 //
-                // Use the SDK extension method to create a new asset by 
+                // Use the SDK extension method to create a new asset by
                 // uploading files from a local directory.
                 IAsset multibitrateMP4sAsset = _context.Assets.CreateFromFolder(
                     _multibitrateMP4s,
@@ -167,14 +162,14 @@ The following code sample uses Azure Media Services .NET SDK Extensions.  Make s
 
             public static IAsset ValidateMultibitrateMP4s(IAsset multibitrateMP4sAsset)
             {
-                // Set .ism as a primary file 
+                // Set .ism as a primary file
                 // in a multibitrate MP4 set.
                 SetISMFileAsPrimary(multibitrateMP4sAsset);
 
                 // Create a new job.
                 IJob job = _context.Jobs.Create("MP4 validation and conversion to Smooth Stream job.");
 
-                // Read the task configuration data into a string. 
+                // Read the task configuration data into a string.
                 string configMp4Validation = File.ReadAllText(Path.Combine(
                         _configurationXMLFiles,
                         "MediaPackager_ValidateTask.xml"));
@@ -183,7 +178,7 @@ The following code sample uses Azure Media Services .NET SDK Extensions.  Make s
                 IMediaProcessor processor = _context.MediaProcessors.GetLatestMediaProcessorByName(
                     MediaProcessorNames.WindowsAzureMediaPackager);
 
-                // Create a task with the conversion details, using the configuration data. 
+                // Create a task with the conversion details, using the configuration data.
                 ITask task = job.Tasks.AddNew("Mp4 Validation Task",
                     processor,
                     configMp4Validation,
@@ -192,9 +187,9 @@ The following code sample uses Azure Media Services .NET SDK Extensions.  Make s
                 // Specify the input asset to be validated.
                 task.InputAssets.Add(multibitrateMP4sAsset);
 
-                // Add an output asset to contain the results of the job. 
-                // This output is specified as AssetCreationOptions.None, which 
-                // means the output asset is in the clear (unencrypted). 
+                // Add an output asset to contain the results of the job.
+                // This output is specified as AssetCreationOptions.None, which
+                // means the output asset is in the clear (unencrypted).
                 task.OutputAssets.AddNew("Validated output asset",
                         AssetCreationOptions.None);
 
@@ -246,7 +241,7 @@ The following code sample uses Azure Media Services .NET SDK Extensions.  Make s
                     Where(f => f.Name.EndsWith(".ism", StringComparison.OrdinalIgnoreCase));
 
                 // The following code assigns the first .ism file as the primary file in the asset.
-                // An asset should have one .ism file.  
+                // An asset should have one .ism file.
                 ismAssetFiles.First().IsPrimary = true;
                 ismAssetFiles.First().Update();
             }
@@ -255,20 +250,20 @@ The following code sample uses Azure Media Services .NET SDK Extensions.  Make s
 ```
 
 ## Using Static Encryption to Protect your Smooth and MPEG DASH with PlayReady
-If you want to protect your content with PlayReady, you have a choice of using [dynamic encryption](media-services-protect-with-playready-widevine.md) (the recommended option) or static encryption (as described in this section).
+If you want to protect your content with PlayReady, you have a choice of using [dynamic encryption](media-services-protect-with-playready-widevine.md) or static encryption (as described in this section).
 
 The example in this section encodes a mezzanine file (in this case MP4) into adaptive bitrate MP4 files. It then packages MP4s into Smooth Streaming and then encrypts Smooth Streaming with PlayReady. As a result you are able to stream Smooth Streaming or MPEG DASH.
 
 Media Services now provides a service for delivering Microsoft PlayReady licenses. The example in this article shows how to configure the Media Services PlayReady license delivery service (see the ConfigureLicenseDeliveryService method defined in the code below). For more information about Media Services PlayReady license delivery service, see [Using PlayReady Dynamic Encryption and License Delivery Service](media-services-protect-with-playready-widevine.md).
 
 > [!NOTE]
-> To deliver MPEG DASH encrypted with PlayReady, make sure to use CENC options by setting the useSencBox and adjustSubSamples properties (described in the [Task Preset for Azure Media Encryptor](/previous-versions/azure/reference/hh973610(v=azure.100)) article) to true.  
-> 
-> 
+> To deliver MPEG DASH encrypted with PlayReady, make sure to use CENC options by setting the useSencBox and adjustSubSamples properties (described in the [Task Preset for Azure Media Encryptor](/previous-versions/azure/reference/hh973610(v=azure.100)) article) to true.
+>
+>
 
 Make sure to update the following code to point to the folder where your input MP4 file is located.
 
-And also to where your MediaPackager_MP4ToSmooth.xml and MediaEncryptor_PlayReadyProtection.xml files are located. MediaPackager_MP4ToSmooth.xml is defined in [Task Preset for Azure Media Packager](/previous-versions/azure/reference/hh973635(v=azure.100)) and MediaEncryptor_PlayReadyProtection.xml is defined in the [Task Preset for Azure Media Encryptor](/previous-versions/azure/reference/hh973610(v=azure.100)) article. 
+And also to where your MediaPackager_MP4ToSmooth.xml and MediaEncryptor_PlayReadyProtection.xml files are located. MediaPackager_MP4ToSmooth.xml is defined in [Task Preset for Azure Media Packager](/previous-versions/azure/reference/hh973635(v=azure.100)) and MediaEncryptor_PlayReadyProtection.xml is defined in the [Task Preset for Azure Media Encryptor](/previous-versions/azure/reference/hh973610(v=azure.100)) article.
 
 The example defines the UpdatePlayReadyConfigurationXMLFile method that you can use to dynamically update the MediaEncryptor_PlayReadyProtection.xml file. If you have the key seed available, you can use the CommonEncryption.GeneratePlayReadyContentKey method to generate the content key based on the keySeedValue and KeyId values.
 
@@ -299,7 +294,7 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
 
             // XML Configuration files path.
             private static readonly string _configurationXMLFiles = @"../..\Configurations\";
-          
+
             // Read values from the App.config file.
             private static readonly string _AADTenantDomain =
                 ConfigurationManager.AppSettings["AMSAADTenantDomain"];
@@ -330,24 +325,24 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
                 IAsset clearSmoothStreamAsset =
                     ConvertMP4ToMultibitrateMP4sToSmoothStreaming(asset);
 
-                // Create a common encryption content key that is used 
+                // Create a common encryption content key that is used
                 // a) to set the key values in the MediaEncryptor_PlayReadyProtection.xml file
                 //    that is used for encryption.
-                // b) to configure the license delivery service and 
+                // b) to configure the license delivery service and
                 //
                 Guid keyId;
                 byte[] contentKey;
 
                 IContentKey key = CreateCommonEncryptionKey(out keyId, out contentKey);
 
-                // The content key authorization policy must be configured by you 
+                // The content key authorization policy must be configured by you
                 // and met by the client in order for the PlayReady license
-                // to be delivered to the client. 
+                // to be delivered to the client.
                 // In this example the Media Services PlayReady license delivery service is used.
                 ConfigureLicenseDeliveryService(key);
 
                 // Get the Media Services PlayReady license delivery URL.
-                // This URL will be assigned to the licenseAcquisitionUrl property 
+                // This URL will be assigned to the licenseAcquisitionUrl property
                 // of the MediaEncryptor_PlayReadyProtection.xml file.
                 Uri acquisitionUrl = key.GetKeyDeliveryUrl(ContentKeyDeliveryType.PlayReadyLicense);
 
@@ -359,13 +354,13 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
                 IAsset outputAsset = CreateSmoothStreamEncryptedWithPlayReady(clearSmoothStreamAsset);
 
 
-                // You can use the http://smf.cloudapp.net/healthmonitor player 
+                // You can use the http://smf.cloudapp.net/healthmonitor player
                 // to test the smoothStreamURL URL.
                 string smoothStreamURL = outputAsset.GetSmoothStreamingUri().ToString();
                 Console.WriteLine("Smooth Streaming URL:");
                 Console.WriteLine(smoothStreamURL);
 
-                // You can use the http://dashif.org/reference/players/javascript/ player 
+                // You can use the http://dashif.org/reference/players/javascript/ player
                 // to test the dashURL URL.
                 string dashURL = outputAsset.GetMpegDashUri().ToString();
                 Console.WriteLine("MPEG DASH URL:");
@@ -373,7 +368,7 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
             }
 
             /// <summary>
-            /// Creates a job with 2 tasks: 
+            /// Creates a job with 2 tasks:
             /// 1 task - encodes a single MP4 to multibitrate MP4s,
             /// 2 task - packages MP4s to Smooth Streaming.
             /// </summary>
@@ -413,7 +408,7 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
                 // Create a job.
                 IJob job = _context.Jobs.Create("Encrypt to PlayReady Smooth Streaming.");
 
-                // Add task 1 - Encrypt Smooth Streaming with PlayReady 
+                // Add task 1 - Encrypt Smooth Streaming with PlayReady
                 IAsset encryptedSmoothAsset =
                     EncryptSmoothStreamWithPlayReadyTask(job, clearSmoothStreamAsset);
 
@@ -438,7 +433,7 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
             }
 
             /// <summary>
-            /// Create a common encryption content key that is used 
+            /// Create a common encryption content key that is used
             /// to set the key values in the MediaEncryptor_PlayReadyProtection.xml file
             /// that is used for encryption.
             /// </summary>
@@ -504,20 +499,20 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
             /// <param name="fileDir">The location of the files.</param>
             /// <param name="assetCreationOptions">
             ///  You can specify the following encryption options for the AssetCreationOptions.
-            ///      None:  no encryption.  
-            ///      StorageEncrypted: storage encryption. Encrypts a clear input file 
-            ///        before it is uploaded to Azure storage. 
-            ///      CommonEncryptionProtected: for Common Encryption Protected (CENC) files. 
-            ///        For example, a set of files that are already PlayReady encrypted. 
+            ///      None:  no encryption.
+            ///      StorageEncrypted: storage encryption. Encrypts a clear input file
+            ///        before it is uploaded to Azure storage.
+            ///      CommonEncryptionProtected: for Common Encryption Protected (CENC) files.
+            ///        For example, a set of files that are already PlayReady encrypted.
             ///      EnvelopeEncryptionProtected: for HLS with AES encryption files.
-            ///        NOTE: The files must have been encoded and encrypted by Transform Manager. 
+            ///        NOTE: The files must have been encoded and encrypted by Transform Manager.
             ///     </param>
             /// <returns>Returns an asset that contains a single file.</returns>
             /// </summary>
             /// <returns></returns>
             private static IAsset IngestSingleMP4File(string fileDir, AssetCreationOptions assetCreationOptions)
             {
-                // Use the SDK extension method to create a new asset by 
+                // Use the SDK extension method to create a new asset by
                 // uploading a mezzanine file from a local path.
                 IAsset asset = _context.Assets.CreateFromFile(
                     fileDir,
@@ -531,7 +526,7 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
             }
 
             /// <summary>
-            /// Creates a task to encode to Adaptive Bitrate. 
+            /// Creates a task to encode to Adaptive Bitrate.
             /// Adds the new task to a job.
             /// </summary>
             /// <param name="job">The job to which to add the new task.</param>
@@ -551,8 +546,8 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
                 // Specify the input Asset
                 adaptiveBitrateTask.InputAssets.Add(asset);
 
-                // Add an output asset to contain the results of the job. 
-                // This output is specified as AssetCreationOptions.None, which 
+                // Add an output asset to contain the results of the job.
+                // This output is specified as AssetCreationOptions.None, which
                 // means the output asset is in the clear (unencrypted).
                 IAsset abrAsset = adaptiveBitrateTask.OutputAssets.AddNew("Multibitrate MP4s",
                                         AssetCreationOptions.None);
@@ -587,8 +582,8 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
                 // Specify the input Asset, which is the output Asset from the first task
                 smoothStreamingTask.InputAssets.Add(asset);
 
-                // Add an output asset to contain the results of the job. 
-                // This output is specified as AssetCreationOptions.None, which 
+                // Add an output asset to contain the results of the job.
+                // This output is specified as AssetCreationOptions.None, which
                 // means the output asset is in the clear (unencrypted).
                 IAsset smoothOutputAsset =
                     smoothStreamingTask.OutputAssets.AddNew("Clear Smooth Stream",
@@ -600,8 +595,8 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
 
             /// <summary>
             /// Creates a task to encrypt Smooth Streaming with PlayReady.
-            /// Note: To deliver DASH, make sure to set the useSencBox and adjustSubSamples 
-            /// configuration properties to true. 
+            /// Note: To deliver DASH, make sure to set the useSencBox and adjustSubSamples
+            /// configuration properties to true.
             /// In this example, MediaEncryptor_PlayReadyProtection.xml contains configuration.
             /// </summary>
             /// <param name="job">The job to which to add the new task.</param>
@@ -616,8 +611,8 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
                 // Read the configuration XML.
                 //
                 // Note that the configuration defined in MediaEncryptor_PlayReadyProtection.xml
-                // is using keySeedValue. It is recommended that you do this only for testing 
-                // and not in production. For more information, see 
+                // is using keySeedValue. It is recommended that you do this only for testing
+                // and not in production. For more information, see
                 // https://msdn.microsoft.com/library/windowsazure/dn189154.aspx.
                 //
                 string configPlayReady = File.ReadAllText(Path.Combine(_configurationXMLFiles,
@@ -630,7 +625,7 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
 
                 playreadyTask.InputAssets.Add(asset);
 
-                // Add an output asset to contain the results of the job. 
+                // Add an output asset to contain the results of the job.
                 // This output is specified as AssetCreationOptions.CommonEncryptionProtected.
                 IAsset playreadyAsset = playreadyTask.OutputAssets.AddNew(
                                                 "PlayReady Smooth Streaming",
@@ -640,20 +635,20 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
             }
 
             /// <summary>
-            /// Configures authorization policy for the content key. 
+            /// Configures authorization policy for the content key.
             /// </summary>
             /// <param name="contentKey">The content key.</param>
             static public void ConfigureLicenseDeliveryService(IContentKey contentKey)
             {
-                // Create ContentKeyAuthorizationPolicy with Open restrictions 
-                // and create authorization policy          
+                // Create ContentKeyAuthorizationPolicy with Open restrictions
+                // and create authorization policy
 
                 List<ContentKeyAuthorizationPolicyRestriction> restrictions = new List<ContentKeyAuthorizationPolicyRestriction>
                 {
-                    new ContentKeyAuthorizationPolicyRestriction 
-                    { 
-                        Name = "Open", 
-                        KeyRestrictionType = (int)ContentKeyRestrictionType.Open, 
+                    new ContentKeyAuthorizationPolicyRestriction
+                    {
+                        Name = "Open",
+                        KeyRestrictionType = (int)ContentKeyRestrictionType.Open,
                         Requirements = null
                     }
                 };
@@ -708,14 +703,14 @@ The example defines the UpdatePlayReadyConfigurationXMLFile method that you can 
 ```
 
 ## Using Static Encryption to Protect HLSv3 with AES-128
-If you want to encrypt your HLS with AES-128, you have a choice of using dynamic encryption (the recommended option) or static encryption (as shown in this section). If you decide to use dynamic encryption, see [Using AES-128 Dynamic Encryption and Key Delivery Service](media-services-playready-license-template-overview.md).
+If you want to encrypt your HLS with AES-128, you have a choice of using dynamic encryption or static encryption (as shown in this section). If you decide to use dynamic encryption, see [Using AES-128 Dynamic Encryption and Key Delivery Service](media-services-playready-license-template-overview.md).
 
 > [!NOTE]
 > In order to convert your content into HLS, you must first convert/encode your content into Smooth Streaming.
 > Also, for the HLS to get encrypted with AES make sure to set the following properties in your MediaPackager_SmoothToHLS.xml file: set the encrypt property to true, set the key value, and the keyuri value to point to your authentication\authorization server.
 > Media Services creates a key file and places it in the asset container. You should copy the /asset-containerguid/*.key file to your server (or create your own key file) and then delete the *.key file from the asset container.
-> 
-> 
+>
+>
 
 The example in this section encodes a mezzanine file (in this case MP4) into multibitrate MP4 files and then packages MP4s into Smooth Streaming. It then packages Smooth Streaming into HTTP Live Streaming (HLS) encrypted with Advanced Encryption Standard (AES) 128-bit stream encryption. Make sure to update the following code to point to the folder where your input MP4 file is located. And also to where your MediaPackager_MP4ToSmooth.xml and MediaPackager_SmoothToHLS.xml configuration files are located. You can find the definition for these files in the [Task Preset for Azure Media Packager](/previous-versions/azure/reference/hh973635(v=azure.100)) article.
 
@@ -735,8 +730,8 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
     {
         class Program
         {
-            // Paths to support files (within the above base path). You can use 
-            // the provided sample media files from the "SupportFiles" folder, or 
+            // Paths to support files (within the above base path). You can use
+            // the provided sample media files from the "SupportFiles" folder, or
             // provide paths to your own media files below to run these samples.
 
             private static readonly string _mediaFiles =
@@ -782,7 +777,7 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
                 IAsset HLSEncryptedWithAESAsset = CreateHLSEncryptedWithAES(clearSmoothStreamAsset);
 
                 // You can use the following player to test the HLS with AES stream.
-                // https://apps.microsoft.com/windows/app/3ivx-hls-player/f79ce7d0-2993-4658-bc4e-83dc182a0614 
+                // https://apps.microsoft.com/windows/app/3ivx-hls-player/f79ce7d0-2993-4658-bc4e-83dc182a0614
                 string hlsWithAESURL = HLSEncryptedWithAESAsset.GetHlsUri().ToString();
                 Console.WriteLine("HLS with AES URL:");
                 Console.WriteLine(hlsWithAESURL);
@@ -790,7 +785,7 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
 
 
             /// <summary>
-            /// Creates a job with 2 tasks: 
+            /// Creates a job with 2 tasks:
             /// 1 task - encodes a single MP4 to multibitrate MP4s,
             /// 2 task - packages MP4s to Smooth Streaming.
             /// </summary>
@@ -857,20 +852,20 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
             /// <param name="fileDir">The location of the files.</param>
             /// <param name="assetCreationOptions">
             ///  You can specify the following encryption options for the AssetCreationOptions.
-            ///      None:  no encryption.  
-            ///      StorageEncrypted: storage encryption. Encrypts a clear input file 
-            ///        before it is uploaded to Azure storage. 
-            ///      CommonEncryptionProtected: for Common Encryption Protected (CENC) files. 
-            ///        For example, a set of files that are already PlayReady encrypted. 
+            ///      None:  no encryption.
+            ///      StorageEncrypted: storage encryption. Encrypts a clear input file
+            ///        before it is uploaded to Azure storage.
+            ///      CommonEncryptionProtected: for Common Encryption Protected (CENC) files.
+            ///        For example, a set of files that are already PlayReady encrypted.
             ///      EnvelopeEncryptionProtected: for HLS with AES encryption files.
-            ///        NOTE: The files must have been encoded and encrypted by Transform Manager. 
+            ///        NOTE: The files must have been encoded and encrypted by Transform Manager.
             ///     </param>
             /// <returns>Returns an asset that contains a single file.</returns>
             /// </summary>
             /// <returns></returns>
             private static IAsset IngestSingleMP4File(string fileDir, AssetCreationOptions assetCreationOptions)
             {
-                // Use the SDK extension method to create a new asset by 
+                // Use the SDK extension method to create a new asset by
                 // uploading a mezzanine file from a local path.
                 IAsset asset = _context.Assets.CreateFromFile(
                     fileDir,
@@ -884,7 +879,7 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
             }
 
             /// <summary>
-            /// Creates a task to encode to Adaptive Bitrate. 
+            /// Creates a task to encode to Adaptive Bitrate.
             /// Adds the new task to a job.
             /// </summary>
             /// <param name="job">The job to which to add the new task.</param>
@@ -904,10 +899,10 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
                 // Specify the input Asset
                 adaptiveBitrateTask.InputAssets.Add(asset);
 
-                // Add an output asset to contain the results of the job. 
-                // This output is specified as AssetCreationOptions.None, which 
+                // Add an output asset to contain the results of the job.
+                // This output is specified as AssetCreationOptions.None, which
                 // means the output asset is in the clear (unencrypted).
-                IAsset abrAsset = adaptiveBitrateTask.OutputAssets.AddNew("Multibitrate MP4s", 
+                IAsset abrAsset = adaptiveBitrateTask.OutputAssets.AddNew("Multibitrate MP4s",
                                         AssetCreationOptions.None);
 
                 return abrAsset;
@@ -928,7 +923,7 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
 
                 // Azure Media Packager does not accept string presets, so load xml configuration
                 string smoothConfig = File.ReadAllText(Path.Combine(
-                            _configurationXMLFiles, 
+                            _configurationXMLFiles,
                             "MediaPackager_MP4toSmooth.xml"));
 
                 // Create a new Task to convert adaptive bitrate to Smooth Streaming.
@@ -940,11 +935,11 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
                 // Specify the input Asset, which is the output Asset from the first task
                 smoothStreamingTask.InputAssets.Add(asset);
 
-                // Add an output asset to contain the results of the job. 
-                // This output is specified as AssetCreationOptions.None, which 
+                // Add an output asset to contain the results of the job.
+                // This output is specified as AssetCreationOptions.None, which
                 // means the output asset is in the clear (unencrypted).
-                IAsset smoothOutputAsset = 
-                    smoothStreamingTask.OutputAssets.AddNew("Clear Smooth Streaming", 
+                IAsset smoothOutputAsset =
+                    smoothStreamingTask.OutputAssets.AddNew("Clear Smooth Streaming",
                         AssetCreationOptions.None);
 
                 return smoothOutputAsset;
@@ -962,7 +957,7 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
                 IMediaProcessor processor = _context.MediaProcessors.GetLatestMediaProcessorByName(
                     MediaProcessorNames.WindowsAzureMediaPackager);
 
-                // Read the configuration data into a string. 
+                // Read the configuration data into a string.
                 // For the HLS to get encrypted with AES make sure to set the
                 // encrypt configuration property to true.
                 //
@@ -982,8 +977,8 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
                 // Specify the input asset to be encoded.
                 task.InputAssets.Add(smoothStreamAsset);
 
-                // Add an output asset to contain the results of the job. 
-                IAsset outputAsset = 
+                // Add an output asset to contain the results of the job.
+                IAsset outputAsset =
                     task.OutputAssets.AddNew("HLS asset", AssetCreationOptions.None);
 
 
@@ -994,16 +989,16 @@ The example in this section encodes a mezzanine file (in this case MP4) into mul
 ```
 
 ## Using Static Encryption to Protect HLSv3 with PlayReady
-If you want to protect your content with PlayReady, you have a choice of using [dynamic encryption](media-services-protect-with-playready-widevine.md) (the recommended option) or static encryption (as described in this section).
+If you want to protect your content with PlayReady, you have a choice of using [dynamic encryption](media-services-protect-with-playready-widevine.md) or static encryption (as described in this section).
 
 > [!NOTE]
 > In order to protect your content using PlayReady you must first convert/encode your content into a Smooth Streaming format.
-> 
-> 
+>
+>
 
 The example in this section encodes a mezzanine file (in this case MP4) into multibitrate MP4 files. It then packages MP4s into Smooth Streaming and encrypts Smooth Streaming with PlayReady. To produce HTTP Live Streaming (HLS) encrypted with PlayReady, the PlayReady Smooth Streaming asset needs to be packaged into HLS. This article demonstrates how to perform all these steps.
 
-Media Services now provides a service for delivering Microsoft PlayReady licenses. The example in this article shows how to configure the Media Services PlayReady license delivery service (see the **ConfigureLicenseDeliveryService** method defined in the code below). 
+Media Services now provides a service for delivering Microsoft PlayReady licenses. The example in this article shows how to configure the Media Services PlayReady license delivery service (see the **ConfigureLicenseDeliveryService** method defined in the code below).
 
 Make sure to update the following code to point to the folder where your input MP4 file is located. And also to where your MediaPackager_MP4ToSmooth.xml, MediaPackager_SmoothToHLS.xml, and MediaEncryptor_PlayReadyProtection.xml files are located. MediaPackager_MP4ToSmooth.xml and MediaPackager_SmoothToHLS.xml are defined in [Task Preset for Azure Media Packager](/previous-versions/azure/reference/hh973635(v=azure.100)) and MediaEncryptor_PlayReadyProtection.xml is defined in the [Task Preset for Azure Media Encryptor](/previous-versions/azure/reference/hh973610(v=azure.100)) article.
 
@@ -1025,8 +1020,8 @@ Make sure to update the following code to point to the folder where your input M
     {
         class Program
         {
-            // Paths to support files (within the above base path). You can use 
-            // the provided sample media files from the "SupportFiles" folder, or 
+            // Paths to support files (within the above base path). You can use
+            // the provided sample media files from the "SupportFiles" folder, or
             // provide paths to your own media files below to run these samples.
 
             private static readonly string _mediaFiles =
@@ -1067,24 +1062,24 @@ Make sure to update the following code to point to the folder where your input M
                 // Then, package a set of MP4s to clear Smooth Streaming.
                 IAsset clearSmoothStreamAsset = ConvertMP4ToMultibitrateMP4sToSmoothStreaming(asset);
 
-                // Create a common encryption content key that is used 
+                // Create a common encryption content key that is used
                 // a) to set the key values in the MediaEncryptor_PlayReadyProtection.xml file
                 //    that is used for encryption.
-                // b) to configure the license delivery service and 
+                // b) to configure the license delivery service and
                 //
                 Guid keyId;
                 byte[] contentKey;
 
                 IContentKey key = CreateCommonEncryptionKey(out keyId, out contentKey);
 
-                // The content key authorization policy must be configured by you 
+                // The content key authorization policy must be configured by you
                 // and met by the client in order for the PlayReady license
-                // to be delivered to the client. 
+                // to be delivered to the client.
                 // In this example the Media Services PlayReady license delivery service is used.
                 ConfigureLicenseDeliveryService(key);
 
                 // Get the Media Services PlayReady license delivery URL.
-                // This URL will be assigned to the licenseAcquisitionUrl property 
+                // This URL will be assigned to the licenseAcquisitionUrl property
                 // of the MediaEncryptor_PlayReadyProtection.xml file.
                 Uri acquisitionUrl = key.GetKeyDeliveryUrl(ContentKeyDeliveryType.PlayReadyLicense);
 
@@ -1100,7 +1095,7 @@ Make sure to update the following code to point to the folder where your input M
             }
 
             /// <summary>
-            /// Creates a job with 2 tasks: 
+            /// Creates a job with 2 tasks:
             /// 1 task - encodes a single MP4 to multibitrate MP4s,
             /// 2 task - packages MP4s to Smooth Streaming.
             /// </summary>
@@ -1130,7 +1125,7 @@ Make sure to update the following code to point to the folder where your input M
             }
 
             /// <summary>
-            /// Create a common encryption content key that is used 
+            /// Create a common encryption content key that is used
             /// to set the key values in the MediaEncryptor_PlayReadyProtection.xml file
             /// that is used for encryption.
             /// </summary>
@@ -1200,7 +1195,7 @@ Make sure to update the following code to point to the folder where your input M
             {
                 IJob job = _context.Jobs.Create("Encrypt to HLS with PlayReady.");
 
-                // Add task 1 - Encrypt Smooth Streaming with PlayReady 
+                // Add task 1 - Encrypt Smooth Streaming with PlayReady
                 IAsset encryptedSmoothAsset =
                     EncryptSmoothStreamWithPlayReadyTask(job, clearSmoothStreamAsset);
 
@@ -1234,20 +1229,20 @@ Make sure to update the following code to point to the folder where your input M
             /// <param name="fileDir">The location of the files.</param>
             /// <param name="assetCreationOptions">
             ///  You can specify the following encryption options for the AssetCreationOptions.
-            ///      None:  no encryption.  
-            ///      StorageEncrypted: storage encryption. Encrypts a clear input file 
-            ///        before it is uploaded to Azure storage. 
-            ///      CommonEncryptionProtected: for Common Encryption Protected (CENC) files. 
-            ///        For example, a set of files that are already PlayReady encrypted. 
+            ///      None:  no encryption.
+            ///      StorageEncrypted: storage encryption. Encrypts a clear input file
+            ///        before it is uploaded to Azure storage.
+            ///      CommonEncryptionProtected: for Common Encryption Protected (CENC) files.
+            ///        For example, a set of files that are already PlayReady encrypted.
             ///      EnvelopeEncryptionProtected: for HLS with AES encryption files.
-            ///        NOTE: The files must have been encoded and encrypted by Transform Manager. 
+            ///        NOTE: The files must have been encoded and encrypted by Transform Manager.
             ///     </param>
             /// <returns>Returns an asset that contains a single file.</returns>
             /// </summary>
             /// <returns></returns>
             private static IAsset IngestSingleMP4File(string fileDir, AssetCreationOptions assetCreationOptions)
             {
-                // Use the SDK extension method to create a new asset by 
+                // Use the SDK extension method to create a new asset by
                 // uploading a mezzanine file from a local path.
                 IAsset asset = _context.Assets.CreateFromFile(
                     fileDir,
@@ -1262,7 +1257,7 @@ Make sure to update the following code to point to the folder where your input M
 
             }
             /// <summary>
-            /// Creates a task to encode to Adaptive Bitrate. 
+            /// Creates a task to encode to Adaptive Bitrate.
             /// Adds the new task to a job.
             /// </summary>
             /// <param name="job">The job to which to add the new task.</param>
@@ -1282,8 +1277,8 @@ Make sure to update the following code to point to the folder where your input M
                 // Specify the input Asset
                 adaptiveBitrateTask.InputAssets.Add(asset);
 
-                // Add an output asset to contain the results of the job. 
-                // This output is specified as AssetCreationOptions.None, which 
+                // Add an output asset to contain the results of the job.
+                // This output is specified as AssetCreationOptions.None, which
                 // means the output asset is in the clear (unencrypted).
                 IAsset abrAsset = adaptiveBitrateTask.OutputAssets.AddNew("Multibitrate MP4s",
                                         AssetCreationOptions.None);
@@ -1318,8 +1313,8 @@ Make sure to update the following code to point to the folder where your input M
                 // Specify the input Asset, which is the output Asset from the first task
                 smoothStreamingTask.InputAssets.Add(asset);
 
-                // Add an output asset to contain the results of the job. 
-                // This output is specified as AssetCreationOptions.None, which 
+                // Add an output asset to contain the results of the job.
+                // This output is specified as AssetCreationOptions.None, which
                 // means the output asset is in the clear (unencrypted).
                 IAsset smoothOutputAsset =
                     smoothStreamingTask.OutputAssets.AddNew("Clear Smooth Streaming",
@@ -1341,7 +1336,7 @@ Make sure to update the following code to point to the folder where your input M
                 IMediaProcessor processor = _context.MediaProcessors.GetLatestMediaProcessorByName(
                     MediaProcessorNames.WindowsAzureMediaPackager);
 
-                // Read the configuration data into a string. 
+                // Read the configuration data into a string.
                 //
                 string configuration = File.ReadAllText(
                             Path.Combine(_configurationXMLFiles,
@@ -1356,7 +1351,7 @@ Make sure to update the following code to point to the folder where your input M
                 // Specify the input asset to be encoded.
                 task.InputAssets.Add(smoothStreamAsset);
 
-                // Add an output asset to contain the results of the job. 
+                // Add an output asset to contain the results of the job.
                 IAsset outputAsset =
                     task.OutputAssets.AddNew("HLS asset", AssetCreationOptions.None);
 
@@ -1366,7 +1361,7 @@ Make sure to update the following code to point to the folder where your input M
 
             /// <summary>
             /// Creates a task to encrypt Smooth Streaming with PlayReady.
-            /// Note: Do deliver DASH, make sure to set the useSencBox and adjustSubSamples 
+            /// Note: Do deliver DASH, make sure to set the useSencBox and adjustSubSamples
             /// configuration properties to true.
             /// </summary>
             /// <param name="job">The job to which to add the new task.</param>
@@ -1381,8 +1376,8 @@ Make sure to update the following code to point to the folder where your input M
                 // Read the configuration XML.
                 //
                 // Note that the configuration defined in MediaEncryptor_PlayReadyProtection.xml
-                // is using keySeedValue. It is recommended that you do this only for testing 
-                // and not in production. For more information, see 
+                // is using keySeedValue. It is recommended that you do this only for testing
+                // and not in production. For more information, see
                 // https://msdn.microsoft.com/library/windowsazure/dn189154.aspx.
                 //
                 string configPlayReady = File.ReadAllText(Path.Combine(_configurationXMLFiles,
@@ -1395,7 +1390,7 @@ Make sure to update the following code to point to the folder where your input M
 
                 playreadyTask.InputAssets.Add(asset);
 
-                // Add an output asset to contain the results of the job. 
+                // Add an output asset to contain the results of the job.
                 // This output is specified as AssetCreationOptions.CommonEncryptionProtected.
                 IAsset playreadyAsset = playreadyTask.OutputAssets.AddNew(
                                                 "PlayReady Smooth Streaming",
@@ -1407,20 +1402,20 @@ Make sure to update the following code to point to the folder where your input M
 
 
             /// <summary>
-            /// Configures authorization policy for the content key. 
+            /// Configures authorization policy for the content key.
             /// </summary>
             /// <param name="contentKey">The content key.</param>
             static public void ConfigureLicenseDeliveryService(IContentKey contentKey)
             {
-                // Create ContentKeyAuthorizationPolicy with Open restrictions 
-                // and create authorization policy          
+                // Create ContentKeyAuthorizationPolicy with Open restrictions
+                // and create authorization policy
 
                 List<ContentKeyAuthorizationPolicyRestriction> restrictions = new List<ContentKeyAuthorizationPolicyRestriction>
                 {
-                    new ContentKeyAuthorizationPolicyRestriction 
-                    { 
-                        Name = "Open", 
-                        KeyRestrictionType = (int)ContentKeyRestrictionType.Open, 
+                    new ContentKeyAuthorizationPolicyRestriction
+                    {
+                        Name = "Open",
+                        KeyRestrictionType = (int)ContentKeyRestrictionType.Open,
                         Requirements = null
                     }
                 };

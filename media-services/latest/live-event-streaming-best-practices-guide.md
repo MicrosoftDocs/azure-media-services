@@ -51,8 +51,8 @@ Here are some configurations that will help you reduce the latency in our pipeli
 
     | Type  | Format  | URL example  |
     |---------|---------|---------|
-    |HLS CMAF (recommended)     | format=m3u8-cmaf        | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=m3u8-cmaf)`        |
-    | MPEG-DASH CMAF (recommended) | format=mpd-time-cmaf | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=mpd-time-cmaf)` |
+    |HLS CMAF | format=m3u8-cmaf        | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=m3u8-cmaf)`        |
+    | MPEG-DASH CMAF | format=mpd-time-cmaf | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=mpd-time-cmaf)` |
 
 3. **If you must choose TS output, use an HLS packing ratio of 1.** This allows us to pack only one fragment into one HLS segment. You won't get the full benefits of LL-HLS in native Apple players.
 

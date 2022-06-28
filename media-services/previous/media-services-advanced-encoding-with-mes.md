@@ -22,11 +22,11 @@ ms.custom: devx-track-csharp
 
 ## Overview
 
-This topic shows how to customize Media Encoder Standard presets. The [Encoding with Media Encoder Standard using custom presets](media-services-custom-mes-presets-with-dotnet.md) topic shows how to use .NET to create an encoding task and a job that executes this task. Once you customize a preset, supply the custom presets to the encoding task. 
+This topic shows how to customize Media Encoder Standard presets. The [Encoding with Media Encoder Standard using custom presets](media-services-custom-mes-presets-with-dotnet.md) topic shows how to use .NET to create an encoding task and a job that executes this task. Once you customize a preset, supply the custom presets to the encoding task.
 
 If using an XML preset, make sure to preserve the order of elements, as shown in XML samples below (for example, KeyFrameInterval should precede SceneChangeDetection).
 
-> [!NOTE] 
+> [!NOTE]
 > Many of the advanced Media Services v2 features of the Media Encoder Standard are currently not available in v3. For more information, see [the Migration Guide](../latest/migrate-v-2-v-3-migration-introduction.md).
 
 ## Support for relative sizes
@@ -49,10 +49,10 @@ When generating thumbnails, you do not need to always specify output width and h
 
 ## Generate thumbnails
 
-This section shows how to customize a preset that generates thumbnails. The preset defined below contains information on how you want to encode your file as well as information needed to generate thumbnails. You can take any of the MES presets documented [this](media-services-mes-presets-overview.md) section and add code that generates thumbnails.  
+This section shows how to customize a preset that generates thumbnails. The preset defined below contains information on how you want to encode your file as well as information needed to generate thumbnails. You can take any of the MES presets documented [this](media-services-mes-presets-overview.md) section and add code that generates thumbnails.
 
 > [!NOTE]
-> The **SceneChangeDetection** setting in the following preset can only be set to true if you are encoding to a single  bitrate video. If you are encoding to a multi-bitrate video and set **SceneChangeDetection** to true, the encoder returns an error.  
+> The **SceneChangeDetection** setting in the following preset can only be set to true if you are encoding to a single  bitrate video. If you are encoding to a multi-bitrate video and set **SceneChangeDetection** to true, the encoder returns an error.
 >
 >
 
@@ -518,7 +518,7 @@ static public IAsset UploadMediaFilesFromFolder(string folderPath)
 
     foreach (var af in asset.AssetFiles)
     {
-        // The following code assumes 
+        // The following code assumes
         // you have an input folder with one MP4 and one overlay image file.
         if (af.Name.Contains(".mp4"))
             af.IsPrimary = true;
@@ -535,7 +535,7 @@ static public IAsset EncodeWithOverlay(IAsset assetSource, string customPresetFi
 {
     // Declare a new job.
     IJob job = _context.Jobs.Create("Media Encoder Standard Job");
-    // Get a media processor reference, and pass to it the name of the 
+    // Get a media processor reference, and pass to it the name of the
     // processor to use for the specific task.
     IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
 
@@ -552,7 +552,7 @@ static public IAsset EncodeWithOverlay(IAsset assetSource, string customPresetFi
     // This asset contains a source file and an overlay file.
     task.InputAssets.Add(assetSource);
 
-    // Add an output asset to contain the results of the job. 
+    // Add an output asset to contain the results of the job.
     task.OutputAssets.AddNew("Output asset",
         AssetCreationOptions.None);
 
@@ -746,7 +746,7 @@ You can take any of the MES presets documented in [this](media-services-mes-pres
 ## <a id="deinterlacing"></a>Disable auto de-interlacing
 Customers don't need to do anything if they like the interlace contents to be automatically de-interlaced. When the auto de-interlacing is on (default) the MES does the auto detection of interlaced frames and only de-interlaces frames marked as interlaced.
 
-You can turn the auto de-interlacing off. This option is not recommended.
+You can turn the auto de-interlacing off. **Using this option is not encouraged**.
 
 ### JSON preset
 
@@ -834,7 +834,7 @@ This section demonstrates two audio-only MES presets: AAC Audio and AAC Good Qua
 The following example illustrates how you can generate a preset to concatenate two or more video files. The most common scenario is when you want to add a header or a trailer to the main video. The intended use is when the video files being edited together share  properties (video resolution, frame rate, audio track count, etc.). You should take care not to mix videos of different frame rates, or with different number of audio tracks.
 
 >[!NOTE]
->The current design of the concatenation feature expects that the input video clips are consistent in terms of resolution, frame rate etc. 
+>The current design of the concatenation feature expects that the input video clips are consistent in terms of resolution, frame rate etc.
 
 ### Requirements and considerations
 
@@ -1044,7 +1044,7 @@ When using XML, use Condition="InsertBlackIfNoVideo" as an attribute to the **H2
     <Bitrate>128</Bitrate>
   </AACAudio>
 </Encoding>
-. . .  
+. . .
 ```
 
 ## <a id="rotate_video"></a>Rotate a video

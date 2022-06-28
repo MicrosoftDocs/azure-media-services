@@ -10,7 +10,7 @@ ms.service: media-services
 ms.workload: media
 ms.tgt_pltfrm: na
 ms.topic: conceptual
-ms.date: 3/10/2021
+ms.date: 06/28/2022
 ms.author: inhenkel
 ---
 
@@ -39,11 +39,11 @@ This article shows common scenarios for delivering your content live or on-deman
 
 The following image shows some of the most commonly used objects when developing against the Media Services OData model.
 
-Click the image to view it full size.  
+Click the image to view it full size.
 
 [![Diagram showing some of the most commonly used objects when developing against the Azure Media Services object data model.](./media/media-services-overview/media-services-overview-object-model-small.png)](./media/media-services-overview/media-services-overview-object-model.png#lightbox)
 
-You can view the whole model [here](https://m.eet.com/media/1170326/ms-part1.pdf).  
+You can view the whole model [here](https://m.eet.com/media/1170326/ms-part1.pdf).
 
 ## Protect content in storage and deliver streaming media in the clear (non-encrypted)
 
@@ -51,11 +51,11 @@ You can view the whole model [here](https://m.eet.com/media/1170326/ms-part1.pdf
 
 1. Upload a high-quality media file into an asset.
 
-    Applying the storage encryption option to your asset in order to protect your content during upload and while at rest in storage is recommended.
+    Applying the storage encryption option to your asset in order to protect your content during upload and while at rest in storage is encouraged.
 
 1. Encode to a set of adaptive bitrate MP4 files.
 
-    Applying the storage encryption option to the output asset in order to protect your content at rest is recommended.
+    Applying the storage encryption option to the output asset in order to protect your content at rest is also encouraged.
 
 1. Configure asset delivery policy (used by dynamic packaging).
 

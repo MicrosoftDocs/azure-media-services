@@ -4,7 +4,7 @@ description: Learn how to access Azure Active Directory (Azure AD) authenticatio
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 06/28/2022
 ms.author: inhenkel
 ---
 # Get credentials to access Media Services API
@@ -13,7 +13,7 @@ ms.author: inhenkel
 
 When you use Azure AD authentication to access the Azure Media Services API, you have two authentication options:
 
-- **Service principal authentication** (recommended)
+- **Service principal authentication**
 
     Authenticate a service. Applications that commonly use this authentication method are apps that run daemon services, middle-tier services, or scheduled jobs: web apps, function apps, logic apps, APIs, or a microservice.
 - **User authentication**
@@ -37,9 +37,9 @@ The **API access** page lets you select the authentication method you want to us
 2. Select the **API access** blade on the left navigation bar.
 3. Under **Connect to Media Services API**, select the Media Services API version you want to connect to (V3 is the latest version of the service).
 
-### Service principal authentication  (recommended)
+### Service principal authentication
 
-Authenticates a service using an Azure Active Directory (Azure AD) app and secret. This is recommended for any middle-tier services calling to the Media Services API. Examples are Web Apps, Functions, Logic Apps, APIs, and microservices. This is the recommended authentication method.
+Authenticates a service using an Azure Active Directory (Azure AD) app and secret.
 
 #### Manage your Azure AD app and secret
 

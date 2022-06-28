@@ -616,7 +616,7 @@
       href: live-event-cloud-dvr-time-how-to.md
     - name: Verify your on-premises encoder
       href: encode-on-premises-encoder-partner.md
-      displayName: streaming, stream live, RTMP, RTMPS, ingest, live event, live streaming, live, partner, partners, on-premises, on premises, partner encoder, hardware encoder, hardware, verify, certification, certification, testing, partner testing, partner program
+      displayName: streaming, stream live, RTMP, RTMPS, ingest, live event, live streaming, live, partner, partners, on-premises, on-premises, partner encoder, hardware encoder, hardware, verify, certification, certification, testing, partner testing, partner program
   - name: Use Event Grid
     items:
     - name: Monitor events - Portal

@@ -54,7 +54,7 @@ If you're using a custom DNS server on your network, clients must resolve the FQ
 > [!TIP]
 > When using a custom or on-premises DNS server, you should configure your DNS server to resolve the Media Services endpoint name in the privatelink subdomain to the private endpoint IP address. You can do this by delegating the privatelink subdomain to the private DNS zone of the VNet, or configuring the DNS zone on your DNS server and adding the DNS A records.
 
-The recommended DNS zone names for private endpoints for storage services, and the associated endpoint target subresources, are:
+The suggested DNS zone names for private endpoints for storage services, and the associated endpoint target subresources, are:
 
 | Media Services Endpoint | Private Link Group ID | DNS Zone Name |
 | ----------------------- | --------------------- | ------------- |

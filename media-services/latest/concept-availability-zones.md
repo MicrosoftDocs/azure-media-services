@@ -4,7 +4,7 @@ description: Media Services supports Availability Zones providing fault-isolatio
 author: johndeu
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 06/28/2022
 ms.author: inhenkel
 ---
 # Availability Zones
@@ -18,7 +18,7 @@ Azure Media Services uses [Availability Zones](/azure/availability-zones/az-over
 | Control Plane (Azure Resource Management) | Continues to work as normal |
 | Key delivery            | Continues to work as normal |
 | Jobs                    | Jobs are rescheduled in another Availability Zone. There will be a delay in processing time as in-flight processing jobs are rescheduled to start over in the Availability Zone |
-| Live Events             | Streaming and ingest to the live event continues to work as normal. Calling "reset" on a Live Event is currently not supported during an Availability Zone fault. It's recommended to first stop and restart the live event as a replacement for the "reset" operation. If a live event was transitioning from to the "Running" state during a zone down event, customers may see the live event stuck in the "starting" state. In this case, it's recommended to start a new live event and clean up the "starting" live events after the zone recovers.  |
+| Live Events             | Streaming and ingest to the live event continues to work as normal. Calling "reset" on a Live Event is currently not supported during an Availability Zone fault. First, stop and restart the live event as a replacement for the "reset" operation. If a live event was transitioning from to the "Running" state during a zone down event, customers may see the live event stuck in the "starting" state. In this case, start a new live event and clean up the "starting" live events after the zone recovers.  |
 | Streaming Endpoints     | Continues to work as normal |
 
 

@@ -27,19 +27,19 @@ This section gives some background on offline mode playback, especially why:
 * In some countries/regions, Internet availability and/or bandwidth is still limited. Users may choose to download first to be able to watch content in high enough resolution for satisfactory viewing experience. In this case, more often, the issue is not network availability, rather it is limited network bandwidth. OTT/OVP providers are asking for offline mode support.
 * As disclosed at Netflix 2016 Q3 shareholder conference, downloading content is a “oft-requested feature”, and “we are open to it” said by Reed Hastings, Netflix CEO.
 * Some content providers may disallow DRM license delivery beyond a country/region's border. If a user needs to travel abroad and still wants to watch content, offline download is needed.
- 
+
 The challenge we face in implementing offline mode is the following:
 
 * MP4 is supported by many players, encoder tools, but there is no binding between MP4 container and DRM;
 * In the long term, CFF with CENC is the way to go. However, today, the tools/player support ecosystem is not there yet. We need a solution, today.
- 
+
 The idea is: smooth streaming ([PIFF](/iis/media/smooth-streaming/protected-interoperable-file-format)) file format with H264/AAC has a binding with PlayReady (AES-128 CTR). Individual smooth streaming .ismv file (assuming audio is muxed in video) is itself a fMP4 and can be used for playback. If a smooth streaming content goes through PlayReady encryption, each .ismv file becomes a PlayReady protected fragmented MP4. We can choose an .ismv file with the preferred bitrate and rename it as .mp4 for download.
 
 There are two options for hosting the PlayReady protected MP4 for progressive download:
 
 * One can put this MP4 in the same container/media service asset and leverage Azure Media Services streaming endpoint for progressive download;
 * One can use SAS locator for progressive download directly from Azure Storage, bypassing Azure Media Services.
- 
+
 You can use two types of PlayReady license delivery:
 
 * PlayReady license delivery service in Azure Media Services;
@@ -55,7 +55,7 @@ Below are two sets of test assets, the first one using PlayReady license deliver
 ## Asset #2
 
 * Progressive download URL: [https://willzhanmswest.streaming.mediaservices.windows.net/7c085a59-ae9a-411e-842c-ef10f96c3f89/20150807-bridges-2500_H264_1644kbps_AAC_und_ch2_256kbps.mp4](https://willzhanmswest.streaming.mediaservices.windows.net/7c085a59-ae9a-411e-842c-ef10f96c3f89/20150807-bridges-2500_H264_1644kbps_AAC_und_ch2_256kbps.mp4)
-* PlayReady LA_URL (on premises): `https://willzhan12.cloudapp.net/playready/rightsmanager.asmx`
+* PlayReady LA_URL (on-premises): `https://willzhan12.cloudapp.net/playready/rightsmanager.asmx`
 
 For playback testing, we used a Universal Windows Application on Windows 10. In [Windows 10 Universal samples](https://github.com/Microsoft/Windows-universal-samples), there is a basic player sample called [Adaptive Streaming Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AdaptiveStreaming). All we have to do is to add the code for us to pick downloaded video and use it as the source, instead of adaptive streaming source. The changes are in button click event handler:
 

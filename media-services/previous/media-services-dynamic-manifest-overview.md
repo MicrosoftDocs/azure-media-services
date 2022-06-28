@@ -29,16 +29,16 @@ This topic discusses common scenarios in which using filters would be beneficial
 ## Overview
 When delivering your content to customers (streaming live events or video-on-demand) your goal is to deliver a high-quality video to various devices under different network conditions. To achieve this goal do the following:
 
-* encode your stream to multi-bitrate ([adaptive bitrate](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming)) video stream (this will take care of quality and network conditions) and 
-* use Media Services [Dynamic Packaging](media-services-dynamic-packaging-overview.md) to dynamically re-package your stream into different protocols (this will take care of streaming on different devices). Media Services supports delivery of the following adaptive bitrate streaming technologies: HTTP Live Streaming (HLS), Smooth Streaming, and MPEG DASH. 
+* encode your stream to multi-bitrate ([adaptive bitrate](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming)) video stream (this will take care of quality and network conditions) and
+* use Media Services [Dynamic Packaging](media-services-dynamic-packaging-overview.md) to dynamically re-package your stream into different protocols (this will take care of streaming on different devices). Media Services supports delivery of the following adaptive bitrate streaming technologies: HTTP Live Streaming (HLS), Smooth Streaming, and MPEG DASH.
 
 ### Manifest files
 When you encode an asset for adaptive bitrate streaming, a **manifest** (playlist) file is created (the file is text-based or XML-based). The **manifest** file includes streaming metadata such as: track type (audio, video, or text), track name, start and end time, bitrate (qualities), track languages, presentation window (sliding window of fixed duration), video codec (FourCC). It also instructs the player to retrieve the next fragment by providing information about the next playable video fragments available and their location. Fragments (or segments) are the actual “chunks” of a video content.
 
-Here is an example of a manifest file: 
+Here is an example of a manifest file:
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>    
+<?xml version="1.0" encoding="UTF-8"?>
 <SmoothStreamingMedia MajorVersion="2" MinorVersion="0" Duration="330187755" TimeScale="10000000">
 
 <StreamIndex Chunks="17" Type="video" Url="QualityLevels({bitrate})/Fragments(video={start time})" QualityLevels="8">
@@ -72,7 +72,7 @@ Here is an example of a manifest file:
 ### Dynamic manifests
 There are [scenarios](media-services-dynamic-manifest-overview.md#scenarios) when your client needs more flexibility than what's described in the default asset's manifest file. For example:
 
-* Device specific: deliver only the specified renditions and/or specified language tracks that are supported by the device that is used to play back the content ("rendition filtering"). 
+* Device specific: deliver only the specified renditions and/or specified language tracks that are supported by the device that is used to play back the content ("rendition filtering").
 * Reduce the manifest to show a sub-clip of a live event ("sub-clip filtering").
 * Trim the start of a video ("trimming a video").
 * Adjust Presentation Window (DVR) in order to provide a limited length of the DVR window in the player ("adjusting presentation window").
@@ -91,22 +91,22 @@ Smooth Streaming URL with filter
 For more information about how to deliver your content and build streaming URLs, see [Delivering content overview](media-services-deliver-content-overview.md).
 
 > [!NOTE]
-> Note that Dynamic Manifests do not change the asset and the default manifest for that asset. Your client can choose to request a stream with or without filters. 
-> 
-> 
+> Note that Dynamic Manifests do not change the asset and the default manifest for that asset. Your client can choose to request a stream with or without filters.
+>
+>
 
 ### <a id="filters"></a>Filters
-There are two types of asset filters: 
+There are two types of asset filters:
 
-* Global filters (can be applied to any asset in the Azure Media Services account, have a lifetime of the account) and 
-* Local filters (can only be applied to an asset with which the filter was associated upon creation, have a lifetime of the asset). 
+* Global filters (can be applied to any asset in the Azure Media Services account, have a lifetime of the account) and
+* Local filters (can only be applied to an asset with which the filter was associated upon creation, have a lifetime of the asset).
 
 Global and local filter types have exactly the same properties. The main difference between the two is for which scenarios what type of a filer is more suitable. Global filters are generally suitable for device profiles (rendition filtering) where local filters could be used to trim a specific asset.
 
 ## <a id="scenarios"></a>Common scenarios
 As was mentioned before, when delivering your content to customers (streaming live events or video-on-demand) your goal is to deliver a high-quality video to various devices under different network conditions. In addition, you might have other requirements that involve filtering your assets and using of **Dynamic Manifest**s. The following sections give a short overview of different filtering scenarios.
 
-* Specify only a subset of audio and video renditions that certain devices can handle (instead of all the renditions that are associated with the asset). 
+* Specify only a subset of audio and video renditions that certain devices can handle (instead of all the renditions that are associated with the asset).
 * Playing back only a section of a video (instead of playing the whole video).
 * Adjust DVR presentation window.
 
@@ -134,7 +134,7 @@ In most live streaming events, operators run some tests before the actual event.
 ## Creating subclips (views) from a live archive
 Many live events are long running and live archive might include multiple events. After the live event ends, broadcasters may want to break up the live archive into logical program start and stop sequences. Next, publish these virtual programs separately without post processing the live archive and not creating separate assets (which does not get the benefit of the existing cached fragments in the CDNs). Examples of such virtual programs are the quarters of a football or basketball game, innings in baseball, or individual events of any sports program.
 
-With Dynamic Manifest, you can create filters using start/end times and create virtual views over the top of your live archive. 
+With Dynamic Manifest, you can create filters using start/end times and create virtual views over the top of your live archive.
 
 ![Subclip filter][subclip_filter]
 
@@ -160,28 +160,28 @@ You can combine multiple filtering rules in a single filter. As an example you c
 ![multiple-rules][multiple-rules]
 
 ## Create filters programmatically
-The following article discusses Media Services entities that are related to filters. The article also shows how to programmatically create filters.  
+The following article discusses Media Services entities that are related to filters. The article also shows how to programmatically create filters.
 
 [Create filters with REST APIs](media-services-rest-dynamic-manifest.md).
 
 ## Combining multiple filters (filter composition)
-You can also combine multiple filters in a single URL. 
+You can also combine multiple filters in a single URL.
 
 The following scenario demonstrates why you might want to combine filters:
 
-1. You need to filter your video qualities for mobile devices such as Android or iPAD (in order to limit video qualities). To remove the unwanted qualities, you would create a global filter suitable for the device profiles. As mentioned earlier in this article, global filters can be used for all your assets under the same media services account without any further association. 
-2. You also want to trim the start and end time of an asset. To achieve this, you would create a local filter and set the start/end time. 
+1. You need to filter your video qualities for mobile devices such as Android or iPAD (in order to limit video qualities). To remove the unwanted qualities, you would create a global filter suitable for the device profiles. As mentioned earlier in this article, global filters can be used for all your assets under the same media services account without any further association.
+2. You also want to trim the start and end time of an asset. To achieve this, you would create a local filter and set the start/end time.
 3. You want to combine both of these filters (without combination, you need to add quality filtering to the trimming filter which makes filter usage more difficult).
 
 To combine filters, you need to set the filter names to the manifest/playlist URL with semicolon delimited. Let’s assume you have a filter named *MyMobileDevice* that filters qualities and you have another named *MyStartTime* to set a specific start time. You can combine them like this:
 
 `http://teststreaming.streaming.mediaservices.windows.net/3d56a4d-b71d-489b-854f-1d67c0596966/64ff1f89-b430-43f8-87dd-56c87b7bd9e2.ism/Manifest(filter=MyMobileDevice;MyStartTime)`
 
-You can combine up to three filters. 
+You can combine up to three filters.
 
 For more information, see [this](https://azure.microsoft.com/blog/azure-media-services-release-dynamic-manifest-composition-remove-hls-audio-only-track-and-hls-i-frame-track-support/) blog.
 
 ## Known issues and limitations
-* Dynamic manifest operates in GOP boundaries (Key Frames) hence trimming has GOP accuracy. 
+* Dynamic manifest operates in GOP boundaries (Key Frames) hence trimming has GOP accuracy.
 * You can use same filter name for local and global filters. Local filters have higher precedence and will override global filters.
-* If you update a filter, it can take up to 2 minutes for streaming endpoint to refresh the rules. If the content was served using some filters (and cached in proxies and CDN caches), updating these filters can result in player failures. It is recommended to clear the cache after updating the filter. If this option is not possible, consider using a different filter.
+* If you update a filter, it can take up to 2 minutes for streaming endpoint to refresh the rules. If the content was served using some filters (and cached in proxies and CDN caches), updating these filters can result in player failures. You should clear the cache after updating the filter. If this option is not possible, consider using a different filter.

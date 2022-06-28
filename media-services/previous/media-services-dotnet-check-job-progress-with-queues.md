@@ -24,7 +24,7 @@ ms.custom: devx-track-csharp
 
 When you run encoding jobs, you often require a way to track job progress. You can configure Media Services to deliver notifications to [Azure Queue storage](/azure/storage/queues/storage-dotnet-how-to-use-queues). You can monitor job progress by getting notifications from the Queue storage.
 
-Messages delivered to Queue storage can be accessed from anywhere in the world. The Queue storage messaging architecture is reliable and highly scalable. Polling Queue storage for messages is recommended over using other methods.
+Messages delivered to Queue storage can be accessed from anywhere in the world. The Queue storage messaging architecture is reliable and highly scalable.
 
 One common scenario for listening to Media Services notifications is if you are developing a content management system that needs to perform some additional task after an encoding job completes (for example, to trigger the next step in a workflow, or to publish content).
 
@@ -58,7 +58,7 @@ The code example in this section does the following:
 9. Deletes the queue and the notification end point.
 
 > [!NOTE]
-> The recommended way to monitor a job’s state is by listening to notification messages, as shown in the following example:
+> The best way to monitor a job’s state is by listening to notification messages, as shown in the following example:
 >
 > Alternatively, you could check on a job’s state by using the **IJob.State** property.  A notification message about a job’s completion may arrive before the state on **IJob** is set to **Finished**. The **IJob.State**  property reflects the accurate state with a slight delay.
 >

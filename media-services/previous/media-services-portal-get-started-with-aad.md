@@ -39,9 +39,9 @@ This page lets you select the authentication method you want to use to connect t
 2. Select how to connect to the Media Services API.
 3. Under **Connect to Media Services API**, select the Media Services API version you want to connect to.
 
-## Service principal authentication  (recommended)
+## Service principal authentication
 
-Authenticates a service using an Azure Active Directory (Azure AD) app and secret. This is recommended for any middle-tier services calling to the Media Services API. Examples are Web Apps, Functions, Logic Apps, APIs, and microservices. This is the recommended authentication method.
+Authenticates a service using an Azure Active Directory (Azure AD) app and secret.
 
 ### Manage your Azure AD app and secret
 
