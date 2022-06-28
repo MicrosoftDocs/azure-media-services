@@ -44,7 +44,7 @@ To make videos in the encoded asset available to clients for playback, you have 
 
 As a result, you only need to store and pay for the files in single storage format (MP4) and Media Services  will generate and serve the appropriate HLS or DASH manifests based on requests from your client players.
 
-If you plan to protect your content by using Media Services dynamic encryption, see [Streaming protocols and encryption types](drm-content-protection-concept.md#streaming-protocols-and-encryption-types).
+If you plan to protect your content by using Media Services dynamic encryption, see [Streaming protocols and encryption types](drm-streaming-protocol-encryption-types-reference.md).
 
 ## Deliver HLS
 ### HLS dynamic packaging
