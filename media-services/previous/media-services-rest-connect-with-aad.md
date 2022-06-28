@@ -23,13 +23,10 @@ ms.reviewer: willzhan; johndeu
 
 When you're using Azure AD authentication with Azure Media Services, you can authenticate in one of two ways:
 
-- **User authentication** authenticates a person who is using the app to interact with Azure Media Services resources. The interactive application should first prompt the user for credentials. An example is a management console app that's used by authorized users to monitor encoding jobs or live streaming. 
+- **User authentication** authenticates a person who is using the app to interact with Azure Media Services resources. The interactive application should first prompt the user for credentials. An example is a management console app that's used by authorized users to monitor encoding jobs or live streaming.
 - **Service principal authentication** authenticates a service. Applications that commonly use this authentication method are apps that run daemon services, middle-tier services, or scheduled jobs, such as web apps, function apps, logic apps, APIs, or microservices.
 
-    This tutorial shows you how to use Azure AD **service principal** authentication to access AMS API with REST. 
-
-    > [!NOTE]
-    > **Service principal** is the recommended best practice for most applications connecting to Azure Media Services. 
+This tutorial shows you how to use Azure AD **service principal** authentication to access AMS API with REST.
 
 In this tutorial, you learn how to:
 
@@ -47,9 +44,9 @@ In this tutorial, you learn how to:
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) before you begin.
 - [Create an Azure Media Services account using the Azure portal](media-services-portal-create-account.md).
 - Review the [Accessing Azure Media Services API with Azure AD authentication overview](media-services-use-aad-auth-to-access-ams-api.md) article.
-- Install the [Postman](https://www.getpostman.com/) REST client to execute the REST APIs shown in this article. 
+- Install the [Postman](https://www.getpostman.com/) REST client to execute the REST APIs shown in this article.
 
-    In this tutorial, we are using **Postman** but any REST tool would be suitable. Other alternatives are: **Visual Studio Code** with the REST plugin or **Telerik Fiddler**. 
+    In this tutorial, we are using **Postman** but any REST tool would be suitable. Other alternatives are: **Visual Studio Code** with the REST plugin or **Telerik Fiddler**.
 
 ## Get the authentication information from the Azure portal
 
@@ -81,7 +78,7 @@ To get the information, follow these steps:
     > For the Azure Media REST request to succeed, the calling user must have a **Contributor** or **Owner** role for the Media Services account it is trying to access. If you get an exception that says "The remote server returned an error: (401) Unauthorized," see [Access control](media-services-use-aad-auth-to-access-ams-api.md#access-control).
 
     If you need to create a new AD app, follow these steps:
-    
+
    1. Press **Create New**.
    2. Enter a name.
    3. Press **Create New** again.
@@ -92,20 +89,20 @@ To get the information, follow these steps:
       The new app shows up on the page.
 
 6. Get the **Client ID** (Application ID).
-    
+
    1. Select the application.
-   2. Get the **Client ID** from the window on the right. 
+   2. Get the **Client ID** from the window on the right.
 
       ![Screenshot that shows the "Azure A D app" and "Manage application" selected, and the "Client I D" highlighted in the right pane.](./media/connect-with-rest/existing-client-id.png)
 
-7. Get the application's **Key** (client secret). 
+7. Get the application's **Key** (client secret).
 
-   1. Click the **Manage application** button (notice that the Client ID info is under **Application ID**). 
+   1. Click the **Manage application** button (notice that the Client ID info is under **Application ID**).
    2. Press **Keys**.
-    
+
        ![Screenshot that shows the "Manage application" button selected, the "Application I D" in the center pane highlighted, and "Keys" selected in the right pane.](./media/connect-with-rest/manage-app.png)
    3. Generate the app key (client secret) by filling in **DESCRIPTION** and **EXPIRES** and pressing **Save**.
-    
+
        Once the **Save** button is pressed, the key value appears. Copy the key value before leaving the blade.
 
    ![API access](./media/connect-with-rest/connect-with-rest03.png)
@@ -121,12 +118,12 @@ This section shows how to use **Postman** to execute a REST API that returns a J
 
 1. Open **Postman**.
 2. Select **POST**.
-3. Enter the URL that includes your tenant name using the following format: the tenant name should end with **.onmicrosoft.com** and the URL should end with **oauth2/token**: 
+3. Enter the URL that includes your tenant name using the following format: the tenant name should end with **.onmicrosoft.com** and the URL should end with **oauth2/token**:
 
     `https://login.microsoftonline.com/{your-aad-tenant-name.onmicrosoft.com}/oauth2/token`
 
 4. Select the **Headers** tab.
-5. Enter the **Headers** information using the "Key/Value" data grid. 
+5. Enter the **Headers** information using the "Key/Value" data grid.
 
     ![Screenshot that shows the "Headers" tab and the "Bulk Edit" action selected.](./media/connect-with-rest/headers-data-grid.png)
 
@@ -138,7 +135,7 @@ This section shows how to use **Postman** to execute a REST API that returns a J
     ```
 
 6. Press the **Body** tab.
-7. Enter the body information using the "Key/Value" data grid (replace the client ID and secret values). 
+7. Enter the body information using the "Key/Value" data grid (replace the client ID and secret values).
 
     ![Data Grid](./media/connect-with-rest/data-grid.png)
 
@@ -164,7 +161,7 @@ This section shows how to access the **Assets** API using **Postman**.
 1. Open **Postman**.
 2. Select **GET**.
 3. Paste the REST API endpoint (for example, https://amshelloworld.restv2.westus.media.azure.net/api/Assets)
-4. Select the **Authorization** tab. 
+4. Select the **Authorization** tab.
 5. Select **Bearer Token**.
 6. Paste the token that was created in the previous section.
 

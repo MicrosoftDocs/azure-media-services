@@ -51,7 +51,7 @@ You'll see these names referenced in the commands below.  The names of resources
 
 > [!NOTE]
 > The hyphens above are only used to separate guidance words. Because of the inconsistency of naming resources in Azure services, don't use hyphens when you name your resources.<br/><br/>
-> Anything represented by 00000000-0000-0000-0000000000 is the unique identifier of the resource.  This value is usually returned by a JSON response. It is also recommended that you copy and paste the JSON responses in Notepad or other text editor, as those responses will contain values you will need for later CLI commands.<br/><br/>
+> Anything represented by 00000000-0000-0000-0000000000 is the unique identifier of the resource.  This value is usually returned by a JSON response. You should copy and paste the JSON responses in Notepad or other text editor, as those responses will contain values you will need for later CLI commands.<br/><br/>
 > Also, you don't create the region name.  The region name is determined by Azure.
 
 ### List Azure regions

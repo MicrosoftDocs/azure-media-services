@@ -146,7 +146,7 @@ Once the live event is created, you can get ingest URLs that you'll provide to t
 
     To avoid a random token in the URL, you also need to pass your own access token (`LiveEventInput.accessToken`) at creation time.  The access token has to be a valid GUID string (with or without the hyphens). Once the mode is set, it can't be updated.
 
-    The access token needs to be unique in your Azure region and Media Services account. If your app needs to use a static hostname ingest URL, it's recommended to always create fresh GUID instance for use with a specific combination of region, media services account, and live event.
+    The access token needs to be unique in your Azure region and Media Services account. If your app needs to use a static hostname ingest URL, you are encouraged to always create fresh GUID instance for use with a specific combination of region, media services account, and live event.
 
     Use the following APIs to enable the static hostname URL and set the access token to a valid GUID (for example, `"accessToken": "1fce2e4b-fb15-4718-8adc-68c6eb4c26a7"`).
 

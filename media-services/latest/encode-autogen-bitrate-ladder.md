@@ -4,7 +4,7 @@ description: This topic shows how to use the Standard Encoder in Media Services 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 06/28/2022
 ms.author: inhenkel
 ---
 #  Encode with an auto-generated bitrate ladder
@@ -61,8 +61,7 @@ Source with height "360" and framerate "29.970" produces 3 video layers:
 
 ## Content-aware encoding comparison
 
-The [content-aware encoding presets](./encode-content-aware-concept.md) offer a better solution over the adaptive streaming presets by analyzing the source content prior to deciding the right set of output bitrates and resolutions to use in the ladder.
-It's recommended to test out the [content-aware encoding presets](./encode-content-aware-concept.md) first before using the more static and fixed ladder provided by the adaptive bitrate streaming presets.
+The [content-aware encoding presets](./encode-content-aware-concept.md) offer a better solution over the adaptive streaming presets by analyzing the source content prior to deciding the right set of output bitrates and resolutions to use in the ladder. Test the [content-aware encoding presets](./encode-content-aware-concept.md) first before using the more static and fixed ladder provided by the adaptive bitrate streaming presets.
 
 ## Encoding samples
 

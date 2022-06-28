@@ -21,7 +21,7 @@ When live streaming with Azure Media Services, you can specify how you want your
 
 Encoders must support TLS 1.2 when using HTTPS or RTMPS protocols.
 
-## Live encoders that output RTMP 
+## Live encoders that output RTMP
 
 Azure Media Services recommends using one of following live encoders that have RTMP as output:
 
@@ -37,7 +37,7 @@ Azure Media Services recommends using one of following live encoders that have R
 - xStream
 - Switcher Studio (iOS)
 
-## Live encoders that output fragmented MP4 
+## Live encoders that output fragmented MP4
 
 Azure Media Services recommends using one of the following live encoders that have multi-bitrate fragmented-MP4 (Smooth Streaming) as output:
 
@@ -51,7 +51,7 @@ Azure Media Services recommends using one of the following live encoders that ha
 - Imagine Communications Selenio MCP3
 
 > [!NOTE]
-> A live encoder can send a single-bitrate stream to a pass through channel, but this configuration is not recommended because it does not allow for adaptive bitrate streaming to the client.
+> A live encoder can send a single-bitrate stream to a pass through channel, but this configuration is not encouraged because it does not allow for adaptive bitrate streaming to the client.
 
 ## How to become an on premises encoder partner
 

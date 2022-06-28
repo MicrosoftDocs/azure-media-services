@@ -31,20 +31,20 @@ In Azure Media Services (AMS), a **Channel** represents a pipeline for processin
 
   > [!NOTE]
   > Using a pass-through method is the most economical way to do live streaming.
-  > 
-  > 
+  >
+  >
 
 Starting with the Media Services 2.10 release, when you create a Channel, you can specify in which way you want for your channel to receive the input stream and whether or not you want for the channel to perform live encoding of your stream. You have two options:
 
 * **None** – Specify this value, if you plan to use an on-premises live encoder which will output multi-bitrate stream (a pass-through stream). In this case, the incoming stream passed through to the output without any encoding. This is the behavior of a Channel prior to 2.10 release.  For more detailed information about working with channels of this type, see [Live streaming with on-premises encoders that create multi-bitrate streams](media-services-live-streaming-with-onprem-encoders.md).
-* **Standard** – Choose this value, if you plan to use Media Services to encode your single bitrate live stream to multi-bitrate stream. Be aware that there is a billing impact for live encoding and you should remember that leaving a live encoding channel in the "Running" state will incur billing charges.  It is recommended that you immediately stop your running channels after your live streaming event is complete to avoid extra hourly charges.
+* **Standard** – Choose this value, if you plan to use Media Services to encode your single bitrate live stream to multi-bitrate stream. Be aware that there is a billing impact for live encoding and you should remember that leaving a live encoding channel in the "Running" state will incur billing charges.  You should immediately stop your running channels after your live streaming event is complete to avoid extra hourly charges.
 
 > [!NOTE]
 > This topic discusses attributes of channels that are enabled to perform live encoding (**Standard** encoding type). For information about working with channels that are not enabled to perform live encoding, see [Live streaming with on-premises encoders that create multi-bitrate streams](media-services-live-streaming-with-onprem-encoders.md).
-> 
+>
 > Make sure to review the [Considerations](media-services-manage-live-encoder-enabled-channels.md#Considerations) section.
-> 
-> 
+>
+>
 
 ## Billing Implications
 A live encoding channel begins billing as soon as it's state transitions to "Running" via the API.   You can also view the state in the Azure portal, or in the Azure Media Services Explorer tool (https://aka.ms/amse).
@@ -58,11 +58,11 @@ The current state of a Channel. Possible values include:
 
 * **Stopped**. This is the initial state of the Channel after its creation (unless autostart was selected in the portal.) No billing occurs in this state. In this state, the Channel properties can be updated but streaming is not allowed.
 * **Starting**. The Channel is being started. No billing occurs in this state. No updates or streaming is allowed during this state. If an error occurs, the Channel returns to the Stopped state.
-* **Running**. The Channel is capable of processing live streams. It is now billing usage. You must stop the channel to prevent further billing. 
+* **Running**. The Channel is capable of processing live streams. It is now billing usage. You must stop the channel to prevent further billing.
 * **Stopping**. The Channel is being stopped. No billing occurs in this transient state. No updates or streaming is allowed during this state.
 * **Deleting**. The Channel is being deleted. No billing occurs in this transient state. No updates or streaming is allowed during this state.
 
-The following table shows how Channel states map to the billing mode. 
+The following table shows how Channel states map to the billing mode.
 
 | Channel state | Portal UI Indicators | Is it Billing? |
 | --- | --- | --- |
@@ -77,7 +77,7 @@ Starting with January 25, 2016, Media Services rolled out an update that automat
 The threshold for an unused period is nominally 12 hours, but is subject to change.
 
 ## Live Encoding Workflow
-The following diagram represents a live streaming workflow where a channel receives a single bitrate stream in one of the following protocols: RTMP or Smooth Streaming; it then encodes the stream to a multi-bitrate stream. 
+The following diagram represents a live streaming workflow where a channel receives a single bitrate stream in one of the following protocols: RTMP or Smooth Streaming; it then encodes the stream to a multi-bitrate stream.
 
 ![Live workflow][live-overview]
 
@@ -87,37 +87,37 @@ The following are general steps involved in creating common live streaming appli
 > [!NOTE]
 > Currently, the max recommended duration of a live event is 8 hours.
 >
-> There is a billing impact for live encoding and you should remember that leaving a live encoding channel in the "Running" state will incur hourly billing charges. It is recommended that you immediately stop your running channels after your live streaming event is complete to avoid extra hourly charges. 
+> There is a billing impact for live encoding and you should remember that leaving a live encoding channel in the "Running" state will incur hourly billing charges. You should immediately stop your running channels after your live streaming event is complete to avoid extra hourly charges.
 
-1. Connect a video camera to a computer. Launch and configure an on-premises live encoder that can output a **single** bitrate stream in one of the following protocols: RTMP or Smooth Streaming. 
+1. Connect a video camera to a computer. Launch and configure an on-premises live encoder that can output a **single** bitrate stream in one of the following protocols: RTMP or Smooth Streaming.
 
     This step could also be performed after you create your Channel.
-2. Create and start a Channel. 
-3. Retrieve the Channel ingest URL. 
+2. Create and start a Channel.
+3. Retrieve the Channel ingest URL.
 
     The ingest URL is used by the live encoder to send the stream to the Channel.
-4. Retrieve the Channel preview URL. 
+4. Retrieve the Channel preview URL.
 
     Use this URL to verify that your channel is properly receiving the live stream.
-5. Create a program. 
+5. Create a program.
 
-    When using the Azure portal, creating a program also creates an asset. 
+    When using the Azure portal, creating a program also creates an asset.
 
-    When using .NET SDK or REST you need to create an asset and specify to use this asset when creating a Program. 
-6. Publish the asset associated with the program.   
+    When using .NET SDK or REST you need to create an asset and specify to use this asset when creating a Program.
+6. Publish the asset associated with the program.
 
     >[!NOTE]
-    >When your AMS account is created a **default** streaming endpoint is added to your account in the **Stopped** state. The streaming endpoint from which you want to stream content has to be in the **Running** state. 
+    >When your AMS account is created a **default** streaming endpoint is added to your account in the **Stopped** state. The streaming endpoint from which you want to stream content has to be in the **Running** state.
 
 7. Start the program when you are ready to start streaming and archiving.
 8. Optionally, the live encoder can be signaled to start an advertisement. The advertisement is inserted in the output stream.
 9. Stop the program whenever you want to stop streaming and archiving the event.
-10. Delete the Program (and optionally delete the asset).   
+10. Delete the Program (and optionally delete the asset).
 
 > [!NOTE]
-> It is very important not to forget to Stop a Live Encoding Channel. Be aware that there is an hourly billing impact for live encoding and you should remember that leaving a live encoding channel in the "Running" state will incur billing charges.  It is recommended that you immediately stop your running channels after your live streaming event is complete to avoid extra hourly charges. 
-> 
-> 
+> It is very important not to forget to Stop a Live Encoding Channel. Be aware that there is an hourly billing impact for live encoding and you should remember that leaving a live encoding channel in the "Running" state will incur billing charges.  You should immediately stop your running channels after your live streaming event is complete to avoid extra hourly charges.
+>
+>
 
 ## <a id="channel"></a>Channel's input (ingest) configurations
 ### <a id="Ingest_Protocols"></a>Ingest streaming protocol
@@ -163,7 +163,7 @@ A Channel provides an input endpoint (ingest URL) that you specify in the live e
 
 You can get the ingest URLs once you create a Channel. To get these URLs, the Channel does not have to be in the **Running** state. When you are ready to start pushing data into the Channel, it must be in the **Running** state. Once the Channel starts ingesting data, you can preview your stream through the preview URL.
 
-You have an option of ingesting Fragmented MP4 (Smooth Streaming) live stream over an TLS connection. To ingest over TLS, make sure to update the ingest URL to HTTPS. Currently, AMS doesn’t support TLS with custom domains.  
+You have an option of ingesting Fragmented MP4 (Smooth Streaming) live stream over an TLS connection. To ingest over TLS, make sure to update the ingest URL to HTTPS. Currently, AMS doesn’t support TLS with custom domains.
 
 ### Allowed IP addresses
 You can define the IP addresses that are allowed to publish video to this channel. Allowed IP addresses can be specified as either a single IP address (for example, '10.0.0.1'), an IP range using an IP address and a CIDR subnet mask (for example, ‘10.0.0.1/22’), or an IP range using an IP address and a dotted decimal subnet mask (for example, '10.0.0.1(255.255.252.0)').
@@ -180,8 +180,8 @@ Once the Channel starts ingesting data, you can preview your stream.
 
 > [!NOTE]
 > Currently the preview stream can only be delivered in Fragmented MP4 (Smooth Streaming) format regardless of the specified input type.  You can use a player hosted in the Azure portal to view your stream.
-> 
-> 
+>
+>
 
 ### Allowed IP Addresses
 You can define the IP addresses that are allowed to connect to the preview endpoint. If no IP addresses are specified any IP address will be allowed. Allowed IP addresses can be specified as either a single IP address (for example, ‘10.0.0.1’), an IP range using an IP address and a CIDR subnet mask (for example, ‘10.0.0.1/22’), or an IP range using an IP address and a dotted decimal subnet mask (for example, ‘10.0.0.1(255.255.252.0)’).
@@ -191,8 +191,8 @@ This section describes how the settings for the live encoder within the Channel 
 
 > [!NOTE]
 > Your contribution feed can only contain a single audio track – ingesting of multiple audio tracks is currently not supported. When doing live encoding with [on-premises live encodes](media-services-live-streaming-with-onprem-encoders.md), you can send a contribution feed in the Smooth Streaming protocol containing multiple audio tracks.
-> 
-> 
+>
+>
 
 ### Ad marker source
 You can specify the source for ad markers signals. Default value is **Api**, which indicates that the live encoder within the Channel should listen to an asynchronous **Ad Marker API**.
@@ -201,7 +201,7 @@ You can specify the source for ad markers signals. Default value is **Api**, whi
 An optional flag which tells the live encoder to ignore any CEA 708 captions data embedded in the incoming video. When the flag is set to false (default), the encoder will detect and re-insert CEA 708 data into the output video streams.
 
 #### Index
-It is recommended to send in a single program transport stream (SPTS). If the input stream contains multiple programs, the live encoder within the Channel parses the Program Map Table (PMT) in the input, identifies the inputs that have a stream type name of MPEG-2 AAC ADTS or AC-3 System-A or AC-3 System-B or MPEG-2 Private PES or MPEG-1 Audio or MPEG-2 Audio, and arranges them in the order specified in the PMT. The zero-based index is then used to pick up the n-th entry in that arrangement.
+You should send in a single program transport stream (SPTS). If the input stream contains multiple programs, the live encoder within the Channel parses the Program Map Table (PMT) in the input, identifies the inputs that have a stream type name of MPEG-2 AAC ADTS or AC-3 System-A or AC-3 System-B or MPEG-2 Private PES or MPEG-1 Audio or MPEG-2 Audio, and arranges them in the order specified in the PMT. The zero-based index is then used to pick up the n-th entry in that arrangement.
 
 #### Language
 The language identifier of the audio stream, conforming to ISO 639-2, such as ENG. If not present, the default is UND (undefined).
@@ -234,7 +234,7 @@ When your Channel has Live Encoding enabled, you have a component in your pipeli
 3. Have your viewers get an ERROR-EVENT image if there is a problem during the event (for example, power failure in the stadium).
 4. Send an AD-BREAK image to hide the live event feed during a commercial break.
 
-The following are the properties you can set when signaling advertisements. 
+The following are the properties you can set when signaling advertisements.
 
 ### Duration
 The duration, in seconds, of the commercial break. This has to be a non-zero positive value in order to start the commercial break. When a commercial break is in progress, and the duration is set to zero with the CueId matching the on-going commercial break, then that break is canceled.
@@ -243,13 +243,13 @@ The duration, in seconds, of the commercial break. This has to be a non-zero pos
 A Unique ID for the commercial break, to be used by downstream application to take appropriate action(s). Needs to be a positive integer. You can set this value to any random positive integer or use an upstream system to track the Cue Ids. Make certain to normalize any IDs to positive integers before submitting through the API.
 
 ### Show slate
-Optional. Signals the live encoder to switch to the [default slate](media-services-manage-live-encoder-enabled-channels.md#default_slate) image during a commercial break and hide the incoming video feed. Audio is also muted during slate. Default is **false**. 
+Optional. Signals the live encoder to switch to the [default slate](media-services-manage-live-encoder-enabled-channels.md#default_slate) image during a commercial break and hide the incoming video feed. Audio is also muted during slate. Default is **false**.
 
-The image used will be the one specified via the default slate asset Id property at the time of the channel creation. 
-The slate will be stretched to fit the display image size. 
+The image used will be the one specified via the default slate asset Id property at the time of the channel creation.
+The slate will be stretched to fit the display image size.
 
 ## Insert Slate  images
-The live encoder within the Channel can be signaled to switch to a slate image. It can also be signaled to end an on-going slate. 
+The live encoder within the Channel can be signaled to switch to a slate image. It can also be signaled to end an on-going slate.
 
 The live encoder can be configured to switch to a slate image and hide the incoming video signal in certain situations – for example, during an ad break. If such a slate is not configured, input video is not masked during that ad break.
 
@@ -257,15 +257,15 @@ The live encoder can be configured to switch to a slate image and hide the incom
 The duration of the slate in seconds. This has to be a non-zero positive value in order to start the slate. If there is an on-going slate, and a duration of zero is specified, then that on-going slate will be terminated.
 
 ### Insert slate on ad marker
-When set to true, this setting configures the live encoder to insert a slate image during an ad break. The default value is true. 
+When set to true, this setting configures the live encoder to insert a slate image during an ad break. The default value is true.
 
 ### <a id="default_slate"></a>Default slate Asset Id
 
-Optional. Specifies the Asset Id of the Media Services Asset which contains the slate image. Default is null. 
+Optional. Specifies the Asset Id of the Media Services Asset which contains the slate image. Default is null.
 
 
-> [!NOTE] 
-> Before creating the Channel, the slate image with the following constraints should be uploaded as a dedicated asset (no other files should be in this asset). This image is used only when the live encoder is inserting a slate due to an ad break, or has been explicitly signaled to insert a slate. 
+> [!NOTE]
+> Before creating the Channel, the slate image with the following constraints should be uploaded as a dedicated asset (no other files should be in this asset). This image is used only when the live encoder is inserting a slate due to an ad break, or has been explicitly signaled to insert a slate.
 > There is currently no option to use a custom image when the live encoder enters such an 'input signal lost' state. You can vote for this feature [here](https://feedback.azure.com/d365community/idea/b249e4f3-0d25-ec11-b6e6-000d3a4f09d0).
 
 * At most 1920x1080 in resolution.
@@ -273,7 +273,7 @@ Optional. Specifies the Asset Id of the Media Services Asset which contains the 
 * The file name must have a *.jpg extension.
 * The image must be uploaded into an Asset as the only AssetFile in that Asset and this AssetFile should be marked as the primary file. The Asset cannot be storage encrypted.
 
-If the **default slate Asset Id** is not specified, and **insert slate on ad marker** is set to **true**, a default Azure Media Services image will be used to hide the input video stream. Audio is also muted during slate. 
+If the **default slate Asset Id** is not specified, and **insert slate on ad marker** is set to **true**, a default Azure Media Services image will be used to hide the input video stream. Audio is also muted during slate.
 
 ## Channel's programs
 A channel is associated with programs that enable you to control the publishing and storage of segments in a live stream. Channels manage Programs. The Channel and Program relationship is very similar to traditional media where a Channel has a constant stream of content and a program is scoped to some timed event on that Channel.
@@ -286,16 +286,16 @@ A Channel supports up to three concurrently running programs so you can create m
 
 You should not reuse existing programs for new events. Instead, create and start a new program for each event as described in the Programming Live Streaming Applications section.
 
-Start the program when you are ready to start streaming and archiving. Stop the program whenever you want to stop streaming and archiving the event. 
+Start the program when you are ready to start streaming and archiving. Stop the program whenever you want to stop streaming and archiving the event.
 
-To delete archived content, stop and delete the program and then delete the associated asset. An asset cannot be deleted if it is used by a program; the program must be deleted first. 
+To delete archived content, stop and delete the program and then delete the associated asset. An asset cannot be deleted if it is used by a program; the program must be deleted first.
 
 Even after you stop and delete the program, the users would be able to stream your archived content as a video on demand, for as long as you do not delete the asset.
 
 If you do want to retain the archived content, but not have it available for streaming, delete the streaming locator.
 
 ## Getting a thumbnail preview of a live feed
-When Live Encoding is enabled, you can now get a preview of the live feed as it reaches the Channel. This can be a valuable tool to check whether your live feed is actually reaching the Channel. 
+When Live Encoding is enabled, you can now get a preview of the live feed as it reaches the Channel. This can be a valuable tool to check whether your live feed is actually reaching the Channel.
 
 ## <a id="states"></a>Channel states and how states map to the billing mode
 The current state of a Channel. Possible values include:
@@ -306,7 +306,7 @@ The current state of a Channel. Possible values include:
 * **Stopping**. The Channel is being stopped. No updates or streaming is allowed during this state.
 * **Deleting**. The Channel is being deleted. No updates or streaming is allowed during this state.
 
-The following table shows how Channel states map to the billing mode. 
+The following table shows how Channel states map to the billing mode.
 
 | Channel state | Portal UI Indicators | Billed? |
 | --- | --- | --- |
@@ -317,8 +317,8 @@ The following table shows how Channel states map to the billing mode.
 
 > [!NOTE]
 > Currently, the Channel start average is about 2 minutes, but at times could take up to 20+ minutes. Channel resets can take up to 5 minutes.
-> 
-> 
+>
+>
 
 ## <a id="Considerations"></a>Considerations
 * When a Channel of **Standard** encoding type experiences a loss of input source/contribution feed, it compensates for it by replacing the source video/audio with an error slate and silence. The Channel will continue to emit a slate until the input/contribution feed resumes. We recommend that a live channel not be left in such a state for longer than 2 hours. Beyond that point, the behavior of the Channel on input reconnection is not guaranteed, neither is its behavior in response to a Reset command. You will have to stop the Channel, delete it and create a new one.
@@ -328,7 +328,7 @@ The following table shows how Channel states map to the billing mode.
 * By default you can only add 5 channels to your Media Services account. This is a soft quota on all new accounts. For more information, see [Quotas and Limitations](media-services-quotas-and-limitations.md).
 * You cannot change the input protocol while the Channel or its associated programs are running. If you require different protocols, you should create separate channels for each input protocol.
 * You are only billed when your Channel is in the **Running** state. For more information, refer to [this](media-services-manage-live-encoder-enabled-channels.md#states) section.
-* Currently, the max recommended duration of a live event is 8 hours. 
+* Currently, the max recommended duration of a live event is 8 hours.
 * Make sure to have the streaming endpoint from which you want to stream content in the **Running** state.
 * The encoding preset uses the notion of "max frame rate" of 30 fps. So if the input is 60fps/59.94i, the input frames are dropped/de-interlaced to 30/29.97 fps. If the input is 50fps/50i, the input frames are dropped/de-interlaced to 25 fps. If the input is 25 fps, output remains at 25 fps.
 * Don't forget to STOP YOUR CHANNELS when done. If you don't, billing will continue.

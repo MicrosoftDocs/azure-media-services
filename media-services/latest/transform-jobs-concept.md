@@ -51,7 +51,7 @@ You can create Transforms using REST, CLI, or any of the published SDKs. The Med
 
 ### Updating Transforms
 
-If you need to update your [Transform](/rest/api/media/transforms), use the **Update** operation. It's intended for making changes to the description, or the priorities of the underlying TransformOutputs. It's recommended that such updates be done when all in-progress jobs have completed. If you intend to rewrite the recipe, you need to create a new Transform.
+If you need to update your [Transform](/rest/api/media/transforms), use the **Update** operation. It's intended for making changes to the description, or the priorities of the underlying TransformOutputs. You should do updates when all in-progress jobs have completed. If you intend to rewrite the recipe, you need to create a new Transform.
 
 ## Jobs
 

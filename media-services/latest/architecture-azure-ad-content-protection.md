@@ -4,7 +4,7 @@ description: This article teaches you how to protect your content with Azure Med
 author: willzhan
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 3/16/2022
+ms.date: 06/28/2022
 ms.author: inhenkel
 ---
 
@@ -32,11 +32,11 @@ The tutorial should take about two hours to complete after you have the prerequi
 
 ## Prerequisites
 
-The following latest technology versions and concepts are used. It's recommended that you become familiar with them before beginning this tutorial.
+The following latest technology versions and concepts are used. Be sure you are familiar with them before beginning this tutorial.
 
 ### Prerequisite knowledge
 
-It is optional but recommended that you are familiar with the following concepts before beginning this tutorial:
+Be sure you are familiar with the following concepts before beginning this tutorial:
 
 * Digital Rights Management (DRM)
 * [Azure Media Services (AMS) v3](./media-services-overview.md)

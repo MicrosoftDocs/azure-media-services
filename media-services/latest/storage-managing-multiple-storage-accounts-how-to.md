@@ -8,7 +8,7 @@ ms.date: 3/16/2022
 ms.author: inhenkel
 ---
 
-# Managing Media Services v3 assets across multiple storage accounts  
+# Managing Media Services v3 assets across multiple storage accounts
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
@@ -25,7 +25,7 @@ This article demonstrates how to attach multiple storage accounts to a Media Ser
 
 When attaching multiple storage accounts to your Media Services account, the following considerations apply:
 
-* The Media Services account and all associated storage accounts must be in the same Azure subscription. It is recommended to use storage accounts in the same location as the Media Services account.
+* The Media Services account and all associated storage accounts must be in the same Azure subscription. You should use storage accounts in the same location as the Media Services account.
 * Once a storage account is attached to the specified Media Services account, it cannot be detached.
 * Primary storage account is the one indicated during Media Services account creation time. Currently, you cannot change the default storage account.
 * If you want to add a Cool Storage account to the AMS account, the storage account must be a Blob type and set to non-primary.
@@ -34,7 +34,7 @@ Other considerations:
 
 Media Services uses the value of the **IAssetFile.Name** property when building URLs for the streaming content (for example, http://{WAMSAccount}.origin.mediaservices.windows.net/{GUID}/{IAssetFile.Name}/streamingParameters.) For this reason, percent-encoding is not allowed. The value of the Name property cannot have any of the following [percent-encoding-reserved characters](https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters): !*'();:@&=+$,/?%#[]". Also, there can only be one ‘.’ for the file name extension.
 
-## To attach storage accounts  
+## To attach storage accounts
 
 To attach storage accounts to your AMS account, use [Azure Resource Manager APIs](/rest/api/media/operations/azure-media-services-rest-api-reference) and [PowerShell](/powershell/module/az.media), as shown in the following example:
 
@@ -82,7 +82,7 @@ namespace MultipleStorageAccounts
 {
     class Program
     {
-        // Location of the media file that you want to encode. 
+        // Location of the media file that you want to encode.
         private static readonly string _singleInputFilePath =
             Path.GetFullPath(@"../..\supportFiles\multifile\interview2.wmv");
 
@@ -100,7 +100,7 @@ namespace MultipleStorageAccounts
 
         static void Main(string[] args)
         {
-            AzureAdTokenCredentials tokenCredentials = 
+            AzureAdTokenCredentials tokenCredentials =
                 new AzureAdTokenCredentials(_AADTenantDomain,
                     new AzureAdClientSymmetricKey(_AMSClientId, _AMSClientSecret),
                     AzureEnvironments.AzureCloudEnvironment);
@@ -109,7 +109,7 @@ namespace MultipleStorageAccounts
 
             _context = new CloudMediaContext(new Uri(_RESTAPIEndpoint), tokenProvider);
 
-            // Display the storage accounts associated with 
+            // Display the storage accounts associated with
             // the specified Media Services account:
             foreach (var sa in _context.StorageAccounts)
                 Console.WriteLine(sa.Name);
@@ -160,7 +160,7 @@ namespace MultipleStorageAccounts
         {
             // Declare a new job.
             IJob job = _context.Jobs.Create("My encoding job");
-            // Get a media processor reference, and pass to it the name of the 
+            // Get a media processor reference, and pass to it the name of the
             // processor to use for the specific task.
             IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
 
@@ -172,28 +172,28 @@ namespace MultipleStorageAccounts
 
             // Specify the input asset to be encoded.
             task.InputAssets.Add(asset);
-            // Add an output asset to contain the results of the job. 
-            // This output is specified as AssetCreationOptions.None, which 
-            // means the output asset is not encrypted. 
+            // Add an output asset to contain the results of the job.
+            // This output is specified as AssetCreationOptions.None, which
+            // means the output asset is not encrypted.
             task.OutputAssets.AddNew("Output asset", storageName,
                 AssetCreationOptions.None);
 
-            // Use the following event handler to check job progress.  
+            // Use the following event handler to check job progress.
             job.StateChanged += new
                     EventHandler<JobStateChangedEventArgs>(StateChanged);
 
             // Launch the job.
             job.Submit();
 
-            // Check job execution and wait for job to finish. 
+            // Check job execution and wait for job to finish.
             Task progressJobTask = job.GetExecutionProgressTask(CancellationToken.None);
             progressJobTask.Wait();
 
             // Get an updated job reference.
             job = GetJob(job.Id);
 
-            // If job state is Error the event handling 
-            // method for job progress should log errors.  Here we check 
+            // If job state is Error the event handling
+            // method for job progress should log errors.  Here we check
             // for error state and exit if needed.
             if (job.State == JobState.Error)
             {
@@ -255,13 +255,13 @@ namespace MultipleStorageAccounts
 
         static IJob GetJob(string jobId)
         {
-            // Use a Linq select query to get an updated 
-            // reference by Id. 
+            // Use a Linq select query to get an updated
+            // reference by Id.
             var jobInstance =
                 from j in _context.Jobs
                 where j.Id == jobId
                 select j;
-            // Return the job reference as an Ijob. 
+            // Return the job reference as an Ijob.
             IJob job = jobInstance.FirstOrDefault();
 
             return job;

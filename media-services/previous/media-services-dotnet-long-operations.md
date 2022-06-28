@@ -25,7 +25,7 @@ ms.custom: devx-track-csharp
 
 Microsoft Azure Media Services offers APIs that send requests to Media Services to start operations (for example: create, start, stop, or delete a channel). These operations are long-running.
 
-The Media Services .NET SDK provides APIs that send the request and wait for the operation to complete (internally, the APIs are polling for operation progress at some intervals). For example, when you call channel.Start(), the method returns after the channel is started. You can also use the asynchronous version: await channel.StartAsync() (for information about Task-based Asynchronous Pattern, see [TAP](./media-services-mes-schema.md)). APIs that send an operation request and then poll for the status until the operation is complete are called “polling methods”. These methods (especially the Async version) are recommended for rich client applications and/or stateful services.
+The Media Services .NET SDK provides APIs that send the request and wait for the operation to complete (internally, the APIs are polling for operation progress at some intervals). For example, when you call channel.Start(), the method returns after the channel is started. You can also use the asynchronous version: await channel.StartAsync() (for information about Task-based Asynchronous Pattern, see [TAP](./media-services-mes-schema.md)). APIs that send an operation request and then poll for the status until the operation is complete are called “polling methods”. You should use these methods (especially the Async version) for rich client applications and/or stateful services.
 
 There are scenarios where an application cannot wait for a long running http request and wants to poll for the operation progress manually. A typical example would be a browser interacting with a stateless web service: when the browser requests to create a channel, the web service initiates a long running operation and returns the operation ID to the browser. The browser could then ask the web service to get the operation status based on the ID. The Media Services .NET SDK provides APIs that are useful for this scenario. These APIs are called “non-polling methods”.
 The “non-polling methods” have the following naming pattern: Send*OperationName*Operation (for example, SendCreateOperation). Send*OperationName*Operation methods return the **IOperation** object; the returned object contains information that can be used to track the operation. The Send*OperationName*OperationAsync methods return **Task\<IOperation>**.
@@ -53,10 +53,10 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Net;
 
-/// <summary> 
-/// The ChannelOperations class only implements 
-/// the Channel’s creation operation. 
-/// </summary> 
+/// <summary>
+/// The ChannelOperations class only implements
+/// the Channel’s creation operation.
+/// </summary>
 public class ChannelOperations
 {
     // Read values from the App.config file.
@@ -74,7 +74,7 @@ public class ChannelOperations
 
     public ChannelOperations()
     {
-        AzureAdTokenCredentials tokenCredentials = 
+        AzureAdTokenCredentials tokenCredentials =
             new AzureAdTokenCredentials(_AADTenantDomain,
                 new AzureAdClientSymmetricKey(_AMSClientId, _AMSClientSecret),
                 AzureEnvironments.AzureCloudEnvironment);
@@ -84,14 +84,14 @@ public class ChannelOperations
         _context = new CloudMediaContext(new Uri(_RESTAPIEndpoint), tokenProvider);
     }
 
-    /// <summary>  
-    /// Initiates the creation of a new channel.  
-    /// </summary>  
-    /// <param name="channelName">Name to be given to the new channel</param>  
-    /// <returns>  
-    /// Operation Id for the long running operation being executed by Media Services. 
-    /// Use this operation Id to poll for the channel creation status. 
-    /// </returns> 
+    /// <summary>
+    /// Initiates the creation of a new channel.
+    /// </summary>
+    /// <param name="channelName">Name to be given to the new channel</param>
+    /// <returns>
+    /// Operation Id for the long running operation being executed by Media Services.
+    /// Use this operation Id to poll for the channel creation status.
+    /// </returns>
     public string StartChannelCreation(string channelName)
     {
         var operation = _context.Channels.SendCreateOperation(
@@ -106,15 +106,15 @@ public class ChannelOperations
         return operation.Id;
     }
 
-    /// <summary> 
-    /// Checks if the operation has been completed. 
+    /// <summary>
+    /// Checks if the operation has been completed.
     /// If the operation succeeded, the created channel Id is returned in the out parameter.
-    /// </summary> 
-    /// <param name="operationId">The operation Id.</param> 
+    /// </summary>
+    /// <param name="operationId">The operation Id.</param>
     /// <param name="channel">
-    /// If the operation succeeded, 
+    /// If the operation succeeded,
     /// the created channel Id is returned in the out parameter.</param>
-    /// <returns>Returns false if the operation is still in progress; otherwise, true.</returns> 
+    /// <returns>Returns false if the operation is still in progress; otherwise, true.</returns>
     public bool IsCompleted(string operationId, out string channelId)
     {
         IOperation operation = _context.Operations.GetOperation(operationId);
@@ -125,8 +125,8 @@ public class ChannelOperations
         switch (operation.State)
         {
             case OperationState.Failed:
-                // Handle the failure. 
-                // For example, throw an exception. 
+                // Handle the failure.
+                // For example, throw an exception.
                 // Use the following information in the exception: operationId, operation.ErrorMessage.
                 break;
             case OperationState.Succeeded:

@@ -27,7 +27,7 @@ When delivering live streaming events with Azure Media Services the following co
 * A camera that is used to broadcast an event.
 * A live video encoder that converts signals from the camera to streams that are sent to a live streaming service.
 
-    Optionally, multiple live time synchronized encoders. For certain critical live events that demand very high availability and quality of experience, it is recommended to employ active-active redundant encoders with time synchronization to achieve seamless failover with no data loss.
+    Optionally, multiple live time synchronized encoders. For certain critical live events that demand very high availability and quality of experience, you should employ active-active redundant encoders with time synchronization to achieve seamless failover with no data loss.
 * A live streaming service that enables you to do the following:
 
   * ingest live content using various live streaming protocols (for example RTMP or Smooth Streaming),
@@ -53,14 +53,14 @@ A **Channel** represents a pipeline for processing live streaming content. A Cha
 
   > [!NOTE]
   > Using a pass-through method is the most economical way to do live streaming when you are doing multiple events over a long period of time, and you have already invested in on-premises encoders. See [pricing](https://azure.microsoft.com/pricing/details/media-services/) details.
-  > 
-  > 
+  >
+  >
 * An on-premises live encoder sends a single-bitrate stream to the Channel that is enabled to perform live encoding with Media Services in one of the following formats: RTMP or Smooth Streaming (fragmented MP4). The following live encoders with RTMP output are known to work with channels of this type: Telestream Wirecast. The Channel then performs live encoding of the incoming single bitrate stream to a multi-bitrate (adaptive) video stream. When requested, Media Services delivers the stream to customers.
 
 Starting with the Media Services 2.10 release, when you create a Channel, you can specify in which way you want for your channel to receive the input stream and whether or not you want for the channel to perform live encoding of your stream. You have two options:
 
-* **None** (pass-through) – Specify this value, if you plan to use an on-premises live encoder which will output multi-bitrate stream (a pass-through stream). In this case, the incoming stream passed through to the output without any encoding. This is the behavior of a Channel prior to 2.10 release.  
-* **Standard** – Choose this value, if you plan to use Media Services to encode your single bitrate live stream to multi-bitrate stream. This method is more economical for scaling up quickly for infrequent events. Be aware that there is a billing impact for live encoding and you should remember that leaving a live encoding channel in the "Running" state will incur billing charges.  It is recommended that you immediately stop your running channels after your live streaming event is complete to avoid extra hourly charges.
+* **None** (pass-through) – Specify this value, if you plan to use an on-premises live encoder which will output multi-bitrate stream (a pass-through stream). In this case, the incoming stream passed through to the output without any encoding. This is the behavior of a Channel prior to 2.10 release.
+* **Standard** – Choose this value, if you plan to use Media Services to encode your single bitrate live stream to multi-bitrate stream. This method is more economical for scaling up quickly for infrequent events. Be aware that there is a billing impact for live encoding and you should remember that leaving a live encoding channel in the "Running" state will incur billing charges.  You should immediately stop your running channels after your live streaming event is complete to avoid extra hourly charges.
 
 ## Comparison of Channel Types
 
@@ -119,7 +119,7 @@ Each program is associated with an Asset. To publish the program you must create
 A channel supports up to three concurrently running programs so you can create multiple archives of the same incoming stream. This allows you to publish and archive different parts of an event as needed. For example, your business requirement is to archive 6 hours of a program, but to broadcast only last 10 minutes. To accomplish this, you need to create two concurrently running programs. One program is set to archive 6 hours of the event but the program is not published. The other program is set to archive for 10 minutes and this program is published.
 
 ## Billing Implications
-A channel begins billing as soon as it's state transitions to "Running" via the API.  
+A channel begins billing as soon as it's state transitions to "Running" via the API.
 
 The following table shows how Channel states map to billing states in the API and Azure portal. Note that the states are slightly different between the API and Portal UX. As soon as a channel is in the "Running" state via the API, or in the "Ready" or "Streaming" state in the Azure portal, billing will be active.
 

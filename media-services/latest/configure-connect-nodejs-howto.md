@@ -4,7 +4,7 @@ description: This article demonstrates how to connect to Media Services v3 API w
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 06/28/2022
 ms.author: inhenkel
 ---
 # Connect to Media Services v3 API - Node.js
@@ -19,7 +19,7 @@ This article shows you how to connect to the Azure Media Services v3 node.js SDK
 - Install [Node.js](https://nodejs.org/en/download/).
 - Install [TypeScript](https://www.typescriptlang.org/download).
 - [Create a Media Services account](./account-create-how-to.md). Be sure to remember the resource group name and the Media Services account name.
-- Create a service principal for your application. See [access APIs](./access-api-howto.md).<br/>**Pro tip!** Keep this window open or copy everything in the JSON tab to Notepad. 
+- Create a service principal for your application. See [access APIs](./access-api-howto.md).<br/>**Pro tip!** Keep this window open or copy everything in the JSON tab to Notepad.
 - Make sure to get the latest version of the [AzureMediaServices SDK for JavaScript](https://www.npmjs.com/package/@azure/arm-mediaservices).
 
 > [!IMPORTANT]
@@ -74,12 +74,13 @@ For this example, you will use the following packages in the `package.json` file
 
 ### Sample *.env* file
 
-Copy the content of this file to a file named *.env*. It should be stored at the root of your working repository. These are the values you got from the API Access page for your Media Services account in the portal.
+You will keep your authentication values in a *.env* file. Read [Access the API](./access-api-howto.md) to learn how to get and copy these values. You can get the values from the API Access page for your Media Services account in the portal, or use the CLI to get the values needed.
 
-To access the values needed for entering into the *.env* file, it is recommended to first read and review the how-to article [Access the API](./access-api-howto.md).
-You can use either the Azure portal or the CLI to get the values needed to enter into this sample's environment variables file.
+Copy and paste the values into a file named *.env*. The file should be stored at the root of your working repository.
 
 Once you have created the *.env* file, you can start working with the samples.
+
+Example *.env* file:
 
 ```nodejs
 # Values from the API Access page in the portal
@@ -87,7 +88,7 @@ AADCLIENTID="00000000-0000-0000-0000-000000000000"
 AADSECRET="00000000-0000-0000-0000-000000000000"
 AADTENANTID="00000000-0000-0000-0000-000000000000"
 
-# Change this to match your Azure AD Tenant domain name. 
+# Change this to match your Azure AD Tenant domain name.
 AADTENANTDOMAIN="microsoft.onmicrosoft.com"
 
 # Set this to your Media Services Account name, resource group it is contained in, and location
@@ -107,7 +108,7 @@ DRMSYMMETRICKEY="add random base 64 encoded string here"
 ## Run the sample application *HelloWorld-ListAssets*
 
 
-1. Launch Visual Studio Code from the root Folder. 
+1. Launch Visual Studio Code from the root Folder.
 
 ```bash
 cd media-services-v3-node-tutorials
@@ -117,9 +118,9 @@ code .
 2. Install the packages used in the *package.json* file from a Terminal
 
 ```
-npm install 
+npm install
 ```
-3. Make a copy of the *sample.env* file,  rename it to *.env* and update the values in the file to match your account and subscription information. You may need to gather this information from the Azure portal first. 
+3. Make a copy of the *sample.env* file,  rename it to *.env* and update the values in the file to match your account and subscription information. You may need to gather this information from the Azure portal first.
 
 4. Change directory into the *HelloWorld-ListAssets* folder
 
@@ -127,7 +128,7 @@ npm install
 cd HelloWorld-ListAssets
 ```
 
-5. Open the *list-assets.ts* file in the HelloWorld-ListAssets folder and press the F5 key in Visual Studio code to begin running the script. You should see a list of assets displayed if you have assets already in the account. If the account is empty, you will see an empty list.  
+5. Open the *list-assets.ts* file in the HelloWorld-ListAssets folder and press the F5 key in Visual Studio code to begin running the script. You should see a list of assets displayed if you have assets already in the account. If the account is empty, you will see an empty list.
 
 To quickly see assets listed, use the portal to upload a few video files. Assets will automatically be created each one and running this script again will then return their names.
 
@@ -146,7 +147,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 export async function main() {
-  // Copy the samples.env file and rename it to .env first, then populate it's values with the values obtained 
+  // Copy the samples.env file and rename it to .env first, then populate it's values with the values obtained
   // from your Media Services account's API Access page in the Azure portal.
   const clientId: string = process.env.AADCLIENTID as string;
   const secret: string = process.env.AADSECRET as string;
@@ -160,7 +161,7 @@ export async function main() {
   // Managed identity authentication is supported via either the DefaultAzureCredential or the ManagedIdentityCredential classes
   // https://docs.microsoft.com/javascript/api/overview/azure/identity-readme?view=azure-node-latest
   // See the following examples for how to authenticate in Azure with managed identity
-  // https://github.com/Azure/azure-sdk-for-js/blob/@azure/identity_2.0.1/sdk/identity/identity/samples/AzureIdentityExamples.md#authenticating-in-azure-with-managed-identity 
+  // https://github.com/Azure/azure-sdk-for-js/blob/@azure/identity_2.0.1/sdk/identity/identity/samples/AzureIdentityExamples.md#authenticating-in-azure-with-managed-identity
 
 
   // const credential = new ManagedIdentityCredential("<USER_ASSIGNED_MANAGED_IDENTITY_CLIENT_ID>");

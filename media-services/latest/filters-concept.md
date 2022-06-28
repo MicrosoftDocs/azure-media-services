@@ -4,7 +4,7 @@ description: This topic describes how to create filters so your client can use t
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 06/28/2022
 ms.author: inhenkel
 ---
 # Filters
@@ -44,7 +44,7 @@ You use the following properties to describe the filters.
 
 ### presentationTimeRange
 
-Use this property with **Asset Filters**. It is not recommended to set the property with **Account Filters**.
+Use this property with **Asset Filters**. It isn't recommended to set the property with **Account Filters**.
 
 |Name|Description|
 |---|---|
@@ -63,7 +63,7 @@ Filter track property conditions describe track types, values (described in the 
 
 |Name|Description|
 |---|---|
-|**Bitrate**|Use the bitrate of the track for filtering.<br/><br/>The recommended value is a range of bitrates, in bits per second. For example, "0-2427000".<br/><br/>Note: while you can use a specific bitrate value, like 250000 (bits per second), this approach is not recommended, as the exact bitrates can fluctuate from one Asset to another.|
+|**Bitrate**|Use the bitrate of the track for filtering.<br/><br/>The best value is a range of bitrates, in bits per second. For example, "0-2427000".<br/><br/>Note: while you can use a specific bitrate value, like 250000 (bits per second), this approach isn't recommended, as the exact bitrates can fluctuate from one Asset to another.|
 |**FourCC**|Use the FourCC value of the track for filtering.<br/><br/>The value is the first element of codecs format, as specified in [RFC 6381](https://tools.ietf.org/html/rfc6381). Currently, the following codecs are supported: <br/>For Video: "avc1", "hev1", "hvc1"<br/>For Audio: "mp4a", "ec-3"<br/><br/>To determine the FourCC values for tracks in an Asset, get and examine the manifest file.|
 |**Language**|Use the language of the track for filtering.<br/><br/>The value is the tag of a language you want to include, as specified in RFC 5646. For example, "en".|
 |**Name**|Use the name of the track for filtering.|
@@ -134,7 +134,7 @@ You can specify a list of [asset or account filters](filters-concept.md) on your
 
 **Streaming Locators** are not updatable while filters can be updated.
 
-It is not recommended to update the definition of filters associated with an actively published **Streaming Locator**, especially when CDN is enabled. Streaming servers and CDNs can have internal caches that may result in stale cached data to be returned.
+It isn't recommended to update the definition of filters associated with an actively published **Streaming Locator**, especially when CDN is enabled. Streaming servers and CDNs can have internal caches that may result in stale cached data to be returned.
 
 If the filter definition needs to be changed consider creating a new filter and adding it to the **Streaming Locator** URL or publishing a new **Streaming Locator** that references the filter directly.
 
