@@ -21,6 +21,8 @@ To stay up to date with the most recent developments, this article provides you 
 
 ## June 2022
 
+### Autoscaling
+
 You can now autoscale the premium streaming endpoints in your Media
 Services account based on any available metrics for the streaming endpoint, or
 metrics for any related entities. A combination of these metrics can be used to
