@@ -408,6 +408,9 @@
   - name: Reset account credentials
     href: account-reset-account-credentials.md
     displayName: reset, account credentials, remove credentials, security, restore, remove, credentials
+  - name: Autoscale a streaming endpoint
+    href: streaming-endpoint-autoscaling-how-to.md
+    displayName: autoscale, Azure Autoscale, streaming endpoint
   - name: Code snippets
     items:
       - name: Accounts and Storage
