@@ -71,8 +71,7 @@ You can also autoscale based on the number of running live events.
         1. Select an operator from the **Operator** dropdown list. For example, if you want to autoscale when the CPU is greater than 70%, then choose **Greater than**.
         1. In the Action section, choose the action from the **Operation** dropdown list, enter the number of minutes in the **Cool down** field, and enter the number of instances to increase by in the **Instance count** field. For example, enter *Increase count by 1* and wait for *15 minutes* before checking again to see if the CPU usage is greater than 70%.
 1. Select **Add**.
-1. Enter values for the Minimum, Maximum and Default number of instances there
-    should be for the premium streaming endpoint.
+1. Enter values for the **Minimum**, **Maximum** and **Default** number of instances there should be for the premium streaming endpoint.
 
 ### Set up additional conditions
 
