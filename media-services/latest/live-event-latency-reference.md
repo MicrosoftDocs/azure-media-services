@@ -18,15 +18,6 @@ For *pass-through* live events, we recommend that you always use the *LowLatency
 
 For *encoding* live events, you can choose between *LowLatency* or *LowLatencyV2* stream options. The *LowLatencyV2* setting is the best option if you wish to go down to 3-7 seconds of end to end latency for your live stream. (**In the portal**, you may see the LowLatency stream option as "Regular latency" and LowLatencyV2 stream option as the low latency option.) The supported output formats are DASH CMAF (format=mpd-time-cmaf) or Low Latency HLS (format=m3u8-cmaf). See [dynamic packaging](encode-dynamic-packaging-concept.md) page for streaming URL formats.
 
-For all streams, you will need proper settings on your LL-HLS or DASH capable players to see the best latency numbers.
-
-We have tested the LowLatencyV2 options with the following media players:
-
-- Video.js - Choose CMAF LL-HLS playback for best results. Please use the LL-HLS support and buffer level ABR options.
-- HLS.js - Choose CMAF LL-HLS playback for best results.
-- Shaka player - Use version 4.1.1 and above.
-- Azure Media Player - Only on native Safari. It falls back to the native LL-HLS player.  On other platforms, it will choose to play DASH with approximately 1 second added latency compared to LL-HLS.  Choose "Low Latency Heuristic Profile".
-
 ## When to choose the LowLatency option
 
 Choose the *LowLatency* stream option if you need Smooth Streaming output, or require a DVR window longer than 6 hours. When using TS outputs with HLS v3 (format=aapl-m3u8-v3) and HLS v4 (format=aapl-m3u8-v4), be sure to set the `LiveOutput.Hls.fragmentsPerTsSegment` setting to 1 to ensure that Media Services packs only one mp4 fragment into one TS segment.
@@ -66,6 +57,17 @@ GOP size doesn't affect latency with the LowLatencyV2 option.
 Media Services can currently only support the following encryption formats for live events with LowLatencyV2 stream option:
 
 [!INCLUDE [low-latency-supported-encryption-types](includes/low-latency-supported-encryption-types.md)]
+
+## Player settings
+
+For all streams, you will need proper settings on your LL-HLS or DASH capable players to see the best latency numbers.
+
+We have tested the LowLatencyV2 options with the following media players:
+
+- Video.js - Choose CMAF LL-HLS playback for best results. Please use the LL-HLS support and buffer level ABR options.
+- HLS.js - Choose CMAF LL-HLS playback for best results.
+- Shaka player - Use version 4.1.1 and above.
+- Azure Media Player - Only on native Safari. It falls back to the native LL-HLS player.  On other platforms, it will choose to play DASH with approximately 1 second added latency compared to LL-HLS.  Choose "Low Latency Heuristic Profile".
 
 ## How-tos, tutorials and samples
 
