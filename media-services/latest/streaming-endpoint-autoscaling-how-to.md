@@ -10,6 +10,8 @@ ms.author: inhenkel
 
 # Autoscale Media Services premium streaming endpoints
 
+[!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
+
 ## Overview
 
 You have a large, live streaming media event coming up but you’re not sure how
