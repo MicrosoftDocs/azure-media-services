@@ -24,7 +24,7 @@ We have tested the LowLatencyV2 options with the following media players:
 
 - Video.js - Choose CMAF LL-HLS playback for best results. Please use the LL-HLS support and buffer level ABR options.
 - HLS.js - Choose CMAF LL-HLS playback for best results.
-- Shaka player - Choose CMAF LL-HLS playback.
+- Shaka player - Use version 4.1.1 and above.
 - Azure Media Player - Only on native Safari. It falls back to the native LL-HLS player.  On other platforms, it will choose to play DASH with approximately 1 second added latency compared to LL-HLS.  Choose "Low Latency Heuristic Profile".
 
 ## When to choose the LowLatency option
