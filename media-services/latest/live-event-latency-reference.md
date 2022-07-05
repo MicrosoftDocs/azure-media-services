@@ -4,7 +4,7 @@ description: This article discusses low latency on a live event. It also discuss
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 06/29/2022
+ms.date: 07/05/2022
 ms.author: inhenkel
 ---
 
