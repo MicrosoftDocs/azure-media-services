@@ -28,9 +28,9 @@ Latency is measured between the time the video is encoded on your encoding softw
 
 For the lowest latency possible with a *passthrough* live event, use a key frame interval setting of 1 second on your encoding software and the *LowLatency* streaming option.
 
-For the lowest latency possible with an encoding live event, use the *LowLatencyV2* streaming option and choose HLS CMAF (format=m3u8-cmaf) output. We support delivery in Low Latency HLS.
+For the lowest latency possible with an *encoding live event*, use the *LowLatencyV2* streaming option and choose HLS CMAF (format=m3u8-cmaf) output. We support delivery in Low Latency HLS.
 
-If you must use other streaming formats such as TS outputs with HLS v3 (format=aapl-m3u8-v3) and HLS v4 (format=aapl-m3u8-v4), be sure to set the LiveOutput.Hls.fragmentsPerTsSegment setting for your live event to 1 to ensure that Media Services packs only one mp4 fragment into one TS segment.
+If you must use other streaming formats such as TS outputs with HLS v3 (format=aapl-m3u8-v3) and HLS v4 (format=aapl-m3u8-v4), be sure to set the `LiveOutput.Hls.fragmentsPerTsSegment` setting for your live event to 1 to ensure that Media Services packs only one mp4 fragment into one TS segment.
 
 See the following table for latency numbers when used with the optimal settings and proper player configurations.
 
