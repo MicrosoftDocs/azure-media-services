@@ -27,7 +27,7 @@ foreach (Microsoft.Azure.Management.Media.Models.Operation a in client.Operation
 }
 ```
 
-The [built-in role definitions](/azure/role-based-access-controle/built-in-roles) article tells you exactly what the role grants.
+The [built-in role definitions](/azure/role-based-access-control/built-in-roles) article tells you exactly what the role grants.
 
 See the following articles for more information:
 
