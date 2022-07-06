@@ -4,7 +4,7 @@ description: This article discusses Azure role-based access control (Azure RBAC)
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 07/06/2022
 ms.author: inhenkel
 ---
 
@@ -27,11 +27,11 @@ foreach (Microsoft.Azure.Management.Media.Models.Operation a in client.Operation
 }
 ```
 
-The [built-in role definitions](/azure/role-based-access-controle/built-in-roles) article tells you exactly what the role grants.
+The [built-in role definitions](/azure/role-based-access-control/built-in-roles) article tells you exactly what the role grants.
 
 See the following articles for more information:
 
-- [Classic subscription administrator roles, Azure roles, and Azure AD roles](/azure/role-based-access-controle/rbac-and-directory-admin-roles)
-- [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-controle/overview)
-- [Add or remove Azure role assignments using the REST API](/azure/role-based-access-controle/role-assignments-rest)
+- [Classic subscription administrator roles, Azure roles, and Azure AD roles](/azure/role-based-access-control/rbac-and-directory-admin-roles)
+- [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
+- [Add or remove Azure role assignments using the REST API](/azure/role-based-access-control/role-assignments-rest)
 - [Media Services resource provider operations](/azure/role-based-access-control/resource-provider-operations#microsoftmedia)
