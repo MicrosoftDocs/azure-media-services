@@ -50,7 +50,7 @@ When you use live encoding, you can send the contribution feed only at resolutio
 The resolutions and bitrates contained in the output from the live encoder is determined by the preset. If using a **Standard** live encoder (LiveEventEncodingType.Standard), then the *Default720p* preset specifies a set of six resolution/bit rate pairs, going from 720p at 3.5 Mbps down to 192p at 200 kbps. Otherwise, if using a **Premium1080p** live encoder (LiveEventEncodingType.Premium1080p), then the *Default1080p* preset specifies a set of six resolution/bit rate pairs, going from 1080p at 3.5 Mbps down to 180p at 200 kbps. For information, see [System presets](live-event-types-comparison-reference.md#system-presets).
 
 > [!NOTE]
-> If you need to customize the live encoding preset, open a support ticket via Azure portal. Specify the desired table of resolution and bitrates. Verify that there's only one layer at 720p (if requesting a preset for a Standard live encoder) or at 1080p (if requesting a preset for a Premium1080p live encoder), and 6 layers at most.
+> If you need to customize the live encoding preset, please open a support ticket via Azure Portal. You should specify the desired table of video resolution/bitrates and audio bitrates. For video, verify that there is only one layer at 720p, and at most 6 layers for video. For audio, you can customize with the following discrete AAC audio bitrates (96k, 112k, 128k, 160k, 192k, 224k, 256k, 320k, 384k, 448k, 512k). Also please specify that you are requesting a *custom* preset in the support ticket.
 
 ## Creating live events
 
