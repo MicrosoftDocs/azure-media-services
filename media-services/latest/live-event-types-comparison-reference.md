@@ -75,7 +75,7 @@ If the source frame rate on input is >30 fps, the frame rate will be reduced to 
 | 200     | 340   | 192    | 30     | High    |
 
 > [!NOTE]
-> If you need to customize the live encoding preset, please open a support ticket via Azure Portal. You should specify the desired table of video resolution/bitrates and audio bitrates. For video, verify that there is only one layer at 720p, and at most 6 layers for video. For audio, you can customize with the following discrete AAC audio bitrates (96k, 112k, 128k, 160k, 192k, 224k, 256k, 320k, 384k, 448k, 512k). Also please specify that you are requesting a *custom* preset in the support ticket.
+> If you need to customize the live encoding preset, please open a support ticket via Azure Portal. You should specify the desired table of video resolution/bitrates and audio bitrates. For video, verify that there is only one layer at 720p, and at most 6 layers for video. For audio, you can customize with the following discrete AAC audio bitrates (96k, 112k, 128k, 160k, 192k, 224k, 256k, 320k, 384k, 448k, 512k). Multiple audio tracks at different bitrates are allowed and can be included in the custom preset. Also please specify that you are requesting a *custom* preset in the support ticket.
 
 ### Output Video Streams for Default1080p
 
@@ -93,11 +93,11 @@ If the source frame rate on input is >30 fps, the frame rate will be reduced to 
 | 200     | 320   | 180    | 30     | High    |
 
 > [!NOTE]
-> If you need to customize the live encoding preset, please open a support ticket via Azure Portal. You should specify the desired table of video resolution/bitrates and audio bitrates. Verify that there is only one layer at 1080p, and at most 6 layers. Also, specify that you are requesting a preset for a Premium1080p live encoder. For audio, you can customize with the following discrete AAC audio bitrates (96k, 112k, 128k, 160k, 192k, 224k, 256k, 320k, 384k, 448k, 512k). Also please specify that you are requesting a *custom* preset in the support ticket.
+> If you need to customize the live encoding preset, please open a support ticket via Azure Portal. You should specify the desired table of video resolution/bitrates and audio bitrates. Verify that there is only one layer at 1080p, and at most 6 layers. Also, specify that you are requesting a preset for a Premium1080p live encoder. For audio, you can customize with the following discrete AAC audio bitrates (96k, 112k, 128k, 160k, 192k, 224k, 256k, 320k, 384k, 448k, 512k). Multiple audio tracks at different bitrates are allowed and can be included in the custom preset. Also please specify that you are requesting a *custom* preset in the support ticket.
 
 ### Output Audio Stream for Default720p and Default1080p
 
-For both *Default720p* and *Default1080p* presets, audio is encoded to stereo AAC-LC at 128 kbps. The sampling rate follows that of the audio track in the contribution feed.  You can also request a custom preset with the following discrete AAC audio bitrates (96k, 112k, 128k, 160k, 192k, 224k, 256k, 320k, 384k, 448k, 512k). Also please specify that you are requesting a *custom* preset in the support ticket.
+For both *Default720p* and *Default1080p* presets, audio is default encoded to stereo AAC-LC at 128 kbps. The sampling rate follows that of the audio track in the contribution feed.
 
 > [!NOTE]
 > If the sampling rate is low, such as 8khz, the encoded output will be lower than 128kbps.
