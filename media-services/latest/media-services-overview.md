@@ -1,10 +1,10 @@
 ---
 title: Azure Media Services v3 overview
-description: Azure Media Services is a cloud-based platform that enables you to build solutions that achieve broadcast-quality video streaming, enhance accessibility and distribution, analyze content, and much more. Whether you're an app developer, a call center, a government agency, or an entertainment company, Media Services helps you create apps that deliver media experiences of outstanding quality to large audiences on today's most popular mobile devices and browsers.
+description: Azure Media Services is a cloud-based platform that enables you to build solutions to achieve broadcast-quality video streaming, enhance accessibility and distribution, analyze content, and much more. Whether you're an app developer, a call center, a government agency, or an entertainment company, Media Services helps you create apps that deliver media experiences of outstanding quality to large audiences on today's most popular mobile devices and browsers.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 04/13/2022
+ms.date: 07/08/2022
 ms.author: inhenkel
 ---
 
