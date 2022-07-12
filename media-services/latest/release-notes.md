@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 37/22/2022
+ms.date: 7/22/2022
 ms.author: inhenkel
 ---
 
