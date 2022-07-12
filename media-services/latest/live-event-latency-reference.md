@@ -18,7 +18,7 @@ This article discusses the live event stream options that impact the end to end 
 ## Standard or premium encoding live event stream options
 For *encoding* live events, you can choose between *LowLatency* or *LowLatencyV2* stream options. The *LowLatencyV2* setting is the best option if you wish to go down to 3-7 seconds of end to end latency for your live stream. The supported output formats are DASH CMAF (format=mpd-time-cmaf) and Low Latency HLS (format=m3u8-cmaf). See [dynamic packaging](encode-dynamic-packaging-concept.md) page for streaming URL formats.
 
-Choose the *LowLatency* stream option choose this option if you need Smooth Streaming output, or an archive length (DVR window) longer than 6 hours, or need Fairplay on Apple devices.
+Choose the *LowLatency* stream option choose this option if you need Smooth Streaming output, or an archive length (DVR window) longer than 6 hours, or need FairPlay on Apple devices.
 
 ## Pass-through live event stream options
 For *pass-through* live events, we recommend that you always use the *LowLatency* stream option. The *LowLatencyV2* setting is not available yet for pass-through live events.
