@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 3/16/2022
+ms.date: 37/22/2022
 ms.author: inhenkel
 ---
 
@@ -34,6 +34,7 @@ You can now autoscale the premium streaming endpoints in your Media
 Services account based on any available metrics for the streaming endpoint, or
 metrics for any related entities. A combination of these metrics can be used to
 create the rule for autoscaling. For more information see [Autoscale Media Services streaming endpoints](streaming-endpoint-autoscaling-how-to.md).
+Note that autoscaling can still take time, and is not instantaneous, so be sure to allow enough time for resources to scale and deploy in your architecture designs.  Streaming endpoints take time to spin up, so it is recommended to use lower value trigger points for CPU utilization and network bandwidth egress to trigger a scale-up.
 
 ## April 2022
 
