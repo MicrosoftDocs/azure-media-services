@@ -1,12 +1,14 @@
 ---
 title: Media Services v3 offline FairPlay Streaming for iOS
 description: This article gives an overview and shows how to use Azure Media Services v3 to dynamically encrypt your HTTP Live Streaming (HLS) content with Apple FairPlay in offline mode.
-author: willzhan
+author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
 ms.date: 3/16/2022
 ms.author: inhenkel
 ---
+
+<!-- William Zhang -->
 
 # Offline FairPlay Streaming for iOS with Media Services v3
 
@@ -16,7 +18,7 @@ ms.author: inhenkel
 
 - Microsoft PlayReady
 - Google Widevine
-    
+
     Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
 - Apple FairPlay Streaming - An Apple DRM technology that is only available for video transferred over HTTP Live Streaming (HLS) on iOS devices, in Apple TV, and in Safari on macOS.
 - AES-128 encryption
@@ -38,7 +40,7 @@ This article covers FairPlay Streaming (FPS) offline-mode support that targets d
 
 Before you implement offline DRM for FairPlay on an iOS 10+ device:
 
-* Review online content protection for FairPlay: 
+* Review online content protection for FairPlay:
 
     - [Apple FairPlay license requirements and configuration](drm-fairplay-license-overview.md)
     - [Use DRM dynamic encryption and license delivery service](drm-protect-with-drm-tutorial.md)
@@ -47,10 +49,10 @@ Before you implement offline DRM for FairPlay on an iOS 10+ device:
 
     - The FPS Server SDK, which contains the Key Security Module (KSM), client samples, a specification, and a set of test vectors.
     - The FPS Deployment Pack, which contains the D function specification, along with instructions about how to generate the FPS Certificate, customer-specific private key, and Application Secret Key. Apple issues the FPS Deployment Pack only to licensed content providers.
-    - The .der/.cer certificate files you receive as part of the generation of the FPS certificate contain a public key and can be made available to the client.  The private key (.pfx) should be secured in Azure Key Vault or another secure location. 
-* Clone https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials.git. 
+    - The .der/.cer certificate files you receive as part of the generation of the FPS certificate contain a public key and can be made available to the client.  The private key (.pfx) should be secured in Azure Key Vault or another secure location.
+* Clone https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials.git.
 
-    You'll need to modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add FairPlay configurations.  
+    You'll need to modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add FairPlay configurations.
 
 ## [.NET](#tab/net/)
 
@@ -79,7 +81,7 @@ options.Add(
 ## Enable offline mode
 
 To enable offline mode, create a custom StreamingPolicy and use its name when creating a StreamingLocator in [CreateStreamingLocatorAsync](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs#L538).
- 
+
 ```csharp
 CommonEncryptionCbcs objStreamingPolicyInput= new CommonEncryptionCbcs()
 {
@@ -112,18 +114,18 @@ Now your Media Services account is configured to deliver offline FairPlay licens
 
 ## Sample iOS Player
 
-FPS offline-mode support is available only on iOS 10 and later. The FPS Server SDK (version 3.0 or later) contains the document and sample for FPS offline mode. 
+FPS offline-mode support is available only on iOS 10 and later. The FPS Server SDK (version 3.0 or later) contains the document and sample for FPS offline mode.
 Specifically, FPS Server SDK (version 3.0 or later) contains the following two items related to offline mode:
 
 * Document: "Offline Playback with FairPlay Streaming and HTTP Live Streaming." Apple, September 14, 2016. In FPS Server SDK version 4.0, this document is merged into the main FPS document.
-* Sample code: HLSCatalog sample (part of the Apple's FPS Server SDK) for FPS offline mode in the \FairPlay Streaming Server SDK version 3.1\Development\Client\HLSCatalog_With_FPS\HLSCatalog\. 
+* Sample code: HLSCatalog sample (part of the Apple's FPS Server SDK) for FPS offline mode in the \FairPlay Streaming Server SDK version 3.1\Development\Client\HLSCatalog_With_FPS\HLSCatalog\.
 In the HLSCatalog sample app, the following code files are used to implement offline-mode features:
 
     - AssetPersistenceManager.swift code file: AssetPersistenceManager is the main class in this sample that demonstrates how to:
 
         - Manage downloading HLS streams, such as the APIs used to start and cancel downloads and to delete existing assets off devices.
         - Monitor the download progress.
-    - AssetListTableViewController.swift and AssetListTableViewCell.swift code files: AssetListTableViewController is the main interface of this sample. It provides a list of assets the sample can use to play, download, delete, or cancel a download. 
+    - AssetListTableViewController.swift and AssetListTableViewCell.swift code files: AssetListTableViewController is the main interface of this sample. It provides a list of assets the sample can use to play, download, delete, or cancel a download.
 
 These steps show how to set up a running iOS player. Assuming you start from the HLSCatalog sample in FPS Server SDK version 4.0.1, make the following code changes:
 
@@ -131,17 +133,17 @@ In HLSCatalog\Shared\Managers\ContentKeyDelegate.swift, implement the method `re
 
 ```swift
     var ckcData: Data? = nil
-    
+
     let semaphore = DispatchSemaphore(value: 0)
     let postString = "spc=\(spcData.base64EncodedString())&assetId=\(assetIDString)"
-    
+
     if let postData = postString.data(using: .ascii, allowLossyConversion: true), let drmServerUrl = URL(string: self.drmUrl) {
         var request = URLRequest(url: drmServerUrl)
         request.httpMethod = "POST"
         request.setValue(String(postData.count), forHTTPHeaderField: "Content-Length")
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpBody = postData
-        
+
         URLSession.shared.dataTask(with: request) { (data, _, error) in
             if let data = data, var responseString = String(data: data, encoding: .utf8) {
                 responseString = responseString.replacingOccurrences(of: "<ckc>", with: "").replacingOccurrences(of: "</ckc>", with: "")
@@ -149,13 +151,13 @@ In HLSCatalog\Shared\Managers\ContentKeyDelegate.swift, implement the method `re
             } else {
                 print("Error encountered while fetching FairPlay license for URL: \(self.drmUrl), \(error?.localizedDescription ?? "Unknown error")")
             }
-            
+
             semaphore.signal()
             }.resume()
     } else {
         fatalError("Invalid post data")
     }
-    
+
     semaphore.wait()
     return ckcData
 ```
@@ -171,7 +173,7 @@ func requestApplicationCertificate() throws -> Data {
         } catch {
             print("Error loading FairPlay application certificate: \(error)")
         }
-        
+
         return applicationCertificate
     }
 ```
