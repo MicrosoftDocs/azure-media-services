@@ -11,4 +11,4 @@ title: Create a live output with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsLiveEOutputCreate" interactive="cloudshell-bash":::
 
-For more information about this command, see the [CLI reference](/cli/azure/ams/live-output?view=azure-cli-latest#az-ams-live-output-create).
+For more information about this command, see the [CLI reference](/cli/azure/ams/live-output?view=azure-cli-latest#az-ams-live-output-create&preserve-view=true).
