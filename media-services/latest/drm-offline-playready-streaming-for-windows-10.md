@@ -48,7 +48,7 @@ You can use two types of PlayReady license delivery:
 * PlayReady license delivery service in Azure Media Services;
 * PlayReady license servers hosted anywhere.
 
-To obtain a PlayReady license with the AMS delivery service, see [Media Services v3 with PlayReady license template](drm-playready-license-template-concept.md)
+To obtain a PlayReady license with the AMS delivery service, see [Media Services v3 with PlayReady license template](drm-playready-license-template-concept.md).
 
 For playback testing, you can use a Universal Windows Application on Windows 10. In [Windows 10 Universal samples](https://github.com/Microsoft/Windows-universal-samples), there is a basic player sample called [Adaptive Streaming Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AdaptiveStreaming). Add the code for choosing the downloaded video and use it as the source, instead of the adaptive streaming source. The changes are in button click event handler:
 
