@@ -1,12 +1,15 @@
 ---
 title: Configure offline PlayReady streaming
 description: This article shows how to configure your Azure Media Services v3 account for streaming PlayReady for Windows 10 offline.
-author: willzhan
+author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 07/13/2022
 ms.author: inhenkel
 ---
+
+<!-- William Zhang -->
+<!-- Removed dependencies on external resources 7/13/2022 -IH -->
 
 # Offline PlayReady Streaming for Windows 10 with Media Services v3
 
@@ -28,12 +31,12 @@ This section gives some background on offline mode playback, especially why:
 * As disclosed at Netflix 2016 Q3 shareholder conference, downloading content is a “oft-requested feature”, and “we are open to it” said by Reed Hastings, Netflix CEO.
 * Some content providers may disallow DRM license delivery beyond a country/region's border. If a user needs to travel abroad and still wants to watch content, offline download is needed.
 
-The challenge we face in implementing offline mode is the following:
+Challenges for implementing offline mode are the following:
 
 * MP4 is supported by many players, encoder tools, but there is no binding between MP4 container and DRM;
 * In the long term, CFF with CENC is the way to go. However, today, the tools/player support ecosystem is not there yet. We need a solution, today.
 
-The idea is: smooth streaming ([PIFF](/iis/media/smooth-streaming/protected-interoperable-file-format)) file format with H264/AAC has a binding with PlayReady (AES-128 CTR). Individual smooth streaming .ismv file (assuming audio is muxed in video) is itself a fMP4 and can be used for playback. If a smooth streaming content goes through PlayReady encryption, each .ismv file becomes a PlayReady protected fragmented MP4. We can choose an .ismv file with the preferred bitrate and rename it as .mp4 for download.
+The smooth streaming ([PIFF](/iis/media/smooth-streaming/protected-interoperable-file-format)) file format with H264/AAC has a binding with PlayReady (AES-128 CTR). Individual smooth streaming .ismv file (assuming audio is muxed in video) is itself a fMP4 and can be used for playback. If a smooth streaming content goes through PlayReady encryption, each .ismv file becomes a PlayReady protected fragmented MP4. We can choose an .ismv file with the preferred bitrate and rename it as .mp4 for download.
 
 There are two options for hosting the PlayReady protected MP4 for progressive download:
 
@@ -45,19 +48,9 @@ You can use two types of PlayReady license delivery:
 * PlayReady license delivery service in Azure Media Services;
 * PlayReady license servers hosted anywhere.
 
-Below are two sets of test assets, the first one using PlayReady license delivery in AMS while the second one using my PlayReady license server hosted on an Azure VM:
+To obtain a PlayReady license with the AMS delivery service, see [Media Services v3 with PlayReady license template](drm-playready-license-template-concept.md)
 
-## Asset #1
-
-* Progressive download URL: [https://willzhanmswest.streaming.mediaservices.windows.net/8d078cf8-d621-406c-84ca-88e6b9454acc/20150807-bridges-2500_H264_1644kbps_AAC_und_ch2_256kbps.mp4](https://willzhanmswest.streaming.mediaservices.windows.net/8d078cf8-d621-406c-84ca-88e6b9454acc/20150807-bridges-2500_H264_1644kbps_AAC_und_ch2_256kbps.mp4)
-* PlayReady LA_URL (AMS): `https://willzhanmswest.keydelivery.mediaservices.windows.net/PlayReady/`
-
-## Asset #2
-
-* Progressive download URL: [https://willzhanmswest.streaming.mediaservices.windows.net/7c085a59-ae9a-411e-842c-ef10f96c3f89/20150807-bridges-2500_H264_1644kbps_AAC_und_ch2_256kbps.mp4](https://willzhanmswest.streaming.mediaservices.windows.net/7c085a59-ae9a-411e-842c-ef10f96c3f89/20150807-bridges-2500_H264_1644kbps_AAC_und_ch2_256kbps.mp4)
-* PlayReady LA_URL (on-premises): `https://willzhan12.cloudapp.net/playready/rightsmanager.asmx`
-
-For playback testing, we used a Universal Windows Application on Windows 10. In [Windows 10 Universal samples](https://github.com/Microsoft/Windows-universal-samples), there is a basic player sample called [Adaptive Streaming Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AdaptiveStreaming). All we have to do is to add the code for us to pick downloaded video and use it as the source, instead of adaptive streaming source. The changes are in button click event handler:
+For playback testing, you can use a Universal Windows Application on Windows 10. In [Windows 10 Universal samples](https://github.com/Microsoft/Windows-universal-samples), there is a basic player sample called [Adaptive Streaming Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AdaptiveStreaming). Add the code for choosing the downloaded video and use it as the source, instead of the adaptive streaming source. The changes are in button click event handler:
 
 ## [.NET](#tab/net/)
 
@@ -73,7 +66,6 @@ private async void LoadUri_Click(object sender, RoutedEventArgs e)
     //LoadSourceFromUriTask = LoadSourceFromUriAsync(uri);
     //await LoadSourceFromUriTask;
 
-    //willzhan change start
     // Create and open the file picker
     FileOpenPicker openPicker = new FileOpenPicker();
     openPicker.ViewMode = PickerViewMode.Thumbnail;
@@ -106,11 +98,9 @@ private async void LoadUri_Click(object sender, RoutedEventArgs e)
 
 Since the video is under PlayReady protection, the screenshot will not be able to include the video.
 
-In summary, we have achieved offline mode on Azure Media Services:
+In summary:
 
 * Content transcoding and PlayReady encryption can be done in Azure Media Services or other tools;
 * Content can be hosted in Azure Media Services or Azure Storage for progressive download;
 * PlayReady license delivery can be from Azure Media Services or elsewhere;
 * The prepared smooth streaming content can still be used for online streaming via DASH or smooth with PlayReady as the DRM.
-
----
