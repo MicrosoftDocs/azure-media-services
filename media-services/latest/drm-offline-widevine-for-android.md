@@ -1,12 +1,14 @@
 ---
 title: Stream Widevine Android offline
 description: This topic shows how to configure your Azure Media Services v3 account for offline streaming of Widevine protected content.
-author: willzhan
+author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
 ms.date: 3/16/2022
 ms.author: inhenkel
 ---
+
+<!-- William Zhang -->
 
 # Offline Widevine streaming for Android with Media Services v3
 
@@ -41,8 +43,8 @@ Before implementing offline DRM for Widevine on Android devices, you should firs
     - [Use DRM dynamic encryption and license delivery service](drm-protect-with-drm-tutorial.md)
 - Clone https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials.git.
 
-    You will need to modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add Widevine configurations.  
-- Become familiar with the Google ExoPlayer SDK for Android, an open-source video player SDK capable of supporting offline Widevine DRM playback. 
+    You will need to modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add Widevine configurations.
+- Become familiar with the Google ExoPlayer SDK for Android, an open-source video player SDK capable of supporting offline Widevine DRM playback.
     - [ExoPlayer SDK](https://github.com/google/ExoPlayer)
     - [ExoPlayer Developer Guide](https://google.github.io/ExoPlayer/guide.html)
     - [EoPlayer Developer Blog](https://medium.com/google-exoplayer)
@@ -53,7 +55,7 @@ Before implementing offline DRM for Widevine on Android devices, you should firs
 
 In the [GetOrCreateContentKeyPolicyAsync](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs#L192) method, the following necessary steps are present:
 
-1. Specify how content key delivery is authorized in the license delivery service: 
+1. Specify how content key delivery is authorized in the license delivery service:
 
     ```csharp
     ContentKeyPolicySymmetricTokenKey primaryKey = new ContentKeyPolicySymmetricTokenKey(tokenSigningKey);
@@ -62,10 +64,10 @@ In the [GetOrCreateContentKeyPolicyAsync](https://github.com/Azure-Samples/media
         ContentKeyPolicyTokenClaim.ContentKeyIdentifierClaim
     };
     List<ContentKeyPolicyRestrictionTokenKey> alternateKeys = null;
-    ContentKeyPolicyTokenRestriction restriction 
+    ContentKeyPolicyTokenRestriction restriction
         = new ContentKeyPolicyTokenRestriction(Issuer, Audience, primaryKey, ContentKeyPolicyRestrictionTokenType.Jwt, alternateKeys, requiredClaims);
     ```
-2. Configure Widevine license template:  
+2. Configure Widevine license template:
 
     ```csharp
     ContentKeyPolicyWidevineConfiguration widevineConfig = ConfigureWidevineLicenseTempate();
@@ -84,7 +86,7 @@ In the [GetOrCreateContentKeyPolicyAsync](https://github.com/Azure-Samples/media
 
 ## Enable offline mode
 
-To enable **offline** mode for Widevine licenses, you need to configure [Widevine license template](drm-widevine-license-template-concept.md). In the **policy_overrides** object, set the **can_persist** property to **true** (default is false), as shown in [ConfigureWidevineLicenseTemplate](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs#L452). 
+To enable **offline** mode for Widevine licenses, you need to configure [Widevine license template](drm-widevine-license-template-concept.md). In the **policy_overrides** object, set the **can_persist** property to **true** (default is false), as shown in [ConfigureWidevineLicenseTemplate](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs#L452).
 
 [!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#ConfigureWidevineLicenseTempate)]
 
@@ -96,24 +98,24 @@ ExoPlayer version 2.6 and higher includes many classes that support offline Wide
 
 The following list of classes facilitates offline mode in the ExoPlayer SDK for Android:
 
-- `library/core/src/main/java/com/google/android/exoplayer2/drm/OfflineLicenseHelper.java`  
+- `library/core/src/main/java/com/google/android/exoplayer2/drm/OfflineLicenseHelper.java`
 - `library/core/src/main/java/com/google/android/exoplayer2/drm/DefaultDrmSession.java`
 - `library/core/src/main/java/com/google/android/exoplayer2/drm/DefaultDrmSessionManager.java`
 - `library/core/src/main/java/com/google/android/exoplayer2/drm/DrmSession.java`
 - `library/core/src/main/java/com/google/android/exoplayer2/drm/ErrorStateDrmSession.java`
 - `library/core/src/main/java/com/google/android/exoplayer2/drm/ExoMediaDrm.java`
 - `library/core/src/main/java/com/google/android/exoplayer2/offline/SegmentDownloader.java`
-- `library/core/src/main/java/com/google/android/exoplayer2/offline/DownloaderConstructorHelper.java` 
+- `library/core/src/main/java/com/google/android/exoplayer2/offline/DownloaderConstructorHelper.java`
 - `library/core/src/main/java/com/google/android/exoplayer2/offline/Downloader.java`
-- `library/dash/src/main/java/com/google/android/exoplayer2/source/dash/offline/DashDownloader.java` 
+- `library/dash/src/main/java/com/google/android/exoplayer2/source/dash/offline/DashDownloader.java`
 
-Developers should reference the [ExoPlayer Developer Guide](https://google.github.io/ExoPlayer/guide.html) and the corresponding [Developer Blog](https://medium.com/google-exoplayer) during development of an application. Google has not released a fully documented reference implementation or sample code for the ExoPlayer app supporting Widevine offline at this time, so the information is limited to the developers' guide and blog. 
+Developers should reference the [ExoPlayer Developer Guide](https://google.github.io/ExoPlayer/guide.html) and the corresponding [Developer Blog](https://medium.com/google-exoplayer) during development of an application. Google has not released a fully documented reference implementation or sample code for the ExoPlayer app supporting Widevine offline at this time, so the information is limited to the developers' guide and blog.
 
 ### Working with older Android devices
 
-For some older Android devices, you must set values for the following **policy_overrides** properties (defined in [Widevine license template](drm-widevine-license-template-concept.md): **rental_duration_seconds**, **playback_duration_seconds**, and **license_duration_seconds**. Alternatively, you can set them to zero, which means infinite/unlimited duration.  
+For some older Android devices, you must set values for the following **policy_overrides** properties (defined in [Widevine license template](drm-widevine-license-template-concept.md): **rental_duration_seconds**, **playback_duration_seconds**, and **license_duration_seconds**. Alternatively, you can set them to zero, which means infinite/unlimited duration.
 
-The values must be set to avoid an integer overflow bug. For more explanation about the issue, see https://github.com/google/ExoPlayer/issues/3150 and https://github.com/google/ExoPlayer/issues/3112. <br/>If you do not set the values explicitly, very large values for  **PlaybackDurationRemaining** and **LicenseDurationRemaining** will be assigned, (for example, 9223372036854775807, which is the maximum positive value for a 64-bit integer). As a result, the Widevine license appears expired and hence the decryption will not happen. 
+The values must be set to avoid an integer overflow bug. For more explanation about the issue, see https://github.com/google/ExoPlayer/issues/3150 and https://github.com/google/ExoPlayer/issues/3112. <br/>If you do not set the values explicitly, very large values for  **PlaybackDurationRemaining** and **LicenseDurationRemaining** will be assigned, (for example, 9223372036854775807, which is the maximum positive value for a 64-bit integer). As a result, the Widevine license appears expired and hence the decryption will not happen.
 
 This issue does not occur on Android 5.0 Lollipop or later since Android 5.0 is the first Android version, which has been designed to fully support ARMv8 ([Advanced RISC Machine](https://en.wikipedia.org/wiki/ARM_architecture)) and 64-bit platforms, while Android 4.4 KitKat was originally designed to support  ARMv7 and 32-bit platforms as with other older Android versions.
 
@@ -124,13 +126,13 @@ You can find Xamarin bindings for ExoPlayer using the following links:
 - [Xamarin bindings library for the Google ExoPlayer library](https://github.com/martijn00/ExoPlayerXamarin)
 - [Xamarin bindings for ExoPlayer NuGet](https://www.nuget.org/packages/Xam.Plugins.Android.ExoPlayer/)
 
-Also, see the following thread: [Xamarin binding](https://github.com/martijn00/ExoPlayerXamarin/pull/57). 
+Also, see the following thread: [Xamarin binding](https://github.com/martijn00/ExoPlayerXamarin/pull/57).
 
 ## Chrome player apps for Android
 
-Starting with the release of [Chrome for Android v. 62](https://developers.google.com/web/updates/2017/09/chrome-62-media-updates), persistent license in EME is supported. [Widevine L1](https://developers.google.com/web/updates/2017/09/chrome-62-media-updates#widevine_l1) is now also supported in Chrome for Android. This allows you to create offline playback applications in Chrome if your end users have this (or higher) version of Chrome. 
+Starting with the release of [Chrome for Android v. 62](https://developers.google.com/web/updates/2017/09/chrome-62-media-updates), persistent license in EME is supported. [Widevine L1](https://developers.google.com/web/updates/2017/09/chrome-62-media-updates#widevine_l1) is now also supported in Chrome for Android. This allows you to create offline playback applications in Chrome if your end users have this (or higher) version of Chrome.
 
-In addition, Google has produced a Progressive Web App (PWA) sample and open-sourced it: 
+In addition, Google has produced a Progressive Web App (PWA) sample and open-sourced it:
 
 - [Source code](https://github.com/GoogleChromeLabs/sample-media-pwa)
 - [Google hosted version](https://biograf-155113.appspot.com/ttt/episode-2/) (only works in Chrome v 62 and higher on Android devices)
