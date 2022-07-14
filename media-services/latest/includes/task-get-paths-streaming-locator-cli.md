@@ -11,4 +11,4 @@ title: Get the paths of a streaming locator with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsStreamingLocatorGetPaths" interactive="cloudshell-bash":::
 
-For more information about this command, see the [CLI reference](/cli/azure/ams/streaming-locator?view=azure-cli-latest#az-ams-streaming-locator-get-paths).
+For more information about this command, see the [CLI reference](/cli/azure/ams/streaming-locator?view=azure-cli-latest&preserve-view=true#az-ams-streaming-locator-get-paths).
