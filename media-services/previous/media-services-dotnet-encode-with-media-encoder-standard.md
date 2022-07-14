@@ -31,7 +31,7 @@ Always encode your source files into an adaptive bitrate MP4 set and then conver
 If your output asset is storage encrypted, you must configure asset delivery policy. For more information, see [Configuring asset delivery policy](media-services-dotnet-configure-asset-delivery-policy.md).
 
 > [!NOTE]
-> MES produces an output file with a name that contains the first 32 characters of the input file name. The name is based on what is specified in the preset file. For example, "FileName": "{Basename}_{Index}{Extension}". {Basename} is replaced by the first 32 characters of the input file name.
+> MES produces an output file with a name that contains the first 32 characters of the input file name. The name is based on what is specified in the preset file. For example, "FileName": "{Basename}_{Index}{Extension}". {Basename} is replaced by the first 32 characters of the input file name. {Basename} is limited to 64 chars if CopyCodec (CopyAudio or CopyVideo) is used in the preset to avoid duplicated output file names.
 >
 >
 

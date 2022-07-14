@@ -17,6 +17,10 @@ Media Services does not preemptively scan input assets to generate metadata. Inp
 
 This article discusses the elements and types of the JSON schema on which the output metadata (&lt;source_file_name&gt;_manifest.json) is based. <!--For information about the file that contains metadata about the input asset, see [Input metadata](input-metadata-schema.md).  -->
 
+## BaseName character length when using CopyVideo or CopyAudio presets
+
+The {baseName} file naming macro used in the naming of the output metadata file is shortened to 32 chars when using any standard encoding preset or custom preset.  However, to avoid a naming conflict when using one of the CopyCodec operations (CopyAudio or CopyVideo) in a custom preset, the {Basename} is limited to 64 chars.  This is to support scenarios where customers want to archive all of the output files in their asset. If the filename is very long, the first 32 chars might be the same across multiple output files. In this case, the first 32 chars would produce duplicated output files when using CopyVideo or CopyAudio. As a result, the {Basename} behavior is to retain  64 chars if CopyCodec is used in the preset.
+
 You can find the complete schema code and JSON example at the end of this article.  
 
 ## AssetFile
