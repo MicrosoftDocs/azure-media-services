@@ -13,4 +13,4 @@ title: Create a transform with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsTransformCreate" interactive="cloudshell-bash":::
 
-For more information about this command, see the Media Services [CLI reference](/cli/azure/ams/transform?view=azure-cli-latest#az-ams-transform-create&preserve-view=true)
+For more information about this command, see the Media Services [CLI reference](/cli/azure/ams/transform?view=azure-cli-latest&preserve-view=true#az-ams-transform-create)

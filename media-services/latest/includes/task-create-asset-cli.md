@@ -13,4 +13,4 @@ title: Create an asset
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetCreate" interactive="cloudshell-bash":::
 
-For more information about this command, see the [CLI reference](/cli/azure/ams/asset?view=azure-cli-latest#az-ams-asset-create&preserve-view=true).
+For more information about this command, see the [CLI reference](/cli/azure/ams/asset?view=azure-cli-latest&preserve-view=true#az-ams-asset-create).
