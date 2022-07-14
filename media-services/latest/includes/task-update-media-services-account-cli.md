@@ -9,7 +9,7 @@ title: Update a media services account with the cli
 
 <!--Update a media services account -->
 
-The following Azure CLI command updates a new Media Services account. For more information about more parameters, see the [CLI reference](/cli/azure/ams/account?view=azure-cli-latest#az-ams-account-update).
+The following Azure CLI command updates a new Media Services account. For more information about more parameters, see the [CLI reference](/cli/azure/ams/account?view=azure-cli-latest&preserve-view=true#az-ams-account-update).
 
 [!INCLUDE [directive-change-my-resource-group](directive-change-resource-group.md)]
 
@@ -17,4 +17,4 @@ The following Azure CLI command updates a new Media Services account. For more i
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAccountUpdate" interactive="cloudshell-bash":::
 
-For more information about this command, see the Media Services [CLI reference](/cli/azure/ams/account?view=azure-cli-latest#az-ams-account-update).
+For more information about this command, see the Media Services [CLI reference](/cli/azure/ams/account?view=azure-cli-latest&preserve-view=true#az-ams-account-update).
