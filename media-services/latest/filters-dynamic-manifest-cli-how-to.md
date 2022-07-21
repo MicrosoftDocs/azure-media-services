@@ -4,7 +4,7 @@ description: This article shows how to use CLI to create filters with Azure Medi
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 7/21/2022
 ms.author: inhenkel
 ---
 # Creating filters with CLI
@@ -88,8 +88,22 @@ Also, see [JSON examples for filters](/rest/api/media/assetfilters/createorupdat
 
 ## Associate filters with Streaming Locator
 
-You can specify a list of asset or account filters, which would apply to your Streaming Locator. The [Dynamic Packager (Streaming Endpoint)](encode-dynamic-packaging-concept.md) applies this list of filters together with those your client specifies in the URL. This combination generates a [Dynamic Manifest](filters-dynamic-manifest-concept.md), which is based on filters in the URL + filters you specify on Streaming Locator. We recommend that you use this feature if you want to apply filters but do not want to expose the filter names in the URL.
+### Filter your HLS or DASH manifests on creation a Streaming Locator
 
+Media Services allows you to create a Streaming Locator that is pre-filtered by passing in a collection of filters in the filter property on the streaming locator entity. This allows you to pre-filter all manifests on the streaming locator.  The original manifest is no longer available through this streaming locator, and only the filtered response will be accessible to clients requesting the URLs for DASH or HLS from the filtered streaming locator.  
+This is helpful in situations where you want to only publish a portion of an asset, and prevent users from gaining access to the full original manifest for the asset by manipulating the query string of the HLS or DASH manifest URL. We recommend that you use this feature if you want to apply filters but do not want to expose the filter names in the URL for customers to manipulate on their own.
+
+You can specify a list of [asset or account filters](filters-concept.md) on your [Streaming Locator](/rest/api/media/streaminglocators/create#request-body). The [Dynamic Packager](encode-dynamic-packaging-concept.md) applies this list of filters together with those your client specifies in the URL. This combination generates a [Dynamic Manifest](filters-dynamic-manifest-concept.md), which is based on filters in the URL + filters you specify on the Streaming Locator.
+
+### Updating filters
+
+Filters and streaming locators can be updates on the fly, but keep in mind that it can take up to 10 seconds for any updates to update on the front-end web servers, and there can be issues with downstream CDN caching of the content if you are updating the same **Streaming Locator** that has been published and used in production already.
+
+It isn't recommended to update the definition of filters associated with an actively published **Streaming Locator**, especially when CDN is enabled. Streaming servers and CDNs can have internal caches that may result in stale cached data to be returned.
+
+If the filter definition needs to be changed consider creating a new filter and adding it to the **Streaming Locator** URL or publishing a uniquely new **Streaming Locator** that references the updated filter directly.
+
+### Use the CLI to create a filtered Streaming Locator
 The following CLI code shows how to create a Streaming Locator and specify `filters`. This is an optional property that takes a space-separated list of asset filter names and/or account filter names.
 
 ```azurecli

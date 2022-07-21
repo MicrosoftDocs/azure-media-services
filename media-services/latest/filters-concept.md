@@ -39,7 +39,7 @@ You use the following properties to describe the filters.
 |Name|Description|
 |---|---|
 |firstQuality|The first quality bitrate of the filter.|
-|presentationTimeRange|The presentation time range. This property is used for filtering manifest start/end points, presentation window length, and the live start position. <br/>For more information, see [PresentationTimeRange](#presentationtimerange).|
+|presentationTimeRange|The presentation time range of a live event manifest. This property is used for filtering manifest start/end points, presentation window length, and the live start position. <br/>For more information, see [PresentationTimeRange](#presentationtimerange).|
 |tracks|The tracks selection conditions. For more information, see [tracks](#tracks)|
 
 ### presentationTimeRange
@@ -48,12 +48,12 @@ Use this property with **Asset Filters**. It isn't recommended to set the proper
 
 |Name|Description|
 |---|---|
+|**startTimestamp**|Applies to Video on Demand (VoD) or Live Streaming.<br/>This is a long value that represents an absolute start point of the stream. The value gets rounded to the closest next GOP start. The unit is the timescale, so a startTimestamp of 150000000 would be for 15 seconds.<br/>Use startTimestamp and endTimestamp to trim the fragments that will be in the playlist (manifest).<br/>For example, startTimestamp=40000000 and endTimestamp=100000000 using the default timescale will generate a playlist that contains fragments from between 4 seconds and 10 seconds of the VoD presentation. If a fragment straddles the boundary, the entire fragment will be included in the manifest.|
 |**endTimestamp**|Applies to Video on Demand (VoD).<br/>For the Live Streaming presentation, it is silently ignored and applied when the presentation ends and the stream becomes VoD.<br/>This is a long value that represents an absolute end point of the presentation, rounded to the closest next GOP start. The unit is the timescale, so an endTimestamp of 1800000000 would be for 3 minutes.<br/>Use startTimestamp and endTimestamp to trim the fragments that will be in the playlist (manifest).<br/>For example, startTimestamp=40000000 and endTimestamp=100000000 using the default timescale will generate a playlist that contains fragments from between 4 seconds and 10 seconds of the VoD presentation. If a fragment straddles the boundary, the entire fragment will be included in the manifest.|
-|**forceEndTimestamp**|Applies to Live Streaming only.<br/>Indicates whether the endTimestamp property must be present. If true, endTimestamp must be specified or a bad request code is returned.<br/>Allowed values: false, true.|
+|**timescale**|Applies to all timestamps and durations in a Presentation Time Range, specified as the number of increments in one second.<br/>Default is 10000000 -  ten million increments in one second, where each increment would be 100 nanoseconds long. However, the value may differ depending on the source of the video or if you are using a live event with encoding in the cloud (defaults to 90Khz, or 90000 for video.) <br/>For example, if you want to set a startTimestamp at 30 seconds, you would use a value of 300000000 when using the default timescale. Be certain to check the manifest for your asset to confirm that the timescale for the video track is in the scale that you set. When using live events with encoding, the timescale can be in 90Khz (90000) for the video tracks and 48khz (48000) for the audio tracks. |
 |**liveBackoffDuration**|Applies to Live Streaming only.<br/> This value defines the latest live position that a client can seek to.<br/>Using this property, you can delay live playback position and create a server-side buffer for players.<br/>The unit for this property is timescale (see below).<br/>The maximum live back off duration is 300 seconds (3000000000).<br/>For example, a value of 2000000000 means that the latest available content is 20 seconds delayed from the real live edge.|
 |**presentationWindowDuration**|Applies to Live Streaming only.<br/>Use presentationWindowDuration to apply a sliding window of fragments to include in a playlist.<br/>The unit for this property is timescale (see below).<br/>For example, set presentationWindowDuration=1200000000 to apply a two-minute sliding window. Media within 2 minutes of the live edge will be included in the playlist. If a fragment straddles the boundary, the entire fragment will be included in the playlist. The minimum presentation window duration is 60 seconds.|
-|**startTimestamp**|Applies to Video on Demand (VoD) or Live Streaming.<br/>This is a long value that represents an absolute start point of the stream. The value gets rounded to the closest next GOP start. The unit is the timescale, so a startTimestamp of 150000000 would be for 15 seconds.<br/>Use startTimestamp and endTimestamp to trim the fragments that will be in the playlist (manifest).<br/>For example, startTimestamp=40000000 and endTimestamp=100000000 using the default timescale will generate a playlist that contains fragments from between 4 seconds and 10 seconds of the VoD presentation. If a fragment straddles the boundary, the entire fragment will be included in the manifest.|
-|**timescale**|Applies to all timestamps and durations in a Presentation Time Range, specified as the number of increments in one second.<br/>Default is 10000000 -  ten million increments in one second, where each increment would be 100 nanoseconds long.<br/>For example, if you want to set a startTimestamp at 30 seconds, you would use a value of 300000000 when using the default timescale.|
+|**forceEndTimestamp**|Applies to Live Streaming only.<br/>Indicates whether the endTimestamp property must be present. If true, endTimestamp must be specified or a bad request code is returned.<br/>Allowed values: false, true.|
 
 ### Tracks
 
@@ -126,17 +126,20 @@ The following example defines a Live Streaming filter:
 }
 ```
 
-## Associating filters with Streaming Locator
+## Filter your HLS or DASH manifests on creation of Streaming Locator
+
+Media Services allows you to create a Streaming Locator that is pre-filtered by passing in a collection of filters in the filter property on the streaming locator entity. This allows you to pre-filter all manifests on the streaming locator.  The original manifest is no longer available through this streaming locator, and only the filtered response will be accessible to clients requesting the URLs for DASH or HLS from the filtered streaming locator.  
+This is helpful in situations where you want to only publish a portion of an asset, and prevent users from gaining access to the full original manifest for the asset by manipulating the query string of the HLS or DASH manifest URL.
 
 You can specify a list of [asset or account filters](filters-concept.md) on your [Streaming Locator](/rest/api/media/streaminglocators/create#request-body). The [Dynamic Packager](encode-dynamic-packaging-concept.md) applies this list of filters together with those your client specifies in the URL. This combination generates a [Dynamic Manifest](filters-dynamic-manifest-concept.md), which is based on filters in the URL + filters you specify on the Streaming Locator.
 
 ## Updating filters
 
-**Streaming Locators** are not updatable while filters can be updated.
+Filters and streaming locators can be updates on the fly, but keep in mind that it can take up to 10 seconds for any updates to update on the front-end web servers, and there can be issues with downstream CDN caching of the content if you are updating the same **Streaming Locator** that has been published and used in production already.
 
 It isn't recommended to update the definition of filters associated with an actively published **Streaming Locator**, especially when CDN is enabled. Streaming servers and CDNs can have internal caches that may result in stale cached data to be returned.
 
-If the filter definition needs to be changed consider creating a new filter and adding it to the **Streaming Locator** URL or publishing a new **Streaming Locator** that references the filter directly.
+If the filter definition needs to be changed consider creating a new filter and adding it to the **Streaming Locator** URL or publishing a uniquely new **Streaming Locator** that references the updated filter directly.
 
 ## How-tos and Tutorials
 
