@@ -2,7 +2,7 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 03/08/2022
+ms.date: 07/25/2022
 ms.author: inhenkel
 title: Add a custom transform output with the CLI
 ---
@@ -11,4 +11,4 @@ title: Add a custom transform output with the CLI
 
 ### Add a custom transform output with the CLI
 
-:::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsTransformOutputAddCustom" interactive="cloudshell-bash":::
+For more information about this command, see the [CLI reference](/cli/azure/ams/transform/output?view=azure-cli-latest&preserve-view=true).
