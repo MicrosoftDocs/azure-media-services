@@ -24,7 +24,7 @@ To stay up to date with the most recent developments, this article provides you 
 ### Custom audio bitrates supported in custom live encoding presets
 
 You can now request a custom live encoding preset that supports multiple audio bitrate outputs.
-For audio in a live preset you can now customize with the following discrete AAC audio bitrates (96k, 112k, 128k, 160k, 192k, 224k, 256k, 320k, 384k, 448k, 512k). Also please specify that you are requesting a *custom* preset in the support ticket.  
+For audio in a live preset you can now customize with the following discrete AAC audio bitrates (96k, 112k, 128k, 160k, 192k, 224k, 256k, 320k, 384k, 448k, 512k). Also please specify that you are requesting a *custom* preset in the support ticket.
 
 Custom presets can now contain multiple discrete audio bitrates in the same live encoding preset. This is useful for markets that require a lower bitrate audio track over mobile networks. One example would be a custom live preset that can output both 96k and 128k AAC audio tracks simultaneously.  The player can then filter or select the appropriate track, or a dynamic filter can be applied to offer a 96k only manifest or a 128k only manifest during publishing of a streaming locator (or switched on-the-fly using the 'filter={filterName}' query parameter on the streaming locator URL).
 
@@ -567,7 +567,7 @@ Added updates that include Media Services performance improvements.
 
 Dynamic Packaging now supports Dolby Atmos. For more information, see [Audio codecs supported by dynamic packaging](encode-dynamic-packaging-concept.md#audio-codecs-supported-by-dynamic-packaging).
 
-You can now specify a list of asset or account filters, which would apply to your Streaming Locator. For more information, see [Associate filters with Streaming Locator](filters-concept.md#filter-your-HLS-or-DASH-manifests-on-creation-of-streaming-Locator).
+You can now specify a list of asset or account filters, which would apply to your Streaming Locator. For more information, see [Associate filters with Streaming Locator](filters-concept#filter-your-hls-or-dash-manifests-on-creation-of-streaming-locator).
 
 ## February 2019
 
