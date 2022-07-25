@@ -2,7 +2,7 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 08/18/2020
+ms.date: 07/25/2022
 ms.author: inhenkel
 title: List asset filters with the CLI
 ---
@@ -10,7 +10,5 @@ title: List asset filters with the CLI
 <!--List asset filters CLI-->
 
 ### List asset filters with the CLI
-
-:::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetFilterList" interactive="cloudshell-bash":::
 
 For more information about this command, see the Media Services [CLI reference](/cli/azure/ams/asset-filter?view=azure-cli-latest&preserve-view=true#az-ams-asset-filter-list).

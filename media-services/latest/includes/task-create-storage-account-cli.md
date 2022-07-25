@@ -2,7 +2,7 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 03/03/2022
+ms.date: 07/25/2022
 ms.author: inhenkel
 title: Create an Azure Storage account with the CLI
 ---

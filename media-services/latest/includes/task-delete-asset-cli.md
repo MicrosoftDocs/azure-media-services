@@ -2,7 +2,7 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 08/18/2020
+ms.date: 07/25/2022
 ms.author: inhenkel
 title: Delete an asset with the CLI
 
@@ -11,7 +11,5 @@ title: Delete an asset with the CLI
 <!--Delete a media services asset CLI-->
 
 ### Delete an asset with the CLI
-
-:::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetDelete" interactive="cloudshell-bash":::
 
 For more information about this command, see the Media Services [CLI reference](/cli/azure/ams/asset?view=azure-cli-latest&preserve-view=true#az-ams-asset-delete)
