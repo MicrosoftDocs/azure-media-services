@@ -13,4 +13,4 @@ title: List asset filters with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAssetFilterList" interactive="cloudshell-bash":::
 
-For more information about this command, see the Media Services [CLI reference](/cli/azure/ams/asset-filter?view=azure-cli-latest#az-ams-asset-filter-list).
+For more information about this command, see the Media Services [CLI reference](/cli/azure/ams/asset-filter?view=azure-cli-latest&preserve-view=true#az-ams-asset-filter-list).
