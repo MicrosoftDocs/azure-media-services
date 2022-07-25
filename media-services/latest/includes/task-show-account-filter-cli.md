@@ -9,6 +9,4 @@ title: Show the details of an account filter with the CLI
 
 ### Show the details of an account filter with the CLI
 
-:::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsAccountFilterShow" interactive="cloudshell-bash":::
-
 For more information about this command, see the [CLI reference](/cli/azure/ams/account-filter?view=azure-cli-latest&preserve-view=true#az-ams-account-filter-show).
