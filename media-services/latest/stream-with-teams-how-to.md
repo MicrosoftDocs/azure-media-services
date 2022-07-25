@@ -17,7 +17,7 @@ This article describes how to set up Microsoft Teams with Media Services to stre
 ## Prerequisites
 
 >[!IMPORTANT]
-> By default, the RTMP out feature is disabled in all Microsoft Teams tenants. The administrators of your MS Teams tenant must either enable it globally or for a select set of users. See [Stream Teams meetings](https://docs.microsoft.com/microsoftteams/stream-teams-meetings). If this is not enabled for you, contact your Teams administrator.
+> By default, the RTMP out feature is disabled in all Microsoft Teams tenants. The administrators of your MS Teams tenant must either enable it globally or for a select set of users. See [Stream Teams meetings](/microsoftteams/stream-teams-meetings). If this is not enabled for you, contact your Teams administrator.
 
 1. Create a [Media Services account](account-create-how-to.md).
 1. Create a [live event](live-event-create-how-to.md?tabs=portal) using either a Standard transcoding (720p) live event or a pass-through event. Teams Custom Streaming RTMP output is in beta and currently only supports 720p 30fps output, therefore you should avoid using a Premium transcoding live event for 1080p.

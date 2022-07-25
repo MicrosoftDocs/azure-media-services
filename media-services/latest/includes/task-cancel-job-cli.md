@@ -11,4 +11,4 @@ title: Cancel a job with the CLI
 
 :::code language="azurecli" source="~/../media-services-v3-python/cli/code-snippets.sh" id="AmsJobCancel" interactive="cloudshell-bash":::
 
-For more information about this command, see the [CLI reference](/cli/azure/ams/job?view=azure-cli-latest#az-ams-job-cancel).
+For more information about this command, see the [CLI reference](/cli/azure/ams/job?view=azure-cli-latest&preserve-view=true#az-ams-job-cancel).
