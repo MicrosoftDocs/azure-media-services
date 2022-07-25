@@ -11,4 +11,4 @@ title: Add a custom transform output with the CLI
 
 ### Add a custom transform output with the CLI
 
-For more information about this command, see the [CLI reference](/cli/azure/ams/transform/output?view=azure-cli-latest).
+For more information about this command, see the [CLI reference](/cli/azure/ams/transform/output?view=azure-cli-latest&preserve-view=true).
