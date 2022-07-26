@@ -45,6 +45,8 @@ To create a live event with the transcription turned on, set the 'transcriptions
 
 [!INCLUDE [task-create-live-event-python](includes/task-create-live-event-python.md)]
 
+---
+
 ## Start or stop transcription after the live event has started
 
 You can start and stop, or change the language of live transcription while the live event is in running, standby or stopped state.
