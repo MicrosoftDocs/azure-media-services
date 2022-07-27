@@ -627,8 +627,11 @@
       displayName: portal, event grid, monitor, monitoring, telemetry, logging, logs, events, notifications, web hook, webhooks, functions
   - name: Use Azure Monitor
     items:
-    - name: Monitor metrics
-      href: ./monitoring/monitor-metrics-how-to.md
+    - name: Create a monitoring dashboard and alerts
+      href: ./monitoring/monitor-create-dashboard-alerts-how-to.md
+      displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
+    - name: Save metrics to a storage account
+      href: ./monitoring/monitor-metrics-save-to-storage-how-to.md
       displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
   - name: Security
     items:
