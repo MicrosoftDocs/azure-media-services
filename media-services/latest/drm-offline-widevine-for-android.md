@@ -88,8 +88,6 @@ In the [GetOrCreateContentKeyPolicyAsync](https://github.com/Azure-Samples/media
 
 To enable **offline** mode for Widevine licenses, you need to configure [Widevine license template](drm-widevine-license-template-concept.md). In the **policy_overrides** object, set the **can_persist** property to **true** (default is false), as shown in [ConfigureWidevineLicenseTemplate](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs#L452).
 
-[!code-csharp[Main](~/../media-services-v3-dotnet-tutorials/AMSV3Tutorials/EncryptWithDRM/Program.cs#ConfigureWidevineLicenseTempate)]
-
 ## Configuring the Android player for offline playback
 
 The easiest way to develop a native player app for Android devices is to use the [Google ExoPlayer SDK](https://github.com/google/ExoPlayer), an open-source video player SDK. ExoPlayer supports features not currently supported by Android's native MediaPlayer API, including MPEG-DASH and Microsoft Smooth Streaming delivery protocols.
