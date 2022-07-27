@@ -270,7 +270,7 @@
       - name: Monitor with Azure Monitor
         href: ./monitoring/monitor-media-services.md
         displayName: Monitor, Azure monitor, monitoring, metrics, telemetry, Troubleshooting, logging, events, support, debug, debugging, charts, graphs, logs
-      - name: Monitoring streaming endpoints
+      - name: Monitor streaming endpoints
         href: ./monitoring/monitor-streaming-endpoints.md
         displayName: Monitor, Azure monitor, monitoring, metrics, telemetry, Troubleshooting, logging, events, support, debug, debugging, charts, graphs, logs
       - name: Monitor with Event Grid
