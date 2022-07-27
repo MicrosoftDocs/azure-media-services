@@ -191,4 +191,6 @@ alerts-unified-log), and the [activity log](/azure/azure-monitor/alerts/activity
 
 ## How-tos
 
-[Route Media Services metrics to storage](monitor-metrics-save-to-storage-how-to.md)
+- [Route Media Services metrics to storage](monitor-metrics-save-to-storage-how-to.md)
+- [Autoscaling premium streaming endpoints](../streaming-endpoint-autoscaling-how-to.md)
+- [Create an Azure Monitor dashboard and alerts](monitor-create-dashboard-alerts-how-to.md)

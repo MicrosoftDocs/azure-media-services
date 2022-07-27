@@ -71,5 +71,5 @@ For example, if you see a large number of 503 HTTPS status codes, then either th
 
 ## How-tos, tutorials and samples
 
-[Autoscaling premium streaming endpoints](../streaming-endpoint-autoscaling-how-to.md)
-[Create an Azure Monitor dashboard and alerts](monitor-create-dashboard-alerts-how-to.md)
+- [Autoscaling premium streaming endpoints](../streaming-endpoint-autoscaling-how-to.md)
+- [Create an Azure Monitor dashboard and alerts](monitor-create-dashboard-alerts-how-to.md)
