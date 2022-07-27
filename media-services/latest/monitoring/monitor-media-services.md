@@ -191,4 +191,4 @@ alerts-unified-log), and the [activity log](/azure/azure-monitor/alerts/activity
 
 ## How-tos
 
-[Monitor Media Services metrics](monitor-metrics-how-to.md)
+[Route Media Services metrics to storage](monitor-metrics-save-to-storage-how-to.md)
