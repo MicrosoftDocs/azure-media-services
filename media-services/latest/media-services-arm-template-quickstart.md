@@ -4,7 +4,7 @@ description: This article shows you how to use an ARM template to create a media
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: quickstart
-ms.date: 3/16/2022
+ms.date: 07/28/2022
 ms.author: inhenkel
 ---
 
@@ -14,13 +14,9 @@ ms.author: inhenkel
 
 This article shows you how to use an Azure Resource Manager template (ARM template) to create a media services account.
 
-## Introduction
-
-[!INCLUDE [About Azure Resource Manager](./includes/resource-manager-quickstart-introduction.md)]
-
 Readers who are experienced with ARM templates can continue to the [deployment section](#deploy-the-template).
 
-If your environment meets the prerequisites and you're familiar with using ARM templates, select the **Deploy to Azure** button. The template will open in the Azure portal.
+<!--If your environment meets the prerequisites and you're familiar with using ARM templates, select the **Deploy to Azure** button. The template will open in the Azure portal.-->
 
 <!--
 [![Deploy to Azure](../../media/template-deployments/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.media%2Fmedia-services-create%2Fazuredeploy.json)
