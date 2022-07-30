@@ -59,7 +59,7 @@ An individual file that you upload to be encoded should be no larger than 260 GB
 
 <sup>3</sup> This number includes queued, finished, active, and canceled jobs. It does not include deleted jobs.
 
-<sup>4</sup> There is an exception to this limit. The limit of 50 job inputs per job supersedes the limit of 100 clips per job. For example, if there are 51 job inputs and each job input contains 1 clip, then that will violate the limit of 50 job inputs per job, even though the clips per job limit has not been met. 
+<sup>4</sup> There is an exception to this limit. The limit of 50 job inputs per job supersedes the limit of 100 clips per job. For example, if there are 51 job inputs and each job input contains 1 clip, then that will violate the limit of 50 job inputs per job, even though the clips per job limit has not been met.
 
 Any job record in your account older than 90 days will be automatically deleted, even if the total number of records is below the maximum quota.
 
@@ -80,7 +80,7 @@ Any job record in your account older than 90 days will be automatically deleted,
 | Resource | Default Limit |
 | --- | --- |
 | Streaming endpoints (stopped or running) per Media Services account | 2 |
-| Premium streaming units | 10 |
+| Premium streaming units | 50 |
 | Dynamic manifest filters |100|
 | Streaming policies | 100 <sup>(7)</sup> per Media Services account <br/> 3 per streaming locator |
 | Unique streaming locators associated with one asset at one time | 100<sup>(8)</sup> (fixed) |
