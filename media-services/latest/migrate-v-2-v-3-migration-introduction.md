@@ -16,6 +16,8 @@ The Media Services migration guide helps you migrate from Media Services V2 APIs
 
 [!INCLUDE [v2 deprecation notice](./includes/v2-deprecation-notice.md)]
 
+For more information about retired media processors and to keep track of those that are planned for retirement, see the [Media processor retirement reference](media-processor-retirement-reference.md) reference.
+
 ## How to use this guide
 
 ### Navigating

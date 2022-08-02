@@ -724,6 +724,8 @@
     - name: Output metadata
       href: output-metadata-schema.md
       displayName: MES schema, MES, Standard encoder, schema, metadata, output metadata, output description
+  - name: Media Services processor retirement reference
+    href: media-processor-retirement-reference.md
   - name: Glossary
     href: reference-glossary.md
 - name: Resources
