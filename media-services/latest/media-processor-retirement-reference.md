@@ -8,7 +8,7 @@ ms.date: 08/02/2022
 ms.author: inhenkel
 ---
 
-# Media processor deprecation
+# Media processor retirement
 
 ![migration guide logo](./media/migration-guide/azure-media-services-logo-migration-guide.svg)
 
