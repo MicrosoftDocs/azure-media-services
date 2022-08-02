@@ -31,4 +31,4 @@ Over time, we enhance Media Service components and retire legacy components. Thi
 
 ## Migration guide
 
-[Migration Guide introduction](migrate-v-2-v-3-migration-introduction.md).
+[Migration Guide introduction](migrate-v-2-v-3-migration-introduction.md)
