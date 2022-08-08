@@ -292,6 +292,18 @@ Version 3 provides:
 
 As part of the update to v3 API and SDKs, Media Reserve Units (MRUs) are no longer needed for any Media Services account as the system will automatically scale up and down based on load. Refer to the [MRUs migration guidance](./migrate-v-2-v-3-migration-scenario-based-media-reserved-units.md) for more information.
 
+
+#### Deprecation of AMS as a stand-alone license delivery server (hybrid on-premises mode) in v2 to v3 migration
+
+The v3 API no longer supports use of the key delivery services as a stand-alone feature for content protection where the key delivery service can be used to deliver license for content that is streamed or delivered through other 3rd party origin servers.  This means that AMS no longer supports key-delivery only scenarios in the V3 API, and requires you to stream from AMS origin services using dynamic packaging and encryption when delivering with v3.
+
+Existing content that was encrypted with the v2 API and is delivered in a "hybrid' model will continue to work (keys will still be retrievable on the data-plane,) but the management of those keys (updates and edits) through the v2 management plane or v3 management plane would no longer work after February 29th, 2024.  
+
+> [!NOTE]
+> All new content delivered using the v3 will only support content protection and streaming from AMS and no longer support "hybrid" mode.
+> The data plane will continue to deliver existing keys and licenses created in v2, but will no longer support management or updates through
+> the v2 or v3 API.
+
 #### Action Required
 
 To minimize disruption to your workloads, review the [migration guide](./migrate-v-2-v-3-migration-introduction.md) to transition your code from the version 2 API and SDKs to version 3 API and SDK before 29 February 2024.
