@@ -25,6 +25,17 @@ See content protection concepts, tutorials and how to guides at the end of this 
 > [!NOTE]
 > The rest of this article discusses how you can migrate your v2 content protection to v3 with .NET.  If you need instructions or sample code for a different language or method, please create a GitHub issue for this page.
 
+## Deprecation of AMS as a stand-alone license delivery server (hybrid on-premises mode)
+
+The v3 API no longer supports use of the key delivery services as a stand-alone feature for content protection where the key delivery service can be used to deliver license for content that is streamed or delivered through other 3rd party origin servers.  This means that AMS no longer supports key-delivery only scenarios in the V3 API, and requires you to stream from AMS origin services using dynamic packaging and encryption when delivering with v3.
+
+Existing content that was encrypted with the v2 API and is delivered in a "hybrid' model will continue to work (keys will still be retrievable on the data-plane,) but the management of those keys (updates and edits) through the v2 management plane or v3 management plane would no longer work after February 29th, 2024.  
+
+> [!NOTE]
+> All new content delivered using the v3 will only support content protection and streaming from AMS and no longer support "hybrid" mode.
+> The data plane will continue to deliver existing keys and licenses created in v2, but will no longer support management or updates through
+> the v2 or v3 API.
+
 ## v3 visibility of v2 Assets, StreamingLocators, and properties
 
 In the v2 API, `Assets`, `StreamingLocators`, and `ContentKeys` were used to protect your streaming content. When migrating to the v3 API, your v2 API `Assets`, `StreamingLocators`, and `ContentKeys` are all exposed automatically in the v3 API and all of the data on them is available for you to access.
