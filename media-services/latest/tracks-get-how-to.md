@@ -26,6 +26,6 @@ Use the following methods to get the details of a track in an asset.
 
 ## [REST](#tab/rest/)
 
-[!INCLUDE [task-list-job-rest.md](includes/task-get-tracks-rest.md)]
+[!INCLUDE [task-list-job-rest.md](includes/task-get-track-rest.md)]
 
 ---

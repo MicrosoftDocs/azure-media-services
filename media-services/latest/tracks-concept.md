@@ -44,14 +44,16 @@ Media Services offers the Tracks API so you can:
 
 ## How-tos, tutorials and quickstarts
 
-**TO BE WRITTEN**
+**FILES WITH NO LINK ARE YET TO BE WRITTEN**
 
-- [How to list the audio, video and text tracks in an asset](tracks-list-how-to.md).
-- How to edit the VTT file produced during a live event after the live event is no longer live and is now available as a VOD asset.
-- How to add additional WebVTT or TTML files to a VOD asset.
-- How to allow viewers to select the right text track to be displayed during playback.
-- How to decide which text tracks will be shown or hidden in the video player.
-- How to hide the live transcription text track produced during a live event.
+### Text tracks
+- [How to list the audio, video and text tracks in an asset](tracks-list-how-to.md)
+- [How to edit and upload VTT files in the Azure portal](tracks-edit-track-portal-how-to.md) produced during a live event after the live event is no longer live and is now available as a VOD asset
+- How to hide or show text tracks in the video player
+- How to allow viewers to select the right text track to be displayed during playback
+- How to hide the live transcription text track produced during a live event
+
+### Audio tracks
 - How to upload additional audio tracks to an existing asset.
 - How to add accessibility signals to the DASH manifest or HLS playlist.
 - How to edit the properties of an audio track such as specifying the name and language of an audio track.
