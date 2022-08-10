@@ -1,6 +1,6 @@
 ---
 title: Media Services asset tracks
-description: Media Services offers the Tracks API so you can deliver text tracks with complete sentences and proper punctuation right after a live event is over, enable accessibility player features for the viewer, allow viewers to select the text and audio tracks of their choice.
+description: Your live event is over and you have used live transcription to create a VTT or TTML file for use with captions and trancripts for the captured video.  However, the live transcription will likely need some editing.  You may later want to deliver the text in multiple languages and allow your viewers to choose which to use in the player.  This article covers how to edit the source VTT file in the Azure portal.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
