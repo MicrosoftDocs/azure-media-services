@@ -471,6 +471,8 @@
           href: tracks-list-how-to.md
         - name: Get the details of a track
           href: tracks-get-how-to.md
+        - name: Delete a track
+          href: tracks-delete-how-to.md
       - name: Content key policies
         items:
         - name: Create a content key policy
