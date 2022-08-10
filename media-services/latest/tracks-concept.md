@@ -54,6 +54,6 @@ Media Services offers the Tracks API so you can:
 - How to hide the live transcription text track produced during a live event
 
 ### Audio tracks
-- How to upload additional audio tracks to an existing asset.
-- How to add accessibility signals to the DASH manifest or HLS playlist.
-- How to edit the properties of an audio track such as specifying the name and language of an audio track.
+- How to upload additional audio tracks to an existing asset
+- How to add accessibility signals to the DASH manifest or HLS playlist
+- How to edit the properties of an audio track such as specifying the name and language of an audio track

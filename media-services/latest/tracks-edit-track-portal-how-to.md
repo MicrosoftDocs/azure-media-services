@@ -41,6 +41,8 @@ You can either upload a file with a different file name or you can overwrite the
 
 You can upload additional files in the same way you uploaded the edited file. For more information about how to use these files to deliver text tracks in multiple languages see:
 
-- [How to hide or show text tracks in the video player]()
-- [How to allow viewers to select the right text track to be displayed during playback]()
-- [How to hide the live transcription text track produced during a live event]()
+**FILES WITH NO LINK ARE YET TO BE WRITTEN**
+
+- How to hide or show text tracks in the video player
+- How to allow viewers to select the right text track to be displayed during playback
+- How to hide the live transcription text track produced during a live event
