@@ -1,5 +1,5 @@
 ---
-title: List tracks
+title: Get the details of a track
 description: This article shows how to list tracks in an asset.
 author: IngridAtMicrosoft
 ms.service: media-services
@@ -8,7 +8,7 @@ ms.date: 08/10/2022
 ms.author: inhenkel
 ---
 
-# List tracks
+# Get the details of a track
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
