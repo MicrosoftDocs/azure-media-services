@@ -1,6 +1,6 @@
 ---
 title: Get the details of a track
-description: This article shows how to list tracks in an asset.
+description: This article shows how to get the details of a track.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
