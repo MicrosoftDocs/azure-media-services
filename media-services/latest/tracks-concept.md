@@ -46,7 +46,7 @@ Media Services offers the Tracks API so you can:
 
 **TO BE WRITTEN**
 
-- How to list the audio, video and text tracks in an asset.
+- [How to list the audio, video and text tracks in an asset](tracks-list-how-to.md).
 - How to edit the VTT file produced during a live event after the live event is no longer live and is now available as a VOD asset.
 - How to add additional WebVTT or TTML files to a VOD asset.
 - How to allow viewers to select the right text track to be displayed during playback.
