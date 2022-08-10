@@ -16,8 +16,6 @@ Your live event is over and you have used live transcription to create a VTT or 
 
 ## Find and edit the track
 
-### Find the track
-
 [!INCLUDE [task-list-tracks-portal](includes/task-list-tracks-portal.md)]
 
 ### Download and edit the track
