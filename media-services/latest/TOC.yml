@@ -635,6 +635,11 @@
     - name: Verify your on-premises encoder
       href: encode-on-premises-encoder-partner.md
       displayName: streaming, stream live, RTMP, RTMPS, ingest, live event, live streaming, live, partner, partners, on-premises, on-premises, partner encoder, hardware encoder, hardware, verify, certification, certification, testing, partner testing, partner program
+  - name: Asset tracks
+    items:
+    - name: Edit asset tracks
+      href: tracks-edit-track-portal-how-to.md
+      displayName: asset tracks, edit asset tracks
   - name: Use Event Grid
     items:
     - name: Monitor events - Portal
