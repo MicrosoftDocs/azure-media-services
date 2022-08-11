@@ -19,6 +19,21 @@ To stay up to date with the most recent developments, this article provides you 
 * Bug fixes
 * Deprecated functionality
 
+## August 2022
+
+### New Azure Media Services marketing page with live low latency demonstration
+
+A new Azure Media Services marketing page with a live demonstration of LL-HLS is available now at [https://media.microsoft.com](https://media.microsoft.com).  This page will be updated with more links to samples, demonstrations and quick starts over time.
+Please bookmark the page as a reference page to easily jump to docs, samples, and login to your account in the Azure Portal.
+
+### New Tracks API sample in Node.js/Typescript for adding Subtitle and Caption tracks to any asset
+
+A new sample demonstrating how to late-bind a WebVTT or TTML subtitle or caption file is now available in the Node.js sample project. See the sample [Add a WebVTT/IMSC1/TTML subtitle or caption to an existing asset](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-WebVTT-tracks.ts)
+
+This sample shows how you can add any number of text tracks to an asset and have them packaged as TTML/IMSC1 text profile in both DASH and HLS.  The API also allows you to set specific characteristics of the HLS manifest, such as the Default caption track, set the "Forced" property, as well as control the "Characteristics" value of the HLS text track per the Apple HLS specification.
+
+The API currently supports uploading .vtt or .ttml file format to an existing asset. New tracks that are registered with the tracks API will show up immediately in the DASH and HLS manifest as IMSC1 profile MP4 text tracks.  
+
 ## June 2022
 
 ### Custom audio bitrates supported in custom live encoding presets
