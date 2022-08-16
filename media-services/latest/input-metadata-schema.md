@@ -4,7 +4,7 @@ description: This article gives an overview of Azure Media Services v3 input met
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 3/16/2022
+ms.date: 08/16/2022
 ms.author: inhenkel
 ---
 # Input metadata
