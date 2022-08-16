@@ -716,9 +716,6 @@
     - name: Go
       href: https://aka.ms/ams-v3-go-ref
       displayName: Go, Go SDK, SDK, Go reference, Go docs, Go Documentation, Go library, go package
-  - name: Resource Manager template
-    href: /rest/api/media/azure/templates/microsoft.media/allversions
-    displayName: ARM, ARM template, Azure Resource Manager, Azure Resource Manager template, template, Terraform, deployment, deploy, deployment template
   - name: Standard Encoder schemas
     items:
     - name: Input metadata
