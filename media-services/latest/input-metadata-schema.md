@@ -11,25 +11,28 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-An encoding job is associated with an input asset (or assets) on which you want to perform some encoding tasks.  Upon completion of a task, an output asset is produced. The output asset contains video, audio, thumbnails, manifest, and other files. 
+An encoding job is associated with an input asset (or assets) on which you want to perform some encoding tasks.  Upon completion of a task, an output asset is produced. The output asset contains video, audio, thumbnails, manifest, and other files.
 
-The output asset also contains a file with metadata about the input asset. The name of the metadata JSON file has a random ID, do not use it to identify the input asset that output asset belongs to. To identify the input asset it belongs to, use the `Uri` field (for more information, see [Other child elements](#other-child-elements)).  
+The output asset also contains a file with metadata about the input asset. The name of the metadata JSON file has a random ID, do not use it to identify the input asset that output asset belongs to. To identify the input asset it belongs to, use the `Uri` field (for more information, see [Other child elements](#other-child-elements)).
 
 Media Services does not preemptively scan input assets to generate metadata. Input metadata is generated only as an artifact when an input asset is processed in a Job. Hence this artifact is written to the output asset. Different tools are used to generate metadata for input assets and output assets. Therefore, the input metadata has a slightly different schema than the output metadata.
 
-This article discusses the elements and types of the JSON schema on which the input metada (&lt;asset_id&gt;_metadata.json ) is based. For information about the file that contains metadata about the output asset, see [Output metadata](output-metadata-schema.md).  
+This article discusses the elements and types of the JSON schema on which the input metada (&lt;asset_id&gt;_metadata.json ) is based. For information about the file that contains metadata about the output asset, see [Output metadata](output-metadata-schema.md).
 
-You can find the JSON schema example at the end of this article.  
+You can find the JSON schema example at the end of this article.
 
-## AssetFile  
+> [!NOTE]
+> All time is based on the [ISO-8601 format](https://en.wikipedia.org/wiki/ISO_8601). For more information about duration formatting, see [Time](https://en.wikipedia.org/wiki/ISO_8601#Times) in the same article.
 
-Contains a collection of AssetFile elements for the encoding job.  
+## AssetFile
+
+Contains a collection of AssetFile elements for the encoding job.
 
 > [!NOTE]
 > The following four child elements must appear in a sequence.
 
 | Name  | Description |
-| --- | --- | 
+| --- | --- |
 | **VideoTracks**|Each physical asset file can contain zero or more videos tracks interleaved into an appropriate container format. For more information, see [VideoTracks](#videotracks). |
 | **AudioTracks**|Each physical asset file can contain zero or more audio tracks interleaved into an appropriate container format. For more information, see [AudioTracks](#audiotracks) |
 | **Metadata**  |Asset file’s metadata represented as key\value strings. <br />For example: `<Metadata key="language" value="eng" />` |
@@ -78,7 +81,7 @@ Contains a collection of AssetFile elements for the encoding job.
 ## AudioTracks
 
 | Name  | Description |
-| --- | --- | 
+| --- | --- |
 | **SampleFormat** |Sample format. <br /><br />Example: `"SampleFormat": "fltp"`|
 | **ChannelLayout** |Channel layout. <br /><br />Example: `"ChannelLayout": "stereo"`|
 | **Channels**<br />Required |Number (0 or more) of audio channels. <br /><br />Example: `"Channels": 2`|
@@ -90,7 +93,7 @@ Contains a collection of AssetFile elements for the encoding job.
 | **CodecLongName** |Audio or video track codec long name. <br /><br />Example: `"CodecLongName": "AAC (Advanced Audio Coding)"`|
 | **TimeBase**<br />Required |Time base.<br /><br />Example: `"TimeBase": "1/48000"` |
 | **NumberOfFrames** |Number of frames (present for video tracks). <br /><br />Example: `"NumberOfFrames": 3294`|
-| **StartTime** |Track start time. For more information, see [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html). <br /><br />Example: `"StartTime": "PT0S"` |
+| **StartTime** |Track start time.<br /><br />Example: `"StartTime": "PT0S"` |
 | **Duration** |Track duration. <br /><br />Example: `"Duration": "PT1M10.272S"` |
 
 ## Metadata
