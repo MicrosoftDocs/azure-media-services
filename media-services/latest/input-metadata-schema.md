@@ -22,7 +22,7 @@ This article discusses the elements and types of the JSON schema on which the in
 You can find the JSON schema example at the end of this article.
 
 > [!NOTE]
-> All time is based on the [ISO-8601 format](https://en.wikipedia.org/wiki/ISO_8601). For more information about duration formatting, see [Time](https://en.wikipedia.org/wiki/ISO_8601#Times) in the same article.
+> All time is based on the [ISO-8601 format](https://en.wikipedia.org/wiki/ISO_8601). For more information about duration formatting, see [](https://en.wikipedia.org/wiki/ISO_8601#Duration) in the same article.
 
 ## AssetFile
 
