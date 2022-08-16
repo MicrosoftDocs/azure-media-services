@@ -68,7 +68,6 @@ The top of the following diagram shows the HLS manifest for the asset with no fi
 
 :::image type="content" source="media/diagrams/media-services-rendition-filter.png" alt-text="rendition filter diagram":::
 
-
 ## Removing language tracks
 
 Your assets might include multiple audio languages such as English, Spanish, French, and so on. Usually, the Player SDK manages default audio track selection and available audio tracks per user selection.
@@ -140,8 +139,6 @@ You can also combine multiple filters in a single URL. The following scenario de
 1. You want to combine both of these filters. Without combination, you would need to add quality filtering to the trimming filter, which would make filter usage more difficult.
 
 To combine filters, set the filter names to the manifest/playlist URL in semicolon-delimited format. Let’s assume you have a filter named *MyMobileDevice* that filters qualities, and you have another named *MyStartTime* to set a specific start time. You can combine up to three filters.
-
-For more information, see [this blog post](https://azure.microsoft.com/blog/azure-media-services-release-dynamic-manifest-composition-remove-hls-audio-only-track-and-hls-i-frame-track-support/).
 
 ## Considerations and limitations
 
