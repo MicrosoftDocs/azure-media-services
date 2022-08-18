@@ -6,7 +6,7 @@ ms.service: media-services
 ms.topic: tutorial
 ms.date: 08/18/2022
 ms.author: inhenkel
-ms.custom: contperf-fy22q4
+ms.custom: contperf-fy22q4, vscode-azure-extension-update-completed
 ---
 
 # Develop Azure Functions with Media Services v3
