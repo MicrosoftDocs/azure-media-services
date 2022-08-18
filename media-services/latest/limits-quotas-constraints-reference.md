@@ -1,10 +1,10 @@
 ---
 title: Quotas and limits in Azure Media Services
 description: This topic describes quotas and limits in Microsoft Azure Media Services.
-author: jiayali-ms
+author: inhenkel
 ms.service: media-services
 ms.topic: reference
-ms.date: 03/22/2022
+ms.date: 08/18/2022
 ms.author: inhenkel
 ---
 
@@ -21,15 +21,15 @@ This article lists some of the most common Media Services limits, which are also
 
 ## Account limits
 
-| Resource | Default Limit |
-| --- | --- |
-| Media Services accounts in a single subscription | 100 (fixed) |
+| Resource | Default Limit | Per |
+| --- | --- | ---|
+| Media Services accounts | 100 (fixed) | Subscription |
 
 ## Asset limits
 
-| Resource | Default Limit |
-| --- | --- |
-| Assets per Media Services account | 1,000,000|
+| Resource | Default Limit | Per |
+| --- | --- | --- |
+| Assets per Media Services account | 1,000,000| Media Services account |
 
 ## Storage limits
 
@@ -47,15 +47,15 @@ An individual file that you upload to be encoded should be no larger than 260 GB
 
 ## Jobs and transforms (encoding & analyzing) limits
 
-| Resource | Default Limit |
-| --- | --- |
-| Jobs per Media Services account | 500,000 <sup>(3)</sup> (fixed)|
-| Job inputs per job | 50  (fixed)|
-| Job outputs per job | 20 (fixed) |
-| Clips per job | 100 <sup>(4)</sup> (fixed) |
-| Transforms per Media Services account | 100  (fixed)|
-| Transform outputs in a transform | 20 (fixed) |
-| Files per job input|10 (fixed)|
+| Resource | Default Limit | Per |
+| --- | --- | --- |
+| Jobs | 500,000 <sup>(3)</sup> (fixed) | Media Services account <br/> in a 3 month sliding window |
+| Input assets | 50  (fixed)| Job |
+| Output assets | 20 (fixed) | Job |
+| Videos | 100 <sup>(4)</sup> (fixed) | Job |
+| Transforms | 100  (fixed) | Media Services account |
+| Output encoding types | 20 (fixed) | Transform |
+| Files |10 (fixed) | Input asset |
 
 <sup>3</sup> This number includes queued, finished, active, and canceled jobs. It does not include deleted jobs.
 
@@ -65,25 +65,27 @@ Any job record in your account older than 90 days will be automatically deleted,
 
 ## Live streaming limits
 
-| Resource | Default Limit |
-| --- | --- |
-| Live events <sup>(5)</sup> per Media Services account |5|
-| Live outputs per live event |3 <sup>(6)</sup> |
+| Resource | Default Limit | Per |
+| --- | --- | --- |
+| Live events <sup>(5)</sup> |5| Media Services account |
+| Live outputs writing data to an output asset |3 <sup>(6)</sup> | Live event |
 | Max live output duration | [Size of the DVR window](live-event-cloud-dvr-time-how-to.md) |
 
-<sup>5</sup> For detailed information about live event limits, see [Live Event types comparison and limits](live-event-types-comparison-reference.md). Depending on your streaming use case and regional datacenter of choice, AMS is able to accommodate more than 5 live events per Media Services account. Please file a support request to increase your account quota.
+<sup>5</sup> For detailed information about live event limits, see [Live Event types comparison and limits](live-event-types-comparison-reference.md). Depending on your streaming use case and regional data center of choice, AMS is able to accommodate more than 5 live events per Media Services account. Please file a support request to increase your account quota.
 
 <sup>6</sup> Live outputs start on creation and stop when deleted.
 
 ## Packaging & delivery limits
 
-| Resource | Default Limit |
-| --- | --- |
-| Streaming endpoints (stopped or running) per Media Services account | 2 |
-| Premium streaming units | 50 |
-| Dynamic manifest filters |100|
-| Streaming policies | 100 <sup>(7)</sup> per Media Services account <br/> 3 per streaming locator |
-| Unique streaming locators associated with one asset at one time | 100<sup>(8)</sup> (fixed) |
+| Resource | Default Limit | Per |
+| --- | --- | --- |
+| Streaming endpoints (stopped or running) | 2 | Media Services account |
+| Premium streaming units | 50 | Streaming endpoint |
+| Dynamic manifest account filters | 100 | Media Services account |
+| Dynamic manifest asset filters | 100 | Asset |
+| Streaming policies | 100 <sup>(7)</sup> | Media Services account |
+| Streaming policies | 3 | Streaming locator |
+| Unique streaming locators | 100<sup>(8)</sup> (fixed) | Asset |
 
 <sup>7</sup> When using a custom streaming policy, design a limited set of policies for your Media Service account, and re-use them for your streaming locators whenever the same encryption options and protocols are needed. You should not be creating a new streaming policy for each streaming locator.
 
@@ -91,10 +93,10 @@ Any job record in your account older than 90 days will be automatically deleted,
 
 ## Protection limits
 
-| Resource | Default Limit |
-| --- | --- |
-| Options per Content Key Policy |30 |
-| Licenses per month for each of the DRM types on Media Services key delivery service per account|1,000,000|
+| Resource | Default Limit | Per |
+| --- | --- | --- |
+| Optional claims  |30 | Content Key Policy |
+| Licenses on Media Services key delivery service | 1,000,000 | Each type<br/>Month |
 
 ## Support ticket
 
