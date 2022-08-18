@@ -55,7 +55,7 @@ An individual file that you upload to be encoded should be no larger than 260 GB
 | Videos | 100 <sup>(4)</sup> (fixed) | Job |
 | Transforms | 100  (fixed) | Media Services account |
 | Output encoding types | 20 (fixed) | Transform |
-| Files |10 (fixed) | Input asset |
+| Files |10 (fixed) | Input Asset |
 
 <sup>3</sup> This number includes queued, finished, active, and canceled jobs. It does not include deleted jobs.
 
@@ -68,7 +68,7 @@ Any job record in your account older than 90 days will be automatically deleted,
 | Resource | Default Limit | Per |
 | --- | --- | --- |
 | Live events <sup>(5)</sup> |5| Media Services account |
-| Live outputs writing data to an output asset |3 <sup>(6)</sup> | Live event |
+| Live outputs writing data to an output asset |3 <sup>(6)</sup> | Live Event |
 | Max live output duration | [Size of the DVR window](live-event-cloud-dvr-time-how-to.md) |
 
 <sup>5</sup> For detailed information about live event limits, see [Live Event types comparison and limits](live-event-types-comparison-reference.md). Depending on your streaming use case and regional data center of choice, AMS is able to accommodate more than 5 live events per Media Services account. Please file a support request to increase your account quota.
@@ -80,11 +80,11 @@ Any job record in your account older than 90 days will be automatically deleted,
 | Resource | Default Limit | Per |
 | --- | --- | --- |
 | Streaming endpoints (stopped or running) | 2 | Media Services account |
-| Premium streaming units | 50 | Streaming endpoint |
+| Premium streaming units | 50 | Streaming Endpoint |
 | Dynamic manifest account filters | 100 | Media Services account |
 | Dynamic manifest asset filters | 100 | Asset |
 | Streaming policies | 100 <sup>(7)</sup> | Media Services account |
-| Streaming policies | 3 | Streaming locator |
+| Streaming policies | 3 | Streaming Locator |
 | Unique streaming locators | 100<sup>(8)</sup> (fixed) | Asset |
 
 <sup>7</sup> When using a custom streaming policy, design a limited set of policies for your Media Service account, and re-use them for your streaming locators whenever the same encryption options and protocols are needed. You should not be creating a new streaming policy for each streaming locator.
