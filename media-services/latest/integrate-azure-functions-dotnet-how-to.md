@@ -4,7 +4,7 @@ description: This article shows how to start developing Azure Functions with Med
 author: xpouyat
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 06/27/2022
+ms.date: 08/18/2022
 ms.author: inhenkel
 ms.custom: contperf-fy22q4
 ---
@@ -13,7 +13,7 @@ ms.custom: contperf-fy22q4
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-This article shows you how to get started with creating Azure Functions that use Media Services. The Azure Function defined in this article encodes a video file with Media Encoder Standard. As soon as the encoding job has been created, the function returns the job name and output asset name. To review Azure Functions, see [Overview](/azure/azure-functions/functions-overview) and other topics in the **Azure Functions** section.
+This article shows you how to get started with creating Azure Functions that use Media Services. The Azure Function in the associated sample for this  article encodes a video file with Media Encoder Standard. As soon as the encoding job has been created, the function returns the job name and output asset name. To review Azure Functions, see [Overview](/azure/azure-functions/functions-overview) and other topics in the **Azure Functions** section.
 
 If you want to explore and deploy existing Azure Functions that use Azure Media Services, check out [Media Services Azure Functions](https://github.com/Azure-Samples/media-services-v3-dotnet-core-functions-integration). This repository contains examples that use Media Services to show workflows related to ingesting content directly from blob storage, encoding, and live streaming operations.
 
@@ -25,61 +25,11 @@ If you want to explore and deploy existing Azure Functions that use Azure Media 
 
 This article explains how to create a C# .NET 5 function that communicates with Azure Media Services. To create a function with another language, look to this [article](/azure/azure-functions/functions-develop-vs-code).
 
-### Run local requirements
+## Azure Functions in Visual Studio Code
 
-These prerequisites are only required to run and debug your functions locally. They aren't required to create or publish projects to Azure Functions.
+Follow the steps for setting up and using the [Azure Functions extension](/azure/azure-functions/functions-develop-vs) in Visual Studio Code, using the *Isolated process* steps.
 
-- [.NET Core 3.1 and .NET 5 SDKs](https://dotnet.microsoft.com/download/dotnet).
-
-- The [Azure Functions Core Tools](/azure/azure-functions/functions-run-local#install-the-azure-functions-core-tools) version 3.x or later. The Core Tools package is downloaded and installed automatically when you start the project locally. Core Tools includes the entire Azure Functions runtime, so download and installation might take some time.
-
-- The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
-
-## Install the Azure Functions extension
-
-You can use the Azure Functions extension to create and test functions and deploy them to Azure.
-
-1. In Visual Studio Code, open **Extensions** and search for **Azure functions**, or select this link in Visual Studio Code: [`vscode:extension/ms-azuretools.vscode-azurefunctions`](vscode:extension/ms-azuretools.vscode-azurefunctions).
-
-1. Select **Install** to install the extension for Visual Studio Code:
-
-    ![Install the extension for Azure Functions](./Media/integrate-azure-functions-dotnet-how-to/vscode-install-extension.png)
-
-1. After installation, select the Azure icon on the Activity bar. You should see an Azure Functions area in the Side Bar.
-
-    ![Azure Functions area in the Side Bar](./Media/integrate-azure-functions-dotnet-how-to/azure-functions-window-vscode.png)
-
-## Create an Azure Functions project
-
-The Functions extension lets you create a function app project, along with your first function. The following steps show how to create an HTTP-triggered function in a new Functions project. HTTP trigger is the simplest function trigger template to demonstrate.
-
-1. From **Azure: Functions**, select the **Create Function** icon:
-
-    ![Create a function](./Media/integrate-azure-functions-dotnet-how-to/create-function.png)
-
-1. Select the folder for your function app project, and then **Select C# for your function project** and **.NET 5 Isolated** for the runtime.
-
-1. Select the **HTTP trigger** function template.
-
-    ![Choose the HTTP trigger template](./Media/integrate-azure-functions-dotnet-how-to/create-function-choose-template.png)
-
-1. Type **HttpTriggerEncode** for the function name and select Enter, accept **Company.Function** for the namespace then select **Function** for the access rights. This authorization level requires you to provide a [function key](/azure/azure-functions/functions-bindings-http-webhook-trigger#authorization-keys) when you call the function endpoint.
-
-    ![Select Function authorization](./Media/integrate-azure-functions-dotnet-how-to/create-function-auth.png)
-
-    A function is created in your chosen language and in the template for an HTTP-triggered function.
-
-    ![HTTP-triggered function template in Visual Studio Code](./Media/integrate-azure-functions-dotnet-how-to/new-function-full.png)
-
-## Install Media Services and other extensions
-
-Run the dotnet add package command in the Terminal window to install the extension packages that you need in your project. The following command installs the Media Services package and other extensions needed by the sample.
-
-```bash
-dotnet add package Azure.Storage.Blobs
-dotnet add package Microsoft.Azure.Management.Media
-dotnet add package Azure.Identity
-```
+When you have a project set up, come back to this page.
 
 ## Generated project files
 
