@@ -28,7 +28,7 @@ For *pass-through* live events, we recommend that you always use the *LowLatency
 In addition to choosing the right stream option for your live event, these are the additional things you can tune to minimize the end to end latency.
 For *passthrough* live events, use a key frame interval setting of 1 second on your encoding software.
 
-We using HLS output, choose HLS CMAF (format=m3u8-cmaf) whenever possible. If you must use other streaming formats such as TS outputs with HLS v3 (format=aapl-m3u8-v3) and HLS v4 (format=aapl-m3u8-v4), be sure to set the `LiveOutput.Hls.fragmentsPerTsSegment` setting for your live event to 1 to ensure that Media Services packs only one mp4 fragment into one TS segment.
+When using HLS output, choose HLS CMAF (format=m3u8-cmaf) whenever possible. If you must use other streaming formats such as TS outputs with HLS v3 (format=aapl-m3u8-v3) or HLS v4 (format=aapl-m3u8-v4), be sure to set the `LiveOutput.Hls.fragmentsPerTsSegment` setting for your live event to 1 to ensure that Media Services packs only one mp4 fragment into one TS segment.
 
 See the following table for latency numbers when used with the optimal settings and proper player configurations.
 
