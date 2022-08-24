@@ -9,7 +9,7 @@ ms.date: 08/24/2022
 ms.author: inhenkel
 ---
 
-# Media Services Face Detector retirement and migration
+# Media Services Face Redactor retirement and migration
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
