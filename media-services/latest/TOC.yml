@@ -180,6 +180,10 @@
       displayName: MRU, reserved units, scaling, scale, encoding, media reserved units
   - name: Analyzing and redaction
     items:
+    - name: Video Analyzer retirement and migration
+      href: analyze-video-retirement-migration-overview.md
+    - name: Face Detector retirement and migration
+      href: analyze-face-retirement-migration-overview.md
     - name: Video and audio analysis
       href: analyze-video-audio-files-concept.md
       displayName: analyze, analyzing, presets, jobs, speech to text, language, captions, subtitles
