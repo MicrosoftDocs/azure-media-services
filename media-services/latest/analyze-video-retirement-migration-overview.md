@@ -1,7 +1,6 @@
 ---
-title: Media Services Video Analyzer migration
-description: As Microsoft’s Responsible AI Standards outlines, Microsoft is committed to fairness, privacy, security, and
-transparency with respect to AI systems. To align with these standards, Azure Media Services is retiring the Video Analyzer preset Analyze video and audio files on September 14, 2023. This preset currently allows you to extract multiple video and audio insights from a video file. Customers can replace their current workflows using the more advanced feature set offered by Azure Video Indexer.
+title: Media Services Video Analyzer retirement and migration
+description: This article discusses the retirement and migration for Media Services Video Analyzer retirement and migration.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview

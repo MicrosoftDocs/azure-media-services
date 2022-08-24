@@ -1,7 +1,6 @@
 ---
 title: Media Services Face Detector preset retirement and migration
-description: As Microsoft’s Responsible AI Standards outlines, Microsoft is committed to fairness, privacy, security, and
-transparency with respect to AI systems. To align with these standards, Azure Media Services is retiring the Face Detector preset on September 14, 2023.
+description: This article discusses the retirement and migration for Media Services Face Detector retirement and migration.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
