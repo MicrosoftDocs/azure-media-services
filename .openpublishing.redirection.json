@@ -1820,6 +1820,11 @@
             "source_path_from_root": "/media-services/latest/security-private-link-streaming-endpoint-how-to.md",
             "redirect_url": "/media-services/latest/security-private-endpoint-streaming-endpoint-how-to",
             "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/asset-tracks-download-edit-upload-captions.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
           }
     ]
 }
