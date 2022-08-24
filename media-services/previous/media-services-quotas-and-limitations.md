@@ -2,11 +2,11 @@
 title: Media Services quotas and limitation | Microsoft Docs
 description: This topic describes quotas and limitations associated with Microsoft Azure Media Services.
 services: media-services
-author: inhenkel
+author: IngridAtMicrosoft
 manager: femila
 ms.service: media-services
 ms.topic: article
-ms.date: 08/18/2022
+ms.date: 08/24/2022
 ms.author: inhenkel
 ---
 
