@@ -75,15 +75,17 @@
     displayName: deprecated, deprecation, retired, retirement, legacy, media services v2, v2, version 2
     href: legacy-components.md
     items:
-     - name: Migrate from Azure Media Encoder
-       href: migrate-azure-media-encoder.md
-       displayName: AME, media services v2, v2, version 2
-     - name: Migrate from Windows Azure Media Encoder
-       href: migrate-windows-azure-media-encoder.md
-       displayName: WAME, media services v2, v2, version 2
-     - name: Migrate from Indexer v1 and v2
-       href: migrate-indexer-v1-v2.md
-       displayName: media services v2, v2, version 2
+    - name: Face Redactor retirement and migration
+      href: analyze-face-redactor-retirement-migration-overview.md
+    - name: Migrate from Azure Media Encoder
+      href: migrate-azure-media-encoder.md
+      displayName: AME, media services v2, v2, version 2
+    - name: Migrate from Windows Azure Media Encoder
+      href: migrate-windows-azure-media-encoder.md
+      displayName: WAME, media services v2, v2, version 2
+    - name: Migrate from Indexer v1 and v2
+      href: migrate-indexer-v1-v2.md
+      displayName: media services v2, v2, version 2
   - name: Manage
     items:
     - name: Accounts
