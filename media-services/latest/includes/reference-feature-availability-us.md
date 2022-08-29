@@ -10,7 +10,7 @@ ms.author: inhenkel
 
 ## United States
 
-| Feature | Central USHead | East USHead | East US 2Head | North Central USHead | South Central USHead | West USHead | West US 2Head | West US 3Head | West Central USHead |
+| Feature | Central US | East US | East US 2 | North Central US | South Central US | West US | West US 2 | West US 3 | West Central US |
 | ------- | :--------: | :-----: | :-------: | :--------------: | :--------------: | :-----: | :-------: | ------- | :-------------: |
 | [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |  ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) |
 | [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) |
