@@ -35,6 +35,8 @@ Use the links on the right to find the region you are interested in.
 [!INCLUDE [reference-feature-availability-china](./includes/reference-feature-availability-china.md)]
 <!-- Europe -->
 [!INCLUDE [reference-feature-availability-europe](./includes/reference-feature-availability-europe.md)]
+<!-- France -->
+[!INCLUDE [reference-feature-availability-france](./includes/reference-feature-availability-france.md)]
 <!-- Germany -->
 [!INCLUDE [reference-feature-availability-germany](./includes/reference-feature-availability-germany.md)]
 <!-- India -->
