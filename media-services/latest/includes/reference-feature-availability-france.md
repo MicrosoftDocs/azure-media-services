@@ -18,4 +18,4 @@ ms.author: inhenkel
 | [LiveEvents](../stream-live-streaming-concept.md) |![LiveEvents France Central general availability](../media/azure-clouds-regions/ga.svg)  | ![LiveEvents France South general availability](../media/azure-clouds-regions/ga.svg) |
 | [StreamingEndpoints](../stream-streaming-endpoint-concept.md) |![StreamingEndpoints France Central general availability](../media/azure-clouds-regions/ga.svg) | ![StreamingEndpoints France South general availability](../media/azure-clouds-regions/ga.svg) |
 | [LiveTranscription](../live-event-live-transcription-how-to.md) |![LiveTranscription France Central general availability](../media/azure-clouds-regions/ga.svg) |![LiveTranscription France South general availability](../media/azure-clouds-regions/ga.svg) |
-| [Key Delivery](../drm-content-protection-concept.md) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) |![general](../media/azure-clouds-regions/ga.svg) |
+| [Key Delivery](../drm-content-protection-concept.md) | ![general](../media/azure-clouds-regions/ga.svg) | ![general](../media/azure-clouds-regions/ga.svg) |
