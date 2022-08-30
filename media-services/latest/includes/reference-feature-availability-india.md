@@ -2,19 +2,25 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 10/28/2020
+ms.date: 08/30/2022
 ms.author: inhenkel
 ---
 
 <!--Feature availability in region-->
 ## India
 
-| Feature | Central India | South India | West India |
-| --- | :---: | :---: | :---: |
-| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |![Azure EventGrid Central India general availability](../media/azure-clouds-regions/ga.svg)  |![Azure EventGrid South India general availability](../media/azure-clouds-regions/ga.svg) |![Azure EventGrid West India general availability](../media/azure-clouds-regions/ga.svg)  |
-| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md) |![VideoAnalyzerPreset Central India general availability](../media/azure-clouds-regions/ga.svg)  | ![VideoAnalyzerPreset South India general availability](../media/azure-clouds-regions/ga.svg) |![VideoAnalyzerPreset West India general availability](../media/azure-clouds-regions/ga.svg)  |
-| [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md) |![AudioAnalyzerPreset Central India general availability](../media/azure-clouds-regions/ga.svg)  | ![AudioAnalyzerPreset South India general availability](../media/azure-clouds-regions/ga.svg) |![AudioAnalyzerPreset West India general availability](../media/azure-clouds-regions/ga.svg)  |
-| [StandardEncoderPreset](../encode-concept.md) |![StandardEncoderPreset Central India general availability](../media/azure-clouds-regions/ga.svg)  | ![StandardEncoderPreset South India general availability](../media/azure-clouds-regions/ga.svg) | ![StandardEncoderPreset West India general availability](../media/azure-clouds-regions/ga.svg)  |
-| [LiveEvents](../stream-live-streaming-concept.md) |![LiveEvents Central India general availability](../media/azure-clouds-regions/ga.svg)  | ![LiveEvents South India general availability](../media/azure-clouds-regions/ga.svg) | ![LiveEvents West India general availability](../media/azure-clouds-regions/ga.svg) |
-| [StreamingEndpoints](../stream-streaming-endpoint-concept.md) |![StreamingEndpoints Central India general availability](../media/azure-clouds-regions/ga.svg) | ![StreamingEndpoints South India general availability](../media/azure-clouds-regions/ga.svg) |![StreamingEndpoints West India general availability](../media/azure-clouds-regions/ga.svg) |
-| [LiveTranscription](../live-event-live-transcription-how-to.md) | |![LiveTranscription South India general availability](../media/azure-clouds-regions/ga.svg) | ![LiveTranscription West India general availability](../media/azure-clouds-regions/ga.svg)  |
+| Feature | Central India | South India | West India | Jio India West |
+| --- | :---: | :---: | :---: | :---:|
+| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)        |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md)        |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| [StandardEncoderPreset](../encode-concept.md)                         |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| [LiveEvents](../stream-live-streaming-concept.md)                     |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| [StreamingEndpoints](../stream-streaming-endpoint-concept.md)         |&#10004;&#65039;| &#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| [LiveTranscription](../live-event-live-transcription-how-to.md)       |<!--Central-->|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| [Key Delivery](../drm-content-protection-concept.md)                  |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;Clear                                                           |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;PlayReady                                                       |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;Widevine                                                        |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;FairPlay                                                        |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+

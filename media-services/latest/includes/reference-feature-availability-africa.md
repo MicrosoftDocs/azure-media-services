@@ -2,7 +2,7 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 10/28/2020
+ms.date: 08/30/2022
 ms.author: inhenkel
 ---
 
@@ -11,11 +11,16 @@ ms.author: inhenkel
 ## Africa
 
 | Feature| South Africa North | South Africa West |
-| --- | --- | --- |
-| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) | ![africa north event grid general availability](../media/azure-clouds-regions/ga.svg) | ![africa south event grid general availability](../media/azure-clouds-regions/ga.svg) |
-| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md) |  |  |
-| [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md) | |  |
-| [StandardEncoderPreset](../encode-concept.md) | ![africa north StandardEncoderPreset general availability](../media/azure-clouds-regions/ga.svg) | ![africa south StandardEncoderPreset general availability](../media/azure-clouds-regions/ga.svg) |
-| [LiveEvents](../stream-live-streaming-concept.md) | ![africa north LiveEvents general availability](../media/azure-clouds-regions/ga.svg) | ![africa south LiveEvents general availability](../media/azure-clouds-regions/ga.svg) |
-| [StreamingEndpoints](../stream-streaming-endpoint-concept.md) | ![africa north StreamingEndpoints general availability](../media/azure-clouds-regions/ga.svg) | ![africa south StreamingEndpoints general availability](../media/azure-clouds-regions/ga.svg) |
-| [LiveTranscription](../live-event-live-transcription-how-to.md) |![africa south LiveTranscription general availability](../media/azure-clouds-regions/ga.svg)  |![africa south LiveTranscription general availability](../media/azure-clouds-regions/ga.svg)  |
+| ------ | :----------------: | :---------------: |
+| [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |&#10004;&#65039;|&#10004;&#65039;|
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)        |<!--South Africa North -->|<!--South Africa West -->|
+| [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md)        |<!--South Africa North -->|<!--South Africa West -->|
+| [StandardEncoderPreset](../encode-concept.md)                         |&#10004;&#65039;|&#10004;&#65039;|
+| [LiveEvents](../stream-live-streaming-concept.md)                     |&#10004;&#65039;|&#10004;&#65039;|
+| [StreamingEndpoints](../stream-streaming-endpoint-concept.md)         |&#10004;&#65039;|&#10004;&#65039;|
+| [LiveTranscription](../live-event-live-transcription-how-to.md)       |&#10004;&#65039;|&#10004;&#65039;|
+| [Key Delivery](../drm-content-protection-concept.md)                  |&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;Clear                                                           |&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;PlayReady                                                       |&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;Widevine                                                        |&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;FairPlay                                                        |&#10004;&#65039;|&#10004;&#65039;|
