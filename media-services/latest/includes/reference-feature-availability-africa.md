@@ -20,7 +20,7 @@ ms.author: inhenkel
 | [StreamingEndpoints](../stream-streaming-endpoint-concept.md)         |&#10003;|&#10003;|
 | [LiveTranscription](../live-event-live-transcription-how-to.md)       |&#10003;|&#10003;|
 | [Key Delivery](../drm-content-protection-concept.md)                  |&#10003;|&#10003;|
-| &emsp;Clear                                                          |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
-| &emsp;PlayReady                                                      |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
-| &emsp;Widevine                                                       |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
-| &emsp;FairPlay                                                       |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
+| &emsp;Clear                                                           |&#10003;|&#10003;|
+| &emsp;PlayReady                                                       |&#10003;|&#10003;|
+| &emsp;Widevine                                                        |&#10003;|&#10003;|
+| &emsp;FairPlay                                                        |&#10003;|&#10003;|
