@@ -17,5 +17,9 @@ ms.author: inhenkel
 | [StandardEncoderPreset](../encode-concept.md)                         |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
 | [LiveEvents](../stream-live-streaming-concept.md)                     |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
 | [StreamingEndpoints](../stream-streaming-endpoint-concept.md)         |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
-| [LiveTranscription](../live-event-live-transcription-how-to.md)       | <!--East --> |<!-- East 2 --> |<!-- North  --> |<!--North 2 --> | <!--North 3 --> |
+| [LiveTranscription](../live-event-live-transcription-how-to.md)       | <!--East --> |<!-- East 2 -->|<!-- North  -->|<!--North 2 -->|<!--North 3 -->|
 | [Key Delivery](../drm-content-protection-concept.md)                  |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
+| &emsp;Clear                                                           |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
+| &emsp;PlayReady                                                       |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|
+| &emsp;Widevine                                                        |<!--East -->|<!-- East 2 -->|<!-- North  -->|<!--North 2 -->|<!--North 3 -->|
+| &emsp;FairPlay                                                        |&#10003;|&#10003;|&#10003;|&#10003;|&#10003;|

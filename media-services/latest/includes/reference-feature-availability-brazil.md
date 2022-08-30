@@ -19,14 +19,7 @@ ms.author: inhenkel
 | [StreamingEndpoints](../stream-streaming-endpoint-concept.md)         |&#10003;|
 | [LiveTranscription](../live-event-live-transcription-how-to.md)       |&#10003;|
 | [Key Delivery](../drm-content-protection-concept.md)                  |&#10003;|
-
-<!-- Brazil Southeast Decommissioned
-Brazil Southeast |
-![StandardEncoderPreset Brazil Southeast future](../media/azure-clouds-regions/planned-active.svg) |
-![Azure EventGrid Brazil Southeast future](../media/azure-clouds-regions/planned-active.svg) |
-![VideoAnalyzerPreset Brazil Southeast future](../media/azure-clouds-regions/planned-active.svg) |
-![AudioAnalyzerPreset Brazil Southeast future](../media/azure-clouds-regions/planned-active.svg) |
-![LiveEvents Brazil Southeast future](../media/azure-clouds-regions/planned-active.svg) |
-![StreamingEndpoints Brazil Southeast future](../media/azure-clouds-regions/planned-active.svg)  |
-![LiveTranscription Brazil Southeast future](../media/azure-clouds-regions/planned-active.svg) |
--->
+| &emsp;Clear                                                           |&#10003;|
+| &emsp;PlayReady                                                       |&#10003;|
+| &emsp;Widevine                                                        |&#10003;|
+| &emsp;FairPlay                                                        |&#10003;|
