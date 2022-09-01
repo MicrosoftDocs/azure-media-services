@@ -18,4 +18,9 @@ ms.author: inhenkel
 | [StandardEncoderPreset](../encode-concept.md)                         |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
 | [LiveEvents](../stream-live-streaming-concept.md)                     |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
 | [StreamingEndpoints](../stream-streaming-endpoint-concept.md)         |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
-| [LiveTranscription](../live-event-live-transcription-how-to.md)       |<!--DoD Central --> |<!--DoD East -->|<!--Gov Arizona-->|<!--Gov Texas-->|<!--Gov Virginia-->|
+| [LiveTranscription](../live-event-live-transcription-how-to.md)       |<!--DoD Central -->|<!--DoD East -->|<!--Gov Arizona-->|<!--Gov Texas-->|<!--Gov Virginia-->|
+| [Key Delivery](../drm-content-protection-concept.md)                 |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;Clear                                                          |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;PlayReady                                                      |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| &emsp;Widevine                                                       |<!--DoD Central -->|<!--DoD East -->|<!--Gov Arizona-->|<!--Gov Texas-->|<!--Gov Virginia-->|
+| &emsp;FairPlay                                                       |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
