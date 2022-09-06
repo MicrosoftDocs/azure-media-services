@@ -105,10 +105,10 @@ sections:
         progressive download MP4 in blob storage. Caption support for VTT and IMSC1 is another benefit. In addition, the ability to late bind additional audio renditions, or dubbings in alternate languages, makes this a valuable choice for some situations.
     - question: How to rotate a video, subclip a video, stitch videos, create thumbnails and sprites, etc?
       answer: |
-        If you are looking for ways to use a Media Services encoder to do things like rotate a video, subclip a video, stitch videos, create thumbnails and sprites, we have a ton of code samples on the [Code Samples](https://docs.microsoft.com/azure/media-services/latest/samples-overview) page. Available sample languages include Node.JS, Python, .NET, and Java.
+        If you are looking for ways to use a Media Services encoder to do things like rotate a video, subclip a video, stitch videos, create thumbnails and sprites, we have a ton of code samples on the [Code Samples](/azure/media-services/latest/samples-overview) page. Available sample languages include Node.JS, Python, .NET, and Java.
     - question: Where are the SDK examples?
       answer: |
-        Only the REST API includes examples, so we have created [code snippets](https://docs.microsoft.com/en-us/azure/media-services/latest/storage-create-how-to?tabs=portal) for each SDK as well as step-by-step instructions for working with Media Services in the Azure portal.
+        Only the REST API includes examples, so we have created [code snippets](/azure/media-services/latest/storage-create-how-to?tabs=portal) for each SDK as well as step-by-step instructions for working with Media Services in the Azure portal.
   - name: Live streaming
     questions:
     - question: What is a Media Services live event?
@@ -199,7 +199,7 @@ sections:
         DRM systems like PlayReady, Widevine, and FairPlay provide an additional level of encryption on the key that's used to decrypt the content, compared to an AES-128 clear key. The content key is encrypted to a key protected by the DRM runtime in addition to any transport-level encryption that TLS provides. Decryption is handled in a secure environment at the operating system level, where it's more difficult for a malicious user to attack. We recommend DRM for use cases where the viewer might not be a trusted party and you need the highest level of security.
     - question: How do I show a video to only users who have a specific permission, without using Azure AD?
       answer: |
-        You don't have to use any specific token provider such as Azure Active Directory (Azure AD). You can create your own [JWT](https://docs.microsoft.com/azure/active-directory/develop/security-tokens#json-web-tokens-and-claims) provider (so-called Secure Token Service, or STS) by using asymmetric key encryption. In your custom STS, you can add claims based on your business logic.
+        You don't have to use any specific token provider such as Azure Active Directory (Azure AD). You can create your own [JWT](/azure/active-directory/develop/security-tokens#json-web-tokens-and-claims) provider (so-called Secure Token Service, or STS) by using asymmetric key encryption. In your custom STS, you can add claims based on your business logic.
 
         Make sure that the issuer, audience, and claims all match up exactly between what's in JWT and the `ContentKeyPolicyRestriction` value used in `ContentKeyPolicy`.
 
@@ -313,7 +313,7 @@ sections:
     questions:
     - question: How do I find out what this error code means?
       answer: |
-        We've documented error codes in the following references: [Streaming endpoint error codes](./stream-streaming-endpoint-error-codes-reference.md), [Live event error codes](./live-event-error-codes-reference.md), and [Job error codes](https://docs.microsoft.com/rest/api/media/jobs/get?#joberrorcode). If you can't find answers there, please create a support ticket.
+        We've documented error codes in the following references: [Streaming endpoint error codes](./stream-streaming-endpoint-error-codes-reference.md), [Live event error codes](./live-event-error-codes-reference.md), and [Job error codes](/rest/api/media/jobs/get?#joberrorcode). If you can't find answers there, please create a support ticket.
     - question: How do I reset my account credentials?
       answer: |
         You can [reset your account credentials by using the Azure CLI](./account-reset-account-credentials.md).
@@ -338,7 +338,7 @@ sections:
 
           Additional data associated with a Media Services account (including content encryption keys, token verification keys, JobInputHttp URLs, and other entity metadata) is stored in Microsoft-owned storage within the region selected for the Media Services account.
 
-          Due to [data residency requirements](https://azure.microsoft.com/global-infrastructure/data-residency/#more-information) in Brazil South and Southeast Asia, additional account data is stored in a zone-redundant fashion and is contained in a single region. For Southeast Asia, all the additional account data is stored in Singapore. For Brazil South, the data is stored in Brazil. In regions other than Brazil South and Southeast Asia, additional account data might also be stored in Microsoft-owned storage in the [paired region](https://docs.microsoft.com/availability-zones/cross-region-replication-azure.md).
+          Due to [data residency requirements](https://azure.microsoft.com/global-infrastructure/data-residency/#more-information) in Brazil South and Southeast Asia, additional account data is stored in a zone-redundant fashion and is contained in a single region. For Southeast Asia, all the additional account data is stored in Singapore. For Brazil South, the data is stored in Brazil. In regions other than Brazil South and Southeast Asia, additional account data might also be stored in Microsoft-owned storage in the [paired region](/availability-zones/cross-region-replication-azure).
 
       - question: Does Media Services provide high availability or data replication?
         answer: |
