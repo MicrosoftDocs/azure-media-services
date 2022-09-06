@@ -1827,12 +1827,12 @@
             "redirect_document_id": false
           },
           {
-            "source_path_from_root": "media-services/latest/stream-files-dotnet-quickstart.md",
+            "source_path_from_root": "/media-services/latest/stream-files-dotnet-quickstart.md",
             "redirect_url": "/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
-            "source_path_from_root": "media-services/latest/drm-protect-with-drm-tutorial.md",
+            "source_path_from_root": "/media-services/latest/drm-protect-with-drm-tutorial.md",
             "redirect_url": "/media-services/latest/samples-overview",
             "redirect_document_id": false
           }
