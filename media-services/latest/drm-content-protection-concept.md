@@ -100,7 +100,6 @@ Read this [overview of creating a test content protection system](drm-test-syste
 
 ## How-tos, tutorials and samples
 
-- [Use DRM dynamic encryption and license delivery service tutorial](drm-protect-with-drm-tutorial.md) which uses the following sample.
 - The [DRM sample](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs) shows you how to implement a multi-DRM system with Media Services v3 by using .NET. It also shows you how to use the Media Services license/key delivery service. You can encrypt each asset with multiple encryption types (AES-128, PlayReady, Widevine, FairPlay). The sample shows you how to create and configure a [content key policy](drm-content-key-policy-concept.md), create a [streaming locator](stream-streaming-locators-concept.md) that's configured to stream the encrypted asset, create a test token, and build a streaming URL.
 - [Protect content with AES 128](drm-protect-with-aes128-tutorial.md) tutorial.
 

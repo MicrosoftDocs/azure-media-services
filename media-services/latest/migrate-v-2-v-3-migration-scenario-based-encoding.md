@@ -112,7 +112,6 @@ For customers using the Indexer v1 processor in the v2 API, you need to create a
 
 ### Tutorials
 
-- [Tutorial: Encode a remote file based on URL and stream the video - .NET](stream-files-dotnet-quickstart.md)
 - [Tutorial: Upload, encode, and stream videos with Media Services v3](stream-files-tutorial-with-api.md)
 
 ## Samples

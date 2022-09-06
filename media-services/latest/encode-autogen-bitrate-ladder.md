@@ -21,8 +21,6 @@ This article explains how to use the Standard Encoder in Media Services to encod
 
 When you use the **AdaptiveStreaming** or **H265AdaptiveStreaming** preset in **Transform**, you get an output that is suitable for delivery via streaming protocols like HLS and DASH. When using one of these two presets, the service intelligently determines how many video layers to generate and at what bitrate and resolution. The output content contains MP4 files where AAC-encoded audio and either H.264-encoded video (in the case of the AdaptiveStreaming preset) or H.265/HEVC (in the case of the H265AdaptiveStreaming preset). The output MP4 files are non-interleaved.
 
-To see an example of how this preset is used, see [Stream a file](stream-files-dotnet-quickstart.md).
-
 ## Output
 
 This section shows three examples of the output video layers produced by the Media Services encoder as a result of encoding with the **AdaptiveStreaming**(H.264) or the **H265AdaptiveStreaming** (HEVC) presets. In all cases, the output contains an audio-only MP4 file with stereo audio encoded at 128 kbps.

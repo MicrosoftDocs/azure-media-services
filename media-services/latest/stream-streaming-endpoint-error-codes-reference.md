@@ -135,7 +135,6 @@ For encryption articles and examples, see:
 - [Concept: Content Key Policies](drm-content-key-policy-concept.md)
 - [Concept: Streaming Policies](stream-streaming-policy-concept.md)
 - [Sample: protect with AES encryption](drm-playready-license-template-concept.md)
-- [Sample: protect with DRM](drm-protect-with-drm-tutorial.md)
 
 For filter guidance, see:
 
