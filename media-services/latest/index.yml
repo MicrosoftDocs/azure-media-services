@@ -108,8 +108,6 @@ landingContent:
         links:
           - text: Encrypt dynamically with AES-128
             url: drm-playready-license-template-concept.md
-          - text: Encrypt dynamically with DRM
-            url: drm-protect-with-drm-tutorial.md
 
 # Card
   - title: Analyze content

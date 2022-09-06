@@ -43,7 +43,6 @@ Before you implement offline DRM for FairPlay on an iOS 10+ device:
 * Review online content protection for FairPlay:
 
     - [Apple FairPlay license requirements and configuration](drm-fairplay-license-overview.md)
-    - [Use DRM dynamic encryption and license delivery service](drm-protect-with-drm-tutorial.md)
     - A .NET sample that includes configuration of online FPS streaming: [ConfigureFairPlayPolicyOptions](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs#L493)
 * Obtain the FPS SDK from the Apple Developer Network. The FPS SDK contains two components:
 

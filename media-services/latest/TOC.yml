@@ -79,9 +79,6 @@
       displayName: ARM, Resource Manager, Template
 - name: Tutorials
   items:
-  - name: Encode and stream a remote file -.NET
-    href: stream-files-dotnet-quickstart.md
-    displayName: Tutorial, .NET, remote ingest, SAS, HTTP, JobInputHttp, S3, URL, ingest, upload, SDK, sample
   - name: Encode and stream an uploaded file - .NET
     href: stream-files-tutorial-with-api.md
     displayName: SDK, Tutorial, .NET, stream, upload, ingest, sample
@@ -91,9 +88,6 @@
   - name: Encrypt dynamically with AES-128 - NET
     href: drm-protect-with-aes128-tutorial.md
     displayName: SDK, Tutorial, .NET, sample, streaming, content protection, AES-128, encrypt
-  - name: Encrypt dynamically with DRM - .NET
-    href: drm-protect-with-drm-tutorial.md
-    displayName: SDK, Tutorial, .NET, sample, DRM, PlayReady, Widevine, FairPlay, encrypt, CENC, CBCS
   - name: Content protection with Azure AD - NET
     href: architecture-azure-ad-content-protection.md
     displayName: SDK, Tutorial, .NET, sample, AAD, Active Directory, protect, content protection, DRM, encrypt, PlayReady, Widevine, FairPlay, encrypt, CENC, CBCS
