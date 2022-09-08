@@ -149,6 +149,9 @@
   - name: Assets
     href: assets-concept.md
     displayName: assets, containers, storage, media files, upload
+  - name: Asset tracks
+    href: tracks-concept.md
+    displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
   - name: Encoding
     items:
     - name: Overview
@@ -460,6 +463,14 @@
           href: asset-delete-asset-filter-how-to.md
         - name: List asset streaming locators
           href: asset-list-asset-streaming-locators-how-to.md
+      - name: Tracks
+        items:
+        - name: List tracks
+          href: tracks-list-how-to.md
+        - name: Get the details of a track
+          href: tracks-get-how-to.md
+        - name: Delete a track
+          href: tracks-delete-how-to.md
       - name: Content key policies
         items:
         - name: Create a content key policy
@@ -624,6 +635,11 @@
     - name: Verify your on-premises encoder
       href: encode-on-premises-encoder-partner.md
       displayName: streaming, stream live, RTMP, RTMPS, ingest, live event, live streaming, live, partner, partners, on-premises, on-premises, partner encoder, hardware encoder, hardware, verify, certification, certification, testing, partner testing, partner program
+  - name: Asset tracks
+    items:
+    - name: Edit asset tracks
+      href: tracks-edit-track-portal-how-to.md
+      displayName: asset tracks, edit asset tracks
   - name: Use Event Grid
     items:
     - name: Monitor events - Portal
