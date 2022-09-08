@@ -22,10 +22,9 @@ When a stream is requested by a player, Media Services uses the specified key to
 
 You can use the REST API, or a Media Services client library to configure authorization and authentication policies for your licenses and keys.
 
-[Widevine is not available in the GovCloud region.](./includes/widevine-not-available-govcloud.md)]
+Widevine is not available in the GovCloud region.
 
 [!INCLUDE [tls12-message](includes/tls12-message.md)]
-
 
 ## Browsers that support DRM clients
 
