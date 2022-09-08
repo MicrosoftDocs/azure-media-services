@@ -14,8 +14,6 @@ ms.author: inhenkel
 
 This article contains a list of all the samples available for Media Services organized by method and SDK.
 
-https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_Bulk_Remote_Storage_Account_SAS/encoding-bulk-remote-storage-account-sas.py
-
 ## Samples by SDK
 
 You'll find description and links to the samples you may be looking for in each of the tabs.
