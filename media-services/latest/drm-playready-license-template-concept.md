@@ -24,14 +24,16 @@ PlayReady licenses contain the rights and restrictions that you want the PlayRea
 
 ## PlayReady SL3000 support
 
-The PlayReady DRM content protection and license delivery features of Media Services supports PlayReady SL3000. Security level is part of a PlayReady client. Every license delivered to a client has a property indicating the minimum security level required to allow binding to the license. Security Level 3000 is provided for hardened devices with the highest security that consumes the highest quality commercial content. You can set the SL3000 license in Content Key policies.
+The PlayReady DRM content protection and license delivery features of Media Services supports PlayReady SL3000. Security level is part of a PlayReady client. Every license delivered to a client has a property indicating the minimum security level required to allow binding to the license. Security Level 3000 is provided for devices with the highest security that consumes the highest quality commercial content. You can set the SL3000 license in Content Key policies.
 
 For more details on PlayReady Security levels, see the article [Using the Security Level in a License](/playready/overview/security-level#using-the-security-level-in-a-license).
 
 Some things to be aware of:
 
 * If you add an SL3000 PlayReady ContentKeyPolicyOption to a Content Key Policy, that policy can only contain additional PlayReady SL3000 or Widevine L1 options.
-* SL3000 requires that you use a different key for audio. The audio key should not use an SL3000 level license and should be limited to SL2000 or lower.
+* SL3000 requires that you use a different key for audio.
+* The audio key should not use an SL3000 level license.
+* The audio should be limited to SL2000 or lower or unencrypted.
 * SL3000 playback does not work in Azure Media Player (AMP) at this time. Please test in a 3rd party player (e.g. Shaka Player) or device that supports SL3000 playback.
 
 ### Example of SL3000 in a Content Key Policy
