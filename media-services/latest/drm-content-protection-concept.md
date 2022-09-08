@@ -4,7 +4,7 @@ description: Learn about content protection with dynamic encryption, streaming p
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 06/22/2022
+ms.date: 09/08/2022
 ms.author: inhenkel
 ---
 
@@ -21,6 +21,8 @@ When a stream is requested by a player, Media Services uses the specified key to
 :::image type="content" source="media/diagrams/content-protection.svg" alt-text="content protection system":::
 
 You can use the REST API, or a Media Services client library to configure authorization and authentication policies for your licenses and keys.
+
+[!INCLUDE [tls12-message](includes/tls12-message.md)]
 
 [!INCLUDE [Widevine is not available in the GovCloud region.](./includes/widevine-not-available-govcloud.md)]
 

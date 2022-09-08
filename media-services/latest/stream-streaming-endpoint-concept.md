@@ -154,6 +154,8 @@ This section discusses some of the properties of streaming endpoints. For exampl
 
 - `scaleUnits` - Provides a dedicated egress capacity that you can purchase in increments of 200 Mbps. If you need to move to a **Premium** type, adjust the value of `scaleUnits`.
 
+[!INCLUDE [tls12-message](includes/tls12-message.md)]
+
 ## Why use multiple streaming endpoints?
 
 A single streaming endpoint can stream both live and on-demand videos and most customers use only one streaming endpoint. This section explains the scenarios that might need you to use multiple streaming endpoints.
