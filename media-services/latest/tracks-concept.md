@@ -33,9 +33,10 @@ The last two features are especially useful for live events. We produce two text
 1. Upload the edited source language track, and the text tracks for each language.
 1. Hide the live transcription text track, and show the text track in the language that is appropriate for the viewer.
 
+For detailed Tracks API steps, see the Samples below.
+
 ## How-tos, tutorials and quickstarts
 
-- [How to list the audio, video and text tracks in an asset](tracks-list-how-to.md)
 - [How to edit and upload VTT files in the Azure portal](tracks-edit-track-portal-how-to.md) produced during a live event after the live event is no longer live and is now available as a VOD asset. You can upload additional WebVTT tracks using the same method.
 
 ## Samples
