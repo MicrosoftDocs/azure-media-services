@@ -4,7 +4,7 @@ description: Media Services offers the Tracks API so you can deliver text tracks
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 08/10/2022
+ms.date: 09/08/2022
 ms.author: inhenkel
 ---
 
