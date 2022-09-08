@@ -22,7 +22,7 @@ With the Tracks API you can:
 - Get the download URL a text track so you can edit it, and then upload it back into the asset.
 - Show or hide a text track in a video player with settings in the HLS playlist or DASH manifest.
 
-The last two features are especially useful for live events. We produce two text tracks during a live event when live transcription is turned on. The real-time transcript contains partial sentences. The slightly delayed second track has better punctuations and complete sentences. The first transcript is available as fragmented text files. The second one is available as a single WebVTT file that can be downloaded and edited.
+The last two features are especially useful for live events. When live transcription is turned on for a live event, a WebVTT text track is created which can be downloaded and edited.
 
 ## General workflow for text tracks
 
