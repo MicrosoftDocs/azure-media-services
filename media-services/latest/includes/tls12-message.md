@@ -7,4 +7,5 @@ ms.author: inhenkel
 title: TLS 1.2 message
 ---
 
-> [!NOTE] Media services will be enforcing the usage of TLS 1.2 for all requests to KeyDelivery, RESTv2, Streaming Endpoint and Live Event streaming origins. Accounts with existing TLS 1.0 or 1.1 usage will be exempt from this enforcement. If you wish to enforce TLS 1.2 for all your requests to these media services endpoints, please contact AMS support.
+> [!NOTE]
+> Media services will be enforcing the usage of TLS 1.2 for all requests to KeyDelivery, RESTv2, Streaming Endpoint and Live Event streaming origins. Accounts with existing TLS 1.0 or 1.1 usage will be exempt from this enforcement. If you wish to enforce TLS 1.2 for all your requests to these media services endpoints, please contact AMS support.
