@@ -35,11 +35,11 @@ The last two features are especially useful for live events. We produce two text
 
 For detailed Tracks API steps, see the Samples below.
 
-## How-tos, tutorials and quickstarts
-
-- [How to edit and upload VTT files in the Azure portal](tracks-edit-track-portal-how-to.md) produced during a live event after the live event is no longer live and is now available as a VOD asset. You can upload additional WebVTT tracks using the same method.
-
 ## Samples
 
 - [Node.JS List tracks in an asset](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts)
 - [Node.JS Add WebVTT files to an asset](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-WebVTT-tracks.ts)
+
+## How-tos, tutorials and quickstarts
+
+- [How to edit and upload VTT files in the Azure portal](tracks-edit-track-portal-how-to.md) produced during a live event after the live event is no longer live and is now available as a VOD asset. You can upload additional WebVTT tracks using the same method.
