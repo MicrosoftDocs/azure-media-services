@@ -21,7 +21,6 @@ If you are using the Azure Media Player, use the [Azure Media Player version 2.3
 > [!NOTE]
 > Additional charges apply when live transcription is turned on. Please review the pricing information in the Live Video section of the [Media Services pricing page](https://azure.microsoft.com/pricing/details/media-services/).
 
-This article describes how to enable live transcription when streaming a Live Event with Azure Media Services.
 
 [!INCLUDE [live-transcription-gop-size](includes/live-transcription-gop-size.md)]
 
