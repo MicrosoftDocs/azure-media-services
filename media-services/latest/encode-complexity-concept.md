@@ -1,6 +1,6 @@
 ---
 title: Encoding speed and performance
-description:
+description: Encoding complexities are encoder settings optimized for different video attributes. There are three complexities that the Standard Encoder supports Speed Optimized - The encoder uses settings that are optimized for faster encoding. Quality is sacrificed to decrease encoding time. Balanced Optimized - The encoder uses settings that achieve a balance between speed and quality and Quality Optimized -The encoder uses settings that are optimized to produce higher quality output at the expense of slower overall encoding time.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
@@ -70,11 +70,9 @@ For a custom preset, set you don't need to use PresetConfigurations.  Simply set
 - H.264 Basic mode (speed optimized) pricing does NOT apply to Content Aware Encoding. The Content Aware Encoding preset is a 2-pass solution, and if its Complexity is set to “speed,” the preset outputs will be speed optimized, but will be charged the same as the balanced or quality optimized complexities.
 - The pricing for H.264 and H.264 Basic mode is agnostic to frame rates. <= 30 frames/sec, >30 frames/sec and <60 frames/sec, and >60 frames/sec and <=120 frames/sec are all charged at the same price for the H.264 codec. They are charged at different prices for the HEVC (H.265) codec.
 
-| **Definition** | **Speed**  | **Balanced**          | **Quality**            |
-| :------------: | :--------: | :-------------------: | :--------------------: |
-|                | <= 30 fps  | 30 fps < and > 60 fps | 60 fps < and > 120 fps |
-| SD             | $0.0075    | $0.015                | $0.015                 |
-| HD             | $0.015     | $0.03                 | $0.03                  |
-| 4K             | $0.03      | $0.06                 | $0.06                  |
-
-
+| **Definition** | **Speed**         | **Balanced**              | **Quality**                |
+| :------------: | :---------------: | :-----------------------: | :------------------------: |
+|                | less than 30 fps  | between<br/>30 fps and 60 fps | between<br/>60 fps and 120 fps |
+| SD             | $0.0075           | $0.015                    | $0.015                     |
+| HD             | $0.015            | $0.03                     | $0.03                      |
+| 4K             | $0.03             | $0.06                     | $0.06                      |
