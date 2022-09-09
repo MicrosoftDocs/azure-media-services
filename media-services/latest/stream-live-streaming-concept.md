@@ -50,7 +50,7 @@ When using cloud encoding with Media Services, you would configure your on-premi
 
 :::image type="content" source="media/diagrams/live-encoding.svg" alt-text="live encoding streaming":::
 
-### Live transcription (preview)
+### Live transcription
 
 Live transcription is a feature you can use with live events that are either pass-through or live encoding. For more information, see [live transcription](live-event-live-transcription-how-to.md). When this feature is enabled, the service uses the [Speech-To-Text](/azure/cognitive-services/speech-service/speech-to-text) feature of Cognitive Services to transcribe the spoken words in the incoming audio into text. This text is then made available for delivery along with video and audio in MPEG-DASH and HLS protocols.
 
