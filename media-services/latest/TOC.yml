@@ -172,6 +172,9 @@
     - name: Preset overrides
       href: encode-concept-preset-overrides.md
       displayName: preset, override, transform, job, per-job, language, encode, transcode, custom, per job, encoding settings, customize, job output, output
+    - name: Encoding speed and performance
+      href: encode-complexity-concept.md
+      displayName: preset, override, transform, job, per-job, language, encode, transcode, custom, per job, encoding settings, customize, job output, output, speed, performance, complexity
     - name: Media reserved units (legacy)
       href: concept-media-reserved-units.md
       displayName: MRU, reserved units, scaling, scale, encoding, media reserved units
