@@ -4,39 +4,87 @@ description: Learn about Azure Media Services v3 with the PlayReady license temp
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 09/08/2022
 ms.author: inhenkel
 ---
 # Media Services v3 with PlayReady license template
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Azure Media Services enables you to encrypt your content with **Microsoft PlayReady**. Media Services also provides a service for delivering PlayReady licenses. You can use Media Services APIs to configure PlayReady licenses. When a player tries to play your PlayReady-protected content, a request is sent to the license delivery service to obtain a license. If the license service approves the request, it issues the license that is sent to the client and is used to decrypt and play the specified content.
+Azure Media Services enables you to encrypt your content with **Microsoft PlayReady** and a PlayReady license. Media Services also provides a service for delivering PlayReady licenses. When a player tries to play your PlayReady-protected content, a request is sent to the license delivery service to obtain a license. If the license service approves the request, it issues the license that is sent to the client and is used to decrypt and play the specified content.
 
 PlayReady licenses contain the rights and restrictions that you want the PlayReady digital rights management (DRM) runtime to enforce when a user tries to play back protected content. Here are some examples of PlayReady license restrictions that you can specify:
 
 * The date and time from which the license is valid.
-* The DateTime value when the license expires. 
+* The DateTime value when the license expires.
 * For the license to be saved in persistent storage on the client. Persistent licenses are typically used to allow offline playback of the content.
-* The minimum security level that a player must have to play your content. 
-* The output protection level for the output controls for audio\video content. 
+* The minimum security level that a player must have to play your content.
+* The output protection level for the output controls for audio\video content.
 * For more information, see the "Output Controls" section (3.5) in the [PlayReady Compliance Rules](https://www.microsoft.com/playready/licensing/compliance/) document.
 
-> [!NOTE]
-> Currently, you can only configure the PlayRight of the PlayReady license. This right is required. The PlayRight gives the client the ability to play back the content. You also can use the PlayRight to configure restrictions specific to playback. 
-> 
+## PlayReady SL3000 support
 
-This topic describes how to configure PlayReady licenses with  Media Services.
+The PlayReady DRM content protection and license delivery features of Media Services supports PlayReady SL3000. Security level is part of a PlayReady client. Every license delivered to a client has a property indicating the minimum security level required to allow binding to the license. Security Level 3000 is provided for devices with the highest security that consumes the highest quality commercial content. You can set the SL3000 license in Content Key policies.
+
+For more details on PlayReady Security levels, see the article [Using the Security Level in a License](/playready/overview/security-level#using-the-security-level-in-a-license).
+
+Some things to be aware of:
+
+* If you add an SL3000 PlayReady ContentKeyPolicyOption to a Content Key Policy, that policy can only contain additional PlayReady SL3000 or Widevine L1 options.
+* SL3000 requires that you use a different key for audio.
+* The audio key should not use an SL3000 level license.
+* The audio should be limited to SL2000 or lower or unencrypted.
+* SL3000 playback does not work in Azure Media Player (AMP) at this time. Please test in a 3rd party player (e.g. Shaka Player) or device that supports SL3000 playback.
+
+### Example of SL3000 in a Content Key Policy
+
+```rest
+{
+  "properties": {
+    "description": "ArmPolicyDescription",
+    "options": [
+      {
+        "name": "ArmPolicyOptionName",
+        "configuration": {
+          "@odata.type": "#Microsoft.Media.ContentKeyPolicyPlayReadyConfiguration",
+          "licenses": [
+            {
+              "allowTestDevices": true,
+              "securityLevel": "SL3000",
+              "beginDate": "2022-10-16T18:22:53.46Z",
+              "playRight": {
+                "scmsRestriction": 2,
+                "digitalVideoOnlyContentRestriction": false,
+                "imageConstraintForAnalogComponentVideoRestriction": true,
+                "imageConstraintForAnalogComputerMonitorRestriction": false,
+                "allowPassingVideoContentToUnknownOutput": "NotAllowed"
+              },
+              "licenseType": "Persistent",
+              "contentKeyLocation": {
+                "@odata.type": "#Microsoft.Media.ContentKeyPolicyPlayReadyContentEncryptionKeyFromHeader"
+              },
+              "contentType": "UltraVioletDownload"
+            }
+          ]
+        },
+        "restriction": {
+          "@odata.type": "#Microsoft.Media.ContentKeyPolicyOpenRestriction"
+        }
+      }
+    ]
+  }
+}
+```
 
 ## Basic streaming license example
 
-The following example shows the simplest (and most common) template that configures a basic streaming license. With this license, your clients can play back your PlayReady-protected content. 
+The following example shows the simplest (and most common) template that configures a basic streaming license. With this license, your clients can play back your PlayReady-protected content.
 
 The XML conforms to the PlayReady license template XML schema defined in the [PlayReady license template XML schema](#schema) section.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<PlayReadyLicenseResponseTemplate xmlns:i="https://www.w3.org/2001/XMLSchema-instance" 
+<PlayReadyLicenseResponseTemplate xmlns:i="https://www.w3.org/2001/XMLSchema-instance"
                                   xmlns="http://schemas.microsoft.com/Azure/MediaServices/KeyDelivery/PlayReadyTemplate/v1">
     <LicenseTemplates>
     <PlayReadyLicenseTemplate>
@@ -49,7 +97,7 @@ The XML conforms to the PlayReady license template XML schema defined in the [Pl
 
 ## <a id="classes"></a>Use Media Services APIs to configure license templates
 
-Media Services provides types that you can use to configure a PlayReady license template. 
+Media Services provides types that you can use to configure a PlayReady license template.
 
 The snippet that follows uses Media Services .NET classes to configure the PlayReady license template. The classes are defined in the [Microsoft.Azure.Management.Media.Models](/dotnet/api/microsoft.azure.management.media.models) namespace. The snippet configures the PlayRight of the PlayReady license. PlayRight grants the user the ability to play back the content subject to any restrictions configured in the license and on the PlayRight itself (for playback-specific policy). Much of the policy on a PlayRight concerns output restriction that control the types of outputs that the content can be played over. It also includes any restrictions that must be put in place when a given output is used. For example, if DigitalVideoOnlyContentRestriction is enabled, the DRM runtime only allows the video to be displayed over digital outputs. (Analog video outputs aren't allowed to pass the content.)
 

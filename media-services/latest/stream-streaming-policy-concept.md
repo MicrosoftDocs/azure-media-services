@@ -4,7 +4,7 @@ description: This article gives an explanation of what Streaming Policies are, a
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 09/08/2022
 ms.author: inhenkel
 ---
 
@@ -26,10 +26,21 @@ The currently available predefined Streaming Policies:
 > - Properties of **Streaming Policies** that are of the Datetime type are always in UTC format.
 > - You should design a limited set of policies for your Media Service account and reuse them for your Streaming Locators whenever the same options are needed. For more information, see [Quotas and limits](limits-quotas-constraints-reference.md?stream-streaming-policy-concept).
 
+If encrypting your content, you need to create a [Content Key Policy](drm-content-key-policy-concept.md?stream-streaming-policy-concept).
 
-If encrypting your content, you need to create a [Content Key Policy](drm-content-key-policy-concept.md?stream-streaming-policy-concept), the **Content Key Policy** is not needed for clear streaming or downloading.
+If you have special requirements (for example, if you want to specify different protocols, need to use a custom key delivery service, or need to use an unencrypted audio track), you can [create](/rest/api/media/streamingpolicies/create) a custom Streaming Policy.
 
-If you have special requirements (for example, if you want to specify different protocols, need to use a custom key delivery service, or need to use a clear audio track), you can [create](/rest/api/media/streamingpolicies/create) a custom Streaming Policy.
+## Clear Key Common Encryption (CENC)
+
+A **Content Key Policy** is not needed for unencrypted streaming or downloading. CENC allows you to have common encryption without digital rights management for when you need encryption but your player doesn't support AES envelope encryption.
+
+Players that allow CENC encryption include:
+
+- dash.js from version 4.5.0
+- Shaka player from v4.0.0 (2022-04-30)
+- Android’s Exoplayer from version r2.18.1
+- Bitmovin
+- Theo Player
 
 ## Filtering, ordering, paging
 
