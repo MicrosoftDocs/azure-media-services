@@ -22,7 +22,7 @@ The API offers options to set the desired encoding complexity. If not set, the e
 
 ## Set complexity for a transform output
 
-Use PresetConfigurations when defining an encoding transform output, and set the complexity to "speed", "quality", or "balanced".
+Use `PresetConfigurations` when defining an encoding transform output, and set the complexity to "speed", "quality", or "balanced".
 
 ```rest
 
