@@ -4,7 +4,7 @@ description: This article describes how to use time-shifting and Live Outputs to
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 09/08/2022
 ms.author: inhenkel
 ---
 
@@ -26,11 +26,41 @@ Suppose you're streaming a football game, and it has an `ArchiveWindowLength` of
 
 A Live Event supports up to three concurrently running Live Outputs (you can create at most 3 recordings/archives from one live stream at the same time). This support allows you to publish and archive different parts of an event as needed. Suppose you need to broadcast a 24x7 live linear feed, and create "recordings" of the different programs throughout the day to offer to customers as on-demand content for catch-up viewing. For this scenario, you first create a primary Live Output with a short archive window of 1 hour or less–this is the primary live stream that your viewers would tune into. You would create a Streaming Locator for this Live Output and publish it to your app or web site as the "Live" feed. While the Live Event is running, you can programmatically create a second concurrent Live Output at the beginning of a program (or 5 minutes early to provide some handles to trim later). This second Live Output can be deleted 5 minutes after the program ends. With this second asset, you can create a new Streaming Locator to publish this program as an on-demand asset in your app's catalog. You can repeat this process multiple times for other program boundaries or highlights that you wish to share as on-demand videos, all while the "Live" feed from the first Live Output continues to broadcast the linear feed.
 
+## Using rewindWindowLength
+
+You can also use the `rewindWindowLength` property for a Live Output to control the amount of time a viewer can seek backward during a Live Event. The setting also helps to reduce the manifest size delivered to the client over the network during live streaming. It may result in a more efficient live streaming experience and reduce memory usage on the client. Once the Live Output stops, the archived video will use the original archive window length described above.
+
+After the stream is complete, you can access the archived file in the asset defined by the **archiveWindowLength** property for the Live Output. This allows you to set a different archive duration from the previous "DVR sliding window" duration that is visible to the player.
+
+This is very useful for when you want to stream with a very small time-shifting window in the player, but want to archive the entire live event to the output asset.
+
+You can set **rewindWindowLength** to a minimum value of 60 seconds.
+
+If you create a live event using LowLatencyV2, the default value is 30 minutes.
+
+When you send a request for a Live Output, include *rewindWindowLength* in the properties. In the REST example below, PT1H30M is used to indicate 1 hour and 30 minutes of rewind window length.
+
+```rest
+
+{
+  "properties": {
+    "description": "test live output 1",
+    "assetName": "6f3264f5-a189-48b4-a29a-a40f22575212",
+    "archiveWindowLength": "PT5M",
+    "rewindWindowLength": "PT1H30M",
+    "manifestName": "testmanifest",
+    "hls": {
+      "fragmentsPerTsSegment": 5
+    }
+  }
+```
+
 ## Creating an archive for on-demand playback
 
-The asset that the Live Output is archiving to automatically becomes an on-demand asset when the Live Output is deleted. You must delete all Live Outputs before a Live Event can be stopped. You can use an optional flag [removeOutputsOnStop](/rest/api/media/liveevents/stop#request-body) to automatically remove Live Outputs on stop.
+The Live Output asset automatically becomes an on-demand asset when the Live Output is deleted. You must delete all Live Outputs before a Live Event can be stopped. (You can use an optional flag [removeOutputsOnStop](/rest/api/media/liveevents/stop#request-body) to automatically remove Live Outputs on stop.) Users can stream your archived content on-demand, as long as you don't delete the asset.
 
-Even after you stop and delete the event, users can stream your archived content as a video on-demand, for as long as you don't delete the asset. An asset shouldn't be deleted if it's used by an event; the event must be deleted first.
+> [!NOTE]
+> When you delete the Live Output, you're not deleting the underlying asset and content in the asset.
 
 If you've published the asset of your Live Output using a streaming locator, the Live Event (up to the DVR window length) will continue to be viewable until the streaming locator’s expiry or deletion, whichever comes first.
 
@@ -38,6 +68,3 @@ For more information, see:
 
 - [Live streaming overview](stream-live-streaming-concept.md)
 - [Live streaming tutorial](stream-live-tutorial-with-api.md)
-
-> [!NOTE]
-> When you delete the Live Output, you're not deleting the underlying asset and content in the asset.
