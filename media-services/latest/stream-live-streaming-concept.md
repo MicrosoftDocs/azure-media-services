@@ -20,11 +20,6 @@ Azure Media Services enables you to deliver live events to your customers on the
 
 For customers looking to deliver content to large internet audiences, we recommend that you enable CDN on the [streaming endpoint](stream-streaming-endpoint-concept.md).
 
-This article gives an overview and guidance of live streaming with Media Services and links to other relevant articles.
-
-> [!NOTE]
-> You can use the [Azure portal](https://portal.azure.com/) to manage v3 [Live Events](live-event-outputs-concept.md), view v3 [assets](assets-concept.md), get info about accessing APIs. For all other management tasks (for example, Transforms and Jobs), use the [REST API](/rest/api/media/), [CLI](/cli/azure/ams), or one of the supported [SDKs](media-services-apis-overview.md#sdks).
-
 ## Dynamic packaging and delivery
 
 With Media Services, you can take advantage of [dynamic packaging](encode-dynamic-packaging-concept.md), which allows you to preview and broadcast your live streams in [MPEG DASH, HLS, and Smooth Streaming formats](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming) from the contribution feed that is being sent to the service. Your viewers can play back the live stream with any HLS, DASH, or Smooth Streaming compatible players. You can use [Azure Media Player](https://amp.azure.net/libs/amp/latest/docs/index.html) in your web or mobile applications to deliver your stream in any of these protocols.
@@ -33,8 +28,7 @@ With Media Services, you can take advantage of [dynamic packaging](encode-dynami
 
 Dynamic encryption enables you to dynamically encrypt your live or on-demand content with AES-128 or any of the three major digital rights management (DRM) systems: Microsoft PlayReady, Google Widevine, and Apple FairPlay. Media Services also provides a service for delivering AES keys and DRM (PlayReady, Widevine, and FairPlay) licenses to authorized clients. For more information, see [dynamic encryption](drm-content-protection-concept.md).
 
-> [!NOTE]
-> Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
 
 ## Dynamic filtering
 
@@ -56,12 +50,11 @@ When using cloud encoding with Media Services, you would configure your on-premi
 
 :::image type="content" source="media/diagrams/live-encoding.svg" alt-text="live encoding streaming":::
 
-### Live transcription (preview)
+### Live transcription
 
 Live transcription is a feature you can use with live events that are either pass-through or live encoding. For more information, see [live transcription](live-event-live-transcription-how-to.md). When this feature is enabled, the service uses the [Speech-To-Text](/azure/cognitive-services/speech-service/speech-to-text) feature of Cognitive Services to transcribe the spoken words in the incoming audio into text. This text is then made available for delivery along with video and audio in MPEG-DASH and HLS protocols.
 
-> [!NOTE]
-> Currently, live transcription is available as a preview feature in West US 2.
+[!INCLUDE [live-transcription-gop-size](includes/live-transcription-gop-size.md)]
 
 [!INCLUDE [Warning on captions and encryption](./includes/warning-captions-encryption.md)]
 
