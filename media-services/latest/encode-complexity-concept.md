@@ -14,13 +14,11 @@ ms.author: inhenkel
 
 Encoding complexities are encoder settings optimized for different video attributes. There are three complexities that the Standard Encoder supports:
 
-- Speed Optimized: The encoder uses settings that are optimized for faster encoding. Quality is sacrificed to decrease encoding time.
-- Balanced Optimized: The encoder uses settings that achieve a balance between speed and quality.
-- Quality Optimized: The encoder uses settings that are optimized to produce higher quality output at the expense of slower overall encoding time.
+- **Speed Optimized** The encoder uses settings that are optimized for faster encoding. Quality is sacrificed to decrease encoding time.
+- **Balanced Optimized** The encoder uses settings that achieve a balance between speed and quality.
+- **Quality Optimized** The encoder uses settings that are optimized to produce higher quality output at the expense of slower overall encoding time.
 
-## Codec Support
-
-Media Services currently supports two output codecs, H.264 for HEVC (H.265). Each codec supports all three encoding complexities. The API offers options to set the desired encoding complexity. If not set, the encoder chooses its own encoding settings with a default of "balanced".
+The API offers options to set the desired encoding complexity. If not set, the encoder chooses its own encoding settings with a default of "balanced".
 
 ## Set complexity for a transform output
 
