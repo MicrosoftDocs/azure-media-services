@@ -23,6 +23,8 @@ If you are using the Azure Media Player, use the [Azure Media Player version 2.3
 
 This article describes how to enable live transcription when streaming a Live Event with Azure Media Services.
 
+[!INCLUDE [live-transcription-gop-size](includes/live-transcription-gop-size.md)]
+
 ## Create a live event with live transcription
 
 You can create a live event with live transcription using the Azure portal, with the REST API or with any of the SDKs.
