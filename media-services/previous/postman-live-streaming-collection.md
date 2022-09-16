@@ -682,7 +682,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "AccessPolicies"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/accesspolicy#create_an_accesspolicy\n\n\n## Permissions: \nspecifies the access rights the client has when interacting with the Asset. Valid values are:\n\n- None = 0 (default)\n- Read = 1\n- Write = 2\n- Delete = 4\n- List = 8"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/accesspolicy#create_an_accesspolicy\n\n\n## Permissions: \nspecifies the access rights the client has when interacting with the Asset. Valid values are:\n\n- None = 0 (default)\n- Read = 1\n- Write = 2\n- Delete = 4\n- List = 8"
                     },
                     "response": []
                 },
@@ -807,7 +807,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "Locators"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/locator#list_locators"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/locator#list_locators"
                     },
                     "response": []
                 },
