@@ -7,7 +7,7 @@ assignees: IngridAtMicrosoft
 
 ---
 
-Please **do not** open a GitHub issue to ask questions about the service or ask for support. If you have a question about using Media Services please go to [Microsoft Q & A](https://docs.microsoft.com/en-us/answers/products/).
+Please **do not** open a GitHub issue to ask questions about the service or ask for support. If you have a question about using Media Services please go to [Microsoft Q & A](https://docs.microsoft.com/answers/products/).
 
 We definitely want to know if there are issues with Media Services documentation. This includes typos, broken links, and missing or incomplete information. If you would like to make a suggestion for additional documentation, we'd love to hear that too.
 

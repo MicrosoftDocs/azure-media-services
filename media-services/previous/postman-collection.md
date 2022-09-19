@@ -26,7 +26,7 @@ This article contains a definition of the **Postman** collection that contains g
     "info": {
         "name": "Azure Media Services Operations",
         "_postman_id": "3a9a704f-ec11-3433-a0dc-54e4fe39e9d8",
-        "description": "Azure Media Service REST API v 2.0 Collection\n\nSupports AD service principal authentication\nFor details see: https://docs.microsoft.com/azure/media-services/media-services-rest-connect-with-aad\n\n",
+        "description": "Azure Media Service REST API v 2.0 Collection\n\nSupports AD service principal authentication\nFor details see: https://learn.microsoft.com/azure/media-services/media-services-rest-connect-with-aad\n\n",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
     },
     "item": [
@@ -103,7 +103,7 @@ This article contains a definition of the **Postman** collection that contains g
         },
         {
             "name": "AccessPolicy",
-            "description": "https://docs.microsoft.com/rest/api/media/operations/accesspolicy\n\nAn AccessPolicy defines the permissions and duration of storage SAS or streaming access to an Asset.",
+            "description": "https://learn.microsoft.com/rest/api/media/operations/accesspolicy\n\nAn AccessPolicy defines the permissions and duration of storage SAS or streaming access to an Asset.",
             "item": [
                 {
                     "name": "Create AccessPolicy for ReadOnly",
@@ -158,7 +158,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "AccessPolicies"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/accesspolicy#create_an_accesspolicy\n\n\n## Permissions: \nspecifies the access rights the client has when interacting with the Asset. Valid values are:\n\n- None = 0 (default)\n- Read = 1\n- Write = 2\n- Delete = 4\n- List = 8"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/accesspolicy#create_an_accesspolicy\n\n\n## Permissions: \nspecifies the access rights the client has when interacting with the Asset. Valid values are:\n\n- None = 0 (default)\n- Read = 1\n- Write = 2\n- Delete = 4\n- List = 8"
                     },
                     "response": []
                 },
@@ -227,7 +227,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "AccessPolicies"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/accesspolicy#create_an_accesspolicy\n\n\n## Permissions: \nspecifies the access rights the client has when interacting with the Asset. Valid values are:\n\n- None = 0 (default)\n- Read = 1\n- Write = 2\n- Delete = 4\n- List = 8"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/accesspolicy#create_an_accesspolicy\n\n\n## Permissions: \nspecifies the access rights the client has when interacting with the Asset. Valid values are:\n\n- None = 0 (default)\n- Read = 1\n- Write = 2\n- Delete = 4\n- List = 8"
                     },
                     "response": []
                 },
@@ -281,7 +281,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "AccessPolicies"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/accesspolicy#list_accesspolicies"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/accesspolicy#list_accesspolicies"
                     },
                     "response": []
                 },
@@ -335,7 +335,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "AccessPolicies{'{{accessPolicyId}}')"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/accesspolicy#list_accesspolicies"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/accesspolicy#list_accesspolicies"
                     },
                     "response": []
                 }
@@ -552,7 +552,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "Locators"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/locator#list_locators\n"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/locator#list_locators\n"
                     },
                     "response": []
                 },
@@ -2332,7 +2332,7 @@ This article contains a definition of the **Postman** collection that contains g
         },
         {
             "name": "Filter",
-            "description": "https://docs.microsoft.com/rest/api/media/operations/filter#filter_properties\n",
+            "description": "https://learn.microsoft.com/rest/api/media/operations/filter#filter_properties\n",
             "item": [
                 {
                     "name": "List Filters",
@@ -2624,7 +2624,7 @@ This article contains a definition of the **Postman** collection that contains g
         },
         {
             "name": "AssetFilters",
-            "description": "https://docs.microsoft.com/rest/api/media/operations/assetfilter",
+            "description": "https://learn.microsoft.com/rest/api/media/operations/assetfilter",
             "item": [
                 {
                     "name": "List AssetFilters",
@@ -3895,7 +3895,7 @@ This article contains a definition of the **Postman** collection that contains g
         },
         {
             "name": "Locator",
-            "description": "https://docs.microsoft.com/rest/api/media/operations/locator#create_a_locator\n\nLocator provides an entry point to access the files contained in an Asset. An AccessPolicy is used to define the permissions and duration that a client has access to a given Asset. Locators can have a many to one relationship with an AccessPolicy, such that different Locators can provide different start times and connection types to different clients while all using the same permission and duration settings; however, because of a shared access policy restriction set by Azure storage services, you cannot have more than five unique Locators associated with a given Asset at one time. For more information, see Using a Shared Access Signature (REST API).",
+            "description": "https://learn.microsoft.com/rest/api/media/operations/locator#create_a_locator\n\nLocator provides an entry point to access the files contained in an Asset. An AccessPolicy is used to define the permissions and duration that a client has access to a given Asset. Locators can have a many to one relationship with an AccessPolicy, such that different Locators can provide different start times and connection types to different clients while all using the same permission and duration settings; however, because of a shared access policy restriction set by Azure storage services, you cannot have more than five unique Locators associated with a given Asset at one time. For more information, see Using a Shared Access Signature (REST API).",
             "item": [
                 {
                     "name": "List Locators",
@@ -3947,7 +3947,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "Locators"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/locator#list_locators"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/locator#list_locators"
                     },
                     "response": []
                 },
@@ -4017,7 +4017,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "Locators"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/locator#list_locators"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/locator#list_locators"
                     },
                     "response": []
                 },
@@ -4074,7 +4074,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "Locators"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/locator#list_locators"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/locator#list_locators"
                     },
                     "response": []
                 },
@@ -4131,7 +4131,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "Locators('{{locatorId}}')"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/locator#list_locators"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/locator#list_locators"
                     },
                     "response": []
                 },
@@ -4185,7 +4185,7 @@ This article contains a definition of the **Postman** collection that contains g
                                 "AccessPolicies"
                             ]
                         },
-                        "description": "https://docs.microsoft.com/rest/api/media/operations/locator#list_locators"
+                        "description": "https://learn.microsoft.com/rest/api/media/operations/locator#list_locators"
                     },
                     "response": []
                 }
@@ -4643,7 +4643,7 @@ This article contains a definition of the **Postman** collection that contains g
         },
         {
             "name": "Programs",
-            "description": "https://docs.microsoft.com/rest/api/media/operations/program#program_properties",
+            "description": "https://learn.microsoft.com/rest/api/media/operations/program#program_properties",
             "item": [
                 {
                     "name": "Get Programs",
@@ -5077,7 +5077,7 @@ This article contains a definition of the **Postman** collection that contains g
         },
         {
             "name": "StreamingEndpoint",
-            "description": "https://docs.microsoft.com/rest/api/media/operations/streamingendpoint#create_streaming_endpoints\n",
+            "description": "https://learn.microsoft.com/rest/api/media/operations/streamingendpoint#create_streaming_endpoints\n",
             "item": [
                 {
                     "name": "List StreamingEndpoints",

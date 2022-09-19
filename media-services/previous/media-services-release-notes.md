@@ -254,10 +254,10 @@ For more information, see:
 Widevine license delivery services provided by Media Services are in preview. For more information, see [this blog](https://azure.microsoft.com/blog/announcing-google-widevine-license-delivery-services-public-preview-in-azure-media-services/).
 
 ## <a id="oct_changes_15"></a>October 2015 release
-Media Services is now live in the following data centers: Brazil South, India West, India South, and India Central. You can now use the Azure portal to [create Media Service accounts](media-services-portal-create-account.md) and perform various tasks described in the [Media Services documentation webpage](https://azure.microsoft.com/documentation/services/media-services/). Live Encoding isn't enabled in these data centers. Further, not all types of encoding reserved units are available in these data centers.
+Media Services is now live in the following data centers: Brazil South, India West, India South, and India Central. You can now use the Azure portal to [create Media Service accounts](media-services-portal-create-account.md) and perform various tasks described in the [Media Services documentation webpage](/azure/media-services/). Live Encoding isn't enabled in these data centers. Further, not all types of encoding reserved units are available in these data centers.
 
-* Brazil South:                                          Only Standard and Basic encoding reserved units are available.
-* India West, India South, and India Central:             Only Basic encoding reserved units are available.
+* Brazil South: Only Standard and Basic encoding reserved units are available.
+* India West, India South, and India Central: Only Basic encoding reserved units are available.
 
 ## <a id="september_changes_15"></a>September 2015 release
 Media Services now offers the ability to protect both video on demand and live streams with Widevine modular DRM technology. You can use the following delivery services partners to help you deliver Widevine licenses:
