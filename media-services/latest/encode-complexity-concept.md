@@ -22,7 +22,7 @@ The API offers options to set the desired encoding complexity. If not set, the e
 
 ## Set complexity for a transform output
 
-Use `PresetConfigurations` when defining an encoding transform output, and set the complexity to "speed", "quality", or "balanced".
+For a built-in preset, use `PresetConfigurations` when defining an encoding transform output, and set the complexity to "speed", "quality", or "balanced".
 
 ```rest
 
@@ -35,7 +35,7 @@ Use `PresetConfigurations` when defining an encoding transform output, and set t
             "@odata.type": "#Microsoft.Media.BuiltInStandardEncoderPreset",
             "presetName": "AdaptiveStreaming",
             "PresetConfigurations":[
-                "Complexity" : "balanced"
+                "Complexity": "balanced"
             ]
         }
       }
@@ -49,12 +49,12 @@ For a custom preset, set you don't need to use PresetConfigurations.  Simply set
 ```
 {
   "properties": {
-    "description": "Transform output for speed complexity",
+    "description": "Transform output for balanced complexity",
     "outputs": [
         {
         "preset": {
             "@odata.type": "#Microsoft.Media.StandardEncoderPreset",
-            "Complexity" : "balanced"
+            "Complexity": "balanced"
         }
       }
     ]
@@ -62,15 +62,9 @@ For a custom preset, set you don't need to use PresetConfigurations.  Simply set
 }
 ```
 
-## Pricing
+## H.264 Basic Mode
 
-- H.264 Basic mode (speed optimized) is priced at a different tier than balanced or quality optimized with a 0.5 multiplier per resolution. See the Media Services pricing page for details on Encoding pricing.
-- H.264 Basic mode (speed optimized) pricing does NOT apply to Content Aware Encoding. The Content Aware Encoding preset is a 2-pass solution, and if its Complexity is set to “speed,” the preset outputs will be speed optimized, but will be charged the same as the balanced or quality optimized complexities.
-- The pricing for H.264 and H.264 Basic mode is agnostic to frame rates. <= 30 frames/sec, >30 frames/sec and <60 frames/sec, and >60 frames/sec and <=120 frames/sec are all charged at the same price for the H.264 codec. They are charged at different prices for the HEVC (H.265) codec.
+H.264 Basic Mode is a separate encoding pricing tier. It includes all encoding outputs that are 1-pass, speed optimized, and use the H.264 codec. Balanced and quality optimized encoding outputs are priced the same as the standard H.264 codec. To receive H.264 Basic Mode pricing, set the Complexity to “speed.” See the [Media Services pricing page](https://azure.microsoft.com/pricing/details/media-services/) for details.
 
-| **Definition** | **Speed**         | **Balanced**              | **Quality**                |
-| :------------: | :---------------: | :-----------------------: | :------------------------: |
-|                | less than 30 fps  | between<br/>30 fps and 60 fps | between<br/>60 fps and 120 fps |
-| SD             | $0.0075           | $0.015                    | $0.015                     |
-| HD             | $0.015            | $0.03                     | $0.03                      |
-| 4K             | $0.03             | $0.06                     | $0.06                      |
+> [!NOTE]
+> Note: H.264 Basic Mode pricing tier does NOT include [Content-Aware Encoding](/azure/media-services/latest/encode-content-aware-concept). The Content-Aware Encoding preset is a 2-pass solution, with the first pass pre-analyzing the input content and using the results to determine the optimal number of layers, bitrate, and resolutions. If the Content-Aware Encoding preset is set to the “speed” complexity, the preset output will still be speed-optimized but will be charged at the “balanced” and “quality” H.264 codec pricing.
