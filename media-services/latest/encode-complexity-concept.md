@@ -4,7 +4,7 @@ description: Encoding complexities are encoder settings optimized for different 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/08/2022
+ms.date: 09/20/2022
 ms.author: inhenkel
 ---
 
