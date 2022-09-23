@@ -151,9 +151,14 @@
   - name: Assets
     href: assets-concept.md
     displayName: assets, containers, storage, media files, upload
-  - name: Asset tracks
-    href: tracks-concept.md
-    displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
+  - name: Captions, subtitles and new audio tracks
+    items:
+    - name: Captions and subtitles
+      href: captions-text-track-concept.md
+      displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
+    - name: Tracks
+      href: tracks-concept.md
+      displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
   - name: Encoding
     items:
     - name: Overview
