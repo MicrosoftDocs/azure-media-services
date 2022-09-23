@@ -59,6 +59,8 @@
     items:
     - name: Basic Video On Demand (VOD) app
       href: video-on-demand-simple-portal-quickstart.md
+    - name: Use WebVTT files with Azure Media Player
+      href: amp-captions-tutorial.md
     - name: Live event with portal and Wirecast
       href: live-event-wirecast-quickstart.md
       displayName: Wirecast, live streaming, live, software, encoder

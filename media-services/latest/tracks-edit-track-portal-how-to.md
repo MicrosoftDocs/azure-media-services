@@ -38,3 +38,29 @@ You can either upload a file with a different file name or you can overwrite the
 1. Select **Upload**. The file will begin uploading.
 
 You can upload additional files in the same way you uploaded the edited file.
+
+### Edit the .ism file to use the track
+
+1. Navigate to the storage container associated with the asset.
+1. Select the .ism file.  The file screen will appear.
+1. Select edit to view and edit the .ism file.
+1. Add the following XML to the .ism file.
+1. Set the `systemLanguage` parameter to the language designator for the language. For example, "en-us" for United States English or "ja-JP" for Japanese.
+1. Set the `trackID` to a number.
+1. Set the `trackName` to the language for the track.
+1. Set the `outputFlag` parameter to:
+    1. `3` to tell the client player to display the track.
+    1. `2` to tell the client player that the track should be WHAT?
+    1. `1` to tell the client player to hide the track.
+
+The example below sets the text track to visible.
+
+```html
+
+<textstream src="english.vtt" systemBitrate="4800" systemLanguage="en-us">
+    <param name="trackID" value="1" valuetype="data" />
+    <param name="trackName" value="english" valuetype="data" />
+    <param name="outputFlag" value="3" valuetype="data" />
+</textstream>
+
+```

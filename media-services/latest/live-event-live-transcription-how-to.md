@@ -28,7 +28,7 @@ If you are using the Azure Media Player, use the [Azure Media Player version 2.3
 When you enable live transcription for a live event, a WebVTT file is generated and is located in the root of the archived asset. As this file is delayed until after all speech has been broadcast, you should not delete the live output for several minutes after the broadcast has ended. You can then download the VTT file and edit it or use it for translation to other languages for subtitles. The files is named `auto-generated-best_XXX.vtt`.
 
 > [!WARNING]
-> The final auto generated live transcription VTT files are delayed for processing. Unless you wait for several minutes before deleting a live output, the content in the file will be truncated.  Additionally, live transcription is not available for use with multiple ingestion streams for a live event.
+> The final auto generated live transcription VTT files are delayed for processing. Unless you wait for several minutes before deleting a live output, the content in the file will be truncated.  Additionally, live transcription is not available for use with multiple input streams for a live event.
 
 For more information about how to use the Tracks API with the generated WebVTT file, see the [Tracks](tracks-concept.md) article.
 
