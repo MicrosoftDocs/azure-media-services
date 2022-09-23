@@ -83,8 +83,11 @@ For detailed Tracks API steps, see the Samples below.
 
 - [Node.JS List tracks in an asset](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts)
 - [Node.JS Add WebVTT files to an asset](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-WebVTT-tracks.ts)
+- **TO DO**: Node.JS for tracks api and audio.
+- **TO DO**: Python for tracks api for both text and audio tracks.
 
 ## How-tos, tutorials and quickstarts
 
 - [How to edit and upload VTT files in the Azure portal](tracks-edit-track-portal-how-to.md) produced during a live event. You can upload additional WebVTT tracks using the same method.
+- **TO DO** How to add audio tracks to an asset in the portal
 - [Use WebVTT files with Azure Media Services and Azure Media Player](amp-captions-tutorial.md)
