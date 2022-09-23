@@ -27,7 +27,7 @@ With the Tracks API you can:
 
 ### Using text tracks with locally produced media
 
-After you have produced a video locally and exported captions, you can upload those captions to the asset that contains your on-demand media.
+After you've produced a video locally and exported captions, you can upload those captions to the asset that contains your on-demand media.
 
 General workflow for using text tracks with locally produced text:
 
@@ -44,7 +44,7 @@ General workflow for using text tracks with locally produced text:
 
 ### Using text tracks with live transcription
 
-When live transcription is turned on for a live event, an additional WebVTT text track is created in addition to the real-time live transcription track that viewers see on the live video player. This WebVTT file contains the NBest version of the live transcript which contain full sentences instead of the partial, real-time results. You can download the .vtt file after the entire transcript is available and the live output is deleted.
+When live transcription is turned on for a live event, an additional WebVTT text track is created in addition to the real-time live transcription track that viewers see on the live video player. This WebVTT file contains the NBest version of the live transcript that contains full sentences instead of the partial, real-time results. You can download the .vtt file after the entire transcript is available and the live output is deleted.
 
 > [!WARNING]
 > The final auto generated live transcription VTT files are delayed for processing. Unless you wait for several minutes before deleting a live output, the content in the file will be truncated.  Additionally, live transcription is not available for use with multiple input streams for a live event.
@@ -52,8 +52,8 @@ When live transcription is turned on for a live event, an additional WebVTT text
 General workflow for using live transcription text tracks:
 
 1. Create a live event with live transcription enabled and with the source language selected.
-1. When the live event is over, wait for several minutes and then stop the live output.  The archived asset will be available for on-demand streaming.  Valid streaming URLs will still be accessible to your viewers.
-1. List the tracks in the archived asset or view them in the portal. There will be a WebVTT file that contains the NBest transcription. It will have a .vtt extension. The files is named `auto-generated-best_XXX.vtt`.
+1. When the live event is over, wait for several minutes, and then stop the live output.  The archived asset will be available for on-demand streaming.  Valid streaming URLs will still be accessible to your viewers.
+1. List the tracks in the archived asset or view them in the portal. There will be a WebVTT file that contains the NBest transcription. It will have a .vtt extension. The file is named `auto-generated-best_XXX.vtt`.
 1. Download and edit the WebVTT file.
 1. To present the text track in multiple languages, translate the source text track to those languages and save them as separate files for each language using the .vtt extension.
 1. Upload the source language track, and the text tracks for each language.
@@ -87,3 +87,4 @@ For detailed Tracks API steps, see the Samples below.
 ## How-tos, tutorials and quickstarts
 
 - [How to edit and upload VTT files in the Azure portal](tracks-edit-track-portal-how-to.md) produced during a live event. You can upload additional WebVTT tracks using the same method.
+- [Use WebVTT files with Azure Media Services and Azure Media Player](amp-captions-tutorial.md)

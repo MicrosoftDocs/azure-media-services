@@ -9,7 +9,7 @@ ms.author: inhenkel
 
 ## Ad insertion
 
-The following table lists the types of captions supported by Media Services.
+The following table lists the ad insertion formats supported by Media Services.
 
 | Standard | Notes |
 | -------- | ----- |

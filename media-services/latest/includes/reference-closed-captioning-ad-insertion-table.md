@@ -9,7 +9,7 @@ ms.author: inhenkel
 
 ## Captioning and subtitles
 
-The following table lists the types of captions supported by Media Services:
+The following table lists the types of captions supported by Media Services.
 
 | Standard | Notes |
 | -------- | ----- |
