@@ -35,9 +35,12 @@ General workflow for using text tracks with locally produced text:
 1. Translate or otherwise edit the VTT or TTML file, and save copies for:
     1. A track for an additional language with descriptive text to meet accessibility requirements.
     1. A track for additional text for director's commentary.
-1. Upload the video to Media Services using a Media Services encoder.
+1. Upload the video to Media Services
+1. Create a transform and job to encode the video.
 1. Upload the additional text tracks.
-1. Edit the .ism file to tell the player which text tracks to use as well as their labeling and visibility.
+1. Edit (or update) the .ism file to tell the player which text tracks to use as well as their labeling and visibility by:
+    1. Manually editing it in the portal, or
+    1. Using the Tracks API to update the manifest programmatically.
 
 ### Using text tracks with live transcription
 
@@ -54,7 +57,11 @@ General workflow for using live transcription text tracks:
 1. Download and edit the WebVTT file.
 1. To present the text track in multiple languages, translate the source text track to those languages and save them as separate files for each language using the .vtt extension.
 1. Upload the source language track, and the text tracks for each language.
-1. Hide the live transcription text track, and show the text track in the language that is appropriate for the viewer.
+1. Edit (or update) the .ism file to tell the player which text tracks to use as well as their labeling and visibility by:
+    1. Manually editing it in the portal, or
+    1. Using the Tracks API to update the manifest programmatically.
+
+>[!IMPORTANT] When updating the .ism file, make sure you hide the live transcription text track, and show the text track in the language that is appropriate for the viewer.
 
 ## Audio tracks
 

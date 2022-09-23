@@ -1,6 +1,6 @@
 ---
 title: Captions, subtitles and text tracks
-description:
+description: You can provide captions, subtitles and other text tracks to the client player. This article discusses captions and subtitle formats.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
