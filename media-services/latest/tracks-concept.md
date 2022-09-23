@@ -4,7 +4,7 @@ description: Media Services offers the Tracks API so you can deliver text tracks
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 09/08/2022
+ms.date: 09/20/2022
 ms.author: inhenkel
 ---
 
@@ -12,26 +12,62 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-A video asset usually contains audio and video tracks. Sometimes it also contains text tracks for captions or subtitles.  The Tracks API gives you information about the tracks that are in an asset. It also allows you to edit a text track and let the player know they are available.
+A Media Services asset contains media files in the associated Azure storage account. These files contain the data for audio, video and text tracks. The Tracks API allows you to understand and manage the tracks that are in the asset. The tracks are used by a DASH or HLS video player to present the audio, video and subtitles or captions (text) to the audience. A Media Services streaming endpoint communicates information about the tracks to a player via DASH manifests or HLS playlists when requested.
 
 With the Tracks API you can:
 
 - Get the list of audio, video and text tracks in an asset.
-- Add or remove text tracks from an asset.
-- Specify accessibility attributes of an asset.
+- Add or remove text tracks.
+- Add or remove audio tracks.
+- Specify accessibility attributes of the text or audio tracks.
 - Get the download URL a text track so you can edit it, and then upload it back into the asset.
 - Show or hide a text track in a video player with settings in the HLS playlist or DASH manifest.
 
-The last two features are especially useful for live events. When live transcription is turned on for a live event, a WebVTT text track is created which can be downloaded and edited.
+## Text tracks
 
-## General workflow for text tracks
+### Using text tracks with locally produced media
 
-1. Create a live event with live transcription enabled.
-1. When the live event is over, make the output asset available for a VOD application.
-1. Download and edit the source language VTT or TTML files for complete sentences and proper punctuation.
-1. To present the text track in multiple languages, translate the source text track to those languages and save them as separate files for each language.
-1. Upload the edited source language track, and the text tracks for each language.
+After you have produced a video locally and exported captions, you can upload those captions to the asset that contains your on-demand media.
+
+General workflow for using text tracks with locally produced text:
+
+1. Create a video and export captions to a file that is in VTT or TTML format.
+1. Translate or otherwise edit the VTT or TTML file, and save copies for:
+    1. A track for an additional language with descriptive text to meet accessibility requirements.
+    1. A track for additional text for director's commentary.
+1. Upload the video to Media Services using a Media Services encoder.
+1. Upload the additional text tracks.
+1. Edit the .ism file to tell the player which text tracks to use as well as their labeling and visibility.
+
+### Using text tracks with live transcription
+
+When live transcription is turned on for a live event, an additional WebVTT text track is created in addition to the real-time live transcription track that viewers see on the live video player. This WebVTT file contains the NBest version of the live transcript which contain full sentences instead of the partial, real-time results. Customers can download the .vtt file after the entire transcript is available and the live output is deleted.
+
+> [!WARNING]
+> The final auto generated live transcription VTT files are delayed for processing. Unless you wait for several minutes before deleting a live output, the content in the file will be truncated.  Additionally, live transcription is not available for use with multiple ingestion streams for a live event.
+
+General workflow for using live transcription text tracks:
+
+1. Create a live event with live transcription enabled and with the source language selected.
+1. When the live event is over, wait for several minutes and then stop the live output.  The the archived asset will be available for on-demand streaming.  Valid streaming URLs will still be accessible to your viewers.
+1. List the tracks in the archived asset or view them in the portal. There will be a WebVTT file that contains the NBest transcription. It will have a .vtt extension. The files is named `auto-generated-best_XXX.vtt`.
+1. Download and edit the WebVTT file.
+1. To present the text track in multiple languages, translate the source text track to those languages and save them as separate files for each language using the .vtt extension.
+1. Upload the source language track, and the text tracks for each language.
 1. Hide the live transcription text track, and show the text track in the language that is appropriate for the viewer.
+
+## Audio tracks
+
+You can add additional audio tracks to an asset to provide your viewers with audio in different languages, add descriptive audio for accessibility, or add director's commentary.
+
+### General workflow for audio tracks
+
+1. Create additional audio tracks for the live event.  They can be audio in different languages or descriptive audio that is used for accessibility. You can also use an audio track for director's commentary.
+1. Upload the audio tracks to the archived asset.
+1. Update the track data by editing the manifest file or by calling updating the track data using REST, or an SDK.
+
+> [!NOTE]
+> When an audio or text track is removed, the underlying file is not removed from the storage container. Media Services sets the dynamic packager (streaming endpoint) to not show the the information about the track in the manifest or playlist requested by the video player.
 
 For detailed Tracks API steps, see the Samples below.
 
