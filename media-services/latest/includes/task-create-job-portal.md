@@ -25,10 +25,8 @@ title: Create a job in the portal
 1. You'll see the name of the transform you chose for the job. Select the transform to see the status of the job.
 1. Select the job listed under **Name** in the table of jobs. The job detail screen will open.
 1. Select the output asset from the **Outputs** list. The asset screen will open.
-1. Select the link for the asset next to Storage container.  A new browser tab will open and You'll see the results of the job that used the transform.  There should be several files in the output asset including:
-    1. Encoded video files with.mpi and .mp4 extensions.
-    1. A *XXXX_metadata.json* file.
-    1. A *XXXX_manifest.json* file.
+1. Select the link for the asset next to Storage container.  A new browser tab will open and You'll see the results of the job that used the transform.  There should be several files in the output asset such as:
+    1. Encoded video files with .mpi and .mp4 extensions.
     1. A *XXXX_.ism* file.
     1. A *XXXX.isc* file.
     1. A *ThumbnailXXXX.jpg* file.

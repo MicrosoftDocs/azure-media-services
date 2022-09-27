@@ -1,8 +1,8 @@
 ---
 author: IngridAtMicrosoft
-ms.service: media-services 
+ms.service: media-services
 ms.topic: include
-ms.date: 03/01/2022
+ms.date: 09/22/2022
 ms.author: inhenkel
 ---
 
@@ -10,7 +10,7 @@ ms.author: inhenkel
 
 1. Navigate to the Media Services account you want to work with.
 1. Select **Assets** from the menu. The assets screen will appear.
-1. Under Streaming locators, select **+ New streaming locator**. The Add streamin locator screen will appear.
+1. Under Streaming locators, select **+ New streaming locator**. The Add streaming locator screen will appear.
 1. Enter a name for the streaming locator in the **Name** field, if you want to change the default name.
 1. Select a streaming policy from the **Streaming policy** dropdown list.
 1. If you have created a content key policy, select the content key policy from the **Content key policy** dropdown list.

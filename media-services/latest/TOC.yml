@@ -59,6 +59,10 @@
     items:
     - name: Basic Video On Demand (VOD) app
       href: video-on-demand-simple-portal-quickstart.md
+      displayName: video-on-demand, video on demand
+    - name: Use WebVTT files with Azure Media Player
+      href: amp-captions-tutorial.md
+      displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
     - name: Live event with portal and Wirecast
       href: live-event-wirecast-quickstart.md
       displayName: Wirecast, live streaming, live, software, encoder
@@ -149,9 +153,14 @@
   - name: Assets
     href: assets-concept.md
     displayName: assets, containers, storage, media files, upload
-  - name: Asset tracks
-    href: tracks-concept.md
-    displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
+  - name: Captions, subtitles and new audio tracks
+    items:
+    - name: Captions and subtitles
+      href: captions-text-track-concept.md
+      displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
+    - name: Tracks
+      href: tracks-concept.md
+      displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
   - name: Encoding
     items:
     - name: Overview
@@ -642,7 +651,7 @@
     items:
     - name: Edit asset tracks
       href: tracks-edit-track-portal-how-to.md
-      displayName: asset tracks, edit asset tracks
+      displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
   - name: Use Event Grid
     items:
     - name: Monitor events - Portal

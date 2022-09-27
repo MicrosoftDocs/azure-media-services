@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 7/22/2022
+ms.date: 9/27/2022
 ms.author: inhenkel
 ---
 
@@ -18,6 +18,179 @@ To stay up to date with the most recent developments, this article provides you 
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## September 2022
+
+### API Release: Updated 2022-08-01 ARM REST API
+
+An updated version of the ARM REST API for Azure Media Services has been released. Version 2022-08-01 is now the latest stable release in production.  The REST API definitions are available in the [REST specification folder for Media Services on GitHub.](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/mediaservices/resource-manager/Microsoft.Media/stable/2022-08-01) 
+
+Updates to the 2022-08-01 API include:
+
+- The **LiveOutput** entity introduces a new nullable property **rewindWindowLength** to control seek-able window length during Live for encoding and pass through Live events. This property is not used once LiveOutput stops. The archived VOD will have full content with original **archiveWindowLength**. When the property is set to null, a low-latency (LowLatencyV2) live event uses the default value of 30 minutes; a standard live event does not use it.
+- Added support for PlayReady SL3000 security level in Content Key Policies
+- Extended asset tracks API to support audio tracks (for late-binding descriptive audio or multiple languages)
+- Added support for MPEG Common Encryption Clear Key with 'cenc' and 'cbcs' modes in Streaming Policies
+
+Many code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
+
+### New SDK client versions available for Javascript, Python, Go
+
+- New Python client SDK v10.1.0 is available on PyPI: [azure-mgmt-media](https://pypi.org/project/azure-mgmt-media/10.1.0/)
+
+- New Javascript client SDK v13 is available on npm: [Azure Media client library for JavaScript - @azure/arm-mediaservices](https://www.npmjs.com/package/@azure/arm-mediaservices/v/13.0.0)
+
+- New GO client SDK v 3.1.0 is available - [armmediaservices package](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mediaservices/armmediaservices/v3@v3.1.0)
+
+
+### PlayReady Security Level 3000 license support (SL3000)
+
+The PlayReady DRM content protection and license delivery features of Media Services now supports PlayReady SL3000.  The Security Level is a property of a PlayReady Client, and every license delivered to a client has a property indicating the minimum Security Level required from a client to allow binding to this license. Security Level 3000 is provided for hardened devices with the highest security consuming the highest quality of commercial content. This update allows you to configure Content Key polices to delivery PlayReady SL3000 licenses through the Media Services Key Delivery license servers. 
+For more details on PlayReady Security levels, see the article [Using the Security Level in a License](https://docs.microsoft.com/playready/overview/security-level#using-the-security-level-in-a-license).
+
+- If you add an SL3000 PlayReady **ContentKeyPolicyOption** to a Content Key Policy, that policy can only contain additional PlayReady SL3000 or Widevine L1 options.
+- SL3000 requires that you use a different key for audio or use unencrypted audio. The audio security level should be limited to SL2000 or lower.
+- SL3000 playback does not work in Azure Media Player (AMP) at this time. Please test in a 3rd party player (e.g. Shaka Player) or device that supports SL3000 playback.
+
+**Example Content Key Policy**:
+
+```json
+{
+    "properties": {
+        "options": [
+            {
+                "name": "PlayReadyOption",
+                "configuration": {
+                    "@odata.type": "#Microsoft.Media.ContentKeyPolicyPlayReadyConfiguration",
+                    "licenses": [
+                        {
+                            "playRight": {
+                                "digitalVideoOnlyContentRestriction": false,
+                                "imageConstraintForAnalogComponentVideoRestriction": false,
+                                "imageConstraintForAnalogComputerMonitorRestriction": false,
+                                "allowPassingVideoContentToUnknownOutput": "NotAllowed"
+                            },
+                            "licenseType": "NonPersistent",
+                            "contentKeyLocation": {
+                                "@odata.type": "#Microsoft.Media.ContentKeyPolicyPlayReadyContentEncryptionKeyFromHeader"
+                            },
+                            "contentType": "Unspecified",
+                            "securityLevel": "SL3000"
+                        }
+                    ]
+                },
+                "restriction": {
+                    "@odata.type": "#Microsoft.Media.ContentKeyPolicyOpenRestriction"
+                }
+            }
+        ]
+    }
+}
+```
+
+**Example Streaming Policy using an SL3000 Content Key Policy for Video, and SL2000 Content Key Policy for audio tracks:
+**
+
+```json
+{
+    "properties": {
+        "defaultContentKeyPolicyName": "sl3000_content_key_policy",
+        "commonEncryptionCenc": {
+            "enabledProtocols": {
+                "download": false,
+                "dash": true,
+                "hls": false,
+                "smoothStreaming": true
+            },
+            "contentKeys": {
+                "defaultKey": {
+                    "label": "cencDefaultKey"
+                },
+                "keyToTrackMappings": [
+                    {
+                        "label": "audiokey",
+                        "policyName" : "sl2000_content_key_policy",
+                        "tracks": [
+                            {
+                                "trackSelections": [
+                                    {
+                                        "property": "FourCC",
+                                        "operation": "Equal",
+                                        "value": "mp4a"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "drm": {
+                "playReady": {}
+            }
+        }
+    }
+}
+```
+
+For more details on using PlayReady license templates see the article [Media Services PlayReady license templates](drm-playready-license-template-concept.md)
+
+
+### Add audio tracks for descriptive audio or multiple languages with the new Asset Tracks API
+
+The new Asset Tracks API allows you to late-bind any number of audio tracks to an existing asset and make them available for dynamic packaging to HLS and DASH.  The API supports setting metadata to specify the language or content characteristics to specify "descriptive audio" for improved content accessibility.
+
+For the full list of capabilities on the Tracks API, see the article [Media Services Tracks API](tracks-concept.md)
+
+Many code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
+
+### Support for MPEG Common Encryption Clear Key with CENC and CBCS encryption
+
+Clear Key encryption is a feature of the [MPEG Common Encryption (CENC) standard](https://www.iso.org/standard/68042.html) and is supported by the HTML5 Encrypted Media Extensions (EME) available in many modern browsers. Clear Key AES-128 encryption using 'cenc' or 'cbcs' encryption modes can be set in your Streaming policies to allow you to reach the widest range of devices across Apple, Web and Android.  
+
+This feature allows you to support the Common Encryption standard without the use of a DRM system, and reach the widest range of players. With the support for Clear Key encryption using 'cenc' or 'cbcs' encryption modes, you can now distribute secure content without DRM to players that support either mode of encryption allowed in the standard. This allows you to deliver encrypted content to client players such as Google Shaka player (v 4.0.0+), Dash.js (v 4.5+), Bitmovin, Theo Player, and Android ExoPlayer (v 2.18.1+) using 'cenc' encryption.
+
+For more details on using the content protection features of Media Services see the article [Content protection with dynamic encryption and key delivery](drm-content-protection-concept.md)
+
+### Rewind Window vs Archive Window on Live Outputs
+
+The **rewindWindowLength** can be set on Live Outputs to control the seek-able window on the client player during live streaming. This helps customer to control how much time is visible in the player for seeking back into the live stream.
+This setting also helps to reduce the manifest size delivered to the client over the network during live streaming, which may end up with more efficient live streaming experience and reduce memory usage on the client.
+
+After your stream is complete, you can access the archived file in the asset defined by the **archiveWindowLength** property on the Live Output. This allows you to now set a different archive duration from the previous "DVR sliding window" duration that is visible to the player.
+This is very useful for when you want to stream with a very small time-shifting window in the player, but wish to archive the entire live event to the output asset.
+
+You can set **rewindWindowLength** to a minimum value of 60 seconds. The default value is 30 minutes if you enable a live event with the "LowLatencyV2" option, otherwise, there is no default value. If the **rewindWindowLength** is not set, and the live event is not set to use "LowLatencyV2" option, no default value is set by the server and the seekable window during the live playback would be the same value as the **archiveWindowLength**.  In this situation, if the **archiveWindowLength** is set to a very large duration, the player could be impacted by more buffering issues during playback in the live mode because of the larger manifest size download to the player for parsing.
+
+For more details see the article [Use time-shifting and Live Outputs to create on-demand video playback](live-event-cloud-dvr-time-how-to.md)
+
+Many code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
+
+### New Region: China North 3 is now GA
+
+Customers in China can now access Azure Media Services in the China North 3 region, in addition to the existing 4 regions that are GA already (China East, China East 2, China North, China North 2). See the [region availability by feature table](https://docs.microsoft.com/azure/media-services/latest/azure-clouds-regions#china) for detailed information.
+
+### Retirement of the Azure Media Redactor, Video Analyzer, and Face Detector on September 14, 2023
+
+As Microsoft’s [Responsible AI Standards](https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly) outline, Microsoft is committed to fairness, privacy, security, and transparency with respect to AI systems. To better align our products to this new Standard and the [Limited Access policy](https://aka.ms/AAh91ff) for other Microsoft products, Azure Media Services will be retiring the following capabilities on September 14, 2023:
+
+- [Azure Media Redactor (RESTv2)](../previous/media-services-redactor-walkthrough.md)
+
+- [Face Detector preset](analyze-face-redaction-concept.md)
+
+- [Video Analyzer preset](analyze-video-audio-files-concept.md)
+
+After **September 14, 2023**, any applications you have developed using the Azure Media Redactor, the Face Detector preset, or the Video Analyzer preset will begin experience errors or failed job submissions.
+
+**Action Required**
+
+The Azure Media Redactor (RESTv2) and the Face Detector preset will be retired and are not being replaced at this time. If you would like to instead detect people in a video, we recommend you update your applications to use the Video Indexer APIs for [detecting observed people](https://docs.microsoft.com/azure/azure-video-indexer/observed-people-tracing) and [matching observed people](https://docs.microsoft.com/azure/azure-video-indexer/matched-person) to faces and [submit a request to get access to the Limited Access program](https://aka.ms/facerecognition) for these features.
+
+If you are currently using the Video Analyzer preset, we recommend updating your applications to use the Video Indexer APIs for video analysis, which offers an extended range of capabilities.
+
+**More information**
+
+If you have questions, get answers from community experts in [Microsoft Q&A](https://docs.microsoft.com/answers/topics/azure-media-services.html). If you have a support plan and you need technical help, please create a [support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) in the Azure portal.
+
 
 ## August 2022
 
@@ -33,6 +206,8 @@ A new sample demonstrating how to late-bind a WebVTT or TTML subtitle or caption
 This sample shows how you can add any number of text tracks to an asset and have them packaged as TTML/IMSC1 text profile in both DASH and HLS.  The API also allows you to set specific characteristics of the HLS manifest, such as the Default caption track, set the "Forced" property, as well as control the "Characteristics" value of the HLS text track per the Apple HLS specification.
 
 The API currently supports uploading .vtt or .ttml file format to an existing asset. New tracks that are registered with the tracks API will show up immediately in the DASH and HLS manifest as IMSC1 profile MP4 text tracks.  
+
+Many code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
 
 ## June 2022
 
@@ -62,6 +237,10 @@ Live Transcription is now Generally Available (GA) and supports all available la
 Low latency HLS (LL-HLS) is now available in the API and in the Azure Portal. To enable LL-HLS, use the "LowLatencyV2" Stream Option when creating a live stream. See the Node.js sample for how to configure [Create a Low latency HLS live encoding event](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/720P_Low_Latency_Encoding_Live_Event/index.ts)
 In the Azure portal select the new "Low Latency" option when creating a live event.  The new LL-HLS feature can provide reduced latency in the 4-7 second range when using a player framework that supports the LL-HLS protocol.
 Low latency HLS is only available on live transcoding channels and not yet available for "pass-through" mode live events.
+
+A live demonstration of the LL-HLS delivery to a Shaka player is available at https://media.microsoft.com/live 
+
+Code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
 
 ## March 2022
 
@@ -106,6 +285,8 @@ For technical details on the new track API, see the [2021-11-01 version of the A
 A basic list tracks sample is provide in Javascript [each](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts)
 Additional samples and documentation will be provided for each SDK soon.
 
+Code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
+
 ## December 2021
 
 ### Updated JavaScript SDK version 10.0.0
@@ -123,7 +304,7 @@ Hebrew, Persian, and Portugal Portuguese (the current model that exists today is
 
 The new supported BCP-47 language codes are: he-IL, fa-IR, and pt-PT.
 
-### Sweden Central region is now GA
+### New Region: Sweden Central region is now GA
 
  Media Services is now generally available in the Sweden Central region. There are currently some feature limitations in the region while we await a few dependency services to also arrive in the region. Check the [regional feature availability chart](./azure-clouds-regions.md) to determine when features will arrive.
 
@@ -174,7 +355,7 @@ You also now have an account level feature flag to allow/block public internet a
 
 ### .NET SDK (Microsoft.Azure.Management.Media) 5.0.0 release available in NuGet
 
-The [Microsoft.Azure.Management.Media](https://www.nuget.org/packages/Microsoft.Azure.Management.Media/5.0.0) .NET SDK version 5.0.0 is now released on NuGet. This version is generated to work with the [2021-06-01 stable](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2021-06-01) version of the Open API (Swagger) ARM REST API.
+The [Microsoft.Azure.Management.Media](https://www.nuget.org/packages/Microsoft.Azure.Management.Media/5.0.0) .NET SDK version 5.0.0 is now released on NuGet. This version is generated to work with the [2021-06-01 stable](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2021-06-01) version of the ARM REST API.
 
 For details on changes from the 4.0.0 release see the [change log](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/mediaservices/Microsoft.Azure.Management.Media/CHANGELOG.md).
 
@@ -210,7 +391,7 @@ Traffic between your virtual network and the service traverses over the Microsof
 
 For details on how to use Media Services with private endpoints, see [Create a Media Services and Storage account with a private endpoint](security-private-endpoint-concept.md)
 
-### New US West 3 region is GA
+### New Region: US West 3 region is GA
 
 The US West 3 region is now GA and available for customers to use when creating new Media Services accounts.
 
@@ -436,6 +617,8 @@ Live Video Analytics on IoT Edge is an expansion to the Media Service family. It
 
 ## May 2020
 
+### New Regions: Germay North, Germany West Central, Switzerland North, and Switzerland West are now GA 
+
 Azure Media Services is now generally available in the following regions: "Germany North", "Germany West Central", "Switzerland North", and "Switzerland West". Customers can deploy Media Services to these regions using the Azure portal.
 
 ## April 2020
@@ -588,7 +771,6 @@ Added updates that include Media Services performance improvements.
 ### New presets
 
 * [FaceDetectorPreset](/rest/api/media/transforms/createorupdate#facedetectorpreset) was added to the built-in analyzer presets.
-* [ContentAwareEncodingExperimental](/rest/api/media/transforms/createorupdate#encodernamedpreset) was added to the built-in encoder presets. For more information, see [Content-aware encoding](encode-content-aware-concept.md).
 
 ## March 2019
 

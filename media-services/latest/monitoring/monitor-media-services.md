@@ -97,7 +97,6 @@ Some things that you can examine with diagnostic logs are:
 - The number of licenses delivered by DRM type
 - The number of licenses delivered by policy
 - The latency on key delivery requests
-- HTTP Status codes by DRM key type (PlayReady, WideVine, FairPlay, Clear) or policy type
 - The number of unauthorized license requests from clients
 
 ### Schemas
