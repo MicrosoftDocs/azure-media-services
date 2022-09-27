@@ -167,7 +167,7 @@ Many code samples are available in .NET, JavaScript (Node.js), Python, Java in o
 
 ### New Region: China North 3 is now GA
 
-Customers in China can now access Azure Media Services in the China North 3 region, in addition to the existing 4 regions that are GA already (China East, China East 2, China North, China North 2). See the [region availability by feature table](azure-clouds-regions#china) for detailed information.
+Customers in China can now access Azure Media Services in the China North 3 region, in addition to the existing 4 regions that are GA already (China East, China East 2, China North, China North 2). See the [region availability by feature table](azure-clouds-regions.md#china) for detailed information.
 
 ### Retirement of the Azure Media Redactor, Video Analyzer, and Face Detector on September 14, 2023
 
