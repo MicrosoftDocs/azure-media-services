@@ -23,7 +23,7 @@ To stay up to date with the most recent developments, this article provides you 
 
 ### API Release: Updated 2022-08-01 ARM REST API
 
-An updated version of the ARM REST API for Azure Media Services has been released. Version 2022-08-01 is now the latest stable release in production.  The REST API definitions are available in the [REST specification folder for Media Services on GitHub.](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/mediaservices/resource-manager/Microsoft.Media/stable/2022-08-01) 
+An updated version of the ARM REST API for Azure Media Services has been released. Version 2022-08-01 is now the latest stable release in production.  The REST API definitions are available in the [REST specification folder for Media Services on GitHub.](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/mediaservices/resource-manager/Microsoft.Media/stable/2022-08-01)
 
 Updates to the 2022-08-01 API include:
 
@@ -45,8 +45,8 @@ Many code samples are available in .NET, JavaScript (Node.js), Python, Java in o
 
 ### PlayReady Security Level 3000 license support (SL3000)
 
-The PlayReady DRM content protection and license delivery features of Media Services now supports PlayReady SL3000.  The Security Level is a property of a PlayReady Client, and every license delivered to a client has a property indicating the minimum Security Level required from a client to allow binding to this license. Security Level 3000 is provided for hardened devices with the highest security consuming the highest quality of commercial content. This update allows you to configure Content Key polices to delivery PlayReady SL3000 licenses through the Media Services Key Delivery license servers. 
-For more details on PlayReady Security levels, see the article [Using the Security Level in a License](https://docs.microsoft.com/playready/overview/security-level#using-the-security-level-in-a-license).
+The PlayReady DRM content protection and license delivery features of Media Services now supports PlayReady SL3000.  The Security Level is a property of a PlayReady Client, and every license delivered to a client has a property indicating the minimum Security Level required from a client to allow binding to this license. Security Level 3000 is provided for hardened devices with the highest security consuming the highest quality of commercial content. This update allows you to configure Content Key polices to delivery PlayReady SL3000 licenses through the Media Services Key Delivery license servers.
+For more details on PlayReady Security levels, see the article [Using the Security Level in a License](/playready/overview/security-level#using-the-security-level-in-a-license).
 
 - If you add an SL3000 PlayReady **ContentKeyPolicyOption** to a Content Key Policy, that policy can only contain additional PlayReady SL3000 or Widevine L1 options.
 - SL3000 requires that you use a different key for audio or use unencrypted audio. The audio security level should be limited to SL2000 or lower.
@@ -145,7 +145,7 @@ Many code samples are available in .NET, JavaScript (Node.js), Python, Java in o
 
 ### Support for MPEG Common Encryption Clear Key with CENC and CBCS encryption
 
-Clear Key encryption is a feature of the [MPEG Common Encryption (CENC) standard](https://www.iso.org/standard/68042.html) and is supported by the HTML5 Encrypted Media Extensions (EME) available in many modern browsers. Clear Key AES-128 encryption using 'cenc' or 'cbcs' encryption modes can be set in your Streaming policies to allow you to reach the widest range of devices across Apple, Web and Android.  
+Clear Key encryption is a feature of the [MPEG Common Encryption (CENC) standard](https://www.iso.org/standard/68042.html) and is supported by the HTML5 Encrypted Media Extensions (EME) available in many modern browsers. Clear Key AES-128 encryption using 'cenc' or 'cbcs' encryption modes can be set in your Streaming policies to allow you to reach the widest range of devices across Apple, Web and Android.
 
 This feature allows you to support the Common Encryption standard without the use of a DRM system, and reach the widest range of players. With the support for Clear Key encryption using 'cenc' or 'cbcs' encryption modes, you can now distribute secure content without DRM to players that support either mode of encryption allowed in the standard. This allows you to deliver encrypted content to client players such as Google Shaka player (v 4.0.0+), Dash.js (v 4.5+), Bitmovin, Theo Player, and Android ExoPlayer (v 2.18.1+) using 'cenc' encryption.
 
@@ -167,7 +167,7 @@ Many code samples are available in .NET, JavaScript (Node.js), Python, Java in o
 
 ### New Region: China North 3 is now GA
 
-Customers in China can now access Azure Media Services in the China North 3 region, in addition to the existing 4 regions that are GA already (China East, China East 2, China North, China North 2). See the [region availability by feature table](https://docs.microsoft.com/azure/media-services/latest/azure-clouds-regions#china) for detailed information.
+Customers in China can now access Azure Media Services in the China North 3 region, in addition to the existing 4 regions that are GA already (China East, China East 2, China North, China North 2). See the [region availability by feature table](azure-clouds-regions.md#china) for detailed information.
 
 ### Retirement of the Azure Media Redactor, Video Analyzer, and Face Detector on September 14, 2023
 
@@ -183,13 +183,13 @@ After **September 14, 2023**, any applications you have developed using the Azur
 
 **Action Required**
 
-The Azure Media Redactor (RESTv2) and the Face Detector preset will be retired and are not being replaced at this time. If you would like to instead detect people in a video, we recommend you update your applications to use the Video Indexer APIs for [detecting observed people](https://docs.microsoft.com/azure/azure-video-indexer/observed-people-tracing) and [matching observed people](https://docs.microsoft.com/azure/azure-video-indexer/matched-person) to faces and [submit a request to get access to the Limited Access program](https://aka.ms/facerecognition) for these features.
+The Azure Media Redactor (RESTv2) and the Face Detector preset will be retired and are not being replaced at this time. If you would like to instead detect people in a video, we recommend you update your applications to use the Video Indexer APIs for [detecting observed people](/azure/azure-video-indexer/observed-people-tracing) and [matching observed people](/azure/azure-video-indexer/matched-person) to faces and [submit a request to get access to the Limited Access program](https://aka.ms/facerecognition) for these features.
 
 If you are currently using the Video Analyzer preset, we recommend updating your applications to use the Video Indexer APIs for video analysis, which offers an extended range of capabilities.
 
 **More information**
 
-If you have questions, get answers from community experts in [Microsoft Q&A](https://docs.microsoft.com/answers/topics/azure-media-services.html). If you have a support plan and you need technical help, please create a [support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) in the Azure portal.
+If you have questions, get answers from community experts in [Microsoft Q&A](/answers/topics/azure-media-services.html). If you have a support plan and you need technical help, please create a [support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) in the Azure portal.
 
 
 ## August 2022
@@ -205,7 +205,7 @@ A new sample demonstrating how to late-bind a WebVTT or TTML subtitle or caption
 
 This sample shows how you can add any number of text tracks to an asset and have them packaged as TTML/IMSC1 text profile in both DASH and HLS.  The API also allows you to set specific characteristics of the HLS manifest, such as the Default caption track, set the "Forced" property, as well as control the "Characteristics" value of the HLS text track per the Apple HLS specification.
 
-The API currently supports uploading .vtt or .ttml file format to an existing asset. New tracks that are registered with the tracks API will show up immediately in the DASH and HLS manifest as IMSC1 profile MP4 text tracks.  
+The API currently supports uploading .vtt or .ttml file format to an existing asset. New tracks that are registered with the tracks API will show up immediately in the DASH and HLS manifest as IMSC1 profile MP4 text tracks.
 
 Many code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
 
@@ -238,7 +238,7 @@ Low latency HLS (LL-HLS) is now available in the API and in the Azure Portal. To
 In the Azure portal select the new "Low Latency" option when creating a live event.  The new LL-HLS feature can provide reduced latency in the 4-7 second range when using a player framework that supports the LL-HLS protocol.
 Low latency HLS is only available on live transcoding channels and not yet available for "pass-through" mode live events.
 
-A live demonstration of the LL-HLS delivery to a Shaka player is available at https://media.microsoft.com/live 
+A live demonstration of the LL-HLS delivery to a Shaka player is available at https://media.microsoft.com/live
 
 Code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
 
@@ -493,7 +493,7 @@ As part of the update to v3 API and SDKs, Media Reserve Units (MRUs) are no long
 
 The v3 API no longer supports use of the key delivery services as a stand-alone feature for content protection where the key delivery service can be used to deliver license for content that is streamed or delivered through other 3rd party origin servers.  This means that AMS no longer supports key-delivery only scenarios in the V3 API, and requires you to stream from AMS origin services using dynamic packaging and encryption when delivering with v3.
 
-Existing content that was encrypted with the v2 API and is delivered in a "hybrid' model will continue to work (keys will still be retrievable on the data-plane,) but the management of those keys (updates and edits) through the v2 management plane or v3 management plane would no longer work after February 29th, 2024.  
+Existing content that was encrypted with the v2 API and is delivered in a "hybrid' model will continue to work (keys will still be retrievable on the data-plane,) but the management of those keys (updates and edits) through the v2 management plane or v3 management plane would no longer work after February 29th, 2024.
 
 > [!NOTE]
 > All new content delivered using the v3 will only support content protection and streaming from AMS and no longer support "hybrid" mode.
@@ -617,7 +617,7 @@ Live Video Analytics on IoT Edge is an expansion to the Media Service family. It
 
 ## May 2020
 
-### New Regions: Germay North, Germany West Central, Switzerland North, and Switzerland West are now GA 
+### New Regions: Germay North, Germany West Central, Switzerland North, and Switzerland West are now GA
 
 Azure Media Services is now generally available in the following regions: "Germany North", "Germany West Central", "Switzerland North", and "Switzerland West". Customers can deploy Media Services to these regions using the Azure portal.
 
