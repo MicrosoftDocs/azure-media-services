@@ -72,7 +72,7 @@ You can add additional audio tracks to an asset to provide your viewers with aud
 
 1. Create additional audio tracks for the live event.  They can be audio in different languages or descriptive audio that is used for accessibility. You can also use an audio track for director's commentary.
 1. Upload the audio tracks to the archived asset.
-1. Update the track data by editing the manifest file or by calling updating the track data using REST, or an SDK.
+1. Update the track data by editing the manifest file in the portal or by updating the track data using REST, or an SDK.
 
 > [!NOTE]
 > When an audio or text track is removed, the underlying file is not removed from the storage container. Media Services sets the dynamic packager (streaming endpoint) to not show the the information about the track in the manifest or playlist requested by the video player.

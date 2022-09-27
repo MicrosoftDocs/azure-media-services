@@ -180,8 +180,6 @@ Use the same path for the WebVTT file as you did for the manifest and append it 
 
 1. Delete the rest of the language lines unless you want to use them and have uploaded WebVTT file for them.
 
-## Edit the player in the HTML page
-
 ## [Static](#tab/static/)
 
 ### Edit the static source code
