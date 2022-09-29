@@ -17,7 +17,10 @@ This article discusses the retirement and migration for Media Services Face Dete
 ## Overview
 
 As Microsoft’s [Responsible AI Standards](https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/) outlines, Microsoft is committed to fairness, privacy, security, and
-transparency with respect to AI systems. To align with these standards, Azure Media Services is retiring the [Face Redactor Restv2 preset](media-services-redactor-walkthrough.md) on September 14, 2023. This preset offers face detection and redaction (blurring) of selected individuals in video files. After September 14, 2023, any applications you have developed using the Azure Media Redactor (RESTv2) will begin experiencing errors or failed job submissions.
+transparency with respect to AI systems. To align with these standards, Azure Media Services is retiring the Face Redactor Restv2 preset on September 14, 2023. This preset offers face detection and redaction (blurring) of selected individuals in video files. After September 14, 2023, any applications you have developed using the Azure Media Redactor (RESTv2) will begin experiencing errors or failed job submissions.
+
+> [!NOTE]
+> There is no replacement planned for the China region.
 
 ## Migration steps
 
