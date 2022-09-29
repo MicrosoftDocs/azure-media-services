@@ -1840,6 +1840,56 @@
             "source_path_from_root": "/media-services/previous/media-services-redactor-walkthrough.md",
             "redirect_url": "/media-services/previous/analyze-face-redactor-retirement-migration-overview",
             "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/signal-descriptive-audio-howto.md.md",
+            "redirect_url": "/media-services/previous/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/architecture-azure-ad-content-protection.md",
+            "redirect_url": "/media-services/previous/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/drm-get-content-signing-key-policy-net-how-to.md",
+            "redirect_url": "/media-services/previous/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/drm-protect-with-aes128-tutorial.md",
+            "redirect_url": "/media-services/previous/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/drm-test-system-concept.md",
+            "redirect_url": "/media-services/previous/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/job-multiple-transform-outputs-how-to.md",
+            "redirect_url": "/media-services/previous/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/signal-descriptive-audio-howto.md",
+            "redirect_url": "/media-services/previous/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/storage-managing-multiple-storage-accounts-how-to.md",
+            "redirect_url": "/media-services/previous/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/stream-files-tutorial-with-api.md",
+            "redirect_url": "/media-services/previous/samples-overview",
+            "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/latest/transform-crop-how-to.md",
+            "redirect_url": "/media-services/previous/samples-overview",
+            "redirect_document_id": false
           }
     ]
 }
