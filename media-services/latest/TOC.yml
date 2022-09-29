@@ -83,18 +83,9 @@
       displayName: ARM, Resource Manager, Template
 - name: Tutorials
   items:
-  - name: Encode and stream an uploaded file - .NET
-    href: stream-files-tutorial-with-api.md
-    displayName: SDK, Tutorial, .NET, stream, upload, ingest, sample
   - name: Stream live - .NET
     href: stream-live-tutorial-with-api.md
     displayName: SDK, Tutorial, .NET, live, live event, streaming, sample
-  - name: Encrypt dynamically with AES-128 - NET
-    href: drm-protect-with-aes128-tutorial.md
-    displayName: SDK, Tutorial, .NET, sample, streaming, content protection, AES-128, encrypt
-  - name: Content protection with Azure AD - NET
-    href: architecture-azure-ad-content-protection.md
-    displayName: SDK, Tutorial, .NET, sample, AAD, Active Directory, protect, content protection, DRM, encrypt, PlayReady, Widevine, FairPlay, encrypt, CENC, CBCS
   - name: Use Azure Functions - .NET
     href: integrate-azure-functions-dotnet-how-to.md
     displayName: Azure Functions, Functions, functions app, lambda, serverless, serverless functions, integrations, .NET
@@ -256,8 +247,6 @@
     - name: Streaming protocol encryption types
       displayName: streaming protocol, encryption types, low latency
       href: drm-streaming-protocol-encryption-types-reference.md
-    - name: DRM test system considerations
-      href: drm-test-system-concept.md
     - name: DRM licenses
       items:
       - name: PlayReady license template
@@ -611,15 +600,6 @@
         displayName: how to, how-to, tutorial, create asset, upload file, ingest file, upload, container, storage account, SAS, S3, URL, HTTP ingest, upload media
   - name: .NET
     items:
-    - name: Manage multiple storage accounts
-      href: storage-managing-multiple-storage-accounts-how-to.md
-      displayName: how to, how-to, tutorial, storage accounts, multiple storage accounts
-    - name: Jobs with multiple transform outputs
-      href: job-multiple-transform-outputs-how-to.md
-      displayName: jobs, CLI, transform, multiple outputs, multi output
-    - name: Get content signing key
-      href: drm-get-content-signing-key-policy-net-how-to.md
-      displayName: content protection, DRM, content keys, content key policy, .NET, how to, how-to, sample, tutorial
     - name: Offline FairPlay for iOS
       href: drm-offline-fairplay-for-ios-concept.md
       displayName: Content protection, DRM, content keys, content key policy, iOS, FairPlay, Apple, how to, how-to, sample, tutorial. offline DRM, offline FairPlay, offline, disconnect, disconnected, airplane, train, bus, car
@@ -629,11 +609,6 @@
     - name: Offline PlayReady for Windows 10
       href: drm-offline-playready-streaming-for-windows-10.md
       displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline PlayReady, offline,disconnect, disconnected, airplane, train, bus, car
-    - name: Signal descriptive audio
-      href: signal-descriptive-audio-howto.md
-      displayName: descriptive audio, accessibility, access, accessible
-    - name: Crop a video
-      href: transform-crop-how-to.md
   - name: Stream live
     items:
     - name: Stream with Teams

@@ -4,7 +4,7 @@ description: This article gives an explanation of what Content Key Policies are,
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 09/29/2022
 ms.author: inhenkel
 ---
 
@@ -35,10 +35,6 @@ Usually, you associate your content key policy with your [Streaming Locator](str
 * It is recommended to let Media Services autogenerate the content key.
 
    Typically, you would use a long-lived key and check for the existence of the content key policy with [Get](/rest/api/media/contentkeypolicies/get). To get the key, you need to call a separate action method to get secrets or credentials, see the example that follows.
-
-## Example
-
-To get to the key, use `GetPolicyPropertiesWithSecretsAsync`, as shown in the [Get a signing key from the existing policy](drm-get-content-signing-key-policy-net-how-to.md#get-contentkeypolicy-with-secrets) example.
 
 ## Filtering, ordering, paging
 

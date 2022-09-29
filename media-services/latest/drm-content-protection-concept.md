@@ -4,7 +4,7 @@ description: Learn about content protection with dynamic encryption, streaming p
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/08/2022
+ms.date: 09/29/2022
 ms.author: inhenkel
 ---
 
@@ -96,14 +96,9 @@ There are two types of security keys:
 
 You can edit key policy templates if you want to use a different license/key delivery service.
 
-## Test content protection system
-
-Read this [overview of creating a test content protection system](drm-test-system-concept.md), and then try some of the following instructional content.
-
 ## How-tos, tutorials and samples
 
 - The [DRM sample](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs) shows you how to implement a multi-DRM system with Media Services v3 by using .NET. It also shows you how to use the Media Services license/key delivery service. You can encrypt each asset with multiple encryption types (AES-128, PlayReady, Widevine, FairPlay). The sample shows you how to create and configure a [content key policy](drm-content-key-policy-concept.md), create a [streaming locator](stream-streaming-locators-concept.md) that's configured to stream the encrypted asset, create a test token, and build a streaming URL.
-- [Protect content with AES 128](drm-protect-with-aes128-tutorial.md) tutorial.
 
 There are additional content protection samples available for Node.JS and Python:
 

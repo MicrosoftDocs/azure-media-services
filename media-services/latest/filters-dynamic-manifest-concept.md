@@ -4,7 +4,7 @@ description: Learn how to create filters using Dynamic Packager to filter and se
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 09/29/2022
 ms.author: inhenkel
 ---
 
@@ -30,8 +30,6 @@ Azure Media Services supports HLS, MPEG DASH, and Smooth Streaming protocols. As
 ### Get and examine manifest files
 
 You specify a list of filter track property conditions based on which tracks of your stream (live or video on-demand [VOD]) should be included in a dynamically created manifest. To get and examine the properties of the tracks, you have to load the Smooth Streaming manifest first.
-
-The [Upload, encode, and stream files with .NET](stream-files-tutorial-with-api.md#get-streaming-urls) tutorial shows you how to build the streaming URLs with .NET. If you run the app, one of the URLs points to the Smooth Streaming manifest: `https://amsaccount-usw22.streaming.media.azure.net/00000000-0000-0000-0000-0000000000000/ignite.ism/manifest`.<br/> Copy and paste the URL into the address bar of a browser. The file will be downloaded. You can open it in any text editor.
 
 ### Monitor the bitrate of a video stream
 
