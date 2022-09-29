@@ -49,41 +49,6 @@ Before implementing offline DRM for Widevine on Android devices, you should firs
     - [ExoPlayer Developer Guide](https://google.github.io/ExoPlayer/guide.html)
     - [EoPlayer Developer Blog](https://medium.com/google-exoplayer)
 
-## [.NET](#tab/net/)
-
-## Configure content protection in Azure Media Services
-
-In the [GetOrCreateContentKeyPolicyAsync](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs#L192) method, the following necessary steps are present:
-
-1. Specify how content key delivery is authorized in the license delivery service:
-
-    ```csharp
-    ContentKeyPolicySymmetricTokenKey primaryKey = new ContentKeyPolicySymmetricTokenKey(tokenSigningKey);
-    List<ContentKeyPolicyTokenClaim> requiredClaims = new List<ContentKeyPolicyTokenClaim>()
-    {
-        ContentKeyPolicyTokenClaim.ContentKeyIdentifierClaim
-    };
-    List<ContentKeyPolicyRestrictionTokenKey> alternateKeys = null;
-    ContentKeyPolicyTokenRestriction restriction
-        = new ContentKeyPolicyTokenRestriction(Issuer, Audience, primaryKey, ContentKeyPolicyRestrictionTokenType.Jwt, alternateKeys, requiredClaims);
-    ```
-2. Configure Widevine license template:
-
-    ```csharp
-    ContentKeyPolicyWidevineConfiguration widevineConfig = ConfigureWidevineLicenseTempate();
-    ```
-
-3. Create ContentKeyPolicyOptions:
-
-    ```csharp
-    options.Add(
-        new ContentKeyPolicyOption()
-        {
-            Configuration = widevineConfig,
-            Restriction = restriction
-        });
-    ```
-
 ## Enable offline mode
 
 To enable **offline** mode for Widevine licenses, you need to configure [Widevine license template](drm-widevine-license-template-concept.md). In the **policy_overrides** object, set the **can_persist** property to **true** (default is false), as shown in [ConfigureWidevineLicenseTemplate](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs#L452).
@@ -144,8 +109,6 @@ The above open-source PWA app is authored in Node.js. If you want to host your o
     - Chrome and Firefox require SAN-Subject Alternative Name setting to exist in the certificate
     - The certificate must have trusted CA and a self-signed development certificate does not work
     - The certificate must have a CN matching the DNS name of the web server or gateway
-
----
 
 ## More information
 

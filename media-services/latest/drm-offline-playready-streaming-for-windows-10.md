@@ -50,49 +50,7 @@ You can use two types of PlayReady license delivery:
 
 To obtain a PlayReady license with the AMS delivery service, see [Media Services v3 with PlayReady license template](drm-playready-license-template-concept.md).
 
-For playback testing, you can use a Universal Windows Application on Windows 10. In [Windows 10 Universal samples](https://github.com/Microsoft/Windows-universal-samples), there is a basic player sample called [Adaptive Streaming Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AdaptiveStreaming). Add the code for choosing the downloaded video and use it as the source, instead of the adaptive streaming source. The changes are in button click event handler:
-
-## [.NET](#tab/net/)
-
-```csharp
-private async void LoadUri_Click(object sender, RoutedEventArgs e)
-{
-    //Uri uri;
-    //if (!Uri.TryCreate(UriBox.Text, UriKind.Absolute, out uri))
-    //{
-    // Log("Malformed Uri in Load text box.");
-    // return;
-    //}
-    //LoadSourceFromUriTask = LoadSourceFromUriAsync(uri);
-    //await LoadSourceFromUriTask;
-
-    // Create and open the file picker
-    FileOpenPicker openPicker = new FileOpenPicker();
-    openPicker.ViewMode = PickerViewMode.Thumbnail;
-    openPicker.SuggestedStartLocation = PickerLocationId.ComputerFolder;
-    openPicker.FileTypeFilter.Add(".mp4");
-    openPicker.FileTypeFilter.Add(".ismv");
-    //openPicker.FileTypeFilter.Add(".mkv");
-    //openPicker.FileTypeFilter.Add(".avi");
-
-    StorageFile file = await openPicker.PickSingleFileAsync();
-
-    if (file != null)
-    {
-       //rootPage.NotifyUser("Picked video: " + file.Name, NotifyType.StatusMessage);
-       this.mediaPlayerElement.MediaPlayer.Source = MediaSource.CreateFromStorageFile(file);
-       this.mediaPlayerElement.MediaPlayer.Play();
-       UriBox.Text = file.Path;
-    }
-    else
-    {
-       // rootPage.NotifyUser("Operation cancelled.", NotifyType.ErrorMessage);
-    }
-
-    // On small screens, hide the description text to make room for the video.
-    DescriptionText.Visibility = (ActualHeight < 500) ? Visibility.Collapsed : Visibility.Visible;
-}
-```
+For playback testing, you can use a Universal Windows Application on Windows 10. In [Windows 10 Universal samples](https://github.com/Microsoft/Windows-universal-samples), there is a basic player sample called [Adaptive Streaming Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AdaptiveStreaming). Add the code for choosing the downloaded video and use it as the source, instead of the adaptive streaming source.
 
 ![Offline mode playback of PlayReady protected fMP4](./media/offline-playready-for-windows/offline-playready1.jpg)
 

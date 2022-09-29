@@ -4,7 +4,7 @@ description: This article how to use preset overrides to adjust transform settin
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 09/29/2022
 ms.author: inhenkel
 ---
 
@@ -34,15 +34,6 @@ For reference, see the [presetOverride](https://github.com/Azure/azure-rest-api-
 > [!NOTE]
 > You can only use preset overrides to override the settings on a defined preset in the transform.  You cannot switch from one specific preset to another type. For example, attempting to override a transform created with the built-in content-aware encoding preset to use another preset like the audio analyzer would result in an error message.
 
-## Example of preset override in .NET
+## Sample code
 
-A complete example using the .NET SDK for Media Services showing how to use preset override with a basic audio analyzer transform is available in GitHub.
-See the [Analyze a media file with a audio analyzer preset](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/AudioAnalytics/AudioAnalyzer) sample for details on how to use the preset override property of the job output.
-
-## Sample code of preset override in .NET
-
-[!code-csharp[Main](~/../media-services-v3-dotnet/AudioAnalytics/AudioAnalyzer/program.cs#PresetOverride)]
-
-## Ask questions, give feedback, get updates
-
-Check out the [Azure Media Services community](media-services-community.md) article to see different ways you can ask questions, give feedback, and get updates about Media Services.
+- [Analyze a media file with a audio analyzer preset](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/AudioAnalytics/AudioAnalyzer)
