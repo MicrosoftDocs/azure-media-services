@@ -4,7 +4,7 @@ description: Learn about Azure Media Services with the Widevine license template
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 09/29/2022
 ms.author: inhenkel
 ---
 # Media Services v3 with Widevine license template overview

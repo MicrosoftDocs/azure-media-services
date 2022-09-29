@@ -12,7 +12,9 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Use Azure Media Services to help secure your media from the time it leaves your computer all the way through storage, processing, and delivery. With Media Services, you can deliver your live and on-demand content encrypted dynamically with Advanced Encryption Standard (AES-128) or any of the three major digital rights management (DRM) systems: Microsoft PlayReady, Google Widevine, and Apple FairPlay. FairPlay Streaming is an Apple technology that is only available for video transferred over HTTP Live Streaming (HLS) on iOS devices, in Apple TV, and in Safari on macOS. Media Services also provides a service for delivering AES keys and DRM (PlayReady, Widevine, and FairPlay) licenses to authorized clients. If content is encrypted with an AES clear key and is sent over HTTPS, it is not in clear until it reaches the client.
+Use Azure Media Services to secure your media from the time it leaves your computer all the way through storage, processing, and delivery. With Media Services, you can deliver your live and on-demand content encrypted dynamically with Advanced Encryption Standard (AES-128) or any of the three major digital rights management (DRM) systems: Microsoft PlayReady, Google Widevine, and Apple FairPlay.
+
+FairPlay Streaming is an Apple technology that is only available for video transferred over HTTP Live Streaming (HLS) on iOS devices, in Apple TV, and in Safari on macOS. Media Services also provides a service for delivering AES keys and DRM (PlayReady, Widevine, and FairPlay) licenses to authorized clients. If content is encrypted with an AES clear key and is sent over HTTPS, it is not in clear until it reaches the client.
 
 In Media Services v3, a content key is associated with Streaming Locator (see [this example](drm-playready-license-template-concept.md)). If using the Media Services key delivery service, you can let Azure Media Services generate the content key for you. The content key should be generated yourself if you're using you own key delivery service, or if you need to handle a high availability scenario where you need to have the same content key in two data centers.
 
@@ -56,14 +58,14 @@ When you configure the token-restricted policy, you must specify the primary ver
 
 ### Token replay prevention
 
-The *Token Replay Prevention* feature allows Media Services customers to set a limit on how many times the same token can be used to request a key or a license. The customer can add a claim of type `urn:microsoft:azure:mediaservices:maxuses` in the token, where the value is the number of times the token can be used to acquire a license or key. All subsequent requests with the same token to Key Delivery will return an unauthorized response.
+The *Token Replay Prevention* feature allows you to set a limit on how many times the same token can be used to request a key or a license. You can add a claim of type `urn:microsoft:azure:mediaservices:maxuses` in the token, where the value is the number of times the token can be used to acquire a license or key. All subsequent requests with the same token to Key Delivery will return an unauthorized response.
 
 #### Considerations
 
 * You must have control over token generation. The claim needs to be placed in the token itself.
 * When using this feature, requests with tokens whose expiry time is more than one hour away from the time the request is received are rejected with an unauthorized response.
 * Tokens are uniquely identified by their signature. Any change to the payload (for example, update to the expiry time or the claim) changes the signature of the token and it will count as a new token that Key Delivery hasn't come across before.
-* Playback fails if the token has exceeded the `maxuses` value set by the customer.
+* Playback fails if the token has exceeded the `maxuses` value.
 * It can be used for all existing protected content (only the token issued needs to be changed).
 * It works with both JWT and SWT.
 
@@ -98,7 +100,7 @@ You can edit key policy templates if you want to use a different license/key del
 
 ## How-tos, tutorials and samples
 
-- The [DRM sample](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs) shows you how to implement a multi-DRM system with Media Services v3 by using .NET. It also shows you how to use the Media Services license/key delivery service. You can encrypt each asset with multiple encryption types (AES-128, PlayReady, Widevine, FairPlay). The sample shows you how to create and configure a [content key policy](drm-content-key-policy-concept.md), create a [streaming locator](stream-streaming-locators-concept.md) that's configured to stream the encrypted asset, create a test token, and build a streaming URL.
+[.Net Digital Rights Management sample](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/blob/main/AMSV3Tutorials/EncryptWithDRM/Program.cs) shows you how to implement a multi-DRM system with Media Services v3 by using .NET.
 
 There are additional content protection samples available for Node.JS and Python:
 

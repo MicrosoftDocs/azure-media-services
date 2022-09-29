@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-When you're delivering adaptive bitrate streaming content to devices, you sometimes need to publish multiple versions of a manifest to target specific device capabilities or available network bandwidth. The [Dynamic Packager](encode-dynamic-packaging-concept.md) lets you specify filters which can filter out specific codecs, resolutions, bitrates, and audio track combinations on-the-fly. This filtering removes the need to create multiple copies. You simply need to publish a new URL with a specific set of filters configured to your target devices (iOS, Android, SmartTV, or browsers) and the network capabilities (high-bandwidth, mobile, or low-bandwidth scenarios). In this case, clients can manipulate the streaming of your content through the query string (by specifying available [Asset filters or Account filters](filters-concept.md)) and use filters to stream specific sections of a stream.
+When you're delivering adaptive bitrate streaming content to devices, you sometimes need to publish multiple versions of a manifest to target specific device capabilities or available network bandwidth. The [Dynamic Packager](encode-dynamic-packaging-concept.md) lets you specify filters which can filter out specific codecs, resolutions, bitrates, and audio track combinations on-the-fly. Filtering removes the need to create multiple copies. You simply need to publish a new URL with a specific set of filters configured to your target devices (iOS, Android, SmartTV, or browsers) and the network capabilities (high-bandwidth, mobile, or low-bandwidth scenarios). In this case, clients can manipulate the streaming of your content through the query string (by specifying available [Asset filters or Account filters](filters-concept.md)) and use filters to stream specific sections of a stream.
 
 Some delivery scenarios require that you make sure a customer can't access specific tracks. For example, maybe you don't want to publish a manifest that contains HD tracks to a specific subscriber tier. Or, maybe you want to remove specific adaptive bitrate (ABR) tracks to reduce cost of delivery to a specific device that wouldn't benefit from the additional tracks. In this case, you could associate a list of pre-created filters with your [Streaming Locator](stream-streaming-locators-concept.md) on creation. Clients then can't manipulate how the content is streamed because it's defined by the **Streaming Locator**.
 
@@ -57,8 +57,6 @@ With Dynamic Manifest, you can create device profiles (such as mobile, console, 
 <!--![Example of rendition filtering with Dynamic Manifest][renditions2]-->
 
 :::image type="content" source="media/diagrams/media-services-rendition-filter2.png" alt-text="rendition filter 2 diagram":::
-
-In the following example, an encoder was used to encode a mezzanine asset into seven ISO MP4s video renditions (from 180p to 1080p). The encoded asset can be [dynamically packaged](encode-dynamic-packaging-concept.md) into any of the following streaming protocols: HLS, MPEG DASH, and Smooth.
 
 The top of the following diagram shows the HLS manifest for the asset with no filters. (It contains all seven renditions.)  In the lower left, the diagram shows an HLS manifest to which a filter named "ott" was applied. The "ott" filter specifies the removal of all bitrates below 1 Mbps, so the bottom two quality levels were stripped off in the response. In the lower right, the diagram shows the HLS manifest to which a filter named "mobile" was applied. The "mobile" filter specifies the removal of renditions where the resolution is larger than 720p, so the two 1080p renditions were stripped off.
 
@@ -106,7 +104,7 @@ Here's the filtered asset:
 
 ## Adjusting the presentation window (DVR)
 
-Currently, Azure Media Services offers circular archive where the duration can be configured between 1 minute - 25 hours. Manifest filtering can be used to create a rolling DVR window over the top of the archive, without deleting media. There are many scenarios where broadcasters want to provide a limited DVR window to move with the live edge and at the same time keep a bigger archiving window. A broadcaster may want to use the data that's out of the DVR window to highlight clips, or they may want to provide different DVR windows for different devices. For example, most of the mobile devices don't handle large DVR windows (you can have a 2-minute DVR window for mobile devices and one hour for desktop clients).
+Currently, Azure Media Services offers circular archiving where the duration can be configured between 1 minute - 25 hours. Manifest filtering can be used to create a rolling DVR window over the top of the archive, without deleting media. There are many scenarios where broadcasters want to provide a limited DVR window to move with the live edge and at the same time keep a bigger archiving window. A broadcaster may want to use the data that's out of the DVR window to highlight clips, or they may want to provide different DVR windows for different devices. For example, most of the mobile devices don't handle large DVR windows (you can have a 2-minute DVR window for mobile devices and one hour for desktop clients).
 
 <!--![DVR window with Dynamic Manifest][dvr_filter]-->
 

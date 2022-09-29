@@ -11,10 +11,10 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Azure Media Services lets you deliver live events to your customers on the Azure cloud. To set up your live streaming events in Media Services v3, you need to understand the concepts discussed in this article.
+Azure Media Services lets you deliver live events to your customers on the Azure cloud.
 
 > [!TIP]
-> For customers migrating from Media Services v2 APIs, the **live event** entity replaces **Channel** in v2 and **live output** replaces **program**.
+> If you are migrating from Media Services v2 APIs, the **live event** entity replaces **Channel** in v2 and **live output** replaces **program**.
 
 ## Live events
 

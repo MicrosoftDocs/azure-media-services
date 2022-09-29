@@ -4,7 +4,7 @@ description: This article gives an overview of dynamic packaging in Azure Media 
 author: myoungerman
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 06/28/2022
+ms.date: 09/29/2022
 ms.author: inhenkel
 ---
 
@@ -22,31 +22,32 @@ In Media Services, a [streaming endpoint](stream-streaming-endpoint-concept.md) 
 
 The advantages of just-in-time packaging are the following:
 
-* You can store all your files in standard MP4 file format
-* You do not need to store multiple copies of static packaged HLS and DASH formats in blob storage, reducing the amount of video content stored and lowering your overall costs of storage
-* You can instantly take advantage of new protocol updates and changes to the specifications as they evolve over time without need of re-packaging the static content in your catalog
-* You can deliver content with or without encryption and DRM using the same MP4 files in storage
+* You can store all your files in standard MP4 file format.
+* You don't need to store multiple copies of static packaged HLS and DASH formats in blob storage which reduces the amount of video content stored and lowers your storage costs.
+* You can instantly take advantage of new protocol updates and changes to the specifications without needing to re-package the static content in your catalog.
+* You can deliver content with or without encryption and DRM using the same MP4 files in storage.
 * You can dynamically filter or alter the manifests with simple asset-level or global filters to remove specific tracks, resolutions, languages, or provide shorter highlight clips from the same MP4 files without re-encoding or re-rendering the content.
 
 ## To prepare your source files for delivery
 
-To take advantage of dynamic packaging, you need to [encode](encode-concept.md) your mezzanine (source) file into a set of single or multiple bitrate MP4 (ISO Base Media 14496-12) files. You need to have an [asset](assets-concept.md) with the encoded MP4 and streaming configuration files needed by Media Services dynamic packaging. From this set of MP4 files, you can use dynamic packaging to deliver video via the streaming media protocols described below.
+To take advantage of dynamic packaging, [encode](encode-concept.md) your mezzanine (source) file into a set of single or multiple bitrate MP4 (ISO Base Media 14496-12) files. The encoded video files and streaming configuration files will be located in an output [asset](assets-concept.md). From this set of files, you can use dynamic packaging to deliver video via the streaming media protocols.
 
-Typically, you will use the Azure Media Services standard encoder to generate this content using the Content Aware Encoding presets, or the Adaptive Bitrate presets.  Both generate a set of MP4 files ready for streaming and dynamic packaging.  Alternatively, you can choose to encode in an external service, on-premises, or on your own VM's or serverless function apps. Content encoded externally can be uploaded into an asset for streaming provided that it meets the encoding requirements for adaptive bitrate streaming formats. An example project of uploading a pre-encoded MP4 for streaming is available in the .NET SDK samples - see [Stream Existing Mp4 files](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/StreamExistingMp4).
+Typically, you will use the Azure Media Services standard encoder to generate this content using the Content Aware Encoding presets, or the Adaptive Bitrate presets.  Both generate a set of MP4 files ready for streaming and dynamic packaging.
 
+Alternatively, you can choose to encode using an external service, on-premises, or on your own VMs or serverless function apps. Content encoded externally can be uploaded into an asset for streaming provided that it meets the encoding requirements for adaptive bitrate streaming formats. An example project of uploading a pre-encoded MP4 for streaming is available in the .NET SDK samples - see [Stream Existing Mp4 files](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/StreamExistingMp4).
 
-Azure Media Services dynamic packaging only supports video and audio file in the MP4 container format. Audio files must be encoded into an MP4 container as well when using alternate codecs like Dolby.
+Azure Media Services dynamic packaging only supports video and audio files in the MP4 container format. Audio files must be encoded into an MP4 container as well when using alternate codecs like Dolby.
 
-> [!TIP]
-> One way to get the MP4 and streaming configuration files is to [encode your mezzanine file with Media Services](#encode-to-adaptive-bitrate-mp4s).  We recommend using the [content aware encoding preset](encode-content-aware-concept.md) to generate the best adaptive streaming layers and settings for your content. See code samples for encoding with the [.NET SDK in the VideoEncoding folder](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding)
+## Make videos available for streaming
 
-To make videos in the encoded asset available to clients for playback, you have to publish the asset using a [Streaming Locator](stream-streaming-locators-concept.md) and build the appropriate HLS and DASH streaming URLs. By changing the protocol used on the URL format query, the service will delivery the appropriate streaming manifest (HLS, MPEG DASH.)
+To make videos in the encoded asset available to clients for playback, publish the asset using a [Streaming Locator](stream-streaming-locators-concept.md) and build the appropriate HLS and DASH streaming URLs. By changing the protocol used on the URL format query, the service will deliver the appropriate streaming manifest (HLS, MPEG DASH.)
 
-As a result, you only need to store and pay for the files in single storage format (MP4) and Media Services  will generate and serve the appropriate HLS or DASH manifests based on requests from your client players.
+As a result, you only need to store and pay for the files in single storage format (MP4) and Media Services will generate and serve the appropriate HLS or DASH manifests based on requests from your client players.
 
 If you plan to protect your content by using Media Services dynamic encryption, see [Streaming protocols and encryption types](drm-streaming-protocol-encryption-types-reference.md).
 
 ## Deliver HLS
+
 ### HLS dynamic packaging
 
 Your streaming client can specify the following HLS formats. We recommend using the CMAF format for compatibility with the latest players and iOS devices.  For legacy devices, the v4 and v3 formats are available as well by simply changing the format query string.
@@ -60,7 +61,6 @@ Your streaming client can specify the following HLS formats. We recommend using 
 
 > [!NOTE]
 > Previous guidelines from Apple recommended that the fallback for low bandwidth networks was to provide an audio-only stream.  At present, the Media Services encoder automatically generates an audio-only track.  Apple guidelines now state that the audio-only track should *not* be included, especially for Apple TV distribution.  In order to prevent the player from defaulting to an audio-only track, we suggest using the “audio-only=false” tag in the URL which removes audio-only rendition in HLS, or simply use HLS-V3. For example, `http://host/locator/asset.ism/manifest(format=m3u8-aapl,audio-only=false)`.
-
 
 ### HLS packing ratio for VOD
 
@@ -83,6 +83,7 @@ Example .ism server manifest with **fragmentsPerHLSSegment** set to 1.
 ```
 
 ## Deliver DASH
+
 ### DASH dynamic packaging
 
 Your streaming client can specify the following MPEG-DASH formats:
@@ -93,6 +94,7 @@ Your streaming client can specify the following MPEG-DASH formats:
 |MPEG-DASH CSF (legacy)| format=mpd-time-csf | `https://amsv3account-usw22.streaming.media.azure.net/21b17732-0112-4d76-b526-763dcd843449/ignite.ism/manifest(format=mpd-time-csf)` |
 
 ## Deliver Smooth Streaming manifests
+
 ### Smooth Streaming dynamic packaging
 
 Your streaming client can specify the following Smooth Streaming formats:

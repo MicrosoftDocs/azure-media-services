@@ -99,13 +99,3 @@ For more information, see [pricing](https://azure.microsoft.com/pricing/details/
 ## Encoding samples
 
 See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.
-
-## How-tos and Tutorials
-
-### .NET
-
-- [Encode a remote file based on URL and stream the video](stream-files-dotnet-quickstart.md?amspage=encode-concept)
-
-### CLI
-
-- [Encode a remote file based on URL and stream the video](stream-files-cli-quickstart.md?amspage=encode-concept)
