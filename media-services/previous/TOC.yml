@@ -434,9 +434,6 @@
     - name: Process with Face Redactor
       href: media-services-face-redaction.md
       displayName: media services v2, v2, version 2
-    - name: Face Redactor walkthrough
-      href: media-services-redactor-walkthrough.md
-      displayName: media services v2, v2, version 2
   - name: Configure telemetry
     href: media-services-telemetry-overview.md
     displayName: media services v2, v2, version 2

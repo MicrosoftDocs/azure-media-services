@@ -12,7 +12,7 @@ ms.workload: media
 ms.tgt_pltfrm: na
 ms.devlang: csharp
 ms.topic: article
-ms.date: 03/10/2021
+ms.date: 09/29/2022
 ms.author: inhenkel
 ms.reviewer: johndeu
 ms.custom: devx-track-csharp
@@ -38,105 +38,12 @@ An indexing job can generate the following outputs:
 This article shows how to create indexing jobs to **Index an asset** and **Index multiple files**.
 
 ## Using configuration and manifest files for indexing tasks
+
 You can specify more details for your indexing tasks by using a task configuration. For example, you can specify which metadata to use for your media file. This metadata is used by the language engine to expand its vocabulary, and greatly improves the speech recognition accuracy.  You are also able to specify your desired output files.
 
 You can also process multiple media files at once by using a manifest file.
 
 For more information, see [Task Preset for Azure Media Indexer](./legacy-components.md).
-
-## Index an asset
-The following method uploads a media file as an asset and creates a job to index the asset.
-
-If no configuration file is specified, the media file is indexed with all default settings.
-
-```csharp
-    static bool RunIndexingJob(string inputMediaFilePath, string outputFolder, string configurationFile = "")
-    {
-        // Create an asset and upload the input media file to storage.
-        IAsset asset = CreateAssetAndUploadSingleFile(inputMediaFilePath,
-            "My Indexing Input Asset",
-            AssetCreationOptions.None);
-
-        // Declare a new job.
-        IJob job = _context.Jobs.Create("My Indexing Job");
-
-        // Get a reference to the Azure Media Indexer.
-        string MediaProcessorName = "Azure Media Indexer";
-        IMediaProcessor processor = GetLatestMediaProcessorByName(MediaProcessorName);
-
-        // Read configuration from file if specified.
-        string configuration = string.IsNullOrEmpty(configurationFile) ? "" : File.ReadAllText(configurationFile);
-
-        // Create a task with the encoding details, using a string preset.
-        ITask task = job.Tasks.AddNew("My Indexing Task",
-            processor,
-            configuration,
-            TaskOptions.None);
-
-        // Specify the input asset to be indexed.
-        task.InputAssets.Add(asset);
-
-        // Add an output asset to contain the results of the job.
-        task.OutputAssets.AddNew("My Indexing Output Asset", AssetCreationOptions.None);
-
-        // Use the following event handler to check job progress.
-        job.StateChanged += new EventHandler<JobStateChangedEventArgs>(StateChanged);
-
-        // Launch the job.
-        job.Submit();
-
-        // Check job execution and wait for job to finish.
-        Task progressJobTask = job.GetExecutionProgressTask(CancellationToken.None);
-        progressJobTask.Wait();
-
-        // If job state is Error, the event handling
-        // method for job progress should log errors.  Here we check
-        // for error state and exit if needed.
-        if (job.State == JobState.Error)
-        {
-            Console.WriteLine("Exiting method due to job error.");
-            return false;
-        }
-
-        // Download the job outputs.
-        DownloadAsset(task.OutputAssets.First(), outputFolder);
-
-        return true;
-    }
-
-    static IAsset CreateAssetAndUploadSingleFile(string filePath, string assetName, AssetCreationOptions options)
-    {
-        IAsset asset = _context.Assets.Create(assetName, options);
-
-        var assetFile = asset.AssetFiles.Create(Path.GetFileName(filePath));
-        assetFile.Upload(filePath);
-
-        return asset;
-    }
-
-    static void DownloadAsset(IAsset asset, string outputDirectory)
-    {
-        foreach (IAssetFile file in asset.AssetFiles)
-        {
-            file.Download(Path.Combine(outputDirectory, file.Name));
-        }
-    }
-
-    static IMediaProcessor GetLatestMediaProcessorByName(string mediaProcessorName)
-    {
-        var processor = _context.MediaProcessors
-        .Where(p => p.Name == mediaProcessorName)
-        .ToList()
-        .OrderBy(p => new Version(p.Version))
-        .LastOrDefault();
-
-        if (processor == null)
-            throw new ArgumentException(string.Format("Unknown media processor",
-                                                       mediaProcessorName));
-
-        return processor;
-    }
-```
 
 <!-- __ -->
 ### <a id="output_files"></a>Output files
@@ -151,86 +58,6 @@ When there is more than one input media file, Indexer generates a manifest file 
 | **JobResult.txt** |Output manifest, present only when indexing multiple files, containing the following information:<br/><br/><table border="1"><tr><th>InputFile</th><th>Alias</th><th>MediaLength</th><th>Error</th></tr><tr><td>a.mp4</td><td>Media_1</td><td>300</td><td>0</td></tr><tr><td>b.mp4</td><td>Media_2</td><td>0</td><td>3000</td></tr><tr><td>c.mp4</td><td>Media_3</td><td>600</td><td>0</td></tr></table><br/> |
 
 If not all input media files are indexed successfully, the indexing job fails with error code 4000. For more information, see [Error codes](#error_codes).
-
-## Index multiple files
-The following method uploads multiple media files as an asset, and creates a job to index all these files in a batch.
-
-A manifest file with the ".lst" extension is created and uploading into the asset. The manifest file contains the list of all the asset files. For more information, see [Task Preset for Azure Media Indexer](./legacy-components.md).
-
-```csharp
-    static bool RunBatchIndexingJob(string[] inputMediaFiles, string outputFolder)
-    {
-        // Create an asset and upload to storage.
-        IAsset asset = CreateAssetAndUploadMultipleFiles(inputMediaFiles,
-            "My Indexing Input Asset - Batch Mode",
-            AssetCreationOptions.None);
-
-        // Create a manifest file that contains all the asset file names and upload to storage.
-        string manifestFile = "input.lst";
-        File.WriteAllLines(manifestFile, asset.AssetFiles.Select(f => f.Name).ToArray());
-        var assetFile = asset.AssetFiles.Create(Path.GetFileName(manifestFile));
-        assetFile.Upload(manifestFile);
-
-        // Declare a new job.
-        IJob job = _context.Jobs.Create("My Indexing Job - Batch Mode");
-
-        // Get a reference to the Azure Media Indexer.
-        string MediaProcessorName = "Azure Media Indexer";
-        IMediaProcessor processor = GetLatestMediaProcessorByName(MediaProcessorName);
-
-        // Read configuration.
-        string configuration = File.ReadAllText("batch.config");
-
-        // Create a task with the encoding details, using a string preset.
-        ITask task = job.Tasks.AddNew("My Indexing Task - Batch Mode",
-            processor,
-            configuration,
-            TaskOptions.None);
-
-        // Specify the input asset to be indexed.
-        task.InputAssets.Add(asset);
-
-        // Add an output asset to contain the results of the job.
-        task.OutputAssets.AddNew("My Indexing Output Asset - Batch Mode", AssetCreationOptions.None);
-
-        // Use the following event handler to check job progress.
-        job.StateChanged += new EventHandler<JobStateChangedEventArgs>(StateChanged);
-
-        // Launch the job.
-        job.Submit();
-
-        // Check job execution and wait for job to finish.
-        Task progressJobTask = job.GetExecutionProgressTask(CancellationToken.None);
-        progressJobTask.Wait();
-
-        // If job state is Error, the event handling
-        // method for job progress should log errors.  Here we check
-        // for error state and exit if needed.
-        if (job.State == JobState.Error)
-        {
-            Console.WriteLine("Exiting method due to job error.");
-            return false;
-        }
-
-        // Download the job outputs.
-        DownloadAsset(task.OutputAssets.First(), outputFolder);
-
-        return true;
-    }
-
-    private static IAsset CreateAssetAndUploadMultipleFiles(string[] filePaths, string assetName, AssetCreationOptions options)
-    {
-        IAsset asset = _context.Assets.Create(assetName, options);
-
-        foreach (string filePath in filePaths)
-        {
-            var assetFile = asset.AssetFiles.Create(Path.GetFileName(filePath));
-            assetFile.Upload(filePath);
-        }
-
-        return asset;
-    }
-```
 
 ### Partially Succeeded Job
 If not all input media files are indexed successfully, the indexing job will fail with error code 4000. For more information, see [Error codes](#error_codes).
