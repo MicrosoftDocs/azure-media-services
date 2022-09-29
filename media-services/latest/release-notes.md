@@ -173,11 +173,9 @@ Customers in China can now access Azure Media Services in the China North 3 regi
 
 As Microsoft’s [Responsible AI Standards](https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly) outline, Microsoft is committed to fairness, privacy, security, and transparency with respect to AI systems. To better align our products to this new Standard and the [Limited Access policy](https://aka.ms/AAh91ff) for other Microsoft products, Azure Media Services will be retiring the following capabilities on September 14, 2023:
 
-- [Azure Media Redactor (RESTv2)](../previous/media-services-redactor-walkthrough.md)
-
-- [Face Detector preset](analyze-face-redaction-concept.md)
-
-- [Video Analyzer preset](analyze-video-audio-files-concept.md)
+* Azure Media Redactor (RESTv2)
+* Face Detector preset
+* Video Analyzer preset
 
 After **September 14, 2023**, any applications you have developed using the Azure Media Redactor, the Face Detector preset, or the Video Analyzer preset will begin experience errors or failed job submissions.
 
