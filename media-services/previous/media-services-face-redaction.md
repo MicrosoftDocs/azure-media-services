@@ -32,7 +32,7 @@ Facial redaction works by detecting faces in every frame of video and tracking t
 In addition to a fully automatic mode, there is a two-pass workflow, which allows the selection/de-selection of found faces via a list of IDs. Also, to make arbitrary per frame adjustments the MP uses a metadata file in JSON format. This workflow is split into **Analyze** and **Redact** modes. You can combine the two modes in a single pass that runs both tasks in one job; this mode is called **Combined**.
 
    > [!NOTE]
-   > Face Detector Media Processor has been deprecated as of June 2020, [Azure Media Services legacy components](./legacy-components.md). Consider using Azure Media Services v3 API.
+   > Face Detector Media Processor has been deprecated as of June 2020, [Azure Media Services legacy components](./legacy-components.md). Consider using Azure Media Services v3 API. There is no planned replacement for the China region.
 
 ### Combined mode
 
@@ -183,7 +183,7 @@ The Redaction MP provides high precision face location detection and tracking th
 The following program shows how to:
 
 1. Create an asset and upload a media file into the asset.
-2. Create a job with a face redaction task based on a configuration file that contains the following json preset: 
+2. Create a job with a face redaction task based on a configuration file that contains the following json preset:
 
     ```json
             {
@@ -277,7 +277,7 @@ namespace FaceRedaction
             // Add an output asset to contain the results of the job.
             task.OutputAssets.AddNew("My Face Redaction Output Asset", AssetCreationOptions.None);
 
-            // Use the following event handler to check job progress.  
+            // Use the following event handler to check job progress.
             job.StateChanged += new EventHandler<JobStateChangedEventArgs>(StateChanged);
 
             // Launch the job.
