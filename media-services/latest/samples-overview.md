@@ -4,7 +4,7 @@ description: This article is a listing of all of the Media Services code samples
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 06/27/2022
+ms.date: 09/29/2022
 ms.author: inhenkel
 ---
 
@@ -67,7 +67,6 @@ You'll find description and links to the samples you may be looking for in each 
 | [Encode a multi-channel audio source file](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_MultiChannel_Audio/) | This sample demonstrates how to create an encoding Transform that uses channel mappings and audio track selection from the input source to output two new AAC audio tracks. The standard encoder is limited to outputting 1 Stereo track, followed by a 5.1 surround sound audio track in AAC format.|
 | [Stitch and edit two assets together](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Stitch_Two_Assets/) | This sample demonstrates how to stitch and edit together two or more assets into a single MP4 file using the JobInputSequence as part of a job submission.|
 | **Analytics** ||
-| [Video Analytics](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoAnalytics/index.ts)|This sample illustrates how to create a video and audio analyzer transform, upload a video file to an input asset, submit a job with the transform and download the results for verification.|
 | [Basic Audio Analytics with per-job language override](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/AudioAnalytics/index.ts)|This sample illustrates how to create a audio analyzer transform using the basic mode.  It also shows how you can override the preset language on a per-job basis to avoid creating a transform for every language.  It also shows how to upload a media file to an input asset, submit a job with the transform and download the results for verification.|
 
 ## [Python](#tab/python/)
