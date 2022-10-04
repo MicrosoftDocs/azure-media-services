@@ -4,7 +4,7 @@ description: This article discusses Azure role-based access control (Azure RBAC)
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 07/06/2022
+ms.date: 09/29/2022
 ms.author: inhenkel
 ---
 
@@ -17,15 +17,6 @@ Currently, Azure Media Services does not define any custom roles specific to the
 ## Design principles
 
 One of the key design principles of the v3 API is to make the API more secure. v3 APIs do not return secrets or credentials on **Get** or **List** operations. The keys are always null, empty, or sanitized from the response. The user needs to call a separate action method to get secrets or credentials. The **Reader** role cannot call operations like Asset.ListContainerSas, StreamingLocator.ListContentKeys, ContentKeyPolicies.GetPolicyPropertiesWithSecrets. Having separate actions enables you to set more granular Azure RBAC security permissions in a custom role if desired.
-
-To list the operations Media Services supports, do:
-
-```csharp
-foreach (Microsoft.Azure.Management.Media.Models.Operation a in client.Operations.List())
-{
-    Console.WriteLine($"{a.Name} - {a.Display.Operation} - {a.Display.Description}");
-}
-```
 
 The [built-in role definitions](/azure/role-based-access-control/built-in-roles) article tells you exactly what the role grants.
 

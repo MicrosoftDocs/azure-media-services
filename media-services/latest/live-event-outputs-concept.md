@@ -4,17 +4,17 @@ description: This topic provides an overview of live events and live outputs in 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 09/29/2022
 ms.author: inhenkel
 ---
 # Live events and live outputs in Media Services
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Azure Media Services lets you deliver live events to your customers on the Azure cloud. To set up your live streaming events in Media Services v3, you need to understand the concepts discussed in this article.
+Azure Media Services lets you deliver live events to your customers on the Azure cloud.
 
 > [!TIP]
-> For customers migrating from Media Services v2 APIs, the **live event** entity replaces **Channel** in v2 and **live output** replaces **program**.
+> If you are migrating from Media Services v2 APIs, the **live event** entity replaces **Channel** in v2 and **live output** replaces **program**.
 
 ## Live events
 
@@ -38,8 +38,6 @@ You can send the contribution feed at resolutions up to 4K and at a frame rate o
 > [!NOTE]
 > Using a pass-through method is the most economical way to do live streaming when you're doing multiple events over a long period of time, and you have already invested in on-premises encoders. See [Pricing](https://azure.microsoft.com/pricing/details/media-services/) details.
 >
-
-See the .NET code example for creating a pass-through Live Event in [Live Event with DVR](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/4a436376e77bad57d6cbfdc02d7df6c615334574/Live/LiveEventWithDVR/Program.cs#L214).
 
 ### Live encoding
 
@@ -106,28 +104,6 @@ Once the live event is created, you can get ingest URLs that you'll provide to t
 
 > [!NOTE]
 > For an ingest URL to be static and predictable for use in a hardware encoder setup, set the **useStaticHostname** property to true and set the **accessToken** property to the same GUID on each creation.
-
-### Example LiveEvent and LiveEventInput configuration settings for a static (non random) ingest RTMP URL.
-
-```csharp
-             LiveEvent liveEvent = new LiveEvent(
-                    location: mediaService.Location,
-                    description: "Sample LiveEvent from .NET SDK sample",
-                    // Set useStaticHostname to true to make the ingest and preview URL host name the same.
-                    // This can slow things down a bit.
-                    useStaticHostname: true,
-
-                    // 1) Set up the input settings for the Live event...
-                    input: new LiveEventInput(
-                        streamingProtocol: LiveEventInputProtocol.RTMP,  // options are RTMP or Smooth Streaming ingest format.
-                                                                         // This sets a static access token for use on the ingest path.
-                                                                         // Combining this with useStaticHostname:true will give you the same ingest URL on every creation.
-                                                                         // This is helpful when you only want to enter the URL into a single encoder one time for this Live Event name
-                        accessToken: "acf7b6ef-8a37-425f-b8fc-51c2d6a5a86a",  // Use this value when you want to make sure the ingest URL is static and always the same. If omitted, the service will generate a random GUID value.
-                        accessControl: liveEventInputAccess, // controls the IP restriction for the source encoder.
-                        keyFrameIntervalDuration: "PT2S" // Set this to match the ingest encoder's settings
-                    ),
-```
 
 * Non static hostname
 
@@ -210,6 +186,7 @@ Once you have the stream flowing into the live event, you can begin the streamin
 AMS's default allocation is 5 live events per Media Services account. If you would like to increase this limit, please file a support ticket in the Azure portal. AMS is able to increase your live event limit depending on your streaming situation and regional datacenter availabilities.
 
 For detailed information about live outputs, see [Using a cloud DVR](live-event-cloud-dvr-time-how-to.md).
+
 ## Live event output questions
 
 See the [live event questions in the FAQ](frequently-asked-questions.yml). For information on live event quotas, see [quotas and limits](limits-quotas-constraints-reference.md)

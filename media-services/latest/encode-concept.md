@@ -67,8 +67,6 @@ The following built-in presets are currently supported:
 
 To see the most up-to-date presets list, see [built-in presets to be used for encoding videos](/rest/api/media/transforms/createorupdate#encodernamedpreset).
 
-To see how the presets are used, see [Uploading, encoding, and streaming files](stream-files-tutorial-with-api.md).
-
 ### StandardEncoderPreset
 
 [StandardEncoderPreset](/rest/api/media/transforms/createorupdate#standardencoderpreset) describes settings to be used when encoding the input video with the Standard Encoder. Use this preset when customizing Transform presets.
@@ -101,14 +99,3 @@ For more information, see [pricing](https://azure.microsoft.com/pricing/details/
 ## Encoding samples
 
 See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.
-
-## How-tos and Tutorials
-
-### .NET
-
-- [Encode a remote file based on URL and stream the video](stream-files-dotnet-quickstart.md?amspage=encode-concept)
-- [Upload, encode, and stream videos with Media Services v3](stream-files-tutorial-with-api.md?amspage=encode-concept)
-
-### CLI
-
-- [Encode a remote file based on URL and stream the video](stream-files-cli-quickstart.md?amspage=encode-concept)

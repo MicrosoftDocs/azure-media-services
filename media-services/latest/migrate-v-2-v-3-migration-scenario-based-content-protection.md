@@ -29,7 +29,7 @@ See content protection concepts, tutorials and how to guides at the end of this 
 
 The v3 API no longer supports use of the key delivery services as a stand-alone feature for content protection where the key delivery service can be used to deliver license for content that is streamed or delivered through other 3rd party origin servers.  This means that AMS no longer supports key-delivery only scenarios in the V3 API, and requires you to stream from AMS origin services using dynamic packaging and encryption when delivering with v3.
 
-Existing content that was encrypted with the v2 API and is delivered in a "hybrid' model will continue to work (keys will still be retrievable on the data-plane,) but the management of those keys (updates and edits) through the v2 management plane or v3 management plane would no longer work after February 29th, 2024.  
+Existing content that was encrypted with the v2 API and is delivered in a "hybrid' model will continue to work (keys will still be retrievable on the data-plane,) but the management of those keys (updates and edits) through the v2 management plane or v3 management plane would no longer work after February 29th, 2024.
 
 > [!NOTE]
 > All new content delivered using the v3 will only support content protection and streaming from AMS and no longer support "hybrid" mode.
@@ -105,7 +105,6 @@ You should first unpublish (remove all Streaming Locators) on the Asset via the 
 
 ### How to guides
 
-- [Get a signing key from the existing policy](drm-get-content-signing-key-policy-net-how-to.md)
 - [Offline FairPlay Streaming for iOS with Media Services v3](drm-offline-fairplay-for-ios-concept.md)
 - [Offline Widevine streaming for Android with Media Services v3](drm-offline-widevine-for-android.md)
 - [Offline PlayReady Streaming for Windows 10 with Media Services v3](drm-offline-playready-streaming-for-windows-10.md)

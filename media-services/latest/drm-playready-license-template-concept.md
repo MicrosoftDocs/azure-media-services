@@ -4,7 +4,7 @@ description: Learn about Azure Media Services v3 with the PlayReady license temp
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/08/2022
+ms.date: 09/29/2022
 ms.author: inhenkel
 ---
 # Media Services PlayReady license templates
@@ -99,31 +99,10 @@ The XML conforms to the PlayReady license template XML schema defined in the [Pl
 
 Media Services provides types that you can use to configure a PlayReady license template.
 
-The snippet that follows uses Media Services .NET classes to configure the PlayReady license template. The classes are defined in the [Microsoft.Azure.Management.Media.Models](/dotnet/api/microsoft.azure.management.media.models) namespace. The snippet configures the PlayRight of the PlayReady license. PlayRight grants the user the ability to play back the content subject to any restrictions configured in the license and on the PlayRight itself (for playback-specific policy). Much of the policy on a PlayRight concerns output restriction that control the types of outputs that the content can be played over. It also includes any restrictions that must be put in place when a given output is used. For example, if DigitalVideoOnlyContentRestriction is enabled, the DRM runtime only allows the video to be displayed over digital outputs. (Analog video outputs aren't allowed to pass the content.)
+You can find samples for configuring license templates on the [Samples](samples-overview.md) page.
 
 > [!IMPORTANT]
 > PlayReady license has restrictions that are powerful. If the output protections are too restrictive, the content might be unplayable on some clients. For more information, see the [PlayReady Compliance Rules](https://www.microsoft.com/playready/licensing/compliance/).
-
-### Configure PlayReady license template with .NET
-
-```csharp
-ContentKeyPolicyPlayReadyLicense objContentKeyPolicyPlayReadyLicense;
-objContentKeyPolicyPlayReadyLicense = new ContentKeyPolicyPlayReadyLicense
-{
-    AllowTestDevices = true,
-    BeginDate = new DateTime(2016, 1, 1),
-    ContentKeyLocation = new ContentKeyPolicyPlayReadyContentEncryptionKeyFromHeader(),
-    ContentType = ContentKeyPolicyPlayReadyContentType.UltraVioletStreaming,
-    LicenseType = drmSettings.EnableOfflineMode ? ContentKeyPolicyPlayReadyLicenseType.Persistent : ContentKeyPolicyPlayReadyLicenseType.NonPersistent,
-    PlayRight = new ContentKeyPolicyPlayReadyPlayRight
-    {
-        ImageConstraintForAnalogComponentVideoRestriction = true,
-        ExplicitAnalogTelevisionOutputRestriction = new ContentKeyPolicyPlayReadyExplicitAnalogTelevisionRestriction(true, 2),
-        AllowPassingVideoContentToUnknownOutput = ContentKeyPolicyPlayReadyUnknownOutputPassingOption.Allowed,
-        FirstPlayExpiration = TimeSpan.FromSeconds(20.0),
-    }
-};
-```
 
 ## <a id="schema"></a>PlayReady license template XML schema
 
