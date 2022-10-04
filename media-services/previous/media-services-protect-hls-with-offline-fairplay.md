@@ -2,21 +2,15 @@
 title: Protect HLS content with offline Apple FairPlay - Azure | Microsoft Docs
 description: This topic gives an overview and shows how to use Azure Media Services to dynamically encrypt your HTTP Live Streaming (HLS) content with Apple FairPlay in offline mode.
 services: media-services
-keywords: HLS, DRM, FairPlay Streaming (FPS), Offline, iOS 10
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: steveng
-editor: ''
+ms.author: inhenkel
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
 ms.topic: article
 ms.date: 03/10/2021
-ms.author: willzhan
-ms.reviewer: dwgeo
-ms.custom: devx-track-csharp
 ---
+
+<!-- William Zhan article -->
+
 # Offline FairPlay Streaming for iOS
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -73,7 +67,7 @@ if (objDRMSettings.EnableOfflineMode)
             pfxPassword,
             pfxPasswordId,
             askId,
-            iv, 
+            iv,
             RentalAndLeaseKeyType.PersistentUnlimited,
             0x9999);
     }
@@ -91,7 +85,7 @@ if (objDRMSettings.EnableOfflineMode)
 ## Code change in the asset delivery policy configuration
 The second change is to add the third key into Dictionary<AssetDeliveryPolicyConfigurationKey, string>.
 Add AssetDeliveryPolicyConfigurationKey as shown here:
- 
+
 ```csharp
 // FPS offline mode
     if (drmSettings.EnableOfflineMode)
@@ -117,18 +111,18 @@ After this step, the <Dictionary_AssetDeliveryPolicyConfigurationKey> string in 
 Now your Media Services account is configured to deliver offline FairPlay licenses.
 
 ## Sample iOS Player
-FPS offline-mode support is available only on iOS 10 and later. The FPS Server SDK (version 3.0 or later) contains the document and sample for FPS offline mode. 
+FPS offline-mode support is available only on iOS 10 and later. The FPS Server SDK (version 3.0 or later) contains the document and sample for FPS offline mode.
 Specifically, FPS Server SDK (version 3.0 or later) contains the following two items related to offline mode:
 
 * Document: "Offline Playback with FairPlay Streaming and HTTP Live Streaming." Apple, September 14, 2016. In FPS Server SDK version 4.0, this document is merged into the main FPS document.
-* Sample code: HLSCatalog sample for FPS offline mode in the \FairPlay Streaming Server SDK version 3.1\Development\Client\HLSCatalog_With_FPS\HLSCatalog\. 
+* Sample code: HLSCatalog sample for FPS offline mode in the \FairPlay Streaming Server SDK version 3.1\Development\Client\HLSCatalog_With_FPS\HLSCatalog\.
 In the HLSCatalog sample app, the following code files are used to implement offline-mode features:
 
     - AssetPersistenceManager.swift code file: AssetPersistenceManager is the main class in this sample that demonstrates how to:
 
         - Manage downloading HLS streams, such as the APIs used to start and cancel downloads and to delete existing assets off devices.
         - Monitor the download progress.
-    - AssetListTableViewController.swift and AssetListTableViewCell.swift code files: AssetListTableViewController is the main interface of this sample. It provides a list of assets the sample can use to play, download, delete, or cancel a download. 
+    - AssetListTableViewController.swift and AssetListTableViewCell.swift code files: AssetListTableViewController is the main interface of this sample. It provides a list of assets the sample can use to play, download, delete, or cancel a download.
 
 These steps show how to set up a running iOS player. Assuming you start from the HLSCatalog sample in FPS Server SDK version 4.0.1, make the following code changes:
 
@@ -136,17 +130,17 @@ In HLSCatalog\Shared\Managers\ContentKeyDelegate.swift, implement the method `re
 
 ```swift
     var ckcData: Data? = nil
-    
+
     let semaphore = DispatchSemaphore(value: 0)
     let postString = "spc=\(spcData.base64EncodedString())&assetId=\(assetIDString)"
-    
+
     if let postData = postString.data(using: .ascii, allowLossyConversion: true), let drmServerUrl = URL(string: self.drmUrl) {
         var request = URLRequest(url: drmServerUrl)
         request.httpMethod = "POST"
         request.setValue(String(postData.count), forHTTPHeaderField: "Content-Length")
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpBody = postData
-        
+
         URLSession.shared.dataTask(with: request) { (data, _, error) in
             if let data = data, var responseString = String(data: data, encoding: .utf8) {
                 responseString = responseString.replacingOccurrences(of: "<ckc>", with: "").replacingOccurrences(of: "</ckc>", with: "")
@@ -154,13 +148,13 @@ In HLSCatalog\Shared\Managers\ContentKeyDelegate.swift, implement the method `re
             } else {
                 print("Error encountered while fetching FairPlay license for URL: \(self.drmUrl), \(error?.localizedDescription ?? "Unknown error")")
             }
-            
+
             semaphore.signal()
             }.resume()
     } else {
         fatalError("Invalid post data")
     }
-    
+
     semaphore.wait()
     return ckcData
 ```
@@ -176,7 +170,7 @@ func requestApplicationCertificate() throws -> Data {
         } catch {
             print("Error loading FairPlay application certificate: \(error)")
         }
-        
+
         return applicationCertificate
     }
 ```
@@ -202,7 +196,7 @@ With either the version 3 or version 4 sample of the FPS Server SDK, if a master
 ## FAQ
 The following frequently asked questions provide assistance with troubleshooting:
 
-- **Why does only audio play but not video during offline mode?** This behavior seems to be by design of the sample app. When an alternate audio track is present (which is the case for HLS) during offline mode, both iOS 10 and iOS 11 default to the alternate audio track. To compensate this behavior for FPS offline mode, remove the alternate audio track from the stream. To do this on Media Services, add the dynamic manifest filter "audio-only=false." In other words, an HLS URL ends with .ism/manifest(format=m3u8-aapl,audio-only=false). 
+- **Why does only audio play but not video during offline mode?** This behavior seems to be by design of the sample app. When an alternate audio track is present (which is the case for HLS) during offline mode, both iOS 10 and iOS 11 default to the alternate audio track. To compensate this behavior for FPS offline mode, remove the alternate audio track from the stream. To do this on Media Services, add the dynamic manifest filter "audio-only=false." In other words, an HLS URL ends with .ism/manifest(format=m3u8-aapl,audio-only=false).
 - **Why does it still play audio only without video during offline mode after I add audio-only=false?** Depending on the content delivery network (CDN) cache key design, the content might be cached. Purge the cache.
 - **Is FPS offline mode also supported on iOS 11 in addition to iOS 10?** Yes. FPS offline mode is supported for iOS 10 and iOS 11.
 - **Why can't I find the document "Offline Playback with FairPlay Streaming and HTTP Live Streaming" in the FPS Server SDK?** Since FPS Server SDK version 4, this document was merged into the "FairPlay Streaming Programming Guide."
@@ -210,7 +204,7 @@ The following frequently asked questions provide assistance with troubleshooting
 `Microsoft.WindowsAzure.MediaServices.Client.FairPlay.FairPlayConfiguration.CreateSerializedFairPlayOptionConfiguration(objX509Certificate2, pfxPassword, pfxPasswordId, askId, iv, RentalAndLeaseKeyType.PersistentUnlimited, 0x9999);`
 
     For the documentation for this API, see [FairPlayConfiguration.CreateSerializedFairPlayOptionConfiguration Method](/dotnet/api/microsoft.windowsazure.mediaservices.client.fairplay.fairplayconfiguration.createserializedfairplayoptionconfiguration). The parameter represents the duration of the offline rental, with second as the unit.
-- **What is the downloaded/offline file structure on iOS devices?** The downloaded file structure on an iOS device looks like the following screenshot. The `_keys` folder stores downloaded FPS licenses, with one store file for each license service host. The `.movpkg` folder stores audio and video content. The first folder with a name that ends with a dash followed by a numeric contains video content. The numeric value is the PeakBandwidth of the video renditions. The second folder with a name that ends with a dash followed by 0 contains audio content. The third folder named "Data" contains the master playlist of the FPS content. Finally, boot.xml provides a complete description of the `.movpkg` folder content. 
+- **What is the downloaded/offline file structure on iOS devices?** The downloaded file structure on an iOS device looks like the following screenshot. The `_keys` folder stores downloaded FPS licenses, with one store file for each license service host. The `.movpkg` folder stores audio and video content. The first folder with a name that ends with a dash followed by a numeric contains video content. The numeric value is the PeakBandwidth of the video renditions. The second folder with a name that ends with a dash followed by 0 contains audio content. The third folder named "Data" contains the master playlist of the FPS content. Finally, boot.xml provides a complete description of the `.movpkg` folder content.
 
 ![Offline FairPlay iOS sample app file structure](media/media-services-protect-hls-with-offline-FairPlay/media-services-offline-FairPlay-file-structure.png)
 

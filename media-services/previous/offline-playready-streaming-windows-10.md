@@ -2,19 +2,14 @@
 title: Configure your account for offline streaming of PlayReady protected content - Azure
 description: This article shows how to configure your Azure Media Services account for streaming PlayReady for Windows 10 offline.
 services: media-services
-keywords: DASH, DRM, Widevine Offline Mode, ExoPlayer, Android
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: steveng
-editor: ''
+ms.author: inhenkel
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: 3/10/2021
-ms.author: willzhan
-ms.custom: devx-track-csharp
+ms.date: 10/04/2022
 ---
+
+<!-- William Zhan article -->
 
 # Offline PlayReady Streaming for Windows 10
 
@@ -38,19 +33,19 @@ This section gives some background on offline mode playback, especially why:
 * In some countries/regions, Internet availability and/or bandwidth is still limited. Users may choose to download first to be able to watch content in high enough resolution for satisfactory viewing experience. In this case, more often, the issue is not network availability, rather it is limited network bandwidth. OTT/OVP providers are asking for offline mode support.
 * As disclosed at Netflix 2016 Q3 shareholder conference, downloading content is a “oft-requested feature”, and “we are open to it” said by Reed Hastings, Netflix CEO.
 * Some content providers may disallow DRM license delivery beyond a country/region's border. If a user needs to travel abroad and still wants to watch content, offline download is needed.
- 
+
 The challenge we face in implementing offline mode is the following:
 
 * MP4 is supported by many players, encoder tools, but there is no binding between MP4 container and DRM;
 * In the long term, CFF with CENC is the way to go. However, today, the tools/player support ecosystem is not there yet. We need a solution, today.
- 
+
 The idea is: smooth streaming ([PIFF](/iis/media/smooth-streaming/protected-interoperable-file-format)) file format with H264/AAC has a binding with PlayReady (AES-128 CTR). Individual smooth streaming .ismv file (assuming audio is muxed in video) is itself a fMP4 and can be used for playback. If a smooth streaming content goes through PlayReady encryption, each .ismv file becomes a PlayReady protected fragmented MP4. We can choose an .ismv file with the preferred bitrate and rename it as .mp4 for download.
 
 There are two options for hosting the PlayReady protected MP4 for progressive download:
 
 * One can put this MP4 in the same container/media service asset and leverage Azure Media Services streaming endpoint for progressive download;
 * One can use SAS locator for progressive download directly from Azure Storage, bypassing Azure Media Services.
- 
+
 You can use two types of PlayReady license delivery:
 
 * PlayReady license delivery service in Azure Media Services;
