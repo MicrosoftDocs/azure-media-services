@@ -12,20 +12,18 @@ ms.date: 10/04/2022
 
 You can use several media players with Media Services.
 
-## Azure Media Player
+## List of players
 
-Azure Media Player is a video player for a wide variety of browsers and devices. Azure Media Player uses industry standards, such as HTML5, Media Source Extensions (MSE), and Encrypted Media Extensions (EME) to provide an enriched adaptive streaming experience. When these standards aren't available on a device or in a browser, Azure Media Player uses Flash and Silverlight as fallback technology. Whatever of the playback technology used, developers have a unified JavaScript interface to access APIs. Content served by Azure Media Services can be played across a wide range of devices and browsers without any extra effort.
+- [Azure Media Player](../azure-media-player/azure-media-player-overview.md)
+- [Shaka](https://developers.google.com/widevine/open-source/shaka-player)
+- [Video.js](https://docs.videojs.com)
+- [hls.js](https://hls-js.netlify.app/demo)
+- [dash.js](http://cdn.dashjs.org/latest/jsdoc/index.html)
+- [ExoPlayer](https://exoplayer.dev/)
+- [AVPlayer](https://developer.apple.com/documentation/avfoundation/avplayer)
+- [THEOplayer](https://www.theoplayer.com/)
+- [NexPlayer](https://nexplayersdk.com/)
 
-See the [Azure Media Player documentation](../azure-media-player/azure-media-player-overview.md).
+## Samples
 
-## Shaka
-
-Shaka Player is an open-source JavaScript library for adaptive media. It plays adaptive media formats (such as DASH and HLS) in a browser, without using plugins or Flash. Instead, the Shaka Player uses the open web standards Media Source Extensions and Encrypted Media Extensions.
-
-See [How to use the Shaka player with Azure Media Services](player-shaka-player-how-to.md).
-
-## Video.js
-
-Video.js is a video player that plays adaptive media formats (such as DASH and HLS) in a browser. Video.js uses the open web standards MediaSource Extensions and Encrypted Media Extensions. It supports video playback on desktops and mobile devices. Its official documentation can be found at https://docs.videojs.com/.
-
-See [How to use the Video.js player with Azure Media Services](player-how-to-video-js-player.md).
+To get started with streaming videos with these players, see the [Media Services 3rd Party Player Samples](https://github.com/Azure-Samples/media-services-3rdparty-player-samples).
