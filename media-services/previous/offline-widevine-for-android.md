@@ -2,7 +2,7 @@
 title: Configure your account for offline streaming of Widevine protected content - Azure
 description: This topic shows how to configure your Azure Media Services account for offline streaming of Widevine protected content.
 author: IngridAtMicrosoft
-ms.author: willzhan
+ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
 ms.date: 10/04/2022
