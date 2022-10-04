@@ -663,12 +663,8 @@
     - name: Azure Media Player full set up
       href: ../azure-media-player/azure-media-player-full-setup.md
       displayName: AMP, embed, iframe, player, player control, setup player, publish, React, Vue, Angular, javascript, TypeScript, node, node.js, playback, stream, CMS, web page, HTML, HTML5, MSE, EME, HTML video, video tag
-    - name: Use the Video.js player
-      href: player-how-to-video-js-player.md
-      displayName: Videojs, Video.js, player, player setup, embed, iframe, React, Vue, Angular, javascript, TypeScript, playback, stream, CMS, web page, HTML, HTML5, MSE, EME, video tag
-    - name: Use the Shaka video player
-      href: player-shaka-player-how-to.md
-      displayName: Shaka, Shaka player, Google, Google Shaka, player, player setup, embed, iframe, React, Vue, Angular, javascript, TypeScript, playback, stream, CMS, web page, HTML, HTML5, MSE, EME, video tag
+    - name: 3rd party player samples
+      href: https://github.com/Azure-Samples/media-services-3rdparty-player-samples
     - name: Pass authentication tokens
       href: security-pass-authentication-tokens-how-to.md
       displayName: token auth, token, token authentication, player
