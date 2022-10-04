@@ -42,7 +42,7 @@ landingContent:
           - text: Monitoring
             url: monitoring/reacting-to-media-services-events.md
           - text: Player clients
-            url: player-use-azure-media-player-how-to.md
+            url: player-media-players-concept.md
           - text: Developing with v3 API guidance
             url: media-services-apis-overview.md
           - text: Migrating from v2

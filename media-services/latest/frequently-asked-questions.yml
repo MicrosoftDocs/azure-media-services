@@ -295,7 +295,7 @@ sections:
     questions:
     - question: Which video players can I use with Media Services?
       answer: |
-        Media Services works with Azure Media Player, Shaka, and Video.js. See the [Azure Media Player documentation](../azure-media-player/azure-media-player-overview.md), [How to use the Shaka player with Azure Media Services](./player-shaka-player-how-to.md), or [How to use the Video.js player with Azure Media Services](./player-media-players-concept.md).
+        Media Services works with many players. See the [list of compatible media players](player-media-players-concept.md) or try the [3rd party player samples](https://github.com/Azure-Samples/media-services-3rdparty-player-samples).
 
   - name: High availability
     questions:

@@ -144,7 +144,10 @@
   - name: Assets
     href: assets-concept.md
     displayName: assets, containers, storage, media files, upload
-  - name: Captions, subtitles and new audio tracks
+  - name: Media players
+    href: player-media-players-concept.md
+    displayName: Azure Media Player, Shaka, Video.js, hls.js, dash.js, ExoPlayer, AVPlayer, THEOplayer, NexPlayer, player, javascript, iOS, Android, playback, accessibility, streaming, web page, HTML, HTML5, AvPlayer,hls.js, shaka, video.js, Bitmovin, Theo player, azure media player, AMP
+  - name: Captions, subtitles and audio tracks
     items:
     - name: Captions and subtitles
       href: captions-text-track-concept.md
@@ -342,11 +345,6 @@
         - name: Content key policies
           href: drm-content-key-policy-concept.md
           displayName: content key, policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000
-  - name: Compatible players
-    items:
-    - name: Media players for Media Services
-      href: player-media-players-concept.md
-      displayName: player, javascript, iOS, Android, playback, accessibility, streaming, web page, HTML, HTML5, AvPlayer,hls.js, shaka, video.js, Bitmovin, Theo player, azure media player, AMP,
   - name: High availability
     items:
     - name: Availability Zones
@@ -665,12 +663,8 @@
     - name: Azure Media Player full set up
       href: ../azure-media-player/azure-media-player-full-setup.md
       displayName: AMP, embed, iframe, player, player control, setup player, publish, React, Vue, Angular, javascript, TypeScript, node, node.js, playback, stream, CMS, web page, HTML, HTML5, MSE, EME, HTML video, video tag
-    - name: Use the Video.js player
-      href: player-how-to-video-js-player.md
-      displayName: Videojs, Video.js, player, player setup, embed, iframe, React, Vue, Angular, javascript, TypeScript, playback, stream, CMS, web page, HTML, HTML5, MSE, EME, video tag
-    - name: Use the Shaka video player
-      href: player-shaka-player-how-to.md
-      displayName: Shaka, Shaka player, Google, Google Shaka, player, player setup, embed, iframe, React, Vue, Angular, javascript, TypeScript, playback, stream, CMS, web page, HTML, HTML5, MSE, EME, video tag
+    - name: 3rd party player samples
+      href: https://github.com/Azure-Samples/media-services-3rdparty-player-samples
     - name: Pass authentication tokens
       href: security-pass-authentication-tokens-how-to.md
       displayName: token auth, token, token authentication, player
