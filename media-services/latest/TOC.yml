@@ -144,7 +144,10 @@
   - name: Assets
     href: assets-concept.md
     displayName: assets, containers, storage, media files, upload
-  - name: Captions, subtitles and new audio tracks
+  - name: Media players
+    href: player-media-players-concept.md
+    displayName: Azure Media Player, Shaka, Video.js, hls.js, dash.js, ExoPlayer, AVPlayer, THEOplayer, NexPlayer, player, javascript, iOS, Android, playback, accessibility, streaming, web page, HTML, HTML5, AvPlayer,hls.js, shaka, video.js, Bitmovin, Theo player, azure media player, AMP
+  - name: Captions, subtitles and audio tracks
     items:
     - name: Captions and subtitles
       href: captions-text-track-concept.md
@@ -342,11 +345,6 @@
         - name: Content key policies
           href: drm-content-key-policy-concept.md
           displayName: content key, policy, access control, policies, content protection, DRM, FairPlay, Widevine, PlayReady, AES, AES-128, common encryption, CENC, CBCS, security, secure, encrypt, protect, authorization, keys, content keys, key delivery, license, license template, Playready license, SL3000
-  - name: Compatible players
-    items:
-    - name: Media players for Media Services
-      href: player-media-players-concept.md
-      displayName: player, javascript, iOS, Android, playback, accessibility, streaming, web page, HTML, HTML5, AvPlayer,hls.js, shaka, video.js, Bitmovin, Theo player, azure media player, AMP,
   - name: High availability
     items:
     - name: Availability Zones

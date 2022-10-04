@@ -4,7 +4,7 @@ description: This article is a listing of all of the Media Services code samples
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 09/29/2022
+ms.date: 10/04/2022
 ms.author: inhenkel
 ---
 
@@ -13,6 +13,10 @@ ms.author: inhenkel
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 This article contains a list of all the samples available for Media Services organized by method and SDK.
+
+## 3rd party player samples
+
+Try various players such as Shaka, Video.js, and THEOPlayer with the [3rd party player samples](https://github.com/Azure-Samples/media-services-3rdparty-player-samples).
 
 ## Samples by SDK
 
