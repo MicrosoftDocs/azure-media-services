@@ -152,14 +152,14 @@
     - name: Tracks
       href: tracks-concept.md
       displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
+  - name: Transforms and jobs
+    href: transform-jobs-concept.md
+    displayName: preset, schema, transform, job, template, encode, encoding, analyze, speech to text, captions, subtitles, transcode
   - name: Encoding
     items:
     - name: Overview
       href: encode-concept.md
       displayName: encode, transcode, encoding, presets, jobs, adaptive, bitrate, billing, h264, h265, aac, audio, video, MP4, HLS, DASH, Smooth
-    - name: Transforms and jobs
-      href: transform-jobs-concept.md
-      displayName: preset, schema, transform, job, template, encode, encoding, analyze, speech to text, captions, subtitles, transcode
     - name: Supported file formats
       href: encode-media-encoder-standard-formats-reference.md
       displayName: formats, codecs, MP4, TS, MOV, AAC, H264, H265, H.264, H.265, HEVC, WebM, Ogg, Theora, MP3, HE-AAC, Dolby, encode, encoder, transcode, transcoder, bitrate, resolution, formats, containers, codecs, audio, video, supported formats
