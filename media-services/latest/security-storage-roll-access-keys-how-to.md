@@ -57,7 +57,3 @@ $storageAccountId = "/subscriptions/$subscriptionId/resourceGroups/$resourceGrou
 
 Sync-AzMediaServiceStorageKeys -ResourceGroupName $resourceGroupName -AccountName $mediaAccountName -StorageAccountId $storageAccountId
 ```
-
-## Steps to add storage accounts to your AMS account
-
-The following article shows how to add storage accounts to your AMS account: [Attach multiple storage accounts to a Media Services account](storage-managing-multiple-storage-accounts-how-to.md).

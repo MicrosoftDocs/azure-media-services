@@ -4,7 +4,7 @@ description: Azure Media Services v3 provides a face detection and redaction (bl
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 09/29/2022
 ms.author: johndeu
 ---
 # Find and redact (blur) faces with the Face Detector preset
@@ -12,8 +12,6 @@ ms.author: johndeu
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 Azure Media Services v3 API includes a Face Detector preset that offers scalable face detection and redaction (blurring) in the cloud. Face redaction enables you to modify your video in order to blur faces of selected individuals. You may want to use the face redaction service in public safety and news media scenarios. A few minutes of footage that contains multiple faces can take hours to redact manually, but with this preset the face redaction process will require just a few simple steps.
-
-This article gives details about **Face Detector Preset** and shows how to use it with Azure Media Services SDK for .NET.
 
 ## Compliance, privacy, and security
 
@@ -160,34 +158,3 @@ You can find samples of the blur types below.
 The Redaction MP provides high precision face location detection and tracking that can detect up to 64 human faces in a video frame. Frontal faces provide the best results, while side faces and small faces (less than or equal to 24x24 pixels) are challenging.
 
 [!INCLUDE [media-services-analytics-output-json](./includes/media-services-analytics-output-json.md)]
-
-## .NET sample code
-
-The following program shows how to use the **Combined** single-pass redaction mode:
-
-- Create an asset and upload a media file into the asset.
-- Configure the Face Detector preset that uses the mode and blurType settings.
-- Create a new Transform using the Face Detector preset
-- Download the output redacted video file.
-
-## Download and configure the sample
-
-Clone a GitHub repository that contains the .NET sample to your machine using the following command:
-
- ```bash
- git clone https://github.com/Azure-Samples/media-services-v3-dotnet.git
- ```
-
-The sample is located in the [FaceRedactor](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoAnalytics/FaceRedactor) folder. Open [appsettings.json](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/main/VideoAnalytics/FaceRedactor/appsettings.json) in your downloaded project. Replace the values with the credentials you got from [accessing APIs](./access-api-howto.md).
-
-**Optionally** you can copy the **[sample.env](https://github.com/Azure-Samples/media-services-v3-dotnet/blob/main/sample.env)** file at the root of the repository and fill out the details in there, and rename that file to **.env** (Note the dot on the front!) so that it can be used across all sample projects in the repository.  This eliminates the need to have a populated appsettings.json file in each sample, and also protects you from checking any settings into your own GitHub cloned repositories.
-
-#### Examples
-
-This code shows how to set up the **FaceDetectorPreset** for a **Combined** mode blur.
-
-[!code-csharp[Main](~/../media-services-v3-dotnet/VideoAnalytics/FaceRedactor/Program.cs#FaceDetectorPreset)]
-
-This code sample shows how the preset is passed into a Transform object during creation. After creating the Transform, jobs may be submitted directly to it.
-
-[!code-csharp[Main](~/../media-services-v3-dotnet/VideoAnalytics/FaceRedactor/Program.cs#FaceDetectorPresetTransform)]

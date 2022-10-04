@@ -110,10 +110,6 @@ For customers using the Indexer v1 processor in the v2 API, you need to create a
 - [Output metadata](output-metadata-schema.md)
 - [Dynamic packaging in Media Services v3: audio codecs](encode-dynamic-packaging-concept.md#audio-codecs-supported-by-dynamic-packaging)
 
-### Tutorials
-
-- [Tutorial: Upload, encode, and stream videos with Media Services v3](stream-files-tutorial-with-api.md)
-
 ## Samples
 
 You can also [compare the V2 and V3 code in the code samples](migrate-v-2-v-3-migration-samples.md).

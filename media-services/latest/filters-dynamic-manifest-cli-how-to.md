@@ -29,7 +29,7 @@ This topic shows how to configure a filter for a Video on-Demand asset and use C
 The following example defines the track selection conditions that are added to the final manifest. This filter includes any audio tracks that are EC-3 and any video tracks that have bitrate in the 0-1000000 range.
 
 > [!TIP]
-> If you plan to define **Filters** in REST, notice that you need to include the "Properties" wrapper JSON object.  
+> If you plan to define **Filters** in REST, notice that you need to include the "Properties" wrapper JSON object.
 
 ```json
 [
@@ -78,7 +78,7 @@ Also, see [JSON examples for filters](/rest/api/media/accountfilters/createorupd
 
 ## Create asset filters
 
-The following [az ams asset-filter](/cli/azure/ams/asset-filter) command creates an asset filter with filter track selections that were [defined earlier](#define-a-filter). 
+The following [az ams asset-filter](/cli/azure/ams/asset-filter) command creates an asset filter with filter track selections that were [defined earlier](#define-a-filter).
 
 ```azurecli
 az ams asset-filter create -a amsAccount -g resourceGroup -n filterName --asset-name assetName --tracks @tracks.json
@@ -90,7 +90,7 @@ Also, see [JSON examples for filters](/rest/api/media/assetfilters/createorupdat
 
 ### Filter your HLS or DASH manifests on creation a Streaming Locator
 
-Media Services allows you to create a Streaming Locator that is pre-filtered by passing in a collection of filters in the filter property on the streaming locator entity. This allows you to pre-filter all manifests on the streaming locator.  The original manifest is no longer available through this streaming locator, and only the filtered response will be accessible to clients requesting the URLs for DASH or HLS from the filtered streaming locator.  
+Media Services allows you to create a Streaming Locator that is pre-filtered by passing in a collection of filters in the filter property on the streaming locator entity. This allows you to pre-filter all manifests on the streaming locator.  The original manifest is no longer available through this streaming locator, and only the filtered response will be accessible to clients requesting the URLs for DASH or HLS from the filtered streaming locator.
 This is helpful in situations where you want to only publish a portion of an asset, and prevent users from gaining access to the full original manifest for the asset by manipulating the query string of the HLS or DASH manifest URL. We recommend that you use this feature if you want to apply filters but do not want to expose the filter names in the URL for customers to manipulate on their own.
 
 You can specify a list of [asset or account filters](filters-concept.md) on your [Streaming Locator](/rest/api/media/streaminglocators/create#request-body). The [Dynamic Packager](encode-dynamic-packaging-concept.md) applies this list of filters together with those your client specifies in the URL. This combination generates a [Dynamic Manifest](filters-dynamic-manifest-concept.md), which is based on filters in the URL + filters you specify on the Streaming Locator.
@@ -108,10 +108,10 @@ The following CLI code shows how to create a Streaming Locator and specify `filt
 
 ```azurecli
 az ams streaming-locator create -a amsAccount -g resourceGroup -n streamingLocatorName \
-                                --asset-name assetName \                               
+                                --asset-name assetName \
                                 --streaming-policy-name policyName \
                                 --filters filterName1 filterName2
-                                
+
 ```
 
 ## Stream using filters
@@ -125,10 +125,6 @@ The following table shows some examples of URLs with filters:
 |HLS|`https://amsv3account-usw22.streaming.media.azure.net/fecebb23-46f6-490d-8b70-203e86b0df58/bigbuckbunny.ism/manifest(format=m3u8-aapl,filter=myAccountFilter)`|
 |MPEG DASH|`https://amsv3account-usw22.streaming.media.azure.net/fecebb23-46f6-490d-8b70-203e86b0df58/bigbuckbunny.ism/manifest(format=mpd-time-csf,filter=myAssetFilter)`|
 |Smooth Streaming|`https://amsv3account-usw22.streaming.media.azure.net/fecebb23-46f6-490d-8b70-203e86b0df58/bigbuckbunny.ism/manifest(filter=myAssetFilter)`|
-
-## Next step
-
-[Stream videos](stream-files-tutorial-with-api.md)
 
 ## See also
 
