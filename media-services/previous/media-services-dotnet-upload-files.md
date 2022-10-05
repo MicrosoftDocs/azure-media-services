@@ -1,21 +1,15 @@
 ---
-title: Upload files into a Media Services account using .NET  | Microsoft Docs
+title: Upload files into a Media Services account using .NET
 description: Learn how to get media content into Media Services by creating and uploading assets using .NET.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: c9c86380-9395-4db8-acea-507c52066f73
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: c9c86380-9395-4db8-acea-507c52066f73 -->
+
 # Upload files into a Media Services account using .NET
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -29,7 +23,7 @@ The files in the asset are called **Asset Files**. The **AssetFile** instance an
 ## Considerations
 
 The following considerations apply:
- 
+
  * Media Services uses the value of the IAssetFile.Name property when building URLs for the streaming content (for example, http://{AMSAccount}.origin.mediaservices.windows.net/{GUID}/{IAssetFile.Name}/streamingParameters.) For this reason, percent-encoding is not allowed. The value of the **Name** property cannot have any of the following [percent-encoding-reserved characters](https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters): !*'();:@&=+$,/?%#[]". Also, there can only be one '.' for the file name extension.
 * The length of the name should not be greater than 260 characters.
 * There is a limit to the maximum file size supported for processing in Media Services. See [this](media-services-quotas-and-limitations.md) article for details about the file size limitation.
@@ -38,16 +32,16 @@ The following considerations apply:
 When you create assets, you can specify the following encryption options:
 
 * **None** - No encryption is used. This is the default value. When using this option your content is not protected in transit or at rest in storage.
-  If you plan to deliver an MP4 using progressive download, use this option: 
+  If you plan to deliver an MP4 using progressive download, use this option:
 * **CommonEncryption** - Use this option if you are uploading content that has already been encrypted and protected with Common Encryption or PlayReady DRM (for example, Smooth Streaming protected with PlayReady DRM).
 * **EnvelopeEncrypted** – Use this option if you are uploading HLS encrypted with AES. Note that the files must have been encoded and encrypted by Transform Manager.
 * **StorageEncrypted** - Encrypts your clear content locally using AES-256 bit encryption and then uploads it to Azure Storage where it is stored encrypted at rest. Assets protected with Storage Encryption are automatically unencrypted and placed in an encrypted file system prior to encoding, and optionally re-encrypted prior to uploading back as a new output asset. The primary use case for Storage Encryption is when you want to secure your high-quality input media files with strong encryption at rest on disk.
-  
+
     Media Services provides on-disk storage encryption for your assets, not over-the-wire like Digital Rights Manager (DRM).
-  
+
     If your asset is storage encrypted, you must configure asset delivery policy. For more information, see [Configuring asset delivery policy](media-services-dotnet-configure-asset-delivery-policy.md).
 
-If you specify for your asset to be encrypted with a **CommonEncrypted** option, or an **EnvelopeEncrypted** option, you need to associate your asset with a **ContentKey**. For more information, see [How to create a ContentKey](media-services-dotnet-create-contentkey.md). 
+If you specify for your asset to be encrypted with a **CommonEncrypted** option, or an **EnvelopeEncrypted** option, you need to associate your asset with a **ContentKey**. For more information, see [How to create a ContentKey](media-services-dotnet-create-contentkey.md).
 
 If you specify for your asset to be encrypted with a **StorageEncrypted** option, the Media Services SDK for .NET creates a **StorageEncrypted** **ContentKey** for your asset.
 
@@ -55,7 +49,7 @@ This article shows how to use Media Services .NET SDK as well as Media Services 
 
 ## Upload a single file with Media Services .NET SDK
 
-The following code uses .NET to upload a single file. The AccessPolicy and Locator are created and destroyed by the Upload function. 
+The following code uses .NET to upload a single file. The AccessPolicy and Locator are created and destroyed by the Upload function.
 
 ```csharp
         static public IAsset CreateAssetAndUploadSingleFile(AssetCreationOptions assetCreationOptions, string singleFilePath)
@@ -89,14 +83,14 @@ The code does the following:
 * Creates an empty asset using the CreateEmptyAsset method defined in the previous step.
 * Creates an **AccessPolicy** instance that defines the permissions and duration of access to the asset.
 * Creates a **Locator** instance that provides access to the asset.
-* Creates a **BlobTransferClient** instance. This type represents a client that operates on the Azure blobs. In this example, the client monitors the upload progress. 
+* Creates a **BlobTransferClient** instance. This type represents a client that operates on the Azure blobs. In this example, the client monitors the upload progress.
 * Enumerates through files in the specified directory and creates an **AssetFile** instance for each file.
-* Uploads the files into Media Services using the **UploadAsync** method. 
+* Uploads the files into Media Services using the **UploadAsync** method.
 
 > [!NOTE]
 > Use the UploadAsync method to ensure that the calls are not blocking and the files are uploaded in parallel.
-> 
-> 
+>
+>
 
 ```csharp
         static public IAsset CreateAssetAndUploadMultipleFiles(AssetCreationOptions assetCreationOptions, string folderPath)
@@ -131,7 +125,7 @@ The code does the following:
                 var assetFile = asset.AssetFiles.Create(Path.GetFileName(filePath));
                 Console.WriteLine("Created assetFile {0}", assetFile.Name);
 
-                // It is recommended to validate AssetFiles before upload. 
+                // It is recommended to validate AssetFiles before upload.
                 Console.WriteLine("Start uploading of {0}", assetFile.Name);
                 uploadTasks.Add(assetFile.UploadAsync(filePath, blobTransferClient, locator, CancellationToken.None));
             }
@@ -160,7 +154,7 @@ The code does the following:
 When uploading a large number of assets, consider the following:
 
 * Create a new **CloudMediaContext** object per thread. The **CloudMediaContext** class is not thread-safe.
-* Increase NumberOfConcurrentTransfers from the default value of 2 to a higher value like 5. Setting this property affects all instances of **CloudMediaContext**. 
+* Increase NumberOfConcurrentTransfers from the default value of 2 to a higher value like 5. Setting this property affects all instances of **CloudMediaContext**.
 * Keep ParallelTransferThreadCount at the default value of 10.
 
 ## <a id="ingest_in_bulk"></a>Ingesting Assets in Bulk using Media Services .NET SDK
@@ -180,10 +174,10 @@ Create the assets that are associated with the bulk IngestManifest. Configure th
     IAsset destAsset2 = _context.Assets.Create(name + "_asset_2", AssetCreationOptions.None);
 ```
 
-An IngestManifestAsset associates an Asset with a bulk IngestManifest for bulk ingesting. It also associates the AssetFiles that makes up each Asset. 
+An IngestManifestAsset associates an Asset with a bulk IngestManifest for bulk ingesting. It also associates the AssetFiles that makes up each Asset.
 To create an IngestManifestAsset, use the Create method on the server context.
 
-The following example demonstrates adding two new IngestManifestAssets that associate the two assets previously created to the bulk ingest manifest. Each IngestManifestAsset also associates a set of files that are uploaded for each asset during bulk ingesting.  
+The following example demonstrates adding two new IngestManifestAssets that associate the two assets previously created to the bulk ingest manifest. Each IngestManifestAsset also associates a set of files that are uploaded for each asset during bulk ingesting.
 
 ```csharp
     string filename1 = _singleInputMp4Path;
@@ -194,7 +188,7 @@ The following example demonstrates adding two new IngestManifestAssets that asso
     IIngestManifestAsset bulkAsset2 =  manifest.IngestManifestAssets.Create(destAsset2, new[] { filename2, filename3 });
 ```
 
-You can use any high-speed client application capable of uploading the asset files to the blob storage container URI provided by the **IIngestManifest.BlobStorageUriForUpload** property of the IngestManifest. 
+You can use any high-speed client application capable of uploading the asset files to the blob storage container URI provided by the **IIngestManifest.BlobStorageUriForUpload** property of the IngestManifest.
 
 The following code shows how to use .NET SDK to upload the assets files.
 
@@ -290,7 +284,7 @@ The following example shows how to upload a single file using .NET SDK Extension
     }
 ```
 
-The following example calls UploadFile function and specifies storage encryption as the asset creation option.  
+The following example calls UploadFile function and specifies storage encryption as the asset creation option.
 
 ```csharp
     var asset = UploadFile(@"C:\VideoFiles\BigBuckBunny.mp4", AssetCreationOptions.StorageEncrypted);

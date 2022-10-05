@@ -1,26 +1,18 @@
 ---
-title: Manage streaming endpoints with .NET SDK. | Microsoft Docs
+title: Manage streaming endpoints with .NET SDK.
 description: This article demonstrates how to manage streaming endpoints with .NET SDK.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-writer: juliako
-manager: femila
-editor: ''
-ms.assetid: 0da34a97-f36c-48d0-8ea2-ec12584a2215
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 0da34a97-f36c-48d0-8ea2-ec12584a2215 -->
 
 # Manage streaming endpoints with .NET SDK
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]  
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 >[!NOTE]
 >Make sure to review the [overview](media-services-streaming-endpoints-overview.md) article. Also, review [StreamingEndpoint](/rest/api/media/operations/streamingendpoint).
@@ -34,9 +26,9 @@ The code in this article shows how to do the following tasks using the Azure Med
 
 	> [!NOTE]
 	> You are only billed when your Streaming Endpoint is in running state.
-	
+
 - Update the streaming endpoint.
-	
+
 	Make sure to call the Update() function.
 
 - Delete the streaming endpoint.
@@ -48,10 +40,10 @@ For information about how to scale the streaming endpoint, see [this](media-serv
 
 ## Create and configure a Visual Studio project
 
-Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 
 ## Add code that manages streaming endpoints
-	
+
 Replace the code in the Program.cs with the following code:
 
 ```csharp

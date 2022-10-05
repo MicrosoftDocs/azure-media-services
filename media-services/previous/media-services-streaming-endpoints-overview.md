@@ -1,19 +1,13 @@
 ---
-title: Azure Media Services Streaming Endpoint overview | Microsoft Docs
+title: Azure Media Services Streaming Endpoint overview
 description: This article gives an overview of Azure Media Services streaming endpoints.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-writer: juliako
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Streaming endpoints overview
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

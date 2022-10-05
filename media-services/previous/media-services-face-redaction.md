@@ -1,20 +1,13 @@
 ---
-title: Redact faces with Azure Media Analytics | Microsoft Docs
+title: Redact faces with Azure Media Analytics
 description: Azure Media Redactor is an Azure Media Analytics media processor that offers scalable face redaction in the cloud. This article demonstrates how to redact faces with Azure media analytics.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 09/29/2022
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Redact faces with Azure Media Analytics
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

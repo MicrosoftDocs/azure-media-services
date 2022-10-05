@@ -2,20 +2,13 @@
 title: Managing Assets and Related Entities with Media Services .NET SDK
 description: Learn how to manage assets and related entities with the Media Services SDK for .NET.
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-services: media-services
-documentationcenter: ''
-ms.assetid: 1bd8fd42-7306-463d-bfe5-f642802f1906
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+<!-- ms.assetid: 1bd8fd42-7306-463d-bfe5-f642802f1906 -->
+
 # Managing Assets and Related Entities with Media Services .NET SDK
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -23,8 +16,8 @@ ms.custom: devx-track-csharp
 > [!div class="op_single_selector"]
 > * [.NET](media-services-dotnet-manage-entities.md)
 > * [REST](media-services-rest-manage-entities.md)
-> 
-> 
+>
+>
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
@@ -34,7 +27,7 @@ Starting April 1, 2017, any Job record in your account older than 90 days will b
 
 ## Prerequisites
 
-Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 
 ## Get an Asset Reference
 A frequent task is to get a reference to an existing asset in Media Services. The following code example shows how you can get an asset reference from the Assets collection on the server context object, based on an asset Id.
@@ -69,7 +62,7 @@ As the number of assets you have in storage grows, it is helpful to list your as
             + Environment.NewLine;
         Console.Write(waitMessage);
 
-        // Create a Stringbuilder to store the list that we build. 
+        // Create a Stringbuilder to store the list that we build.
         StringBuilder builder = new StringBuilder();
 
         foreach (IAsset asset in _context.Assets)
@@ -82,7 +75,7 @@ As the number of assets you have in storage grows, it is helpful to list your as
             builder.AppendLine("==============");
             builder.AppendLine("******ASSET FILES******");
 
-            // Display the files associated with each asset. 
+            // Display the files associated with each asset.
             foreach (IAssetFile fileItem in asset.AssetFiles)
             {
                 builder.AppendLine("Name: " + fileItem.Name);
@@ -105,13 +98,13 @@ You may need to get a job reference when starting a long-running encoding job, a
 ```csharp
     static IJob GetJob(string jobId)
     {
-        // Use a Linq select query to get an updated 
-        // reference by Id. 
+        // Use a Linq select query to get an updated
+        // reference by Id.
         var jobInstance =
             from j in _context.Jobs
             where j.Id == jobId
             select j;
-        // Return the job reference as an Ijob. 
+        // Return the job reference as an Ijob.
         IJob job = jobInstance.FirstOrDefault();
 
         return job;
@@ -119,12 +112,12 @@ You may need to get a job reference when starting a long-running encoding job, a
 ```
 
 ## List Jobs and Assets
-An important related task is to list assets with their associated job in Media Services. The following code example shows you how to list each IJob object, and then for each job, it displays properties about the job, all related tasks, all input assets, and all output assets. The code in this example can be useful for numerous other tasks. For example, if you want to list the output assets from one or more encoding jobs that you ran previously, this code shows how to access the output assets. When you have a reference to an output asset, you can then deliver the content to other users or applications by downloading it, or providing URLs. 
+An important related task is to list assets with their associated job in Media Services. The following code example shows you how to list each IJob object, and then for each job, it displays properties about the job, all related tasks, all input assets, and all output assets. The code in this example can be useful for numerous other tasks. For example, if you want to list the output assets from one or more encoding jobs that you ran previously, this code shows how to access the output assets. When you have a reference to an output asset, you can then deliver the content to other users or applications by downloading it, or providing URLs.
 
 For more information on options for delivering assets, see [Deliver Assets with the Media Services SDK for .NET](media-services-deliver-streaming-content.md).
 
 ```csharp
-    // List all jobs on the server, and for each job, also list 
+    // List all jobs on the server, and for each job, also list
     // all tasks, all input assets, all output assets.
 
     static void ListJobsAndAssets()
@@ -137,7 +130,7 @@ For more information on options for delivering assets, see [Deliver Assets with 
             + Environment.NewLine;
         Console.Write(waitMessage);
 
-        // Create a Stringbuilder to store the list that we build. 
+        // Create a Stringbuilder to store the list that we build.
         StringBuilder builder = new StringBuilder();
 
         foreach (IJob job in _context.Jobs)
@@ -152,8 +145,8 @@ For more information on options for delivering assets, see [Deliver Assets with 
             builder.AppendLine("==============");
 
 
-            // For each job, display the associated tasks (a job  
-            // has one or more tasks). 
+            // For each job, display the associated tasks (a job
+            // has one or more tasks).
             builder.AppendLine("******TASKS*******");
             foreach (ITask task in job.Tasks)
             {
@@ -219,11 +212,11 @@ The following code example shows how to list all access policies on the server, 
         }
     }
 ```
-    
-## Limit Access Policies 
+
+## Limit Access Policies
 
 >[!NOTE]
-> There is a limit of 1,000,000 policies for different AMS policies (for example, for Locator policy or ContentKeyAuthorizationPolicy). You should use the same policy ID if you are always using the same days / access permissions, for example, policies for locators that are intended to remain in place for a long time (non-upload policies). 
+> There is a limit of 1,000,000 policies for different AMS policies (for example, for Locator policy or ContentKeyAuthorizationPolicy). You should use the same policy ID if you are always using the same days / access permissions, for example, policies for locators that are intended to remain in place for a long time (non-upload policies).
 
 For example, you can create a generic set of policies with the following code that would only run one time in your application. You can log IDs to a log file for later use:
 
@@ -281,9 +274,9 @@ Note that a locator path to an asset is only a base URL to the asset. To create 
             Console.WriteLine("Locator access policy Id: " + locator.AccessPolicyId);
             Console.WriteLine("Access policy permissions: " + locator.AccessPolicy.Permissions);
             Console.WriteLine("Locator expiration: " + locator.ExpirationDateTime);
-            // The locator path is the base or parent path (with included permissions) to access  
-            // the media content of an asset. To create a full URL to a specific media file, take 
-            // the locator path and then append a file name and info as needed.  
+            // The locator path is the base or parent path (with included permissions) to access
+            // the media content of an asset. To create a full URL to a specific media file, take
+            // the locator path and then append a file name and info as needed.
             Console.WriteLine("Locator base path: " + locator.Path);
             Console.WriteLine("");
         }
@@ -291,7 +284,7 @@ Note that a locator path to an asset is only a base URL to the asset. To create 
 ```
 
 ## Enumerating through large collections of entities
-When querying entities, there is a limit of 1000 entities returned at one time because public REST v2 limits query results to 1000 results. You need to use Skip and Take when enumerating through large collections of entities. 
+When querying entities, there is a limit of 1000 entities returned at one time because public REST v2 limits query results to 1000 results. You need to use Skip and Take when enumerating through large collections of entities.
 
 The following function loops through all the jobs in the provided Media Services Account. Media Services returns 1000 jobs in Jobs Collection. The function makes use of Skip and Take to make sure that all jobs are enumerated (in case you have more than 1000 jobs in your account).
 
@@ -361,19 +354,19 @@ The following code example shows a method for deleting a job by checking job sta
 
         while (!jobDeleted)
         {
-            // Get an updated job reference.  
+            // Get an updated job reference.
             IJob job = GetJob(jobId);
 
-            // Check and handle various possible job states. You can 
-            // only delete a job whose state is Finished, Error, or Canceled.   
-            // You can cancel jobs that are Queued, Scheduled, or Processing,  
+            // Check and handle various possible job states. You can
+            // only delete a job whose state is Finished, Error, or Canceled.
+            // You can cancel jobs that are Queued, Scheduled, or Processing,
             // and then delete after they are canceled.
             switch (job.State)
             {
                 case JobState.Finished:
                 case JobState.Canceled:
                 case JobState.Error:
-                    // Job errors should already be logged by polling or event 
+                    // Job errors should already be logged by polling or event
                     // handling methods such as CheckJobProgress or StateChanged.
                     // You can also call job.DeleteAsync to do async deletes.
                     job.Delete();
@@ -408,7 +401,7 @@ The following code example shows how to get a reference to an access policy base
 ```csharp
     static void DeleteAccessPolicy(string existingPolicyId)
     {
-        // To delete a specific access policy, get a reference to the policy.  
+        // To delete a specific access policy, get a reference to the policy.
         // based on the policy Id passed to the method.
         var policyInstance =
                 from p in _context.AccessPolicies

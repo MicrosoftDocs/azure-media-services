@@ -1,20 +1,14 @@
 ---
-title: Manage streaming endpoints with the Azure portal | Microsoft Docs
+title: Manage streaming endpoints with the Azure portal
 description: This article demonstrates how to manage streaming endpoints with the Azure portal.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-writer: juliako
-manager: femila
-editor: ''
-ms.assetid: bb1aca25-d23a-4520-8c45-44ef3ecd5371
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: bb1aca25-d23a-4520-8c45-44ef3ecd5371 -->
 
 # Manage streaming endpoints with the Azure portal
 
@@ -23,7 +17,7 @@ ms.author: inhenkel
 This article shows  how to use the Azure portal to manage streaming endpoints.
 
 >[!NOTE]
->Make sure to review the [overview](media-services-streaming-endpoints-overview.md) article.
+> Make sure to review the [overview](media-services-streaming-endpoints-overview.md) article.
 
 For information about how to scale the streaming endpoint, see [this](media-services-portal-scale-streaming-endpoints.md) article.
 
@@ -48,15 +42,15 @@ To add/delete streaming endpoint using the Azure portal, do the following:
 
 1. To add a streaming endpoint, click the **+ Endpoint** at the top of the page.
 
-	You might want multiple Streaming Endpoints if you plan to have different CDNs or a CDN and direct access.
+    You might want multiple Streaming Endpoints if you plan to have different CDNs or a CDN and direct access.
 
 2. To delete a streaming endpoint, press **Delete** button.
 3. Click the **Start** button to start the streaming endpoint.
 
     ![Screenshot that shows the "Endpoint" action selected and the "Streaming Endpoint Details" pane displayed.](./media/media-services-portal-manage-streaming-endpoints/media-services-manage-streaming-endpoints2.png)
 
-
 ## <a id="configure_streaming_endpoints"></a>Configuring the Streaming Endpoint
+
 Streaming Endpoint enables you to configure the following properties:
 
 * Access control

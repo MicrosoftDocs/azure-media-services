@@ -2,10 +2,10 @@
 title: Media Services Face Redactor preset retirement and migration
 description: This article discusses the retirement and migration for Media Services Face Redactor retirement and migration.
 author: IngridAtMicrosoft
+ms.author: inhenkel
 ms.service: media-services
 ms.topic: overview
-ms.date: 08/24/2022
-ms.author: inhenkel
+ms.date: 10/05/2022
 ---
 
 # Media Services Face Redactor retirement and migration

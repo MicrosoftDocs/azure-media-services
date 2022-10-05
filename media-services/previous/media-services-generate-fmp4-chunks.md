@@ -1,31 +1,24 @@
 ---
-title: Create an Azure Media Services encoding task that generates fMP4 chunks | Microsoft Docs
+title: Create an Azure Media Services encoding task that generates fMP4 chunks
 description: This topic shows how to create an encoding task that generates fMP4 chunks. When this task is used with the Media Encoder Standard or Media Encoder Premium Workflow encoder, the output asset will contain fMP4 chunks instead of ISO MP4 files.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Create an encoding task that generates fMP4 chunks
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 ## Overview
 
-This article shows how to create an encoding task that generates fragmented MP4 (fMP4) chunks instead of ISO MP4 files. To generate fMP4 chunks, use the **Media Encoder Standard** or **Media Encoder Premium Workflow** encoder to create an encoding task and also specify **AssetFormatOption.AdaptiveStreaming** option, as shown in this code snippet:  
-	
+This article shows how to create an encoding task that generates fragmented MP4 (fMP4) chunks instead of ISO MP4 files. To generate fMP4 chunks, use the **Media Encoder Standard** or **Media Encoder Premium Workflow** encoder to create an encoding task and also specify **AssetFormatOption.AdaptiveStreaming** option, as shown in this code snippet:
+
 ```csharp
-	task.OutputAssets.AddNew(@"Output Asset containing fMP4 chunks", 
-			options: AssetCreationOptions.None, 
+	task.OutputAssets.AddNew(@"Output Asset containing fMP4 chunks",
+			options: AssetCreationOptions.None,
 			formatOption: AssetFormatOption.AdaptiveStreaming);
 ```
 
@@ -35,14 +28,14 @@ The following code example uses Media Services .NET SDK to perform the following
 
 - Create an encoding job.
 - Get a reference to the **Media Encoder Standard** encoder.
-- Add an encoding task to the job and specify to use the **Adaptive Streaming** preset. 
+- Add an encoding task to the job and specify to use the **Adaptive Streaming** preset.
 - Create an output asset that will contain fMP4 chunks and an .ism file.
 - Add an event handler to check the job progress.
 - Submit the job.
 
 #### Create and configure a Visual Studio project
 
-Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 
 #### Example
 
@@ -94,7 +87,7 @@ namespace AdaptiveStreaming
             // Declare a new job.
             IJob job = _context.Jobs.Create("Media Encoder Standard Job");
 
-            // Get a media processor reference, and pass to it the name of the 
+            // Get a media processor reference, and pass to it the name of the
             // processor to use for the specific task.
             IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
 
@@ -107,11 +100,11 @@ namespace AdaptiveStreaming
             // Specify the input asset to be encoded.
             task.InputAssets.Add(asset);
 
-            // Add an output asset to contain the results of the job. 
+            // Add an output asset to contain the results of the job.
 
-            // This output is specified as AssetCreationOptions.None, which 
-            // means the output asset is not encrypted. 
-            // It is also specified to use AssetFormatOption.AdaptiveStreaming, 
+            // This output is specified as AssetCreationOptions.None, which
+            // means the output asset is not encrypted.
+            // It is also specified to use AssetFormatOption.AdaptiveStreaming,
             // which means the output asset will contain fMP4 chunks.
 
             task.OutputAssets.AddNew(@"Output Asset containing fMP4 chunks",

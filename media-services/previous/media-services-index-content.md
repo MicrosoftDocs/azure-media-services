@@ -1,22 +1,15 @@
 ---
 title: Indexing Media Files with Azure Media Indexer
 description: Azure Media Indexer enables you to make content of your media files searchable and to generate a full-text transcript for closed captioning and keywords. This topic shows how to use Media Indexer.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 827a56b2-58a5-4044-8d5c-3e5356488271
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 09/29/2022
 ms.author: inhenkel
-ms.reviewer: johndeu
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 827a56b2-58a5-4044-8d5c-3e5356488271 -->
+
 # Indexing Media Files with Azure Media Indexer
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

@@ -1,19 +1,15 @@
 ---
-title: How to get a Media Processor instance using REST | Microsoft Docs
+title: How to get a Media Processor instance using REST
 description: Learn how to create a media processor component to encode, convert format, encrypt, or decrypt media content for Azure Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: f9ff1997-0da6-4528-aaed-792837e5be41
+ms.author: inhenkel
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: article
 ms.date: 3/10/2021
-ms.author: inhenkel
 ---
+
+<!-- ms.assetid: f9ff1997-0da6-4528-aaed-792837e5be41 -->
+
 # How to get a Media Processor instance
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -39,12 +35,12 @@ The following topic provides lists of media processors:
 
 ## Connect to Media Services
 
-For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md). 
+For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 
 ## Get a media processor
 
-The following REST call shows how to get a media processor instance by name (in this case, **Media Encoder Standard**). 
+The following REST call shows how to get a media processor instance by name (in this case, **Media Encoder Standard**).
 
 Request:
 
@@ -65,10 +61,10 @@ Response:
 ```console
 . . .
 
-{  
+{
    "odata.metadata":"https://media.windows.net/api/$metadata#MediaProcessors",
-   "value":[  
-      {  
+   "value":[
+      {
          "Id":"nb:mpid:UUID:ff4df607-d419-42f0-bc17-a481b1331e56",
          "Description":"Media Encoder Standard",
          "Name":"Media Encoder Standard",

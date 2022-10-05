@@ -1,22 +1,15 @@
 ---
 title: Creating Filters with Azure Media Services .NET SDK
 description: This topic describes how to create filters so your client can use them to stream specific sections of a stream. Media Services .NET SDK creates dynamic manifests to achieve this selective streaming.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 2f6894ca-fb43-43c0-9151-ddbb2833cafd
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.reviewer: cenkdin
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 2f6894ca-fb43-43c0-9151-ddbb2833cafd -->
+
 # Creating Filters with Media Services .NET SDK
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -24,19 +17,19 @@ ms.custom: devx-track-csharp
 > [!div class="op_single_selector"]
 > * [.NET](media-services-dotnet-dynamic-manifest.md)
 > * [REST](media-services-rest-dynamic-manifest.md)
-> 
-> 
+>
+>
 
 Starting with 2.17 release, Media Services enables you to define filters for your assets. These filters are server-side rules that allow your customers to choose to do things like: playback only a section of a video (instead of playing the whole video), or specify only a subset of audio and video renditions that your customer's device can handle (instead of all the renditions that are associated with the asset). This filtering of your assets is achieved through **Dynamic Manifest**s that are created upon your customer's request to stream a video based on specified filter(s).
 
 For more detailed information related to filters and Dynamic Manifest, see [Dynamic manifests overview](media-services-dynamic-manifest-overview.md).
 
-This article shows how to use Media Services .NET SDK to create, update, and delete filters. 
+This article shows how to use Media Services .NET SDK to create, update, and delete filters.
 
-Note if you update a filter, it can take up to two minutes for streaming endpoint to refresh the rules. If the content was served using this filter (and cached in proxies and CDN caches), updating this filter can result in player failures. Always clear the cache after updating the filter. If this option is not possible, consider using a different filter. 
+Note if you update a filter, it can take up to two minutes for streaming endpoint to refresh the rules. If the content was served using this filter (and cached in proxies and CDN caches), updating this filter can result in player failures. Always clear the cache after updating the filter. If this option is not possible, consider using a different filter.
 
 ## Types used to create filters
-The following types are used when creating filters: 
+The following types are used when creating filters:
 
 * **IStreamingFilter**.  This type is based on the following REST API [Filter](/rest/api/media/operations/filter)
 * **IStreamingAssetFilter**. This type is based on the following REST API [AssetFilter](/rest/api/media/operations/assetfilter)
@@ -85,11 +78,11 @@ The following code shows how to use .NET to create, update, read, and delete ass
 
     // Create
     IStreamingAssetFilter filter = asset.AssetFilters.Create(filterName,
-                                        new PresentationTimeRange(), 
+                                        new PresentationTimeRange(),
                                         new List<FilterTrackSelectStatement>());
 
     // Update
-    filter.PresentationTimeRange = 
+    filter.PresentationTimeRange =
             new PresentationTimeRange(start: 6000000000, end: 72000000000);
 
     filter.Update();
@@ -110,7 +103,7 @@ For information on how to publish and deliver your assets, see [Delivering Conte
 
 The following examples show how to add filters to your streaming URLs.
 
-**MPEG DASH** 
+**MPEG DASH**
 
 `http://testendpoint-testaccount.streaming.mediaservices.windows.net/fecebb23-46f6-490d-8b70-203e86b0df58/BigBuckBunny.ism/Manifest(format=mpd-time-csf, filter=MyFilter)`
 

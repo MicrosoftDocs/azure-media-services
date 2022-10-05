@@ -1,21 +1,14 @@
 ---
-title: How to Create a media processor using the Azure Media Services SDK for .NET| Microsoft Docs
+title: How to Create a media processor using the Azure Media Services SDK for .NET
 description: Learn how to create a media processor component to encode, convert format, encrypt, or decrypt media content for Azure Media Services. Code samples are written in C# and use the Media Services SDK for .NET.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: dbf9496f-c6f0-42a7-aa36-70f89dcb8ea2
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: dbf9496f-c6f0-42a7-aa36-70f89dcb8ea2 -->
 
 # How to: Get a Media Processor instance
 

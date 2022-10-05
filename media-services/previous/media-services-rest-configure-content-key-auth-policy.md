@@ -1,24 +1,24 @@
 ---
-title: Configure a content key authorization policy with REST - Azure | Microsoft Docs
+title: Configure a content key authorization policy with REST - Azure
 description: Learn how to configure an authorization policy for a content key by using the Media Services REST API.
-services: media-services
-documentationcenter: ''
+
+
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
+ms.author: inhenkel
+
 ms.assetid: 7af5f9e2-8ed8-43f2-843b-580ce8759fd4
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
+
+
 ms.topic: article
 ms.date: 03/10/2021
-ms.author: inhenkel
-ms.custom: devx-track-csharp
+
+
 ---
 # Dynamic encryption: Configure a content key authorization policy
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
- 
+
 [!INCLUDE [media-services-selector-content-key-auth-policy](../latest/includes/media-services-selector-content-key-auth-policy.md)]
 
 ## Overview
@@ -49,11 +49,11 @@ For more information, see the following articles:
 ## AES-128 dynamic encryption
 > [!NOTE]
 > When you work with the Media Services REST API, the following considerations apply.
-> 
+>
 > When you access entities in Media Services, you must set specific header fields and values in your HTTP requests. For more information, see [Setup for Media Services REST API development](media-services-rest-how-to-use.md).
-> 
-> 
-> 
+>
+>
+>
 
 ### Open restriction
 Open restriction means the system delivers the key to anyone who makes a key request. This restriction might be useful for testing purposes.
@@ -70,7 +70,7 @@ DataServiceVersion: 1.0;NetFx
 MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: d732dbfa-54fc-474c-99d6-9b46a006f389
 Host: wamsbayclus001rest-hs.cloudapp.net
@@ -110,7 +110,7 @@ DataServiceVersion: 3.0;NetFx
 MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: d225e357-e60e-4f42-add8-9d93aba1409a
 Host: wamsbayclus001rest-hs.cloudapp.net
@@ -119,7 +119,7 @@ Content-Length: 168
 {"Name":"policy","KeyDeliveryType":2,"KeyDeliveryConfiguration":"","Restrictions":[{"Name":"HLS Open Authorization Policy","KeyRestrictionType":0,"Requirements":null}]}
 ```
 
-Response:    
+Response:
 
 ```output
 HTTP/1.1 201 Created
@@ -150,7 +150,7 @@ MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
 Content-Type: application/json
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: 9847f705-f2ca-4e95-a478-8f823dbbaa29
 Host: wamsbayclus001rest-hs.cloudapp.net
@@ -175,7 +175,7 @@ DataServiceVersion: 1.0;NetFx
 MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: e613efff-cb6a-41b4-984a-f4f8fb6e76a4
 Host: wamsbayclus001rest-hs.cloudapp.net
@@ -272,7 +272,7 @@ Content-Length: 1079
 {"Name":"Token option for HLS","KeyDeliveryType":2,"KeyDeliveryConfiguration":null,"Restrictions":[{"Name":"Token Authorization Policy","KeyRestrictionType":1,"Requirements":"<TokenRestrictionTemplate xmlns:i=\"https://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.microsoft.com/Azure/MediaServices/KeyDelivery/TokenRestrictionTemplate/v1\"><AlternateVerificationKeys><TokenVerificationKey i:type=\"SymmetricVerificationKey\"><KeyValue>BklyAFiPTQsuJNKriQJBZHYaKM2CkCTDQX2bw9sMYuvEC9sjW0W7GUIBygQL/+POEeUqCYPnmEU2g0o1GW2Oqg==</KeyValue></TokenVerificationKey></AlternateVerificationKeys><Audience>urn:test</Audience><Issuer>http://testissuer.com/</Issuer><PrimaryVerificationKey i:type=\"SymmetricVerificationKey\"><KeyValue>E5BUHiN4vBdzUzdP0IWaHFMMU3D1uRZgF16TOhSfwwHGSw+Kbf0XqsHzEIYk11M372viB9vbiacsdcQksA0ftw==</KeyValue></PrimaryVerificationKey><RequiredClaims><TokenClaim><ClaimType>urn:microsoft:azure:mediaservices:contentkeyidentifier</ClaimType><ClaimValue i:nil=\"true\" /></TokenClaim></RequiredClaims><TokenType>SWT</TokenType></TokenRestrictionTemplate>"}]}
 ```
 
-Response:    
+Response:
 
 ```output
 HTTP/1.1 201 Created
@@ -300,9 +300,9 @@ Link ContentKeyAuthorizationPolicies with options, as shown in the section "[Cre
 Add AuthorizationPolicy to ContentKey, as shown in the section "[Add an authorization policy to the content key](#AddAuthorizationPolicyToKey)."
 
 ## PlayReady dynamic encryption
-You can use Media Services to configure the rights and restrictions that you want the PlayReady DRM runtime to enforce when a user tries to play back protected content. 
+You can use Media Services to configure the rights and restrictions that you want the PlayReady DRM runtime to enforce when a user tries to play back protected content.
 
-When you protect your content with PlayReady, one of the things you need to specify in your authorization policy is an XML string that defines the [PlayReady license template](media-services-playready-license-template-overview.md). 
+When you protect your content with PlayReady, one of the things you need to specify in your authorization policy is an XML string that defines the [PlayReady license template](media-services-playready-license-template-overview.md).
 
 ### Open restriction
 Open restriction means the system delivers the key to anyone who makes a key request. This restriction might be useful for testing purposes.
@@ -319,7 +319,7 @@ DataServiceVersion: 1.0;NetFx
 MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: 9e7fa407-f84e-43aa-8f05-9790b46e279b
 Host: wamsbayclus001rest-hs.cloudapp.net
@@ -360,7 +360,7 @@ DataServiceVersion: 3.0;NetFx
 MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: f160ad25-b457-4bc6-8197-315604c5e585
 Host: wamsbayclus001rest-hs.cloudapp.net
@@ -412,7 +412,7 @@ DataServiceVersion: 3.0;NetFx
 MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: ab079b0e-2ba9-4cf1-b549-a97bfa6cd2d3
 Host: wamsbayclus001rest-hs.cloudapp.net
@@ -454,7 +454,7 @@ Add AuthorizationPolicy to ContentKey, as shown in the section "[Add an authoriz
 public enum ContentKeyRestrictionType
 {
     Open = 0,
-    TokenRestricted = 1, 
+    TokenRestricted = 1,
     IPRestricted = 2, // IP restriction on content key is not currently supported, reserved for future.
 }
 ```

@@ -1,19 +1,13 @@
 ---
-title: Managing Media Services assets across multiple storage accounts | Microsoft Docs
+title: Managing Media Services assets across multiple storage accounts
 description: This articles give you guidance on how to manage Media Services assets across multiple storage accounts.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp, devx-track-azurepowershell
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Managing Media Services assets across multiple storage accounts
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

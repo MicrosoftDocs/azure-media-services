@@ -1,21 +1,15 @@
 ---
-title: Update Media Services after rolling storage access keys | Microsoft Docs
+title: Update Media Services after rolling storage access keys
 description: This articles give you guidance on how to update Media Services after rolling storage access keys.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: a892ebb0-0ea0-4fc8-b715-60347cc5c95b
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
-ms.reviewer: milanga;cenkdin
-ms.custom: devx-track-azurepowershell
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: a892ebb0-0ea0-4fc8-b715-60347cc5c95b -->
+
 # Update Media Services after rolling storage access keys
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

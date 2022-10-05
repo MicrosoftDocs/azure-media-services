@@ -1,21 +1,15 @@
 ---
-title: Configure asset delivery policies with .NET SDK | Microsoft Docs
+title: Configure asset delivery policies with .NET SDK
 description: This topic shows how to configure different asset delivery policies with Azure Media Services .NET SDK.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 3ec46f58-6cbb-4d49-bac6-1fd01a5a456b
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 3ec46f58-6cbb-4d49-bac6-1fd01a5a456b  -->
+
 # Configure asset delivery policies with .NET SDK
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -28,7 +22,7 @@ If you plan to delivery encrypted assets, one of the steps in the Media Services
 This article discusses why and how to create and configure asset delivery policies.
 
 >[!NOTE]
->When your AMS account is created, a **default** streaming endpoint is added to your account in the **Stopped** state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the **Running** state. 
+>When your AMS account is created, a **default** streaming endpoint is added to your account in the **Stopped** state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the **Running** state.
 >
 >Also, to be able to use dynamic packaging and dynamic encryption your asset must contain a set of adaptive bitrate MP4s or adaptive bitrate Smooth Streaming files.
 
@@ -71,7 +65,7 @@ For information on what values you can specify when creating an AssetDeliveryPol
 		_context.AssetDeliveryPolicies.Create("Clear Policy",
 		AssetDeliveryPolicyType.NoDynamicEncryption,
 		AssetDeliveryProtocol.HLS | AssetDeliveryProtocol.SmoothStreaming | AssetDeliveryProtocol.Dash, null);
-		
+
 		asset.DeliveryPolicies.Add(policy);
 	}
 ```
@@ -85,22 +79,22 @@ For information on what values you can specify when creating an AssetDeliveryPol
 	static public void CreateAssetDeliveryPolicy(IAsset asset, IContentKey key)
 	{
 		Uri acquisitionUrl = key.GetKeyDeliveryUrl(ContentKeyDeliveryType.PlayReadyLicense);
-		
+
 		Dictionary<AssetDeliveryPolicyConfigurationKey, string> assetDeliveryPolicyConfiguration =
 	            new Dictionary<AssetDeliveryPolicyConfigurationKey, string>
 	        {
 	            {AssetDeliveryPolicyConfigurationKey.PlayReadyLicenseAcquisitionUrl, acquisitionUrl.ToString()},
 	        };
-	
+
 	        var assetDeliveryPolicy = _context.AssetDeliveryPolicies.Create(
 	                "AssetDeliveryPolicy",
 	            AssetDeliveryPolicyType.DynamicCommonEncryption,
 	            AssetDeliveryProtocol.SmoothStreaming,
 	            assetDeliveryPolicyConfiguration);
-	
+
 	        // Add AssetDelivery Policy to the asset
 	        asset.DeliveryPolicies.Add(assetDeliveryPolicy);
-	
+
 	        Console.WriteLine();
 	        Console.WriteLine("Adding Asset Delivery Policy: " +
 	            assetDeliveryPolicy.AssetDeliveryPolicyType);
@@ -117,10 +111,10 @@ Azure Media Services also enables you to add Widevine encryption. The following 
 
 
         // GetKeyDeliveryUrl for Widevine attaches the KID to the URL.
-        // For example: https://amsaccount1.keydelivery.mediaservices.windows.net/Widevine/?KID=268a6dcb-18c8-4648-8c95-f46429e4927c.  
-        // The WidevineBaseLicenseAcquisitionUrl (used below) also tells Dynamic Encryption 
+        // For example: https://amsaccount1.keydelivery.mediaservices.windows.net/Widevine/?KID=268a6dcb-18c8-4648-8c95-f46429e4927c.
+        // The WidevineBaseLicenseAcquisitionUrl (used below) also tells Dynamic Encryption
         // to append /? KID =< keyId > to the end of the url when creating the manifest.
-        // As a result Widevine license acquisition URL will have KID appended twice, 
+        // As a result Widevine license acquisition URL will have KID appended twice,
         // so we need to remove the KID that in the URL when we call GetKeyDeliveryUrl.
 
         Uri widevineUrl = key.GetKeyDeliveryUrl(ContentKeyDeliveryType.Widevine);
@@ -150,13 +144,13 @@ Azure Media Services also enables you to add Widevine encryption. The following 
 ```
 > [!NOTE]
 > When encrypting with Widevine, you would only be able to deliver using DASH. Make sure to specify DASH in the asset delivery protocol.
-> 
-> 
+>
+>
 
 ## DynamicEnvelopeEncryption asset delivery policy
 The following **CreateAssetDeliveryPolicy** method creates the **AssetDeliveryPolicy** that is configured to apply dynamic envelope encryption (**DynamicEnvelopeEncryption**) to Smooth Streaming, HLS, and DASH protocols (if you decide to not specify some protocols, they will be blocked from streaming). The method takes two parameters: **Asset** (the asset to which you want to apply the delivery policy) and **IContentKey** (the content key of the **EnvelopeEncryption** type, for more information, see: [Creating a content key](media-services-dotnet-create-contentkey.md#envelope_contentkey)).
 
-For information on what values you can specify when creating an AssetDeliveryPolicy, see the [Types used when defining AssetDeliveryPolicy](#types) section.   
+For information on what values you can specify when creating an AssetDeliveryPolicy, see the [Types used when defining AssetDeliveryPolicy](#types) section.
 
 ```csharp
     private static void CreateAssetDeliveryPolicy(IAsset asset, IContentKey key)
@@ -173,11 +167,11 @@ For information on what values you can specify when creating an AssetDeliveryPol
         uriBuilder.Query = String.Empty;
         keyAcquisitionUri = uriBuilder.Uri;
 
-        // The following policy configuration specifies: 
+        // The following policy configuration specifies:
         //   key url that will have KID=<Guid> appended to the envelope and
         //   the Initialization Vector (IV) to use for the envelope encryption.
         Dictionary<AssetDeliveryPolicyConfigurationKey, string> assetDeliveryPolicyConfiguration =
-            new Dictionary<AssetDeliveryPolicyConfigurationKey, string> 
+            new Dictionary<AssetDeliveryPolicyConfigurationKey, string>
         {
             {AssetDeliveryPolicyConfigurationKey.EnvelopeBaseKeyAcquisitionUrl, keyAcquisitionUri.ToString()},
         };
@@ -227,8 +221,8 @@ The following enum describes values you can set for the asset delivery protocol.
         /// </summary>
         HLS = 0x4,
 
-        ProgressiveDownload = 0x10, 
- 
+        ProgressiveDownload = 0x10,
+
         /// <summary>
         /// Include all protocols.
         /// </summary>
@@ -237,7 +231,7 @@ The following enum describes values you can set for the asset delivery protocol.
 ```
 ### <a id="AssetDeliveryPolicyType"></a>AssetDeliveryPolicyType
 
-The following enum describes values you can set for the asset delivery policy type.  
+The following enum describes values you can set for the asset delivery policy type.
 ```csharp
     public enum AssetDeliveryPolicyType
     {
@@ -247,15 +241,15 @@ The following enum describes values you can set for the asset delivery policy ty
         None,
 
         /// <summary>
-        /// The Asset should not be delivered via this AssetDeliveryProtocol. 
+        /// The Asset should not be delivered via this AssetDeliveryProtocol.
         /// </summary>
-        Blocked, 
+        Blocked,
 
         /// <summary>
         /// Do not apply dynamic encryption to the asset.
         /// </summary>
-        /// 
-        NoDynamicEncryption,  
+        ///
+        NoDynamicEncryption,
 
         /// <summary>
         /// Apply Dynamic Envelope encryption.
@@ -271,7 +265,7 @@ The following enum describes values you can set for the asset delivery policy ty
 ### <a id="ContentKeyDeliveryType"></a>ContentKeyDeliveryType
 
 The following enum describes values you can use to configure the delivery method of the content key to the client.
-  ```csharp  
+  ```csharp
     public enum ContentKeyDeliveryType
     {
         /// <summary>

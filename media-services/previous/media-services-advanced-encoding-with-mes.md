@@ -1,20 +1,14 @@
 ---
-title: Perform advanced encoding by customizing MES presets | Microsoft Docs
+title: Perform advanced encoding by customizing MES presets
 description: This topic shows how to perform advanced encoding by customizing Media Encoder Standard task presets.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 2a4ade25-e600-4bce-a66e-e29cf4a38369
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 2a4ade25-e600-4bce-a66e-e29cf4a38369 -->
 
 # Perform advanced encoding by customizing MES presets
 

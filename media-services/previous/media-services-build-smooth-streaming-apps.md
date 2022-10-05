@@ -1,25 +1,21 @@
 ---
-title: Smooth Streaming Windows Store App Tutorial | Microsoft Docs
+title: Smooth Streaming Windows Store App Tutorial
 description: Learn how to use Azure Media Services to create a C# Windows Store application with a XML MediaElement control to playback Smooth Stream content.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 0fa5d8c5-3d5f-4886-ae55-fb6de4f5256d
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+
+<!-- ms.assetid: 0fa5d8c5-3d5f-4886-ae55-fb6de4f5256d -->
+
 # How to Build a Smooth Streaming Windows Store Application
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]  
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-The Smooth Streaming Client SDK for Windows 8 enables developers to build Windows Store applications that can play on-demand and live Smooth Streaming content. In addition to the basic playback of Smooth Streaming content, the SDK also provides rich features like Microsoft PlayReady protection, quality level restriction, Live DVR, audio stream switching, listening for status updates (such as quality level changes) and error events, and so on. For more information of the supported features, see the [release notes](https://www.iis.net/learn/media/smooth-streaming/smooth-streaming-client-sdk-for-windows-8-release-notes). For more information, see [Player Framework for Windows 8](https://developerpublish.com/player-framework-for-windows-8-preview-6-released/). 
+The Smooth Streaming Client SDK for Windows 8 enables developers to build Windows Store applications that can play on-demand and live Smooth Streaming content. In addition to the basic playback of Smooth Streaming content, the SDK also provides rich features like Microsoft PlayReady protection, quality level restriction, Live DVR, audio stream switching, listening for status updates (such as quality level changes) and error events, and so on. For more information of the supported features, see the [release notes](https://www.iis.net/learn/media/smooth-streaming/smooth-streaming-client-sdk-for-windows-8-release-notes). For more information, see [Player Framework for Windows 8](https://developerpublish.com/player-framework-for-windows-8-preview-6-released/).
 
 This tutorial contains four lessons:
 
@@ -36,11 +32,11 @@ This tutorial contains four lessons:
 * Visual Studio versions 2012 through 2015.
 * [Microsoft Smooth Streaming Client SDK for Windows 8](https://visualstudiogallery.msdn.microsoft.com/04423d13-3b3e-4741-a01c-1ae29e84fea6?SRC=Home).
 
-The completed solution for each lesson can be downloaded from MSDN Developer Code Samples (Code Gallery): 
+The completed solution for each lesson can be downloaded from MSDN Developer Code Samples (Code Gallery):
 
-* [Lesson 1](https://code.msdn.microsoft.com/Smooth-Streaming-Client-0bb1471f) - A Simple Windows 8 Smooth Streaming Media Player, 
-* [Lesson 2](https://code.msdn.microsoft.com/A-simple-Windows-8-Smooth-ee98f63a) - A Simple Windows 8 Smooth Streaming Media Player with a Slider Bar Control, 
-* [Lesson 3](https://code.msdn.microsoft.com/A-Windows-8-Smooth-883c3b44) - A Windows 8 Smooth Streaming Media Player with Stream Selection,  
+* [Lesson 1](https://code.msdn.microsoft.com/Smooth-Streaming-Client-0bb1471f) - A Simple Windows 8 Smooth Streaming Media Player,
+* [Lesson 2](https://code.msdn.microsoft.com/A-simple-Windows-8-Smooth-ee98f63a) - A Simple Windows 8 Smooth Streaming Media Player with a Slider Bar Control,
+* [Lesson 3](https://code.msdn.microsoft.com/A-Windows-8-Smooth-883c3b44) - A Windows 8 Smooth Streaming Media Player with Stream Selection,
 * [Lesson 4](https://code.msdn.microsoft.com/A-Windows-8-Smooth-aa9e4907)  - A Windows 8 Smooth Streaming Media Player with Track Selection.
 
 ## Lesson 1: Create a Basic Smooth Streaming Store Application
@@ -49,7 +45,7 @@ In this lesson, you will create a Windows Store application with a MediaElement 
 
 ![Smooth Streaming Windows Store application example][PlayerApplication]
 
-For more information on developing Windows Store application, see [Develop Great Apps for Windows 8](https://developer.microsoft.com/en-us/windows/). 
+For more information on developing Windows Store application, see [Develop Great Apps for Windows 8](https://developer.microsoft.com/en-us/windows/).
 This lesson contains the following procedures:
 
 1. Create a Windows Store project
@@ -84,7 +80,7 @@ This lesson contains the following procedures:
     | Reference group |Windows/Extensions |
     | Reference |Select Microsoft Smooth Streaming Client SDK for Windows 8 and Microsoft Visual C++ Runtime Package |
 
-1. Click **OK**. 
+1. Click **OK**.
 
 After adding the references, you must select the targeted platform (x64 or x86), adding references will not work for Any CPU platform configuration.  In solution explorer, you will see yellow warning mark for these added references.
 
@@ -117,22 +113,22 @@ After adding the references, you must select the targeted platform (x64 or x86),
          <StackPanel Name="spMediaElement" Grid.Row="2" Height="435" Width="1072"
                     HorizontalAlignment="Center" VerticalAlignment="Center">
             <MediaElement x:Name="mediaElement" Height="356" Width="924" MinHeight="225"
-                          HorizontalAlignment="Center" VerticalAlignment="Center" 
+                          HorizontalAlignment="Center" VerticalAlignment="Center"
                           AudioCategory="BackgroundCapableMedia" />
             <StackPanel Orientation="Horizontal">
                 <Slider x:Name="sliderProgress" Width="924" Height="44"
                         HorizontalAlignment="Center" VerticalAlignment="Center"
                         PointerPressed="sliderProgress_PointerPressed"/>
-                <Slider x:Name="sliderVolume" 
-                        HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Vertical" 
-                        Height="79" Width="148" Minimum="0" Maximum="1" StepFrequency="0.1" 
-                        Value="{Binding Volume, ElementName=mediaElement, Mode=TwoWay}" 
+                <Slider x:Name="sliderVolume"
+                        HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Vertical"
+                        Height="79" Width="148" Minimum="0" Maximum="1" StepFrequency="0.1"
+                        Value="{Binding Volume, ElementName=mediaElement, Mode=TwoWay}"
                         ToolTipService.ToolTip="{Binding Value, RelativeSource={RelativeSource Mode=Self}}"/>
             </StackPanel>
          </StackPanel>
 
          <StackPanel Name="spStatus" Grid.Row="4" Orientation="Horizontal">
-            <TextBlock x:Name="tbStatus" Text="Status :  " 
+            <TextBlock x:Name="tbStatus" Text="Status :  "
                FontSize="16" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" />
             <TextBox x:Name="txtStatus" FontSize="10" Width="700" VerticalAlignment="Center"/>
          </StackPanel>
@@ -221,10 +217,10 @@ The finished the code behind file shall look like this:
 
 1. From the **BUILD** menu, click **Configuration Manager**.
 2. Change **Active solution platform** to match your development platform.
-3. Press **F6** to compile the project. 
+3. Press **F6** to compile the project.
 4. Press **F5** to run the application.
-5. At the top of the application, you can either use the default Smooth Streaming URL or enter a different one. 
-6. Click **Set Source**. Because **Auto Play** is enabled by default, the media shall play automatically.  You can control the media using the **Play**, **Pause** and **Stop** buttons.  You can control the media volume using the vertical slider.  However the horizontal slider for controlling the media progress is not fully implemented yet. 
+5. At the top of the application, you can either use the default Smooth Streaming URL or enter a different one.
+6. Click **Set Source**. Because **Auto Play** is enabled by default, the media shall play automatically.  You can control the media using the **Play**, **Pause** and **Stop** buttons.  You can control the media volume using the vertical slider.  However the horizontal slider for controlling the media progress is not fully implemented yet.
 
 You have completed lesson1.  In this lesson, you use a MediaElement control to playback Smooth Streaming content.  In the next lesson, you will add a slider to control the progress of the Smooth Streaming content.
 
@@ -234,11 +230,11 @@ In lesson 1, you created a Windows Store application with a MediaElement XAML co
 
 In this tutorial, we will use a timer to update the slider position based on the current position of the MediaElement control.  The slider start and end time also need to be updated in case of live content.  This can be better handled in the adaptive source update event.
 
-Media sources are objects that generate media data.  The source resolver takes a URL or byte stream and creates the appropriate media source for that content.  The source resolver is the standard way for the applications to create media sources. 
+Media sources are objects that generate media data.  The source resolver takes a URL or byte stream and creates the appropriate media source for that content.  The source resolver is the standard way for the applications to create media sources.
 
 This lesson contains the following procedures:
 
-1. Register the Smooth Streaming handler 
+1. Register the Smooth Streaming handler
 2. Add the adaptive source manager level event handlers
 3. Add the adaptive source level event handlers
 4. Add MediaElement event handlers
@@ -256,13 +252,13 @@ This lesson contains the following procedures:
 3. At the beginning of the MainPage class, add the following data members:
 
    ```csharp
-         private Windows.Foundation.Collections.PropertySet propertySet = new Windows.Foundation.Collections.PropertySet();             
+         private Windows.Foundation.Collections.PropertySet propertySet = new Windows.Foundation.Collections.PropertySet();
          private IAdaptiveSourceManager adaptiveSourceManager;
    ```
 4. Inside the **MainPage** constructor, add the following code after the **this.Initialize Components();** line and the registration code lines written in the previous lesson:
 
    ```csharp
-        // Gets the default instance of AdaptiveSourceManager which manages Smooth 
+        // Gets the default instance of AdaptiveSourceManager which manages Smooth
         //Streaming media sources.
         adaptiveSourceManager = AdaptiveSourceManager.GetDefault();
         // Sets property key value to AdaptiveSourceManager default instance.
@@ -272,20 +268,20 @@ This lesson contains the following procedures:
 5. Inside the **MainPage** constructor, modify the two RegisterByteStreamHandler methods to add the forth parameters:
 
    ```csharp
-         // Registers Smooth Streaming byte-stream handler for ".ism" extension and, 
-         // "text/xml" and "application/vnd.ms-ss" mime-types and pass the propertyset. 
+         // Registers Smooth Streaming byte-stream handler for ".ism" extension and,
+         // "text/xml" and "application/vnd.ms-ss" mime-types and pass the propertyset.
          // http://*.ism/manifest URI resources will be resolved by Byte-stream handler.
          extensions.RegisterByteStreamHandler(
 
-            "Microsoft.Media.AdaptiveStreaming.SmoothByteStreamHandler", 
-            ".ism", 
-            "text/xml", 
+            "Microsoft.Media.AdaptiveStreaming.SmoothByteStreamHandler",
+            ".ism",
+            "text/xml",
             propertySet );
          extensions.RegisterByteStreamHandler(
 
-            "Microsoft.Media.AdaptiveStreaming.SmoothByteStreamHandler", 
-            ".ism", 
-            "application/vnd.ms-sstr+xml", 
+            "Microsoft.Media.AdaptiveStreaming.SmoothByteStreamHandler",
+            ".ism",
+            "application/vnd.ms-sstr+xml",
          propertySet);
    ```
 6. Press **CTRL+S** to save the file.
@@ -313,7 +309,7 @@ This lesson contains the following procedures:
 4. At the end of the **MainPage** constructor, add the following line to subscribe to the adaptive source open event:
 
    ```csharp
-         adaptiveSourceManager.AdaptiveSourceOpenedEvent += 
+         adaptiveSourceManager.AdaptiveSourceOpenedEvent +=
            new AdaptiveSourceOpenedEventHandler(mediaElement_AdaptiveSourceOpened);
    ```
 5. Press **CTRL+S** to save the file.
@@ -324,7 +320,7 @@ This lesson contains the following procedures:
 2. Inside the **MainPage** class, add the following data member:
 
    ```csharp
-     private AdaptiveSourceStatusUpdatedEventArgs adaptiveSourceStatusUpdate; 
+     private AdaptiveSourceStatusUpdatedEventArgs adaptiveSourceStatusUpdate;
      private Manifest manifestObject;
    ```
 3. At the end of the **MainPage** class, add the following event handlers:
@@ -358,10 +354,10 @@ This lesson contains the following procedures:
          adaptiveSource.ManifestReadyEvent +=
 
                     mediaElement_ManifestReady;
-         adaptiveSource.AdaptiveSourceStatusUpdatedEvent += 
+         adaptiveSource.AdaptiveSourceStatusUpdatedEvent +=
 
             mediaElement_AdaptiveSourceStatusUpdated;
-         adaptiveSource.AdaptiveSourceFailedEvent += 
+         adaptiveSource.AdaptiveSourceFailedEvent +=
 
             mediaElement_AdaptiveSourceFailed;
    ```
@@ -424,7 +420,7 @@ The same events are available on Adaptive Source manger level as well, which can
    ```csharp
          _dispatcher = Window.Current.Dispatcher;
          PointerEventHandler pointerpressedhandler = new PointerEventHandler(sliderProgress_PointerPressed);
-         sliderProgress.AddHandler(Control.PointerPressedEvent, pointerpressedhandler, true);    
+         sliderProgress.AddHandler(Control.PointerPressedEvent, pointerpressedhandler, true);
    ```
 5. At the end of the **MainPage** class, add the following code:
 
@@ -451,7 +447,7 @@ The same events are available on Adaptive Source manger level as well, which can
             {
                stepfrequency = 10;
             }
-            else if (totalDVRDuration.TotalMinutes >= 30 
+            else if (totalDVRDuration.TotalMinutes >= 30
                      && totalDVRDuration.TotalMinutes < 60)
             {
                 stepfrequency = 30;
@@ -516,12 +512,12 @@ The same events are available on Adaptive Source manger level as well, which can
    > CoreDispatcher is used to make changes to the UI thread from non UI Thread. In case of bottleneck on dispatcher thread, developer can choose to use dispatcher provided by UI-element they intend to update.  For example:
 
    ```csharp
-         await sliderProgress.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { TimeSpan 
+         await sliderProgress.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { TimeSpan
 
-         timespan = new TimeSpan(adaptiveSourceStatusUpdate.EndTime); 
-         double absvalue  = (int)Math.Round(timespan.TotalSeconds, MidpointRounding.AwayFromZero); 
+         timespan = new TimeSpan(adaptiveSourceStatusUpdate.EndTime);
+         double absvalue  = (int)Math.Round(timespan.TotalSeconds, MidpointRounding.AwayFromZero);
 
-         sliderProgress.Maximum = absvalue; }); 
+         sliderProgress.Maximum = absvalue; });
    ```
 6. At the end of the **mediaElement_AdaptiveSourceStatusUpdated** method, add the following code:
 
@@ -540,13 +536,13 @@ The same events are available on Adaptive Source manger level as well, which can
 
 ### To compile and test the application
 
-1. Press **F6** to compile the project. 
+1. Press **F6** to compile the project.
 2. Press **F5** to run the application.
-3. At the top of the application, you can either use the default Smooth Streaming URL or enter a different one. 
-4. Click **Set Source**. 
+3. At the top of the application, you can either use the default Smooth Streaming URL or enter a different one.
+4. Click **Set Source**.
 5. Test the slider bar.
 
-You have completed lesson 2.  In this lesson you added a slider to application. 
+You have completed lesson 2.  In this lesson you added a slider to application.
 
 ## Lesson 3: Select Smooth Streaming Streams
 Smooth Streaming is capable to stream content with multiple language audio tracks that are selectable by the viewers.  In this lesson, you will enable viewers to select streams. This lesson contains the following procedures:
@@ -561,7 +557,7 @@ Smooth Streaming is capable to stream content with multiple language audio track
 2. Locate &lt;Grid.RowDefinitions&gt;, and modify the RowDefinitions so they looks like:
 
    ```xml
-         <Grid.RowDefinitions>            
+         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="100"/>
@@ -585,7 +581,7 @@ Smooth Streaming is capable to stream content with multiple language audio track
                     <TextBlock Name="tbAvailableStreams" Text="Available Streams:" FontSize="16" VerticalAlignment="Center"></TextBlock>
                     <Button Name="btnChangeStreams" Content="Submit" Click="btnChangeStream_Click"/>
                 </StackPanel>
-                <ListBox x:Name="lbAvailableStreams" Height="200" Width="200" Background="Transparent" HorizontalAlignment="Left" 
+                <ListBox x:Name="lbAvailableStreams" Height="200" Width="200" Background="Transparent" HorizontalAlignment="Left"
                     ScrollViewer.VerticalScrollMode="Enabled" ScrollViewer.VerticalScrollBarVisibility="Visible">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
@@ -605,25 +601,25 @@ Smooth Streaming is capable to stream content with multiple language audio track
 
    ```csharp
         #region class Stream
-   
+
         public class Stream
         {
             private IManifestStream stream;
             public bool isCheckedValue;
             public string name;
-   
+
             public string Name
             {
                 get { return name; }
                 set { name = value; }
             }
-   
+
             public IManifestStream ManifestStream
             {
                 get { return stream; }
                 set { stream = value; }
             }
-   
+
             public bool isChecked
             {
                 get { return isCheckedValue; }
@@ -640,7 +636,7 @@ Smooth Streaming is capable to stream content with multiple language audio track
                     }
                 }
             }
-   
+
             public Stream(IManifestStream streamIn)
             {
                 stream = streamIn;
@@ -663,8 +659,8 @@ Smooth Streaming is capable to stream content with multiple language audio track
         ///<summary>
         ///Functionality to select streams from IManifestStream available streams
         /// </summary>
-   
-        // This function is called from the mediaElement_ManifestReady event handler 
+
+        // This function is called from the mediaElement_ManifestReady event handler
         // to retrieve the streams and populate them to the local data members.
         public void getStreams(Manifest manifestObject)
         {
@@ -672,17 +668,17 @@ Smooth Streaming is capable to stream content with multiple language audio track
             availableVideoStreams = new List<Stream>();
             availableAudioStreams = new List<Stream>();
             availableTextStreams = new List<Stream>();
-   
+
             try
             {
                 for (int i = 0; i<manifestObject.AvailableStreams.Count; i++)
                 {
                     Stream newStream = new Stream(manifestObject.AvailableStreams[i]);
                     newStream.isChecked = false;
-   
+
                     //populate the stream lists based on the types
                     availableStreams.Add(newStream);
-   
+
                     switch (newStream.ManifestStream.Type)
                     {
                         case MediaStreamType.Video:
@@ -695,7 +691,7 @@ Smooth Streaming is capable to stream content with multiple language audio track
                             availableTextStreams.Add(newStream);
                             break;
                     }
-   
+
                     // Select the default selected streams from the manifest.
                     for (int j = 0; j<manifestObject.SelectedStreams.Count; j++)
                     {
@@ -713,7 +709,7 @@ Smooth Streaming is capable to stream content with multiple language audio track
                 txtStatus.Text = "Error: " + e.Message;
             }
         }
-   
+
         // This function set the list box ItemSource
         private async void refreshAvailableStreamsListBoxItemSource()
         {
@@ -728,13 +724,13 @@ Smooth Streaming is capable to stream content with multiple language audio track
                 txtStatus.Text = "Error: " + e.Message;
             }
         }
-   
+
         // This function creates a selected streams list
         private void createSelectedStreamsList(List<IManifestStream> selectedStreams)
         {
             bool isOneVideoSelected = false;
             bool isOneAudioSelected = false;
-   
+
             // Only one video stream can be selected
             for (int j = 0; j<availableVideoStreams.Count; j++)
             {
@@ -744,14 +740,14 @@ Smooth Streaming is capable to stream content with multiple language audio track
                     isOneVideoSelected = true;
                 }
             }
-   
+
             // Select the first video stream from the list if no video stream is selected
             if (!isOneVideoSelected)
             {
                 availableVideoStreams[0].isChecked = true;
                 selectedStreams.Add(availableVideoStreams[0].ManifestStream);
             }
-   
+
             // Only one audio stream can be selected
             for (int j = 0; j<availableAudioStreams.Count; j++)
             {
@@ -762,14 +758,14 @@ Smooth Streaming is capable to stream content with multiple language audio track
                     txtStatus.Text = "The audio stream is changed to " + availableAudioStreams[j].ManifestStream.Name;
                 }
             }
-   
+
             // Select the first audio stream from the list if no audio steam is selected.
             if (!isOneAudioSelected)
             {
                 availableAudioStreams[0].isChecked = true;
                 selectedStreams.Add(availableAudioStreams[0].ManifestStream);
             }
-   
+
             // Multiple text streams are supported.
             for (int j = 0; j < availableTextStreams.Count; j++)
             {
@@ -779,7 +775,7 @@ Smooth Streaming is capable to stream content with multiple language audio track
                 }
             }
         }
-   
+
         // Change streams on a smooth streaming presentation with multiple video streams.
         private async void changeStreams(List<IManifestStream> selectStreams)
         {
@@ -806,10 +802,10 @@ Smooth Streaming is capable to stream content with multiple language audio track
         private void btnChangeStream_Click(object sender, RoutedEventArgs e)
         {
             List<IManifestStream> selectedStreams = new List<IManifestStream>();
-   
+
             // Create a list of the selected streams
             createSelectedStreamsList(selectedStreams);
-   
+
             // Change streams on the presentation
             changeStreams(selectedStreams);
         }
@@ -817,10 +813,10 @@ Smooth Streaming is capable to stream content with multiple language audio track
 
 ### To compile and test the application
 
-1. Press **F6** to compile the project. 
+1. Press **F6** to compile the project.
 2. Press **F5** to run the application.
-3. At the top of the application, you can either use the default Smooth Streaming URL or enter a different one. 
-4. Click **Set Source**. 
+3. At the top of the application, you can either use the default Smooth Streaming URL or enter a different one.
+4. Click **Set Source**.
 5. The default language is audio_eng. Try to switch between audio_eng and audio_es. Every time, you select a new stream, you must click the Submit button.
 
 You have completed lesson 3.  In this lesson, you add the functionality to choose streams.
@@ -843,7 +839,7 @@ A Smooth Streaming presentation can contain multiple video files encoded with di
              <TextBlock Name="tbBitRate" Text="Available Bitrates:" FontSize="16" VerticalAlignment="Center"/>
              <Button Name="btnChangeTracks" Content="Submit" Click="btnChangeTrack_Click" />
          </StackPanel>
-         <ListBox x:Name="lbAvailableVideoTracks" Height="200" Width="200" Background="Transparent" HorizontalAlignment="Left" 
+         <ListBox x:Name="lbAvailableVideoTracks" Height="200" Width="200" Background="Transparent" HorizontalAlignment="Left"
                   ScrollViewer.VerticalScrollMode="Enabled" ScrollViewer.VerticalScrollBarVisibility="Visible">
              <ListBox.ItemTemplate>
                  <DataTemplate>
@@ -866,19 +862,19 @@ A Smooth Streaming presentation can contain multiple video files encoded with di
             private IManifestTrack trackInfo;
             public string _bitrate;
             public bool isCheckedValue;
-   
+
             public IManifestTrack TrackInfo
             {
                 get { return trackInfo; }
                 set { trackInfo = value; }
             }
-   
+
             public string Bitrate
             {
                 get { return _bitrate; }
                 set { _bitrate = value; }
             }
-   
+
             public bool isChecked
             {
                 get { return isCheckedValue; }
@@ -887,7 +883,7 @@ A Smooth Streaming presentation can contain multiple video files encoded with di
                     isCheckedValue = value;
                 }
             }
-   
+
             public Track(IManifestTrack trackInfoIn)
             {
                 trackInfo = trackInfoIn;
@@ -907,23 +903,23 @@ A Smooth Streaming presentation can contain multiple video files encoded with di
         /// <summary>
         /// Functionality to select video streams
         /// </summary>
-   
+
         /// This Function gets the tracks for the selected video stream
         public void getTracks(Manifest manifestObject)
         {
             availableTracks = new List<Track>();
-   
+
             IManifestStream videoStream = getVideoStream();
             IReadOnlyList<IManifestTrack> availableTracksLocal = videoStream.AvailableTracks;
             IReadOnlyList<IManifestTrack> selectedTracksLocal = videoStream.SelectedTracks;
-   
+
             try
             {
                 for (int i = 0; i < availableTracksLocal.Count; i++)
                 {
                     Track thisTrack = new Track(availableTracksLocal[i]);
                     thisTrack.isChecked = true;
-   
+
                     for (int j = 0; j < selectedTracksLocal.Count; j++)
                     {
                         string selectedTrackName = selectedTracksLocal[j].Bitrate.ToString();
@@ -941,7 +937,7 @@ A Smooth Streaming presentation can contain multiple video files encoded with di
                 txtStatus.Text = e.Message;
             }
         }
-   
+
         // This function gets the video stream that is playing
         private IManifestStream getVideoStream()
         {
@@ -956,22 +952,22 @@ A Smooth Streaming presentation can contain multiple video files encoded with di
             }
             return videoStream;
         }
-   
+
         // This function set the UI list box control ItemSource
         private async void refreshAvailableTracksListBoxItemSource()
         {
             try
             {
-                // Update the track check box list on the UI 
+                // Update the track check box list on the UI
                 await _dispatcher.RunAsync(CoreDispatcherPriority.Normal, ()
                     => { lbAvailableVideoTracks.ItemsSource = availableTracks; });
             }
             catch (Exception e)
             {
                 txtStatus.Text = "Error: " + e.Message;
-            }        
+            }
         }
-   
+
         // This function creates a list of the selected tracks.
         private void createSelectedTracksList(List<IManifestTrack> selectedTracks)
         {
@@ -984,8 +980,8 @@ A Smooth Streaming presentation can contain multiple video files encoded with di
                 }
             }
         }
-   
-        // This function selects the tracks based on user selection 
+
+        // This function selects the tracks based on user selection
         private void changeTracks(List<IManifestTrack> selectedTracks)
         {
             IManifestStream videoStream = getVideoStream();
@@ -1018,13 +1014,13 @@ A Smooth Streaming presentation can contain multiple video files encoded with di
             changeStreams(selectedStreams);
          }
    ```
-   
+
 ### To compile and test the application
 
-1. Press **F6** to compile the project. 
+1. Press **F6** to compile the project.
 2. Press **F5** to run the application.
-3. At the top of the application, you can either use the default Smooth Streaming URL or enter a different one. 
-4. Click **Set Source**. 
+3. At the top of the application, you can either use the default Smooth Streaming URL or enter a different one.
+4. Click **Set Source**.
 5. By default, all of the tracks of the video stream are selected. To experiment the bit rate changes, you can select the lowest bit rate available, and then select the highest bit rate available. You must click Submit after each change.  You can see the video quality changes.
 
 You have completed lesson 4.  In this lesson, you add the functionality to choose tracks.

@@ -1,20 +1,13 @@
 ---
-title: Advanced encoding with Media Encoder Premium Workflow | Microsoft Docs
+title: Advanced encoding with Media Encoder Premium Workflow
 description: Learn how to encode with Media Encoder Premium Workflow. Code samples are written in C# and use the Media Services SDK for .NET.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Advanced encoding with Media Encoder Premium Workflow
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -43,7 +36,7 @@ The workflow files need to be uploaded to your Media Services account as an Asse
 
 ## Create and configure a Visual Studio project
 
-Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 
 ## Encoding example
 
@@ -65,7 +58,7 @@ The following steps are performed:
       >[!NOTE]
       >The workflow asset must be added to the task before the media asset.
       The configuration string for this task should be empty.
-   
+
 6. Submit the encoding job.
 
 ```csharp
@@ -162,7 +155,7 @@ namespace MediaEncoderPremiumWorkflowSample
             task.OutputAssets.AddNew("Output asset",
                 AssetCreationOptions.None);
 
-            // Use the following event handler to check job progress.  
+            // Use the following event handler to check job progress.
             job.StateChanged += new
                     EventHandler<JobStateChangedEventArgs>(StateChanged);
 

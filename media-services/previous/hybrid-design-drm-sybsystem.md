@@ -1,14 +1,12 @@
 ---
-title: Hybrid design of DRM subsystem(s) using Azure Media Services | Microsoft Docs
+title: Hybrid design of DRM subsystem(s) using Azure Media Services
 description: This topic discusses hybrid design of DRM subsystem(s) using Azure Media Services.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
+ms.author: inhenkel
 ms.assetid: 18213fc1-74f5-4074-a32b-02846fe90601
 ms.service: media-services
 ms.topic: article
-ms.date: 10/04/2022
-ms.author: inhenkel
+ms.date: 10/05/2022
 ---
 
 <!-- William Zhan article -->

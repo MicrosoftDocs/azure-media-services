@@ -1,19 +1,15 @@
 ---
-title: How to encode an Azure asset by using Media Encoder Standard | Microsoft Docs
+title: How to encode an Azure asset by using Media Encoder Standard
 description: Learn how to use Media Encoder Standard to encode media content on Azure Media Services. Code samples use REST API.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 2a7273c6-8a22-4f82-9bfe-4509ff32d4a4
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 2a7273c6-8a22-4f82-9bfe-4509ff32d4a4 -->
+
 # How to encode an asset by using Media Encoder Standard
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -48,7 +44,7 @@ Before you start referencing media processors, verify that you have the correct 
 
 ## Connect to Media Services
 
-For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md). 
+For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 ## Create a job with a single encoding task
 
@@ -72,7 +68,7 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 x-ms-version: 2.19
-    Authorization: Bearer <ENCODED JWT TOKEN> 
+    Authorization: Bearer <ENCODED JWT TOKEN>
     x-ms-client-request-id: 00000000-0000-0000-0000-000000000000
     Host: media.windows.net
 
@@ -120,25 +116,25 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 x-ms-version: 2.19
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-client-request-id: 00000000-0000-0000-0000-000000000000
 
-{  
+{
    "Name":"NewTestJob",
-   "InputMediaAssets":[  
-      {  
-         "__metadata":{  
+   "InputMediaAssets":[
+      {
+         "__metadata":{
             "uri":"https://testrest.cloudapp.net/api/Assets('nb%3Acid%3AUUID%3A910ffdc1-2e25-4b17-8a42-61ffd4b8914c')"
          }
       }
    ],
-   "Tasks":[  
-      {  
+   "Tasks":[
+      {
          "Configuration":"H264 Adaptive Bitrate MP4 Set 720p",
          "MediaProcessorId":"nb:mpid:UUID:ff4df607-d419-42f0-bc17-a481b1331e56",
          "TaskBody":"<?xml version=\"1.0\" encoding=\"utf-8\"?><taskBody><inputAsset>JobInputAsset(0)</inputAsset><outputAsset>JobOutputAsset(0)</outputAsset></taskBody>"
       },
-      {  
+      {
          "Configuration":"H264 Smooth Streaming 720p",
          "MediaProcessorId":"nb:mpid:UUID:ff4df607-d419-42f0-bc17-a481b1331e56",
          "TaskBody":"<?xml version=\"1.0\" encoding=\"utf-16\"?><taskBody><inputAsset>JobOutputAsset(0)</inputAsset><outputAsset>JobOutputAsset(1)</outputAsset></taskBody>"
@@ -163,7 +159,7 @@ MaxDataServiceVersion: 3.0;NetFx
 Content-Type: multipart/mixed; boundary=batch_a01a5ec4-ba0f-4536-84b5-66c5a5a6d34e
 Accept: multipart/mixed
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: 00000000-0000-0000-0000-000000000000
 Host: media.windows.net
@@ -183,7 +179,7 @@ Accept: application/json
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: 00000000-0000-0000-0000-000000000000
 
@@ -200,11 +196,11 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: 00000000-0000-0000-0000-000000000000
 
-{  
+{
    "Configuration":"H264 Adaptive Bitrate MP4 Set 720p",
    "MediaProcessorId":"nb:mpid:UUID:ff4df607-d419-42f0-bc17-a481b1331e56",
    "TaskBody":"<?xml version=\"1.0\" encoding=\"utf-8\"?><taskBody><inputAsset>JobInputAsset(0)</inputAsset><outputAsset assetName=\"Custom output name\">JobOutputAsset(0)</outputAsset></taskBody>"
@@ -227,7 +223,7 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 x-ms-version: 2.19
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 Host: media.windows.net
 
 
@@ -256,7 +252,7 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 x-ms-version: 2.19
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 Host: media.windows.net
 
 

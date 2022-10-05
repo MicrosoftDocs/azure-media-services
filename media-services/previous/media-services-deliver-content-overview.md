@@ -1,16 +1,14 @@
 ---
 title: Delivering content to customers
 description: This topic gives an overview of what is involved in delivering your content with Azure Media Services.
-services: media-services
 author: IngridAtMicrosoft
-manager: femila
-ms.assetid: 89ede54a-6a9c-4814-9858-dcfbb5f4fed5
-ms.service: media-services
-ms.workload: media
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 89ede54a-6a9c-4814-9858-dcfbb5f4fed5 -->
 
 # Deliver content to customers
 
@@ -27,7 +25,7 @@ To achieve this goal, you can:
     * **Smooth Streaming**.
 
 >[!NOTE]
->When your AMS account is created a **default** streaming endpoint is added to your account in the **Stopped** state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the **Running** state. 
+>When your AMS account is created a **default** streaming endpoint is added to your account in the **Stopped** state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the **Running** state.
 
 This article gives an overview of important content delivery concepts.
 
@@ -40,7 +38,7 @@ To take advantage of dynamic packaging, you need to encode your mezzanine (sourc
 
 With dynamic packaging, you store and pay for the files in single storage format. Media Services will build and serve the appropriate response based on your requests.
 
-Dynamic packaging is available for standard and premium streaming endpoints. 
+Dynamic packaging is available for standard and premium streaming endpoints.
 
 For more information, see [Dynamic packaging](media-services-dynamic-packaging-overview.md).
 
@@ -61,8 +59,8 @@ Locators have expiration dates. The Azure portal sets an expiration date 100 yea
 
 > [!NOTE]
 > If you used the Azure portal to create locators before March 2015, those locators were set to expire after two years.
-> 
-> 
+>
+>
 
 To update an expiration date on a locator, use [REST](/rest/api/media/operations/locator#update_a_locator) or [.NET](/dotnet/api/microsoft.windowsazure.mediaservices.client.ilocator) APIs. Note that when you update the expiration date of a SAS locator, the URL changes.
 
@@ -76,8 +74,8 @@ Adaptive bitrate technologies allow video player applications to determine netwo
 To provide users with streaming URLs, you first must create an OnDemandOrigin locator. Creating the locator gives you the base path to the asset that contains the content you want to stream. However, to be able to stream this content, you need to modify this path further. To construct a full URL to the streaming manifest file, you must concatenate the locator’s path value and the manifest (filename.ism) file name. Then append **/Manifest** and an appropriate format (if needed) to the locator path.
 
 > [!NOTE]
-> You can also stream your content over a TLS connection. To do this, make sure your streaming URLs start with HTTPS. Note that, currently, AMS doesn’t support TLS with custom domains.  
-> 
+> You can also stream your content over a TLS connection. To do this, make sure your streaming URLs start with HTTPS. Note that, currently, AMS doesn’t support TLS with custom domains.
+>
 
 You can only stream over TLS if the streaming endpoint from which you deliver your content was created after September 10th, 2014. If your streaming URLs are based on the streaming endpoints created after September 10th, 2014, the URL contains “streaming.mediaservices.windows.net.” Streaming URLs that contain “origin.mediaservices.windows.net” (the old format) do not support TLS. If your URL is in the old format and you want to be able to stream over TLS, create a new streaming endpoint. Use URLs based on the new streaming endpoint to stream your content over TLS.
 
@@ -145,7 +143,7 @@ The following considerations apply:
 A streaming endpoint represents a streaming service that can deliver content directly to a client player application or to a content delivery network (CDN) for further distribution. The outbound stream from a streaming endpoint service can be a live stream or a video-on-demand asset in your Media Services account. There are two types of streaming endpoints, **standard** and **premium**. For more information, see [Streaming endpoints overview](media-services-streaming-endpoints-overview.md).
 
 >[!NOTE]
->When your AMS account is created a **default** streaming endpoint is added to your account in the **Stopped** state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the **Running** state. 
+>When your AMS account is created a **default** streaming endpoint is added to your account in the **Stopped** state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the **Running** state.
 
 ## Known issues
 ### Changes to Smooth Streaming manifest version

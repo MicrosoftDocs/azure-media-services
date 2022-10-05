@@ -1,19 +1,15 @@
 ---
-title: Managing Media Services entities with REST  | Microsoft Docs
+title: Managing Media Services entities with REST
 description: This article demonstrates how to manage Media Services entities with REST API.
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-services: media-services
-documentationcenter: ''
-ms.assetid: 95262a32-0f2a-4286-b9e2-1a1ca6399b5b
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 95262a32-0f2a-4286-b9e2-1a1ca6399b5b -->
+
 # Managing Media Services entities with REST
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -21,8 +17,8 @@ ms.author: inhenkel
 > [!div class="op_single_selector"]
 > * [REST](media-services-rest-manage-entities.md)
 > * [.NET](media-services-dotnet-manage-entities.md)
-> 
-> 
+>
+>
 
 Microsoft Azure Media Services is a REST-based service built on OData v3. You can add, query, update, and delete entities in much the same way as you can on any other OData service. Exceptions will be called out when applicable. For more information on OData, see [Open Data Protocol documentation](https://www.odata.org/documentation/).
 
@@ -31,13 +27,13 @@ This topic shows you how to manage Azure Media Services entities with REST.
 >[!NOTE]
 > Starting April 1, 2017, any Job record in your account older than 90 days will be automatically deleted, along with its associated Task records, even if the total number of records is below the maximum quota. For example, on April 1, 2017, any Job record in your account older than December 31, 2016, will be automatically deleted. If you need to archive the job/task information, you can use the code described in this topic.
 
-## Considerations  
+## Considerations
 
 When accessing entities in Media Services, you must set specific header fields and values in your HTTP requests. For more information, see [Setup for Media Services REST API Development](media-services-rest-how-to-use.md).
 
 ## Connect to Media Services
 
-For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md). 
+For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 ## Adding entities
 Every entity in Media Services is added to an entity set, such as Assets, through a POST HTTP request.
@@ -51,7 +47,7 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 x-ms-version: 2.19
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 Host: media.windows.net
 Content-Length: 74
 Expect: 100-continue
@@ -70,7 +66,7 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 x-ms-version: 2.19
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 Host: media.windows.net
 ```
 
@@ -83,7 +79,7 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 x-ms-version: 2.19
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 Host: media.windows.net
 
 GET https://media.windows.net/API/JobTemplates('nb:jtid:UUID:e81192f5-576f-b247-b781-70a790c20e7c')/TaskTemplates HTTP/1.1
@@ -92,7 +88,7 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 x-ms-version: 2.19
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 Host: media.windows.net
 ```
 
@@ -105,7 +101,7 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 x-ms-version: 2.19
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 Host: media.windows.net
 ```
 
@@ -118,19 +114,19 @@ Accept: application/json;odata=verbose
 DataServiceVersion: 3.0
 MaxDataServiceVersion: 3.0
 x-ms-version: 2.19
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 Host: media.windows.net
 ```
 
 > [!NOTE]
 > The $expand operation is not supported in Media Services as well as the unsupported LINQ methods described in LINQ Considerations (WCF Data Services).
-> 
-> 
+>
+>
 
 ## Enumerating through large collections of entities
-When querying entities, there is a limit of 1000 entities returned at one time because public REST v2 limits query results to 1000 results. Use **skip** and **top** to enumerate through the large collection of entities. 
+When querying entities, there is a limit of 1000 entities returned at one time because public REST v2 limits query results to 1000 results. Use **skip** and **top** to enumerate through the large collection of entities.
 
-The following example shows how to use **skip** and **top** to skip the first 2000 jobs and get the next 1000 jobs.  
+The following example shows how to use **skip** and **top** to skip the first 2000 jobs and get the next 1000 jobs.
 
 ```console
 GET https://media.windows.net/api/Jobs()?$skip=2000&$top=1000 HTTP/1.1

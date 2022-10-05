@@ -1,19 +1,15 @@
 ---
-title: Configure a content key authorization policy by using the Azure portal | Microsoft Docs
+title: Configure a content key authorization policy by using the Azure portal
 description: This article demonstrates how to configure an authorization policy for a content key.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: ee82a3fa-c34b-48f2-a108-8ba321f1691e
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: ee82a3fa-c34b-48f2-a108-8ba321f1691e -->
+
 # Configure a content key authorization policy
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -35,7 +31,7 @@ If you plan to have multiple content keys or want to specify a key/license deliv
 * [Configure a content key authorization policy by using the Media Services REST API](media-services-rest-configure-content-key-auth-policy.md)
 
 ### Some considerations apply
-* When your Media Services account is created, a default streaming endpoint is added to your account in the "Stopped" state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, your streaming endpoint must be in the "Running" state. 
+* When your Media Services account is created, a default streaming endpoint is added to your account in the "Stopped" state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, your streaming endpoint must be in the "Running" state.
 * Your asset must contain a set of adaptive bitrate MP4s or adaptive bitrate Smooth Streaming files. For more information, see [Encode an asset](media-services-encode-asset.md).
 * The key delivery service caches ContentKeyAuthorizationPolicy and its related objects (policy options and restrictions) for 15 minutes. You can create a ContentKeyAuthorizationPolicy and specify to use a token restriction, test it, and then update the policy to the open restriction. This process takes roughly 15 minutes before the policy switches to the open version.
 * A Media Services streaming endpoint sets the value of the CORS Access-Control-Allow-Origin header in preflight response as the wildcard "\*". This value works well with most players, including Azure Media Player, Roku and JWPlayer, and others. However, some players that use dash.js don't work because, with credentials mode set to "include," XMLHttpRequest in their dash.js doesn't allow the wildcard "\*" as the value of Access-Control-Allow-Origin. As a workaround to this limitation in dash.js, if you host your client from a single domain, Media Services can specify that domain in the preflight response header. For assistance, open a support ticket through the Azure portal.

@@ -1,18 +1,13 @@
 ---
-title: Troubleshooting guide for live streaming | Microsoft Docs
+title: Troubleshooting guide for live streaming
 description: This article gives suggestions on how to troubleshoot Azure Media Services live streaming problems.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Troubleshooting guide for live streaming
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

@@ -1,25 +1,17 @@
 ---
-title: Get started with delivering content on demand using .NET | Microsoft Docs
+title: Get started with delivering content on demand using .NET
 description: This tutorial walks you through the steps of implementing an on demand content delivery application with Azure Media Services using .NET.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 388b8928-9aa9-46b1-b60a-a918da75bd7b
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: conceptual
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: conceptual
+ms.date: 10/05/2022
 ---
+<!-- ms.assetid: 388b8928-9aa9-46b1-b60a-a918da75bd7b -->
 
 # Get started with delivering content on demand using .NET SDK
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]  
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 [!INCLUDE [media-services-selector-get-started](../latest/includes/media-services-selector-get-started.md)]
 
@@ -41,7 +33,7 @@ This tutorial includes the following tasks:
 3. Connect to the Media Services account.
 2. Upload a video file.
 3. Encode the source file into a set of adaptive bitrate MP4 files.
-4. Publish the asset and get streaming and progressive download URLs.  
+4. Publish the asset and get streaming and progressive download URLs.
 5. Play your content.
 
 ## Overview
@@ -53,11 +45,11 @@ The tutorial introduces the basic Media Services workflow and the most common pr
 
 The following image shows some of the most commonly used objects when developing VoD applications against the Media Services OData model.
 
-Click the image to view it full size.  
+Click the image to view it full size.
 
 [![Diagram showing some of the most commonly used objects in the Azure Media Services object data model for developing Video on Demand applications.](./media/media-services-dotnet-get-started/media-services-overview-object-model-small.png)](./media/media-services-dotnet-get-started/media-services-overview-object-model.png#lightbox)
 
-You can view the whole model [here](https://m.eet.com/media/1170326/ms-part1.pdf).  
+You can view the whole model [here](https://m.eet.com/media/1170326/ms-part1.pdf).
 
 ## Start streaming endpoints using the Azure portal
 
@@ -79,7 +71,7 @@ To start the streaming endpoint, do the following:
 
 ## Create and configure a Visual Studio project
 
-1. Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+1. Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 2. Create a new folder (folder can be anywhere on your local drive) and copy an .mp4 file that you want to encode and stream or progressively download. In this example, the "C:\VideoFiles" path is used.
 
 ## Connect to the Media Services account
@@ -114,7 +106,7 @@ The **Main** function calls methods that will be defined further in this section
 	    {
         try
         {
-            AzureAdTokenCredentials tokenCredentials = 
+            AzureAdTokenCredentials tokenCredentials =
                 new AzureAdTokenCredentials(_AADTenantDomain,
                     new AzureAdClientSymmetricKey(_AMSClientId, _AMSClientSecret),
                     AzureEnvironments.AzureCloudEnvironment);
@@ -190,7 +182,7 @@ After ingesting assets into Media Services, media can be encoded, transmuxed, wa
 
 As was mentioned earlier, when working with Azure Media Services, one of the most common scenarios is delivering adaptive bitrate streaming to your clients. Media Services can dynamically package a set of adaptive bitrate MP4 files into one of the following formats: HTTP Live Streaming (HLS), Smooth Streaming, and MPEG DASH.
 
-To take advantage of dynamic packaging, you need to encode or transcode your mezzanine (source) file into a set of adaptive bitrate MP4 files or adaptive bitrate Smooth Streaming files.  
+To take advantage of dynamic packaging, you need to encode or transcode your mezzanine (source) file into a set of adaptive bitrate MP4 files or adaptive bitrate Smooth Streaming files.
 
 The following code shows how to submit an encoding job. The job contains one task that specifies to transcode the mezzanine file into a set of adaptive bitrate MP4s using **Media Encoder Standard**. The code submits the job and waits until it is completed.
 

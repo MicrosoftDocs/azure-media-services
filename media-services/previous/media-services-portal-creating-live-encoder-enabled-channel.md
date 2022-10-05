@@ -1,28 +1,24 @@
 ---
-title: Perform live streaming using Azure Media Services to create multi-bitrate streams with Azure portal | Microsoft Docs
+title: Perform live streaming using Azure Media Services to create multi-bitrate streams with Azure portal
 description: This tutorial walks you through the steps of creating a Channel that receives a single-bitrate live stream and encodes it to multi-bitrate stream using the Azure portal.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 504f74c2-3103-42a0-897b-9ff52f279e23
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: conceptual
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: conceptual
+ms.date: 10/05/2022
 ---
-# Perform live streaming using Media Services to create multi-bitrate streams with Azure portal
 
+<!-- ms.assetid: 504f74c2-3103-42a0-897b-9ff52f279e23 -->
+
+# Perform live streaming using Media Services to create multi-bitrate streams with Azure portal
+UD
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 > [!div class="op_single_selector"]
 > * [Portal](media-services-portal-creating-live-encoder-enabled-channel.md)
 > * [.NET](media-services-dotnet-creating-live-encoder-enabled-channel.md)
 > * [REST API](/rest/api/media/operations/channel)
-> 
+>
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
@@ -87,7 +83,7 @@ The following are required to complete the tutorial.
 
         For detailed explanation about each protocol, see [Live streaming using Azure Media Services to create multi-bitrate streams](media-services-manage-live-encoder-enabled-channels.md).
 
-        You cannot change the protocol option while the Channel or its associated events/programs are running. If you require different protocols, you should create separate channels for each streaming protocol.  
+        You cannot change the protocol option while the Channel or its associated events/programs are running. If you require different protocols, you should create separate channels for each streaming protocol.
    2. You can apply IP restriction on the ingest.
 
        You can define the IP addresses that are allowed to ingest a video to this channel. Allowed IP addresses can be specified as either a single IP address (e.g. '10.0.0.1'), an IP range using an IP address and a CIDR subnet mask (e.g. '10.0.0.1/22'), or an IP range using an IP address and a dotted decimal subnet mask (e.g. '10.0.0.1(255.255.252.0)').

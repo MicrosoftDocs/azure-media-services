@@ -1,38 +1,34 @@
 ---
-title: Azure Media Services Community Overview | Microsoft Docs
+title: Azure Media Services Community Overview
 description: 'This Azure Media Services (AMS) community page discusses different ways you can get updates about AMS, see new videos and podcasts, ask questions and give feedback. '
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 0df020f4-8297-4f31-92bf-de098283e997
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 0df020f4-8297-4f31-92bf-de098283e997  -->
+
 # Azure Media Services Community
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]  
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-This Azure Media Services (AMS) community page discusses different ways you can get updates about AMS. You can also view new videos and podcasts, ask questions and give feedback.   
+This Azure Media Services (AMS) community page discusses different ways you can get updates about AMS. You can also view new videos and podcasts, ask questions and give feedback.
 
 ## Videos and Podcasts
 
-- [Protecting your Media Content with DRM](https://azure.microsoft.com/documentation/videos/azurefridayprotectingyourmediacontentdrm/) 
-- [Protecting your Media Content with AES Encryption](https://azure.microsoft.com/documentation/videos/azure-media-services-protecting-your-media-content-with-aes-encryption/) 
-- [Azure Media Services Developer Deep Dive](https://azure.microsoft.com/documentation/videos/build-2015-azure-media-services-developer-deep-dive/) 
-- [Azure Media Indexer automatically creates transcripts for your media](https://azure.microsoft.com/documentation/videos/azure-media-indexer-autoatically-creates-transcripts-for-your-media-with-adarsh-solanki/)  
+- [Protecting your Media Content with DRM](https://azure.microsoft.com/documentation/videos/azurefridayprotectingyourmediacontentdrm/)
+- [Protecting your Media Content with AES Encryption](https://azure.microsoft.com/documentation/videos/azure-media-services-protecting-your-media-content-with-aes-encryption/)
+- [Azure Media Services Developer Deep Dive](https://azure.microsoft.com/documentation/videos/build-2015-azure-media-services-developer-deep-dive/)
+- [Azure Media Indexer automatically creates transcripts for your media](https://azure.microsoft.com/documentation/videos/azure-media-indexer-autoatically-creates-transcripts-for-your-media-with-adarsh-solanki/)
 
 ## Discussion
 
 ### Twitter
 
-Use the [@MSFTAzureMedia](https://twitter.com/MSFTAzureMedia) twitter handle to contact us or follow updates on Twitter. 
-You can use the [@AzureSupport](https://twitter.com/azuresupport) twitter handle to request support on Twitter.  
+Use the [@MSFTAzureMedia](https://twitter.com/MSFTAzureMedia) twitter handle to contact us or follow updates on Twitter.
+You can use the [@AzureSupport](https://twitter.com/azuresupport) twitter handle to request support on Twitter.
 
 ### Online forums
 
@@ -40,8 +36,8 @@ The following forums can be used for asking questions about current products and
 
 Currently, MSDN is Media Services team's primary community forum.
 
-[:::image type="icon" source="./media/media-services-community/msdn.png" border="false":::](/answers/topics/azure-media-services.html) 
+[:::image type="icon" source="./media/media-services-community/msdn.png" border="false":::](/answers/topics/azure-media-services.html)
 
 The team also monitors questions tagged on Stack Overflow with 'azure-media-services'.
 
-[:::image type="icon" source="./media/media-services-community/stack-overflow.png" border="false":::](https://stackoverflow.com/questions/tagged/azure-media-services) 
+[:::image type="icon" source="./media/media-services-community/stack-overflow.png" border="false":::](https://stackoverflow.com/questions/tagged/azure-media-services)

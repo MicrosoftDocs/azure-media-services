@@ -1,16 +1,11 @@
 ---
-title: Generate a thumbnail sprite with Azure Media Services | Microsoft Docs
+title: Generate a thumbnail sprite with Azure Media Services
 description: This topic shows how to generate a thumbnail sprite with Azure Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: 
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
 
 # Generate a thumbnail sprite
@@ -22,13 +17,13 @@ You can use Media Encoder Standard to generate a thumbnail sprite, which is a JP
 In order to use Media Encoder Standard to generate Thumbnail Sprite, the preset:
 
 1. Must use JPG thumbnail image format
-2. Must specify Start/Step/Range values as either timestamps, or % values (and not frame counts) 
-    
+2. Must specify Start/Step/Range values as either timestamps, or % values (and not frame counts)
+
     1. It is okay to mix timestamps and % values
 
 3. Must have the SpriteColumn value, as a non-negative number greater than or equal to 1
 
-    1. If SpriteColumn is set to M >= 1, the output image is a rectangle with M columns. If the number of thumbnails generated via #2 is not an exact multiple of M, the last row will be incomplete, and left with black pixels.  
+    1. If SpriteColumn is set to M >= 1, the output image is a rectangle with M columns. If the number of thumbnails generated via #2 is not an exact multiple of M, the last row will be incomplete, and left with black pixels.
 
 Here is an example:
 

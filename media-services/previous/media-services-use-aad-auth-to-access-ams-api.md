@@ -1,18 +1,13 @@
 ---
-title: Access Azure Media Services API with Azure Active Directory authentication | Microsoft Docs
+title: Access Azure Media Services API with Azure Active Directory authentication
 description: Learn about concepts and steps to take to use Azure Active Directory (Azure AD) to authenticate access to the Azure Media Services API.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Access the Azure Media Services API with Azure AD authentication
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
