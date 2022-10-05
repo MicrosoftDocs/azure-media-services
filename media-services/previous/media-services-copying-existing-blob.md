@@ -1,20 +1,13 @@
 ---
-title: Copying blobs from a storage account into an Azure Media Services asset | Microsoft Docs
+title: Copying blobs from a storage account into an Azure Media Services asset
 description: This topic shows how to copy an existing blob into a Media Services Asset. The example uses Azure Media Services .NET SDK Extensions.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Copying existing blobs into a Media Services Asset
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -36,7 +29,7 @@ The article shows two code samples:
 1. Copy blobs from an asset in one AMS account into a new asset in another AMS account.
 2. Copy blobs from some storage account into a new asset in an AMS account.
 
-## Copy blobs between two AMS accounts  
+## Copy blobs between two AMS accounts
 
 ### Prerequisites
 
@@ -47,8 +40,8 @@ You can follow the steps in this article or you can download a sample that conta
 
 ### Set up your project
 
-1. Set up your development environment as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
-2. Add the appSettings section to the .config file and update the values based on your Media Services accounts, the destination storage account, and the source asset ID.  
+1. Set up your development environment as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
+2. Add the appSettings section to the .config file and update the values based on your Media Services accounts, the destination storage account, and the source asset ID.
 
 ```xml
 <appSettings>
@@ -87,29 +80,29 @@ namespace CopyExistingBlobsIntoAsset
 {
     class Program
     {
-        static string _sourceAADTenantDomain = 
+        static string _sourceAADTenantDomain =
             ConfigurationManager.AppSettings["AMSSourceAADTenantDomain"];
-        static string _sourceRESTAPIEndpoint = 
+        static string _sourceRESTAPIEndpoint =
             ConfigurationManager.AppSettings["AMSSourceRESTAPIEndpoint"];
-        static string _sourceClientId = 
+        static string _sourceClientId =
             ConfigurationManager.AppSettings["SourceAMSClientId"];
-        static string _sourceClientSecret = 
+        static string _sourceClientSecret =
             ConfigurationManager.AppSettings["SourceAMSClientSecret"];
 
-        static string _destAADTenantDomain = 
+        static string _destAADTenantDomain =
             ConfigurationManager.AppSettings["AMSDestAADTenantDomain"];
-        static string _destRESTAPIEndpoint = 
+        static string _destRESTAPIEndpoint =
             ConfigurationManager.AppSettings["AMSDestRESTAPIEndpoint"];
-        static string _destClientId = 
+        static string _destClientId =
             ConfigurationManager.AppSettings["DestAMSClientId"];
-        static string _destClientSecret = 
+        static string _destClientSecret =
             ConfigurationManager.AppSettings["DestAMSClientSecret"];
 
-        static string _destStorageAccountName = 
+        static string _destStorageAccountName =
             ConfigurationManager.AppSettings["DestStorageAccountName"];
-        static string _destStorageAccountKey = 
+        static string _destStorageAccountKey =
             ConfigurationManager.AppSettings["DestStorageAccountKey"];
-        static string _sourceAssetID = 
+        static string _sourceAssetID =
             ConfigurationManager.AppSettings["SourceAssetID"];
 
         private static CloudMediaContext _sourceContext = null;
@@ -154,7 +147,7 @@ namespace CopyExistingBlobsIntoAsset
 }
 ```
 
-## Copy blobs from a storage account into an AMS account 
+## Copy blobs from a storage account into an AMS account
 
 ### Prerequisites
 
@@ -163,7 +156,7 @@ namespace CopyExistingBlobsIntoAsset
 
 ### Set up your project
 
-1. Set up your development environment as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+1. Set up your development environment as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 2. Add the appSettings section to the .config file and update the values based on your source storage and destination AMS accounts.
 
 ```xml
@@ -171,7 +164,7 @@ namespace CopyExistingBlobsIntoAsset
     <add key="SourceStorageAccountName" value="name" />
     <add key="SourceStorageAccountKey" value="key" />
     <add key="NameOfBlobContainerYouWantToCopy" value="BlobContainerName"/>
-    
+
     <add key="AMSAADTenantDomain" value="tenant"/>
     <add key="AMSRESTAPIEndpoint" value="endpoint"/>
     <add key="AMSClientId" value="clientID"/>
@@ -183,7 +176,7 @@ namespace CopyExistingBlobsIntoAsset
 
 ### Copy blobs from some storage account into a new asset in an AMS account
 
-The following code copies blobs from a storage account into a Media Services asset. 
+The following code copies blobs from a storage account into a Media Services asset.
 
 >[!NOTE]
 >There is a limit of 1,000,000 policies for different AMS policies (for example, for Locator policy or ContentKeyAuthorizationPolicy). You should use the same policy ID if you are always using the same days / access permissions, for example, policies for locators that are intended to remain in place for a long time (non-upload policies). For more information, see [this](media-services-dotnet-manage-entities.md#limit-access-policies) article.
@@ -196,7 +189,7 @@ using Microsoft.WindowsAzure.MediaServices.Client;
 using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
-	
+
 namespace CopyExistingBlobsIntoAsset
 {
     class Program
@@ -232,7 +225,7 @@ namespace CopyExistingBlobsIntoAsset
             AzureAdTokenCredentials tokenCredentials = new AzureAdTokenCredentials(_AMSAADTenantDomain,
                new AzureAdClientSymmetricKey(_AMSClientId, _AMSClientSecret),
                AzureEnvironments.AzureCloudEnvironment);
-            
+
             var tokenProvider = new AzureAdTokenProvider(tokenCredentials);
 
             // Create the context for your source Media Services account.
@@ -260,7 +253,7 @@ namespace CopyExistingBlobsIntoAsset
         {
             CloudBlobClient destBlobStorage = _destinationStorageAccount.CreateCloudBlobClient();
 
-            // Create a new asset. 
+            // Create a new asset.
             IAsset asset = _context.Assets.Create("NewAsset_" + Guid.NewGuid(), AssetCreationOptions.None);
 
             IAccessPolicy writePolicy = _context.AccessPolicies.Create("writePolicy",
@@ -269,7 +262,7 @@ namespace CopyExistingBlobsIntoAsset
             ILocator destinationLocator =
                 _context.Locators.CreateLocator(LocatorType.Sas, asset, writePolicy);
 
-            // Get the asset container URI and Blob copy from mediaContainer to assetContainer. 
+            // Get the asset container URI and Blob copy from mediaContainer to assetContainer.
             CloudBlobContainer destAssetContainer =
                 destBlobStorage.GetContainerReference((new Uri(destinationLocator.Path)).Segments[1]);
 
@@ -290,7 +283,7 @@ namespace CopyExistingBlobsIntoAsset
                 ICloudBlob destinationBlob = destAssetContainer.GetBlockBlobReference(assetFile.Name);
 
                 CopyBlob(sourceBlob, destAssetContainer);
-                
+
                 sourceBlob.FetchAttributes();
                 assetFile.ContentFileSize = (sourceBlob as ICloudBlob).Properties.Length;
                 assetFile.Update();
@@ -303,14 +296,14 @@ namespace CopyExistingBlobsIntoAsset
             writePolicy.Delete();
 
             // Set the primary asset file.
-            // If, for example, we copied a set of Smooth Streaming files, 
-            // set the .ism file to be the primary file. 
-            // If we, for example, copied an .mp4, then the mp4 would be the primary file. 
+            // If, for example, we copied a set of Smooth Streaming files,
+            // set the .ism file to be the primary file.
+            // If we, for example, copied an .mp4, then the mp4 would be the primary file.
             var ismAssetFile = asset.AssetFiles.ToList().
                 Where(f => f.Name.EndsWith(".ism", StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
 
             // The following code assigns the first .ism file as the primary file in the asset.
-            // An asset should have one .ism file.  
+            // An asset should have one .ism file.
             if (ismAssetFile != null)
             {
                 ismAssetFile.IsPrimary = true;
@@ -350,9 +343,9 @@ namespace CopyExistingBlobsIntoAsset
 
                 while (true)
                 {
-                    // The StartCopyFromBlob is an async operation, 
-                    // so we want to check if the copy operation is completed before proceeding. 
-                    // To do that, we call FetchAttributes on the blob and check the CopyStatus. 
+                    // The StartCopyFromBlob is an async operation,
+                    // so we want to check if the copy operation is completed before proceeding.
+                    // To do that, we call FetchAttributes on the blob and check the CopyStatus.
                     destinationBlob.FetchAttributes();
                     if (destinationBlob.CopyState.Status != CopyStatus.Pending)
                     {

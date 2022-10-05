@@ -1,19 +1,15 @@
 ---
-title: Filters and dynamic manifests | Microsoft Docs
+title: Filters and dynamic manifests
 description: This topic describes how to create filters so your client can use them to stream specific sections of a stream. Media Services creates dynamic manifests to archive this selective streaming.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: ff102765-8cee-4c08-a6da-b603db9e2054
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: ff102765-8cee-4c08-a6da-b603db9e2054 -->
+
 # Filters and dynamic manifests
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

@@ -1,21 +1,14 @@
 ---
-title: Get started using the Java SDK for Azure Media Services | Microsoft Docs
+title: Get started using the Java SDK for Azure Media Services
 description: This tutorial walks you through the steps of implementing a basic Video-on-Demand (VoD) content delivery service with Azure Media Services (AMS) application using Java.
-services: media-services
-documentationcenter: java
 author: IngridAtMicrosoft
-manager: femila
-editor: johndeu
-ms.assetid: b884bd61-dbdb-42ea-b170-8fb02e7fded7
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: java
-ms.topic: conceptual
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-java
+ms.service: media-services
+ms.topic: conceptual
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: b884bd61-dbdb-42ea-b170-8fb02e7fded7 -->
 
 # Get started with the Java client SDK for Azure Media Services
 
@@ -45,7 +38,7 @@ For example, if your build tool is `gradle`, add the following dependency to you
 >Starting with `azure-media` package version `0.9.8`, the SDK added support for Azure Active Directory (AAD) authentication and removed support for  Azure Access Control Service (ACS) authentication. We recommend that you migrate to the Azure AD authentication model as soon as possible. For details on migration,  read the article [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 >[!NOTE]
->You can find the source code of the Azure Media Services Java SDK in our [GitHub repository](https://github.com/Azure/azure-sdk-for-java/tree/0.9/services/azure-media). Make sure to switch to the 0.9 branch, and not the main branch. 
+>You can find the source code of the Azure Media Services Java SDK in our [GitHub repository](https://github.com/Azure/azure-sdk-for-java/tree/0.9/services/azure-media). Make sure to switch to the 0.9 branch, and not the main branch.
 
 ## How to: Use Azure Media Services with Java
 
@@ -114,8 +107,8 @@ The code also relies on a locally stored video file. You must edit the code to p
         private static MediaContract mediaService;
 
         // Encoder configuration
-        // This is using the default Adaptive Streaming encoding preset. 
-        // You can choose to use a custom preset, or any other sample defined preset. 
+        // This is using the default Adaptive Streaming encoding preset.
+        // You can choose to use a custom preset, or any other sample defined preset.
         // In addition you can use other processors, like Speech Analyzer, or Redactor if desired.
         private static String preferredEncoder = "Media Encoder Standard";
         private static String encodingPreset = "Adaptive Streaming";

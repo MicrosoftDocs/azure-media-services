@@ -1,21 +1,14 @@
 ---
 title: Monitor Job Progress using .NET
 description: Learn how to use event handler code to track job progress and send status updates. The code sample is written in C# and uses the Media Services SDK for .NET.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: ee720ed6-8ce5-4434-b6d6-4df71fca224e
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!--  ms.assetid: ee720ed6-8ce5-4434-b6d6-4df71fca224e -->
 
 # Monitor Job Progress using .NET
 
@@ -78,7 +71,7 @@ The following code example defines the StateChanged event handler. This event ha
         builder.AppendLine("Job started (server UTC time): " + job.StartTime.ToString());
         builder.AppendLine("Media Services account name: " + _accountName);
         builder.AppendLine("Media Services account location: " + _accountLocation);
-        // Log job errors if they exist.  
+        // Log job errors if they exist.
         if (job.State == JobState.Error)
         {
             builder.Append("Error Details: \n");
@@ -93,7 +86,7 @@ The following code example defines the StateChanged event handler. This event ha
             }
         }
         builder.AppendLine("***************************\n");
-        // Write the output to a local file and to the console. The template 
+        // Write the output to a local file and to the console. The template
         // for an error output file is:  JobStop-{JobId}.txt
         string outputFile = _outputFilesFolder + @"\JobStop-" + JobIdAsFileName(job.Id) + ".txt";
         WriteToFile(outputFile, builder.ToString());

@@ -1,20 +1,15 @@
 ---
-title: Download Media Services assets to your computer - Azure | Microsoft Docs
+title: Download Media Services assets to your computer - Azure
 description: Learn about to download assets to your computer. Code samples are written in C# and use the Media Services SDK for .NET.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 8908a1dd-3ffb-4f18-955d-4c8e2d82fc5d
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 8908a1dd-3ffb-4f18-955d-4c8e2d82fc5d  -->
+
 # How to: Deliver an asset by download
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -30,14 +25,14 @@ This example shows how to download media assets from Media Services to your loca
     // Download the output asset of the specified job to a local folder.
     static IAsset DownloadAssetToLocal( string jobId, string outputFolder)
     {
-        // This method illustrates how to download a single asset. 
+        // This method illustrates how to download a single asset.
         // However, you can iterate through the OutputAssets
-        // collection, and download all assets if there are many. 
+        // collection, and download all assets if there are many.
 
-        // Get a reference to the job. 
+        // Get a reference to the job.
         IJob job = GetJob(jobId);
 
-        // Get a reference to the first output asset. If there were multiple 
+        // Get a reference to the first output asset. If there were multiple
         // output media assets you could iterate and handle each one.
         IAsset outputAsset = job.OutputMediaAssets[0];
 

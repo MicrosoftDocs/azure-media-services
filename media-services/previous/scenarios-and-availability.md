@@ -1,17 +1,11 @@
 ---
-title: Microsoft Azure Media Services common scenarios | Microsoft Docs
+title: Microsoft Azure Media Services common scenarios
 description: This article gives an overview of Microsoft Azure Media Services scenarios.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: conceptual
-ms.date: 06/28/2022
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: conceptual
+ms.date: 10/05/2022
 ---
 
 # Microsoft Azure Media Services common scenarios

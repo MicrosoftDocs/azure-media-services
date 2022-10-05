@@ -1,19 +1,15 @@
 ---
-title: Publish content in the Azure portal | Microsoft Docs
+title: Publish content in the Azure portal
 description: This tutorial walks you through the steps of publishing your content in the Azure portal.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 92c364eb-5a5f-4f4e-8816-b162c031bb40
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 92c364eb-5a5f-4f4e-8816-b162c031bb40 -->
+
 # Publish content in the Azure portal
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -22,16 +18,16 @@ ms.author: inhenkel
 > * [Portal](media-services-portal-publish.md)
 > * [.NET](media-services-deliver-streaming-content.md)
 > * [REST](media-services-rest-deliver-streaming-content.md)
-> 
-> 
+>
+>
 
 ## Overview
 > [!NOTE]
-> To complete this tutorial, you need an Azure account. For details, see [Azure free trial](https://azure.microsoft.com/pricing/free-trial/). 
-> 
-> 
+> To complete this tutorial, you need an Azure account. For details, see [Azure free trial](https://azure.microsoft.com/pricing/free-trial/).
+>
+>
 
-To provide your user with a URL that they can use to stream or download your content, first you must publish your asset by creating a locator. Locators provide access to asset files. Azure Media Services supports two types of locators: 
+To provide your user with a URL that they can use to stream or download your content, first you must publish your asset by creating a locator. Locators provide access to asset files. Azure Media Services supports two types of locators:
 
 * **Streaming (OnDemandOrigin) locators**. Streaming locators are used for adaptive streaming. Examples of adaptive streaming include Apple HTTP Live Streaming (HLS), Microsoft Smooth Streaming, and Dynamic Adaptive Streaming over HTTP (DASH, also called MPEG-DASH). To create a streaming locator, your asset must include an .ism file. For example, `http://amstest.streaming.mediaservices.windows.net/61b3da1d-96c7-489e-bd21-c5f8a7494b03/scott.ism/manifest`.
 * **Progressive (shared access signature) locators**. Progressive locators are used to deliver video via progressive download.
@@ -55,11 +51,11 @@ A shared access signature URL has the following format:
 For more information, see the [delivering content overview](media-services-deliver-content-overview.md).
 
 > [!NOTE]
-> Locators that were created in the Azure portal before March 2015 have a two-year expiration date.  
-> 
-> 
+> Locators that were created in the Azure portal before March 2015 have a two-year expiration date.
+>
+>
 
-To update an expiration date on a locator, use can use a [REST API](/rest/api/media/operations/locator#update_a_locator) or a [.NET API](/dotnet/api/microsoft.windowsazure.mediaservices.client.ilocator). 
+To update an expiration date on a locator, use can use a [REST API](/rest/api/media/operations/locator#update_a_locator) or a [.NET API](/dotnet/api/microsoft.windowsazure.mediaservices.client.ilocator).
 
 > [!NOTE]
 > When you update the expiration date of a shared access signature locator, the URL changes.
@@ -70,7 +66,7 @@ To update an expiration date on a locator, use can use a [REST API](/rest/api/me
 3. Select the **Publish** button.
 4. Select the locator type.
 5. Select **Add**.
-   
+
     ![Publish the video](./media/media-services-portal-vod-get-started/media-services-publish1.png)
 
 The URL is added to the list of **Published URLs**.
@@ -86,4 +82,4 @@ Some considerations apply:
 
 * Make sure that the video has been published.
 * The Azure portal media player plays from the default streaming endpoint. If you want to play from a non-default streaming endpoint, select and copy the URL, and then paste it into another player. For example, you can test your video on the [Azure Media Player](https://aka.ms/azuremediaplayer).
-* The streaming endpoint from which you are streaming must be running.  
+* The streaming endpoint from which you are streaming must be running.

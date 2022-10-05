@@ -1,21 +1,15 @@
 ---
-title: Configure a content key authorization policy by using the Media Services .NET SDK | Microsoft Docs
+title: Configure a content key authorization policy by using the Media Services .NET SDK
 description: Learn how to configure an authorization policy for a content key by using the Media Services .NET SDK.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 1a0aedda-5b87-4436-8193-09fc2f14310c
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 1a0aedda-5b87-4436-8193-09fc2f14310c -->
+
 # Configure a content key authorization policy by using the Media Services .NET SDK
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -41,7 +35,7 @@ For more information, see the following articles:
 - [Integrate Azure Media Services OWIN MVC-based app with Azure Active Directory and restrict content key delivery based on JWT claims](http://www.gtrifonov.com/2015/01/24/mvc-owin-azure-media-services-ad-integration/)
 
 ### Some considerations apply
-* When your Media Services account is created, a default streaming endpoint is added to your account in the "Stopped" state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, your streaming endpoint must be in the "Running" state. 
+* When your Media Services account is created, a default streaming endpoint is added to your account in the "Stopped" state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, your streaming endpoint must be in the "Running" state.
 * Your asset must contain a set of adaptive bitrate MP4s or adaptive bitrate Smooth Streaming files. For more information, see [Encode an asset](media-services-encode-asset.md).
 * Upload and encode your assets by using the AssetCreationOptions.StorageEncrypted option.
 * If you plan to have multiple content keys that require the same policy configuration, we recommend that you create a single authorization policy and reuse it with multiple content keys.
@@ -63,7 +57,7 @@ The following example creates an open authorization policy and adds it to the co
 		IContentKeyAuthorizationPolicy policy = _context.
 		ContentKeyAuthorizationPolicies.
 		CreateAsync("Open Authorization Policy").Result;
-		
+
 		List<ContentKeyAuthorizationPolicyRestriction> restrictions =
             new List<ContentKeyAuthorizationPolicyRestriction>();
 
@@ -79,9 +73,9 @@ The following example creates an open authorization policy and adds it to the co
 
         IContentKeyAuthorizationPolicyOption policyOption =
             _context.ContentKeyAuthorizationPolicyOptions.Create(
-            "policy", 
-            ContentKeyDeliveryType.BaselineHttp, 
-            restrictions, 
+            "policy",
+            ContentKeyDeliveryType.BaselineHttp,
+            restrictions,
             "");
 
         policy.Options.Add(policyOption);
@@ -172,7 +166,7 @@ The following example creates an authorization policy with a token restriction. 
 
         restrictions.Add(restriction);
 
-        //You could have multiple options 
+        //You could have multiple options
         IContentKeyAuthorizationPolicyOption policyOption =
             _context.ContentKeyAuthorizationPolicyOptions.Create(
                 "Token option for HLS",
@@ -214,19 +208,19 @@ To get a test token based on the token restriction that was used for the key aut
         TokenRestrictionTemplateSerializer.Deserialize(tokenTemplateString);
 
     // Generate a test token based on the data in the given TokenRestrictionTemplate.
-    // Note, you need to pass the key id Guid because we specified 
+    // Note, you need to pass the key id Guid because we specified
     // TokenClaim.ContentKeyIdentifierClaim in during the creation of TokenRestrictionTemplate.
     Guid rawkey = EncryptionUtils.GetKeyIdAsGuid(key.Id);
 
     //The GenerateTestToken method returns the token without the word “Bearer” in front
-    //so you have to add it in front of the token string. 
+    //so you have to add it in front of the token string.
     string testToken = TokenRestrictionTemplateSerializer.GenerateTestToken(tokenTemplate, null, rawkey);
     Console.WriteLine("The authorization token is:\nBearer {0}", testToken);
     Console.WriteLine();
 ```
 
 ## PlayReady dynamic encryption
-You can use Media Services to configure the rights and restrictions that you want the PlayReady DRM runtime to enforce when a user tries to play back protected content. 
+You can use Media Services to configure the rights and restrictions that you want the PlayReady DRM runtime to enforce when a user tries to play back protected content.
 
 When you protect your content with PlayReady, one of the things you need to specify in your authorization policy is an XML string that defines the [PlayReady license template](media-services-playready-license-template-overview.md). In the Media Services SDK for .NET, the PlayReadyLicenseResponseTemplate and PlayReadyLicenseTemplate classes help you define the PlayReady license template.
 
@@ -241,15 +235,15 @@ The following example creates an open authorization policy and adds it to the co
     static public void AddOpenAuthorizationPolicy(IContentKey contentKey)
     {
 
-        // Create ContentKeyAuthorizationPolicy with Open restrictions 
-        // and create authorization policy          
+        // Create ContentKeyAuthorizationPolicy with Open restrictions
+        // and create authorization policy
 
         List<ContentKeyAuthorizationPolicyRestriction> restrictions = new List<ContentKeyAuthorizationPolicyRestriction>
         {
-            new ContentKeyAuthorizationPolicyRestriction 
-            { 
-                Name = "Open", 
-                KeyRestrictionType = (int)ContentKeyRestrictionType.Open, 
+            new ContentKeyAuthorizationPolicyRestriction
+            {
+                Name = "Open",
+                KeyRestrictionType = (int)ContentKeyRestrictionType.Open,
                 Requirements = null
             }
         };
@@ -290,11 +284,11 @@ To configure the token restriction option, you need to use an XML to describe th
 
         List<ContentKeyAuthorizationPolicyRestriction> restrictions = new List<ContentKeyAuthorizationPolicyRestriction>
         {
-            new ContentKeyAuthorizationPolicyRestriction 
-            { 
-                Name = "Token Authorization Policy", 
+            new ContentKeyAuthorizationPolicyRestriction
+            {
+                Name = "Token Authorization Policy",
                 KeyRestrictionType = (int)ContentKeyRestrictionType.TokenRestricted,
-                Requirements = tokenTemplateString, 
+                Requirements = tokenTemplateString,
             }
         };
 
@@ -337,45 +331,45 @@ To configure the token restriction option, you need to use an XML to describe th
         template.RequiredClaims.Add(TokenClaim.ContentKeyIdentifierClaim);
 
         return TokenRestrictionTemplateSerializer.Serialize(template);
-    } 
+    }
 
     static private string ConfigurePlayReadyLicenseTemplate()
     {
         // The following code configures PlayReady License Template using .NET classes
         // and returns the XML string.
 
-        //The PlayReadyLicenseResponseTemplate class represents the template for the response sent back to the end user. 
-        //It contains a field for a custom data string between the license server and the application 
+        //The PlayReadyLicenseResponseTemplate class represents the template for the response sent back to the end user.
+        //It contains a field for a custom data string between the license server and the application
         //(may be useful for custom app logic) as well as a list of one or more license templates.
         PlayReadyLicenseResponseTemplate responseTemplate = new PlayReadyLicenseResponseTemplate();
 
         // The PlayReadyLicenseTemplate class represents a license template for creating PlayReady licenses
-        // to be returned to the end users. 
-        //It contains the data on the content key in the license and any rights or restrictions to be 
+        // to be returned to the end users.
+        //It contains the data on the content key in the license and any rights or restrictions to be
         //enforced by the PlayReady DRM runtime when using the content key.
         PlayReadyLicenseTemplate licenseTemplate = new PlayReadyLicenseTemplate();
-        //Configure whether the license is persistent (saved in persistent storage on the client) 
-        //or non-persistent (only held in memory while the player is using the license).  
+        //Configure whether the license is persistent (saved in persistent storage on the client)
+        //or non-persistent (only held in memory while the player is using the license).
         licenseTemplate.LicenseType = PlayReadyLicenseType.Nonpersistent;
 
-        // AllowTestDevices controls whether test devices can use the license or not.  
+        // AllowTestDevices controls whether test devices can use the license or not.
         // If true, the MinimumSecurityLevel property of the license
         // is set to 150.  If false (the default), the MinimumSecurityLevel property of the license is set to 2000.
         licenseTemplate.AllowTestDevices = true;
 
 
-        // You can also configure the Play Right in the PlayReady license by using the PlayReadyPlayRight class. 
-        // It grants the user the ability to play back the content subject to the zero or more restrictions 
-        // configured in the license and on the PlayRight itself (for playback specific policy). 
-        // Much of the policy on the PlayRight has to do with output restrictions 
-        // which control the types of outputs that the content can be played over and 
+        // You can also configure the Play Right in the PlayReady license by using the PlayReadyPlayRight class.
+        // It grants the user the ability to play back the content subject to the zero or more restrictions
+        // configured in the license and on the PlayRight itself (for playback specific policy).
+        // Much of the policy on the PlayRight has to do with output restrictions
+        // which control the types of outputs that the content can be played over and
         // any restrictions that must be put in place when using a given output.
-        // For example, if the DigitalVideoOnlyContentRestriction is enabled, 
-        //then the DRM runtime will only allow the video to be displayed over digital outputs 
+        // For example, if the DigitalVideoOnlyContentRestriction is enabled,
+        //then the DRM runtime will only allow the video to be displayed over digital outputs
         //(analog video outputs won’t be allowed to pass the content).
 
-        //IMPORTANT: These types of restrictions can be very powerful but can also affect the consumer experience. 
-        // If the output protections are configured too restrictive, 
+        //IMPORTANT: These types of restrictions can be very powerful but can also affect the consumer experience.
+        // If the output protections are configured too restrictive,
         // the content might be unplayable on some clients. For more information, see the PlayReady Compliance Rules document.
 
         // For example:
@@ -387,7 +381,7 @@ To configure the token restriction option, you need to use an XML to describe th
     }
 ```
 
-To get a test token based on the token restriction that was used for the key authorization policy, see the "[Test token](#test-token)" section. 
+To get a test token based on the token restriction that was used for the key authorization policy, see the "[Test token](#test-token)" section.
 
 ## <a id="types"></a>Types used when you define ContentKeyAuthorizationPolicy
 ### <a id="ContentKeyRestrictionType"></a>ContentKeyRestrictionType
@@ -403,7 +397,7 @@ To get a test token based on the token restriction that was used for the key aut
 
 ### <a id="ContentKeyDeliveryType"></a>ContentKeyDeliveryType
 
-```csharp 
+```csharp
     public enum ContentKeyDeliveryType
     {
       None = 0,

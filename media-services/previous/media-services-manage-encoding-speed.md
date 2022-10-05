@@ -1,22 +1,18 @@
 ---
-title: Manage speed and concurrency of your encoding with Azure Media Services | Microsoft Docs
+title: Manage speed and concurrency of your encoding with Azure Media Services
 description: This article gives a brief overview of how you can manage speed and concurrency of your encoding jobs/tasks with Azure Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 676313f8-a158-4e3a-a99b-2c29a341ecc9
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 676313f8-a158-4e3a-a99b-2c29a341ecc9 -->
+
 #  Manage speed and concurrency of your encoding
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)] 
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 This article gives a brief overview of how you can manage speed and concurrency of your encoding jobs/tasks.
 

@@ -1,21 +1,15 @@
 ---
-title: Configuring asset delivery policies using Media Services REST API | Microsoft Docs
+title: Configuring asset delivery policies using Media Services REST API
 description: This topic shows how to configure different asset delivery policies using Media Services REST API.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: cfowler
-editor: ''
-ms.assetid: 5cb9d32a-e68b-4585-aa82-58dded0691d0
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 5cb9d32a-e68b-4585-aa82-58dded0691d0 -->
+
 # Configuring asset delivery policies
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -27,7 +21,7 @@ If you plan to deliver dynamically encrypted assets, one of the steps in the Med
 This topic discusses why and how to create and configure asset delivery policies.
 
 > [!NOTE]
-> When your AMS account is created a **default** streaming endpoint is added to your account in the **Stopped** state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the **Running** state. 
+> When your AMS account is created a **default** streaming endpoint is added to your account in the **Stopped** state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the **Running** state.
 >
 > Also, to be able to use dynamic packaging and dynamic encryption your asset must contain a set of adaptive bitrate MP4s or adaptive bitrate Smooth Streaming files.
 
@@ -51,7 +45,6 @@ MPEG DASH
 
 {streaming endpoint name-media services account name}.streaming.mediaservices.windows.net/{locator ID}/{filename}.ism/Manifest(format=mpd-time-csf)
 
-
 For instructions on how to publish an asset and build a streaming URL, see [Build a streaming URL](media-services-deliver-streaming-content.md).
 
 ## Considerations
@@ -61,18 +54,18 @@ For instructions on how to publish an asset and build a streaming URL, see [Buil
 * If you have an asset with an existing streaming locator, you cannot link a new policy to the asset, unlink an existing policy from the asset, or update a delivery policy associated with the asset.  You first have to remove the streaming locator, adjust the policies, and then re-create the streaming locator.  You can use the same locatorId when you recreate the streaming locator but you should ensure that won’t cause issues for clients since content can be cached by the origin or a downstream CDN.
 
 > [!NOTE]
-> 
+>
 > When accessing entities in Media Services, you must set specific header fields and values in your HTTP requests. For more information, see [Setup for Media Services REST API Development](media-services-rest-how-to-use.md).
 
 ## Connect to Media Services
 
-For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md). 
+For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 ## Clear asset delivery policy
 ### <a id="create_asset_delivery_policy"></a>Create asset delivery policy
-The following HTTP request creates an asset delivery policy that specifies to not apply dynamic encryption and to deliver the stream in any of the following protocols:  MPEG DASH, HLS, and Smooth Streaming protocols. 
+The following HTTP request creates an asset delivery policy that specifies to not apply dynamic encryption and to deliver the stream in any of the following protocols:  MPEG DASH, HLS, and Smooth Streaming protocols.
 
-For information on what values you can specify when creating an AssetDeliveryPolicy, see the [Types used when defining AssetDeliveryPolicy](#types) section.   
+For information on what values you can specify when creating an AssetDeliveryPolicy, see the [Types used when defining AssetDeliveryPolicy](#types) section.
 
 Request:
 
@@ -83,7 +76,7 @@ DataServiceVersion: 1.0;NetFx
 MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: 4651882c-d7ad-4d5e-86ab-f07f47dcb41e
 Host: media.windows.net
@@ -134,7 +127,7 @@ MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
 Content-Type: application/json
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: 56d2763f-6e72-419d-ba3c-685f6db97e81
 Host: media.windows.net
@@ -166,7 +159,7 @@ Content-Type: application/json
 MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: 569d4b7c-a446-4edc-b77c-9fb686083dd8
 Host: media.windows.net
@@ -196,9 +189,9 @@ Date: Sun, 08 Feb 2015 21:42:30 GMT
 
 
 ### Create asset delivery policy
-The following HTTP request creates the **AssetDeliveryPolicy** that is configured to apply dynamic envelope encryption (**DynamicEnvelopeEncryption**) to the **HLS** protocol (in this example, other protocols will be blocked from streaming). 
+The following HTTP request creates the **AssetDeliveryPolicy** that is configured to apply dynamic envelope encryption (**DynamicEnvelopeEncryption**) to the **HLS** protocol (in this example, other protocols will be blocked from streaming).
 
-For information on what values you can specify when creating an AssetDeliveryPolicy, see the [Types used when defining AssetDeliveryPolicy](#types) section.   
+For information on what values you can specify when creating an AssetDeliveryPolicy, see the [Types used when defining AssetDeliveryPolicy](#types) section.
 
 Request:
 
@@ -210,7 +203,7 @@ MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
 User-Agent: Microsoft ADO.NET Data Services
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: fff319f6-71dd-4f6c-af27-b675c0066fa7
 Host: media.windows.net
@@ -251,9 +244,9 @@ When specifying DynamicCommonEncryption delivery policy, you need to make sure t
 Get the delivery URL for the PlayReady delivery method of the content key created in the previous step. A client uses the returned URL to request a PlayReady license in order to playback the protected content. For more information, see [Get Delivery URL](#get_delivery_url).
 
 ### Create asset delivery policy
-The following HTTP request creates the **AssetDeliveryPolicy** that is configured to apply dynamic common encryption (**DynamicCommonEncryption**) to the **Smooth Streaming** protocol (in this example, other protocols will be blocked from streaming). 
+The following HTTP request creates the **AssetDeliveryPolicy** that is configured to apply dynamic common encryption (**DynamicCommonEncryption**) to the **Smooth Streaming** protocol (in this example, other protocols will be blocked from streaming).
 
-For information on what values you can specify when creating an AssetDeliveryPolicy, see the [Types used when defining AssetDeliveryPolicy](#types) section.   
+For information on what values you can specify when creating an AssetDeliveryPolicy, see the [Types used when defining AssetDeliveryPolicy](#types) section.
 
 Request:
 
@@ -265,7 +258,7 @@ MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
 User-Agent: Microsoft ADO.NET Data Services
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: fff319f6-71dd-4f6c-af27-b675c0066fa7
 Host: media.windows.net
@@ -276,7 +269,7 @@ Host: media.windows.net
 
 If you want to protect your content using Widevine DRM, update the AssetDeliveryConfiguration values to use WidevineLicenseAcquisitionUrl (which has the value of 7) and specify the URL of a license delivery service. You can use the following AMS partners to help you deliver Widevine licenses: [Axinom](https://www.axinom.com), [EZDRM](https://ezdrm.com/), [castLabs](https://castlabs.com/company/partners/azure/).
 
-For example: 
+For example:
 
 ```console
 {"Name":"AssetDeliveryPolicy","AssetDeliveryProtocol":2,"AssetDeliveryPolicyType":4,"AssetDeliveryConfiguration":"[{\"Key\":7,\"Value\":\"https:\\/\\/example.net\/WidevineLicenseAcquisition\/"}]"}
@@ -284,8 +277,8 @@ For example:
 
 > [!NOTE]
 > When encrypting with Widevine, you would only be able to deliver using DASH. Make sure to specify DASH (2) in the asset delivery protocol.
-> 
-> 
+>
+>
 
 ### Link asset with asset delivery policy
 See [Link asset with asset delivery policy](#link_asset_with_asset_delivery_policy)
@@ -320,7 +313,7 @@ public enum AssetDeliveryProtocol
     /// </summary>
     HLS = 0x4,
 
-    ProgressiveDownload = 0x10, 
+    ProgressiveDownload = 0x10,
 
     /// <summary>
     /// Include all protocols.
@@ -331,7 +324,7 @@ public enum AssetDeliveryProtocol
 
 ### AssetDeliveryPolicyType
 
-The following enum describes values you can set for the asset delivery policy type.  
+The following enum describes values you can set for the asset delivery policy type.
 
 ```csharp
 public enum AssetDeliveryPolicyType
@@ -342,15 +335,15 @@ public enum AssetDeliveryPolicyType
     None,
 
     /// <summary>
-    /// The Asset should not be delivered via this AssetDeliveryProtocol. 
+    /// The Asset should not be delivered via this AssetDeliveryProtocol.
     /// </summary>
-    Blocked, 
+    Blocked,
 
     /// <summary>
     /// Do not apply dynamic encryption to the asset.
     /// </summary>
-    /// 
-    NoDynamicEncryption,  
+    ///
+    NoDynamicEncryption,
 
     /// <summary>
     /// Apply Dynamic Envelope encryption.
@@ -367,7 +360,7 @@ public enum AssetDeliveryPolicyType
 ### ContentKeyDeliveryType
 
 The following enum describes values you can use to configure the delivery method of the content key to the client.
-    
+
 ```csharp
 public enum ContentKeyDeliveryType
 {

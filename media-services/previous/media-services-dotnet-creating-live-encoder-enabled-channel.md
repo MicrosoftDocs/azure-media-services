@@ -1,22 +1,15 @@
 ---
-title: How to perform live streaming using Azure Media Services to create multi-bitrate streams with .NET  | Microsoft Docs
+title: How to perform live streaming using Azure Media Services to create multi-bitrate streams with .NET
 description: This tutorial walks you through the steps of creating a Channel that receives a single-bitrate live stream and encodes it to multi-bitrate stream using .NET SDK.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 4df5e690-ff63-47cc-879b-9c57cb8ec240
+ms.author: inhenkel
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
 ms.topic: conceptual
-ms.date: 03/10/2021
-ms.author: anilmur
-ms.reviewer: juliako
-ms.custom: devx-track-csharp
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 4df5e690-ff63-47cc-879b-9c57cb8ec240 -->
+
 # How to perform live streaming using Azure Media Services to create multi-bitrate streams with .NET
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -25,11 +18,11 @@ ms.custom: devx-track-csharp
 > * [Portal](media-services-portal-creating-live-encoder-enabled-channel.md)
 > * [.NET](media-services-dotnet-creating-live-encoder-enabled-channel.md)
 > * [REST API](/rest/api/media/operations/channel)
-> 
+>
 > [!NOTE]
 > To complete this tutorial, you need an Azure account. For details, see [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A261C142F).
-> 
-> 
+>
+>
 
 ## Overview
 This tutorial walks you through the steps of creating a **Channel** that receives a single-bitrate live stream and encodes it to multi-bitrate stream.
@@ -64,7 +57,7 @@ The following steps describe tasks involved in creating common live streaming ap
 11. Publish the asset associated with the program by creating an OnDemand locator.
 
     >[!NOTE]
-    >When your AMS account is created a **default** streaming endpoint is added to your account in the **Stopped** state. The streaming endpoint from which you want to stream content has to be in the **Running** state. 
+    >When your AMS account is created a **default** streaming endpoint is added to your account in the **Stopped** state. The streaming endpoint from which you want to stream content has to be in the **Running** state.
 
 12. Start the program when you are ready to start streaming and archiving.
 13. Optionally, the live encoder can be signaled to start an advertisement. The advertisement is inserted in the output stream.
@@ -104,7 +97,7 @@ You can download the sample that is described in this article from [here](https:
 
 ## Set up for development with Media Services SDK for .NET
 
-Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 
 ## Code example
 
@@ -157,14 +150,14 @@ namespace EncodeLiveStreamWithAmsClear
             Console.WriteLine("Intest URL: {0}", ingestUrl);
 
 
-            // Use the previewEndpoint to preview and verify 
-            // that the input from the encoder is actually reaching the Channel. 
+            // Use the previewEndpoint to preview and verify
+            // that the input from the encoder is actually reaching the Channel.
             string previewEndpoint = channel.Preview.Endpoints.FirstOrDefault().Url.ToString();
 
             Console.WriteLine("Preview URL: {0}", previewEndpoint);
 
-            // When Live Encoding is enabled, you can now get a preview of the live feed as it reaches the Channel. 
-            // This can be a valuable tool to check whether your live feed is actually reaching the Channel. 
+            // When Live Encoding is enabled, you can now get a preview of the live feed as it reaches the Channel.
+            // This can be a valuable tool to check whether your live feed is actually reaching the Channel.
             // The thumbnail is exposed via the same end-point as the Channel Preview URL.
             string thumbnailUri = new UriBuilder
             {
@@ -175,15 +168,15 @@ namespace EncodeLiveStreamWithAmsClear
 
             Console.WriteLine("Thumbain URL: {0}", thumbnailUri);
 
-            // Once you previewed your stream and verified that it is flowing into your Channel, 
-            // you can create an event by creating an Asset, Program, and Streaming Locator. 
+            // Once you previewed your stream and verified that it is flowing into your Channel,
+            // you can create an event by creating an Asset, Program, and Streaming Locator.
             IAsset asset = CreateAndConfigureAsset();
 
             IProgram program = CreateAndStartProgram(channel, asset);
 
             ILocator locator = CreateLocatorForAsset(program.Asset, program.ArchiveWindowLength);
 
-            // You can use slates and ads only if the channel type is Standard.  
+            // You can use slates and ads only if the channel type is Standard.
             StartStopAdsSlates(channel);
 
             // Once you are done streaming, clean up your resources.
@@ -219,12 +212,12 @@ namespace EncodeLiveStreamWithAmsClear
         }
 
         /// <summary>
-        /// Create channel input, used in channel creation options. 
+        /// Create channel input, used in channel creation options.
         /// </summary>
         /// <returns></returns>
         private static ChannelInput CreateChannelInput()
         {
-            // When creating a Channel, you can specify allowed IP addresses in one of the following formats: 
+            // When creating a Channel, you can specify allowed IP addresses in one of the following formats:
             // IpV4 address with 4 numbers
             // CIDR address range
 
@@ -247,12 +240,12 @@ namespace EncodeLiveStreamWithAmsClear
         }
 
         /// <summary>
-        /// Create channel preview, used in channel creation options. 
+        /// Create channel preview, used in channel creation options.
         /// </summary>
         /// <returns></returns>
         private static ChannelPreview CreateChannelPreview()
         {
-            // When creating a Channel, you can specify allowed IP addresses in one of the following formats: 
+            // When creating a Channel, you can specify allowed IP addresses in one of the following formats:
             // IpV4 address with 4 numbers
             // CIDR address range
 
@@ -274,7 +267,7 @@ namespace EncodeLiveStreamWithAmsClear
         }
 
         /// <summary>
-        /// Create channel encoding, used in channel creation options. 
+        /// Create channel encoding, used in channel creation options.
         /// </summary>
         /// <returns></returns>
         private static ChannelEncoding CreateChannelEncoding()
@@ -332,7 +325,7 @@ namespace EncodeLiveStreamWithAmsClear
         /// <returns></returns>
         public static ILocator CreateLocatorForAsset(IAsset asset, TimeSpan ArchiveWindowLength)
         {
-            // You cannot create a streaming locator using an AccessPolicy that includes write or delete permissions.            
+            // You cannot create a streaming locator using an AccessPolicy that includes write or delete permissions.
             var locator = _context.Locators.CreateLocator
             (
                 LocatorType.OnDemandOrigin,
@@ -451,15 +444,15 @@ namespace EncodeLiveStreamWithAmsClear
             return entityId;
         }
 
-        /// <summary> 
-        /// Checks if the operation has been completed. 
+        /// <summary>
+        /// Checks if the operation has been completed.
         /// If the operation succeeded, the created entity Id is returned in the out parameter.
-        /// </summary> 
-        /// <param name="operationId">The operation Id.</param> 
+        /// </summary>
+        /// <param name="operationId">The operation Id.</param>
         /// <param name="channel">
-        /// If the operation succeeded, 
+        /// If the operation succeeded,
         /// the entity Id associated with the successful operation is returned in the out parameter.</param>
-        /// <returns>Returns false if the operation is still in progress; otherwise, true.</returns> 
+        /// <returns>Returns false if the operation is still in progress; otherwise, true.</returns>
         private static bool IsCompleted(IOperation operation, out string entityId)
         {
             bool completed = false;
@@ -469,8 +462,8 @@ namespace EncodeLiveStreamWithAmsClear
             switch (operation.State)
             {
                 case OperationState.Failed:
-                    // Handle the failure. 
-                    // For example, throw an exception. 
+                    // Handle the failure.
+                    // For example, throw an exception.
                     // Use the following information in the exception: operationId, operation.ErrorMessage.
                     Log("operation failed", operation.TargetEntityId, operation.Id);
                     break;

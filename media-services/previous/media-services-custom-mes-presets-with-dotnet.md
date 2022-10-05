@@ -1,28 +1,22 @@
 ---
-title: Customizing Media Encoder Standard presets | Microsoft Docs
+title: Customizing Media Encoder Standard presets
 description: This topic shows how to perform advanced encoding by customizing Media Encoder Standard task presets. The topic shows how to use Media Services .NET SDK to create an encoding task and job. It also shows how to supply custom presets to the encoding job.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: ec95392f-d34a-4c22-a6df-5274eaac445b
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: ec95392f-d34a-4c22-a6df-5274eaac445b -->
 
 # Customizing Media Encoder Standard presets
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]  
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 ## Overview
 
-This article shows how to perform advanced encoding with Media Encoder Standard (MES) using a custom preset. The article uses .NET to create an encoding task and a job that executes this task.  
+This article shows how to perform advanced encoding with Media Encoder Standard (MES) using a custom preset. The article uses .NET to create an encoding task and a job that executes this task.
 
 This article shows you how to customize a preset by taking the [H264 Multiple Bitrate 720p](media-services-mes-preset-H264-Multiple-Bitrate-720p.md) preset and reducing the number of layers. The [Customizing Media Encoder Standard presets](media-services-advanced-encoding-with-mes.md) article demonstrates custom presets that can be used to perform advanced encoding tasks.
 
@@ -39,75 +33,75 @@ Save the JSON defined in the [H264 Multiple Bitrate 720p](media-services-mes-pre
 
 Open the **CustomPreset_JSON.json** file and remove first three layers from **H264Layers** so your file looks like this.
 
-```json	
-  {  
-    "Version": 1.0,  
-    "Codecs": [  
-      {  
-        "KeyFrameInterval": "00:00:02",  
-        "H264Layers": [  
-          {  
-            "Profile": "Auto",  
-            "Level": "auto",  
-            "Bitrate": 1000,  
-            "MaxBitrate": 1000,  
-            "BufferWindow": "00:00:05",  
-            "Width": 640,  
-            "Height": 360,  
-            "BFrames": 3,  
-            "ReferenceFrames": 3,  
-            "AdaptiveBFrame": true,  
-            "Type": "H264Layer",  
-            "FrameRate": "0/1"  
-          },  
-          {  
-            "Profile": "Auto",  
-            "Level": "auto",  
-            "Bitrate": 650,  
-            "MaxBitrate": 650,  
-            "BufferWindow": "00:00:05",  
-            "Width": 640,  
-            "Height": 360,  
-            "BFrames": 3,  
-            "ReferenceFrames": 3,  
-            "AdaptiveBFrame": true,  
-            "Type": "H264Layer",  
-            "FrameRate": "0/1"  
-          },  
-          {  
-            "Profile": "Auto",  
-            "Level": "auto",  
-            "Bitrate": 400,  
-            "MaxBitrate": 400,  
-            "BufferWindow": "00:00:05",  
-            "Width": 320,  
-            "Height": 180,  
-            "BFrames": 3,  
-            "ReferenceFrames": 3,  
-            "AdaptiveBFrame": true,  
-            "Type": "H264Layer",  
-            "FrameRate": "0/1"  
-          }  
-        ],  
-        "Type": "H264Video"  
-      },  
-      {  
-        "Profile": "AACLC",  
-        "Channels": 2,  
-        "SamplingRate": 48000,  
-        "Bitrate": 128,  
-        "Type": "AACAudio"  
-      }  
-    ],  
-    "Outputs": [  
-      {  
-        "FileName": "{Basename}_{Width}x{Height}_{VideoBitrate}.mp4",  
-        "Format": {  
-          "Type": "MP4Format"  
-        }  
-      }  
-    ]  
-  }  
+```json
+  {
+    "Version": 1.0,
+    "Codecs": [
+      {
+        "KeyFrameInterval": "00:00:02",
+        "H264Layers": [
+          {
+            "Profile": "Auto",
+            "Level": "auto",
+            "Bitrate": 1000,
+            "MaxBitrate": 1000,
+            "BufferWindow": "00:00:05",
+            "Width": 640,
+            "Height": 360,
+            "BFrames": 3,
+            "ReferenceFrames": 3,
+            "AdaptiveBFrame": true,
+            "Type": "H264Layer",
+            "FrameRate": "0/1"
+          },
+          {
+            "Profile": "Auto",
+            "Level": "auto",
+            "Bitrate": 650,
+            "MaxBitrate": 650,
+            "BufferWindow": "00:00:05",
+            "Width": 640,
+            "Height": 360,
+            "BFrames": 3,
+            "ReferenceFrames": 3,
+            "AdaptiveBFrame": true,
+            "Type": "H264Layer",
+            "FrameRate": "0/1"
+          },
+          {
+            "Profile": "Auto",
+            "Level": "auto",
+            "Bitrate": 400,
+            "MaxBitrate": 400,
+            "BufferWindow": "00:00:05",
+            "Width": 320,
+            "Height": 180,
+            "BFrames": 3,
+            "ReferenceFrames": 3,
+            "AdaptiveBFrame": true,
+            "Type": "H264Layer",
+            "FrameRate": "0/1"
+          }
+        ],
+        "Type": "H264Video"
+      },
+      {
+        "Profile": "AACLC",
+        "Channels": 2,
+        "SamplingRate": 48000,
+        "Bitrate": 128,
+        "Type": "AACAudio"
+      }
+    ],
+    "Outputs": [
+      {
+        "FileName": "{Basename}_{Width}x{Height}_{VideoBitrate}.mp4",
+        "Format": {
+          "Type": "MP4Format"
+        }
+      }
+    ]
+  }
 ```
 
 ## <a id="encoding_with_dotnet"></a>Encoding with Media Services .NET SDK
@@ -116,24 +110,24 @@ The following code example uses Media Services .NET SDK to perform the following
 
 - Create an encoding job.
 - Get a reference to the Media Encoder Standard encoder.
-- Load the custom JSON preset that you created in the previous section. 
+- Load the custom JSON preset that you created in the previous section.
 
     ```csharp
     // Load the JSON from the local file.
-    string configuration = File.ReadAllText(fileName);  
+    string configuration = File.ReadAllText(fileName);
     ```
 
-- Add an encoding task to the job. 
+- Add an encoding task to the job.
 - Specify the input asset to be encoded.
 - Create an output asset that contains the encoded asset.
 - Add an event handler to check the job progress.
 - Submit the job.
-   
+
 #### Create and configure a Visual Studio project
 
-Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 
-#### Example   
+#### Example
 
 ```csharp
 using System;
@@ -190,7 +184,7 @@ namespace CustomizeMESPresests
         {
             // Declare a new job.
             IJob job = _context.Jobs.Create("Media Encoder Standard Job");
-            // Get a media processor reference, and pass to it the name of the 
+            // Get a media processor reference, and pass to it the name of the
             // processor to use for the specific task.
             IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
 
@@ -205,9 +199,9 @@ namespace CustomizeMESPresests
 
             // Specify the input asset to be encoded.
             task.InputAssets.Add(asset);
-            // Add an output asset to contain the results of the job. 
-            // This output is specified as AssetCreationOptions.None, which 
-            // means the output asset is not encrypted. 
+            // Add an output asset to contain the results of the job.
+            // This output is specified as AssetCreationOptions.None, which
+            // means the output asset is not encrypted.
             task.OutputAssets.AddNew("Output asset",
             AssetCreationOptions.None);
 

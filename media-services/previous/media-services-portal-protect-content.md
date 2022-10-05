@@ -1,19 +1,15 @@
 ---
-title: Configure content protection policies by using the Azure portal | Microsoft Docs
+title: Configure content protection policies by using the Azure portal
 description: This article demonstrates how to use the Azure portal to configure content protection policies. The article also shows how to enable dynamic encryption for your assets.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 270b3272-7411-40a9-ad42-5acdbba31154
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 270b3272-7411-40a9-ad42-5acdbba31154 -->
+
 # Configure content protection policies by using the Azure portal
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -22,7 +18,7 @@ ms.author: inhenkel
 > To complete this tutorial, you need an Azure account. For details, see [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/). 	> No new features or functionality are being added to Media Services v2. <br/>Check out the latest version, [Media Services v3](../latest/index.yml). Also, see [migration guidance from v2 to v3](../latest/migrate-v-2-v-3-migration-introduction.md)
 >
 
- With Azure Media Services, you can secure your media from the time it leaves your computer through storage, processing, and delivery. You can use Media Services to deliver your content encrypted dynamically with the Advanced Encryption Standard (AES) by using 128-bit encryption keys. You also can use it with common encryption (CENC) by using PlayReady and/or Widevine digital rights management (DRM) and Apple FairPlay. 
+ With Azure Media Services, you can secure your media from the time it leaves your computer through storage, processing, and delivery. You can use Media Services to deliver your content encrypted dynamically with the Advanced Encryption Standard (AES) by using 128-bit encryption keys. You also can use it with common encryption (CENC) by using PlayReady and/or Widevine digital rights management (DRM) and Apple FairPlay.
 
 Media Services provides a service for delivering DRM licenses and AES clear keys to authorized clients. You can use the Azure portal to create one key/license authorization policy for all types of encryptions.
 
@@ -43,7 +39,7 @@ Media Services supports multiple ways of authenticating users who make key or li
 You can use the portal to create one key/license authorization policy for all types of encryptions.
 
 ### Open authorization
-Open restriction means that the system delivers the key to anyone who makes a key request. This restriction might be useful for test purposes. 
+Open restriction means that the system delivers the key to anyone who makes a key request. This restriction might be useful for test purposes.
 
 ### Token authorization
 The token-restricted policy must be accompanied by a token issued by a security token service (STS). Media Services supports tokens in the simple web token (SWT) and JSON Web Token (JWT) formats. Media Services doesn't provide an STS. You can create a custom STS or use Azure Access Control Service to issue tokens. The STS must be configured to create a token signed with the specified key and issue claims that you specified in the token restriction configuration. If the token is valid and the claims in the token match those configured for the key (or license), the Media Services key delivery service returns the requested key (or license) to the client.
@@ -56,7 +52,7 @@ When you configure the token-restricted policy, you must specify the primary ver
 The PlayReady license template sets the functionality that is enabled on your PlayReady license. For more information about the PlayReady license template, see the [Media Services PlayReady license template overview](media-services-playready-license-template-overview.md).
 
 ### Nonpersistent
-If you configure a license as nonpersistent, it's held in memory only while the player uses the license.  
+If you configure a license as nonpersistent, it's held in memory only while the player uses the license.
 
 ![Nonpersistent content protection](./media/media-services-portal-content-protection/media-services-content-protection003.png)
 
@@ -90,7 +86,7 @@ To see all your assets, select **Settings** > **Assets**.
 ![Assets option](./media/media-services-portal-content-protection/media-services-content-protection007.png)
 
 ### Encrypt with AES or DRM
-When you select **Encrypt** for an asset, you see two choices: **AES** or **DRM**. 
+When you select **Encrypt** for an asset, you see two choices: **AES** or **DRM**.
 
 #### AES
 AES clear key encryption is enabled on all streaming protocols: Smooth Streaming, HLS, and MPEG-DASH.
@@ -107,7 +103,7 @@ AES clear key encryption is enabled on all streaming protocols: Smooth Streaming
     c. **PlayReady only with Smooth Streaming, HLS, and MPEG-DASH** dynamically encrypts Smooth Streaming, HLS, and MPEG-DASH streams with PlayReady DRM.
 
     d. **Widevine only with MPEG-DASH** dynamically encrypts your MPEG-DASH with Widevine DRM.
-    
+
     e. **FairPlay only with HLS** dynamically encrypts your HLS stream with FairPlay.
 
 1. To enable FairPlay encryption, on the **Content Protection Global Settings** blade, select **FairPlay configuration**. Then select the **App certificate**, and enter the **Application Secret Key**.
@@ -116,7 +112,7 @@ AES clear key encryption is enabled on all streaming protocols: Smooth Streaming
 
 1. After you make the encryption selection, select **Apply**.
 
->[!NOTE] 
+>[!NOTE]
 >If you plan to play an AES-encrypted HLS in Safari, see the blog post [Encrypted HLS in Safari](https://azure.microsoft.com/blog/how-to-make-token-authorized-aes-encrypted-hls-stream-working-in-safari/).
 
 ## Additional notes

@@ -1,46 +1,42 @@
 ---
-title: Widevine license template overview | Microsoft Docs
+title: Widevine license template overview
 description: This topic gives an overview of a Widevine license template that is used to configure Widevine licenses.
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-services: media-services
-documentationcenter: ''
-ms.assetid: 0e6f1f05-7ed6-4ed6-82a0-0cc2182b075a
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 0e6f1f05-7ed6-4ed6-82a0-0cc2182b075a -->
+
 # Widevine license template overview
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 You can use Azure Media Services to configure and request Google Widevine licenses. When the player tries to play your Widevine-protected content, a request is sent to the license delivery service to obtain a license. If the license service approves the request, the service issues the license. It's sent to the client and is used to decrypt and play the specified content.
 
-A Widevine license request is formatted as a JSON message.  
+A Widevine license request is formatted as a JSON message.
 
 >[!NOTE]
 > You can create an empty message with no values, just "{}." Then a license template is created with defaults. The default works for most cases. Microsoft-based license-delivery scenarios should always use the defaults. If you need to set the "provider" and "content_id" values, a provider must match Widevine credentials.
 
 ```json
-{  
+{
    "payload": "<license challenge>",
-   "content_id": "<content id>" 
+   "content_id": "<content id>"
    "provider": "<provider>"
    "allowed_track_types": "<types>",
-   "content_key_specs": [  
-      {  
+   "content_key_specs": [
+      {
          "track_type": "<track type 1>"
       },
-      {  
+      {
          "track_type": "<track type 2>"
       },
       …
    ],
-   "policy_overrides": {  
+   "policy_overrides": {
       "can_play": <can play>,
       "can persist": <can persist>,
       "can_renew": <can renew>,
@@ -71,9 +67,9 @@ A Widevine license request is formatted as a JSON message.
 | parse_only |Boolean, true or false |The license request is parsed, but no license is issued. However, values from the license request are returned in the response. |
 
 ## Content key specs
-If a preexisting policy exists, there is no need to specify any of the values in the content key spec. The preexisting policy associated with this content is used to determine the output protection, such as High-bandwidth Digital Content Protection (HDCP) and the Copy General Management System (CGMS). If a preexisting policy isn't registered with the Widevine license server, the content provider can inject the values into the license request.   
+If a preexisting policy exists, there is no need to specify any of the values in the content key spec. The preexisting policy associated with this content is used to determine the output protection, such as High-bandwidth Digital Content Protection (HDCP) and the Copy General Management System (CGMS). If a preexisting policy isn't registered with the Widevine license server, the content provider can inject the values into the license request.
 
-Each content_key_specs value must be specified for all tracks, regardless of the use_policy_overrides_exclusively option. 
+Each content_key_specs value must be specified for all tracks, regardless of the use_policy_overrides_exclusively option.
 
 | Name | Value | Description |
 | --- | --- | --- |
@@ -106,7 +102,7 @@ Each content_key_specs value must be specified for all tracks, regardless of the
 | override_provider_client_token |Boolean, true or false |If false and the license request contains a client token, use the token from the request even if a client token was specified in this structure. If true, always use the token specified in this structure. |
 
 ## Configure your Widevine licenses by using .NET types
-Media Services provides .NET APIs that you can use to configure your Widevine licenses. 
+Media Services provides .NET APIs that you can use to configure your Widevine licenses.
 
 ### Classes as defined in the Media Services .NET SDK
 The following classes are the definitions of these types:

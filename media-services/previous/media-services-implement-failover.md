@@ -1,20 +1,13 @@
 ---
-title: Implement failover streaming with Azure Media Services | Microsoft Docs
+title: Implement failover streaming with Azure Media Services
 description: This article shows how to implement a failover streaming scenario with Azure Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Implement failover streaming with Media Services v2
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -23,10 +16,10 @@ This walkthrough demonstrates how to copy content (blobs) from one asset into an
 
 1. Set up a Media Services account in "Data Center A."
 2. Upload a mezzanine file into a source asset.
-3. Encode the asset into multi-bit rate MP4 files. 
+3. Encode the asset into multi-bit rate MP4 files.
 4. Create a read-only shared access signature locator. This is for the source asset to have read access to the container in the storage account that is associated with the source asset.
 5. Get the container name of the source asset from the read-only shared access signature locator created in the previous step. This is necessary for copying blobs between storage accounts (explained later in the topic.)
-6. Create an origin locator for the asset that was created by the encoding task. 
+6. Create an origin locator for the asset that was created by the encoding task.
 
 Then, to handle the failover:
 
@@ -34,17 +27,17 @@ Then, to handle the failover:
 2. Create a target empty asset in the target Media Services account.
 3. Create a write shared access signature locator. This is for the target empty asset to have write access to the container in the target storage account that is associated with the target asset.
 4. Use the Azure Storage SDK to copy blobs (asset files) between the source storage account in "Data Center A" and the target storage account in "Data Center B." These storage accounts are associated with the assets of interest.
-5. Associate blobs (asset files) that were copied to the target blob container with the target asset. 
+5. Associate blobs (asset files) that were copied to the target blob container with the target asset.
 6. Create an origin locator for the asset in "Data Center B", and specify the locator ID that was generated for the asset in "Data Center A."
 
-This gives you the streaming URLs where the relative paths of the URLs are the same (only the base URLs are different). 
+This gives you the streaming URLs where the relative paths of the URLs are the same (only the base URLs are different).
 
-Then, to handle any outages, you can create a Content Delivery Network on top of these origin locators. 
+Then, to handle any outages, you can create a Content Delivery Network on top of these origin locators.
 
 The following considerations apply:
 
-* The current version of Media Services SDK does not support programmatically generating IAssetFile information that would associate an asset with asset files. Instead, use the CreateFileInfos Media Services REST API to do this. 
-* Storage encrypted assets (AssetCreationOptions.StorageEncrypted) are not supported for replication (because the encryption key is different in both Media Services accounts). 
+* The current version of Media Services SDK does not support programmatically generating IAssetFile information that would associate an asset with asset files. Instead, use the CreateFileInfos Media Services REST API to do this.
+* Storage encrypted assets (AssetCreationOptions.StorageEncrypted) are not supported for replication (because the encryption key is different in both Media Services accounts).
 * If you want to take advantage of dynamic packaging, make sure the streaming endpoint from which you want to stream  your content is in the **Running** state.
 
 ## Prerequisites
@@ -59,7 +52,7 @@ The following considerations apply:
 In this section, you create and set up a C# Console Application project.
 
 1. Use Visual Studio to create a new solution that contains the C# Console Application project. Enter **HandleRedundancyForOnDemandStreaming** for the name, and then click **OK**.
-2. Create the **SupportFiles** folder on the same level as the **HandleRedundancyForOnDemandStreaming.csproj** project file. Under the **SupportFiles** folder, create the **OutputFiles** and **MP4Files** folders. Copy an .mp4 file into the **MP4Files** folder. (In this example, the **ignite.mp4** file is used.) 
+2. Create the **SupportFiles** folder on the same level as the **HandleRedundancyForOnDemandStreaming.csproj** project file. Under the **SupportFiles** folder, create the **OutputFiles** and **MP4Files** folders. Copy an .mp4 file into the **MP4Files** folder. (In this example, the **ignite.mp4** file is used.)
 3. Use **NuGet** to add references to DLLs related to Media Services. In **Visual Studio Main Menu**, select **TOOLS** > **NuGet Package Manager** > **Package Manager Console**. In the console window, type **Install-Package windowsazure.mediaservices**, and press Enter.
 4. Add other references that are required for this project: System.Runtime.Serialization, and System.Web.
 5. Replace **using** statements that were added to the **Programs.cs** file by default with the following ones:
@@ -101,16 +94,16 @@ In this section, you create the ability to handle redundancy.
     private static CloudMediaContext contextSource = null;
     private static CloudMediaContext contextTarget = null;
 
-    // Base support files path.  Update this field to point to the base path  
-    // for the local support files folder that you create. 
+    // Base support files path.  Update this field to point to the base path
+    // for the local support files folder that you create.
     private static readonly string SupportFiles = Path.GetFullPath(@"../..\SupportFiles");
 
-    // Paths to support files (within the above base path). 
+    // Paths to support files (within the above base path).
     private static readonly string SingleInputMp4Path = Path.GetFullPath(SupportFiles + @"\MP4Files\ignite.mp4");
     private static readonly string OutputFilesFolder = Path.GetFullPath(SupportFiles + @"\OutputFiles");
     ```
 2. Replace the default Main method definition with the following one. Method definitions that are called from Main are defined below.
-        
+
     ```csharp
     static void Main(string[] args)
     {
@@ -168,8 +161,8 @@ In this section, you create the ability to handle redundancy.
             // 5.Copy the blobs in the source container (source asset) to the target container (target empty asset)
             CopyBlobsFromDifferentStorage(containerName, targetContainerName, storageNameSource, storageKeySource, storageNameTarget, storageKeyTarget);
 
-            // 6.Use the CreateFileInfos Media Services REST API to automatically generate all the IAssetFile’s for the target asset. 
-            //      This API call is not supported in the current Media Services SDK for .NET. 
+            // 6.Use the CreateFileInfos Media Services REST API to automatically generate all the IAssetFile’s for the target asset.
+            //      This API call is not supported in the current Media Services SDK for .NET.
             CreateFileInfos(targetApiServer, tokenSPTarget, targetAsset.Id);
             // Check if the AssetFiles are now  associated with the asset.
             Console.WriteLine("Asset files associated with the {0} asset:", targetAsset.Name);
@@ -182,7 +175,7 @@ In this section, you create the ability to handle redundancy.
             var replicatedLocatorPath = CreateTargetOriginLocatorWithRest(contextSource, contextTarget, sourceOriginLocator.Id, targetAsset.Id);
 
             // Create a full URL to the manifest file. Use this for playback
-            // in streaming media clients. 
+            // in streaming media clients.
             string originalUrlForClientStreaming = sourceOriginLocator.Path + GetPrimaryFile(sourceOutputAsset).Name + "/manifest";
 
             Console.WriteLine("Original Locator Path: {0}\n", originalUrlForClientStreaming);
@@ -237,7 +230,7 @@ In this section, you create the ability to handle redundancy.
         // Declare a new job.
         IJob job = context.Jobs.Create("My encoding job");
 
-        // Get a media processor reference, and pass to it the name of the 
+        // Get a media processor reference, and pass to it the name of the
         // processor to use for the specific task.
         IMediaProcessor processor = GetLatestMediaProcessorByName(context,
                             "Media Encoder Standard");
@@ -252,14 +245,14 @@ In this section, you create the ability to handle redundancy.
         // Specify the input asset to be encoded.
         task.InputAssets.Add(asset);
 
-        // Add an output asset to contain the results of the job. 
-        // This output is specified as AssetCreationOptions.None, which 
-        // means the output asset is in the clear (unencrypted). 
+        // Add an output asset to contain the results of the job.
+        // This output is specified as AssetCreationOptions.None, which
+        // means the output asset is in the clear (unencrypted).
         var outputAssetName = "OutputAsset_" + Guid.NewGuid();
         task.OutputAssets.AddNew(outputAssetName,
         AssetCreationOptions.None);
 
-        // Use the following event handler to check job progress.  
+        // Use the following event handler to check job progress.
         job.StateChanged += new
             EventHandler<JobStateChangedEventArgs>(StateChanged);
 
@@ -267,11 +260,11 @@ In this section, you create the ability to handle redundancy.
         job.Submit();
 
         // Optionally log job details. This displays basic job details
-        // to the console and saves them to a JobDetails-{JobId}.txt file 
+        // to the console and saves them to a JobDetails-{JobId}.txt file
         // in your output folder.
         LogJobDetails(context, job.Id);
 
-        // Check job execution and wait for job to finish. 
+        // Check job execution and wait for job to finish.
         Task progressJobTask = job.GetExecutionProgressTask(CancellationToken.None);
         progressJobTask.Wait();
 
@@ -287,24 +280,24 @@ In this section, you create the ability to handle redundancy.
 
     public static ILocator GetStreamingOriginLocator(CloudMediaContext context, IAsset assetToStream)
     {
-        // Get a reference to the streaming manifest file from the  
-        // collection of files in the asset. 
+        // Get a reference to the streaming manifest file from the
+        // collection of files in the asset.
         IAssetFile manifestFile = GetPrimaryFile(assetToStream);
 
-        // Create a 30-day readonly access policy. 
-        // You cannot create a streaming locator using an AccessPolicy that includes write or delete permissions.            
+        // Create a 30-day readonly access policy.
+        // You cannot create a streaming locator using an AccessPolicy that includes write or delete permissions.
 
         IAccessPolicy policy = context.AccessPolicies.Create("Streaming policy",
         TimeSpan.FromDays(30),
         AccessPermissions.Read);
 
-        // Create a locator to the streaming content on an origin. 
+        // Create a locator to the streaming content on an origin.
         ILocator originLocator = context.Locators.CreateLocator(LocatorType.OnDemandOrigin,
         assetToStream,
         policy,
         DateTime.UtcNow.AddMinutes(-5));
 
-        // Return the locator. 
+        // Return the locator.
         return originLocator;
     }
 
@@ -348,7 +341,7 @@ In this section, you create the ability to handle redundancy.
         {
         var asset = contextTarget.Assets.Where(a => a.Id == targetAssetId).FirstOrDefault();
 
-        // You cannot create a streaming locator using an AccessPolicy that includes write or delete permissions.            
+        // You cannot create a streaming locator using an AccessPolicy that includes write or delete permissions.
         var accessPolicy = contextTarget.AccessPolicies.Create("RestTest", TimeSpan.FromDays(100),
                                     AccessPermissions.Read);
         if (asset != null)
@@ -390,7 +383,7 @@ In this section, you create the ability to handle redundancy.
 
     public static IAssetFile GetPrimaryFile(IAsset asset)
     {
-        // Cast the reference to a true IAssetFile type. 
+        // Cast the reference to a true IAssetFile type.
         IAssetFile theManifest = asset.AssetFiles.ToList().
             Where(f => f.Name.EndsWith(".ism", StringComparison.OrdinalIgnoreCase)).
             FirstOrDefault();
@@ -428,16 +421,16 @@ In this section, you create the ability to handle redundancy.
 
         if (sourceCloudBlob.Properties.Length > 0)
         {
-            // In Azure Media Services, the files are stored as block blobs. 
-            // Page blobs are not supported by Azure Media Services.  
+            // In Azure Media Services, the files are stored as block blobs.
+            // Page blobs are not supported by Azure Media Services.
             var destinationBlob = targetContainer.GetBlockBlobReference(fileName);
             destinationBlob.StartCopy(new Uri(sourceBlob.Uri.AbsoluteUri + blobToken));
 
             while (true)
             {
-            // The StartCopyFromBlob is an async operation, 
-            // so we want to check if the copy operation is completed before proceeding. 
-            // To do that, we call FetchAttributes on the blob and check the CopyStatus. 
+            // The StartCopyFromBlob is an async operation,
+            // so we want to check if the copy operation is completed before proceeding.
+            // To do that, we call FetchAttributes on the blob and check the CopyStatus.
             destinationBlob.FetchAttributes();
             if (destinationBlob.CopyState.Status != CopyStatus.Pending)
             {
@@ -466,7 +459,7 @@ In this section, you create the ability to handle redundancy.
         return processor;
     }
 
-    // This method is a handler for events that track job progress.   
+    // This method is a handler for events that track job progress.
     private static void StateChanged(object sender, JobStateChangedEventArgs e)
     {
         Console.WriteLine("Job state changed event:");
@@ -513,7 +506,7 @@ In this section, you create the ability to handle redundancy.
         builder.AppendLine("Job Name: " + job.Name);
         builder.AppendLine("Job State: " + job.State.ToString());
         builder.AppendLine("Job started (server UTC time): " + job.StartTime.ToString());
-        // Log job errors if they exist.  
+        // Log job errors if they exist.
         if (job.State == JobState.Error)
         {
         builder.Append("Error Details: \n");
@@ -528,7 +521,7 @@ In this section, you create the ability to handle redundancy.
         }
         }
         builder.AppendLine("***************************\n");
-        // Write the output to a local file and to the console. The template 
+        // Write the output to a local file and to the console. The template
         // for an error output file is:  JobStop-{JobId}.txt
         string outputFile = OutputFilesFolder + @"\JobStop-" + JobIdAsFileName(job.Id) + ".txt";
         WriteToFile(outputFile, builder.ToString());
@@ -544,15 +537,15 @@ In this section, you create the ability to handle redundancy.
         builder.AppendLine("Job Name: " + job.Name);
         builder.AppendLine("Job submitted (client UTC time): " + DateTime.UtcNow.ToString());
 
-        // Write the output to a local file and to the console. The template 
+        // Write the output to a local file and to the console. The template
         // for an error output file is:  JobDetails-{JobId}.txt
         string outputFile = OutputFilesFolder + @"\JobDetails-" + JobIdAsFileName(job.Id) + ".txt";
         WriteToFile(outputFile, builder.ToString());
         Console.Write(builder.ToString());
     }
 
-    // Replace ":" with "_" in Job id values so they can 
-    // be used as log file names.  
+    // Replace ":" with "_" in Job id values so they can
+    // be used as log file names.
     private static string JobIdAsFileName(string jobID)
     {
         return jobID.Replace(":", "_");
@@ -742,7 +735,7 @@ In this section, you create the ability to handle redundancy.
         return request;
     }
     ```
-    
+
 ## Content protection
 
 The example in this topic shows clear streaming. If you want to do protected streaming, there are a few other things you need to setup, you need to use the same **AssetDeliveryPolicy**, the same **ContentKeyAuthorizationPolicy** or external key server URL, and you need to duplicate the content keys with the same identifier.

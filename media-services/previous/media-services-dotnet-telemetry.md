@@ -1,27 +1,20 @@
 ---
-title: Configuring Azure Media Services telemetry with .NET| Microsoft Docs
+title: Configuring Azure Media Services telemetry with .NET
 description: This article shows you how to use the Azure Media Services telemetry using .NET SDK.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: f8f55e37-0714-49ea-bf4a-e6c1319bec44
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: f8f55e37-0714-49ea-bf4a-e6c1319bec44 -->
 
 # Configuring Azure Media Services telemetry with .NET
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-This article describes general steps that you might take when configuring the Azure Media Services (AMS) telemetry using .NET SDK. 
+This article describes general steps that you might take when configuring the Azure Media Services (AMS) telemetry using .NET SDK.
 
 >[!NOTE]
 >For the detailed explanation of what is AMS telemetry and how to consume it, see the [overview](media-services-telemetry-overview.md) article.
@@ -32,23 +25,23 @@ You can consume telemetry data in one of the following ways:
 
 Or
 
-- Use the support in the Media Services .NET SDK for reading storage data. This article shows how to enable telemetry for the specified AMS account and how to query the metrics using the Azure Media Services .NET SDK.  
+- Use the support in the Media Services .NET SDK for reading storage data. This article shows how to enable telemetry for the specified AMS account and how to query the metrics using the Azure Media Services .NET SDK.
 
 ## Configuring telemetry for a Media Services account
 
 The following steps are needed to enable telemetry:
 
-- Get the credentials of the storage account attached to the Media Services account. 
+- Get the credentials of the storage account attached to the Media Services account.
 - Create a Notification Endpoint with **EndPointType** set to **AzureTable** and endPointAddress pointing to the storage table.
 
 ```csharp
-	    INotificationEndPoint notificationEndPoint = 
-	                  _context.NotificationEndPoints.Create("monitoring", 
+	    INotificationEndPoint notificationEndPoint =
+	                  _context.NotificationEndPoints.Create("monitoring",
 	                  NotificationEndPointType.AzureTable,
 	                  "https://" + _mediaServicesStorageAccountName + ".table.core.windows.net/");
 ```
 
-- Create a monitoring configuration setting for the services you want to monitor. No more than one monitoring configuration setting is allowed. 
+- Create a monitoring configuration setting for the services you want to monitor. No more than one monitoring configuration setting is allowed.
 
 ```csharp
         IMonitoringConfiguration monitoringConfiguration = _context.MonitoringConfigurations.Create(notificationEndPoint.Id,
@@ -65,17 +58,17 @@ For information about consuming telemetry information, see [this](media-services
 
 ## Create and configure a Visual Studio project
 
-1. Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+1. Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 
 2. Add the following element to **appSettings** defined in your app.config file:
 
     ```xml
         <add key="StorageAccountName" value="storage_name" />
     ```
- 
-## Example  
-	
-The following example shows how to enable telemetry for the specified AMS account and how to query the metrics using the Azure Media Services .NET SDK.  
+
+## Example
+
+The following example shows how to enable telemetry for the specified AMS account and how to query the metrics using the Azure Media Services .NET SDK.
 
 ```csharp
 using System;

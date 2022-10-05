@@ -1,20 +1,14 @@
 ---
-title: Use Azure Media Services to deliver DRM licenses or AES keys | Microsoft Docs
+title: Use Azure Media Services to deliver DRM licenses or AES keys
 description: This article describes how you can use Azure Media Services to deliver PlayReady and/or Widevine licenses and AES keys but do the rest (encode, encrypt, stream) by using your on-premises servers.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 8546c2c1-430b-4254-a88d-4436a83f9192
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 8546c2c1-430b-4254-a88d-4436a83f9192 -->
 
 # Use Media Services to deliver DRM licenses or AES keys
 
@@ -22,7 +16,7 @@ ms.custom: devx-track-csharp
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
-Azure Media Services enables you to ingest, encode, add content protection, and stream your content. For more information, see [Use PlayReady and/or Widevine dynamic common encryption](media-services-protect-with-playready-widevine.md). Some customers want to use Media Services only to deliver licenses and/or keys and encode, encrypt, and stream by using their on-premises servers. This article describes how you can use Media Services to deliver PlayReady and/or Widevine licenses but do the rest with your on-premises servers. 
+Azure Media Services enables you to ingest, encode, add content protection, and stream your content. For more information, see [Use PlayReady and/or Widevine dynamic common encryption](media-services-protect-with-playready-widevine.md). Some customers want to use Media Services only to deliver licenses and/or keys and encode, encrypt, and stream by using their on-premises servers. This article describes how you can use Media Services to deliver PlayReady and/or Widevine licenses but do the rest with your on-premises servers.
 
 To complete this tutorial, you need an Azure account. For details, see [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/).
 
@@ -45,7 +39,7 @@ The following diagram shows the main steps you need to take to use Media Service
     <add key="Issuer" value="http://testissuer.com"/>
     <add key="Audience" value="urn:test"/>
     ```
- 
+
 ## .NET code example
 The following code example shows how to create a common content key and get PlayReady or Widevine license acquisition URLs. To configure your on-premises server, you need a content key, the key ID, and the license acquisition URL. After you configure your on-premises server, you can stream from your own streaming server. Because the encrypted stream points to a Media Services license server, your player requests a license from Media Services. If you choose token authentication, the Media Services license server validates the token you sent through HTTPS. If the token is valid, the license server delivers the license back to your player. The following code example only shows how to create a common content key and get PlayReady or Widevine license acquisition URLs. If you want to deliver AES-128 keys, you need to create an envelope content key and get a key acquisition URL. For more information, see [Use AES-128 dynamic encryption and key delivery service](media-services-playready-license-template-overview.md).
 
@@ -121,8 +115,8 @@ namespace DeliverDRMLicenses
         static public void AddOpenAuthorizationPolicy(IContentKey contentKey)
         {
 
-            // Create ContentKeyAuthorizationPolicy with Open restrictions 
-            // and create authorization policy          
+            // Create ContentKeyAuthorizationPolicy with Open restrictions
+            // and create authorization policy
 
             List<ContentKeyAuthorizationPolicyRestriction> restrictions =
                 new List<ContentKeyAuthorizationPolicyRestriction>
@@ -226,48 +220,48 @@ namespace DeliverDRMLicenses
             // The following code configures PlayReady License Template using .NET classes
             // and returns the XML string.
 
-            //The PlayReadyLicenseResponseTemplate class represents the template 
-            //for the response sent back to the end user. 
-            //It contains a field for a custom data string between the license server 
-            //and the application (may be useful for custom app logic) 
+            //The PlayReadyLicenseResponseTemplate class represents the template
+            //for the response sent back to the end user.
+            //It contains a field for a custom data string between the license server
+            //and the application (may be useful for custom app logic)
             //as well as a list of one or more license templates.
 
             PlayReadyLicenseResponseTemplate responseTemplate =
                 new PlayReadyLicenseResponseTemplate();
 
-            // The PlayReadyLicenseTemplate class represents a license template 
+            // The PlayReadyLicenseTemplate class represents a license template
             // for creating PlayReady licenses
-            // to be returned to the end users. 
-            // It contains the data on the content key in the license 
-            // and any rights or restrictions to be 
+            // to be returned to the end users.
+            // It contains the data on the content key in the license
+            // and any rights or restrictions to be
             // enforced by the PlayReady DRM runtime when using the content key.
             PlayReadyLicenseTemplate licenseTemplate = new PlayReadyLicenseTemplate();
 
-            // Configure whether the license is persistent 
-            // (saved in persistent storage on the client) 
-            // or non-persistent (only held in memory while the player is using the license).  
+            // Configure whether the license is persistent
+            // (saved in persistent storage on the client)
+            // or non-persistent (only held in memory while the player is using the license).
             licenseTemplate.LicenseType = PlayReadyLicenseType.Nonpersistent;
 
-            // AllowTestDevices controls whether test devices can use the license or not.  
+            // AllowTestDevices controls whether test devices can use the license or not.
             // If true, the MinimumSecurityLevel property of the license
-            // is set to 150.  If false (the default), 
+            // is set to 150.  If false (the default),
             // the MinimumSecurityLevel property of the license is set to 2000.
             licenseTemplate.AllowTestDevices = true;
 
-            // You can also configure the Play Right in the PlayReady license by using the PlayReadyPlayRight class. 
-            // It grants the user the ability to play back the content subject to the zero or more restrictions 
-            // configured in the license and on the PlayRight itself (for playback specific policy). 
-            // Much of the policy on the PlayRight has to do with output restrictions 
-            // which control the types of outputs that the content can be played over and 
+            // You can also configure the Play Right in the PlayReady license by using the PlayReadyPlayRight class.
+            // It grants the user the ability to play back the content subject to the zero or more restrictions
+            // configured in the license and on the PlayRight itself (for playback specific policy).
+            // Much of the policy on the PlayRight has to do with output restrictions
+            // which control the types of outputs that the content can be played over and
             // any restrictions that must be put in place when using a given output.
-            // For example, if the DigitalVideoOnlyContentRestriction is enabled, 
-            //then the DRM runtime will only allow the video to be displayed over digital outputs 
+            // For example, if the DigitalVideoOnlyContentRestriction is enabled,
+            //then the DRM runtime will only allow the video to be displayed over digital outputs
             //(analog video outputs won’t be allowed to pass the content).
 
-            // IMPORTANT: These types of restrictions can be very powerful 
-            // but can also affect the consumer experience. 
-            // If the output protections are configured too restrictive, 
-            // the content might be unplayable on some clients. 
+            // IMPORTANT: These types of restrictions can be very powerful
+            // but can also affect the consumer experience.
+            // If the output protections are configured too restrictive,
+            // the content might be unplayable on some clients.
             // For more information, see the PlayReady Compliance Rules document.
 
             // For example:

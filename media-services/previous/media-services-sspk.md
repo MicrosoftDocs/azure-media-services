@@ -1,19 +1,15 @@
 ---
 title: Licensing Microsoft&reg; Smooth Streaming Client Porting Kit
 description: Learn about how to licensing the Microsoft&reg; Smooth Streaming Client Porting Kit.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: e3b488e7-8428-4c10-a072-eb3af46c82ad
+ms.author: inhenkel
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: 05/09/2022
-ms.author: xpouyat
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: e3b488e7-8428-4c10-a072-eb3af46c82ad -->
+
 # Licensing Microsoft&reg; Smooth Streaming Client Porting Kit
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

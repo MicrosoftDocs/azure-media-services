@@ -1,20 +1,13 @@
 ---
-title: Protect HLS content with Microsoft PlayReady or Apple FairPlay - Azure | Microsoft Docs
+title: Protect HLS content with Microsoft PlayReady or Apple FairPlay - Azure
 description: This topic gives an overview and shows how to use Azure Media Services to dynamically encrypt your HTTP Live Streaming (HLS) content with Apple FairPlay. It also shows how to use the Media Services license delivery service to deliver FairPlay licenses to clients.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Protect your HLS content with Apple FairPlay or Microsoft PlayReady
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -23,7 +16,7 @@ ms.custom: devx-track-csharp
 > To complete this tutorial, you need an Azure account. For details, see [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/). 	> No new features or functionality are being added to Media Services v2. <br/>Check out the latest version, [Media Services v3](../latest/index.yml). Also, see [migration guidance from v2 to v3](../latest/migrate-v-2-v-3-migration-introduction.md)
 >
 
-Azure Media Services enables you to dynamically encrypt your HTTP Live Streaming (HLS) content by using the following formats:  
+Azure Media Services enables you to dynamically encrypt your HTTP Live Streaming (HLS) content by using the following formats:
 
 * **AES-128 envelope clear key**
 
@@ -48,19 +41,19 @@ This article demonstrates how to use Media Services to dynamically encrypt your 
 
 The following are required when using Media Services to deliver HLS encrypted with FairPlay, and to deliver FairPlay licenses:
 
-  * An Azure account. For details, see [Azure free trial](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A261C142F).
-  * A Media Services account. To create one, see [Create an Azure Media Services account using the Azure portal](media-services-portal-create-account.md).
-  * Sign up with [Apple Development Program](https://developer.apple.com/).
-  * Apple requires the content owner to obtain the [deployment package](https://developer.apple.com/contact/fps/). State that you already implemented Key Security Module (KSM) with Media Services, and that you are requesting the final FPS package. There are instructions in the final FPS package to generate certification and obtain the Application Secret Key (ASK). You use ASK to configure FairPlay.
-  * Azure Media Services .NET SDK version **3.6.0** or later.
+* An Azure account. For details, see [Azure free trial](https://azure.microsoft.com/pricing/free-trial/?WT.mc_id=A261C142F).
+* A Media Services account. To create one, see [Create an Azure Media Services account using the Azure portal](media-services-portal-create-account.md).
+* Sign up with [Apple Development Program](https://developer.apple.com/).
+* Apple requires the content owner to obtain the [deployment package](https://developer.apple.com/contact/fps/). State that you already implemented Key Security Module (KSM) with Media Services, and that you are requesting the final FPS package. There are instructions in the final FPS package to generate certification and obtain the Application Secret Key (ASK). You use ASK to configure FairPlay.
+* Azure Media Services .NET SDK version **3.6.0** or later.
 
 The following things must be set on Media Services key delivery side:
 
-  * **App Cert (AC)**: This is a .pfx file that contains the private key. You create this file and encrypt it with a password.
+* **App Cert (AC)**: This is a .pfx file that contains the private key. You create this file and encrypt it with a password.
 
-       When you configure a key delivery policy, you must provide that password and the .pfx file in Base64 format.
+    When you configure a key delivery policy, you must provide that password and the .pfx file in Base64 format.
 
-      The following steps describe how to generate a .pfx certificate file for FairPlay:
+    The following steps describe how to generate a .pfx certificate file for FairPlay:
 
     1. Install OpenSSL from https://slproweb.com/products/Win32OpenSSL.html.
 
@@ -94,7 +87,7 @@ The following are general steps for protecting your assets with FairPlay by usin
 
 1. Create an asset, and upload files into the asset.
 2. Encode the asset that contains the file to the adaptive bitrate MP4 set.
-3. Create a content key, and associate it with the encoded asset.  
+3. Create a content key, and associate it with the encoded asset.
 4. Configure the content key’s authorization policy. Specify the following:
 
    * The delivery method (in this case, FairPlay).
@@ -139,14 +132,14 @@ The following considerations apply:
 * Only zero or one encryption type can be specified.
 * The encryption type doesn't have to be specified in the URL if only one encryption was applied to the asset.
 * The encryption type is case insensitive.
-* The following encryption types can be specified:  
+* The following encryption types can be specified:
   * **cenc**:  Common encryption (PlayReady or Widevine)
   * **cbcs-aapl**: FairPlay
   * **cbc**: AES envelope encryption
 
 ## Create and configure a Visual Studio project
 
-1. Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+1. Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 2. Add the following elements to **appSettings** defined in your app.config file:
 
     ```xml
@@ -156,7 +149,7 @@ The following considerations apply:
 
 ## Example
 
-The following sample demonstrates the ability to use Media Services to deliver your content encrypted with FairPlay. This functionality was introduced in the Azure Media Services SDK for .NET version 3.6.0. 
+The following sample demonstrates the ability to use Media Services to deliver your content encrypted with FairPlay. This functionality was introduced in the Azure Media Services SDK for .NET version 3.6.0.
 
 Overwrite the code in your Program.cs file with the code shown in this section.
 
@@ -335,7 +328,7 @@ namespace DynamicEncryptionWithFairPlay
         static public void AddOpenAuthorizationPolicy(IContentKey contentKey)
         {
             // Create ContentKeyAuthorizationPolicy with Open restrictions
-            // and create authorization policy          
+            // and create authorization policy
 
             List<ContentKeyAuthorizationPolicyRestriction> restrictions = new List<ContentKeyAuthorizationPolicyRestriction>
                     {
@@ -507,7 +500,7 @@ namespace DynamicEncryptionWithFairPlay
         static public string GetStreamingOriginLocator(IAsset asset)
         {
 
-            // Get a reference to the streaming manifest file from the  
+            // Get a reference to the streaming manifest file from the
             // collection of files in the asset.
 
             var assetFile = asset.AssetFiles.LoList().Where(f => f.Name.ToLower().

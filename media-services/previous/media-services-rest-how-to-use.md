@@ -1,20 +1,15 @@
 ---
-title: Media Services operations REST API overview | Microsoft Docs
+title: Media Services operations REST API overview
 description: The Media Services Operations REST API is used for creating Jobs, Assets, Live Channels and other resources in a Media Services account. This article provides an Azure Media Services v2 REST API overview.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: a5f1c5e7-ec52-4e26-9a44-d9ea699f68d9
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
-ms.reviewer: johndeu
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: a5f1c5e7-ec52-4e26-9a44-d9ea699f68d9 -->
+
 # Media Services operations REST API overview
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -31,8 +26,8 @@ Authentication to the Media Services REST API is done through Azure Active Direc
 
 The following considerations apply when using REST.
 
-* When querying entities, there is a limit of 1000 entities returned at one time because public REST v2 limits query results to 1000 results. You need to use **Skip** and **Take** (.NET)/ **top** (REST) as described in [this .NET example](media-services-dotnet-manage-entities.md#enumerating-through-large-collections-of-entities) and [this REST API example](media-services-rest-manage-entities.md#enumerating-through-large-collections-of-entities). 
-* When using JSON and specifying to use the **__metadata** keyword in the request (for example, to reference a linked object) you MUST set the **Accept** header to [JSON Verbose format](https://www.odata.org/documentation/odata-version-3-0/json-verbose-format/) (see the following example). Odata does not understand the **__metadata** property in the request, unless you set it to verbose.  
+* When querying entities, there is a limit of 1000 entities returned at one time because public REST v2 limits query results to 1000 results. You need to use **Skip** and **Take** (.NET)/ **top** (REST) as described in [this .NET example](media-services-dotnet-manage-entities.md#enumerating-through-large-collections-of-entities) and [this REST API example](media-services-rest-manage-entities.md#enumerating-through-large-collections-of-entities).
+* When using JSON and specifying to use the **__metadata** keyword in the request (for example, to reference a linked object) you MUST set the **Accept** header to [JSON Verbose format](https://www.odata.org/documentation/odata-version-3-0/json-verbose-format/) (see the following example). Odata does not understand the **__metadata** property in the request, unless you set it to verbose.
 
     ```console
     POST https://media.windows.net/API/Jobs HTTP/1.1
@@ -41,14 +36,14 @@ The following considerations apply when using REST.
     DataServiceVersion: 3.0
     MaxDataServiceVersion: 3.0
     x-ms-version: 2.19
-    Authorization: Bearer <ENCODED JWT TOKEN> 
+    Authorization: Bearer <ENCODED JWT TOKEN>
     Host: media.windows.net
 
     {
-        "Name" : "NewTestJob", 
-        "InputMediaAssets" : 
+        "Name" : "NewTestJob",
+        "InputMediaAssets" :
             [{"__metadata" : {"uri" : "https://media.windows.net/api/Assets('nb%3Acid%3AUUID%3Aba5356eb-30ff-4dc6-9e5a-41e4223540e7')"}}]
-    . . . 
+    . . .
    ```
 
 ## Standard HTTP request headers supported by Media Services
@@ -63,8 +58,8 @@ For every call you make into Media Services, there is a set of required headers 
 
 > [!NOTE]
 > Because Media Services uses OData to expose its REST APIs, the DataServiceVersion and MaxDataServiceVersion headers should be included in all requests; however, if they are not, then currently Media Services assumes the DataServiceVersion value in use is 3.0.
-> 
-> 
+>
+>
 
 The following is a set of optional headers:
 

@@ -1,28 +1,22 @@
 ---
-title: Use PlayReady and/or Widevine dynamic common encryption | Microsoft Docs
+title: Use PlayReady and/or Widevine dynamic common encryption
 description: You can use Azure Media Services to deliver MPEG-DASH, Smooth Streaming, and HTTP Live Streaming (HLS) streams protected with Microsoft PlayReady DRM. You also can use it to deliver DASH encrypted with Widevine DRM. This topic shows how to dynamically encrypt with PlayReady and Widevine DRM.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 548d1a12-e2cb-45fe-9307-4ec0320567a2
+ms.author: inhenkel
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
 ms.topic: conceptual
 ms.date: 03/10/2021
-ms.author: inhenkel
-ms.custom: devx-track-csharp
 ---
+
+<!-- ms.assetid: 548d1a12-e2cb-45fe-9307-4ec0320567a2 -->
+
 # Use PlayReady and/or Widevine dynamic common encryption
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 > [!NOTE]
 > To complete this tutorial, you need an Azure account. For details, see [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/). 	> No new features or functionality are being added to Media Services v2. <br/>Check out the latest version, [Media Services v3](../latest/index.yml). Also, see [migration guidance from v2 to v3](../latest/migrate-v-2-v-3-migration-introduction.md)
-> 	
+>
 
 ## Overview
 
@@ -30,14 +24,14 @@ ms.custom: devx-track-csharp
 
 Media Services provides a service for delivering PlayReady and Widevine DRM licenses. Media Services also provides APIs that you can use to configure the rights and restrictions that you want the PlayReady or Widevine DRM runtime to enforce when a user plays back protected content. When a user requests DRM-protected content, the player application requests a license from the Media Services license service. If the player application is authorized, the Media Services license service issues a license to the player. A PlayReady or Widevine license contains the decryption key that can be used by the client player to decrypt and stream the content.
 
-You also can use the following Media Services partners to help you deliver Widevine licenses: 
+You also can use the following Media Services partners to help you deliver Widevine licenses:
 
-* [EZDRM](https://ezdrm.com/) 
-* [castLabs](https://castlabs.com/company/partners/azure/) 
+* [EZDRM](https://ezdrm.com/)
+* [castLabs](https://castlabs.com/company/partners/azure/)
 
 For more information, see integration with [castLabs](media-services-castlabs-integration.md).
 
-Media Services supports multiple ways of authorizing users who make key requests. The content key authorization policy can have one or more authorization restrictions, either open or token restrictions. The token-restricted policy must be accompanied by a token issued by a security token service (STS). Media Services supports tokens in the [simple web token](/previous-versions/azure/azure-services/gg185950(v=azure.100)#BKMK_2) (SWT) and [JSON Web Token](/previous-versions/azure/azure-services/gg185950(v=azure.100)#BKMK_3) (JWT) formats. 
+Media Services supports multiple ways of authorizing users who make key requests. The content key authorization policy can have one or more authorization restrictions, either open or token restrictions. The token-restricted policy must be accompanied by a token issued by a security token service (STS). Media Services supports tokens in the [simple web token](/previous-versions/azure/azure-services/gg185950(v=azure.100)#BKMK_2) (SWT) and [JSON Web Token](/previous-versions/azure/azure-services/gg185950(v=azure.100)#BKMK_3) (JWT) formats.
 
 For more information, see [Configure the content key's authorization policy](media-services-portal-configure-content-key-auth-policy.md).
 
@@ -46,7 +40,7 @@ To take advantage of dynamic encryption, create an asset that contains a set of 
 This article is useful to developers who work on applications that deliver media protected with multiple DRMs, such as PlayReady and Widevine. The article shows you how to configure the PlayReady license delivery service with authorization policies so that only authorized clients can receive PlayReady or Widevine licenses. It also shows how to use dynamic encryption with PlayReady or Widevine DRM over DASH.
 
 >[!NOTE]
->When your Media Services account is created, a default streaming endpoint is added to your account in the "Stopped" state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content must be in the "Running" state. 
+>When your Media Services account is created, a default streaming endpoint is added to your account in the "Stopped" state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content must be in the "Running" state.
 
 ## Download the sample
 You can download the sample described in this article from [Azure samples on GitHub](https://github.com/Azure-Samples/media-services-dotnet-dynamic-encryption-with-drm).
@@ -82,7 +76,7 @@ The remainder of this article provides detailed explanations, code examples, and
 ## Current limitations
 If you add or update an asset delivery policy, you must delete any associated locator and create a new locator.
 
-Currently, multiple content keys aren't supported when you encrypt by using Widevine with Media Services. 
+Currently, multiple content keys aren't supported when you encrypt by using Widevine with Media Services.
 
 ## Create an asset and upload files into the asset
 To manage, encode, and stream your videos, you must first upload your content into Media Services. After it's uploaded, your content is stored securely in the cloud for further processing and streaming.
@@ -159,7 +153,7 @@ The following sample demonstrates functionality that was introduced in the Media
 Overwrite the code in your Program.cs file with the code shown in this section.
 
 >[!NOTE]
->There is a limit of 1 million policies for different Media Services policies (for example, for Locator policy or ContentKeyAuthorizationPolicy). If you always use the same days/access permissions, use the same policy ID. An example is policies for locators that are intended to remain in place for a long time (non-upload policies). 
+>There is a limit of 1 million policies for different Media Services policies (for example, for Locator policy or ContentKeyAuthorizationPolicy). If you always use the same days/access permissions, use the same policy ID. An example is policies for locators that are intended to remain in place for a long time (non-upload policies).
 
 For more information, see [Manage assets and related entities with the Media Services .NET SDK](media-services-dotnet-manage-entities.md#limit-access-policies).
 
@@ -251,7 +245,7 @@ namespace DynamicEncryptionWithDRM
                     TokenRestrictionTemplateSerializer.Deserialize(tokenTemplateString);
 
                 // Generate a test token based on the data in the given TokenRestrictionTemplate.
-                // Note that you need to pass the key ID GUID because 
+                // Note that you need to pass the key ID GUID because
                 // TokenClaim.ContentKeyIdentifierClaim was specified during the creation of TokenRestrictionTemplate.
                 Guid rawkey = EncryptionUtils.GetKeyIdAsGuid(key.Id);
                 string testToken = TokenRestrictionTemplateSerializer.GenerateTestToken(tokenTemplate, null, rawkey,
@@ -340,7 +334,7 @@ namespace DynamicEncryptionWithDRM
         {
 
             // Create ContentKeyAuthorizationPolicy with open restrictions
-            // and create an authorization policy.         
+            // and create an authorization policy.
 
             List<ContentKeyAuthorizationPolicyRestriction> restrictions = new List<ContentKeyAuthorizationPolicyRestriction>
                 {
@@ -453,10 +447,10 @@ namespace DynamicEncryptionWithDRM
             //enforced by the PlayReady DRM runtime when you use the content key.
             PlayReadyLicenseTemplate licenseTemplate = new PlayReadyLicenseTemplate();
             //Configure whether the license is persistent (saved in persistent storage on the client)
-            //or nonpersistent (held in memory only while the player uses the license).  
+            //or nonpersistent (held in memory only while the player uses the license).
             licenseTemplate.LicenseType = PlayReadyLicenseType.Nonpersistent;
 
-            // AllowTestDevices controls whether test devices can use the license or not.  
+            // AllowTestDevices controls whether test devices can use the license or not.
             // If true, the MinimumSecurityLevel property of the license
             // is set to 150. If false (the default), the MinimumSecurityLevel property of the license is set to 2,000.
             licenseTemplate.AllowTestDevices = true;
@@ -472,7 +466,7 @@ namespace DynamicEncryptionWithDRM
             //(analog video outputs aren't allowed to pass the content).
 
             //IMPORTANT: These types of restrictions can be very powerful but also can affect the consumer experience.
-            // If output protections are too restrictive, 
+            // If output protections are too restrictive,
             // content might be unplayable on some clients. For more information, see the PlayReady Compliance Rules document.
 
             // For example:
@@ -515,7 +509,7 @@ namespace DynamicEncryptionWithDRM
             Uri acquisitionUrl = key.GetKeyDeliveryUrl(ContentKeyDeliveryType.PlayReadyLicense);
 
             // GetKeyDeliveryUrl for Widevine attaches the KID to the URL.
-            // For example: https://amsaccount1.keydelivery.mediaservices.windows.net/Widevine/?KID=268a6dcb-18c8-4648-8c95-f46429e4927c.  
+            // For example: https://amsaccount1.keydelivery.mediaservices.windows.net/Widevine/?KID=268a6dcb-18c8-4648-8c95-f46429e4927c.
             // WidevineBaseLicenseAcquisitionUrl (used in the following) also tells dynamic encryption
             // to append /? KID =< keyId > to the end of the URL when you create the manifest.
             // As a result, the Widevine license acquisition URL has the KID appended twice,
@@ -556,7 +550,7 @@ namespace DynamicEncryptionWithDRM
         static public string GetStreamingOriginLocator(IAsset asset)
         {
 
-            // Get a reference to the streaming manifest file from the 
+            // Get a reference to the streaming manifest file from the
             // collection of files in the asset.
 
             var assetFile = asset.AssetFiles.ToList().Where(f => f.Name.ToLower().
@@ -610,4 +604,4 @@ namespace DynamicEncryptionWithDRM
 * [Use the CENC with multi-DRM and access control](media-services-cenc-with-multidrm-access-control.md)
 * [Configure Widevine packaging with Media Services](https://mingfeiy.com/how-to-configure-widevine-packaging-with-azure-media-services)
 * [Get started with the Java client SDK for Azure Media Services](./media-services-java-how-to-use.md)
-* To download the latest PHP SDK for Media Services, look for version 0.5.7 of the Microsoft/WindowsAzure package in the [Packagist repository](https://packagist.org/packages/microsoft/windowsazure#v0.5.7). 
+* To download the latest PHP SDK for Media Services, look for version 0.5.7 of the Microsoft/WindowsAzure package in the [Packagist repository](https://packagist.org/packages/microsoft/windowsazure#v0.5.7).

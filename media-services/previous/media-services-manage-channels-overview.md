@@ -1,19 +1,15 @@
 ---
-title: Overview of Live Streaming using Azure Media Services | Microsoft Docs
+title: Overview of Live Streaming using Azure Media Services
 description: This article gives an overview of live streaming using Microsoft Azure Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: fb63502e-914d-4c1f-853c-4a7831bb08e8
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: fb63502e-914d-4c1f-853c-4a7831bb08e8 -->
+
 # Overview of Live Streaming using Media Services
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

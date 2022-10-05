@@ -1,22 +1,16 @@
 ---
-title: How to crop videos with Media Encoder Standard - Azure | Microsoft Docs
+title: How to crop videos with Media Encoder Standard
 description: Cropping is the process of selecting a rectangular window within the video frame, and encoding just the pixels within that window. This article demonstrates how to crop videos with Media Encoder Standard.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
+ms.author: inhenkel
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: 03/10/2021
-ms.author: anilmur
-ms.reviewer: juliako
+ms.date: 10/05/2022
 ---
+
 # Crop videos with Media Encoder Standard
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)] 
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 You can use Media Encoder Standard (MES) to crop your input video. Cropping is the process of selecting a rectangular window within the video frame, and encoding just the pixels within that window. The following diagram helps illustrate the process.
 
@@ -26,7 +20,7 @@ Suppose you have as input a video that has a resolution of 1920x1080 pixels (16:
 
 Cropping in MES is a pre-processing stage, so the cropping parameters in the encoding preset apply to the original input video. Encoding is a subsequent stage, and the width/height settings apply to the *pre-processed* video, and not to the original video. When designing your preset you need to do the following: (a) select the crop parameters based on the original input video, and (b) select your encode settings based on the cropped video. If you do not match your encode settings to the cropped video, the output will not be as you expect.
 
-The [following](media-services-custom-mes-presets-with-dotnet.md#encoding_with_dotnet) topic shows how to create an encoding job with MES and how to specify a custom preset for the encoding task. 
+The [following](media-services-custom-mes-presets-with-dotnet.md#encoding_with_dotnet) topic shows how to create an encoding job with MES and how to specify a custom preset for the encoding task.
 
 ## Creating a custom preset
 In the example shown in the diagram:

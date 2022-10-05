@@ -1,18 +1,11 @@
 ---
-title: Azure Media Services regional availability | Microsoft Docs
+title: Azure Media Services regional availability
 description: This article is an overview of Microsoft Azure Media Services features and service regional availability.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: conceptual
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: references_regions
+ms.service: media-services
+ms.topic: conceptual
+ms.date: 10/05/2022
 ---
 
 # Media Services regional availability
@@ -75,7 +68,7 @@ Media Analytics is a collection of speech and vision components that makes it ea
 Microsoft Azure Media Services enables you to secure your media from the time it leaves your computer through storage, processing, and delivery. For more information, see [Protecting AMS content](media-services-content-protection-overview.md).
 
 |Encryption|Status|Regions|
-|---|---|---| 
+|---|---|---|
 |Storage|GA|All|
 |AES-128 keys|GA|All|
 |Fairplay|GA|All|

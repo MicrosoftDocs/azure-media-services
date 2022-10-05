@@ -1,12 +1,11 @@
 ---
 title: Configure your account for offline streaming of PlayReady protected content - Azure
 description: This article shows how to configure your Azure Media Services account for streaming PlayReady for Windows 10 offline.
-services: media-services
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 10/04/2022
+ms.date: 10/05/2022
 ---
 
 <!-- William Zhan article -->
@@ -23,8 +22,8 @@ ms.date: 10/04/2022
 
 Azure Media Services support offline download/playback with DRM protection. This article covers offline support of Azure Media Services for Windows 10/PlayReady clients. You can read about the offline mode support for iOS/FairPlay and Android/Widevine devices in the following articles:
 
-- [Offline FairPlay Streaming for iOS](media-services-protect-hls-with-offline-fairplay.md)
-- [Offline Widevine Streaming for Android](offline-widevine-for-android.md)
+* [Offline FairPlay Streaming for iOS](media-services-protect-hls-with-offline-fairplay.md)
+* [Offline Widevine Streaming for Android](offline-widevine-for-android.md)
 
 ## Overview
 
