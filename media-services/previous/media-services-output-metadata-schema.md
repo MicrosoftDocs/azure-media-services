@@ -1,5 +1,5 @@
 ---
-title: Azure Media Services output metadata schema
+title: Azure Media Services output metadata schema v2
 description: This article gives an overview of Azure Media Services output metadata schema.
 author: IngridAtMicrosoft
 ms.author: inhenkel
@@ -10,11 +10,12 @@ ms.date: 10/05/2022
 
 <!-- ms.assetid: 1ed84c88-eea5-4a24-9c4f-f2428157d08a -->
 
-# Output Metadata
+# Output metadata schema v2
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 ## Overview
+
 An encoding job is associated with an input asset (or assets) on which you want to perform some encoding tasks. For example, encode an MP4 file to H.264 MP4 adaptive bitrate sets; create a thumbnail; create overlays. Upon completion of a task, an output asset is produced.  The output asset contains video, audio, thumbnails, etc. The output asset also contains a file with metadata about the output asset. The name of the metadata XML file has the following format: &lt;source_file_name&gt;_manifest.xml (for example, BigBuckBunny_manifest.xml).
 
 Media Services does not pre-emptively scan input Assets to generate metadata. Input metadata is generated only as an artifact when an input Asset is processed in a Job. Hence this artifact is written to the output Asset. Different tools are used to generate metadata for input Assets and output Assets. Therefore, the input metadata has a slightly different schema than the output metadata.

@@ -22,8 +22,8 @@ Defines an encoding preset.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| **Encoding** |[Encoding](media-services-mes-schema.md#Encoding) |Root element, indicates that the input sources are to be encoded. |
-| **Outputs** |[Outputs](media-services-mes-schema.md#Output) |Collection of desired output files. |
+| **Encoding** |[Encoding](#Encoding) |Root element, indicates that the input sources are to be encoded. |
+| **Outputs** |[Outputs](#Output) |Collection of desired output files. |
 | **StretchMode**<br/>minOccurs="0"<br/>default="AutoSize|xs:string|Control the output video frame size, padding, pixel, or display aspect ratio. **StretchMode** could be one of the following values: **None**, **AutoSize** (default), or **AutoFit**.<br/><br/>**None**: Strictly follow the output resolution (for example, the **Width** and **Height** in the preset) without considering the pixel aspect ratio or display aspect ratio of the input video. Use for scenarios such as [cropping](media-services-crop-video.md), where the output video has a different aspect ratio compared to the input. <br/><br/>**AutoSize**: The output resolution will fit inside the window (Width * Height) specified by preset. However, the encoder produces an output video that has square (1:1) pixel aspect ratio. Therefore, either output Width or output Height could be overridden in order to match the display aspect ratio of the input, without padding. For example, if the input is 1920x1080 and the encoding preset asks for 1280x1280, then the Height value in the preset is overridden, and the output will be at 1280x720, which maintains the input aspect ratio of 16:9. <br/><br/>**AutoFit**: If needed, pad the output video (with either letterbox or pillarbox) to honor the desired output resolution, while ensuring that the active video region in the output has the same aspect ratio as the input. For example, suppose the input is 1920x1080 and the encoding preset asks for 1280x1280. Then the output video will be at 1280x1280, but it will contain an inner 1280x720 rectangle of ‘active video’ with aspect ratio of 16:9, and letterbox regions 280 pixels high at the top and bottom. For another example, if the input is 1440x1080 and the encoding preset asks for 1280x720, then the output will be at 1280x720, which contains an inner rectangle of 960x720 at aspect ratio of 4:3, and pillar box regions 160 pixels wide at the left and right.
 
 ### Attributes
@@ -33,6 +33,7 @@ Defines an encoding preset.
 | **Version**<br/><br/> Required |**xs: decimal** |The preset version. The following restrictions apply: xs:fractionDigits value="1"  and xs:minInclusive value="1" For example, **version="1.0"**. |
 
 ## Encoding
+
 Contains a sequence of the following elements:
 
 ### Elements
