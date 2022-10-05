@@ -1,18 +1,13 @@
 ---
-title: Azure Media Services legacy components | Microsoft Docs
+title: Azure Media Services legacy components
 description: This topic discusses Azure Media Services legacy components.
-services: media-services
-documentationcenter: ''
-author: jiayali-ms
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 01/26/2022
+author: IngridAtMicrosoft
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Azure Media Services legacy components
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

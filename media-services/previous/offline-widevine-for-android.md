@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 10/04/2022
+ms.date: 10/05/2022
 ---
 
 <!-- William Zhan article -->

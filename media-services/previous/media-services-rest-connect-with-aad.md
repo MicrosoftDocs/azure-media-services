@@ -1,19 +1,14 @@
 ---
-title: Use Azure AD authentication to access Azure Media Services API with REST | Microsoft Docs
+title: Use Azure AD authentication to access Azure Media Services API with REST
 description: Learn how to access Azure Media Services API with Azure Active Directory authentication by using REST.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.reviewer: willzhan; johndeu
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- William Zhan article -->
 
 # Use Azure AD authentication to access the Media Services API with REST
 

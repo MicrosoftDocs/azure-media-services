@@ -1,21 +1,15 @@
 ---
 title: How to Set Up Computer for Media Services Development with .NET
 description: Learn about the prerequisites for Media Services using the Media Services SDK for .NET. Also learn how to create a Visual Studio app.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: ec2804c7-c656-4fbf-b3e4-3f0f78599a7f
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: ec2804c7-c656-4fbf-b3e4-3f0f78599a7f -->
+
 # Media Services development with .NET
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -42,7 +36,7 @@ Alternatively, you can get the latest Media Services .NET SDK bits from GitHub (
 1. Create a new C# Console Application in Visual Studio. Enter the **Name**, **Location**, and **Solution name**, and then click OK.
 2. Build the solution.
 3. Use **NuGet** to install and add **Azure Media Services .NET SDK Extensions** (**windowsazure.mediaservices.extensions**). Installing this package, also installs **Media Services .NET SDK** and adds all other required dependencies.
-   
+
     Ensure that you have the newest version of NuGet installed. For more information and installation instructions, see [NuGet](https://www.nuget.org/packages/CodePlex.LinqToXsd/).
 
     1. In Solution Explorer, right-click the name of the project and choose **Manage NuGet Packages**.
@@ -50,16 +44,16 @@ Alternatively, you can get the latest Media Services .NET SDK bits from GitHub (
     2. The Manage NuGet Packages dialog box appears.
 
     3. In the Online gallery, search for Azure MediaServices Extensions, choose **Azure Media Services .NET SDK Extensions** (**windowsazure.mediaservices.extensions**), and then click the **Install** button.
-   
+
     4. The project is modified and references to the Media Services .NET SDK Extensions,  Media Services .NET SDK, and other dependent assemblies are added.
 4. To promote a cleaner development environment, consider enabling NuGet Package Restore. For more information, see [NuGet Package Restore"](https://docs.nuget.org/consume/package-restore).
 5. Add a reference to **System.Configuration** assembly. This assembly contains the System.Configuration.**ConfigurationManager** class that is used to access configuration files (for example, App.config).
-   
+
     1. To add references using the Manage References dialog, right-click the project name in the Solution Explorer. Then, click **Add**, then click **Reference...**.
-   
+
     2. The Manage References dialog appears.
     3. Under .NET framework assemblies, find and select the System.Configuration assembly and press **OK**.
-6. Open the App.config file and add an **appSettings** section to the file. Set the values that are needed to connect to the Media Services API. For more information, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md). 
+6. Open the App.config file and add an **appSettings** section to the file. Set the values that are needed to connect to the Media Services API. For more information, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
     Set the values that are needed to connect using the **Service principal** authentication method.
 
@@ -78,7 +72,7 @@ Alternatively, you can get the latest Media Services .NET SDK bits from GitHub (
 7. Add the **System.Configuration** reference to your project.
 8. Overwrite the existing **using** statements at the beginning of the Program.cs file with the following code:
 
-    ```csharp	   
+    ```csharp
     using System;
     using System.Configuration;
     using System.IO;
@@ -88,7 +82,7 @@ Alternatively, you can get the latest Media Services .NET SDK bits from GitHub (
     using System.Linq;
     ```
 
-    At this point, you are ready to start developing a Media Services application.    
+    At this point, you are ready to start developing a Media Services application.
 
 ## Example
 
@@ -107,11 +101,11 @@ class Program
         ConfigurationManager.AppSettings["AMSClientId"];
     private static readonly string _AMSClientSecret =
         ConfigurationManager.AppSettings["AMSClientSecret"];
-        
+
     private static CloudMediaContext _context = null;
     static void Main(string[] args)
     {
-        AzureAdTokenCredentials tokenCredentials = 
+        AzureAdTokenCredentials tokenCredentials =
             new AzureAdTokenCredentials(_AADTenantDomain,
                 new AzureAdClientSymmetricKey(_AMSClientId, _AMSClientSecret),
                 AzureEnvironments.AzureCloudEnvironment);
@@ -119,12 +113,12 @@ class Program
         var tokenProvider = new AzureAdTokenProvider(tokenCredentials);
 
         _context = new CloudMediaContext(new Uri(_RESTAPIEndpoint), tokenProvider);
-        
+
         // List all available Media Processors
         foreach (var mp in _context.MediaProcessors)
         {
             Console.WriteLine(mp.Name);
         }
-        
+
     }
  ```

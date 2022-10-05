@@ -1,21 +1,15 @@
 ---
-title: Use Azure Queue storage to monitor Media Services job notifications with .NET | Microsoft Docs
+title: Use Azure Queue storage to monitor Media Services job notifications with .NET
 description: Learn how to use Azure Queue storage to monitor Media Services job notifications. The code sample is written in C# and uses the Media Services SDK for .NET.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: f535d0b5-f86c-465f-81c6-177f4f490987
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: f535d0b5-f86c-465f-81c6-177f4f490987 -->
+
 # Use Azure Queue storage to monitor Media Services job notifications with .NET
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

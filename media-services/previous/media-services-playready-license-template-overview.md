@@ -2,18 +2,14 @@
 title: Media Services PlayReady license template overview
 description: This topic gives an overview of a PlayReady license template that is used to configure PlayReady licenses.
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-services: media-services
-documentationcenter: ''
-ms.assetid: fddce5d0-1278-478f-ae05-9b985c748731
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: fddce5d0-1278-478f-ae05-9b985c748731 -->
+
 # Media Services PlayReady license template overview
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -24,16 +20,16 @@ Media Services also provides APIs that you can use to configure your PlayReady l
 Here are some examples of PlayReady license restrictions that you can specify:
 
 * The date and time from which the license is valid.
-* The DateTime value when the license expires. 
+* The DateTime value when the license expires.
 * For the license to be saved in persistent storage on the client. Persistent licenses are typically used to allow offline playback of the content.
-* The minimum security level that a player must have to play your content. 
-* The output protection level for the output controls for audio\video content. 
+* The minimum security level that a player must have to play your content.
+* The output protection level for the output controls for audio\video content.
 * For more information, see the "Output Controls" section (3.5) in the [PlayReady Compliance Rules](https://www.microsoft.com/playready/licensing/compliance/) document.
 
 > [!NOTE]
 > Currently, you can only configure the PlayRight of the PlayReady license. This right is required. The PlayRight gives the client the ability to play back the content. You also can use the PlayRight to configure restrictions specific to playback. For more information, see [PlayReadyPlayRight](media-services-playready-license-template-overview.md#PlayReadyPlayRight).
-> 
-> 
+>
+>
 
 To configure PlayReady licenses by using Media Services, you must configure the Media Services PlayReady license template. The template is defined in XML.
 
@@ -41,7 +37,7 @@ The following example shows the simplest (and most common) template that configu
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<PlayReadyLicenseResponseTemplate xmlns:i="https://www.w3.org/2001/XMLSchema-instance" 
+<PlayReadyLicenseResponseTemplate xmlns:i="https://www.w3.org/2001/XMLSchema-instance"
                                   xmlns="http://schemas.microsoft.com/Azure/MediaServices/KeyDelivery/PlayReadyTemplate/v1">
   <LicenseTemplates>
     <PlayReadyLicenseTemplate>
@@ -76,8 +72,8 @@ As the "top-level" class in the template hierarchy, the response template includ
 
 > [!IMPORTANT]
 > These types of restrictions can be powerful, but they also can affect the consumer experience. If the output protections are too restrictive, the content might be unplayable on some clients. For more information, see the [PlayReady Compliance Rules](https://www.microsoft.com/playready/licensing/compliance/).
-> 
-> 
+>
+>
 
 For an example of the protection levels that Silverlight supports, see [Silverlight support for output protections](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838192(v=vs.95)).
 

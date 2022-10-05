@@ -1,19 +1,15 @@
 ---
-title: Create content keys with REST | Microsoft Docs
+title: Create content keys with REST
 description: This article demonstrates how to create content keys that provide secure access to assets.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 95e9322b-168e-4a9d-8d5d-d7c946103745
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 95e9322b-168e-4a9d-8d5d-d7c946103745 -->
+
 # Create content keys with REST
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -21,28 +17,28 @@ ms.author: inhenkel
 > [!div class="op_single_selector"]
 > * [REST](media-services-rest-create-contentkey.md)
 > * [.NET](media-services-dotnet-create-contentkey.md)
-> 
-> 
+>
+>
 
-Media Services enables you to deliver encrypted assets. A **ContentKey** provides secure access to your **Asset**s. 
+Media Services enables you to deliver encrypted assets. A **ContentKey** provides secure access to your **Asset**s.
 
-When you create a new asset (for example, before you [upload files](media-services-rest-upload-files.md)), you can specify the following encryption options: **StorageEncrypted**, **CommonEncryptionProtected**, or **EnvelopeEncryptionProtected**. 
+When you create a new asset (for example, before you [upload files](media-services-rest-upload-files.md)), you can specify the following encryption options: **StorageEncrypted**, **CommonEncryptionProtected**, or **EnvelopeEncryptionProtected**.
 
 When you deliver assets to your clients, you can [configure for assets to be dynamically encrypted](media-services-rest-configure-asset-delivery-policy.md) with one of the following two encryptions: **DynamicEnvelopeEncryption** or **DynamicCommonEncryption**.
 
 Encrypted assets have to be associated with **ContentKey**s. This article describes how to create a content key.
 
-The following are general steps for generating content keys that you associate with assets that you want to be encrypted. 
+The following are general steps for generating content keys that you associate with assets that you want to be encrypted.
 
-1. Randomly generate a 16-byte AES key (for common and envelope encryption) or a 32-byte AES key (for storage encryption). 
-   
-    This is the content key for your asset, which means all files associated with that asset need to use the same content key during decryption. 
+1. Randomly generate a 16-byte AES key (for common and envelope encryption) or a 32-byte AES key (for storage encryption).
+
+    This is the content key for your asset, which means all files associated with that asset need to use the same content key during decryption.
 2. Call the [GetProtectionKeyId](/rest/api/media/operations/rest-api-functions#getprotectionkeyid) and [GetProtectionKey](/rest/api/media/operations/rest-api-functions#getprotectionkey) methods to get the correct X.509 Certificate that must be used to encrypt your content key.
-3. Encrypt your content key with the public key of the X.509 Certificate. 
-   
+3. Encrypt your content key with the public key of the X.509 Certificate.
+
    Media Services .NET SDK uses RSA with OAEP when doing the encryption.  You can see an example in the [EncryptSymmetricKeyData function](https://github.com/Azure/azure-sdk-for-media-services/blob/dev/src/net/Client/Common/Common.FileEncryption/EncryptionUtils.cs).
 4. Create a checksum value (based on the PlayReady AES key checksum algorithm) calculated using the key identifier and content key. For more information, see the “PlayReady AES Key Checksum Algorithm” section of the PlayReady Header Object document located [here](https://www.microsoft.com/playready/documents/).
-   
+
     The following .NET example calculates the checksum using the GUID part of the key identifier and the clear content key.
 
     ```console
@@ -67,15 +63,15 @@ The following are general steps for generating content keys that you associate w
 5. Create the Content key with the **EncryptedContentKey** (converted to base64-encoded string), **ProtectionKeyId**, **ProtectionKeyType**, **ContentKeyType**, and **Checksum** values you have received in previous steps.
 6. Associate the **ContentKey** entity with your **Asset** entity through the $links operation.
 
-This article does not show how to generate an AES key, encrypt the key, and calculate the checksum. 
+This article does not show how to generate an AES key, encrypt the key, and calculate the checksum.
 
 > [!NOTE]
-> 
+>
 > When accessing entities in Media Services, you must set specific header fields and values in your HTTP requests. For more information, see [Setup for Media Services REST API Development](media-services-rest-how-to-use.md).
 
 ## Connect to Media Services
 
-For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md). 
+For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 ## Retrieve the ProtectionKeyId
 The following example shows how to retrieve the ProtectionKeyId, a certificate thumbprint, for the certificate you must use when encrypting your content key. Do this step to make sure that you already have the appropriate certificate on your machine.
@@ -88,7 +84,7 @@ MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
 User-Agent: Microsoft ADO.NET Data Services
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 Host: media.windows.net
 ```
@@ -123,7 +119,7 @@ MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
 User-Agent: Microsoft ADO.NET Data Services
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 x-ms-client-request-id: 78d1247a-58d7-40e5-96cc-70ff0dfa7382
 Host: media.windows.net
@@ -181,7 +177,7 @@ public enum ContentKeyType
     }
 ```
 
-The following example shows how to create a **ContentKey** with a **ContentKeyType** set for storage encryption ("1") and the **ProtectionKeyType** set to "0" to indicate that the protection key ID is the X.509 certificate thumbprint.  
+The following example shows how to create a **ContentKey** with a **ContentKeyType** set for storage encryption ("1") and the **ProtectionKeyType** set to "0" to indicate that the protection key ID is the X.509 certificate thumbprint.
 
 Request
 
@@ -193,13 +189,13 @@ MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
 User-Agent: Microsoft ADO.NET Data Services
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 Host: media.windows.net
 {
 "Name":"ContentKey",
-"ProtectionKeyId":"7D9BB04D9D0A4A24800CADBFEF232689E048F69C", 
-"ContentKeyType":"1", 
+"ProtectionKeyId":"7D9BB04D9D0A4A24800CADBFEF232689E048F69C",
+"ContentKeyType":"1",
 "ProtectionKeyType":"0",
 "EncryptedContentKey":"your encrypted content key",
 "Checksum":"calculated checksum"
@@ -246,7 +242,7 @@ MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
 Content-Type: application/json
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 Host: media.windows.net
 
@@ -256,5 +252,5 @@ Host: media.windows.net
 Response:
 
 ```console
-HTTP/1.1 204 No Content 
+HTTP/1.1 204 No Content
 ```

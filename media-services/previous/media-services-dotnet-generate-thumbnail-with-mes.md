@@ -1,21 +1,15 @@
 ---
 title: How to generate thumbnails using Media Encoder Standard with .NET
 description: This topic shows how to use .NET to encode an asset and generate thumbnails at the same time using Media Encoder Standard.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: b8dab73a-1d91-4b6d-9741-a92ad39fc3f7
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: b8dab73a-1d91-4b6d-9741-a92ad39fc3f7 -->
+
 # How to generate thumbnails using Media Encoder Standard with .NET
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -25,10 +19,10 @@ You can use Media Encoder Standard to generate one or more thumbnails from your 
 For more details on the elements that are used in sample presets, you should review [Media Encoder Standard schema](media-services-mes-schema.md).
 
 Make sure to review the [Considerations](media-services-dotnet-generate-thumbnail-with-mes.md#considerations) section.
-    
+
 ## Example of a "single PNG file" preset
 
-The following JSON and XML preset can be used to produce a single output PNG file from the first few seconds of the input video, where the encoder makes a best-effort attempt at finding an “interesting” frame. Note that the output image dimensions have been set to 100%, meaning these match the dimensions of the input video. Note also how the “Format” setting in "Outputs" is required to match the use of "PngLayers" in the “Codecs” section. 
+The following JSON and XML preset can be used to produce a single output PNG file from the first few seconds of the input video, where the encoder makes a best-effort attempt at finding an “interesting” frame. Note that the output image dimensions have been set to 100%, meaning these match the dimensions of the input video. Note also how the “Format” setting in "Outputs" is required to match the use of "PngLayers" in the “Codecs” section.
 
 ### JSON preset
 
@@ -58,7 +52,7 @@ The following JSON and XML preset can be used to produce a single output PNG fil
       ]
     }
 ```
-    
+
 ### XML preset
 
 ```xml
@@ -119,7 +113,7 @@ The following JSON and XML preset can be used to produce a set of 10 images at t
 ```
 
 ### XML preset
-    
+
 ```xml
     <?xml version="1.0" encoding="utf-16"?>
     <Preset xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" Version="1.0" xmlns="https://www.windowsazure.com/media/encoding/Preset/2014/03">
@@ -302,7 +296,7 @@ For information about schema, see [this](./media-services-mes-schema.md) article
               "AdaptiveBFrame": true,
               "Type": "H264Layer",
               "FrameRate": "0/1"
-    
+
             }
           ],
           "Type": "H264Video"
@@ -395,7 +389,7 @@ For information about schema, see [this](./media-services-mes-schema.md) article
           <JpgFormat />
         </Output>
       </Outputs>
-    </Preset>	
+    </Preset>
 ```
 
 ## <a id="code_sample"></a>Encode video and generate thumbnail with .NET
@@ -408,10 +402,10 @@ The following code example uses Media Services .NET SDK to perform the following
 
     ```csharp
     // Load the XML (or JSON) from the local file.
-    string configuration = File.ReadAllText(fileName);  
+    string configuration = File.ReadAllText(fileName);
     ```
 
-* Add a single encoding task to the job. 
+* Add a single encoding task to the job.
 * Specify the input asset to be encoded.
 * Create an output asset that contains the encoded asset.
 * Add an event handler to check the job progress.
@@ -473,7 +467,7 @@ namespace EncodeAndGenerateThumbnails
         {
             // Declare a new job.
             IJob job = _context.Jobs.Create("Media Encoder Standard Thumbnail Job");
-            // Get a media processor reference, and pass to it the name of the 
+            // Get a media processor reference, and pass to it the name of the
             // processor to use for the specific task.
             IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
 
@@ -488,9 +482,9 @@ namespace EncodeAndGenerateThumbnails
 
             // Specify the input asset to be encoded.
             task.InputAssets.Add(asset);
-            // Add an output asset to contain the results of the job. 
-            // This output is specified as AssetCreationOptions.None, which 
-            // means the output asset is not encrypted. 
+            // Add an output asset to contain the results of the job.
+            // This output is specified as AssetCreationOptions.None, which
+            // means the output asset is not encrypted.
             task.OutputAssets.AddNew("Output asset",
                     AssetCreationOptions.None);
 
@@ -550,14 +544,14 @@ The following considerations apply:
 
 * The use of explicit timestamps for Start/Step/Range assumes that the input source is at least 1 minute long.
 * Jpg/Png/BmpImage elements have Start, Step, and Range string attributes – these can be interpreted as:
-  
+
   * Frame Number if they are non-negative integers, for example "Start": "120",
   * Relative to source duration if expressed as %-suffixed, for example "Start": "15%", OR
   * Timestamp if expressed as HH:MM:SS… format. For example "Start" : "00:01:00"
-    
+
     You can mix and match notations as you please.
-    
-    Additionally, Start also supports a special Macro:{Best}, which attempts to determine the first “interesting” frame of the content 
+
+    Additionally, Start also supports a special Macro:{Best}, which attempts to determine the first “interesting” frame of the content
     NOTE: (Step and Range are ignored when Start is set to {Best})
   * Defaults: Start:{Best}
 * Output format needs to be explicitly provided for each Image format: Jpg/Png/BmpFormat. When present, MES matches JpgVideo to JpgFormat and so on. OutputFormat introduces a new image-codec specific Macro: {Index}, which needs to be present (once and only once) for image output formats.

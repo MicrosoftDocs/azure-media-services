@@ -1,21 +1,15 @@
 ---
-title: Using  Azure Media Packager to accomplish static packaging tasks | Microsoft Docs
+title: Using  Azure Media Packager to accomplish static packaging tasks
 description: This topic shows various tasks that are accomplished with Azure Media Packager.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 0582628e-a525-4a78-90ac-9f7fc1cd909f
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 0582628e-a525-4a78-90ac-9f7fc1cd909f -->
+
 # Using Azure Media Packager to accomplish static packaging tasks
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

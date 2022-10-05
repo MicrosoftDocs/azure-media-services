@@ -1,21 +1,15 @@
 ---
-title: Inserting ads on the client side | Microsoft Docs
+title: Inserting ads on the client side
 description: This article demonstrates how to insert ads into your media on the client side.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 65c9c747-128e-497e-afe0-3f92d2bf7972
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 65c9c747-128e-497e-afe0-3f92d2bf7972  -->
+
 # Inserting ads on the client side
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -26,8 +20,8 @@ For information about closed captioning and ad support in Live streaming videos,
 
 > [!NOTE]
 > Azure Media Player does not currently support Ads.
-> 
-> 
+>
+>
 
 ## <a id="insert_ads_into_media"></a>Inserting Ads into your Media
 Azure Media Services provides support for ad insertion through the Windows Media Platform: Player Frameworks. Player frameworks with ad support are available for Windows 8, Silverlight, Windows Phone 8, and iOS devices. Each player framework contains sample code that shows you how to implement a player application. There are three different kinds of ads you can insert into your media:list.

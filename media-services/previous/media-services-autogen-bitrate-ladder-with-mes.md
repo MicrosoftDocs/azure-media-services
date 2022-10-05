@@ -1,21 +1,16 @@
 ---
-title: Use Media Encoder Standard to auto-generate a bitrate ladder - Azure | Microsoft Docs
+title: Use Media Encoder Standard to auto-generate a bitrate ladder
 description: This topic shows how to use Media Encoder Standard (MES) to auto-generate a bitrate ladder based on the input resolution and bitrate.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
-#  Use Media Encoder Standard to auto-generate a bitrate ladder
 
-[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]  
+# Use Media Encoder Standard to auto-generate a bitrate ladder
+
+[!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 ## Overview
 
@@ -35,14 +30,14 @@ The following code example uses Media Services .NET SDK to perform the following
 
 - Create an encoding job.
 - Get a reference to the Media Encoder Standard encoder.
-- Add an encoding task to the job and specify to use the **Adaptive Streaming** preset. 
+- Add an encoding task to the job and specify to use the **Adaptive Streaming** preset.
 - Create an output asset that contains the encoded asset.
 - Add an event handler to check the job progress.
 - Submit the job.
 
 #### Create and configure a Visual Studio project
 
-Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md). 
+Set up your development environment and populate the app.config file with connection information, as described in [Media Services development with .NET](media-services-dotnet-how-to-use.md).
 
 #### Example
 
@@ -95,7 +90,7 @@ namespace AdaptiveStreamingMESPresest
             // Declare a new job.
             IJob job = _context.Jobs.Create("Media Encoder Standard Job");
 
-            // Get a media processor reference, and pass to it the name of the 
+            // Get a media processor reference, and pass to it the name of the
             // processor to use for the specific task.
             IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
 
@@ -107,9 +102,9 @@ namespace AdaptiveStreamingMESPresest
 
             // Specify the input asset to be encoded.
             task.InputAssets.Add(asset);
-            // Add an output asset to contain the results of the job. 
-            // This output is specified as AssetCreationOptions.None, which 
-            // means the output asset is not encrypted. 
+            // Add an output asset to contain the results of the job.
+            // This output is specified as AssetCreationOptions.None, which
+            // means the output asset is not encrypted.
             task.OutputAssets.AddNew("Output asset",
             AssetCreationOptions.None);
 
@@ -164,7 +159,7 @@ namespace AdaptiveStreamingMESPresest
 
 ## <a id="output"></a>Output
 
-This section shows three examples of output layers produced by MES as a result of encoding with the **Adaptive Streaming** preset. 
+This section shows three examples of output layers produced by MES as a result of encoding with the **Adaptive Streaming** preset.
 
 ### Example 1
 Source with height "1080" and framerate "29.970" produces 6 video layers:

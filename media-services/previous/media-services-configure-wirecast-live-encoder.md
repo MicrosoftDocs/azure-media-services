@@ -1,20 +1,15 @@
 ---
-title: Configure the Telestream Wirecast encoder to send a single bitrate live stream | Microsoft Docs
-description: 'This topic shows how to configure the Wirecast live encoder to send a single bitrate stream to AMS channels that are enabled for live encoding. '
-services: media-services
-documentationcenter: ''
+title: Configure the Telestream Wirecast encoder to send a single bitrate live stream
+description: This topic shows how to configure the Wirecast live encoder to send a single bitrate stream to AMS channels that are enabled for live encoding.
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 0d2f1e81-51a6-4ca9-894a-6dfa51ce4c70
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.reviewer: cenkdin;anilmur
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 0d2f1e81-51a6-4ca9-894a-6dfa51ce4c70 -->
+
 # Use the Wirecast encoder to send a single bitrate live stream
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

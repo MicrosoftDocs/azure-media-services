@@ -1,19 +1,15 @@
 ---
-title: Use existing players to playback your content - Azure | Microsoft Docs
+title: Use existing players to playback your content - Azure
 description: This article lists existing players that you can use to playback your content.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 7e9fcf89-0fb6-4fa4-96cb-666320684d69
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 7e9fcf89-0fb6-4fa4-96cb-666320684d69 -->
+
 # Playing your content with existing players
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

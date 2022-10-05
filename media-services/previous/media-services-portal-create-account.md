@@ -1,19 +1,15 @@
 ---
-title: Create an Azure Media Services account with the Azure portal | Microsoft Docs
+title: Create an Azure Media Services account with the Azure portal
 description: This tutorial walks you through the steps of creating an Azure Media Services account with the Azure portal.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: c551e158-aad6-47b4-931e-b46260b3ee4c
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: conceptual
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: conceptual
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: c551e158-aad6-47b4-931e-b46260b3ee4c -->
+
 # Create a Media Services account using the Azure portal
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -21,7 +17,7 @@ ms.author: inhenkel
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
 The Azure portal provides a way to quickly create an Azure Media Services (AMS) account. You can use your account to access Media Services that enable you to store, encrypt, encode, manage, and stream media content in Azure. At the time you create a Media Services account, you also create an associated storage account (or use an existing one). If you delete a Media Services account, the blobs in your related storage account are not deleted.
-
+UD
 The Media Services account and all associated storage accounts must be in the same Azure subscription. You are strongly encouraged to use storage accounts in the same location as the Media Services account to avoid additional latency and data egress costs.
 
 This article shows how to create a Media Services account using the Azure portal.

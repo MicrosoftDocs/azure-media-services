@@ -1,19 +1,14 @@
 ---
-title: Azure Media Services Telemetry | Microsoft Docs
+title: Azure Media Services Telemetry
 description: This article provides an overview of Microsoft Azure Media Services telemetry.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 95c20ec4-c782-4063-8042-b79f95741d28
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 95c20ec4-c782-4063-8042-b79f95741d28 -->
 
 # Azure Media Services telemetry
 

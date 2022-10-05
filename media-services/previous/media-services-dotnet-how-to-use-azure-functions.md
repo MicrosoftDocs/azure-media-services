@@ -1,21 +1,15 @@
 ---
 title: Develop Azure Functions with Media Services
 description: This topic shows how to start developing Azure Functions with Media Services using the Azure portal.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 51bdcb01-1846-4e1f-bd90-70020ab471b0
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 51bdcb01-1846-4e1f-bd90-70020ab471b0 -->
+
 # Develop Azure Functions with Media Services
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

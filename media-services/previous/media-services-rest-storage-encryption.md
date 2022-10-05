@@ -1,20 +1,15 @@
 ---
 title: Encrypting your content with storage encryption using AMS REST API
 description: Learn how to encrypt your content with storage encryption using AMS REST APIs.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: a0a79f3d-76a1-4994-9202-59b91a2230e0
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: a0a79f3d-76a1-4994-9202-59b91a2230e0 -->
+
 # Encrypting your content with storage encryption
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

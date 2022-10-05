@@ -1,14 +1,11 @@
 ---
-title: Learn about encoders recommended by Azure Media Services | Microsoft Docs
+title: Learn about encoders recommended by Azure Media Services
 description: This article lists on-premises encoders recommended by Azure Media Services.
-services: media-services
-keywords: encoding;encoders;media
 author: IngridAtMicrosoft
-manager: johndeu
-ms.author: johndeu
-ms.date: 03/10/2021
+ms.author: inhenkel
 ms.topic: article
 ms.service: media-services
+ms.date: 10/05/2022
 ---
 
 # Recommended on-premises encoders

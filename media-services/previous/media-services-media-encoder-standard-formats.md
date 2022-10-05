@@ -1,19 +1,13 @@
 ---
 title: Media Encoder Standard formats and codecs - Azure
 description: This article provides an overview of Media Encoder Standard formats and codecs.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.reviewer: anilmur
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Media Encoder Standard Formats and Codecs
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -41,8 +35,8 @@ This document contains a list of the most common import and export file formats 
 
 > [!NOTE]
 > Above is a list of the more commonly encountered file extensions. Media Encoder Standard does support many others (for example: .m2ts, .mpeg2video, .qt). If you try to encode a file and you get an error message about the format not being supported, provide your feedback [here](https://feedback.azure.com/d365community/forum/a78db44a-0d25-ec11-b6e6-000d3a4f09d0?c=a1733251-0d25-ec11-b6e6-000d3a4f09d0).
-> 
-> 
+>
+>
 
 ### Audio formats in input containers
 Media Encoder Standard supports carrying the following audio formats in input containers:

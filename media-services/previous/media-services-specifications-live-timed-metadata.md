@@ -1,21 +1,15 @@
 ---
 title: Azure Media Services - Signaling Timed Metadata in Live Streaming
 description: This specification outlines methods  for signaling timed metadata when ingesting and streaming to Azure Media Services. This includes support for generic timed metadata signals (ID3), as well as SCTE-35 signaling for ad insertion and splice condition signaling.
-services: media-services
-documentationcenter: ''
-author: johndeu
-manager: femila
-editor: johndeu
-
-ms.assetid: 265b94b1-0fb8-493a-90ec-a4244f51ce85
+author: IngridAtMicrosoft
+ms.author: inhenkel
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: 08/22/2019
-ms.author: johndeu
-
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 265b94b1-0fb8-493a-90ec-a4244f51ce85 -->
+
 # Signaling Timed Metadata in Live Streaming
 
 Last Updated: 2019-08-22

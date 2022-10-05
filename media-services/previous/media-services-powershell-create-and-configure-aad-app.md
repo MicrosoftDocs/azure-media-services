@@ -1,18 +1,11 @@
 ---
-title: Use PowerShell to create an Azure AD app to access the Azure Media Services API | Microsoft Docs
+title: Use PowerShell to create an Azure AD app to access the Azure Media Services API
 description: Learn how to use PowerShell to create an Azure Active Directory (Azure AD) app and set it up to access the Azure Media Services API.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-azurepowershell
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
 
 # Use PowerShell to create an Azure AD app to use with the Azure Media Services API
@@ -46,7 +39,7 @@ $Scope = "/subscriptions/your subscription id/resourceGroups/userresourcegroup/p
 
 $Retries = 0;While ($NewRole -eq $null -and $Retries -le 6)
 {
-	# Sleep here for a few seconds to allow the service principal application to become active (usually, it will take only a couple of seconds)
+    # Sleep here for a few seconds to allow the service principal application to become active (usually, it will take only a couple of seconds)
     Sleep 15
     New-AzRoleAssignment -RoleDefinitionName Contributor -ServicePrincipalName $ServicePrincipal.ApplicationId -Scope $Scope | Write-Verbose -ErrorAction SilentlyContinue
     $NewRole = Get-AzRoleAssignment -ServicePrincipalName $ServicePrincipal.ApplicationId -ErrorAction SilentlyContinue

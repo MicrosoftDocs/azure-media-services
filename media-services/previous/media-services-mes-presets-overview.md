@@ -1,19 +1,14 @@
 ---
-title: Task Presets for Media Encoder Standard (MES) | Microsoft Docs
+title: Task Presets for Media Encoder Standard (MES)
 description: The topic gives and overview of the service-defined sample presets for Media Encoder Standard (MES).
 author: IngridAtMicrosoft
-manager: femila
-editor: johndeu
-services: media-services
-documentationcenter: ''
-ms.assetid: f243ed1c-ac9c-4300-a5f7-f092cf9853b9
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: f243ed1c-ac9c-4300-a5f7-f092cf9853b9 -->
 
 # Sample Presets for Media Encoder Standard (MES)
 
@@ -21,16 +16,18 @@ ms.author: inhenkel
 
 **Media Encoder Standard** defines a set of pre-defined system encoding presets you can use when creating encoding jobs. When you specify this preset, Media Encoder Standard will [auto-generate a bitrate ladder](media-services-autogen-bitrate-ladder-with-mes.md).
 
-### Creating Custom Presets from Samples
+## Creating Custom Presets from Samples
+
 Media Services fully supports customizing all values in presets to meet your specific encoding needs and requirements. If you need to customize an encoding preset, you should start with one of the below system presets that are provided in this section as a template for your custom configuration. For explanations of what each element in these presets means, and the valid values for each element, see the [Media Encoder Standard schema](media-services-mes-schema.md) topic.
 
 > [!NOTE]
->  When using a preset for 4k encodes, you should get the `S3` reserved unit type. For more information, see [How to Scale Encoding](./media-services-scale-media-processing-overview.md).
+> When using a preset for 4k encodes, you should get the `S3` reserved unit type. For more information, see [How to Scale Encoding](./media-services-scale-media-processing-overview.md).
 
-#### Video Rotation Default Setting in Presets:
+## Video Rotation Default Setting in Presets
+
 When working with Media Encoder Standard, video rotation is enabled by default. If your video has been recorded on a mobile device in Portrait mode, then these presets will rotate them to Landscape mode prior to encoding.
 
-## Available presets:
+## Available presets
 
  [H264 Multiple Bitrate 1080p Audio 5.1](media-services-mes-preset-H264-Multiple-Bitrate-1080p-Audio-5.1.md) produces a set of 8 GOP-aligned MP4 files, ranging from 6000 kbps to 400 kbps, and AAC 5.1 audio.
 

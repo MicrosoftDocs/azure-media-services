@@ -1,21 +1,15 @@
 ---
-title: Use AES-128 dynamic encryption and the key delivery service | Microsoft Docs
+title: Use AES-128 dynamic encryption and the key delivery service
 description: This topic shows how to dynamically encrypt with AES-128 and use the key delivery service.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 4d2c10af-9ee0-408f-899b-33fa4c1d89b9
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 4d2c10af-9ee0-408f-899b-33fa4c1d89b9 -->
+
 # Use AES-128 dynamic encryption and the key delivery service
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -24,7 +18,7 @@ ms.custom: devx-track-csharp
 > * [.NET](media-services-playready-license-template-overview.md)
 > * [Java](https://github.com/rnrneverdies/azure-sdk-for-media-services-java-samples)
 > * [PHP](https://github.com/Azure/azure-sdk-for-php/tree/master/examples/MediaServices)
->  
+>
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
@@ -70,7 +64,7 @@ The remainder of this article provides explanations, code examples, and links to
 If you add or update your asset's delivery policy, you must delete any existing locator and create a new locator.
 
 ## <a id="create_asset"></a>Create an asset and upload files into the asset
-To manage, encode, and stream your videos, you must first upload your content into Media Services. After it's uploaded, your content is stored securely in the cloud for further processing and streaming. 
+To manage, encode, and stream your videos, you must first upload your content into Media Services. After it's uploaded, your content is stored securely in the cloud for further processing and streaming.
 
 For more information, see [Upload files into a Media Services account](media-services-dotnet-upload-files.md).
 
@@ -78,7 +72,7 @@ For more information, see [Upload files into a Media Services account](media-ser
 With dynamic encryption, you create an asset that contains a set of multi-bitrate MP4 files or multi-bitrate Smooth Streaming source files. Then, based on the specified format in the manifest or fragment request, the on-demand streaming server ensures that you receive the stream in the protocol you selected. Then, you only need to store and pay for the files in single storage format. Media Services builds and serves the appropriate response based on requests from a client. For more information, see [Dynamic packaging overview](media-services-dynamic-packaging-overview.md).
 
 >[!NOTE]
->When your Media Services account is created, a default streaming endpoint is added to your account in the "Stopped" state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content must be in the "Running" state. 
+>When your Media Services account is created, a default streaming endpoint is added to your account in the "Stopped" state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content must be in the "Running" state.
 >
 >Also, to use dynamic packaging and dynamic encryption, your asset must contain a set of adaptive bitrate MP4s or adaptive bitrate Smooth Streaming files.
 
@@ -97,10 +91,10 @@ For more information, see [Configure a content key authorization policy](media-s
 ## <a id="configure_asset_delivery_policy"></a>Configure an asset delivery policy
 Configure the delivery policy for your asset. Some things that the asset delivery policy configuration includes are:
 
-* The key acquisition URL. 
-* The initialization vector (IV) to use for the envelope encryption. AES-128 requires the same IV for encryption and decryption. 
+* The key acquisition URL.
+* The initialization vector (IV) to use for the envelope encryption. AES-128 requires the same IV for encryption and decryption.
 * The asset delivery protocol (for example, MPEG-DASH, HLS, Smooth Streaming, or all).
-* The type of dynamic encryption (for example, AES envelope) or no dynamic encryption. 
+* The type of dynamic encryption (for example, AES envelope) or no dynamic encryption.
 
 For more information, see [Configure an asset delivery policy](media-services-dotnet-configure-asset-delivery-policy.md).
 
@@ -109,8 +103,8 @@ You need to provide your user with the streaming URL for Smooth Streaming, DASH,
 
 > [!NOTE]
 > If you add or update your asset's delivery policy, you must delete any existing locator and create a new locator.
-> 
-> 
+>
+>
 
 For instructions on how to publish an asset and build a streaming URL, see [Build a streaming URL](media-services-deliver-streaming-content.md).
 
@@ -120,12 +114,12 @@ Get a test token based on the token restriction that was used for the key author
 ```csharp
     // Deserializes a string containing an Xml representation of a TokenRestrictionTemplate
     // back into a TokenRestrictionTemplate class instance.
-    TokenRestrictionTemplate tokenTemplate = 
+    TokenRestrictionTemplate tokenTemplate =
         TokenRestrictionTemplateSerializer.Deserialize(tokenTemplateString);
 
     // Generate a test token based on the data in the given TokenRestrictionTemplate.
     //The GenerateTestToken method returns the token without the word "Bearer" in front
-    //so you have to add it in front of the token string. 
+    //so you have to add it in front of the token string.
     string testToken = TokenRestrictionTemplateSerializer.GenerateTestToken(tokenTemplate);
     Console.WriteLine("The authorization token is:\nBearer {0}", testToken);
 ```
@@ -144,7 +138,7 @@ The client needs to extract the URL (that also contains content key ID [kid]) va
         <ContentProtection xmlns:sea="urn:mpeg:dash:schema:sea:2012" schemeIdUri="urn:mpeg:dash:sea:2012">
           <sea:SegmentEncryption schemeIdUri="urn:mpeg:dash:sea:aes128-cbc:2013"/>
           <sea:KeySystem keySystemUri="urn:mpeg:dash:sea:keysys:http:2013"/>
-          <sea:CryptoPeriod IV="0xD7D7D7D7D7D7D7D7D7D7D7D7D7D7D7D7" 
+          <sea:CryptoPeriod IV="0xD7D7D7D7D7D7D7D7D7D7D7D7D7D7D7D7"
                             keyUriTemplate="https://wamsbayclus001kd-hs.cloudapp.net/HlsHandler.ashx?
                                             kid=da3813af-55e6-48e7-aa9f-a4d6031f7b4d"/>
         </ContentProtection>
@@ -152,12 +146,12 @@ The client needs to extract the URL (that also contains content key ID [kid]) va
     </Protection>
 ```
 
-In the case of HLS, the root manifest is broken into segment files. 
+In the case of HLS, the root manifest is broken into segment files.
 
 For example, the root manifest is: http:\//test001.origin.mediaservices.windows.net/8bfe7d6f-34e3-4d1a-b289-3e48a8762490/BigBuckBunny.ism/manifest(format=m3u8-aapl). It contains a list of segment file names.
 
 ```text
-. . . 
+. . .
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=630133,RESOLUTION=424x240,CODECS="avc1.4d4015,mp4a.40.2",AUDIO="audio"
 QualityLevels(514369)/Manifest(video,format=m3u8-aapl)
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=965441,RESOLUTION=636x356,CODECS="avc1.4d401e,mp4a.40.2",AUDIO="audio"
@@ -183,7 +177,7 @@ Fragments(video=0,format=m3u8-aapl)
 #EXT-X-ENDLIST
 ```
 
->[!NOTE] 
+>[!NOTE]
 >If you plan to play an AES-encrypted HLS in Safari, see [this blog](https://azure.microsoft.com/blog/how-to-make-token-authorized-aes-encrypted-hls-stream-working-in-safari/).
 
 ### Request the key from the key delivery service
@@ -248,7 +242,7 @@ The following code shows how to send a request to the Media Services key deliver
 ### <a id="example"></a>Example
 
 Overwrite the code in your Program.cs file with the code shown in this section.
- 
+
 >[!NOTE]
 >There is a limit of 1,000,000 policies for different Media Services policies (for example, for Locator policy or ContentKeyAuthorizationPolicy). Use the same policy ID if you always use the same days/access permissions. An example is policies for locators that are intended to remain in place for a long time (non-upload policies). For more information, see the "Limit access policies" section in [Manage assets and related entities with the Media Services .NET SDK](media-services-dotnet-manage-entities.md#limit-access-policies).
 

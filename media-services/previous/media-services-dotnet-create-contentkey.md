@@ -1,34 +1,28 @@
 ---
 title: Create ContentKeys with .NET
 description: This article demonstrates how to create content keys by using .NET. These keys provide secure access to assets.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 225b05e5-7d30-409c-b5b7-3ef0634310c7
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.devlang: csharp
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
-ms.custom: devx-track-csharp
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 225b05e5-7d30-409c-b5b7-3ef0634310c7 -->
+
 # Create ContentKeys with .NET
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
- 
+
 > [!div class="op_single_selector"]
 > * [REST](media-services-rest-create-contentkey.md)
 > * [.NET](media-services-dotnet-create-contentkey.md)
-> 
-> 
+>
+>
 
-Media Services enables you to create and deliver encrypted assets. A **ContentKey** provides secure access to your **Asset**s. 
+Media Services enables you to create and deliver encrypted assets. A **ContentKey** provides secure access to your **Asset**s.
 
-When you create a new asset (for example, before you [upload files](media-services-dotnet-upload-files.md)), you can specify the following encryption options: **StorageEncrypted**, **CommonEncryptionProtected**, or **EnvelopeEncryptionProtected**. 
+When you create a new asset (for example, before you [upload files](media-services-dotnet-upload-files.md)), you can specify the following encryption options: **StorageEncrypted**, **CommonEncryptionProtected**, or **EnvelopeEncryptionProtected**.
 
 When you deliver assets to your clients, you can [configure for assets to be dynamically encrypted](media-services-dotnet-configure-asset-delivery-policy.md) with one of the following two encryptions: **DynamicEnvelopeEncryption** or **DynamicCommonEncryption**.
 
@@ -36,11 +30,11 @@ Encrypted assets have to be associated with **ContentKey**s. This article descri
 
 > [!NOTE]
 > When creating a new **StorageEncrypted** asset using the Media Services .NET SDK , the **ContentKey** is automatically created and linked with the asset.
-> 
-> 
+>
+>
 
 ## ContentKeyType
-One of the values that you must set when create a content key is the content key type. Choose from one of the following values. 
+One of the values that you must set when create a content key is the content key type. Choose from one of the following values.
 
 ```csharp
     public enum ContentKeyType
@@ -142,5 +136,5 @@ The following code snippet creates a content key of the common encryption type. 
     }
 call
 
-    IContentKey key = CreateCommonTypeContentKey(encryptedsset); 
+    IContentKey key = CreateCommonTypeContentKey(encryptedsset);
 ```

@@ -1,19 +1,15 @@
 ---
-title: Get started with delivering content on demand using REST | Microsoft Docs
+title: Get started with delivering content on demand using REST
 description: This tutorial walks you through the steps of implementing an on demand content delivery application with Azure Media Services using REST API.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.assetid: 88194b59-e479-43ac-b179-af4f295e3780
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 3/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 88194b59-e479-43ac-b179-af4f295e3780 -->
+
 # Get started with delivering content on demand using REST
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]

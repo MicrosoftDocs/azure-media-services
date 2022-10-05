@@ -1,18 +1,18 @@
 ---
-title: How to check job progress using REST API | Microsoft Docs
+title: How to check job progress using REST API
 description: This article demonstrates how to check job progress using Azure Media Services v2 REST API.
-services: media-services
-documentationcenter: ''
+
+
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
+ms.author: inhenkel
+
 ms.assetid: a1a1f956-c035-448a-af9c-5ac15fcce9dd
 ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
+
+
 ms.topic: article
 ms.date: 03/10/2021
-ms.author: inhenkel
+
 ---
 # How to: check job progress
 
@@ -24,7 +24,7 @@ When you run jobs, you often require a way to track job progress. You can find o
 
 ## Connect to Media Services
 
-For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md). 
+For information on how to connect to the AMS API, see [Access the Azure Media Services API with Azure AD authentication](media-services-use-aad-auth-to-access-ams-api.md).
 
 ## Check job progress
 
@@ -36,7 +36,7 @@ DataServiceVersion: 1.0;NetFx
 MaxDataServiceVersion: 3.0;NetFx
 Accept: application/json
 Accept-Charset: UTF-8
-Authorization: Bearer <ENCODED JWT TOKEN> 
+Authorization: Bearer <ENCODED JWT TOKEN>
 x-ms-version: 2.19
 Host: media.windows.net
 ```
@@ -56,5 +56,5 @@ X-Content-Type-Options: nosniff
 DataServiceVersion: 3.0;
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 
-{"odata.metadata":"https://media.windows.net/api/$metadata#Jobs","value":[{"Id":"nb:jid:UUID:f3c43f94-327f-2347-90bb-3bf79f8559f1","Name":"Encoding BigBuckBunny into to H264 Adaptive Bitrate MP4 Set 720p","Created":"2015-02-11T01:46:08.897","LastModified":"2015-02-11T01:46:08.897","EndTime":null,"Priority":0,"RunningDuration":0.0,"StartTime":"2015-02-11T01:46:16.58","State":2,"TemplateId":null,"JobNotificationSubscriptions":[]}]} 
+{"odata.metadata":"https://media.windows.net/api/$metadata#Jobs","value":[{"Id":"nb:jid:UUID:f3c43f94-327f-2347-90bb-3bf79f8559f1","Name":"Encoding BigBuckBunny into to H264 Adaptive Bitrate MP4 Set 720p","Created":"2015-02-11T01:46:08.897","LastModified":"2015-02-11T01:46:08.897","EndTime":null,"Priority":0,"RunningDuration":0.0,"StartTime":"2015-02-11T01:46:16.58","State":2,"TemplateId":null,"JobNotificationSubscriptions":[]}]}
 ```

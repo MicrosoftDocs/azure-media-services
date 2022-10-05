@@ -1,17 +1,11 @@
 ---
-title: Use Azure CLI to create an Azure AD app and configure it to access Azure Media Services API | Microsoft Docs
+title: Use Azure CLI to create an Azure AD app and configure it to access Azure Media Services API
 description: This topic shows how to use the Azure CLI to create an Azure AD app and configure it to access Azure Media Services API.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
 
 # Use Azure CLI to create an Azure AD app and configure it to access Media Services API

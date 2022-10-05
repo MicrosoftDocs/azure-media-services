@@ -1,19 +1,15 @@
 ---
-title: Configure the Haivision KB encoder to send a single bitrate live stream to Azure | Microsoft Docs
+title: Configure the Haivision KB encoder to send a single bitrate live stream to Azure
 description: 'This topic shows how to configure the Haivision KB live encoder to send a single bitrate stream to AMS channels that are enabled for live encoding.'
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: vsood
-editor: ''
-ms.assetid: 0d2f1e81-51a6-4ca9-894a-6dfa51ce4c70
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
+<!-- ms.assetid: 0d2f1e81-51a6-4ca9-894a-6dfa51ce4c70 -->
+
 # Use the Haivision KB live encoder to send a single bitrate live stream
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -65,20 +61,20 @@ Audio:
 
 ## Configuration steps
 1.  Log in to the Haivision KB user interface.
-2.  Click on the **Menu Button** in the channel control center and select **Add Channel**  
+2.  Click on the **Menu Button** in the channel control center and select **Add Channel**
     ![Screenshot 2017-08-14 at 9.15.09 AM](./media/media-services-configure-kb-live-encoder/step2.png)
-3.  Type the **Channel Name** in the Name field and click next.  
+3.  Type the **Channel Name** in the Name field and click next.
     ![Screenshot 2017-08-14 at 9.19.07 AM](./media/media-services-configure-kb-live-encoder/step3.png)
 4.  Select the **Channel Input Source** from the **Input Source** drop-down and click next.
     ![Screenshot 2017-08-14 at 9.20.44 AM](./media/media-services-configure-kb-live-encoder/step4.png)
 5.  From the **Encoder Template** drop-down choose **H264-720-AAC-192** and click next.
     ![Screenshot 2017-08-14 at 9.23.15 AM](./media/media-services-configure-kb-live-encoder/step5.png)
-6.  From the **Select New Output** drop-down choose **RTMP** and click next.  
+6.  From the **Select New Output** drop-down choose **RTMP** and click next.
     ![Screenshot 2017-08-14 at 9.27.51 AM](./media/media-services-configure-kb-live-encoder/step6.png)
 7.  From the **Channel Output** window, populate the Azure stream information. Paste the **RTMP** link from the initial channel setup in the **Server** area. In the **Output Name** area type in the name of the channel. In the Stream Name Template area, use the template RTMPStreamName_%video_bitrate% to name the stream.
     ![Screenshot 2017-08-14 at 9.33.17 AM](./media/media-services-configure-kb-live-encoder/step7.png)
 8.  Click next and then click Done.
-9.  Click the **Play Button** to start the encoder channel.  
+9.  Click the **Play Button** to start the encoder channel.
     ![Haivision KB.png](./media/media-services-configure-kb-live-encoder/step9.png)
 
 ## Test playback

@@ -1,18 +1,13 @@
 ---
-title: Azure Media Services overview | Microsoft Docs
+title: Azure Media Services overview
 description: Microsoft Azure Media Services is an extensible cloud-based platform that enables developers to build scalable media management and delivery applications. This article gives an overview of Azure Media Services.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: conceptual
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: conceptual
+ms.date: 10/05/2022
 ---
+
 # Azure Media Services overview
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -21,7 +16,7 @@ ms.author: inhenkel
 
 Microsoft Azure Media Services (AMS) is an extensible cloud-based platform that enables developers to build scalable media management and delivery applications. Media Services is based on REST APIs that enable you to securely upload, store, encode, and package video or audio content for both on-demand and live streaming delivery to various clients (for example, TV, PC, and mobile devices).
 
-You can build end-to-end workflows using entirely Media Services. You can also choose to use third-party components for some parts of your workflow. For example, encode using a third-party encoder. Then, upload, protect, package, deliver using Media Services. You can choose to stream your content live or deliver content on-demand. 
+You can build end-to-end workflows using entirely Media Services. You can also choose to use third-party components for some parts of your workflow. For example, encode using a third-party encoder. Then, upload, protect, package, deliver using Media Services. You can choose to stream your content live or deliver content on-demand.
 
 
 ## Compliance, Privacy and Security
@@ -31,7 +26,7 @@ As an important reminder, you must comply with all applicable laws in your use o
 Before uploading any video/image to Media Services, You must have all the proper rights to use the video/image, including, where required by law, all the necessary consents from individuals (if any) in the video/image, for the use, processing, and storage of their data in Media Services and Azure. Some jurisdictions may impose special legal requirements for the collection, online processing and storage of certain categories of data, such as biometric data. Before using Media Services and Azure for the processing and storage of any data subject to special legal requirements, You must ensure compliance with any such legal requirements that may apply to You.
 
 To learn about compliance, privacy and security in Media Services please visit the Microsoft [Trust Center](https://www.microsoft.com/trust-center/?rtc=1). For Microsoft’s privacy obligations, data handling and retention practices, including how to delete your data, please review Microsoft’s [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) (“OST”) and [Data Processing Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67) (“DPA”). By using Media Services, you agree to be bound by the OST, DPA and the Privacy Statement.
- 
+
 ## Prerequisites
 
 To start using Azure Media Services, you should have the following:
@@ -50,7 +45,7 @@ To build Media Services solutions, you can use:
 * [Media Services REST API](/rest/api/media/operations/azure-media-services-rest-api-reference)
 * One of the available client SDKs:
 	* Azure Media Services SDK for .NET
-	
+
 		* [NuGet package](https://www.nuget.org/packages/windowsazure.mediaservices/)
 		* [GitHub source code](https://github.com/Azure/azure-sdk-for-media-services)
 	* [Azure SDK for Java](https://github.com/Azure/azure-sdk-for-java),
@@ -62,7 +57,7 @@ To build Media Services solutions, you can use:
 
 > [!NOTE]
 > To get the latest version of Java SDK and get started developing with Java, see [Get started with the Java client SDK for Media Services](./media-services-java-how-to-use.md). <br/>
-> To download the latest PHP SDK for Media Services, look for version 0.5.7 of the Microsoft/WindowAzure package in the [Packagist repository](https://packagist.org/packages/microsoft/windowsazure#v0.5.7).  
+> To download the latest PHP SDK for Media Services, look for version 0.5.7 of the Microsoft/WindowAzure package in the [Packagist repository](https://packagist.org/packages/microsoft/windowsazure#v0.5.7).
 
 ## Code samples
 

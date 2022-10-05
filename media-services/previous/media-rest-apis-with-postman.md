@@ -1,18 +1,13 @@
 ---
 title: Configure Postman for Azure Media Services REST API calls
 description: This article describes how to configure Postman for Media Services REST API calls.
-services: media-services
-documentationcenter: ''
 author: IngridAtMicrosoft
-manager: femila
-editor: ''
-ms.service: media-services
-ms.workload: media
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.date: 03/10/2021
 ms.author: inhenkel
+ms.service: media-services
+ms.topic: article
+ms.date: 10/05/2022
 ---
+
 # Configure Postman for Media Services v2 REST API calls
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
@@ -25,13 +20,13 @@ This environment and collection is used in articles that show how to achieve var
 
 ## Prerequisites
 
-- Install the [Postman](https://www.getpostman.com/) REST client to execute the REST APIs shown in some of the AMS REST tutorials. 
+- Install the [Postman](https://www.getpostman.com/) REST client to execute the REST APIs shown in some of the AMS REST tutorials.
 
-    We are using **Postman** but any REST tool would be suitable. Other alternatives are: **Visual Studio Code** with the REST plugin or **Telerik Fiddler**. 
+    We are using **Postman** but any REST tool would be suitable. Other alternatives are: **Visual Studio Code** with the REST plugin or **Telerik Fiddler**.
 
-## Configure the environment 
+## Configure the environment
 
-1. Create a .json file that contains the environment variables used in AMS tutorials. Name the file (for example, **AzureMediaServices.postman_environment.json**). Open the file and paste the code that defines the Postman environment from [this code listing](postman-environment.md). 
+1. Create a .json file that contains the environment variables used in AMS tutorials. Name the file (for example, **AzureMediaServices.postman_environment.json**). Open the file and paste the code that defines the Postman environment from [this code listing](postman-environment.md).
 2. Open the **Postman**.
 3. On the right of the screen, select the **Manage environment** option.
 
