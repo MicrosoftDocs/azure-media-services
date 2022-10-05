@@ -32,7 +32,7 @@ Defines an encoding preset.
 | --- | --- | --- |
 | **Version**<br/><br/> Required |**xs: decimal** |The preset version. The following restrictions apply: xs:fractionDigits value="1"  and xs:minInclusive value="1" For example, **version="1.0"**. |
 
-## Encoding
+## <a name="Encoding"> Encoding
 
 Contains a sequence of the following elements:
 
@@ -47,6 +47,7 @@ Contains a sequence of the following elements:
 | **JpgImage** |[JpgImage](media-services-mes-schema.md#JpgImage) |Settings for Jpg image. |
 
 ## <a name="H264Video"></a> H264Video
+
 ### Elements
 
 | Name | Type | Description |
