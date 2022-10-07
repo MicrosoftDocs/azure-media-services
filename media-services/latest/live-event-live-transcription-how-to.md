@@ -38,24 +38,6 @@ You can create a live event with live transcription using the Azure portal, with
 
 The language code must match the spoken language of the video. See the [language code table](#live-transcription-regions-and-languages) at the end of this article.
 
-## [Portal](#tab/portal/)
-
-[!INCLUDE [task-create-live-event-portal](includes/task-create-live-event-portal.md)]
-
-## [REST](#tab/rest/)
-
-To create a live event with the transcription turned on, set the 'transcriptions' property with the desired language code when creating the [live event](/rest/api/media/live-events/create).
-
-## [CLI](#tab/cli/)
-
-[!INCLUDE [task-create-live-event-cli](includes/task-create-live-event-cli.md)]
-
-## [Python](#tab/python/)
-
-[!INCLUDE [task-create-live-event-python](includes/task-create-live-event-python.md)]
-
----
-
 ## Start or stop transcription after the live event has started
 
 You can start and stop, or change the language of live transcription while the live event is in running, standby or stopped state.
