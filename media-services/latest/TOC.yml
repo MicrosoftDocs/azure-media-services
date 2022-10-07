@@ -57,9 +57,6 @@
     displayName: samples, SDK, tutorial, GitHub, .NET, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
   - name: Try Media Services in the portal
     items:
-    - name: Basic Video On Demand (VOD) app
-      href: video-on-demand-simple-portal-quickstart.md
-      displayName: video-on-demand, video on demand
     - name: Use WebVTT files with Azure Media Player
       href: amp-captions-tutorial.md
       displayName: assets, containers, storage, media files, upload, asset tracks, audio tracks, text tracks, languages, accessibility, director's commentary, descriptive text
@@ -465,10 +462,6 @@
       items:
       - name: Create a Media Services account
         href: account-create-how-to.md
-      - name: Set account encryption with customer-managed keys
-        href: account-set-account-encryption-customer-managed-key-how-to.md
-      - name: Show account encryption
-        href: account-show-encryption-how-to.md
     - name: Network security
       items:
       - name: Use a private endpoint for Streaming Endpoint
