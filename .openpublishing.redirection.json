@@ -1905,6 +1905,11 @@
             "source_path_from_root": "/media-services/latest/player-use-azure-media-player-how-to.md",
             "redirect_url": "/media-services/latest/player-media-players-concept",
             "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/media-services/previous/media-services-cenc-with-multidrm-access-control.md",
+            "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/msal-overview",
+            "redirect_document_id": false
           }
     ]
 }

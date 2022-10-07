@@ -42,7 +42,6 @@ Before implementing offline DRM for Widevine on Android devices, you should firs
 
 - Become familiar with the concepts introduced for online content protection using Widevine DRM. This is covered in detail in the following documents/samples:
     - [Use Azure Media Services to deliver DRM licenses or AES keys](media-services-deliver-keys-and-licenses.md)
-    - [CENC with Multi-DRM and Access Control: A Reference Design and Implementation on Azure and Azure Media Services](media-services-cenc-with-multidrm-access-control.md)
     - [Using PlayReady and/or Widevine Dynamic Common Encryption with .NET](https://azure.microsoft.com/resources/samples/media-services-dotnet-dynamic-encryption-with-drm/)
     - [Use Azure Media Services to deliver PlayReady and/or Widevine licenses with .NET](https://azure.microsoft.com/resources/samples/media-services-dotnet-deliver-playready-widevine-licenses/)
 - Become familiar with the Google ExoPlayer SDK for Android, an open-source video player SDK capable of supporting offline Widevine DRM playback.

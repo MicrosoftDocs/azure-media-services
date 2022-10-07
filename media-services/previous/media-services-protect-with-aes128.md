@@ -247,5 +247,3 @@ Overwrite the code in your Program.cs file with the code shown in this section.
 >There is a limit of 1,000,000 policies for different Media Services policies (for example, for Locator policy or ContentKeyAuthorizationPolicy). Use the same policy ID if you always use the same days/access permissions. An example is policies for locators that are intended to remain in place for a long time (non-upload policies). For more information, see the "Limit access policies" section in [Manage assets and related entities with the Media Services .NET SDK](media-services-dotnet-manage-entities.md#limit-access-policies).
 
 Make sure to update variables to point to folders where your input files are located.
-
-[!code-csharp[Main](~/../samples-mediaservices-encryptionaes/DynamicEncryptionWithAES/DynamicEncryptionWithAES/Program.cs)]
