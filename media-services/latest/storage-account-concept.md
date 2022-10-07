@@ -37,7 +37,6 @@ There are different SKUs you can choose for your storage account. If you want to
 
 ## How-Tos and Tutorials
 
-- [Sync storage keys](storage-sync-storage-keys-how-to.md?amspage=storage-account-concept)
 - [Access storage with a Media Services Managed Identity](security-access-storage-managed-identity-cli-tutorial.md?amspage=storage-account-concept)
 - [Media Services trusted storage](security-trusted-storage-rest-tutorial.md?amspage=storage-account-concept)
 - [Use the Azure portal to use customer-managed keys or BYOK with Media Services](security-customer-managed-keys-portal-tutorial.md?amspage=storage-account-concept)
