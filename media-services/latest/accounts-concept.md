@@ -32,4 +32,4 @@ When creating a Media Services account, you attach an Azure Storage account to t
 
 ## Associate streaming endpoint
 
-If you create an account using the Azure portal, a streaming endpoint is also created.  The name of the streaming endpoint is *default*.  You can [create additional streaming endpoints](streaming-endpoint-create-how-to.md?amspage=accounts-concept) for your account if you don't want to use the default streaming endpoint.
+If you create an account using the Azure portal, a streaming endpoint is also created.  The name of the streaming endpoint is *default*.  You can create additional streaming endpoints for your account if you don't want to use the default streaming endpoint.
