@@ -4,7 +4,7 @@ description: Learn how to upload media for streaming or encoding.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 10/07/2022
 ms.author: inhenkel
 ---
 
@@ -28,41 +28,4 @@ Before you get started, you'll need to collect or think about a few values.
 
 [!INCLUDE [reserved_characters](./includes/reserved_characters.md)]
 
-## [Portal](#tab/portal/)
-
 [!INCLUDE [Upload files with the portal](./includes/task-upload-file-to-asset-portal.md)]
-
-## [CLI](#tab/cli/)
-
-[!INCLUDE [Upload files with the CLI](./includes/task-upload-file-to-asset-cli.md)]
-
-## [Python](#tab/python)
-
-Assuming that your code has already established authentication and you have already created an input Asset, use the following code snippet to upload local files to that asset (in_container).
-
-```python
-#The storage objects
-from azure.storage.blob import BlobServiceClient, BlobClient
-
-#Establish storage variables
-storage_account_name = '<your storage account name'
-storage_account_key = '<your storage account key'
-storage_blob_url = 'https://<your storage account name>.blob.core.windows.net/'
-
-in_container = 'asset-' + inputAsset.asset_id
-
-#The file path of local file you want to upload
-source_file = "ignite.mp4"
-
-# Use the Storage SDK to upload the video
-blob_service_client = BlobServiceClient(account_url=storage_blob_url, credential=storage_account_key)
-blob_client = blob_service_client.get_blob_client(in_container,source_file)
-
-# Upload the video to storage as a block blob
-with open(source_file, "rb") as data:
-    blob_client.upload_blob(data, blob_type="BlockBlob")
-```
-
----
-<!-- add these to the tabs when available -->
-For other methods see the [Azure Storage documentation](/azure/storage/blobs/) for working with blobs in [.NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet), [Java](/azure/storage/blobs/storage-quickstart-blobs-java), [Python](/azure/storage/blobs/storage-quickstart-blobs-python), and [JavaScript (Node.js)](/azure/storage/blobs/storage-quickstart-blobs-nodejs).
