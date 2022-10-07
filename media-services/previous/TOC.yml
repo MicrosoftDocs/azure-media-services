@@ -420,9 +420,6 @@
       - name: Hybrid DRM system design
         href: hybrid-design-drm-sybsystem.md
         displayName: media services v2, v2, version 2
-      - name: Reference multi-DRM design
-        href: media-services-cenc-with-multidrm-access-control.md
-        displayName: media services v2, v2, version 2
   - name: Analyze content
     items:
     - name: Process with Indexer
