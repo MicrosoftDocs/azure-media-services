@@ -14,4 +14,4 @@ ms.date: 10/07/2022
 
 [!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
 
-Azure Directory Authentication Library (ADAL) has been deprecated.  Use the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/azure/active-directory/develop/msal-overview) instead.
+Azure Directory Authentication Library (ADAL) has been deprecated.  Use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) instead.

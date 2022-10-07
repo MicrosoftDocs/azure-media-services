@@ -601,7 +601,6 @@ namespace DynamicEncryptionWithDRM
 
 ## See also
 
-* [Use the CENC with multi-DRM and access control](media-services-cenc-with-multidrm-access-control.md)
 * [Configure Widevine packaging with Media Services](https://mingfeiy.com/how-to-configure-widevine-packaging-with-azure-media-services)
 * [Get started with the Java client SDK for Azure Media Services](./media-services-java-how-to-use.md)
 * To download the latest PHP SDK for Media Services, look for version 0.5.7 of the Microsoft/WindowsAzure package in the [Packagist repository](https://packagist.org/packages/microsoft/windowsazure#v0.5.7).
