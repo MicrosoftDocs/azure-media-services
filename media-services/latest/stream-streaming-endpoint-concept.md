@@ -4,7 +4,7 @@ description: Learn about Streaming Endpoints (Origin), a dynamic packaging and s
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 10/07/2022
 ms.author: inhenkel
 ---
 
@@ -184,11 +184,4 @@ See the following articles:
 
 ## How-Tos and Tutorials
 
-- [Create a streaming endpoint](streaming-endpoint-create-how-to.md?amspage=stream-streaming-endpoint-concept)
-- [Delete a streaming endpoint](streaming-endpoint-delete-how-to.md?amspage=stream-streaming-endpoint-concept)
-- [List streaming endpoints](streaming-endpoint-list-how-to.md?amspage=stream-streaming-endpoint-concept)
-- [Show or get the details of a streaming endpoint](streaming-endpoint-show-how-to.md?amspage=stream-streaming-endpoint-concept)
-- [Start a streaming endpoint](streaming-endpoint-start-how-to.md?amspage=stream-streaming-endpoint-concept)
-- [Stop a streaming endpoint](streaming-endpoint-stop-how-to.md?amspage=stream-streaming-endpoint-concept)
-- [Update a streaming endpoint](streaming-endpoint-update-how-to.md?amspage=stream-streaming-endpoint-concept)
 - [Manage streaming endpoints](stream-manage-streaming-endpoints-how-to.md?amspage=stream-streaming-endpoint-concept)

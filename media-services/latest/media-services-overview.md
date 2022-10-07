@@ -4,7 +4,7 @@ description: Azure Media Services is a cloud-based platform that enables you to 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 07/08/2022
+ms.date: 10/07/2022
 ms.author: inhenkel
 ---
 
@@ -36,7 +36,6 @@ Review [Fundamental concepts](concepts-overview.md) which includes important con
 
 Quickstarts allow you to try out Media Services using the Azure portal.
 
-- [Basic video-on-demand (VOD) application](video-on-demand-simple-portal-quickstart.md)
 - [Live event with portal and OBS](live-event-obs-quickstart.md)
 - [Live event with portal and Wirecast](live-event-wirecast-quickstart.md)
 - [Use portal to encrypt content](drm-encrypt-content-how-to.md)

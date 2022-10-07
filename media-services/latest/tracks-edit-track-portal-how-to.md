@@ -4,7 +4,7 @@ description: Your live event is over and you have used live transcription to cre
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 09/08/2022
+ms.date: 10/07/2022
 ms.author: inhenkel
 ---
 

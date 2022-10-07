@@ -71,7 +71,7 @@ sections:
         A Media Services asset is an Azure Storage account container that's used for each video file that you upload. It has a unique identifier that's used with transforms and other operations. See [Assets in Azure Media Services v3](assets-concept.md).
     - question: How do I create a Media Services asset?
       answer: |
-        Every time you want to upload a media file and do something with it, like encoding or streaming, you create an asset to store the media file and associated files. Assets are automatically created for you if you use the Azure portal. If you're not using the portal to upload files, you must create an asset first. For more information, see [Create an asset](asset-create-asset-how-to.md).
+        Every time you want to upload a media file and do something with it, like encoding or streaming, you create an asset to store the media file and associated files. Assets are automatically created for you if you use the Azure portal. If you're not using the portal to upload files, you must create an asset first.
 
   - name: Encoding
     questions:
@@ -80,7 +80,7 @@ sections:
         The common encoding formats are available with Media Services Standard Encoder. For a list of all formats, see [Standard Encoder formats and codecs](encode-media-encoder-standard-formats-reference.md).
     - question: How do I create a Media Services job?
       answer: |
-        You can create a job in the Azure portal by using the [Azure CLI](job-create-how-to.md), REST, or any of the SDKs. See the [Media Services samples](https://github.com/Azure-Samples?q=media-services&type=&language=&sort=) for the language that you prefer.
+        You can create a job in the Azure portal by using the Azure CLI, REST, or any of the SDKs. See the [Media Services samples](https://github.com/Azure-Samples?q=media-services&type=&language=&sort=) for the language that you prefer.
     - question: Can I use Media Services to create an auto-generated bitrate ladder?
       answer: |
         Yes.  See [Encode with an auto-generated bitrate ladder](./encode-autogen-bitrate-ladder.md).

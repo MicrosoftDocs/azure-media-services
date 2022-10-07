@@ -2,7 +2,7 @@
 title: Encrypt content with the Azure portal
 description: Use Azure Media Services to help secure your media from the time it leaves your computer all the way through storage, processing, and delivery. With Media Services, you can deliver your live and on-demand content encrypted dynamically with Advanced Encryption Standard (AES-128) or any of the three major digital rights management (DRM) systems - Microsoft PlayReady, Google Widevine, and Apple FairPlay. FairPlay Streaming is an Apple technology that is only available for video transferred over HTTP Live Streaming (HLS) on iOS devices, in Apple TV, and in Safari on macOS. Media Services also provides a service for delivering AES keys and DRM (PlayReady, Widevine, and FairPlay) licenses to authorized clients.
 ms.topic: quickstart
-ms.date: 04/13/2022
+ms.date: 10/07/2022
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: media-services
@@ -29,10 +29,6 @@ This quickstart shows you how to create a content key policy where you specify w
 * [Streaming locators](stream-streaming-locators-concept.md)
 * [Streaming policies](stream-streaming-policy-concept.md)
 * [Content key policies](drm-content-key-policy-concept.md)
-
-## Prerequisites
-
-Upload and process your content as described in [create an asset in the Azure portal](asset-create-asset-how-to.md?tabs=portal)
 
 ## Create a content key policy
 

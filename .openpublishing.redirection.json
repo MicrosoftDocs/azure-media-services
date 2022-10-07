@@ -1910,6 +1910,421 @@
             "source_path_from_root": "/media-services/previous/media-services-cenc-with-multidrm-access-control.md",
             "redirect_url": "https://learn.microsoft.com/azure/active-directory/develop/msal-overview",
             "redirect_document_id": false
-          }
+          },
+          {
+            "source_path_from_root": "/media-services/latest/account-add-account-storage-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-delete-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-filter-create-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-filter-delete-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-filter-list-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-filter-show-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-filter-update-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-list-assets-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-list-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-list-transforms-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-remove-account-storage-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-set-account-encryption-customer-managed-key-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-set-account-encryption-system-managed-key-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-set-storage-authentication-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-show-encryption-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-show-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/account-update-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/asset-create-asset-filter-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/asset-create-asset-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/asset-delete-asset-filter-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/asset-delete-asset-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/asset-get-asset-sas-urls-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/asset-get-encryption-key-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/asset-list-asset-filters-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/asset-list-asset-streaming-locators-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/asset-update-asset-filter-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/drm-add-option-content-key-policy-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/drm-create-content-key-policy-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/drm-delete-content-key-policy-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/drm-list-content-key-policy-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/drm-remove-option-content-key-policy-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/drm-show-content-key-policy-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/drm-update-content-key-policy-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/drm-update-option-content-key-policy-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/job-cancel-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/job-create-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/job-delete-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/job-list-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/job-show-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/job-update-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-event-create-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-event-delete-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-event-list-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-event-reset-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-event-show-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-event-standby-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-event-start-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-event-stop-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-event-update-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-event-wait-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-output-create-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-output-delete-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-output-list-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/live-output-show-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/storage-create-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/storage-sync-storage-keys-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-endpoint-create-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-endpoint-delete-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-endpoint-list-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-endpoint-scale-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-endpoint-show-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-endpoint-start-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-endpoint-stop-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-endpoint-update-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-locator-create-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-locator-delete-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-locator-list-content-keys-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-locator-list-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-locator-list-paths-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-locator-show-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-policy-create-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-policy-delete-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-policy-list-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/streaming-policy-show-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/tracks-delete-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/tracks-get-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/tracks-list-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/transform-add-custom-transform-output-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/transform-create-transform-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/transform-delete-transform-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/transform-get-transform-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/transform-update-transform-how-to.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/media-services/latest/video-on-demand-simple-portal-quickstart.md",
+            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_document_id": false
+        }
     ]
 }
