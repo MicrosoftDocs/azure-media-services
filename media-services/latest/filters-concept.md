@@ -4,7 +4,7 @@ description: This topic describes how to create filters so your client can use t
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 06/28/2022
+ms.date: 10/07/2022
 ms.author: inhenkel
 ---
 # Filters
@@ -143,8 +143,6 @@ If the filter definition needs to be changed consider creating a new filter and 
 
 ## How-tos and Tutorials
 
-- [Create an account filter](account-filter-create-how-to.md?amspage=filters-concept)
-- [Delete an account filter](account-filter-delete-how-to.md?amspage=filters-concept)
 - [List account filters](account-filter-list-how-to.md?amspage=filters-concept)
 - [Show or get the details of an account filter](account-filter-show-how-to.md?amspage=filters-concept)
 - [Update an account filter](account-filter-update-how-to.md?amspage=filters-concept)
