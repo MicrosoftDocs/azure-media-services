@@ -2325,6 +2325,21 @@
             "source_path_from_root": "/media-services/latest/video-on-demand-simple-portal-quickstart.md",
             "redirect_url": "/media-services/latest/samples-overview",
             "redirect_document_id": false
-        }
+        },
+        {
+          "source_path_from_root": "/media-services/previous/media-rest-apis-with-postman.md",
+          "redirect_url": "/media-services/previous/media-services-overview",
+          "redirect_document_id": false
+        },
+        {
+          "source_path_from_root": "/media-services/previous/media-services-rest-upload-files.md",
+          "redirect_url": "/media-services/previous/media-services-overview",
+          "redirect_document_id": false
+        },
+        {
+          "source_path_from_root": "/media-services/previous/postman-collection.md",
+          "redirect_url": "/media-services/previous/media-services-overview",
+          "redirect_document_id": false
+        },
     ]
 }
