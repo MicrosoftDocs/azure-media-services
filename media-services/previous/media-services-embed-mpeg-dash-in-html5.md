@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 10/05/2022
+ms.date: 10/10/2022
 ---
 
 <!-- ms.assetid: 5aa0e7b6-f5c3-4cc1-aa33-ed16ea4780c2 -->
@@ -52,7 +52,7 @@ To add the dash.js player to your applications, add a script tag to the head sec
 
 ```html
     <!-- DASH-AVC/265 reference implementation -->
-    < script src="js/dash.all.js"></script>
+    <script src="js/dash.all.js"></script>
 ```
 
 Next, create a function to initialize the player when the page loads. Add the following script after the line in which you load dash.all.js:
