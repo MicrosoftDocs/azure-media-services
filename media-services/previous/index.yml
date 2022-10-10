@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Azure Media Services v2 (legacy) documentation
-summary: IMPORTANT! Update your Azure Media Services REST API and SDKs to v3 by 29 February 2024. Version 3 of Azure Media Services REST API and client SDKs for .NET and Java offers more capabilities than version 2. We are retiring version 2 of the Azure Media Services REST API and client SDKs for .NET and Java.
+summary: IMPORTANT! Update your Azure Media Services REST API and SDKs to v3 by 29 February 2024 as we are retiring version 2.
 
 metadata:
   title: Azure Media Services v2 (legacy) documentation
