@@ -12,7 +12,7 @@ ms.date: 10/05/2022
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 This article shows how to copy blobs from a storage account into a new Azure Media Services (AMS) asset using [Azure Media Services .NET SDK Extensions](https://github.com/Azure/azure-sdk-for-media-services-extensions/).
 

@@ -19,7 +19,7 @@ ms.date: 10/05/2022
 >
 >
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 This topic shows how to manage Azure Media Services entities with .NET.
 

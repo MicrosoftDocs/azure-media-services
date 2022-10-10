@@ -14,7 +14,7 @@ ms.date: 10/05/2022
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 When you run jobs, you often require a way to track job progress. You can check the progress by defining a StateChanged event handler (as described in this topic) or using Azure Queue storage to monitor Media Services job notifications (as described in [this](media-services-dotnet-check-job-progress-with-queues.md) topic).
 

@@ -20,7 +20,7 @@ UD
 > * [REST API](/rest/api/media/operations/channel)
 >
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 This tutorial walks you through the steps of creating a **Channel** that receives a single-bitrate live stream and encodes it to multi-bitrate stream.
 

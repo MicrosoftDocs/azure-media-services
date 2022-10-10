@@ -14,7 +14,7 @@ ms.date: 10/05/2022
 
 These release notes for Azure Media Services summarize changes from previous releases and known issues.
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 We want to hear from our customers so that we can focus on fixing problems that affect you. To report a problem or ask questions, submit a post in the [Azure Media Services MSDN Forum].
 

@@ -12,7 +12,7 @@ ms.date: 10/05/2022
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 Learn how to use a PowerShell script to create an Azure Active Directory (Azure AD) application and service principal to access Azure Media Services resources.
 

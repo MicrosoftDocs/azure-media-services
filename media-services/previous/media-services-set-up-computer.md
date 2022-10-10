@@ -14,7 +14,7 @@ ms.date: 10/05/2022
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 The following steps describe prerequisites required for developing with Azure Media Services.
 

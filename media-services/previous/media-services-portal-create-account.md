@@ -14,8 +14,6 @@ ms.date: 10/05/2022
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
-
 The Azure portal provides a way to quickly create an Azure Media Services (AMS) account. You can use your account to access Media Services that enable you to store, encrypt, encode, manage, and stream media content in Azure. At the time you create a Media Services account, you also create an associated storage account (or use an existing one). If you delete a Media Services account, the blobs in your related storage account are not deleted.
 UD
 The Media Services account and all associated storage accounts must be in the same Azure subscription. You are strongly encouraged to use storage accounts in the same location as the Media Services account to avoid additional latency and data egress costs.
