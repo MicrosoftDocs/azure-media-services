@@ -130,9 +130,6 @@
       - name: .NET
         href: media-services-dotnet-upload-files.md
         displayName: invalid character, media services v2, v2, version 2
-      - name: REST
-        href: media-services-rest-upload-files.md
-        displayName: media services v2, v2, version 2, invalid character
     - name: Upload files with StorSimple
       href: media-services-upload-files-from-storsimple.md
       displayName: media services v2, v2, version 2
