@@ -14,7 +14,7 @@ ms.date: 10/05/2022
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 The **Media Services Operations REST** API is used for creating Jobs, Assets, Live Channels and other resources in a Media Services account. For more information, see [Media Services Operations REST API reference](/rest/api/media/operations/azure-media-services-rest-api-reference).
 

@@ -12,6 +12,6 @@ ms.date: 10/07/2022
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 Azure Directory Authentication Library (ADAL) has been deprecated.  Use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) instead.

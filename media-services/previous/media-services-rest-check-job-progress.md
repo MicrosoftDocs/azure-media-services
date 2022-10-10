@@ -18,7 +18,7 @@ ms.date: 03/10/2021
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 When you run jobs, you often require a way to track job progress. You can find out the Job status by using the Job's State property. For more information on the State property, see [Job Entity Properties](/rest/api/media/operations/job#job_entity_properties).
 
