@@ -1,25 +1,24 @@
 ### YamlMime:Landing
 
 title: Azure Media Services v2 (legacy) documentation
-summary: IMPORTANT! Update your Azure Media Services REST API and SDKs to v3 by 29 February 2024.** Version 3 of Azure Media Services REST API and client SDKs for .NET and Java offers more capabilities than version 2. We are retiring version 2 of the Azure Media Services REST API and client SDKs for .NET and Java.
+summary: IMPORTANT! Update your Azure Media Services REST API and SDKs to v3 by 29 February 2024. Version 3 of Azure Media Services REST API and client SDKs for .NET and Java offers more capabilities than version 2. We are retiring version 2 of the Azure Media Services REST API and client SDKs for .NET and Java.
 
 metadata:
   title: Azure Media Services v2 (legacy) documentation
   description: Learn how to securely stream on-demand or live broadcast-quality video with Media Services v2.
   services: media-services
   ms.service: media-services
-  ms.subservice:
   ms.topic: landing-page # Required
   ms.collection: collection
   author: IngridAtMicrosoft
   ms.author: inhenkel
-  ms.date: 02/18/2020 #Required; mm/dd/yyyy format.
+  ms.date: 10/10/2022 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
   #Card
-  - title: Azure Media Services v2 Retiring
+  - title: Azure Media Services v2 is retiring
     linkLists:
       - linkListType: overview
         links:
@@ -39,7 +38,7 @@ landingContent:
           - text: Use the Media Service migration guide
             url: /azure/media-services/latest/migrate-v-2-v-3-migration-introduction
   #Card
-  - title: Try v3 code samples
+  - title: Try Media Services v3 code samples
     linkLists:
     - linkListType: sample
       links:
