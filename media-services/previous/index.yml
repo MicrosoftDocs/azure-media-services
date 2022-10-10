@@ -1,69 +1,51 @@
 ### YamlMime:Landing
 
 title: Azure Media Services v2 (legacy) documentation
-summary: IMPORTANT Update your Azure Media Services REST API and SDKs to v3 by 29 February 2024.** Version 3 of Azure Media Services REST API and client SDKs for .NET and Java offers more capabilities than version 2. We are retiring version 2 of the Azure Media Services REST API and client SDKs for .NET and Java. **Action Required** To minimize disruption to your workloads, review the [migration guide](/azure/media-services/latest/migrate-v-2-v-3-migration-introduction) to transition your code from the version 2 API and SDKs to version 3 API and SDK before February 29th, 2024. After February 29th, 2024, Azure Media Services will *no longer accept traffic on the version 2 REST API, the ARM account management API version 2015-10-01, or from the version 2 .NET client SDKs. This includes any 3rd party open-source client SDKS that may call the version 2 API.* Learn about the latest version, starting with the [Media Services v3 Overview](/azure/media-services/latest/media-services-overview).
+summary: IMPORTANT! Update your Azure Media Services REST API and SDKs to v3 by 29 February 2024 as we are retiring version 2.
 
 metadata:
   title: Azure Media Services v2 (legacy) documentation
   description: Learn how to securely stream on-demand or live broadcast-quality video with Media Services v2.
   services: media-services
   ms.service: media-services
-  ms.subservice:
   ms.topic: landing-page # Required
   ms.collection: collection
   author: IngridAtMicrosoft
   ms.author: inhenkel
-  ms.date: 02/18/2020 #Required; mm/dd/yyyy format.
+  ms.date: 10/10/2022 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: About Azure Media Services v2
+  #Card
+  - title: Azure Media Services v2 is retiring
     linkLists:
       - linkListType: overview
         links:
-          - text: Azure Media Services v2 overview
+          - text: Azure Media Services v2 is retiring
             url: media-services-overview.md
-          - text: Migrate to Media Services v3
-            url: ../latest/migrate-v-2-v-3-migration-introduction.md
-      - linkListType: whats-new
-        links:
-        - text: "What's new in Media Services v2?"
-          url: media-services-release-notes.md
       - linkListType: concept
         links:
         - text: Legacy components
           url: legacy-components.md
-
-# Card
-  - title: Stream live
+  #Card
+  - title: Migrate to Azure Media Services v3
     linkLists:
-      - linkListType: concept
+      - linkListType: overview
         links:
-          - text: Overview
-            url: media-services-manage-channels-overview.md
-      - linkListType: how-to-guide
-        links:
-          - text: Create a Media Services account with portal
-            url: media-services-portal-create-account.md
-          - text: Connect programmatically
-            url: media-services-use-aad-auth-to-access-ams-api.md
-          - text: Stream live with the Azure portal
-            url: media-services-portal-live-passthrough-get-started.md
-          - text: Stream live with .NET
-            url: media-services-dotnet-live-encode-with-onpremises-encoders.md
-
-# Card
-  - title: Deliver video on-demand
+          - text: Read the Media Services v3 overview
+            url: /azure/media-services/latest/media-services-overview
+          - text: Use the Media Service migration guide
+            url: /azure/media-services/latest/migrate-v-2-v-3-migration-introduction
+  #Card
+  - title: Try Media Services v3 code samples
     linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Use the Azure portal
-            url: media-services-portal-vod-get-started.md
-          - text: Use .NET
-            url: media-services-dotnet-get-started.md
-          - text: Use REST
-            url: media-services-rest-get-started.md
+    - linkListType: sample
+      links:
+      - text: Try Media Services v3 code samples
+        url: /azure/media-services/latest/samples-overview?tabs=node
+
+
+
+
+
