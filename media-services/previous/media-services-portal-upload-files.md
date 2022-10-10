@@ -17,7 +17,6 @@ ms.date: 10/07/2022
 > [!div class="op_single_selector"]
 > * [Portal](media-services-portal-upload-files.md)
 > * [.NET](media-services-dotnet-upload-files.md)
-> * [REST](media-services-rest-upload-files.md)
 >
 
 > [!NOTE]
