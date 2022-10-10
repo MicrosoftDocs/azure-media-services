@@ -2341,5 +2341,15 @@
           "redirect_url": "/media-services/previous/media-services-overview",
           "redirect_document_id": false
         },
+        {
+          "source_path_from_root": "/media-services/previous/postman-environment.md",
+          "redirect_url": "/media-services/previous/media-services-overview",
+          "redirect_document_id": false
+        },
+        {
+          "source_path_from_root": "/media-services/previous/postman-live-streaming-collection.md",
+          "redirect_url": "/media-services/previous/media-services-overview",
+          "redirect_document_id": false
+        }
     ]
 }
