@@ -18,7 +18,7 @@ ms.date: 10/05/2022
 > * [Version 3](../latest/drm-offline-widevine-for-android.md)
 > * [Version 2](offline-widevine-for-android.md)
 
-[!INCLUDE [v2 deprecation notice](../latest/includes/v2-deprecation-notice.md)]
+
 
 In addition to protecting content for online streaming, media content subscription and rental services offer downloadable content that works when you are not connected to the internet. You might need to download content onto your phone or tablet for playback in airplane mode when flying disconnected from the network. Additional scenarios, in which you might want to download content:
 
