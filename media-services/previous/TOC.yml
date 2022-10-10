@@ -120,19 +120,6 @@
     - name: Quotas and limitations
       href: media-services-quotas-and-limitations.md
       displayName: media services v2, v2, version 2
-  - name: Configure Postman
-    href: media-rest-apis-with-postman.md
-    displayName: media services v2, v2, version 2
-    items:
-    - name: On-demand streaming collection
-      href: postman-collection.md
-      displayName: media services v2, v2, version 2
-    - name: Live streaming collection
-      href: postman-live-streaming-collection.md
-      displayName: media services v2, v2, version 2
-    - name: Environment
-      href: postman-environment.md
-      displayName: media services v2, v2, version 2
   - name: Upload content
     items:
     - name: Upload files into an account
