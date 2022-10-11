@@ -4,7 +4,7 @@ description: This article discusses Media Services Face Detector retirement and 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 08/24/2022
+ms.date: 10/11/2022
 ms.author: inhenkel
 ---
 
@@ -16,8 +16,7 @@ This article discusses Media Services Face Detector retirement and migration.
 
 ## Overview
 
-As Microsoft’s [Responsible AI Standards](https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/) outline, Microsoft is committed to fairness, privacy, security, and transparency
-with respect to AI systems. To better align with these standards, Azure Media Services is retiring the [Face Detector preset](analyze-face-redaction-concept.md) on September 14, 2023. This preset offers face detection and redaction (blurring) of selected individuals in video files. After September 14, 2023, any applications developed using the Azure Media Services v3 API with Face Detector preset will begin experiencing errors or failed job submissions.
+[!INCLUDE [warning-video-analyzer-retirement](includes/warning-video-analyzer-retirement.md)]
 
 ## Migration steps
 
