@@ -11,6 +11,8 @@ ms.author: johndeu
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
+[!INCLUDE [warning-video-analyzer-retirement](includes/warning-video-analyzer-retirement.md)]
+
 Azure Media Services v3 API includes a Face Detector preset that offers scalable face detection and redaction (blurring) in the cloud. Face redaction enables you to modify your video in order to blur faces of selected individuals. You may want to use the face redaction service in public safety and news media scenarios. A few minutes of footage that contains multiple faces can take hours to redact manually, but with this preset the face redaction process will require just a few simple steps.
 
 ## Compliance, privacy, and security
