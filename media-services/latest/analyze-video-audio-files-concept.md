@@ -4,13 +4,15 @@ description: Learn how to analyze audio and video content using AudioAnalyzerPre
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 10/11/2022
 ms.author: inhenkel
 ---
 
 # Analyze video and audio files with Azure Media Services
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
+
+[!INCLUDE [warning-video-analyzer-retirement](includes/warning-video-analyzer-retirement.md)]
 
 Media Services lets you extract insights from your video and audio files using the audio and video analyzer presets. This article describes the analyzer presets used to extract insights. If you want more detailed insights from your videos, use the [Azure Video Analyzer for Media service](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-indexer-overview). To understand when to use Video Analyzer for Media vs. Media Services analyzer presets, check out the [comparison document](/azure/azure-video-analyzer/video-analyzer-for-media-docs/compare-video-indexer-with-media-services-presets).
 
