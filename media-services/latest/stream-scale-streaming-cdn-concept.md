@@ -4,7 +4,7 @@ description: Learn about streaming content with CDN integration, as well as pref
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 10/24/2022
 ms.author: inhenkel
 ---
 
@@ -47,7 +47,7 @@ If you later want to disable/enable the CDN, your streaming endpoint must be in 
 
 When the Standard streaming endpoint is created, it's configured by default with Standard Verizon. You can configure Premium Verizon or Standard Akamai providers using REST APIs.
 
-Azure Media Services integration with Azure CDN is implemented on **Azure CDN from Verizon** for standard streaming endpoints. Premium streaming endpoints can be configured using all **Azure CDN pricing tiers and providers**.
+Azure Media Services integration with Azure CDN is implemented on **Azure CDN from Verizon** for standard streaming endpoints. Premium streaming endpoints can be configured using Standard Verizon or Premium Verizon. Standard Akamai can only be configured using REST APIs or client SDKs.
 
 > [!NOTE]
 > For details about Azure CDN, see the [CDN overview](/azure/cdn/cdn-overview).
