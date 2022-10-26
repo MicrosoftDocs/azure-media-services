@@ -4,7 +4,7 @@ description: To understand the live streaming workflow in Media Services v3, you
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/21/2022
+ms.date: 10/25/2022
 ms.author: inhenkel
 ---
 
@@ -21,7 +21,7 @@ To understand the live streaming workflow in Media Services v3, first review the
 - [Streaming locators](stream-streaming-locators-concept.md)
 
 > [!NOTE]
-> This workflow doesn't describe the use the live event encoding. For details on how to achieve low latency with live event encoding see the [Low Latency HLS (LL-HLS) and DASH streaming options](live-event-latency-reference.md) and the [Live streaming best practices guide](live-event-streaming-best-practices-guide.md). See also code sample listed on the [Samples](samples-overview.md) page.
+> This workflow doesn't describe live event encoding. For details on how to achieve low latency with live event encoding see the [Low Latency HLS (LL-HLS) and DASH streaming options](live-event-latency-reference.md) and the [Live streaming best practices guide](live-event-streaming-best-practices-guide.md). See also code sample listed on the [Samples](samples-overview.md) page.
 
 ### General steps
 

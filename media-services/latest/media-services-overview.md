@@ -4,7 +4,7 @@ description: Azure Media Services is a cloud-based platform that enables you to 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 10/07/2022
+ms.date: 10/25/2022
 ms.author: inhenkel
 ---
 
@@ -27,7 +27,7 @@ Media Services lets you build a variety of media workflows in the cloud. Some ex
 * Enable Azure CDN to achieve large scaling to better handle instantaneous high loads (for example, the start of a product launch event).
 
 > [!NOTE]
-> Want to deliver streaming media with low latency? See the [Low Latency HLS (LL-HLS) and DASH streaming options](live-event-latency-reference.md) and the [Live streaming best practices guide](live-event-streaming-best-practices-guide.md).
+> Want to deliver streaming media with low latency? See the [Low Latency HLS (LL-HLS)](live-event-latency-reference.md) article and the [Live streaming best practices guide](live-event-streaming-best-practices-guide.md).
 
 ## How can I get started with v3?
 

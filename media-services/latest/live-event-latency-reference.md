@@ -4,11 +4,9 @@ description: Media Services supports Apple's Low Latency HLS (LL-HLS).  Watch Ro
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 10/21/2022
+ms.date: 10/25/2022
 ms.author: inhenkel
 ---
-
-<!-- More cowbell! -->
 
 # Low Latency HLS (LL-HLS)
 
@@ -75,8 +73,6 @@ Use the links below to see the [3rd-party player sample](https://github.com/Azur
 ## Additional recommendations
 
 When using HLS output, choose HLS CMAF (format=m3u8-cmaf) whenever possible. If you must use other streaming formats such as TS outputs with HLS v3 (format=aapl-m3u8-v3) or HLS v4 (format=aapl-m3u8-v4), be sure to set the `LiveOutput.Hls.fragmentsPerTsSegment` setting for your live event to 1 to ensure that Media Services packs only one mp4 fragment into one TS segment.
-
-See the following tables for expected streaming latency when optimal settings and proper player configuration is used.
 
 > [!NOTE]
 > The end-to-end latency can vary depending on local network conditions or by introducing a CDN caching layer. You should test your exact configurations.

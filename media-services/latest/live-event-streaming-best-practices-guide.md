@@ -1,10 +1,10 @@
 ---
 title: Media Services live streaming best practices guide
-description: Customers often ask how they can reduce the latency of their live stream. This article describes best practices for achieving low-latency live streams with in addition to live event encoding. Before you continue reading this article, read the Low Latency HLS (LL-HLS) and DASH streaming options article to understand low latency with live event encoding. Then, come back to this guide to understand what else may affect streaming latency.
+description: Customers often ask how they can reduce the latency of their live stream. This article describes best practices for achieving low-latency live streams with in addition to live event encoding. Before you continue reading this article, read the Low Latency HLS (LL-HLS) article to understand low latency with live event encoding. Then, come back to this guide to understand what else may affect streaming latency.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/21/2022
+ms.date: 10/25/2022
 ms.author: inhenkel
 ---
 
@@ -13,7 +13,7 @@ ms.author: inhenkel
 Customers often ask how they can reduce the latency of their live stream. This article describes best practices for achieving low-latency live streams with in addition to live event encoding.
 
 > [!NOTE]
-> Before you continue reading this article, read the [Low Latency HLS (LL-HLS) and DASH streaming options](live-event-latency-reference.md) article to understand low latency with live event encoding. Then, come back to this guide to understand what else may affect streaming latency.
+> Before you continue reading this article, read the [Low Latency HLS (LL-HLS)](live-event-latency-reference.md) article to understand low latency with live event encoding. Then, come back to this guide to understand what else may affect streaming latency.
 
 There are many factors that determine the end-to-end latency of a stream besides how the media is encoded. Here are some that you should consider:
 
