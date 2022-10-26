@@ -1,19 +1,21 @@
 ---
 title: Media Services live streaming best practices guide
-description: This article describes best practices for achieving low-latency live streams with Azure Media Services.
+description: Customers often ask how they can reduce the latency of their live stream. This article describes best practices for achieving low-latency live streams with in addition to live event encoding. Before you continue reading this article, read the Low Latency HLS (LL-HLS) article to understand low latency with live event encoding. Then, come back to this guide to understand what else may affect streaming latency.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 06/22/2022
+ms.date: 10/25/2022
 ms.author: inhenkel
 ---
 
 # Media Services live streaming best practices guide
 
-Customers often ask how they can reduce the latency of their live stream. There are many factors that
-determine the end-to-end latency of a stream. This article describes best practices for achieving low-latency live streams with Azure Media Services.
+Customers often ask how they can reduce the latency of their live stream. This article describes best practices for achieving low-latency live streams with in addition to live event encoding.
 
-Here are some that you should consider:
+> [!NOTE]
+> Before you continue reading this article, read the [Low Latency HLS (LL-HLS)](live-event-latency-reference.md) article to understand low latency with live event encoding. Then, come back to this guide to understand what else may affect streaming latency.
+
+There are many factors that determine the end-to-end latency of a stream besides how the media is encoded. Here are some that you should consider:
 
 1. Delays on the contribution encoder side. When customers use an encoding software such as OBS Studio, Wirecast, or others to send an RTMP live stream to Media Services. Settings on this software affect the end-to-end latency of a live stream.
 

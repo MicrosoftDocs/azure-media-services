@@ -4,51 +4,51 @@ description: This article gives an overview of live streaming using Azure Media 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 10/25/2022
 ms.author: inhenkel
 ---
 # Live streaming with Azure Media Services v3
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Azure Media Services enables you to deliver live events to your customers on the Azure cloud. To stream your live events with Media Services, you need the following:
+Azure Media Services enables you to deliver live events to your customers on the Azure cloud. To stream your live events with Media Services, you'll need to set up a live video encoder that converts signals from a camera (or another device, like a laptop) into a contribution feed that is sent to Media Services. The contribution feed can include signals related to advertising, such as SCTE-35 markers. For a list of recommended live streaming encoders, see [live streaming encoders](encode-recommended-on-premises-live-encoders.md).
 
-- A camera that is used to capture the live event.<br/>For setup ideas, check out [Simple and portable event video gear setup]( https://link.medium.com/KNTtiN6IeT).
-    If you do not have access to a camera, tools such as [Telestream Wirecast](https://www.telestream.net/wirecast/overview.htm) can be used to generate a live feed from a video file.
-- A live video encoder that converts signals from a camera (or another device, like a laptop) into a contribution feed that is sent to Media Services. The contribution feed can include signals related to advertising, such as SCTE-35 markers.<br/>For a list of recommended live streaming encoders, see [live streaming encoders](encode-recommended-on-premises-live-encoders.md). Also, check out this blog: [Live streaming production with OBS](https://link.medium.com/ttuwHpaJeT).
-- Components in Media Services, which enable you to ingest, preview, package, record, encrypt, and broadcast the live event to your customers, or to a CDN for further distribution.
-
-For customers looking to deliver content to large internet audiences, we recommend that you enable CDN on the [streaming endpoint](stream-streaming-endpoint-concept.md).
+If you haven't used an on-premises encoder before, try the [Create an Azure Media Services live stream with OBS](live-event-obs-quickstart.md) quickstart.
 
 ## Dynamic packaging and delivery
 
-With Media Services, you can take advantage of [dynamic packaging](encode-dynamic-packaging-concept.md), which allows you to preview and broadcast your live streams in [MPEG DASH, HLS, and Smooth Streaming formats](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming) from the contribution feed that is being sent to the service. Your viewers can play back the live stream with any HLS, DASH, or Smooth Streaming compatible players. You can use [Azure Media Player](https://amp.azure.net/libs/amp/latest/docs/index.html) in your web or mobile applications to deliver your stream in any of these protocols.
-
-## Dynamic encryption
-
-Dynamic encryption enables you to dynamically encrypt your live or on-demand content with AES-128 or any of the three major digital rights management (DRM) systems: Microsoft PlayReady, Google Widevine, and Apple FairPlay. Media Services also provides a service for delivering AES keys and DRM (PlayReady, Widevine, and FairPlay) licenses to authorized clients. For more information, see [dynamic encryption](drm-content-protection-concept.md).
-
-Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
-## Dynamic filtering
-
-Dynamic filtering is used to control the number of tracks, formats, bitrates, and presentation time windows that are sent out to the players. For more information, see [filters and dynamic manifests](filters-dynamic-manifest-concept.md).
+With Media Services, you can take advantage of [dynamic packaging](encode-dynamic-packaging-concept.md), which allows you to preview and broadcast your live streams in [MPEG DASH, HLS, and Smooth Streaming formats](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming) from the contribution feed. Your viewers can play back the live stream with any HLS, DASH, or Smooth Streaming compatible players. See the [list of tested players](player-media-players-concept.md) and try the [Media Services 3rd-party player samples](https://github.com/Azure-Samples/media-services-3rdparty-player-samples).
 
 ## Live event types
 
-[Live events](/rest/api/media/liveevents) are responsible for ingesting and processing the live video feeds. A live event can be set to either a *pass-through* (an on-premises live encoder sends a multiple bitrate stream) or *live encoding* (an on-premises live encoder sends a single bitrate stream). For details about live streaming in Media Services v3, see [Live events and live outputs](live-event-outputs-concept.md).
+[Live events](/rest/api/media/liveevents) are ingest and process live video feeds. A live event can be set to either:
+
+- *pass-through* when an on-premises live encoder sends a multiple bitrate stream, or
+- *live encoding* when an on-premises live encoder sends a single bitrate stream. For details about live outputs, see [Live events and live outputs](live-event-outputs-concept.md).
 
 ### Pass-through
 
-When using the pass-through **Live Event** (basic or standard), you rely on your on-premises live encoder to generate a multiple bitrate video stream and send that as the contribution feed to the Live Event (using RTMP or fragmented-MP4 input protocol). The Live Event then carries through the incoming video streams  to the dynamic packager (Streaming Endpoint) without any further transcoding. Such a pass-through Live Event is optimized for long-running live events or 24x365 linear live streaming.
+When using the pass-through **Live Event** (basic or standard), you rely on your on-premises live encoder to generate a multiple bitrate video stream and send that as the contribution feed to the Live Event (using RTMP or fragmented-MP4 input protocol). The Live Event then passes the incoming video stream to the dynamic packager (Streaming Endpoint) without any further processing. A pass-through Live Event is optimized for long-running live events or 24x365 linear live streaming.
 
 :::image type="content" source="media/diagrams/pass-through.svg" alt-text="pass through streaming":::
 
 ### Live encoding
 
-When using cloud encoding with Media Services, you would configure your on-premises live encoder to send a single bitrate video as the contribution feed (up to 32Mbps aggregate) to the Live Event (using RTMP or fragmented-MP4 input protocol). The Live Event transcodes the incoming single bitrate stream into [multiple bitrate video streams](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming) at varying resolutions to improve delivery and makes it available for delivery to playback devices via industry standard protocols like MPEG-DASH, Apple HTTP Live Streaming (HLS), and Microsoft Smooth Streaming.
+To use live encoding, configure your on-premises live encoder to send a single bitrate video (up to 32Mbps aggregate) to the Live Event (using RTMP or fragmented-MP4 input protocol). The Live Event transcodes the incoming single bitrate stream into multiple bitrate video streams at varying resolutions. This improves delivery for playback devices with industry standard protocols like MPEG-DASH, Apple HTTP Live Streaming (HLS), and Microsoft Smooth Streaming.
 
 :::image type="content" source="media/diagrams/live-encoding.svg" alt-text="live encoding streaming":::
+
+## Live event options
+
+### Dynamic encryption
+
+Dynamic encryption enables you to dynamically encrypt your live or on-demand content with AES-128 or any of the three major digital rights management (DRM) systems: Microsoft PlayReady, Google Widevine, and Apple FairPlay. Media Services also provides a service for delivering AES keys and DRM (PlayReady, Widevine, and FairPlay) licenses to authorized clients. For more information, see [dynamic encryption](drm-content-protection-concept.md).
+
+Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+
+### Dynamic filtering
+
+Dynamic filtering is used to control the number of tracks, formats, bitrates, and presentation time windows that are sent out to the players. For more information, see [filters and dynamic manifests](filters-dynamic-manifest-concept.md).
 
 ### Live transcription
 
