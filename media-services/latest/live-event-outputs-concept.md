@@ -4,7 +4,7 @@ description: This topic provides an overview of live events and live outputs in 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 10/25/2022
 ms.author: inhenkel
 ---
 # Live events and live outputs in Media Services
@@ -137,6 +137,9 @@ Once the live event is created, you can get ingest URLs that you'll provide to t
 * The *random* string below is a 128-bit hex number (which is composed of 32 characters of 0-9 a-f).
 * *your access token*: The valid GUID string you set when using the static hostname setting. For example, `"1fce2e4b-fb15-4718-8adc-68c6eb4c26a7"`.
 * *stream name*: Indicates the stream name for a specific connection. The stream name value is usually added by the live encoder you use. You can configure the live encoder to use any name to describe the connection, for example: "video1_audio1", "video2_audio1", "stream".
+
+> [!WARNING]
+> If you use any special characters or spaces in the name of your stream, your live ingest will fail. See Media Services resource [naming conventions](media-services-apis-overview.md#naming-conventions) in the developer concepts overview.
 
 #### Non-static hostname ingest URL
 
