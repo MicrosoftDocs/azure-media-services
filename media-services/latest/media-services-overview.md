@@ -26,6 +26,9 @@ Media Services lets you build a variety of media workflows in the cloud. Some ex
 * Deliver offline content for playback on airplanes, trains, and automobiles. A customer might need to download content onto their phone or tablet for playback when they anticipate to be disconnected from the network.
 * Enable Azure CDN to achieve large scaling to better handle instantaneous high loads (for example, the start of a product launch event).
 
+> [!NOTE]
+> Want to deliver streaming media with low latency? See the [Low Latency HLS (LL-HLS) and DASH streaming options](live-event-latency-reference.md) and the [Live streaming best practices guide](live-event-streaming-best-practices-guide.md).
+
 ## How can I get started with v3?
 
 Learn how to encode and package content, stream videos on-demand, broadcast live, and analyze your videos with Media Services v3. Tutorials, API references, and other documentation show you how to securely deliver on-demand and live video or audio streams that scale to millions of users.

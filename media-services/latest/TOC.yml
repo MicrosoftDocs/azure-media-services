@@ -195,11 +195,13 @@
     - name: Overview
       href: stream-live-streaming-concept.md
       displayName: basic pass-through, standard pass-through, pass through, pass, pass-through, cloud encoding, cloud transcoding, cloud encoding, encoding channel, 4K, 1080P, 720P, streaming, live, live event, low latency, RTMP, Smooth, RTMPS, HLS, LL-HLS, low latency HLS, low latency DASH, interactivity, timed metadata, translation, live speech, DVR, DASH, LL-DASH, live streaming, broadcast, channel, SRT, WebRTC, RTSP
+    - name: Live streaming workflow
+      href: stream-live-streaming-workflow-concept.md
     - name: Live streaming best practices guide
       href: live-event-streaming-best-practices-guide.md
       displayName: ingest, static, hostname, rtmp, ingest, streaming, live, live event, low latency, RTMP,RTMPS, stream key, hostname, Smooth, HLS, LL-HLS, low latency HLS, low latency DASH, interactivity, timed metadata, translation, live speech, DVR, DASH, LL-DASH, live streaming, broadcast, channel, SRT, WebRTC, RTSP, live output, outputs, DVR Window, time shift
     - name: Live events and live outputs
-      href: live-event-outputs-concept.md
+      href: live-event-concept.md
       displayName: ingest, static, hostname, rtmp, ingest, streaming, live, live event, low latency, RTMP,RTMPS, stream key, hostname, Smooth, HLS, LL-HLS, low latency HLS, low latency DASH, interactivity, timed metadata, translation, live speech, DVR, DASH, LL-DASH, live streaming, broadcast, channel, SRT, WebRTC, RTSP, live output, outputs, DVR Window, time shift
     - name: Tested on-premises live encoders
       displayName: recommended, on-premises, live, encoder, OBS, FFMPEG, Wirecast, Elemental, OBS Studio, cloud transcoding, cloud encoding, encoding channel, 4K, 1080P, 720P, partners, partner program, verification, certification, recommended encoder, recommended, Antix, Blackmagic, Atem, Cambria, GoPro, GoPro hero, Haivision, makito, restream,streamlabs, switcher studio, Telestream,Vmix, Teradek, xStream, Ateme TITAN, Media Excel
@@ -213,7 +215,7 @@
     - name: States and billing
       href: live-event-states-billing-concept.md
       displayName: billing, live, pass-basic pass-through, standard pass-through, pass through, pass, pass-thru, live, cloud transcode, cloud transcoder, transcoder, live encoding, live encoder, states, live state, running, stopping, starting, stopped
-    - name: Latency
+    - name: Low latency with LL-HLS and DASH
       href: live-event-latency-reference.md
       displayName: latency, low latency, ultra low latency, LL-HLS, LL-DASH, low latency HLS, low latency DASH, MPEG-DASH, Smooth, interactive, WebRTC, SRT, RTMP, RTMPS
   - name: Packaging, origin and delivery
