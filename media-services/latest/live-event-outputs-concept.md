@@ -139,7 +139,7 @@ Once the live event is created, you can get ingest URLs that you'll provide to t
 * *stream name*: Indicates the stream name for a specific connection. The stream name value is usually added by the live encoder you use. You can configure the live encoder to use any name to describe the connection, for example: "video1_audio1", "video2_audio1", "stream".
 
 > [!WARNING]
-> If you use any special characters or spaces while naming your stream, your live ingest will fail. See Media Services resource [naming conventions](media-services-apis-overview.md#naming-conventions) in the developer concepts overview.
+> If you use any special characters or spaces in the name of your stream, your live ingest will fail. See Media Services resource [naming conventions](media-services-apis-overview.md#naming-conventions) in the developer concepts overview.
 
 #### Non-static hostname ingest URL
 
