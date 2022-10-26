@@ -2353,7 +2353,7 @@
         },
         {
           "source_path_from_root": "/media-services/latest/live-event-outputs-concept.md",
-          "redirect_url": "/media-services/latest/live-event-concept.md",
+          "redirect_url": "/media-services/latest/live-event-concept",
           "redirect_document_id": false
         }
     ]
