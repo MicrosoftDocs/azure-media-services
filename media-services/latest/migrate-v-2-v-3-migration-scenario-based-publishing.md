@@ -4,7 +4,7 @@ description: This article is gives you scenario based guidance for packaging and
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -46,10 +46,6 @@ After migration, you should avoid making any calls to the v2 API to modify strea
 - [Streaming Endpoints (Origin) in Azure Media Services](stream-streaming-endpoint-concept.md)
 - [Stream content with CDN integration](stream-scale-streaming-cdn-concept.md)
 - [Streaming Locators](stream-streaming-locators-concept.md)
-
-### How to guides
-
-- [Manage streaming endpoints with Media Services v3](stream-manage-streaming-endpoints-how-to.md).
 
 ## Samples
 

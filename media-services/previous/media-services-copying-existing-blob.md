@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 10/05/2022
+ms.date: 11/01/2022
 ---
 
 # Copying existing blobs into a Media Services Asset
@@ -34,9 +34,6 @@ The article shows two code samples:
 ### Prerequisites
 
 Two Media Services accounts. See the article [How to Create a Media Services Account](media-services-portal-create-account.md).
-
-### Download sample
-You can follow the steps in this article or you can download a sample that contains the code described in this article from [here](https://azure.microsoft.com/documentation/samples/media-services-dotnet-copy-blob-into-asset/).
 
 ### Set up your project
 

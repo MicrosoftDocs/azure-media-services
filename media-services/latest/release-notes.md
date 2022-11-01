@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 9/27/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -23,7 +23,7 @@ To stay up to date with the most recent developments, this article provides you 
 
 ### API Release: Updated 2022-08-01 ARM REST API
 
-An updated version of the ARM REST API for Azure Media Services has been released. Version 2022-08-01 is now the latest stable release in production.  The REST API definitions are available in the [REST specification folder for Media Services on GitHub.](https://github.com/Azure/azure-rest-api-specs/tree/main/specification/mediaservices/resource-manager/Microsoft.Media/stable/2022-08-01)
+An updated version of the ARM REST API for Azure Media Services has been released. Version 2022-08-01 is now the latest stable release in production.  The latest REST API definitions are available in the [REST specification folder for Media Services on GitHub.](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2020-05-01)
 
 Updates to the 2022-08-01 API include:
 
@@ -408,17 +408,10 @@ Updated samples for **Node.js** that use the latest TypeScript support in the Az
 |Sample|Description|
 |---|---|
 |[Live streaming](https://github.com/Azure-Samples/media-services-v3-node-tutorials/tree/main/Live/)| Basic live streaming example. **WARNING**, make sure to check that all resources are cleaned up and no longer billing in portal when using live|
-|[Upload and stream HLS and DASH](https://github.com/Azure-Samples/media-services-v3-node-tutorials/tree/main/StreamFilesSample/index.ts)| Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
-|[Upload and stream HLS and DASH with PlayReady and Widevine DRM](https://github.com/Azure-Samples/media-services-v3-node-tutorials/tree/main/StreamFilesWithDRMSample/index.ts)| Demonstrates how to encode and stream using Widevine and PlayReady DRM |
-|[Upload and use AI to index videos and audio](https://github.com/Azure-Samples/media-services-v3-node-tutorials/tree/main/VideoAnalytics/index.ts)| Example of using the Video and Audio Analyzer presets to generate metadata and insights from a video or audio file |
-
+|[Upload and stream HLS and DASH](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesSample/index.ts)| Basic example for uploading a local file or encoding from a source URL. Sample shows how to use storage SDK to download content, and shows how to stream to a player |
+|[Upload and stream HLS and DASH with PlayReady and Widevine DRM](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesWithDRMSample/index.ts)| Demonstrates how to encode and stream using Widevine and PlayReady DRM |
 
 New **Python** sample demonstrating how to use Azure Functions, and Event Grid to trigger Face redaction preset.
-
-|Sample|Description|
-|---|---|
-|[Face Redaction using events and functions](https://github.com/Azure-Samples/media-services-v3-python/tree/main/VideoAnalytics/FaceRedactorEventBased) | This is an example of an event-based approach that triggers an Azure Media Services Face Redactor job on a video as soon as it lands on an Azure Storage Account. It leverages Azure Media Services, Azure Function, Event Grid and Azure Storage for the solution. For the full description of the solution, see the [README.md](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoAnalytics/FaceRedactorEventBased/README.md) |
-
 
 ## May 2021
 
@@ -568,7 +561,7 @@ For more information about the Basic Audio Analyzer mode, see [Analyzing Video a
 
 Updates to most properties are now allowed when live events are stopped. In addition, users are allowed to specify a prefix for the static hostname for the live event's input and preview URLs. VanityUrl is now called `useStaticHostName` to better reflect the intent of the property.
 
-Live events now have a StandBy state.  See [Live Events and Live Outputs in Media Services](./live-event-outputs-concept.md).
+Live events now have a StandBy state.  See [Live Events and Live Outputs in Media Services](./live-event-concept.md).
 
 A live event supports receiving various input aspect ratios. Stretch mode allows customers to specify the stretching behavior for the output.
 

@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 10/05/2022
+ms.date: 11/01/2022
 ---
 
 <!-- William Zhan article -->
@@ -42,8 +42,6 @@ Before implementing offline DRM for Widevine on Android devices, you should firs
 
 - Become familiar with the concepts introduced for online content protection using Widevine DRM. This is covered in detail in the following documents/samples:
     - [Use Azure Media Services to deliver DRM licenses or AES keys](media-services-deliver-keys-and-licenses.md)
-    - [Using PlayReady and/or Widevine Dynamic Common Encryption with .NET](https://azure.microsoft.com/resources/samples/media-services-dotnet-dynamic-encryption-with-drm/)
-    - [Use Azure Media Services to deliver PlayReady and/or Widevine licenses with .NET](https://azure.microsoft.com/resources/samples/media-services-dotnet-deliver-playready-widevine-licenses/)
 - Become familiar with the Google ExoPlayer SDK for Android, an open-source video player SDK capable of supporting offline Widevine DRM playback.
     - [ExoPlayer SDK](https://github.com/google/ExoPlayer)
     - [ExoPlayer Developer Guide](https://google.github.io/ExoPlayer/guide.html)
@@ -59,8 +57,7 @@ When you configure Widevine protection of an asset in Media Services, you need t
 
 To enable **offline** mode for Widevine licenses, you need to configure [Widevine license template](media-services-widevine-license-template-overview.md). In the **policy_overrides** object, set the **can_persist** property to **true** (default is false).
 
-The following code sample uses .NET to enable **offline** mode for Widevine licenses. The code is based on the [
-Using PlayReady and/or Widevine Dynamic Common Encryption with .NET](https://github.com/Azure-Samples/media-services-dotnet-dynamic-encryption-with-drm) sample.
+The following code sample uses .NET to enable **offline** mode for Widevine licenses.
 
 ```
 private static string ConfigureWidevineLicenseTemplateOffline(Uri keyDeliveryUrl)

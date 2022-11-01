@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/05/2022
+ms.date: 11/01/2022
 ---
 
 <!-- ms.assetid: 4df5e690-ff63-47cc-879b-9c57cb8ec240 -->
@@ -90,10 +90,6 @@ The following are required to complete the tutorial.
 ## Considerations
 * Currently, the max recommended duration of a live event is 8 hours. Please contact amshelp@microsoft.com if you need to run a Channel for longer periods of time.
 * There is a limit of 1,000,000 policies for different AMS policies (for example, for Locator policy or ContentKeyAuthorizationPolicy). You should use the same policy ID if you are always using the same days / access permissions, for example, policies for locators that are intended to remain in place for a long time (non-upload policies). For more information, see [this](media-services-dotnet-manage-entities.md#limit-access-policies) article.
-
-## Download sample
-
-You can download the sample that is described in this article from [here](https://azure.microsoft.com/documentation/samples/media-services-dotnet-encode-live-stream-with-ams-clear/).
 
 ## Set up for development with Media Services SDK for .NET
 

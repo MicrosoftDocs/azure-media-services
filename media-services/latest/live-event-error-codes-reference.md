@@ -4,7 +4,7 @@ description: This article lists live event error codes.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: error-reference
-ms.date: 3/16/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-The following tables list the [Live Event](live-event-outputs-concept.md) error codes.
+The following tables list the [Live Event](live-event-concept.md) error codes.
 
 ## LiveEventConnectionRejected
 

@@ -2355,6 +2355,11 @@
           "source_path_from_root": "/media-services/latest/live-event-outputs-concept.md",
           "redirect_url": "/media-services/latest/live-event-concept",
           "redirect_document_id": false
+        },
+        {
+          "source_path_from_root": "/media-services/latest/migrate-v-2-v-3-migration-samples.md",
+          "redirect_url": "/media-services/latest/samples-overview",
+          "redirect_document_id": false
         }
     ]
 }
