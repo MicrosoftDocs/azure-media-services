@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/05/2022
+ms.date: 11/01/2022
 ---
 <!-- ms.assetid: 388b8928-9aa9-46b1-b60a-a918da75bd7b -->
 
@@ -369,6 +369,3 @@ For more information, see the following topics:
 
 - [Playing your content with existing players](media-services-playback-content-with-existing-players.md)
 - [Embedding an MPEG-DASH Adaptive Streaming Video in an HTML5 Application with DASH.js](media-services-embed-mpeg-dash-in-html5.md)
-
-## Download sample
-The following code sample contains the code that you created in this tutorial: [sample](https://azure.microsoft.com/documentation/samples/media-services-dotnet-on-demand-encoding-with-media-encoder-standard/).

@@ -6,7 +6,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 03/10/2021
+ms.date: 11/01/2022
 ---
 
 <!-- William Zhan article -->
@@ -45,7 +45,6 @@ Before you implement offline DRM for FairPlay on an iOS 10+ device:
 
     - [Apple FairPlay Streaming for Azure Media Services is generally available](https://azure.microsoft.com/blog/apple-FairPlay-streaming-for-azure-media-services-generally-available/)
     - [Protect your HLS content with Apple FairPlay or Microsoft PlayReady](./media-services-protect-hls-with-fairplay.md)
-    - [A sample for online FPS streaming](https://azure.microsoft.com/resources/samples/media-services-dotnet-dynamic-encryption-with-FairPlay/)
 
 * Obtain the FPS SDK from the Apple Developer Network. The FPS SDK contains two components:
 

@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 03/10/2021
+ms.date: 11/01/2022
 ---
 
 <!-- ms.assetid: 548d1a12-e2cb-45fe-9307-4ec0320567a2 -->
@@ -41,9 +41,6 @@ This article is useful to developers who work on applications that deliver media
 
 >[!NOTE]
 >When your Media Services account is created, a default streaming endpoint is added to your account in the "Stopped" state. To start streaming your content and take advantage of dynamic packaging and dynamic encryption, the streaming endpoint from which you want to stream content must be in the "Running" state.
-
-## Download the sample
-You can download the sample described in this article from [Azure samples on GitHub](https://github.com/Azure-Samples/media-services-dotnet-dynamic-encryption-with-drm).
 
 ## Configure dynamic common encryption and DRM license delivery services
 

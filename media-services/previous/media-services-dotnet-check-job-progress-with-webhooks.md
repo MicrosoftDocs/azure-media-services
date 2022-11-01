@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 10/05/2022
+ms.date: 11/01/2022
 ---
 
 <!-- ms.assetid: a61fe157-81b1-45c1-89f2-224b7ef55869 -->
@@ -29,8 +29,6 @@ This article shows how to
 	>
 
 * Add a webhook to your encoding task and specify the webhook URL and secret key that this webhook responds to. You will find an example that adds a webhook to your encoding task at the end of the article.
-
-You can find definitions of various Media Services .NET Azure Functions (including the one shown in this article) [here](https://github.com/Azure-Samples/media-services-dotnet-functions-integration).
 
 ## Prerequisites
 

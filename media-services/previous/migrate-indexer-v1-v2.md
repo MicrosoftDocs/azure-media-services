@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 10/05/2022
+ms.date: 11/01/2022
 ---
 
 # Migrate from Media Indexer and Media Indexer 2 to Video Analyzer for Media
@@ -15,12 +15,12 @@ ms.date: 10/05/2022
 > [!IMPORTANT]
 > You should migrate from Indexer v1 and Indexer v2 to using the [Media Services v3 AudioAnalyzerPreset Basic mode](../latest/analyze-video-audio-files-concept.md). The [Azure Media Indexer](media-services-index-content.md) media processor and [Azure Media Indexer 2 Preview](./legacy-components.md) media processors are being retired. For the retirement dates, see this [legacy components](legacy-components.md) topic.
 
-Azure Video Analyzer for Media is built on Azure Media Analytics, Azure Cognitive Search, Cognitive Services (such as the Face API, Microsoft Translator, the Computer Vision API, and Custom Speech Service). It enables you to extract the insights from your videos using Video Analyzer for Media video and audio models. To see what scenarios Video Analyzer for Media can be used in, and what features it offers, and how to get started, see [Video Analyzer for Media video and audio models](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-for-media-docs/video-indexer-overview).
+Azure Video Analyzer for Media is built on Azure Media Analytics, Azure Cognitive Search, Cognitive Services (such as the Face API, Microsoft Translator, the Computer Vision API, and Custom Speech Service). It enables you to extract the insights from your videos using Video Analyzer for Media video and audio models. To see what scenarios Video Analyzer for Media can be used in, and what features it offers, and how to get started, see [Video Analyzer for Media video and audio models](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-indexer-overview).
 
 You can extract insights from your video and audio files by using the [Azure Media Services v3 analyzer presets](../latest/analyze-video-audio-files-concept.md) or directly by using the [Video Analyzer for Media APIs](https://api-portal.videoindexer.ai/). Currently, there is an overlap between features offered by the Video Analyzer for Media APIs and the Media Services v3 APIs.
 
 > [!NOTE]
-> To understand the differences between the Video Analyzer for Media vs. Media Services analyzer presets, check out the [comparison document](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-for-media-docs/compare-video-indexer-with-media-services-presets).
+> To understand the differences between the Video Analyzer for Media vs. Media Services analyzer presets, check out the [comparison document](/azure/azure-video-analyzer/video-analyzer-for-media-docs/compare-video-indexer-with-media-services-presets).
 
 This article discusses the steps for migrating from the Azure Media Indexer and Azure Media Indexer 2 to Video Analyzer for Media.
 
@@ -33,7 +33,7 @@ This article discusses the steps for migrating from the Azure Media Indexer and 
 
 ## Getting started with Video Analyzer for Media
 
-The following section points you to relevant links: [How can I get started with Video Analyzer for Media?](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-for-media-docs/video-indexer-overview#how-can-i-get-started-with-video-analyzer-for-media)
+The following section points you to relevant links: [How can I get started with Video Analyzer for Media?](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-indexer-overview#how-can-i-get-started-with-video-analyzer-for-media)
 
 ## Getting started with Media Services v3 APIs
 
@@ -46,7 +46,6 @@ Azure Media Services v3 API enables you to extract insights from your video and 
 To get started see:
 
 * AudioAnalyzerPreset samples: [Java SDK](https://github.com/Azure-Samples/media-services-v3-java/tree/master/AudioAnalytics/AudioAnalyzer) or [.NET SDK](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/master/AudioAnalytics/AudioAnalyzer)
-* VideoAnalyzerPreset samples: [Java SDK](https://github.com/Azure-Samples/media-services-v3-java/tree/master/VideoAnalytics/VideoAnalyzer) or [.NET SDK](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/master/VideoAnalytics/VideoAnalyzer)
 
 ## Getting started with Cognitive Services Speech Services
 

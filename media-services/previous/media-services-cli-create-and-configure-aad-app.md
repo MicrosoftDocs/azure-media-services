@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 10/05/2022
+ms.date: 11/01/2022
 ---
 
 # Use Azure CLI to create an Azure AD app and configure it to access Media Services API
@@ -53,5 +53,3 @@ For example, it could be one of the following levels:
 * The **resource** level (for example, a Media account).
 
 For more information, see [Create an Azure service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli)
-
-Also see [Add or remove Azure role assignments using Azure CLI](/azure/role-based-access-controle/role-assignments-cli).

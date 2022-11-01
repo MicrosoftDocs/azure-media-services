@@ -6,13 +6,13 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.devlang: javascript
 ms.topic: tutorial
-ms.date: 3/16/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
 # Tutorial: Stream live with Media Services by using Node.js and TypeScript
 
-In Azure Media Services, [live events](/rest/api/media/liveevents) are responsible for processing live streaming content. A live event provides an input endpoint (ingest URL) that you then provide to a live encoder. The live event receives input streams from the live encoder and makes them available for streaming through one or more [streaming endpoints](/rest/api/media/streamingendpoints). Live events also provide a preview endpoint (preview URL) that you use to preview and validate your stream before further processing and delivery. 
+In Azure Media Services, [live events](/rest/api/media/liveevents) are responsible for processing live streaming content. A live event provides an input endpoint (ingest URL) that you then provide to a live encoder. The live event receives input streams from the live encoder and makes them available for streaming through one or more [streaming endpoints](/rest/api/media/streamingendpoints). Live events also provide a preview endpoint (preview URL) that you use to preview and validate your stream before further processing and delivery.
 
 This tutorial shows how to use Node.js and TypeScript to create a *pass-through* type of a live event and broadcast a live stream to it by using [OBS Studio](https://obsproject.com/download).
 
@@ -25,7 +25,7 @@ In this tutorial, you will:
 > * Clean up resources.
 
 > [!NOTE]
-> Even though the tutorial uses Node.js examples, the general steps are the same for [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event), or other supported [SDKs](media-services-apis-overview.md#sdks). 
+> Even though the tutorial uses Node.js examples, the general steps are the same for [REST API](/rest/api/media/liveevents), [CLI](/cli/azure/ams/live-event), or other supported [SDKs](media-services-apis-overview.md#sdks).
 
 ## Prerequisites
 
@@ -44,14 +44,14 @@ You need these additional items for live-streaming software:
 - A camera or a device (like a laptop) that's used to broadcast an event.
 - An on-premises software encoder that encodes your camera stream and sends it to the Media Services live-streaming service through the Real-Time Messaging Protocol (RTMP). For more information, see [Recommended on-premises live encoders](encode-recommended-on-premises-live-encoders.md). The stream has to be in RTMP or Smooth Streaming format.
 
-  This sample assumes that you'll use Open Broadcaster Software (OBS) Studio to broadcast RTMP to the ingest endpoint. [Install OBS Studio](https://obsproject.com/download). 
+  This sample assumes that you'll use Open Broadcaster Software (OBS) Studio to broadcast RTMP to the ingest endpoint. [Install OBS Studio](https://obsproject.com/download).
 
   Use the following encoding settings in OBS Studio:
 
   - Encoder: NVIDIA NVENC (if available) or x264
   - Rate control: CBR
   - Bit rate: 2,500 Kbps (or something reasonable for your computer)
-  - Keyframe interval: 2 s, or 1 s for low latency  
+  - Keyframe interval: 2 s, or 1 s for low latency
   - Preset: Low-latency Quality or Performance (NVENC) or "veryfast" using x264
   - Profile: high
   - GPU: 0 (Auto)
@@ -62,7 +62,7 @@ You need these additional items for live-streaming software:
 
 ## Download and configure the sample
 
-Clone the GitHub repository that contains the live-streaming Node.js sample to your machine by using the following command:  
+Clone the GitHub repository that contains the live-streaming Node.js sample to your machine by using the following command:
 
 ```bash
 git clone https://github.com/Azure-Samples/media-services-v3-node-tutorials.git
@@ -99,7 +99,7 @@ In the *package.json* file, this is already configured for you. You just need to
 1. Install the packages used in the *packages.json* file:
 
     ```bash
-    npm install 
+    npm install
     ```
 
 1. Open Visual Studio Code from the root folder. (This is required to start from the folder where the *.vscode* folder and *tsconfig.json* files are located.)
@@ -122,12 +122,12 @@ To speed up the polling of long running operations from the default of 30s down 
 
 ### Create a live event
 
-This section shows how to create a standard *pass-through* type of live event (`LiveEventEncodingType` set to `PassthroughStandard`). For information about the available types, see [Live event types](live-event-outputs-concept.md#live-event-types). In addition to basic or standard pass-through, you can use a live encoding event for 720p or 1080p adaptive bitrate cloud encoding.
+This section shows how to create a standard *pass-through* type of live event (`LiveEventEncodingType` set to `PassthroughStandard`). For information about the available types, see [Live event types](live-event-concept.md). In addition to basic or standard pass-through, you can use a live encoding event for 720p or 1080p adaptive bitrate cloud encoding.
 Examples of each of these types of events is available in the *Live* folder of the sample repository. In addition, a sample demonstrating how to listen to Event Grid events through Event Hubs is also included.
 
 You might want to specify the following things when you're creating the live event:
 
-* **The ingest protocol for the live event**. Currently, the RTMP, RTMPS, and Smooth Streaming protocols are supported. You can't change the protocol option while the live event or its associated live outputs are running. If you need different protocols, create a separate live event for each streaming protocol.  
+* **The ingest protocol for the live event**. Currently, the RTMP, RTMPS, and Smooth Streaming protocols are supported. You can't change the protocol option while the live event or its associated live outputs are running. If you need different protocols, create a separate live event for each streaming protocol.
 * **IP restrictions on the ingest and preview**. You can define the IP addresses that are allowed to ingest a video to this live event. Allowed IP addresses can be specified as one of these choices:
 
   * A single IP address (for example, `10.0.0.1`)
@@ -138,7 +138,7 @@ You might want to specify the following things when you're creating the live eve
 * **Autostart on an event as you create it**. When autostart is set to `true`, the live event will start after creation. That means the billing starts as soon as the live event starts running. You must explicitly call `Stop` on the live event resource to halt further billing. For more information, see [Live event states and billing](live-event-states-billing-concept.md).
 
   Standby modes are available to start the live event in a lower-cost "allocated" state that makes it faster to move to a running state. This is useful for situations like hot pools that need to hand out channels quickly to streamers.
-* **A static host name and a unique GUID**. For an ingest URL to be predictive and easier to maintain in a hardware-based live encoder, set the `useStaticHostname` property to `true`. For `accessToken`, use a custom, unique GUID. For detailed information, see [Live event ingest URLs](live-event-outputs-concept.md#live-event-ingest-urls).
+* **A static host name and a unique GUID**. For an ingest URL to be predictive and easier to maintain in a hardware-based live encoder, set the `useStaticHostname` property to `true`. For `accessToken`, use a custom, unique GUID. For detailed information, see [Live event ingest URLs](live-event-concept.md).
 
 
 [!code-typescript[Main](~/../media-services-v3-node-tutorials/Live/Standard_Passthrough_Live_Event/index.ts#CreateLiveEvent)]
@@ -196,7 +196,7 @@ After you have the stream flowing into the live event, you can begin the streami
 
 You first create the signal by creating the live event. The signal is not flowing until you start that live event and connect your encoder to the input.
 
-To stop the "tape recorder," you call `delete` on `LiveOutput`. This action doesn't delete the *contents* of your archive on the "tape" (asset). It only deletes the "tape recorder" and stops the archiving. The asset is always kept with the archived video content until you call `delete` explicitly on the asset itself. As soon as you delete `LiveOutput`, the recorded content of the asset is still available to play back through any published streaming locator URLs. 
+To stop the "tape recorder," you call `delete` on `LiveOutput`. This action doesn't delete the *contents* of your archive on the "tape" (asset). It only deletes the "tape recorder" and stops the archiving. The asset is always kept with the archived video content until you call `delete` explicitly on the asset itself. As soon as you delete `LiveOutput`, the recorded content of the asset is still available to play back through any published streaming locator URLs.
 
 If you want to remove the ability of a client to play back the archived content, you first need to remove all locators from the asset. You also flush the content delivery network (CDN) cache on the URL path, if you're using a CDN for delivery. Otherwise, the content will live in the CDN's cache for the standard time-to-live setting on the CDN (which might be up to 72 hours).
 

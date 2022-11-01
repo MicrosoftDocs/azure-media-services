@@ -506,9 +506,6 @@
     - name: Use Azure Functions with Media Services
       href: media-services-dotnet-how-to-use-azure-functions.md
       displayName: media services v2, v2, version 2
-    - name: Azure Functions with Media Services examples
-      href: https://github.com/Azure-Samples/media-services-dotnet-functions-integration
-      displayName: media services v2, v2, version 2
   - name: Monitor
     items:
     - name: Check job progress
