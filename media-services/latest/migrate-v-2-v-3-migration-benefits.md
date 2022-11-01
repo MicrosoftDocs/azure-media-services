@@ -4,7 +4,7 @@ description: This article lists the benefits of migrating from Media Services v2
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -48,7 +48,7 @@ There have been significant improvements to Media Services with V3.
 | RTMP ingest for Live Events is improved, with support for more encoders | Increases stability and provides source encoder flexibility. |
 | Live Events can stream 24x7 | You can host a Live Event and keep your audience engaged for longer periods. |
 | Live transcription on Live Events | Live transcription allows customers to automatically transcribe spoken language into text in real time during the live event broadcast. This significantly improves accessibility of live events. |
-| [Stand-by mode](live-event-outputs-concept.md#standby-mode) on Live Events | Live events that are in standby state are less costly than running live events. This allows customers to maintain a set of live events that are ready to start within seconds at a lower cost than maintaining a set of running live events. Reduced pricing for standby live events will become effective in February 2021 for most regions, with the rest to follow in April 2021.
+| [Stand-by mode](live-event-concept.md) on Live Events | Live events that are in standby state are less costly than running live events. This allows customers to maintain a set of live events that are ready to start within seconds at a lower cost than maintaining a set of running live events. Reduced pricing for standby live events will become effective in February 2021 for most regions, with the rest to follow in April 2021.
 |**Content protection** ||
 | [Content protection](drm-content-key-policy-concept.md) supports multi-key features. | Customers can now use multiple content encryption keys on their Streaming locators. |
 | **Monitoring** | |

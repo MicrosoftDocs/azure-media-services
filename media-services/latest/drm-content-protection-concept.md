@@ -4,7 +4,7 @@ description: Learn about content protection with dynamic encryption, streaming p
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -107,5 +107,5 @@ There are additional content protection samples available for Node.JS and Python
 | **Node.JS** | **Python** | Description |
 |---|---| ---|
 |[Node.JS Upload and stream HLS and DASH with PlayReady and Widevine DRM](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesWithDRMSample/index.ts)|[Python Upload and stream HLS and DASH with PlayReady and Widevine DRM](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesWithDRM/stream-files-with-drm-sample.py)| Demonstrates how to encode and stream using Widevine and PlayReady DRM |
-|[Node.JS Basic Playready DRM content protection and streaming](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicPlayready/index.ts)|[Python Basic Playready DRM content protection and streaming](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicPlayReady/basic-play-ready.py)| Demonstrates how to encode and stream using PlayReady DRM |
+|[Node.JS Basic Playready DRM content protection and streaming](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicPlayReady/index.ts)|[Python Basic Playready DRM content protection and streaming](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicPlayReady/basic-play-ready.py)| Demonstrates how to encode and stream using PlayReady DRM |
 |[Node.JS Basic Widevine DRM content protection and streaming](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicWidevine/index.ts)| [Python Basic Widevine DRM content protection and streaming](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicWidevine/basic-widevine.py) | Demonstrates how to encode and stream using Widevine DRM |

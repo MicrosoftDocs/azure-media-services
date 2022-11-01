@@ -5,7 +5,7 @@ description: Learn how to stream live events by using .NET 5.0
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 3/16/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -83,7 +83,7 @@ In the case of interactive authentication, the `GetCredentialsInteractiveAuthAsy
 
 ### Create a live event
 
-This section shows how to create a *pass-through* type of live event (`LiveEventEncodingType` set to `None`). For information about the available types, see [Live event types](live-event-outputs-concept.md#live-event-types). In addition to pass-through, you can use a live transcoding event for 720p or 1080p adaptive bitrate cloud encoding.
+This section shows how to create a *pass-through* type of live event (`LiveEventEncodingType` set to `None`). For information about the available types, see [Live event types](live-event-concept.md). In addition to pass-through, you can use a live transcoding event for 720p or 1080p adaptive bitrate cloud encoding.
 
 You might want to specify the following things when you're creating the live event:
 
@@ -100,7 +100,7 @@ You might want to specify the following things when you're creating the live eve
 
   Standby modes are available to start the live event in a lower-cost "allocated" state that makes it faster to move to a running state. This is useful for situations like hot pools that need to hand out channels quickly to streamers.
 
-- **A static host name and a unique GUID**. For an ingest URL to be predictive and easier to maintain in a hardware-based live encoder, set the `useStaticHostname` property to `true`. For detailed information, see [Live event ingest URLs](live-event-outputs-concept.md#live-event-ingest-urls).
+- **A static host name and a unique GUID**. For an ingest URL to be predictive and easier to maintain in a hardware-based live encoder, set the `useStaticHostname` property to `true`. For detailed information, see [Live event ingest URLs](live-event-concept.md).
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/Live/LiveEventWithDVR/Program.cs#CreateLiveEvent)]
 

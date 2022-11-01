@@ -1,11 +1,11 @@
 ---
-title: Writing plugins for Azure Media Player 
+title: Writing plugins for Azure Media Player
 description: Learn how to write a plugin with Azure Media Player with JavaScript
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: how-to
-ms.date: 04/05/2021
+ms.date: 11/1/2022
 ms.custom: devx-track-js
 ---
 
@@ -59,7 +59,7 @@ Method 1:
                 [your plugin options]: [example options]
            }
         }
-    };     
+    };
     var myPlayer = amp([videotag id], myOptions);
 ```
 
@@ -80,7 +80,3 @@ For inspiration and more examples on creating a plugin take a look at our [galle
 ### Integrated Plugins ###
 
  There are currently two plugins baked into AMP: the [time-tip](http://sr-test.azurewebsites.net/Tests/Plugin%20Gallery/plugins/timetip/example.html) and [hotkeys](http://sr-test.azurewebsites.net/Tests/Plugin%20Gallery/plugins/hotkeys/example.html). These plugins were originally developed to be modular plugins for the player but are now included into the player source code.
-
-### Plugin Gallery ###
-
-The [plugin gallery](https://aka.ms/ampplugins) has several plugins that the community has already contributed for features like time-line markers, zoom, analytics and more. The page provides accesses to the plugins and instructions on how to set it up as well as a demo that shows the plugin in action. If you create a cool plugin that you think should be included in our gallery, feel free to submit it so we can check it out.

@@ -108,12 +108,12 @@ sections:
         If you are looking for ways to use a Media Services encoder to do things like rotate a video, subclip a video, stitch videos, create thumbnails and sprites, we have a ton of code samples on the [Code Samples](/azure/media-services/latest/samples-overview) page. Available sample languages include Node.JS, Python, .NET, and Java.
     - question: Where are the SDK examples?
       answer: |
-        Only the REST API includes examples, so we have created [code snippets](/azure/media-services/latest/storage-create-how-to?tabs=portal) for each SDK as well as step-by-step instructions for working with Media Services in the Azure portal.
+        You can find code samples for .Net, Node.JS, Python and Java on the [Samples](samples-overview.md) page.
   - name: Live streaming
     questions:
     - question: What is a Media Services live event?
       answer: |
-        A Media Services live event is the process of ingesting live video feeds and broadcasting them through an RTMPS protocol or Smooth Streaming. For more information, see [Live events and live outputs in Media Services](live-event-outputs-concept.md).
+        A Media Services live event is the process of ingesting live video feeds and broadcasting them through an RTMPS protocol or Smooth Streaming. For more information, see [Live events and live outputs in Media Services](live-event-concept.md).
     - question: How do I create a Media Services live event?
       answer: |
         The first step is to choose an on-premises encoder. We've provided examples for creating a live event with [Wirecast](live-event-wirecast-quickstart.md) and [OBS](live-event-obs-quickstart.md). If you would rather start with an overview of Media Services live events, see [Live event types](stream-live-streaming-concept.md#live-event-types).

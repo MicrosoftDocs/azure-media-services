@@ -4,7 +4,7 @@ description: Learn about rules that apply to entities and APIs when developing w
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -111,10 +111,10 @@ Only one long-running operation is supported for a given Live Event or any of it
 
 |SDK|Reference|
 |---|---|
-|[.NET SDK](https://aka.ms/ams-v3-dotnet-sdk)|[.NET ref](/dotnet/api/overview/azure/mediaservices/management)|
-|[Java SDK](https://aka.ms/ams-v3-java-sdk)|[Java ref](/java/api/overview/azure/mediaservices/management)|
-|[Python SDK](https://aka.ms/ams-v3-python-sdk)|[Python ref](/python/api/overview/azure/mediaservices/management)|
-|[Node.js SDK](https://aka.ms/ams-v3-nodejs-sdk) |[Node.js ref](/javascript/api/overview/azure/arm-mediaservices-readme)|
+|[.NET SDK](https://aka.ms/ams-v3-dotnet-sdk)|[.NET ref](/dotnet/api/overview/azure/media-services?view=azure-dotnet&preserve-view=true)|
+|[Java SDK](https://aka.ms/ams-v3-java-sdk)|[Java ref](/java/api/overview/azure/mediaservices/management?view=azure-java-legacy&preserve-view=true)|
+|[Python SDK](https://aka.ms/ams-v3-python-sdk)|[Python ref](/python/api/azure-mgmt-media/azure.mgmt.media?view=azure-python&preserve-view=true)|
+|[Node.js SDK](https://aka.ms/ams-v3-nodejs-sdk) |[Node.js ref](/javascript/api/overview/azure/arm-mediaservices-readme?view=azure-node-latest)|
 |[Go SDK](https://aka.ms/ams-v3-go-sdk) |[Go ref](https://aka.ms/ams-v3-go-ref)|
 
 ### See also

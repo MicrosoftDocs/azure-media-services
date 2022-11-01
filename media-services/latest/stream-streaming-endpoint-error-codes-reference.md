@@ -4,7 +4,7 @@ description: This topic describes errors that you may receive from the Azure Med
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: error-reference
-ms.date: 3/16/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -144,7 +144,7 @@ For filter guidance, see:
 For live articles and samples, see:
 
 - [Concept: live streaming overview](stream-live-streaming-concept.md)
-- [Concept: Live Events and Live Outputs](live-event-outputs-concept.md)
+- [Concept: Live Events and Live Outputs](live-event-concept.md)
 - [Sample: live streaming tutorial](stream-live-tutorial-with-api.md)
 
 ## 416 Range Not Satisfiable

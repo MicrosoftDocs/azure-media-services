@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 10/05/2022
+ms.date: 11/01/2022
 ---
 
 <!-- ms.assetid: 51bdcb01-1846-4e1f-bd90-70020ab471b0 -->
@@ -15,8 +15,6 @@ ms.date: 10/05/2022
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
 
 This article shows you how to get started with creating Azure Functions that use Media Services. The Azure Function defined in this article monitors a storage account container named **input** for new MP4 files. Once a file is dropped into the storage container, the blob trigger executes the function. To review Azure Functions, see  [Overview](/azure/azure-functions/functions-overview) and other topics in the **Azure Functions** section.
-
-If you want to explore and deploy existing Azure Functions that use Azure Media Services, check out [Media Services Azure Functions](https://github.com/Azure-Samples/media-services-dotnet-functions-integration). This repository contains examples that use Media Services to show workflows related to ingesting content directly from blob storage, encoding, and writing content back to blob storage. It also includes examples of how to monitor job notifications via WebHooks and Azure Queues. You can also develop your Functions based on the examples in the [Media Services Azure Functions](https://github.com/Azure-Samples/media-services-dotnet-functions-integration) repository. To deploy the functions, press the **Deploy to Azure** button.
 
 ## Prerequisites
 
@@ -124,7 +122,7 @@ The example defined in this section demonstrates
 1. how to ingest an asset into a Media Services account (by coping a blob into an AMS asset) and
 2. how to submit an encoding job that uses Media Encoder Standard's "Adaptive Streaming" preset.
 
-In the real life scenario, you most likely want to track job progress and then publish your encoded asset. For more information, see [Use Azure WebHooks to monitor Media Services job notifications](media-services-dotnet-check-job-progress-with-webhooks.md). For more examples, see [Media Services Azure Functions](https://github.com/Azure-Samples/media-services-dotnet-functions-integration).
+In the real life scenario, you most likely want to track job progress and then publish your encoded asset. For more information, see [Use Azure WebHooks to monitor Media Services job notifications](media-services-dotnet-check-job-progress-with-webhooks.md).
 
 Replace the contents of the existing run.csx file with the following code: Once you are done defining your function click **Save and Run**.
 

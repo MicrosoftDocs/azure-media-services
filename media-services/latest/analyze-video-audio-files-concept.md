@@ -4,7 +4,7 @@ description: Learn how to analyze audio and video content using AudioAnalyzerPre
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/11/2022
+ms.date: 11/1/2022
 ms.author: inhenkel
 ---
 
@@ -22,7 +22,7 @@ To analyze your content using Media Services v3 presets, you create a **Transfor
 
 ## Compliance, Privacy, and Security
 
-You must comply with all applicable laws in your use of Video Analyzer for Media, and you may not use Video Analyzer for Media or any other Azure service in a manner that violates the rights of others or may be harmful to others. Before uploading any videos, including any biometric data, to the Video Analyzer for Media service for processing and storage, You must have all the proper rights, including all appropriate consents, from the individual(s) in the video. To learn about compliance, privacy and security in Video Analyzer for Media, the Azure [Cognitive Services Terms](https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/). For Microsoft’s privacy obligations and handling of your data, review Microsoft’s [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) (“OST”) and [Data Processing Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67) (“DPA”). More privacy information, including on data retention, deletion/destruction, is available in the OST and [here](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-analyzer-for-media-docs/faq). By using Video Analyzer for Media, you agree to be bound by the Cognitive Services Terms, the OST, DPA, and the Privacy Statement.
+You must comply with all applicable laws in your use of Video Analyzer for Media, and you may not use Video Analyzer for Media or any other Azure service in a manner that violates the rights of others or may be harmful to others. Before uploading any videos, including any biometric data, to the Video Analyzer for Media service for processing and storage, You must have all the proper rights, including all appropriate consents, from the individual(s) in the video. To learn about compliance, privacy and security in Video Analyzer for Media, the Azure [Cognitive Services Terms](https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/). For Microsoft’s privacy obligations and handling of your data, review Microsoft’s [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) (“OST”) and [Data Processing Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67) (“DPA”). More privacy information, including on data retention, deletion/destruction, is available in the OST. By using Video Analyzer for Media, you agree to be bound by the Cognitive Services Terms, the OST, DPA, and the Privacy Statement.
 
 ## Built-in presets
 

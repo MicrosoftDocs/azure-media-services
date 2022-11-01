@@ -4,7 +4,7 @@ description: This article gives an explanation of what Streaming Locators are, a
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -27,7 +27,3 @@ You can also specify the start and end time on your Streaming Locator, which wil
 - **Streaming Locators** are not updatable.
 - Properties of **Streaming Locators** that are of the Datetime type are always in UTC format.
 - You should design a limited set of policies for your Media Service account and reuse them for your Streaming Locators whenever the same options are needed. For more information, see [Quotas and limits](limits-quotas-constraints-reference.md).
-
-## How-Tos and Tutorials
-
-- [Create a streaming locator](/streaming-locator-create-how-to?amspage=stream-streaming-locators-concept)

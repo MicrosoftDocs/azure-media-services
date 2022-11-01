@@ -42,9 +42,6 @@ The output asset also contains a file with metadata about the output asset. The 
 
 If you want to examine either of the two metadata files, you can create a SAS locator and download the file to your local computer. You can find an example on how to create a SAS locator and download a file Using the Media Services .NET SDK Extensions.
 
-## Download sample
-You can get and run a sample that shows how to encode with MES from [here](https://azure.microsoft.com/documentation/samples/media-services-dotnet-on-demand-encoding-with-media-encoder-standard/).
-
 ## .NET sample code
 
 The following code example uses Media Services .NET SDK to perform the following tasks:

@@ -4,7 +4,7 @@ description: This article gives an overview of dynamic packaging in Azure Media 
 author: myoungerman
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -140,7 +140,7 @@ A live event can be set to either a *pass-through* (an on-premises live encoder 
 
 Here's a common workflow for live streaming with *dynamic packaging*:
 
-1. Create a [live event](live-event-outputs-concept.md).
+1. Create a [live event](live-event-concept.md).
 1. Get the ingest URL and configure your on-premises encoder to use the URL to send the contribution feed.
 1. Get the preview URL and use it to verify that the input from the encoder is being received.
 1. Create a new asset.

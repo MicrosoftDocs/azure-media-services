@@ -4,7 +4,7 @@ description: Learn about Streaming Endpoints (Origin), a dynamic packaging and s
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/07/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -181,7 +181,3 @@ See the following articles:
 
 - [CDN overview](/azure/cdn/cdn-overview)
 - [Scaling streaming with CDN](stream-scale-streaming-cdn-concept.md?amspage=stream-streaming-endpoint-concept)
-
-## How-Tos and Tutorials
-
-- [Manage streaming endpoints](stream-manage-streaming-endpoints-how-to.md?amspage=stream-streaming-endpoint-concept)
