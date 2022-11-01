@@ -4,7 +4,7 @@ description: Learn how to analyze audio and video content using AudioAnalyzerPre
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/1/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -20,6 +20,8 @@ There are two modes for the Audio Analyzer preset, basic and standard. See the d
 
 To analyze your content using Media Services v3 presets, you create a **Transform** and submit a **Job** that uses one of these presets: [VideoAnalyzerPreset](/rest/api/media/transforms/createorupdate#videoanalyzerpreset) or **AudioAnalyzerPreset**.
 
+[!INCLUDE [audio-analyzer-preset-note](includes/audio-analyzer-preset-note.md)]
+
 ## Compliance, Privacy, and Security
 
 You must comply with all applicable laws in your use of Video Analyzer for Media, and you may not use Video Analyzer for Media or any other Azure service in a manner that violates the rights of others or may be harmful to others. Before uploading any videos, including any biometric data, to the Video Analyzer for Media service for processing and storage, You must have all the proper rights, including all appropriate consents, from the individual(s) in the video. To learn about compliance, privacy and security in Video Analyzer for Media, the Azure [Cognitive Services Terms](https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/). For Microsoft’s privacy obligations and handling of your data, review Microsoft’s [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) (“OST”) and [Data Processing Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67) (“DPA”). More privacy information, including on data retention, deletion/destruction, is available in the OST. By using Video Analyzer for Media, you agree to be bound by the Cognitive Services Terms, the OST, DPA, and the Privacy Statement.
@@ -34,6 +36,8 @@ Media Services currently supports the following built-in analyzer presets:
 |[AudioAnalyzerPreset](/rest/api/media/transforms/createorupdate#audioanalyzerpreset)|Analyzing audio Basic mode|This preset mode performs speech-to-text transcription and generation of a VTT subtitle/caption file. The output of this mode includes an Insights JSON file including only the keywords, transcription, and timing information. Automatic language detection and speaker diarization are not included in this mode. The list of supported languages is identical to the Standard mode above.|
 |[VideoAnalyzerPreset](/rest/api/media/transforms/createorupdate#videoanalyzerpreset)|Analyzing audio and video|Extracts insights (rich metadata) from both audio and video, and outputs a JSON format file. You can specify whether you only want to extract audio insights when processing a video file.
 |[FaceDetectorPreset](/rest/api/media/transforms/createorupdate#facedetectorpreset)|Detecting faces present in video|Describes the settings to be used when analyzing a video to detect all the faces present.|
+
+[!INCLUDE [audio-analyzer-preset-note](includes/audio-analyzer-preset-note.md)]
 
 ## Supported languages
 
@@ -57,6 +61,8 @@ Media Services currently supports the following built-in analyzer presets:
 * Swedish ('sv-SE')
 * Thai ('th-TH')
 * Turkish ('tr-TR')
+
+[!INCLUDE [audio-analyzer-preset-note](includes/audio-analyzer-preset-note.md)]
 
 ### AudioAnalyzerPreset standard mode
 

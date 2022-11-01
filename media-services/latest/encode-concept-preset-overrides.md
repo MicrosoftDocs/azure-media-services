@@ -4,7 +4,7 @@ description: This article how to use preset overrides to adjust transform settin
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 11/01/2022
 ms.author: inhenkel
 ---
 
@@ -33,6 +33,8 @@ For reference, see the [presetOverride](https://github.com/Azure/azure-rest-api-
 
 > [!NOTE]
 > You can only use preset overrides to override the settings on a defined preset in the transform.  You cannot switch from one specific preset to another type. For example, attempting to override a transform created with the built-in content-aware encoding preset to use another preset like the audio analyzer would result in an error message.
+
+[!INCLUDE [audio-analyzer-preset-note](includes/audio-analyzer-preset-note.md)]
 
 ## Sample code
 
