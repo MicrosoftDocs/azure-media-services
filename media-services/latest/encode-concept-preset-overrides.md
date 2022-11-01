@@ -16,13 +16,13 @@ ms.author: inhenkel
 
 ## Transforms and jobs overview
 
-To encode with Media Services v3, you need to create a [Transform](/rest/api/media/transforms) and a [Job](/rest/api/media/jobs). The transform defines a recipe for your encoding settings and outputs; the job is an instance of the recipe. For more information, see [Transforms and Jobs](transform-jobs-concept.md).
+To encode with Media Services v3, you need to create a Transform and a Job. The transform defines a recipe for your encoding settings and outputs; the job is an instance of the recipe. For more information, see [Transforms and Jobs](transform-jobs-concept.md).
 
-When encoding or using analytics with Media Services you can define custom presets in a transform to define what settings to use. Sometimes it is required to override the settings on a transform on a per-job basis to avoid having to create a custom transform for every scenario. To override any setting on your transform preset, you can use the preset override property of the [job output asset](/dotnet/api/microsoft.azure.management.media.models.joboutputasset) prior to submitting the job to the transform.
+When encoding or using analytics with Media Services you can define custom presets in a transform to define what settings to use. Sometimes it is required to override the settings on a transform on a per-job basis to avoid having to create a custom transform for every scenario. To override any setting on your transform preset, you can use the preset override property of the job output asset prior to submitting the job to the transform.
 
 ## Preset overrides
 
-Preset overrides give you the ability to pass in a customized preset that will override the settings supplied to a transform object after it was created.  This property is available on the [job output asset](/dotnet/api/microsoft.azure.management.media.models.joboutputasset) when submitting a new job to a transform.
+Preset overrides give you the ability to pass in a customized preset that will override the settings supplied to a transform object after it was created.  This property is available on the job output asset when submitting a new job to a transform.
 
 This can be useful for situations where you need to override some properties of your custom defined transforms, or a property on a built-in preset. For example, consider the scenario where you have created a custom transform that uses the [audio analyzer built-in preset](/rest/api/media/transforms/create-or-update#audioanalyzerpreset), but you initially set up that preset to use the audio language setting of "en-us" for English.  This would result in a transform where each job submitted would be sent to the speech-to-text transcription engine as US English only. Every job submitted to that transform would be locked to the "en-us" language setting. You could work around this scenario by having a transform defined for every language, but that would be much more difficult to manage and you could hit transform quota limitations in your account.
 To best solve for this scenario, you use a preset override on the job output asset prior to submitting the job to the transform.  You can then define a single "Audio transcription" transform and pass in the required language settings per-job.

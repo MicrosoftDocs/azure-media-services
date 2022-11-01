@@ -14,8 +14,6 @@ ms.author: johndeu
 
 Azure Media Services (v3) is available across multiple geographies and regions.  This document outlines the availability and differences of the Media Services v3 features around the world to help you choose the best region for your Media Services account.  To learn more about Azure geographies and regions, see [Choose the Right Azure Region for You](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
-[!INCLUDE [audio-analyzer-preset-note](includes/audio-analyzer-preset-note.md)]
-
 <!-- US and US Gov -->
 [!INCLUDE [reference-feature-availability-us](./includes/reference-feature-availability-us.md)]
 [!INCLUDE [reference-feature-availability-usgov](./includes/reference-feature-availability-usgov.md)]
