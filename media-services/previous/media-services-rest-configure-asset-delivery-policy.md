@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: article
-ms.date: 10/05/2022
+ms.date: 11/01/2022
 ---
 
 <!-- ms.assetid: 5cb9d32a-e68b-4585-aa82-58dded0691d0 -->
@@ -13,8 +13,6 @@ ms.date: 10/05/2022
 # Configuring asset delivery policies
 
 [!INCLUDE [media services api v2 logo](./includes/v2-hr.md)]
-
-[!INCLUDE [media-services-selector-asset-delivery-policy](../latest/includes/media-services-selector-asset-delivery-policy.md)]
 
 If you plan to deliver dynamically encrypted assets, one of the steps in the Media Services content delivery workflow is configuring delivery policies for assets. The asset delivery policy tells Media Services how you want for your asset to be delivered: into which streaming protocol should your asset be dynamically packaged (for example, MPEG DASH, HLS, Smooth Streaming, or all), whether or not you want to dynamically encrypt your asset and how (envelope or common encryption).
 
