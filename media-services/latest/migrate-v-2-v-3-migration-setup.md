@@ -38,7 +38,7 @@ Find your [tenant and subscription ids](/azure/azure-portal/get-subscription-ten
 
 ## Download client SDK of your choice and set up your environment
 
-- SDKs available for [.NET](/dotnet/api/overview/azure/media-services?view=azure-dotnet&preserve-view=true), .NET Core, [Node.js](/javascript/api/overview/azure/arm-mediaservices-readme?view=azure-node-latest), [Python](/python/api/azure-mgmt-media/azure.mgmt.media?view=azure-python&preserve-view=true), [Java](/java/api/overview/azure/mediaservices/management?view=azure-java-legacy&preserve-view=true), and [Go](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/mediaservices/mgmt/2018-07-01/media).
+- SDKs available for [.NET](/dotnet/api/overview/azure/media-services?view=azure-dotnet&preserve-view=true), .NET Core, [Node.js](/javascript/api/overview/azure/arm-mediaservices-readme?view=azure-node-latest&preserve-view=true), [Python](/python/api/azure-mgmt-media/azure.mgmt.media?view=azure-python&preserve-view=true), [Java](/java/api/overview/azure/mediaservices/management?view=azure-java-legacy&preserve-view=true), and [Go](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/mediaservices/mgmt/2018-07-01/media).
 - [Azure CLI](/cli/azure/ams) integration for simple scripting support.
 
 > [!NOTE]
