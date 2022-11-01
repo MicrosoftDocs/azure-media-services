@@ -4,7 +4,7 @@ description: This article talks about Azure clouds and regions in which Azure Me
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 3/16/2022
+ms.date: 11/01/2022
 ms.author: johndeu
 ---
 
