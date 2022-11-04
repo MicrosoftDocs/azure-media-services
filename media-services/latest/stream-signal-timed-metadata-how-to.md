@@ -76,7 +76,7 @@ The *index.html* document contains:
 - a standard HTML5 video element. Notice that the video element is set to autoplay and to start muted.
 - an input field for the streaming locator URL. There is a placeholder URL in the input field which you can view, but it isn’t a live stream. You will be replacing this value.
 
-::code language="html" source="~/../media-services-v3-node-tutorials/blob/main/Player/examples/shaka/index.html":::
+::code language="html" source="~/../media-services-v3-node-tutorials/Player/examples/shaka/index.html":::
 
 ### Review the JavaScript
 
