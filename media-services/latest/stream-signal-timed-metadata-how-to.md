@@ -38,6 +38,8 @@ becomes
 
 ### Headers and request body
 
+The HTTP Content-type header **MUST** be set to application/json, so make sure this is set correctly.
+
 ```rest
 POST /echo/post/json HTTP/1.1
 Content-Type: application/json
@@ -130,7 +132,7 @@ You can use any tool or SDK you like for sending an HTTP POST with the metadata 
 
 ### Headers and request body
 
-The HTTP Content-type header **MUST** be set to application/json, so make sure this is set correctly. Then, add the information you want to display with the key set as "message". Here is a simple example message:
+Reminder: The HTTP Content-type header **MUST** be set to application/json. Then, add the information you want to display with the key set as "message". Here is a simple example message:
 
 ```http
 POST /echo/post/json HTTP/1.1
@@ -158,7 +160,7 @@ Content-Type: application/json
 {
     "question": "What is the airspeed velocity of an unladen swallow?",
      "answers" : [
-        {"a1": "A shrubbery"},
+        {"a1": "A shrubbery!"},
         {"a2": "I am not a witch!"},
         {"a3":  "An African or European swallow?"},
         {"a4": "It's just a flesh wound."},
@@ -177,7 +179,9 @@ A POST is implicit when sending data, so you don't need to use the -X POST flag.
 
 Example POST:
 
-`curl https://mylivestream.channel.media.azure.net/618377123f4c49b3937ade20204ca0b2/ingest.isml/eventdata -H "Content-Type: application/json" -d "{\\"message\\":\\"Hello from Seattle\\"}" -v`
+```http
+curl https://mylivestream.channel.media.azure.net/618377123f4c49b3937ade20204ca0b2/ingest.isml/eventdata -H "Content-Type: application/json" -d "{\\"message\\":\\"Hello from Seattle\\"}" -v
+```
 
 ## Clean up resources
 
