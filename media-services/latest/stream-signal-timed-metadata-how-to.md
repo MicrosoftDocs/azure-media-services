@@ -73,20 +73,18 @@ We have provided a sample Shaka player on Stackblitz for you to work with. Use t
 The *index.html* document contains:
 
 - a div element where the message will show up once it is sent.
-- a standard HTML5 video element. Notice that the video element is set to autoplay and to start muted.
+- a standard HTML5 video element. Notice that the video element is set to `autoplay` and to `start muted`.
 - an input field for the streaming locator URL. There is a placeholder URL in the input field which you can view, but it isn’t a live stream. You will be replacing this value.
 
-:::code language="azurecli" source="~/../media-services-v3-node-tutorials/Player/examples/shaka/index.html":::
-
-TEST
-
-[!INCLUDE [task-create-resource-group-cli](includes/task-create-resource-group-cli.md)]
+:::code language="html" source="~/../media-services-v3-node-tutorials/Player/examples/shaka/index.html":::
 
 ### Review the JavaScript
 
-The *index.js* file creates and manages the player and player events. The onEventMessage function is registered to handle the ‘emsg’ event from the Shaka Player and display the messages received from the POST.
+The *index.js* file creates and manages the player and player events. The `onEventMessage` function is registered to handle the `emsg` event from the Shaka Player and display the messages received from the POST.
 
 `player.addEventListener('emsg', onEventMessage);`
+
+:::code language="html" source="~/../media-services-v3-node-tutorials/blob/main/Player/examples/shaka/index.js" id="EmgHandling" :::
 
 ## Create a live event with a streaming locator
 
@@ -173,7 +171,7 @@ A POST is implicit when sending data in, so you do not need to use the -X POST f
 
 Example POST:
 
-`curl https://lldemo-lldemo-usw22.channel.media.azure.net/618377123f4c49b3937ade20204ca0b2/ingest.isml/eventdata -H "Content-Type: application/json" -d "{\\"message\\":\\"Hello from Seattle\\"}" -v`
+`curl https://mylivestream.channel.media.azure.net/618377123f4c49b3937ade20204ca0b2/ingest.isml/eventdata -H "Content-Type: application/json" -d "{\\"message\\":\\"Hello from Seattle\\"}" -v`
 
 ## Clean up resources
 
