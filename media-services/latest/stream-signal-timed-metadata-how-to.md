@@ -44,8 +44,8 @@ BODY
 
 ## Timed metadata limits
 
-- Total message body payload size
-- Requests per second
+- Total message body payload size – 256 kb max payload for the JSON body. Any requests exceeding the limit will get a `429 TOO MANY REQUESTS` response code from the server. If it is larger than 256kb, then the service will return 400.
+- Requests per second – 2 requests per second MAX.
 
 ## Additional information
 
@@ -70,7 +70,7 @@ We have provided a sample Shaka player on Stackblitz for you to work with. Use t
 
 ### Review the HTML page
 
-The index.html document contains:
+The *index.html* document contains:
 
 - a div element where the message will show up once it is sent.
 - a standard HTML5 video element. Notice that the video element is set to autoplay and to start muted.
@@ -78,7 +78,7 @@ The index.html document contains:
 
 ### Review the JavaScript
 
-There are two JavaScript files id3_utils.js and index.js. The index.js file creates and manages the player and player events. The onEventMessage function is registered to handle the ‘emsg’ event from the Shaka Player and display the messages received from the POST.
+The *index.js* file creates and manages the player and player events. The onEventMessage function is registered to handle the ‘emsg’ event from the Shaka Player and display the messages received from the POST.
 
 `player.addEventListener('emsg', onEventMessage);`
 

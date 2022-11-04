@@ -4,7 +4,7 @@ description: This topic describes quotas and limits in Microsoft Azure Media Ser
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 08/18/2022
+ms.date: 11/04/2022
 ms.author: inhenkel
 ---
 
@@ -69,11 +69,18 @@ Any job record in your account older than 90 days will be automatically deleted,
 | --- | --- | --- |
 | Live events <sup>(5)</sup> |5| Media Services account |
 | Live outputs writing data to an output asset |3 <sup>(6)</sup> | Live Event |
-| Max live output duration | [Size of the DVR window](live-event-cloud-dvr-time-how-to.md) |
+| Max live output duration | [Size of the DVR window](live-event-cloud-dvr-time-how-to.md) | Live output |
 
 <sup>5</sup> For detailed information about live event limits, see [Live Event types comparison and limits](live-event-types-comparison-reference.md). Depending on your streaming use case and regional data center of choice, AMS is able to accommodate more than 5 live events per Media Services account. Please file a support request to increase your account quota.
 
 <sup>6</sup> Live outputs start on creation and stop when deleted.
+
+## Timed metadata limits
+
+| Resource | Default Limit | Per |
+| --- | --- | --- |
+| Total message body payload size | 256 kb max | Request |
+| Requests | 2 | per second  |
 
 ## Packaging & delivery limits
 
