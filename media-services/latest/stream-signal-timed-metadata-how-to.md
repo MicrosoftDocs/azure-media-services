@@ -76,6 +76,8 @@ The *index.html* document contains:
 - a standard HTML5 video element. Notice that the video element is set to autoplay and to start muted.
 - an input field for the streaming locator URL. There is a placeholder URL in the input field which you can view, but it isn’t a live stream. You will be replacing this value.
 
+::code language="html" source="https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Player/examples/shaka/index.html":::
+
 ### Review the JavaScript
 
 The *index.js* file creates and manages the player and player events. The onEventMessage function is registered to handle the ‘emsg’ event from the Shaka Player and display the messages received from the POST.
