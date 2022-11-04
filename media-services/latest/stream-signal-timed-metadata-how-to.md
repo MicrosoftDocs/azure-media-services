@@ -1,6 +1,6 @@
 ---
 title: Signal timed metadata with Azure Media Services
-description: Learn how to access Azure Active Directory (Azure AD) authentication to consume the Azure Media Services API.
+description: Timed metadata is custom data that is inserted into a live stream. Both the data and its insertion timestamp are preserved in the media stream itself so that all the clients playing back the video stream can get the same custom metadata at the exact same time in relation to the video stream. With timed metadata you can add interactivity elements to the live stream such as a poll, add information related to the video content such as speakers, product links, sports player stats, etc. and add metadata about the video such as GPS location, time, etc.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
@@ -54,7 +54,7 @@ For more information about the payload and format of timed metadata signals, see
 ## Prerequisites
 
 - A Media Services account
-- Familiarity with live streaming from an on-premises encoder. If you haven’t done this before, try live streaming with the [OBS quickstart](https://learn.microsoft.com/en-us/azure/media-services/latest/live-event-obs-quickstart) first. Once you have that setup and running, you should be able to perform the following steps.
+- Familiarity with live streaming from an on-premises encoder. If you haven’t done this before, try live streaming with the [OBS quickstart](live-event-obs-quickstart.md) first. Once you have that setup and running, you should be able to perform the following steps.
 
 ## View the sample
 
@@ -84,7 +84,7 @@ There are two JavaScript files id3_utils.js and index.js. The index.js file crea
 
 ## Create a live event with a streaming locator
 
-If you haven’t done so already with the [OBS quickstart](https://learn.microsoft.com/en-us/azure/media-services/latest/live-event-obs-quickstart)
+If you haven’t done so already with the [OBS quickstart](live-event-obs-quickstart.md)
 mentioned earlier, create a live event with a streaming locator.
 
 1. Use the Azure portal, REST or your favorite SDK to create a live event. Copy the *ingest URL* and paste it in a text editor as you will need to edit it to send a message to the player with an HTTP PUT request.
@@ -156,7 +156,8 @@ You can send additional information for an interactive overlay. The full setup f
 
 When you send the request, you should see the message in the JSON payload show up in the div floating over the video element.
 
-> [!TIP] Open the Developer Tools for the browser and watch the video events that are fired as well as the messages received from the request JSON payload.
+> [!TIP]
+> Open the Developer Tools for the browser and watch the video events that are fired as well as the messages received from the request JSON payload.
 
 ### Example POST using Curl
 
