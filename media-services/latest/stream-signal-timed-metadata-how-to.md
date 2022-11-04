@@ -84,7 +84,7 @@ The *index.js* file creates and manages the player and player events. The `onEve
 
 `player.addEventListener('emsg', onEventMessage);`
 
-:::code language="html" source="~/../media-services-v3-node-tutorials/blob/main/Player/examples/shaka/index.js" id="EmgHandling" :::
+:::code language="javascript" source="~/../media-services-v3-node-tutorials/Player/examples/shaka/index.js" id="EmgHandling" :::
 
 ## Create a live event with a streaming locator
 
