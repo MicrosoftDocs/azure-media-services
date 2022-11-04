@@ -28,6 +28,14 @@ The format of the timed metadata endpoint is based on the RTMP ingest URL for th
 
 `https://<<LIVEEVENTNAME>.channel.media.azure.net/<LIVE_INGEST_ID>/ingest.isml/eventdata`
 
+For example:
+
+`rtmps://mylivestream.channel.media.azure-test.net:2935/live/0251458ba5df44b2b807ea02f40fed76`
+
+becomes
+
+`https://mylivestream.channel.media.azure-test.net/0251458ba5df44b2b807ea02f40fed76/ingest.isml/eventdata`
+
 ### Headers and request body
 
 ```rest
@@ -108,7 +116,7 @@ Edit the ingest URL:
 1. Remove `/live/` from the path.
 1. Append `ingest.isml/eventdata` to the path.
 
-For example:
+Example:
 
 `rtmps://mylivestream.channel.media.azure-test.net:2935/live/0251458ba5df44b2b807ea02f40fed76`
 
@@ -140,19 +148,20 @@ When you send the request, you should see the message in the JSON payload show u
 
 ### Alternative requests
 
-You can send additional information for an interactive overlay. The full setup for that scenario isn’t covered here, but here's what the request body could look like for a quiz.
+You can send additional information for an interactive overlay. The full setup for that scenario isn’t covered here, but here's what the request body could look like for a quiz. You could iterate through the answers for each "question" (here replacing "message" as the key) and supply a button for the viewer to select.
 
 ```http
 POST /echo/post/json HTTP/1.1
 Content-Type: application/json
 
+
 {
-    "message": "Hello from Seattle",
-     "questions" : [
-        {"q1": "answer 1"},
-        {"q2": "answer 2"},
-        {"q3":  "answer 3"},
-        {"q4": "answer4"},
+    "question": "What is the airspeed velocity of an unladen swallow?",
+     "answers" : [
+        {"a1": "A shrubbery"},
+        {"a2": "I am not a witch!"},
+        {"a3":  "An African or European swallow?"},
+        {"a4": "It's just a flesh wound."},
     ]
 }
 ```
