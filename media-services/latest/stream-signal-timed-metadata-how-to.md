@@ -18,7 +18,7 @@ Timed metadata is custom data that is inserted into a live stream. Both the data
 - Add information related to the video content such as speakers, product links, sports player stats, etc.
 - Add metadata about the video such as GPS location, time, etc.
 
-## Delivery
+## Delivery, post URL and request
 
 Azure Media Services delivers the timed metadata as part of the video stream. Timed metadata is sent to a live event via a POST to the endpoint for timed metadata.
 
@@ -51,16 +51,12 @@ Content-Type: application/json
 };
 ```
 
-## Timed metadata limits
+### Timed metadata limits
 
 | Resource | Default Limit | Per |
 | --- | --- | --- |
 | Total message body payload size | 256 kb max | Request |
 | Requests | 2 | per second  |
-
-## Additional information
-
-For more information about the payload and format of timed metadata signals, see [Alliance for Open Media Carriage of ID3 Timed Metadata in the Common Media Application Format (CMAF) specification](https://aomediacodec.github.io/id3-emsg/).
 
 ## Prerequisites
 
@@ -186,3 +182,7 @@ curl https://mylivestream.channel.media.azure.net/618377123f4c49b3937ade20204ca0
 ## Clean up resources
 
 Make sure you shut down the live event and the streaming endpoint and delete resources you don’t intend to keep using or you'll be billed.
+
+## Additional information
+
+For more information about the payload and format of timed metadata signals, see [Alliance for Open Media Carriage of ID3 Timed Metadata in the Common Media Application Format (CMAF) specification](https://aomediacodec.github.io/id3-emsg/).
