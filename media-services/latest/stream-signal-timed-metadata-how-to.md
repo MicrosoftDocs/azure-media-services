@@ -66,7 +66,7 @@ Media Services also supports the Shaka player ID3 [MetadataEvent](https://shaka-
 
 We have provided a sample Shaka player on Stackblitz for you to work with. Use this button to fork the sample code on Stackblitz.com.
 
-[![Open Fork in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/Azure-Samples/media-services-v3-node-tutorials/tree/main/Player/examples/shaka?file=index.html&title=AMS%20Shaka%20Player%20Timed%20Metadata%20Sample)
+[![Open Fork in StackBlitz](./media/buttons/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/Azure-Samples/media-services-v3-node-tutorials/tree/main/Player/examples/shaka?file=index.html&title=AMS%20Shaka%20Player%20Timed%20Metadata%20Sample)
 
 ### Review the HTML page
 
