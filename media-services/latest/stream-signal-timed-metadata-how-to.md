@@ -41,14 +41,14 @@ becomes
 The HTTP Content-type header **MUST** be set to application/json, so make sure this is set correctly.
 
 ```rest
-POST /echo/post/json HTTP/1.1
+POST https://mylivestream.channel.media.azure-test.net/0251458ba5df44b2b807ea02f40fed76/ingest.isml/eventdata
 Content-Type: application/json
 
 {
 
-“customJsonName”: “customJsonValue”;
+“message”: “Hello world!”
 
-};
+}
 ```
 
 ### Timed metadata limits
@@ -62,6 +62,7 @@ Content-Type: application/json
 
 - A Media Services account
 - Familiarity with live streaming from an on-premises encoder. If you haven’t done this before, try live streaming with the [OBS quickstart](live-event-obs-quickstart.md) first. Once you have that setup and running, you should be able to perform the following steps.
+- A tool to test HTTP posts.
 
 ## View the sample
 
@@ -131,14 +132,14 @@ You can use any tool or SDK you like for sending an HTTP POST with the metadata 
 Reminder: The HTTP Content-type header **MUST** be set to application/json. Then, add the information you want to display with the key set as "message". Here is a simple example message:
 
 ```http
-POST /echo/post/json HTTP/1.1
+POST https://mylivestream.channel.media.azure-test.net/0251458ba5df44b2b807ea02f40fed76/ingest.isml/eventdata
 Content-Type: application/json
 
 {
 
-“message”: “Hello world!”;
+“message”: “Hello world!”
 
-};
+}
 
 ```
 
@@ -149,7 +150,7 @@ When you send the request, you should see the message in the JSON payload show u
 You can send additional information for an interactive overlay. The full setup for that scenario isn’t covered here, but here's what the request body could look like for a quiz. You could iterate through the answers for each "question" (here replacing "message" as the key) and supply a button for the viewer to select.
 
 ```http
-POST /echo/post/json HTTP/1.1
+POST https://mylivestream.channel.media.azure-test.net/0251458ba5df44b2b807ea02f40fed76/ingest.isml/eventdata
 Content-Type: application/json
 
 
