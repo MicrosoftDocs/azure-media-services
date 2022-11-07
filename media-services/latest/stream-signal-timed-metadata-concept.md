@@ -60,7 +60,7 @@ Content-Type: application/json
 
 ## Sample and how to
 
-To try out signalling timed metadata, see [How to signal timed metadata](stream-signal-timed-metadata-how-to).
+To try out signalling timed metadata, see [How to signal timed metadata](stream-signal-timed-metadata-how-to.md).
 
 ## Additional information
 
