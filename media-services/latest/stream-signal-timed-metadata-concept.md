@@ -58,7 +58,7 @@ Content-Type: application/json
 | Total message body payload size | 256 kb max | Request |
 | Requests | 2 | per second  |
 
-## Sample and how to
+## Player demo and how to
 
 To try out signalling timed metadata, see [How to signal timed metadata](stream-signal-timed-metadata-how-to.md).
 
