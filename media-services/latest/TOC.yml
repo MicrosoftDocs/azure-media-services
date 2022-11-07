@@ -221,7 +221,6 @@
     - name: States and billing
       href: live-event-states-billing-concept.md
       displayName: billing, live, pass-basic pass-through, standard pass-through, pass through, pass, pass-thru, live, cloud transcode, cloud transcoder, transcoder, live encoding, live encoder, states, live state, running, stopping, starting, stopped
-
   - name: Packaging, origin and delivery
     items:
     - name: Dynamic packaging
