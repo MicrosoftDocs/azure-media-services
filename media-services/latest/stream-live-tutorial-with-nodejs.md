@@ -6,7 +6,7 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.devlang: javascript
 ms.topic: tutorial
-ms.date: 11/01/2022
+ms.date: 11/07/2022
 ms.author: inhenkel
 ---
 
@@ -134,7 +134,7 @@ You might want to specify the following things when you're creating the live eve
   * An IP range that uses an IP address and a Classless Inter-Domain Routing (CIDR) subnet mask (for example, `10.0.0.1/22`)
   * An IP range that uses an IP address and a dotted decimal subnet mask (for example, `10.0.0.1(255.255.252.0)`)
 
-  If no IP addresses are specified and there's no rule definition, then no IP address will be allowed. To allow any IP address, create a rule and set `0.0.0.0/0`. The IP addresses have to be in one of the following formats: IPv4 address with four numbers or a CIDR address range.
+  If no IP addresses are specified and there's no rule definition, then no IP address will be allowed. To allow any IP address, create a rule and set `0.0.0.0/0`. The IP addresses have to be in one of the following formats: IPv4 or IPv6 addresses with four numbers or a CIDR address range.  For more information about using IPv4 or IPv6, see [Restrict access to DRM license and AES key delivery using IP allowlists](drm-content-protection-key-delivery-ip-allow.md).
 * **Autostart on an event as you create it**. When autostart is set to `true`, the live event will start after creation. That means the billing starts as soon as the live event starts running. You must explicitly call `Stop` on the live event resource to halt further billing. For more information, see [Live event states and billing](live-event-states-billing-concept.md).
 
   Standby modes are available to start the live event in a lower-cost "allocated" state that makes it faster to move to a running state. This is useful for situations like hot pools that need to hand out channels quickly to streamers.
