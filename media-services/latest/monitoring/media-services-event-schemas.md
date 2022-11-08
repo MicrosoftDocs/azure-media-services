@@ -4,7 +4,7 @@ description: Learn about the properties that are provided for Media Services eve
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 3/16/2022
+ms.date: 11/8/2022
 ms.author: inhenkel
 ---
 
