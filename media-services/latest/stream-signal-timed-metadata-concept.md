@@ -4,7 +4,7 @@ description: Timed metadata is custom data that is inserted into a live stream. 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 11/07/2022
+ms.date: 11/09/2022
 ms.author: inhenkel
 ---
 
@@ -21,6 +21,8 @@ Timed metadata is custom data that is inserted into a live stream. Both the data
 ## Delivery, post URL and request
 
 Azure Media Services delivers the timed metadata as part of the video stream. Timed metadata is sent to a live event via a POST to the endpoint for timed metadata.
+
+[!INCLUDE [note-timed-metadata-ingestion-rtmp-only](includes/note-timed-metadata-ingestion-rtmp-only.md)]
 
 ### POST URL
 
