@@ -10,7 +10,7 @@ ms.author: inhenkel
 
 # Streaming Locators
 
-To make videos in the output Asset available to clients for playback, you have to create a [Streaming Locator](/rest/api/media/streaminglocators) and then build streaming URLs. To build a URL, you need to concatenate the Streaming Endpoint host name and the Streaming Locator path.
+To make videos in the output Asset available to clients for playback, you have to create a [Streaming Locator](/rest/api/media/streaming-locators) and then build streaming URLs. To build a URL, you need to concatenate the Streaming Endpoint host name and the Streaming Locator path.
 
 The process of creating a **Streaming Locator** is called publishing. By default, the **Streaming Locator** is valid immediately after you make the API calls, and lasts until it is deleted, unless you configure the optional start and end times.
 
