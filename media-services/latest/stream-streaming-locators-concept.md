@@ -4,13 +4,13 @@ description: This article gives an explanation of what Streaming Locators are, a
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/01/2022
+ms.date: 11/11/2022
 ms.author: inhenkel
 ---
 
 # Streaming Locators
 
-To make videos in the output Asset available to clients for playback, you have to create a [Streaming Locator](/rest/api/media/streaminglocators) and then build streaming URLs. To build a URL, you need to concatenate the Streaming Endpoint host name and the Streaming Locator path.
+To make videos in the output Asset available to clients for playback, you have to create a [Streaming Locator](/rest/api/media/streaming-locators) and then build streaming URLs. To build a URL, you need to concatenate the Streaming Endpoint host name and the Streaming Locator path.
 
 The process of creating a **Streaming Locator** is called publishing. By default, the **Streaming Locator** is valid immediately after you make the API calls, and lasts until it is deleted, unless you configure the optional start and end times.
 
@@ -20,7 +20,7 @@ When creating a **Streaming Locator**, you must specify an **Asset** name and a 
 * [Streaming Policies](stream-streaming-policy-concept.md)
 * [Content Key Policies](drm-content-key-policy-concept.md)
 
-You can also specify the start and end time on your Streaming Locator, which will only let your user play the content between these times (for example, between 5/1/2019 to 5/5/2019).
+You can also specify the start and end time on your Streaming Locator, which will only let your user play the content between these times (for example, between 5/1/2022 to 5/5/2022).
 
 ## Considerations
 
