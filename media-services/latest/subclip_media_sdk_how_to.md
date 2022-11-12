@@ -34,17 +34,7 @@ Since you want to exclude the beginning and the end of the video, the values *in
 
 [0---5\|**6**------------------------------------------------**114**\|115-----120]
 
-#### [Browser](#tab/browser)
-
-<!--- Content here  -->
-
-#### [Visual Studio](#tab/visual-studio)
-
-<!--- Content here  -->
-
----
-
-## [Node.JS][#tab/nodejs]
+#### [Node.JS](#tab/node)
 
 ```nodejs
 
@@ -60,7 +50,7 @@ let videoTrackSelection: SelectVideoTrackByAttribute = {
 
 ```
 
-## [Python][#tab/python]
+#### [Python](#tab/python)
 
 ```python
 
@@ -73,7 +63,6 @@ video_track_selection = SelectVideoTrackByAttribute(
 ```
 
 ---
-
 
 ## General steps
 
