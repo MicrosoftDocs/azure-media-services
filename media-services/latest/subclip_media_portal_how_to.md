@@ -10,11 +10,10 @@ ms.author: inhenkel
 
 # How to subclip media in the Azure portal
 
-You may want your viewers to play only a section of a video. There are a few
-ways to accomplish this:
+You may want your viewers to play only a section of a video. There are a few ways to accomplish this:
 
 1. Use an asset filter.
-1. Submit subclipping jobs with the standard encoder on an output asset and use the [CopyVideo](/rest/api/media/transforms/create-or-update?tabs=HTTP#copyvideo) and [CopyAudio](/rest/api/media/transforms/create-or-update?tabs=HTTP#copyaudio) preset to copy the source audio and video from the top bitrate and generate a single clip.
+1. [Submit subclipping jobs](subclip_media_sdk_how_to.md) with the standard encoder on an output asset and use the [CopyVideo](/rest/api/media/transforms/create-or-update?tabs=HTTP#copyvideo) and [CopyAudio](/rest/api/media/transforms/create-or-update?tabs=HTTP#copyaudio) preset to copy the source audio and video from the top bitrate and generate a single clip.
 
 For this example, you will use the asset filter method.
 
@@ -74,3 +73,7 @@ Your player client will use the filter in the query string of the request for th
 
 1. Copy the streaming locator URL that is appropriate for your player.
 2. Use your player client or the Azure Media Player to test the streaming locator. The video should play only the content from 6 seconds to 115 seconds.
+
+## Samples
+
+Ready to try this with an SDK? See using Asset Filters with [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/AssetFilters/index.ts) or [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/AssetFilters/asset-filters.py). For these samples, the timescale is 10000000 not 1. Adjust accordingly.
