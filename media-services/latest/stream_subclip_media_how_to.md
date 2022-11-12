@@ -1,6 +1,6 @@
 ---
-title: How to subclip media in the Azure portal
-description: You may want your viewers to play only a section of a video. There are a few ways to accomplish this. Use an asset filter to create GOP level accurate clips. Submit subclipping jobs with the standard encoder on an output asset and use the CopyVideo and CopyAudio preset to copy the source audio and video from the top bitrate and generate a single clip. For this example, you will use the asset filter method.
+title: How to subclip media
+description: You may want your viewers to play only a section of a video. There are a few ways to accomplish this. Use an asset filter to or submit subclipping jobs with the standard encoder on an output asset.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
@@ -8,14 +8,12 @@ ms.date: 11/11/2022
 ms.author: inhenkel
 ---
 
-# How to subclip media in the Azure portal
+# How to subclip media
 
 You may want your viewers to play only a section of a video. There are a few ways to accomplish this:
 
 1. Use an asset filter.
-1. [Submit subclipping jobs](subclip_media_sdk_how_to.md) with the standard encoder on an output asset using REST or an SDK.
-
-For this example, you will use the asset filter method.
+1. Submit subclipping jobs with the standard encoder on an output asset using REST or an SDK.
 
 ## Prerequisites
 
@@ -28,7 +26,7 @@ For using an asset filter:
   - [Rendition filtering](filters-dynamic-manifest-concept.md#rendition-filtering)
   - [Creating subclips (views) from a live archive](filters-dynamic-manifest-concept.md#creating-subclips-views-from-a-live-archive)
 
-Before you get started on creating an asset filter:
+For setting up the output asset:
 
 1. Create an output asset. You can either:
     1. Create a live event and a live event output using the [OBS quickstart](live-event-obs-quickstart.md) or your preferred method, or
@@ -36,7 +34,7 @@ Before you get started on creating an asset filter:
 1. If using a live event, run your live event for 2 minutes (or so), then stop it. You will be working with the live event output asset.
 1. Read the rest of this article.
 
-## Asset filter example for subclipping
+## Asset filter example
 
 You can use the portal to create an asset filter to limit the content presented to your viewers. For this example, you are going to use one filter to filter out segments of time at the *beginning* and *end* of the video.
 
@@ -47,7 +45,7 @@ Since you want to exclude the beginning and the end of the video, the values *in
 
 [0---5\|**6**------------------------------------------------**114**\|115-----120]
 
-## Create an asset filter in the portal
+### Create an asset filter in the portal
 
 1. Sign into the portal.
 2. Navigate to the Media Services account you are working with.
@@ -60,7 +58,7 @@ Since you want to exclude the beginning and the end of the video, the values *in
 9. In the **End timestamp** field, enter 114.
 10. Select **Save**. The filter will appear in the **Asset filters** list.
 
-## Using the filter in a request
+### Create a streaming locator
 
 Your player client will use the filter in the query string of the request for the asset. To create that URL, create a streaming locator.
 
@@ -69,11 +67,46 @@ Your player client will use the filter in the query string of the request for th
 3. From the **Filters** dropdown list, select the filter you just created.
 4. Select **Add**. The filter will be used when the streaming locator is requested by the player client.
 
+--------------------------------------------
+
+## SDK example
+
+1. To create a subclipping job, first select the top bitrate video from either an encoding output asset or from a live event output archive asset (also called an archive) by selecting the track by attribute. Use the code found in the [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/81874cae4279841cca7fa591bbfb1a43aa7a4560/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts) or [Python](https://github.com/Azure-Samples/media-services-v3-python/edit/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py) versions of Encoding a Live Archive to MP4.
+2. Add the timestamp beginning and ending ranges to the track selection.
+
+#### [Node.JS](#tab/node)
+
+```nodejs
+
+let videoTrackSelection: SelectVideoTrackByAttribute = {
+        odataType:"#Microsoft.Media.SelectVideoTrackByAttribute",
+        attribute: KnownTrackAttribute.Bitrate,
+        filter: KnownAttributeFilter.Top,
+        presentationTimeRange: {
+            startTimestamp: 60000000,
+            endTimestamp: 1140000000,
+          }
+    }
+
+```
+
+#### [Python](#tab/python)
+
+```python
+
+video_track_selection = SelectVideoTrackByAttribute(
+  attribute=TrackAttribute.BITRATE,
+  filter=AttributeFilter.TOP,
+  presentation_time_range=PresentationTimeRange(start_timestamp=60000000, end_timestamp=1140000000)
+)
+
+```
+
+---
+
+3. Create a streaming locator for the asset.
+
 ## Test the filter
 
-1. Copy the streaming locator URL that is appropriate for your player.
+1. Copy or GET the streaming locator URL that is appropriate for your player.
 2. Use your player client or the Azure Media Player to test the streaming locator. The video should play only the content from 6 seconds to 115 seconds.
-
-## Samples
-
-Ready to try this with an SDK? See using Asset Filters with [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/AssetFilters/index.ts) or [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/AssetFilters/asset-filters.py). For these samples, the timescale is 10000000 not 1. Adjust accordingly.
