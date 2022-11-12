@@ -13,7 +13,7 @@ ms.author: inhenkel
 You may want your viewers to play only a section of a video. There are a few ways to accomplish this:
 
 1. Use an [asset filter](subclip_media_portal_how_to.md).
-1. Submit subclipping jobs with the standard encoder on an output asset and use the [CopyVideo](/rest/api/media/transforms/create-or-update?tabs=HTTP#copyvideo) and [CopyAudio](/rest/api/media/transforms/create-or-update?tabs=HTTP#copyaudio) preset to copy the source audio and video from the top bitrate and generate a single clip.
+1. Submit a subclipping job with the standard encoder on an output asset using REST or an SDK.
 
 For this example, you will use the subclipping job submission method using an SDK.
 
@@ -36,9 +36,8 @@ Since you want to exclude the beginning and the end of the video, the values *in
 
 ## General steps
 
-1. To create a subclipping job, first select the top bitrate video from either an encoding output asset or from a live event output archive asset (also called an archive) by using an asset filter. Use the code found in the [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/81874cae4279841cca7fa591bbfb1a43aa7a4560/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts) or [Python](https://github.com/Azure-Samples/media-services-v3-python/edit/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py) versions of Encoding a Live Archive to MP4.
-1. Add the timestamp beginning and ending ranges to the filter.
-
+1. To create a subclipping job, first select the top bitrate video from either an encoding output asset or from a live event output archive asset (also called an archive) by selecting the track by attribute. Use the code found in the [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/81874cae4279841cca7fa591bbfb1a43aa7a4560/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts) or [Python](https://github.com/Azure-Samples/media-services-v3-python/edit/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py) versions of Encoding a Live Archive to MP4.
+1. Add the timestamp beginning and ending ranges to the track selection.
 
 ### [Node.JS][#tab/nodejs]
 
