@@ -41,9 +41,7 @@ You can use the portal to create an asset filter to limit the content presented 
 So, say the media’s entire length is 2 minutes or 120 seconds. The beginning shows some pre-production testing that is 5 seconds long and a “Thanks for
 watching” animation that is 5 seconds long at the end.
 
-Since you want to exclude the beginning and the end of the video, the values *in between* the beginning and end values are what you will use for the start timestamp (6) and end timestamp (114). To visually represent that:
-
-[0---5\|**6**------------------------------------------------**114**\|115-----120]
+Since you want to exclude the beginning and the end of the video, the values *in between* the beginning and end values are what you will use for the start timestamp (6) and end timestamp (114).
 
 ### Create an asset filter in the portal
 
@@ -66,8 +64,9 @@ Your player client will use the filter in the query string of the request for th
 2. In the **Name field**, change the streaming locator name to *5offbegend-loc* or something that tells you which filter was used for the streaming locator.
 3. From the **Filters** dropdown list, select the filter you just created.
 4. Select **Add**. The filter will be used when the streaming locator is requested by the player client.
-
---------------------------------------------
+<br/>
+<br/>
+<hr>
 
 ## SDK example
 
