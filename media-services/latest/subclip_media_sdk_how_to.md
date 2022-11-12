@@ -42,6 +42,7 @@ Since you want to exclude the beginning and the end of the video, the values *in
 ## [Node.JS][#tab/nodejs]
 
 ```nodejs
+
 let videoTrackSelection: SelectVideoTrackByAttribute = {
         odataType:"#Microsoft.Media.SelectVideoTrackByAttribute",
         attribute: KnownTrackAttribute.Bitrate,
@@ -51,6 +52,7 @@ let videoTrackSelection: SelectVideoTrackByAttribute = {
             endTimestamp: 1140000000,
           }
     }
+
 ```
 
 ## [Python][#tab/python]

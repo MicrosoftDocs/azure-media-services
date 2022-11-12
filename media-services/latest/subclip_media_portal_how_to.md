@@ -13,7 +13,7 @@ ms.author: inhenkel
 You may want your viewers to play only a section of a video. There are a few ways to accomplish this:
 
 1. Use an asset filter.
-1. [Submit subclipping jobs](subclip_media_sdk_how_to.md) with the standard encoder on an output asset and use the [CopyVideo](/rest/api/media/transforms/create-or-update?tabs=HTTP#copyvideo) and [CopyAudio](/rest/api/media/transforms/create-or-update?tabs=HTTP#copyaudio) preset to copy the source audio and video from the top bitrate and generate a single clip.
+1. [Submit subclipping jobs](subclip_media_sdk_how_to.md) with the standard encoder on an output asset using REST or an SDK.
 
 For this example, you will use the asset filter method.
 
