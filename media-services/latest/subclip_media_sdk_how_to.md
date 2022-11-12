@@ -34,6 +34,11 @@ Since you want to exclude the beginning and the end of the video, the values *in
 
 [0---5\|**6**------------------------------------------------**114**\|115-----120]
 
+## General steps
+
+1. To create a subclipping job, first select the top bitrate video from either an encoding output asset or from a live event output archive asset (also called an archive) by selecting the track by attribute. Use the code found in the [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/81874cae4279841cca7fa591bbfb1a43aa7a4560/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts) or [Python](https://github.com/Azure-Samples/media-services-v3-python/edit/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py) versions of Encoding a Live Archive to MP4.
+1. Add the timestamp beginning and ending ranges to the track selection.
+
 #### [Node.JS](#tab/node)
 
 ```nodejs
@@ -63,13 +68,6 @@ video_track_selection = SelectVideoTrackByAttribute(
 ```
 
 ---
-
-## General steps
-
-1. To create a subclipping job, first select the top bitrate video from either an encoding output asset or from a live event output archive asset (also called an archive) by selecting the track by attribute. Use the code found in the [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/81874cae4279841cca7fa591bbfb1a43aa7a4560/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts) or [Python](https://github.com/Azure-Samples/media-services-v3-python/edit/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py) versions of Encoding a Live Archive to MP4.
-1. Add the timestamp beginning and ending ranges to the track selection.
-
-
 
 1. Create a streaming locator for the asset.
 
