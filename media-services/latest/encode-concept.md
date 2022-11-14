@@ -67,6 +67,10 @@ The following built-in presets are currently supported:
 
 To see the most up-to-date presets list, see [built-in presets to be used for encoding videos](/rest/api/media/transforms/createorupdate#encodernamedpreset).
 
+## Custom presets
+
+Media Services fully supports customizing all values in presets to meet your specific encoding needs and requirements.
+
 ### StandardEncoderPreset
 
 [StandardEncoderPreset](/rest/api/media/transforms/createorupdate#standardencoderpreset) describes settings to be used when encoding the input video with the Standard Encoder. Use this preset when customizing Transform presets.
@@ -77,10 +81,6 @@ When creating custom presets, the following considerations apply:
 
 - All values for height and width on AVC content must be a multiple of four.
 - In Azure Media Services v3, all of the encoding bitrates are in bits per second. This is different from the presets with our v2 APIs, which used kilobits/second as the unit. For example, if the bitrate in v2 was specified as 128 (kilobits/second), in v3 it would be set to 128000 (bits/second).
-
-### Customizing presets
-
-Media Services fully supports customizing all values in presets to meet your specific encoding needs and requirements.
 
 ## Preset schema
 
