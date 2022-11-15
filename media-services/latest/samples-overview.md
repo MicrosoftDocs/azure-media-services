@@ -4,7 +4,7 @@ description: This article is a listing of all of the Media Services code samples
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 10/04/2022
+ms.date: 11/15/2022
 ms.author: inhenkel
 ---
 
@@ -38,6 +38,7 @@ You'll find description and links to the samples you may be looking for in each 
 |[List the streaming locators on an asset using filters](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts)| Use filters to list the streaming locators attached to your assets.|
 |[List tracks in an asset](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts)| Use the tracks collection to list all of the track names and track types (audio, video, or text) available on an asset|
 |[Add a WebVTT/IMSC1/TTML subtitle or caption to an existing asset](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-WebVTT-tracks.ts)| Use the tracks API on an Asset to add a new WebVTT or TTML/IMSC1 text profile caption or subtitle to an existing asset|
+|[Add an additional audio track to an existing asset using the tracks API](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-audio-language-track.ts)| Use the tracks API on an Asset to add an additional audio language or descriptive audio track to an existing asset. This sample demonstrates how to upload, encode using content aware encoding, and then late bind an additional audio track for a new language to the asset.|
 | **Streaming** ||
 |[Live stream with standard passthrough](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/Standard_Passthrough_Live_Event/index.ts)| Standard passthrough live streaming example. |
 |[Live stream with standard passthrough with Event Hubs](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/Standard_Passthrough_Live_Event_with_EventHub/index.ts)| Demonstrates how to use Event Hubs to subscribe to events on the live streaming channel. Events include encoder connections, disconnections, heartbeat, latency, discontinuity, and drift issues. |
@@ -72,6 +73,8 @@ You'll find description and links to the samples you may be looking for in each 
 | [Stitch and edit two assets together](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Stitch_Two_Assets/) | This sample demonstrates how to stitch and edit together two or more assets into a single MP4 file using the JobInputSequence as part of a job submission.|
 | **Analytics** ||
 | [Basic Audio Analytics with per-job language override](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/AudioAnalytics/index.ts)|This sample illustrates how to create a audio analyzer transform using the basic mode.  It also shows how you can override the preset language on a per-job basis to avoid creating a transform for every language.  It also shows how to upload a media file to an input asset, submit a job with the transform and download the results for verification.|
+| **Player** ||
+| [Shaka player with Timed Metadata for live event interactivity](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Player/examples/shaka)| This sample shows how to use the Google Shaka player with Low latency HLS streams to receive timed metadata events and display interactive information overlayed on the video element. This can be used to build interactive ads, quiz shows, polling, and other solutions that require events to be triggered in your web page or application during a live stream.|
 
 ## [Python](#tab/python/)
 
