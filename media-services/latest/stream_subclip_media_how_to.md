@@ -4,7 +4,7 @@ description: You may want your viewers to play only a section of a video. There 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 11/11/2022
+ms.date: 11/15/2022
 ms.author: inhenkel
 ---
 
