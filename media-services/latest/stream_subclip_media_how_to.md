@@ -75,15 +75,15 @@ Your player client will use the filter in the query string of the request for th
 
 #### [Node.JS](#tab/node)
 
-:::code language="nodejs" source="..~/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts" id="TopBitRate":::
+:::code language="nodejs" source="~/../media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts" id="TopBitRate":::
 
-:::code language="nodejs" source="..~/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts" id="SubclipJobInput":::
+:::code language="nodejs" source="~/../media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts" id="SubclipJobInput":::
 
 #### [Python](#tab/python)
 
-:::code language="nodejs" source="..~/media-services-v3-python/blob/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="TopBitRate":::
+:::code language="nodejs" source="~/../media-services-v3-python/blob/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="TopBitRate":::
 
-:::code language="nodejs" source="..~/media-services-v3-python/blob/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="SubclipJobInput":::
+:::code language="nodejs" source="~/../media-services-v3-python/blob/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="SubclipJobInput":::
 
 ---
 
