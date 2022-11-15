@@ -75,31 +75,15 @@ Your player client will use the filter in the query string of the request for th
 
 #### [Node.JS](#tab/node)
 
-```nodejs
+:::code language="nodejs" source="..~/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts" id="TopBitRate":::
 
-let videoTrackSelection: SelectVideoTrackByAttribute = {
-        odataType:"#Microsoft.Media.SelectVideoTrackByAttribute",
-        attribute: KnownTrackAttribute.Bitrate,
-        filter: KnownAttributeFilter.Top,
-        presentationTimeRange: {
-            startTimestamp: 60000000,
-            endTimestamp: 1140000000,
-          }
-    }
-
-```
+:::code language="nodejs" source="..~/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts" id="SubclipJobInput":::
 
 #### [Python](#tab/python)
 
-```python
+:::code language="nodejs" source="..~/media-services-v3-python/blob/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="TopBitRate":::
 
-video_track_selection = SelectVideoTrackByAttribute(
-  attribute=TrackAttribute.BITRATE,
-  filter=AttributeFilter.TOP,
-  presentation_time_range=PresentationTimeRange(start_timestamp=60000000, end_timestamp=1140000000)
-)
-
-```
+:::code language="nodejs" source="..~/media-services-v3-python/blob/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="SubclipJobInput":::
 
 ---
 
