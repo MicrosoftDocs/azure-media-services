@@ -81,9 +81,9 @@ Your player client will use the filter in the query string of the request for th
 
 #### [Python](#tab/python)
 
-:::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="TopBitRate":::
+:::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" :::
 
-:::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="SubclipJobInput":::
+:::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" :::
 
 ---
 
