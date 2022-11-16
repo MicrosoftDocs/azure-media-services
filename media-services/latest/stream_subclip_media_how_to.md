@@ -93,4 +93,4 @@ Your player client will use the filter in the query string of the request for th
 
 ---
 
-3. Once the job is complete, create a streaming locator for the output asset.
+3. Once the job is complete, create a streaming locator for the output asset, get the URL appropriate for your player client and test it.
