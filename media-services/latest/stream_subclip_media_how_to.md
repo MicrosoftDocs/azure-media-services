@@ -1,6 +1,6 @@
 ---
 title: How to subclip media
-description: You may want your viewers to play only a section of a video. There are a few ways to accomplish this. Use an asset filter to or submit subclipping jobs with the standard encoder on an output asset.
+description: You may want your viewers to play only a section of a video. There are a couple of ways to accomplish this. - Use an asset filter. - Submit subclipping jobs with the standard encoder on an output asset using an SDK.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
@@ -10,10 +10,10 @@ ms.author: inhenkel
 
 # How to subclip media
 
-You may want your viewers to play only a section of a video. There are a few ways to accomplish this:
+You may want your viewers to play only a section of a video. There are a couple ways to accomplish this:
 
 1. Use an asset filter.
-1. Submit subclipping jobs with the standard encoder on an output asset using REST or an SDK.
+1. Submit subclipping jobs with the standard encoder on an output asset using an SDK.
 
 ## Prerequisites
 
