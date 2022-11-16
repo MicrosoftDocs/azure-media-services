@@ -64,6 +64,12 @@ Your player client will use the filter in the query string of the request for th
 2. In the **Name field**, change the streaming locator name to *5offbegend-loc* or something that tells you which filter was used for the streaming locator.
 3. From the **Filters** dropdown list, select the filter you just created.
 4. Select **Add**. The filter will be used when the streaming locator is requested by the player client.
+
+## Test the filter
+
+1. Copy or GET the streaming locator URL that is appropriate for your player.
+2. Use your player client or the Azure Media Player to test the streaming locator. The video should play only the content from 6 seconds to 115 seconds.
+
 <br/>
 <br/>
 <hr>
@@ -83,13 +89,8 @@ Your player client will use the filter in the query string of the request for th
 
 :::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="TopBitRate":::
 
-:::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="SubclipJobInput" :::
+:::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="SubclipJobInput":::
 
 ---
 
 3. Create a streaming locator for the asset.
-
-## Test the filter
-
-1. Copy or GET the streaming locator URL that is appropriate for your player.
-2. Use your player client or the Azure Media Player to test the streaming locator. The video should play only the content from 6 seconds to 115 seconds.
