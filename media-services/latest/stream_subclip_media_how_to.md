@@ -70,8 +70,6 @@ Your player client will use the filter in the query string of the request for th
 1. Copy or GET the streaming locator URL that is appropriate for your player.
 2. Use your player client or the Azure Media Player to test the streaming locator. The video should play only the content from 6 seconds to 115 seconds.
 
-<br/>
-<br/>
 <hr>
 
 ## SDK example
