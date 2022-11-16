@@ -4,7 +4,7 @@ description: You may want your viewers to play only a section of a video. There 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 11/16/2022
 ms.author: inhenkel
 ---
 
@@ -91,4 +91,6 @@ Your player client will use the filter in the query string of the request for th
 
 :::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="SubclipJobInput":::
 
-3. Create a streaming locator for the asset.
+---
+
+3. Once the job is complete, create a streaming locator for the output asset.
