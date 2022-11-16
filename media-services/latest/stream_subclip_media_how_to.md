@@ -74,18 +74,28 @@ Your player client will use the filter in the query string of the request for th
 
 ## SDK example
 
-1. To create a subclipping job, first select the top bitrate video from either an encoding output asset or from a live event output archive asset (also called an archive) by selecting the track by attribute. Use the code found in the [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/81874cae4279841cca7fa591bbfb1a43aa7a4560/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts) or [Python](https://github.com/Azure-Samples/media-services-v3-python/edit/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py) versions of Encoding a Live Archive to MP4.
-2. Add the timestamp beginning and ending ranges to the track selection.
+Fork or download the Encoding a Live Archive to MP4 sample for [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/81874cae4279841cca7fa591bbfb1a43aa7a4560/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts) or [Python](https://github.com/Azure-Samples/media-services-v3-python/edit/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py).
+
+Review the parts of the code that create a subclipping job:
+
 
 #### [Node.JS](#tab/node)
 
+1. To create a subclipping job, first select the top bitrate video from either an encoding output asset or from a live event output archive asset (also called an archive) by selecting the track by attribute.
+
 :::code language="nodejs" source="~/../media-services-v3-node-tutorials/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts" id="TopBitRate":::
+
+2. Add the timestamp beginning and ending ranges to the track selection.
 
 :::code language="nodejs" source="~/../media-services-v3-node-tutorials/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts" id="SubclipJobInput":::
 
 #### [Python](#tab/python)
 
+1. To create a subclipping job, first select the top bitrate video from either an encoding output asset or from a live event output archive asset (also called an archive) by selecting the track by attribute.
+
 :::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="TopBitRate":::
+
+2. Add the timestamp beginning and ending ranges to the track selection.
 
 :::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="SubclipJobInput":::
 
