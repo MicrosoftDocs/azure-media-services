@@ -419,6 +419,8 @@
   - name: Autoscale a streaming endpoint
     href: streaming-endpoint-autoscaling-how-to.md
     displayName: autoscale, Azure Autoscale, streaming endpoint
+  - name: Set CDN profile rules
+    href: stream-set-cdn-profile-rules-how-to.md
   - name: .NET
     items:
     - name: Offline FairPlay for iOS
