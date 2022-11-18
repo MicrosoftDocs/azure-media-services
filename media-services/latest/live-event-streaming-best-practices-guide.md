@@ -41,7 +41,7 @@ You are in control of the settings of the source encoder settings before the RTM
 
 5. **Send content that is no higher in resolution than what you plan to stream.** For example, if you're using 720p standard encoding live events, send a stream that is already at 720p.
 
-6. **Keep your framerate at 30fps or lower unless using pass-through live events.** While we support 60 fps input for live events, our encoding live event output is still not above 30 fps. For [Low Latency HLS](live-event-latency-reference.md), we recommend the fixed frame rate and the max frame duration should not exceed 0.5 seconds for best experience.
+6. **Keep your framerate at 30fps or lower unless using pass-through live events.** While we support 60 fps input for live events, our encoding live event output is still not above 30 fps. For [Low Latency HLS](live-event-latency-reference.md), the fixed frame rate and the max frame duration should not exceed 0.5 seconds for the best experience.
 
 
 ## Configuration of the Azure Media Services live event
