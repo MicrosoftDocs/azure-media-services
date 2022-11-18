@@ -43,7 +43,6 @@ You are in control of the settings of the source encoder settings before the RTM
 
 6. **Keep your framerate at 30fps or lower unless using pass-through live events.** While we support 60 fps input for live events, our encoding live event output is still not above 30 fps. For [Low Latency HLS](live-event-latency-reference.md), the fixed frame rate is recommended, and the max frame duration should not exceed 0.5 seconds for the best experience.
 
-
 ## Configuration of the Azure Media Services live event
 
 Here are some configurations that will help you reduce the latency in our pipeline:
@@ -74,6 +73,8 @@ Streaming endpoints are the origin servers that deliver the live and VOD streami
 We recommend using Azure CDN which is provided by Verizon (Standard or Premium). We've optimized the integration experience so that a customer could configure this CDN with a single select in the Azure portal. Be sure to turn on Origin Shield and Streaming Optimizations for your CDN endpoint whenever you start your streaming endpoint.
 
 Our customers also have good experiences bringing their own CDN. Ensure that measures are taken on the CDN to shield the origin from excessive traffic.
+
+You can also improve performance by configuring rules for the CDN profile. See [How to set rules for a CDN profile](stream-set-cdn-profile-rules-how-to.md).
 
 ## Streaming endpoint scaling
 

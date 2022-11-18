@@ -4,7 +4,7 @@ description: Learn about streaming content with CDN integration, as well as pref
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/24/2022
+ms.date: 11/18/2022
 ms.author: inhenkel
 ---
 
@@ -21,10 +21,12 @@ The popular content will be served directly from the CDN cache as long as the vi
 You also need to consider how adaptive streaming works. Each individual video fragment is cached as its own entity. For example, imagine the first time a certain video is watched. If the viewer skips around watching only a few seconds here and there, only the video fragments associated with what the person watched get cached in CDN. With adaptive streaming, you typically have 5 to 7 different bitrates of video. If one person is watching one bitrate and another person is watching a different bitrate, then they're each cached separately in the CDN. Even if two people are watching the same bitrate, they could be streaming over different protocols. Each protocol (HLS, MPEG-DASH, Smooth Streaming) is cached separately. So each bitrate and protocol are cached separately and only those video fragments that have been requested are cached.
 
 Except for the test environment, we recommend that CDN be enabled for both Standard and Premium streaming endpoints. Each type of streaming endpoint has a different supported throughput limit.
+
 It is difficult to make a precise calculation for the maximum number of concurrent streams supported by a streaming endpoint as there are  various factors to take into account. These include:
 
 - Maximum bitrates used for streaming
 - Player pre-buffer and switching behavior. Players try to burst segments from an origin and use load speed to calculate adaptive bitrate switching. If a streaming endpoint gets close to saturation, response times can vary and players start switching to lower quality. As this is reducing load on the Streaming Endpoint players, scale back to higher quality creating unwanted switching triggers.
+
 Overall it is safe to estimate the maximum concurrent streams by taking the maximum streaming endpoint throughput and divide this by the maximum bitrate (assuming all players use the highest bitrate.) For example, you can have a Standard streaming endpoint which is limited to 600 Mbps and the highest bitrate of 3Mbp. In this case, approximately 200 concurrent streams are supported at the top bitrate. Remember to factor in the audio bandwidth requirements as well. Although an audio stream may only be streaming at 128 kps, the total streaming adds up quickly when you multiply it by the number of concurrent streams.
 
 This topic discusses enabling [CDN integration](#enable-azure-cdn-integration). It also explains prefetching (active caching) and the [Origin-Assist CDN-Prefetch](#origin-assist-cdn-prefetch) concept.
@@ -54,22 +56,25 @@ Azure Media Services integration with Azure CDN is implemented on **Azure CDN fr
 
 ## Determine if a DNS change was made
 
-You can determine if DNS change was made on a streaming endpoint (the traffic is being directed to the Azure CDN) by using <https://www.digwebinterface.com>. If you see azureedge.net domain names in the results, the traffic is now being pointed to the CDN.
+You can determine if a DNS change was made on a streaming endpoint (the traffic is being directed to the Azure CDN) by using <https://www.digwebinterface.com>. If you see `azureedge.net` domain names in the results, the traffic is now being pointed to the CDN.
 
 ## Origin-Assist CDN-Prefetch
 
-CDN caching is a reactive process. If CDN can predict what the next object will be requested, CDN can proactively request and cache the next object. With this process, you can achieve a cache-hit for all (or most) of the objects, which improves performance.
+CDN caching is a reactive process. If the CDN can predict the next object that will be requested, the CDN can proactively request and cache the next object. With this process, you can achieve a cache-hit for all (or most) of the objects, which improves performance.
 
-The concept of prefetching strives to position objects at the "edge of the internet" in anticipation that these will be requested by the player imminently, thereby reducing the time to deliver that object to the player.
+Prefetching strives to position objects at the "edge of the Internet" anticipating that the objects will be requested by the player imminently, thereby reducing the time to deliver that object to the player.
 
 To achieve this goal, a streaming endpoint (origin) and CDN need to work hand-in-hand in a couple ways:
 
-- The Media Services origin needs to have the "intelligence" (Origin-Assist) to inform CDN the next object to prefetch.
-- CDN does the prefetch and caching (CDN-prefetch part). CDN also needs to have the "intelligence" to inform the origin whether it's a prefetch or a regular fetch, handle the 404 responses, and a way to avoid endless prefetch loop.
+- The Media Services origin needs to have the "intelligence" (Origin-Assist) to tell the CDN which object to prefetch next.
+- The CDN does the prefetch and caching (CDN-prefetch part). The CDN also needs to have the "intelligence" to:
+  - tell the origin whether it's a prefetch or a regular fetch
+  - handle the 404 responses
+  - and a way to avoid endless prefetch loop
 
 ### Benefits
 
-The benefits of the *Origin-Assist CDN-Prefetch* feature includes:
+The benefits of the *Origin-Assist CDN-Prefetch* feature include:
 
 - Prefetch improves video playback quality by pre-positioning anticipated video segments at the edge during playback, reducing latency to the viewer, and improving video segment download times. This results in faster video start-up time and lower rebuffering occurrences.
 - This concept is applicable to general CDN-origin scenario and isn't limited to media.
@@ -97,12 +102,12 @@ To see part of the header exchange in action, you can try the following steps:
 
 The `Origin-Assist CDN-Prefetch` feature supports the following streaming protocols for live and on-demand streaming:
 
-* HLS v3
-* HLS v4
-* HLS CMAF
-* DASH (CSF)
-* DASH (CMAF)
-* Smooth streaming
+- HLS v3
+- HLS v4
+- HLS CMAF
+- DASH (CSF)
+- DASH (CMAF)
+- Smooth streaming
 
 ### FAQs
 
@@ -145,3 +150,7 @@ The `Origin-Assist CDN-Prefetch` feature supports the following streaming protoc
 * Does this feature work with UHD/HEVC contents?
 
     Yes.
+
+## How-tos, tutorials and samples
+
+[How to set rules for a CDN profile](stream-set-cdn-profile-rules-how-to.md)
