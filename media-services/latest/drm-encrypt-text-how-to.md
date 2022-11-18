@@ -12,9 +12,7 @@ ms.service: media-services
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-When enabling AES-128 clear key encryption, text tracks can be configured to be encrypted using a full "envelope" encryption technique that follows the same encryption pattern as the audio and video segments. These segments can then be decrypted by a client application after requesting the decryption key from the Media Services Key Delivery service using an authenticated JWT token. This method is supported by the Azure Media Player, but may not be supported on all devices and can require some client-side development work to make sure it succeeds on all platforms. This article shows you how to encrypt captions using AES-128 Clear Key encryption.
-
-It isn't necessary to do anything special with the text tracks. If you use AES-128 clear key encryption with the asset, the captions will also be encrypted.
+It isn't necessary to do anything special with the text tracks (captions, subtitles, etc.) to encrypt them. If you use AES-128 clear key encryption with the asset, the captions will also be encrypted.
 
 ## Prerequisites
 
