@@ -153,4 +153,4 @@ The `Origin-Assist CDN-Prefetch` feature supports the following streaming protoc
 
 ## How-tos, tutorials and samples
 
-[How to set CDN profile rules](stream-set-cdn-profile-rules-how-to.md)
+[How to set rules for a CDN profile](stream-set-cdn-profile-rules-how-to.md)
