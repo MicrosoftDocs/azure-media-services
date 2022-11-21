@@ -28,7 +28,7 @@ The following caption/subtitle formats are supported by Media Services
 
 Media Services allows you to provide text tracks in WebVTT or TTML format. You can update the manifest file to [tell the player about the text tracks with the portal](amp-captions-tutorial.md) or with the Tracks API available as REST or with the SDKs.
 
-See the [Tracks API article]() for more information about updating asset tracks programmatically.
+See the [Tracks API article](tracks-concept.md) for more information about updating asset tracks programmatically.
 
 ## How-tos, tutorials and quickstarts
 
