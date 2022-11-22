@@ -6,7 +6,7 @@ ms.author: inhenkel
 manager: femilia
 ms.topic: how-to
 ms.service: media-services
-ms.date: 07/27/2022
+ms.date: 11/22/2022
 ---
 
 # Monitor Media Services
@@ -72,6 +72,7 @@ Media services has the following metric dimensions.  They are self-explantory ba
 - HttpStatusCode
 - ErrorCode
 - TrackName
+- KeyType
 
 ### Analyzing metrics
 
