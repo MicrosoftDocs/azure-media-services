@@ -224,6 +224,20 @@ metrics for any related entities. A combination of these metrics can be used to
 create the rule for autoscaling. For more information see [Autoscale Media Services streaming endpoints](streaming-endpoint-autoscaling-how-to.md).
 Note that autoscaling can still take time, and is not instantaneous, so be sure to allow enough time for resources to scale and deploy in your architecture designs.  Streaming endpoints take time to spin up, so it is recommended to use lower value trigger points for CPU utilization and network bandwidth egress to trigger a scale-up.
 
+## May 2022
+
+### Closed captioning 708 and 608 HLS manifest decoration support
+
+Live streams that are ingested with embedded 608/708 captions in the elementary stream are now properly attributed in the HLS manifest using the EXT-X-MEDIA tag with a TYPE=CLOSED-CAPTIONS. 
+This is in compliance with [RFC-8216 section 4.3.4.1](https://www.rfc-editor.org/rfc/rfc8216).
+
+For example, a live stream with 608 and 708 closed captions would show up in the HLS manifest: 
+
+```
+   #EXT-X-MEDIA:TYPE=CLOSED-CAPTIONS,GROUP-ID="cc",NAME="CEA708_CC",DEFAULT=YES,INSTREAM-ID="SERVICE1"
+   #EXT-X-MEDIA:TYPE=CLOSED-CAPTIONS,GROUP-ID="cc",NAME="CEA608_CC",INSTREAM-ID="CC1"
+```
+
 ## April 2022
 
 ### Live transcriptions
