@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: IngridAtMicrosoft
   ms.author: inhenkel
-  ms.date: 08/18/2021 #Required; mm/dd/yyyy format.
+  ms.date: 12/05/2022 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -62,8 +62,10 @@ landingContent:
             url: samples-overview.md
           - text: .NET SDK samples
             url: https://github.com/Azure-Samples/media-services-v3-dotnet
-          - text: Java SDK samples
-            url: https://github.com/Azure-Samples/media-services-v3-java
+          - text: Node.JS samples
+            url: https://github.com/Azure-Samples/media-services-v3-node-tutorials
+          - text: Python samples
+            url: https://github.com/IngridAtMicrosoft/media-services-v3-python
       - linkListType: reference
         links:
           - text: Azure CLI
@@ -72,23 +74,21 @@ landingContent:
             url: /rest/api/media/
           - text: .NET
             url: /dotnet/api/overview/azure/mediaservices/management
-          - text: Java
-            url: /java/api/overview/azure/mediaservices/management
+          - text: Node.JS
+            url: /javascript/api/overview/azure/arm-mediaservices-readme?view=azure-node-latest
+          - text: Python
+            url: /python/api/azure-mgmt-media/azure.mgmt.media?view=azure-python&preserve-view=true
 
 # Card
-  - title: Stream live
+  - title: Live streaming
     linkLists:
       - linkListType: concept
         links:
           - text: Live streaming
             url: stream-live-streaming-concept.md
-      - linkListType: tutorial
-        links:
-          - text: Stream live
-            url: stream-live-tutorial-with-api.md
 
 # Card
-  - title: Stream on demand
+  - title: Video on demand (VOD)
     linkLists:
       - linkListType: concept
         links:
@@ -108,19 +108,3 @@ landingContent:
         links:
           - text: Encrypt dynamically with AES-128
             url: drm-playready-license-template-concept.md
-
-# Card
-  - title: Analyze content
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Media analytics
-            url: analyze-video-audio-files-concept.md
-          - text: Compliance, Privacy and Security
-            url: analyze-video-audio-files-concept.md#compliance-privacy-and-security
-          - text: Azure Video Analyzer (preview) documentation
-            url: /azure/azure-video-analyzer/video-analyzer-docs/overview
-      - linkListType: tutorial
-        links:
-          - text: Redact faces in videos
-            url: analyze-face-redaction-concept.md
