@@ -19,6 +19,18 @@ To stay up to date with the most recent developments, this article provides you 
 * Bug fixes
 * Deprecated functionality
 
+## November 2022
+
+Media Services now removes the audio rendition from HLS Variant Playlist by default to prevent client from falling back to audio only under poor network situation.
+
+In order to change the behavior, you can use the URL tag `[audio-only=true]` to write an audio rendition in HLS Variant Playlist.
+
+For example:
+
+http://host/locator/asset.ism/manifest(format=m3u8-aapl,audio-only=true)
+
+This was due to a change in the HLS authoring guidelines that now state "You MUST have no audio-only variants listed in the Multivariant playlist"
+
 ## September 2022
 
 ### API Release: Updated 2022-08-01 ARM REST API
@@ -228,10 +240,10 @@ Note that autoscaling can still take time, and is not instantaneous, so be sure 
 
 ### Closed captioning 708 and 608 HLS manifest decoration support
 
-Live streams that are ingested with embedded 608/708 captions in the elementary stream are now properly attributed in the HLS manifest using the EXT-X-MEDIA tag with a TYPE=CLOSED-CAPTIONS. 
+Live streams that are ingested with embedded 608/708 captions in the elementary stream are now properly attributed in the HLS manifest using the EXT-X-MEDIA tag with a TYPE=CLOSED-CAPTIONS.
 This is in compliance with [RFC-8216 section 4.3.4.1](https://www.rfc-editor.org/rfc/rfc8216).
 
-For example, a live stream with 608 and 708 closed captions would show up in the HLS manifest: 
+For example, a live stream with 608 and 708 closed captions would show up in the HLS manifest:
 
 ```
    #EXT-X-MEDIA:TYPE=CLOSED-CAPTIONS,GROUP-ID="cc",NAME="CEA708_CC",DEFAULT=YES,INSTREAM-ID="SERVICE1"
