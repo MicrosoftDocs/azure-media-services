@@ -419,10 +419,6 @@
   - name: Autoscale a streaming endpoint
     href: streaming-endpoint-autoscaling-how-to.md
     displayName: autoscale, Azure Autoscale, streaming endpoint
-  - name: Set CDN profile rules
-    href: stream-set-cdn-profile-rules-how-to.md
-  - name: Enable Origin Shield
-    href: stream-enable-origin-shield-how-to.md
   - name: .NET
     items:
     - name: Offline FairPlay for iOS
@@ -450,6 +446,14 @@
     - name: Signal timed metadata
       href: stream-signal-timed-metadata-how-to.md
       displayName: Signal timed metadata, metadata, streaming
+  - name: Configure a CDN
+    items:
+    - name: Set CDN profile rules
+      href: stream-set-cdn-profile-rules-how-to.md
+      displayName: CDN, profile, rules, low latency, streaming
+    - name: Enable Origin Shield
+      href: stream-enable-origin-shield-how-to.md
+      displayName: origin shield, CDN, profile, rules, low latency, streaming
   - name: Asset tracks
     items:
     - name: Edit asset tracks
