@@ -27,7 +27,7 @@ In order to change the behavior, you can use the URL tag `[audio-only=true]` to 
 
 For example:
 
-http://host/locator/asset.ism/manifest(format=m3u8-aapl,audio-only=true)
+`http://host/locator/asset.ism/manifest(format=m3u8-aapl,audio-only=true)`
 
 This was due to a change in the HLS authoring guidelines that now state "You MUST have no audio-only variants listed in the Multivariant playlist"
 
