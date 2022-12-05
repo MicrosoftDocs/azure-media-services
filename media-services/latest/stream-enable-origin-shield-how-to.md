@@ -17,7 +17,7 @@ If a live event expects a large audience, or the audience is geographically loca
 ## Prerequisites
 
 - Read the article [Scale Streaming with a CDN](stream-scale-streaming-cdn-concept.md) to understand how CDN caching works.
-- Read and try [How to set cdn profile rules](stream-set-cdn-profile-rules-how-to.md).
+- Read and try [How to set CDN profile rules](stream-set-cdn-profile-rules-how-to.md).
 - A Media Services account with at least one streaming endpoint.
 
 ## Enable the origin shield

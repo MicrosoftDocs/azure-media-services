@@ -421,7 +421,7 @@
     displayName: autoscale, Azure Autoscale, streaming endpoint
   - name: Set CDN profile rules
     href: stream-set-cdn-profile-rules-how-to.md
-  - name: Set enable Origin Shield
+  - name: Enable Origin Shield
     href: stream-enable-origin-shield-how-to.md
   - name: .NET
     items:
