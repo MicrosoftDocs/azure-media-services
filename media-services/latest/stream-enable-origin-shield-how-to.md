@@ -1,6 +1,6 @@
 ---
 title: How to enable origin shield
-description: If a live event expects a large audience, or the audience is geographically located far away from the streaming endpoint (origin) serving the content, it's important for the customer to shield the origin using a Content Delivery Network (CDN). This article walks you through the steps in the Azure portal.
+description: It is best to use a Content Delivery Network (CDN) with a shielded origin to ensure that traffic for your media content is delivered efficiently. This article walks you through the steps in th Azure portal.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-If a live event expects a large audience, or the audience is geographically located far away from the streaming endpoint (origin) serving the content, it's important for the customer to shield the origin using a Content Delivery Network (CDN). This article walks you through the steps in th Azure portal.
+It is best to use a Content Delivery Network (CDN) with a shielded origin to ensure that traffic for your media content is delivered efficiently. This article walks you through the steps in th Azure portal.
 
 ## Prerequisites
 
