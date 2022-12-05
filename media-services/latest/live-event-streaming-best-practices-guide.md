@@ -4,7 +4,7 @@ description: Customers often ask how they can reduce the latency of their live s
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/18/2022
+ms.date: 12/05/2022
 ms.author: inhenkel
 ---
 
@@ -70,7 +70,7 @@ When Azure Media Player is used, the *Low Latency Heuristics* profile optimizes 
 
 Streaming endpoints are the origin servers that deliver the live and VOD streaming content to the CDN or to the customer directly. If a live event expects a large audience, or the audience is geographically located far away from the streaming endpoint (origin) serving the content, it's *important* to shield the origin using a Content Delivery Network (CDN).
 
-We recommend using Azure CDN which is provided by Verizon (Standard or Premium). We've optimized the integration experience so that a customer could configure this CDN with a single select in the Azure portal. Be sure to turn on [Origin Shield](stream-eable-origin-shield-how-to.md) and streaming pptimizations for your CDN endpoint whenever you start your streaming endpoint.
+We recommend using Azure CDN which is provided by Verizon (Standard or Premium). We've optimized the integration experience so that a customer could configure this CDN with a single select in the Azure portal. Be sure to turn on [Origin Shield](stream-enable-origin-shield-how-to.md) and streaming pptimizations for your CDN endpoint whenever you start your streaming endpoint.
 
 Our customers also have good experiences bringing their own CDN. Ensure that measures are taken on the CDN to shield the origin from excessive traffic.
 
