@@ -104,7 +104,3 @@ landingContent:
         links:
           - text: Protection
             url: drm-content-protection-concept.md
-      - linkListType: tutorial
-        links:
-          - text: Encrypt dynamically with AES-128
-            url: drm-playready-license-template-concept.md
