@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 11/01/2022
+ms.date: 12/05/2022
 ms.author: inhenkel
 ---
 
@@ -21,7 +21,7 @@ To stay up to date with the most recent developments, this article provides you 
 
 ## November 2022
 
-Media Services now removes the audio rendition from HLS Variant Playlist by default to prevent client from falling back to audio only under poor network situation.
+Media Services now removes the audio rendition from HLS Variant Playlist by default to prevent the client from falling back to audio only under a poor network situation.
 
 In order to change the behavior, you can use the URL tag `[audio-only=true]` to write an audio rendition in HLS Variant Playlist.
 
