@@ -30,8 +30,6 @@ Before you implement offline DRM for FairPlay on an iOS 10+ device:
     - The FPS Deployment Pack, which contains the D function specification, along with instructions about how to generate the FPS Certificate customer-specific private key, and Application Secret Key. Apple issues the FPS Deployment Pack only to licensed content providers.
 - The .der/.cer certificate files you receive as part of the generation of the FPS certificate contain a public key and can be made available to the client.  The private key (.pfx) should be secured in Azure Key Vault or another secure location.
 
-## Story the key in Key Vault
-
 [!INCLUDE [Store FairPlay Private Key in Azure KeyVault](./includes/task-drm-store-fairplay-key.md)]
 
 ## Clone the sample
