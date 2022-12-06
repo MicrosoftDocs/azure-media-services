@@ -14,11 +14,20 @@ ms.author: inhenkel
 
 It is best to use a Content Delivery Network (CDN) with a shielded origin to ensure that traffic for your media content is delivered efficiently. This article walks you through the steps in the Azure portal.
 
+> [!NOTE]
+> Origin Shield is only available in the CDN Supplemental Portal for *Azure CDN from Verizon Premium*. To use Origin Shield for *Azure CDN from Verizon Standard* open a support ticket in the Azure portal.
+>
+> Origin Shield configuration may not be available for older CDN profiles. If Origin Shield is not available in the portal UI, you will need to create a support ticket to have it enabled.
+
 ## Prerequisites
 
 - Read the article [Scale Streaming with a CDN](stream-scale-streaming-cdn-concept.md) to understand how CDN caching works.
-- Read and try [How to set CDN profile rules](stream-set-cdn-profile-rules-how-to.md).
+- Read [How to enable CDN optimizations](stream-set-cdn-profile-rules-how-to.md).
 - A Media Services account with at least one streaming endpoint.
+
+## Determine the closest POP location
+
+You will need to know the geographic location of the origin as you should select the closest POP location in the below configuration steps. You can look up the datacenter using [this table](https://azure.microsoft.com/explore/global-infrastructure/geographies/#geographies). For example, if you chose Central US for the region of your origin, the datacenter is located in the United States, in the state of Iowa. Pick the POP location that is geographically closest to Iowa.
 
 ## Enable the origin shield
 
