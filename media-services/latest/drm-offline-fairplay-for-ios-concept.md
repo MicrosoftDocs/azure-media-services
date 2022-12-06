@@ -42,4 +42,4 @@ Clone the Media Services .Net samples.
 
 Modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add FairPlay configurations.
 
-* Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+<sup>*</sup> Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
