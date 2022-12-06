@@ -66,7 +66,7 @@ Media Services supports different streaming protocol outputs – DASH, HLS with 
 
 When Azure Media Player is used, the *Low Latency Heuristics* profile optimizes the player to have the lowest possible latency on the player side. This player only supports DASH unless it is being used on Safari on Apple devices.
 
-## CDN choice
+## CDN choice and optimizations
 
 Streaming endpoints are the origin servers that deliver the live and VOD streaming content to the CDN or to the customer directly. It is best to use a Content Delivery Network (CDN) with a shielded origin to ensure that traffic for your media content is delivered efficiently.
 
@@ -74,7 +74,7 @@ We recommend using Azure CDN which is provided by Verizon (Standard or Premium).
 
 Our customers also have good experiences bringing their own CDN. Ensure that measures are taken on the CDN to shield the origin from excessive traffic.
 
-You can also improve performance by configuring rules for the CDN profile. See [How to set rules for a CDN profile](stream-set-cdn-profile-rules-how-to.md).
+You can also improve performance by configuring rules for the CDN profile. See [How to enable CDN optimizations](stream-set-cdn-profile-rules-how-to.md).
 
 ## Streaming endpoint scaling
 
