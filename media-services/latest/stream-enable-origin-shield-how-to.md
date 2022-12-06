@@ -27,8 +27,7 @@ It is best to use a Content Delivery Network (CDN) with a shielded origin to ens
 
 ## Determine the closest POP location
 
-You will need to know the geographic location of the origin as you should select the closest POP location in the below configuration steps. You can look up the datacenter. For example, if you chose Central US for the region of your origin, the datacenter is located in the state of Iowa, in the US. You would pick the POP location that is geographically closest to Iowa.
-
+You will need to know the geographic location of the origin as you should select the closest POP location in the below configuration steps. You can look up the datacenter using [this table](https://azure.microsoft.com/explore/global-infrastructure/geographies/#geographies). For example, if you chose Central US for the region of your origin, the datacenter is located in the United States, in the state of Iowa. Pick the POP location that is geographically closest to Iowa.
 
 ## Enable the origin shield
 
