@@ -73,7 +73,7 @@ landingContent:
           - text: REST
             url: /rest/api/media/
           - text: .NET
-            url: /dotnet/api/overview/azure/mediaservices/management
+            url: /dotnet/api/overview/azure/media-services?view=azure-dotnet&preserve-view=true
           - text: Node.JS
             url: /javascript/api/overview/azure/arm-mediaservices-readme?view=azure-node-latest
           - text: Python
