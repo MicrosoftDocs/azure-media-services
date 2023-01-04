@@ -20,7 +20,7 @@ This article provides encoding scenario based guidance that will assist you in m
 
 ## Prerequisites
 
-Before you get into changing your encoding workflow, you should understand the differences in the way storage is managed.  In AMS V3, the Azure Storage API is used to manage the storage account(s) associated with your Media Services account.
+Before start changing your encoding workflow, you should understand the differences in the way storage is managed.  In AMS V3, the Azure Storage API is used to manage the storage account(s) associated with your Media Services account.
 
 > [!NOTE]
 > Jobs and tasks created in v2 do not show up in v3 as they are not associated with a transform. The recommendation is to switch to v3 transforms and jobs.
