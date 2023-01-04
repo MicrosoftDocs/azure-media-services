@@ -65,10 +65,10 @@ General workflow for using live transcription text tracks:
 1. Edit (or update) the .ism file to tell the player which text tracks to use as well as their labeling and visibility by:
     1. [Manually editing it in the portal](tracks-edit-track-portal-how-to.md#edit-the-ism-file-to-use-the-track), or
     1. Using the [Tracks API](/rest/api/media/tracks/update-track-data?tabs=HTTP) to update the manifest programmatically using one of the SDKs or the CLI:
-        1. [Node.JS](/javascript/api/@azure/arm-mediaservices/tracks?view=azure-node-latest#@azure-arm-mediaservices-tracks-beginupdatetrackdataandwait)
-        1. [Python](/python/api/azure-mgmt-media/azure.mgmt.media.operations.tracksoperations?view=azure-python#azure-mgmt-media-operations-tracksoperations-begin-update-track-data)
-        1. [.Net](/dotnet/api/microsoft.azure.management.media.tracksoperationsextensions.beginupdatetrackdata?view=azure-dotnet#microsoft-azure-management-media-tracksoperationsextensions-beginupdatetrackdata(microsoft-azure-management-media-itracksoperations-system-string-system-string-system-string-system-string))
-        1. [CLI](/cli/azure/ams/asset-track?view=azure-cli-latest#az-ams-asset-track-update-data)
+        1. [Node.JS](/javascript/api/@azure/arm-mediaservices/tracks?#@azure-arm-mediaservices-tracks-beginupdatetrackdataandwait)
+        1. [Python](/python/api/azure-mgmt-media/azure.mgmt.media.operations.tracksoperations?#azure-mgmt-media-operations-tracksoperations-begin-update-track-data)
+        1. [.Net](/dotnet/api/microsoft.azure.management.media.tracksoperationsextensions.beginupdatetrackdata?#microsoft-azure-management-media-tracksoperationsextensions-beginupdatetrackdata(microsoft-azure-management-media-itracksoperations-system-string-system-string-system-string-system-string))
+        1. [CLI](https://learn.microsoft.com/en-us/cli/azure/ams/asset-track?view=azure-cli-latest#az-ams-asset-track-update-data)
 
 > [!IMPORTANT]
 > When updating the .ism file, make sure you hide the live transcription text track, and show the text track in the language that is appropriate for the viewer.
