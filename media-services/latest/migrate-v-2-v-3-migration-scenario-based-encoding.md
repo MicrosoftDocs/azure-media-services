@@ -16,7 +16,7 @@ ms.author: inhenkel
 
 ![migration steps 2](./media/migration-guide/steps-4.svg)
 
-This article gives you encoding scenario based guidance that will assist you in migrating from Azure Media Services v2 to v3.
+This article provides encoding scenario based guidance that will assist you in migrating from Azure Media Services v2 to v3.
 
 ## Prerequisites
 
