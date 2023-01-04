@@ -4,7 +4,7 @@ description: Media Services offers the Tracks API so you can deliver text tracks
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 09/20/2022
+ms.date: 01/04/2023
 ms.author: inhenkel
 ---
 
@@ -35,6 +35,11 @@ General workflow for using text tracks with locally produced text:
 1. Translate or otherwise edit the VTT or TTML file, and save copies for:
     1. A track for an additional language with descriptive text to meet accessibility requirements.
     1. A track for additional text for director's commentary.
+1. IMPORTANT: You must add the language designator to the VTT header for the correct language to be displayed in the client player. For example:
+    ```
+    WEBVTT
+    Language: en-us
+    ```
 1. Upload the video to Media Services
 1. Create a transform and job to encode the video.
 1. Upload the additional text tracks.
@@ -52,7 +57,7 @@ When live transcription is turned on for a live event, an additional WebVTT text
 General workflow for using live transcription text tracks:
 
 1. Create a live event with live transcription enabled and with the source language selected.
-1. When the live event is over, wait for several minutes, and then stop the live output.  The archived asset will be available for on-demand streaming.  Valid streaming URLs will still be accessible to your viewers.
+1. When the live event is over, wait for several minutes, and then delete the live output.  The archived asset will be available for on-demand streaming.  Valid streaming URLs will still be accessible to your viewers.
 1. List the tracks in the archived asset or view them in the portal. There will be a WebVTT file that contains the NBest transcription. It will have a .vtt extension. The file is named `auto-generated-best_XXX.vtt`.
 1. Download and edit the WebVTT file.
 1. To present the text track in multiple languages, translate the source text track to those languages and save them as separate files for each language using the .vtt extension.
