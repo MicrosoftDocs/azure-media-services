@@ -4,7 +4,7 @@ description: This article gives you encoding scenario based guidance that will a
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/04/2023
 ms.author: inhenkel
 ---
 
@@ -16,7 +16,7 @@ ms.author: inhenkel
 
 ![migration steps 2](./media/migration-guide/steps-4.svg)
 
-This article gives you encoding scenario based guidance that will assist you in migrating from Azure Media Services v2 to v3.
+This article provides encoding scenario based guidance that will assist you in migrating from Azure Media Services v2 to v3.
 
 ## Prerequisites
 
@@ -109,7 +109,3 @@ For customers using the Indexer v1 processor in the v2 API, you need to create a
 - [Input metadata](input-metadata-schema.md)
 - [Output metadata](output-metadata-schema.md)
 - [Dynamic packaging in Media Services v3: audio codecs](encode-dynamic-packaging-concept.md#audio-codecs-supported-by-dynamic-packaging)
-
-## Samples
-
-You can also [compare the V2 and V3 code in the code samples](migrate-v-2-v-3-migration-samples.md).
