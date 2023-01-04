@@ -4,7 +4,7 @@ description: This article shows how to subscribe to Event Grid in order to monit
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 10/07/2022
+ms.date: 01/04/2023
 ms.author: inhenkel
 ---
 
@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](../includes/v3-hr.md)]
 
-Azure Event Grid is an eventing service for the cloud. This service uses [event subscriptions](/azure/event-grid/concepts#event-subscriptions) to route event messages to subscribers. Media Services events contain all the information you need to respond to changes in your data. You can identify a  Media Services event because the eventType property starts with "Microsoft.Media.". For more information, see [Media Services event schemas](media-services-event-schemas.md).
+Azure Event Grid is an eventing service for the cloud. This service uses [event subscriptions](/azure/event-grid/concepts#event-subscriptions) to route event messages to subscribers. Media Services events contain all the information you need to respond to changes in your data. You can identify a  Media Services event because the eventType property starts with "Microsoft.Media.".
 
 In this article, you use the Azure portal to subscribe to events for your Azure Media Services account. Then, you trigger events to view the result. Typically, you send events to an endpoint that processes the event data and takes actions. In the article, we send events to a web app that collects and displays the messages.
 
@@ -59,3 +59,7 @@ Now, let's trigger events to see how Event Grid distributes the message to your 
 ## Send an event to your endpoint
 
 You can trigger events for the Media Services account by running an encoding job. Create a transform and a job in the portal to trigger events.
+
+## Media Services schema
+
+For more information about all of the metrics available for Media Services, see [Media Services event schemas](media-services-event-schemas.md).
