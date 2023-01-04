@@ -49,7 +49,7 @@ General workflow for using text tracks with locally produced text:
 
 ### Using text tracks with live transcription
 
-When live transcription is turned on for a live event, an additional WebVTT text track is created in addition to the real-time live transcription track that viewers see on the live video player. This WebVTT file contains the NBest version of the live transcript that contains full sentences instead of the partial, real-time results. You can download the .vtt file after the entire transcript is available and the live output is deleted.
+When live transcription is turned on for a live event, an additional WebVTT text track is created in addition to the real-time live transcription track that viewers see on the live video player. This WebVTT file contains the best version of the live transcript that contains full sentences instead of the partial, real-time results. You can download the .vtt file after the entire transcript is available and the live output is deleted.
 
 > [!WARNING]
 > The final auto generated live transcription VTT files are delayed for processing. Unless you wait for several minutes before deleting a live output, the content in the file will be truncated.  Additionally, live transcription is not available for use with multiple input streams for a live event.
@@ -63,8 +63,12 @@ General workflow for using live transcription text tracks:
 1. To present the text track in multiple languages, translate the source text track to those languages and save them as separate files for each language using the .vtt extension.
 1. Upload the source language track, and the text tracks for each language.
 1. Edit (or update) the .ism file to tell the player which text tracks to use as well as their labeling and visibility by:
-    1. Manually editing it in the portal, or
-    1. Using the Tracks API to update the manifest programmatically.
+    1. [Manually editing it in the portal](tracks-edit-track-portal-how-to.md#edit-the-ism-file-to-use-the-track), or
+    1. Using the [Tracks API](/rest/api/media/tracks/update-track-data?tabs=HTTP) to update the manifest programmatically using one of the SDKs or the CLI:
+        1. [Node.JS](/javascript/api/@azure/arm-mediaservices/tracks?view=azure-node-latest#@azure-arm-mediaservices-tracks-beginupdatetrackdataandwait)
+        1. [Python](/python/api/azure-mgmt-media/azure.mgmt.media.operations.tracksoperations?view=azure-python#azure-mgmt-media-operations-tracksoperations-begin-update-track-data)
+        1. [.Net](/dotnet/api/microsoft.azure.management.media.tracksoperationsextensions.beginupdatetrackdata?view=azure-dotnet#microsoft-azure-management-media-tracksoperationsextensions-beginupdatetrackdata(microsoft-azure-management-media-itracksoperations-system-string-system-string-system-string-system-string))
+        1. [CLI](/cli/azure/ams/asset-track?view=azure-cli-latest#az-ams-asset-track-update-data)
 
 > [!IMPORTANT]
 > When updating the .ism file, make sure you hide the live transcription text track, and show the text track in the language that is appropriate for the viewer.
