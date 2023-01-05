@@ -15,51 +15,38 @@ metadata:
   ms.collection: collection
   author: IngridAtMicrosoft #Required; your GitHub user alias, with correct capitalization.
   ms.author: inhenkel #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/1/2022 #Required; mm/dd/yyyy format.
+  ms.date: 01/04/2023 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    # Card
+    # Cards
     - title: About Azure Media Services (v3)
       itemType: overview
-      url: ./latest/media-services-overview.md
-    - title: About Azure Media Services (v2)
+      url: https://media.microsoft.com
+    - title: Pricing
       itemType: overview
-      url: ./previous/media-services-overview.md
-    # Card
-    - title: Azure Media Services (v3) concepts
-      itemType: concept
-      url: ./latest/concepts-overview.md
+      url: https://azure.microsoft.com/pricing/details/media-services/
+    - title: Documentation
+      itemType: overview
+      url: ./latest/media-services-overview.md
+    - title: Migrate from v2 to v3
+      itemType: overview
+      url: ./latest/migrate-v-2-v-3-migration-introduction.md
     - title: GitHub samples
       itemType: download
       url: ./latest/samples-overview.md
     - title: Azure Media Player
       itemType: overview
       url: ./azure-media-player/azure-media-player-overview.md
-    - title: Live streaming
-      itemType: overview
-      url: ./latest/stream-live-streaming-concept.md
-    - title: Encoding
-      itemType: overview
-      url: ./latest/encode-concept.md
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
   items:
-    - title: Develop with Media Services SDK
+    - title: Release notes and announcements
       links:
-          - url: ./latest/all-sdks.md
-            itemType: concept
-            text: Develop with Media Services
-          - url: ./latest/samples-overview.md
-            itemType: get-started
-            text: GitHub samples
-          - url: /samples/browse/?products=azure-media-services
-            itemType: sample
-            text: Browse more samples
           - url: ./latest/release-notes.md
             itemType: whats-new
             text: Release notes and announcements
@@ -88,7 +75,6 @@ conceptualContent:
         - url: ./latest/encode-autogen-bitrate-ladder.md
           itemType: concept
           text: Automatically generate adaptive bitrate encoding
-
     - title: Stream on demand
       links:
         - url: ./latest/assets-concept.md
@@ -97,7 +83,6 @@ conceptualContent:
         - url: ./latest/encode-concept.md
           itemType: concept
           text: Encoding
-
     - title: Encrypt content
       links:
           - url: ./latest/drm-content-protection-concept.md
@@ -106,18 +91,11 @@ conceptualContent:
           - url: ./latest/drm-playready-license-template-concept.md
             itemType: tutorial
             text: Encrypt dynamically with DRM
-
-    - title: Analyze content
-      links:
-          - url: ./latest/analyze-video-audio-files-concept.md
-            itemType: concept
-            text: Media analytics
-          - url: ./latest/analyze-face-redaction-concept.md
-            itemType: concept
-            text: Face Detect and Redaction
-
     - title: Protocols and specifications
       links:
+          - url: ./latest/limits-quotas-constraints-reference.md
+            itemType: reference
+            text: Quotas and limits
           - url: ./previous/media-services-specifications-live-timed-metadata.md
             itemType: concept
             text: Timed Metadata in Live Streaming (RTMP & Smooth Streaming)
@@ -127,12 +105,6 @@ conceptualContent:
           - url: ./previous/media-services-fmp4-live-ingest-overview.md
             itemType: concept
             text:  Smooth Streaming ingest protocol
-
-    - title: Migrate from the v2 API
-      links:
-          - url: ./latest/migrate-v-2-v-3-migration-introduction.md
-            itemType: overview
-            text: Migrate from v2 to v3 overview
 additionalContent:
   sections:
     - items:
