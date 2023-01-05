@@ -25,6 +25,12 @@ highlightedContent:
     # Cards
     - title: About Azure Media Services (v3)
       itemType: overview
+      url: https://media.microsoft.com
+    - title: Pricing
+      itemType: overview
+      url: https://azure.microsoft.com/pricing/details/media-services/
+    - title: documentation
+      itemType: overview
       url: ./latest/media-services-overview.md
     - title: Migrate from v2 to v3
       itemType: overview
@@ -39,17 +45,8 @@ highlightedContent:
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
   items:
-    - title: Develop with Media Services SDK
+    - title: Release notes and announcements
       links:
-          - url: ./latest/all-sdks.md
-            itemType: concept
-            text: Develop with Media Services
-          - url: ./latest/samples-overview.md
-            itemType: get-started
-            text: GitHub samples
-          - url: /samples/browse/?products=azure-media-services
-            itemType: sample
-            text: Browse more samples
           - url: ./latest/release-notes.md
             itemType: whats-new
             text: Release notes and announcements
@@ -78,7 +75,6 @@ conceptualContent:
         - url: ./latest/encode-autogen-bitrate-ladder.md
           itemType: concept
           text: Automatically generate adaptive bitrate encoding
-
     - title: Stream on demand
       links:
         - url: ./latest/assets-concept.md
@@ -87,7 +83,6 @@ conceptualContent:
         - url: ./latest/encode-concept.md
           itemType: concept
           text: Encoding
-
     - title: Encrypt content
       links:
           - url: ./latest/drm-content-protection-concept.md
@@ -96,16 +91,6 @@ conceptualContent:
           - url: ./latest/drm-playready-license-template-concept.md
             itemType: tutorial
             text: Encrypt dynamically with DRM
-
-    - title: Analyze content
-      links:
-          - url: ./latest/analyze-video-audio-files-concept.md
-            itemType: concept
-            text: Media analytics
-          - url: ./latest/analyze-face-redaction-concept.md
-            itemType: concept
-            text: Face Detect and Redaction
-
     - title: Protocols and specifications
       links:
           - url: ./previous/media-services-specifications-live-timed-metadata.md
@@ -117,6 +102,9 @@ conceptualContent:
           - url: ./previous/media-services-fmp4-live-ingest-overview.md
             itemType: concept
             text:  Smooth Streaming ingest protocol
+          - url: ./latest/limits-quotas-constraints-reference.md
+            itemType: reference
+            text: Quotas and limits
 additionalContent:
   sections:
     - items:
