@@ -117,12 +117,6 @@ conceptualContent:
           - url: ./previous/media-services-fmp4-live-ingest-overview.md
             itemType: concept
             text:  Smooth Streaming ingest protocol
-
-    - title: Migrate from the v2 API
-      links:
-          - url:
-            itemType: overview
-            text: Migrate from v2 to v3 overview
 additionalContent:
   sections:
     - items:
