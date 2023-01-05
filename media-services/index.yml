@@ -29,7 +29,7 @@ highlightedContent:
     - title: Pricing
       itemType: overview
       url: https://azure.microsoft.com/pricing/details/media-services/
-    - title: documentation
+    - title: Documentation
       itemType: overview
       url: ./latest/media-services-overview.md
     - title: Migrate from v2 to v3
@@ -93,6 +93,9 @@ conceptualContent:
             text: Encrypt dynamically with DRM
     - title: Protocols and specifications
       links:
+          - url: ./latest/limits-quotas-constraints-reference.md
+            itemType: reference
+            text: Quotas and limits
           - url: ./previous/media-services-specifications-live-timed-metadata.md
             itemType: concept
             text: Timed Metadata in Live Streaming (RTMP & Smooth Streaming)
@@ -102,9 +105,6 @@ conceptualContent:
           - url: ./previous/media-services-fmp4-live-ingest-overview.md
             itemType: concept
             text:  Smooth Streaming ingest protocol
-          - url: ./latest/limits-quotas-constraints-reference.md
-            itemType: reference
-            text: Quotas and limits
 additionalContent:
   sections:
     - items:
