@@ -418,15 +418,9 @@
     href: streaming-endpoint-autoscaling-how-to.md
   - name: .NET
     items:
-    - name: Offline FairPlay for iOS
+    - name: DRM offline streaming
       displayName: Content protection, DRM, content keys, content key policy, iOS, FairPlay, Apple, how to, how-to, sample, tutorial. offline DRM, offline FairPlay, offline, disconnect, disconnected, airplane, train, bus, car
-      href: drm-offline-fairplay-for-ios-concept.md
-    - name: Offline Widevine for Android
-      displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline Widevine, offline,disconnect, disconnected, airplane, train, bus, car
-      href: drm-offline-widevine-for-android.md
-    - name: Offline PlayReady for Windows 10
-      displayName: Content protection, DRM, content keys, content key policy, Widevine, Android, Google, how to, how-to, sample, tutorial, offline DRM, offline PlayReady, offline,disconnect, disconnected, airplane, train, bus, car
-      href: drm-offline-playready-streaming-for-windows-10.md
+      href: drm-offline-streaming-how-to.md
   - name: Stream live
     items:
     - name: Stream with Teams
