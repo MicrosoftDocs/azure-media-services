@@ -3156,5 +3156,10 @@
           "redirect_url": "/previous-versions/media-services/previous/media-services-portal-create-account",
           "redirect_document_id": false
         }
+        {
+          "source_path_from_root": "/media-services/latest/media-services-community.md",
+          "redirect_url": "/answers/topics/azure-media-services.html",
+          "redirect_document_id": false
+        }
     ]
 }
