@@ -29,3 +29,5 @@ az ams account sp reset-credentials \
   --account-name $amsAccountName \
   --resource-group $resourceGroup
  ```
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

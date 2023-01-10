@@ -21,3 +21,5 @@ If you need to move a Media Services account to a new subscription, you need to 
 
 > [!IMPORTANT]
 > Do not start the Streaming Endpoint until the move completes successfully.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

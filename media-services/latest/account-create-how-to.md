@@ -60,3 +60,5 @@ You can use either the Azure portal or the CLI to create a Media Services accoun
 See the Media Services [REST API](/rest/api/media/mediaservices/create-or-update).
 
 ---
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]
