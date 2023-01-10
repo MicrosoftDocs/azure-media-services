@@ -1,6 +1,6 @@
 ---
 title: Media Services v3 offline streaming
-description: This article gives an overview and shows how to use Azure Media Services v3 to dynamically encrypt your HTTP Live Streaming (HLS) content with Apple FairPlay in offline mode.
+description: This article covers offline streaming with Fairplay, Widevine and Playready
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
