@@ -4,7 +4,7 @@ description: Learn about filtering, ordering, and paging of Azure Media Services
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 01/09/2023
+ms.date: 01/10/2023
 ms.author: inhenkel
 ---
 
@@ -149,25 +149,25 @@ The following table shows how you can apply the filtering and ordering options t
 |Entity name|Property name|Filter|Order|
 |---|---|---|---|
 |[Assets](/rest/api/media/assets/)|name|`eq`, `gt`, `lt`, `ge`, `le`|`asc` and `desc`|
-||properties.alternateId |`eq`||
-||properties.assetId |`eq`||
-||properties.created| `eq`, `gt`, `lt`| `asc` and `desc`|
+||properties/alternateId |`eq`||
+||properties/assetId |`eq`||
+||properties/created| `eq`, `gt`, `lt`| `asc` and `desc`|
 |[Content key policies](/rest/api/media/contentkeypolicies)|name|`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
-||properties.created    |`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
-||properties.description    |`eq`, `ne`, `ge`, `le`, `gt`, `lt`||
-||properties.lastModified|`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
-||properties.policyId|`eq`, `ne`||
+||properties/created    |`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
+||properties/description    |`eq`, `ne`, `ge`, `le`, `gt`, `lt`||
+||properties/lastModified|`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
+||properties/policyId|`eq`, `ne`||
 |[Jobs](/rest/api/media/jobs)| name  | `eq`            | `asc` and `desc`|
-||properties.state        | `eq`, `ne`        |                         |
-||properties.created      | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
-||properties.lastModified | `gt`, `ge`, `lt`, `le` | `asc` and `desc`|
+||properties/state        | `eq`, `ne`        |                         |
+||properties/created      | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
+||properties/lastModified | `gt`, `ge`, `lt`, `le` | `asc` and `desc`|
 |[Streaming locators](/rest/api/media/streaminglocators)|name|`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
-||properties.created    |`eq`, `ne`, `ge`, `le`,  `gt`, `lt`|`asc` and `desc`|
-||properties.endTime    |`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
+||properties/created    |`eq`, `ne`, `ge`, `le`,  `gt`, `lt`|`asc` and `desc`|
+||properties/endTime    |`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
 |[Streaming policies](/rest/api/media/streamingpolicies)|name|`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
-||properties.created    |`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
+||properties/created    |`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
 |[Transforms](/rest/api/media/transforms)| name | `eq`            | `asc` and `desc`|
-|| properties.created      | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
-|| properties.lastModified | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
+|| properties/created      | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
+|| properties/lastModified | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]
