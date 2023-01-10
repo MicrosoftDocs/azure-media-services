@@ -4,7 +4,7 @@ description: This article gives an explanation of what Streaming Policies are, a
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -45,3 +45,5 @@ Players that allow CENC encryption include:
 ## Filtering, ordering, paging
 
 See [Filtering, ordering, paging of Media Services entities](filter-order-page-entities-how-to.md?stream-streaming-policy-concept).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

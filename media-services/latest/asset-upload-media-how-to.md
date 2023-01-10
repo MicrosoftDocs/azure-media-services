@@ -4,7 +4,7 @@ description: Learn how to upload media for streaming or encoding.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 10/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -29,3 +29,5 @@ Before you get started, you'll need to collect or think about a few values.
 [!INCLUDE [reserved_characters](./includes/reserved_characters.md)]
 
 [!INCLUDE [Upload files with the portal](./includes/task-upload-file-to-asset-portal.md)]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

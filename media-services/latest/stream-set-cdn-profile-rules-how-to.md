@@ -4,7 +4,7 @@ description: To get the most of a streaming endpoint CDN, you may want to change
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 12/05/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -56,3 +56,5 @@ From the streaming endpoint screen:
             - *Specialty* + *Streaming optimization*
 1. Select **yes** to enable the rule.
 1. Select **Save**.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

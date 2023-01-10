@@ -4,7 +4,7 @@ description: Timed metadata is custom data that is inserted into a live stream. 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 11/09/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -67,3 +67,5 @@ To try out signalling timed metadata, see [How to signal timed metadata](stream-
 ## Additional information
 
 For more information about the payload and format of timed metadata signals, see [Alliance for Open Media Carriage of ID3 Timed Metadata in the Common Media Application Format (CMAF) specification](https://aomediacodec.github.io/id3-emsg/).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

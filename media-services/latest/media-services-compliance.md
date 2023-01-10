@@ -4,7 +4,7 @@ description: As an important reminder, you must comply with all applicable laws 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -23,3 +23,5 @@ Before uploading any video/image to Media Services, You must have all the proper
 To learn about compliance, privacy and security in Media Services please visit the Microsoft [Trust Center](https://www.microsoft.com/trust-center/?rtc=1). For Microsoft's privacy obligations, data handling and retention practices, including how to delete your data, please review Microsoft's [Privacy Statement](https://privacy.microsoft.com/PrivacyStatement), the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) ("OST") and [Data Processing Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67) ("DPA"). By using Media Services, you agree to be bound by the OST, DPA and the Privacy Statement.
 
 [!INCLUDE [tls12-message](includes/tls12-message.md)]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

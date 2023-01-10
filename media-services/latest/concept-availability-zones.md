@@ -4,7 +4,7 @@ description: Media Services supports Availability Zones providing fault-isolatio
 author: johndeu
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 06/28/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Availability Zones
@@ -38,3 +38,5 @@ To learn more about Availability Zones, see [Regions and Availability Zones in A
 To learn more about High Availability encoding and streaming, see [High Availability with Media Services Video on Demand](architecture-high-availability-encoding-concept.md).
 
 To learn how to properly configure storage account replication to support Availability Zones, see [Change how a storage account is replicated](/azure/storage/common/redundancy-migration).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

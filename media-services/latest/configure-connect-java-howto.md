@@ -4,7 +4,7 @@ description: This article describes how to connect to Azure Media Services v3 AP
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Connect to Media Services v3 API - Java
@@ -37,12 +37,12 @@ Also review:
 ## Create a Maven project
 
 Open a command-line tool and `cd` to a directory where  you want to create the project.
-    
+
 ```
 mvn archetype:generate -DgroupId=com.azure.ams -DartifactId=testAzureApp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 
-When you run the command, the `pom.xml`, `App.java`, and other files are created. 
+When you run the command, the `pom.xml`, `App.java`, and other files are created.
 
 ## Add dependencies
 
@@ -60,7 +60,7 @@ When you run the command, the `pom.xml`, `App.java`, and other files are created
     package com.azure.ams;
     ```
 1. Under the package statement, add these import statements:
-   
+
    ```java
    import com.azure.core.management.AzureEnvironment;
    import com.azure.core.management.profile.AzureProfile;
@@ -69,7 +69,7 @@ When you run the command, the `pom.xml`, `App.java`, and other files are created
    import com.azure.resourcemanager.mediaservices.MediaServicesManager;
    ```
 1. To create the Active Directory credentials that you need to make requests, add following code to the main method of the App class and set the values that you got from [Access APIs](./access-api-howto.md):
-   
+
    ```java
    try {
         AzureProfile azureProfile = new AzureProfile("<YOUR_TENANT_ID>", "<YOUR_SUBSCRIPTION_ID>", AzureEnvironment.AZURE);
@@ -89,3 +89,5 @@ When you run the command, the `pom.xml`, `App.java`, and other files are created
    }
    ```
 1. Run the app.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

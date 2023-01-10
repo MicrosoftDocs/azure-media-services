@@ -4,7 +4,7 @@ description: This article describes how to use time-shifting and Live Outputs to
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/08/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -68,3 +68,5 @@ For more information, see:
 
 - [Live streaming overview](stream-live-streaming-concept.md)
 - [Live streaming tutorial](stream-live-tutorial-with-api.md)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

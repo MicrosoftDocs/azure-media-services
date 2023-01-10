@@ -4,7 +4,7 @@ description: Learn how to create filters using Dynamic Packager to filter and se
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -146,3 +146,5 @@ To combine filters, set the filter names to the manifest/playlist URL in semicol
 
     - To determine properties of the tracks in an asset, [get and examine the manifest file](#get-and-examine-manifest-files).
     - The formula to set the asset filter time-stamp properties is: <br/>startTimestamp = &lt;start time in the manifest&gt; +  &lt;expected filter start time in seconds&gt; * timescale
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

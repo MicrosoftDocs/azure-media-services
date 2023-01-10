@@ -4,7 +4,7 @@ description: Media reserved units allow you to scale media process and determine
 author: jiayali-ms
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Media Reserved Units
@@ -24,3 +24,5 @@ For accounts created in with the **2020-05-01** version of the API, that is, the
 ## See also
 
 * [Migrate from Media Services v2 to v3](migrate-v-2-v-3-migration-introduction.md)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

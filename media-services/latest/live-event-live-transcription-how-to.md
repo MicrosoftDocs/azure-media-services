@@ -4,7 +4,7 @@ description: When you publish a live stream using MPEG-DASH or HLS/CMAF, transcr
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 07/25/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -179,3 +179,5 @@ This is the list of available languages that can be transcribed, use the languag
 | Uzbek (Uzbekistan)                | `uz-UZ`         |
 | Vietnamese (Vietnam)              | `vi-VN`         |
 | Zulu (South Africa)               | `zu-ZA`         |
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

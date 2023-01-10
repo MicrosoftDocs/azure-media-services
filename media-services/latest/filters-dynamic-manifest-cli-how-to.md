@@ -4,7 +4,7 @@ description: This article shows how to use CLI to create filters with Azure Medi
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 7/21/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Creating filters with CLI
@@ -129,3 +129,5 @@ The following table shows some examples of URLs with filters:
 ## See also
 
 [Azure CLI](/cli/azure/ams)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

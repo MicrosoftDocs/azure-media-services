@@ -4,7 +4,7 @@ description: This article gives you guidance on how to update Media Services v3 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ms.custom: contperf-fy22q4
 ---
@@ -57,3 +57,5 @@ $storageAccountId = "/subscriptions/$subscriptionId/resourceGroups/$resourceGrou
 
 Sync-AzMediaServiceStorageKeys -ResourceGroupName $resourceGroupName -AccountName $mediaAccountName -StorageAccountId $storageAccountId
 ```
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

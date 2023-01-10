@@ -5,7 +5,7 @@ ms.service: media-services
 ms.topic: quickstart
 ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ---
 
 # Create an Azure Media Services live stream
@@ -137,3 +137,5 @@ To stop the streaming endpoint:
 1. From the Media Services listing, select **Streaming endpoints**.
 2. Select the default streaming endpoint that you started earlier. This step opens the endpoint's page.
 3. Select **Stop**.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

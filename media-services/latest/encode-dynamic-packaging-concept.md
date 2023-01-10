@@ -4,7 +4,7 @@ description: This article gives an overview of dynamic packaging in Azure Media 
 author: myoungerman
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -336,3 +336,5 @@ You can use *dynamic encryption* to dynamically encrypt your live or on-demand c
 
 > [!NOTE]
 > Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

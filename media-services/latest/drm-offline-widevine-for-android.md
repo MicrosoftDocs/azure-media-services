@@ -4,7 +4,7 @@ description: This topic shows how to configure your Azure Media Services v3 acco
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -102,3 +102,5 @@ The above open-source PWA app is authored in Node.js. If you want to host your o
 For more information, see [Content Protection in the FAQ](frequently-asked-questions.yml).
 
 Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

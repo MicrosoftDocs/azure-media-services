@@ -4,7 +4,7 @@ description: Learn about Azure Media Services v3 with the PlayReady license temp
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Media Services PlayReady license templates
@@ -328,3 +328,5 @@ You can find samples for configuring license templates on the [Samples](samples-
     <xs:element name="ScmsRestriction" nillable="true" type="tns:ScmsRestriction" />
 </xs:schema>
 ```
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

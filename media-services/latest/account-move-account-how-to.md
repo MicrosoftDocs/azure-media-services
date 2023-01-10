@@ -4,7 +4,7 @@ description: This article discusses moving a Media Services v3 account to anothe
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 

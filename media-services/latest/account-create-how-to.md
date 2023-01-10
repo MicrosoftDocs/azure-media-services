@@ -4,7 +4,7 @@ description: This tutorial walks you through the steps of creating an Azure Medi
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 09/28/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Create a Media Services account

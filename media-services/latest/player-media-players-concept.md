@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/04/2022
+ms.date: 01/09/2023
 ---
 
 # Media players for Media Services
@@ -27,3 +27,5 @@ You can use several media players with Media Services.
 ## Samples
 
 To get started with streaming videos with these players, see the [Media Services 3rd Party Player Samples](https://github.com/Azure-Samples/media-services-3rdparty-player-samples).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

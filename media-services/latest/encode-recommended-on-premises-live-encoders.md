@@ -3,7 +3,7 @@ title: Live streaming encoders recommended by Media Services
 description: Learn about live streaming on-premises encoders recommended by Media Services
 author: johndeu
 ms.author: inhenkel
-ms.date: 06/28/2022
+ms.date: 01/09/2023
 ms.topic: conceptual
 ms.service: media-services
 ---
@@ -112,3 +112,5 @@ To play back content, both an audio and video stream must be present. Playback o
 > [!IMPORTANT]
 > Watch the physical condition of the machine (CPU / Memory / etc) as uploading fragments to cloud involves CPU and IO operations.
 > If you change any encoder configurations, reset [Live Events](/rest/api/media/live-events/reset) the channels and the live event for the change to take place. If you stop and start the live event without resetting it, the live event will preserve the previous configuration.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

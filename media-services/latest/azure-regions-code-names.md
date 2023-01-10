@@ -4,7 +4,7 @@ description: This article talks about the URLs used for endpoints and code for r
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -73,3 +73,5 @@ The following endpoints are important to know when connecting to Media Services 
 | Azure Resource Manager | `https://management.chinacloudapi.cn/` |
 | Authentication | `https://login.chinacloudapi.cn/` |
 | Token audience |  `https://management.core.chinacloudapi.cn/` |
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

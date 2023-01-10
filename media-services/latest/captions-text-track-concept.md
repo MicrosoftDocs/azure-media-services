@@ -4,7 +4,7 @@ description: You can provide captions, subtitles and other text tracks to the cl
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/21/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -33,3 +33,5 @@ See the [Tracks API article](tracks-concept.md) for more information about updat
 ## How-tos, tutorials and quickstarts
 
 [Use WebVTT files with Azure Media Services and Azure Media Player](amp-captions-tutorial.md) with the portal.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -4,7 +4,7 @@ description: This article contains a list of the most common import and export f
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Standard Encoder formats and codecs
@@ -99,3 +99,5 @@ The following table lists the codecs and file formats that are supported for exp
 ## Encoding samples
 
 See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -4,7 +4,7 @@ description: This article describes the API access differences between Azure Med
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -43,3 +43,5 @@ All the .NET, CLI, and other SDKs will be targeting the latest 2020-05-01 API, s
 
 > [!NOTE]
 > New accounts created with the 2020-05-01 (or later) API cannot use V2 APIs.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

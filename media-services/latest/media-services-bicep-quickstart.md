@@ -4,7 +4,7 @@ description: This article shows you how to use Bicep to create a media services 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: quickstart
-ms.date: 05/09/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -97,3 +97,5 @@ Remove-AzResourceGroup -Name exampleRG
 ```
 
 ---
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -6,7 +6,7 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.devlang: javascript
 ms.topic: tutorial
-ms.date: 11/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -242,3 +242,5 @@ Check out the [Azure Media Services community](media-services-community.md) arti
 - [Azure for JavaScript and Node.js developers](/azure/developer/javascript/)
 - [Media Services source code in the @azure/azure-sdk-for-js GitHub repo](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
 - [Azure package documentation for Node.js developers](/javascript/api/overview/azure/)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

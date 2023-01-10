@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ---
 
 # Bring your own key (customer-managed keys) with Media Services
@@ -42,3 +42,5 @@ Media Services automatically supports double encryption. For data at rest, the f
 ## Tutorials
 
 - [Use the Azure portal to use customer-managed keys or BYOK with Media Services](security-customer-managed-keys-portal-tutorial.md)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

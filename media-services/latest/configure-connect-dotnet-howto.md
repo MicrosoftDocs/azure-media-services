@@ -4,7 +4,7 @@ description: This article demonstrates how to connect to Media Services v3 API w
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -24,8 +24,8 @@ This article shows you how to connect to the Azure Media Services v3 .NET SDK us
 
 ## Create a console application
 
-1. Start Visual Studio. 
-1. From the **File** menu, click **New** > **Project**. 
+1. Start Visual Studio.
+1. From the **File** menu, click **New** > **Project**.
 1. Create a **.NET Core** console application.
 
 The sample app in this topic, targets `netcoreapp2.0`. The code uses 'async main', which is available starting with C# 7.1. See this [blog](/archive/blogs/benwilli/async-main-is-available-but-hidden) for more details.
@@ -58,12 +58,12 @@ The sample app in this topic, targets `netcoreapp2.0`. The code uses 'async main
 ### Set values in appsettings.json
 
 Run the `az ams account sp create` command as described in [access APIs](./access-api-howto.md). The command returns json that you should copy into your "appsettings.json".
- 
+
 ## Add configuration file
 
 For convenience, add a configuration file that is responsible for reading values from "appsettings.json".
 
-1. Add a new .cs class to your project. Name it `ConfigWrapper`. 
+1. Add a new .cs class to your project. Name it `ConfigWrapper`.
 1. Paste the following code in this file (this example assumes you have the namespace is `ConsoleApp1`).
 
 ```csharp
@@ -162,7 +162,7 @@ namespace ConsoleApp1
     {
         public static async Task Main(string[] args)
         {
-            
+
             ConfigWrapper config = new ConfigWrapper(new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
@@ -183,7 +183,7 @@ namespace ConsoleApp1
 
                 Console.Error.WriteLine($"{exception.Message}");
 
-                
+
                 if (exception.GetBaseException() is ErrorResponseException apiException)
                 {
                     Console.Error.WriteLine(
@@ -194,7 +194,7 @@ namespace ConsoleApp1
             Console.WriteLine("Press Enter to continue.");
             Console.ReadLine();
         }
- 
+
         private static async Task<ServiceClientCredentials> GetCredentialsAsync(ConfigWrapper config)
         {
             // Use ApplicationTokenProvider.LoginSilentWithCertificateAsync or UserTokenProvider.LoginSilentAsync to get a token using service principal with certificate
@@ -219,3 +219,5 @@ namespace ConsoleApp1
     }
 }
 ```
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

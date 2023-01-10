@@ -4,7 +4,7 @@ description: This topic provides an overview of live events and live outputs in 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/25/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Media Services live events
@@ -200,3 +200,5 @@ Once the live event starts receiving the contribution feed, you can use its prev
 ## Live event long-running operations
 
 For details, see [long-running operations](media-services-apis-overview.md#long-running-operations).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

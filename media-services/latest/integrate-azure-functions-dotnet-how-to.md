@@ -4,7 +4,7 @@ description: This article shows how to start developing Azure Functions with Med
 author: xpouyat
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 08/18/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ms.custom: contperf-fy22q4, vscode-azure-extension-update-completed
 ---
@@ -101,3 +101,5 @@ JSON input body example:
 ```
 
 The function should return 200 OK with an output body containing the job and output asset names.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

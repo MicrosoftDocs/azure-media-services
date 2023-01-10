@@ -4,7 +4,7 @@ description: It is best to use a Content Delivery Network (CDN) with a shielded 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 12/05/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -47,3 +47,5 @@ From the streaming endpoint screen:
 1. From the **ALL POPs** dropdown list, select a POP location near the Streaming Endpoint. For example, if the streaming endpoint is in US West 2, choose one of the Seattle POPs from the dropdown list.
 1. Select **Save**.
 1. Verify that the **Origin Shield** checkbox is ticked in the list of origins for both origins.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

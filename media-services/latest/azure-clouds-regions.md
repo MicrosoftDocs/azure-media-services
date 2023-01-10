@@ -4,7 +4,7 @@ description: This article talks about Azure clouds and regions in which Azure Me
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: johndeu
 ---
 
@@ -62,3 +62,5 @@ Azure Media Services (v3) is available across multiple geographies and regions. 
 * [Regional code names and endpoints](azure-regions-code-names.md)
 * [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/)
 * [Azure locations](https://azure.microsoft.com/global-infrastructure/locations/)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

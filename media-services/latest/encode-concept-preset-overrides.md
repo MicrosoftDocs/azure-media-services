@@ -4,7 +4,7 @@ description: This article how to use preset overrides to adjust transform settin
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -39,3 +39,5 @@ For reference, see the [presetOverride](https://github.com/Azure/azure-rest-api-
 ## Sample code
 
 - [Analyze a media file with a audio analyzer preset](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/AudioAnalytics/AudioAnalyzer)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

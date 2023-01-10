@@ -4,7 +4,7 @@ description: Learn about Azure Media Services with the Widevine license template
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Media Services v3 with Widevine license template overview
@@ -104,3 +104,5 @@ Each content_key_specs value must be specified for all tracks, regardless of the
 ## Additional notes
 
 * Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

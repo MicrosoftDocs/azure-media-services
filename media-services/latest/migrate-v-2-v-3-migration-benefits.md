@@ -4,7 +4,7 @@ description: This article lists the benefits of migrating from Media Services v2
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -54,3 +54,5 @@ There have been significant improvements to Media Services with V3.
 | **Monitoring** | |
 | [Azure EventGrid](monitoring/reacting-to-media-services-events.md) notification support | EventGrid notifications are more feature rich. There are more types of notifications, broader SDK support for receiving the notifications in your own application, and more existing Azure services that can act as event handlers. |
 | [Azure Monitor support and integration in the Azure portal](monitoring/monitor-events-portal-how-to.md) | This allows customers to visualize Media Services account quota usage, real-time statistics of streaming endpoints, and ingest and archive statistics for live events. Customers are now able to set alerts and perform necessary actions based on real-time metric data. |
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

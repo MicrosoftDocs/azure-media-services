@@ -4,7 +4,7 @@ description: This article describes the feature gaps between Azure Media Service
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -31,7 +31,7 @@ of the advanced features of the Media Encoder Standard in V2 APIs are currently 
 
 - Live Events with transcoding currently don't support Slate insertion mid-stream and ad marker insertion via API call.
 
-- Azure Media Premium Encoder will no longer be supported in V2. If you're using it for 8-bit HEVC encoding, use the new HEVC support in the Standard Encoder. 
+- Azure Media Premium Encoder will no longer be supported in V2. If you're using it for 8-bit HEVC encoding, use the new HEVC support in the Standard Encoder.
     - We added support for audio channel mapping to the Standard encoder.  See [Audio in the Media Services Encoding Swagger documentation](https://github.com/Azure/azure-rest-api-specs/blob/master/specification/mediaservices/resource-manager/Microsoft.Media/stable/2020-05-01/Encoding.json).
     - If you were using advanced features or output formats of the third-party licensed product such as MXF or ProRes, use the Azure Partner solution from Telestream, which will be transactional by the time of the V2 retirement. Alternatively you can use Imagine Communications, or [Bitmovin](http://bitmovin.com).
 
@@ -44,3 +44,5 @@ of the advanced features of the Media Encoder Standard in V2 APIs are currently 
 ## Terminology and entity changes
 
 See [Terminology and entity](migrate-v-2-v-3-differences-terminology.md) changes for additional changes to the API.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

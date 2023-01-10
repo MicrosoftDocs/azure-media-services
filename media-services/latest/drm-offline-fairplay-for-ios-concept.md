@@ -4,7 +4,7 @@ description: This article gives an overview and shows how to use Azure Media Ser
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 12/05/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ms.custom: engagement-fy23
 ---
@@ -43,3 +43,5 @@ Clone the Media Services .Net samples.
 Modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add FairPlay configurations.
 
 <sup>*</sup> Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

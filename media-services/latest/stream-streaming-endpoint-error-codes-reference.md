@@ -4,7 +4,7 @@ description: This topic describes errors that you may receive from the Azure Med
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: error-reference
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -177,3 +177,5 @@ The server is currently unable to receive requests. This error may be caused by 
 |Error code|Hexadecimal value |Error description|
 |---|---|---|
 |MPE_STORAGE_SERVER_BUSY|0x808900E8|Storage Operation error, received HTTP server busy error 503.|
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

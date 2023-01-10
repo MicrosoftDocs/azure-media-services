@@ -4,7 +4,7 @@ description: To start managing, encrypting, encoding, analyzing, and streaming m
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 

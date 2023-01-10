@@ -4,7 +4,7 @@ description: You may want your viewers to play only a section of a video. There 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 11/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -102,3 +102,5 @@ Review the parts of the code that create a subclipping job:
 ---
 
 3. Once the job is complete, create a streaming locator for the output asset, get the URL appropriate for your player client and test it.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

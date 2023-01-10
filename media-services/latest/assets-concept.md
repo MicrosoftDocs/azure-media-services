@@ -4,7 +4,7 @@ description: Learn about what assets are and how they're used by Azure Media Ser
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -31,3 +31,5 @@ The names of files/blobs within an asset must follow both the [blob name require
 ## Asset How-Tos and Tutorials
 
 - [Upload media for streaming or encoding](asset-upload-media-how-to.md?amspage=assets-concept)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

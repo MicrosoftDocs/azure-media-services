@@ -4,7 +4,7 @@ description: Use the Azure CLI script to reset your account credentials and get 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 

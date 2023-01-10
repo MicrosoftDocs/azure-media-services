@@ -4,7 +4,7 @@ description: This article Media Services Video Analyzer retirement and migration
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 10/11/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -43,3 +43,5 @@ Refer to the following documents by Video Indexer on how to index videos:
 
 If you have further questions, please go to [Microsoft Q&A](https://aka.ms/azureqa), the community support channel to get
 answers to technical questions.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]
