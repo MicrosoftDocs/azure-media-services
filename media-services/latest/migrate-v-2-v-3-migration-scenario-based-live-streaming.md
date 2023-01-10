@@ -4,7 +4,7 @@ description: This article is gives you live streaming scenario based guidance th
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -59,3 +59,5 @@ See Live events concepts, tutorials and how to guides below for specific steps.
 ## Samples
 
 You can also [compare the V2 and V3 code in the code samples](migrate-v-2-v-3-migration-samples.md).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

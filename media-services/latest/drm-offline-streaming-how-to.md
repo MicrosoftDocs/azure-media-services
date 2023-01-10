@@ -1,22 +1,61 @@
 ---
-title: Stream Widevine Android offline
-description: This topic shows how to configure your Azure Media Services v3 account for offline streaming of Widevine protected content.
+title: Media Services v3 offline streaming
+description: This article gives an overview and shows how to use Azure Media Services v3 to dynamically encrypt your HTTP Live Streaming (HLS) content with Apple FairPlay in offline mode.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
+ms.custom: engagement-fy23
 ---
 
 <!-- William Zhang -->
+<!-- Removed dependencies on external resources 7/13/2022 -IH -->
+<!-- Removed .NET code from article, plus editing 9/29/2022 -IH -->
+<!-- Consolidated all offline streaming from individual articles to this one for article performance reasons. 1/2/2023 -->
 
-# Offline Widevine streaming for Android with Media Services v3
+# Media Services offline streaming
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-* Your viewers might need to download content onto their phone or tablet for playback when they are disconnected from the Internet.
-* In some countries/regions, Internet availability and/or bandwidth is still limited. Users may choose to download content to watch it in higher resolutions.
-* Some content providers may disallow DRM license delivery beyond a country/region's border. If a user needs to travel abroad and still wants to watch content, offline download is needed.
+- Your viewers might need to download content onto their phone or tablet for playback when they are disconnected from the Internet.
+- In some countries/regions, Internet availability and/or bandwidth is still limited. Users may choose to download content to watch it in higher resolutions.
+- Some content providers may disallow DRM license delivery beyond a country/region's border. If a user needs to travel abroad and still wants to watch content, offline download is needed.
+
+Azure Media Services provides a set of well-designed [content protection services](https://azure.microsoft.com/services/media-services/content-protection/) for Microsoft PlayReady, Google Widevine<sup>*</sup>, Apple FairPlay Streaming, and AES-128 encryption.
+
+> [!NOTE]
+> Offline DRM is only billed for making a single request for a license when you download the content. Any errors are not billed.
+
+## [Fairlplay](#tab/fairplay/)
+
+## Prerequisites
+
+Before you implement offline DRM for FairPlay on an iOS 10+ device:
+
+- Read [Apple FairPlay license requirements and configuration](drm-fairplay-license-overview.md)
+- Obtain the FPS SDK from the Apple Developer Network. The FPS SDK contains two components:
+    - The FPS Server SDK, which contains the Key Security Module (KSM), client samples, a specification, and a set of test vectors.
+    - The FPS Deployment Pack, which contains the D function specification, along with instructions about how to generate the FPS Certificate customer-specific private key, and Application Secret Key. Apple issues the FPS Deployment Pack only to licensed content providers.
+- The .der/.cer certificate files you receive as part of the generation of the FPS certificate contain a public key and can be made available to the client.  The private key (.pfx) should be secured in Azure Key Vault or another secure location.
+
+[!INCLUDE [Store FairPlay Private Key in Azure KeyVault](./includes/task-drm-store-fairplay-key.md)]
+
+## Clone the sample
+
+Clone the Media Services .Net samples.
+
+`git clone https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials.git`
+
+## Modify the code
+
+Modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add FairPlay configurations.
+
+<sup>*</sup> Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+
+## [Widevine](#tab/widevine/)
+
+
 
 [!INCLUDE [Widevine is not available in the GovCloud region.](./includes/widevine-not-available-govcloud.md)]
 
@@ -97,8 +136,35 @@ The above open-source PWA app is authored in Node.js. If you want to host your o
     - The certificate must have trusted CA and a self-signed development certificate does not work
     - The certificate must have a CN matching the DNS name of the web server or gateway
 
+## [PlayReady](#tab/playready/)
+
+* Your viewers might need to download content onto their phone or tablet for playback when they are disconnected from the Internet.
+* In some countries/regions, Internet availability and/or bandwidth is still limited. Users may choose to download content to watch it in higher resolutions.
+* Some content providers may disallow DRM license delivery beyond a country/region's border. If a user needs to travel abroad and still wants to watch content, offline download is needed.
+
+The smooth streaming ([PIFF](/iis/media/smooth-streaming/protected-interoperable-file-format)) file format with H264/AAC has a binding with PlayReady (AES-128 CTR). The smooth streaming .ismv file, assuming audio is muxed in video, is itself an fMP4 and can be used for playback. If smooth streaming content goes through PlayReady encryption, each .ismv file becomes a PlayReady protected MP4 fragment. You can choose an .ismv file with the preferred bitrate and rename it as .mp4 for download.
+
+There are two options for hosting the PlayReady protected MP4 for progressive download:
+
+1. You can put the MP4 in the same container/media service asset and use Azure Media Services streaming endpoint for progressive download.
+1. You can use the SAS URL for progressive download directly from Azure Storage.
+
+You can use two types of PlayReady license delivery:
+
+1. PlayReady license delivery service in Azure Media Services
+1. PlayReady license servers hosted anywhere.
+
+To obtain a PlayReady license with the AMS delivery service, see the [Media Services v3 with PlayReady license template](drm-playready-license-template-concept.md).
+
+For playback testing, you can use a Universal Windows Application on Windows 10. In [Windows 10 Universal samples](https://github.com/Microsoft/Windows-universal-samples), there is a basic player sample called [Adaptive Streaming Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AdaptiveStreaming). Add the code for choosing the downloaded video and use it as the source, instead of the adaptive streaming source.
+
+---
+
 ## More information
 
 For more information, see [Content Protection in the FAQ](frequently-asked-questions.yml).
 
 Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

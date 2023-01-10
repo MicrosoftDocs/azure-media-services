@@ -4,7 +4,7 @@ description: This article is a listing of all of the Media Services code samples
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -175,3 +175,5 @@ You'll find description and links to the samples you may be looking for in each 
 ---
 
 [!INCLUDE [warning-rest-api-retry-policy.md](./includes/warning-rest-api-retry-policy.md)]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -4,7 +4,7 @@ description: This article gives an explanation of what Content Key Policies are,
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -40,5 +40,6 @@ In most cases, the content key policy is associated with a [Streaming Locator](s
 
 See [Filtering, ordering, paging of Media Services entities](filter-order-page-entities-how-to.md).
 
-
 Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

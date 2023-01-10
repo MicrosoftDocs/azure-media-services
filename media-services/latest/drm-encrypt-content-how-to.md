@@ -2,7 +2,7 @@
 title: Encrypt content with the Azure portal
 description: Use Azure Media Services to help secure your media from the time it leaves your computer all the way through storage, processing, and delivery. With Media Services, you can deliver your live and on-demand content encrypted dynamically with Advanced Encryption Standard (AES-128) or any of the three major digital rights management (DRM) systems - Microsoft PlayReady, Google Widevine, and Apple FairPlay. FairPlay Streaming is an Apple technology that is only available for video transferred over HTTP Live Streaming (HLS) on iOS devices, in Apple TV, and in Safari on macOS. Media Services also provides a service for delivering AES keys and DRM (PlayReady, Widevine, and FairPlay) licenses to authorized clients.
 ms.topic: quickstart
-ms.date: 10/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: media-services
@@ -76,3 +76,5 @@ You can also add an AES-128 clear key encryption to your content. The content ke
 If you intend to try the other quickstarts, you should hold on to the resources created. Otherwise, go to the Azure portal, browse to your resource groups, select the resource group under which you ran this quickstart, and delete all the resources.
 
 [!INCLUDE [Warning on captions and encryption](./includes/warning-captions-encryption.md)]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -4,7 +4,7 @@ description: This article describes the steps for using captions and subtitles w
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 09/22/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -235,3 +235,5 @@ Use the same path for the WebVTT file as you did for the manifest and append it 
 1. Make sure the the streaming endpoint is started.
 1. Open the hosted HTML page in a browser.
 1. Select the text track for the language of your choice from the captions or subtitles list.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

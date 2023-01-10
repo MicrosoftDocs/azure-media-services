@@ -4,7 +4,7 @@ description: This article shows you how to use an ARM template to create a media
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: quickstart
-ms.date: 07/28/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -191,3 +191,5 @@ If you aren't planning to use the resources you just created, you can delete the
 az group delete --name {name of the resource group}
 
 ```
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

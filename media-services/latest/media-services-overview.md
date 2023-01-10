@@ -4,7 +4,7 @@ description: Azure Media Services is a cloud-based platform that enables you to 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -60,3 +60,5 @@ Check out the [Azure Media Services community](media-services-community.md) arti
 
 > [!IMPORTANT]
 > Read the [Compliance, privacy and security document](media-services-compliance.md) before using Azure Media Services to deliver your media content.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

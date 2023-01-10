@@ -4,7 +4,7 @@ description: This topic gives an overview of an Apple FairPlay license requireme
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -67,3 +67,5 @@ spc=<Base64 encoded SPC>
 ```
 
 [!INCLUDE [Store FairPlay Private Key in Azure KeyVault](./includes/task-drm-store-fairplay-key.md)]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

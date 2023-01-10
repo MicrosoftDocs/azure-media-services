@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ---
 
 # Tutorial: Use the Azure portal to use customer-managed keys or BYOK with Media Services
@@ -64,3 +64,5 @@ Media Services automatically detects when the key is changed. OPTIONAL: To test 
 ## Clean up resources
 
 If you're not going to continue to use the resources that you created and *you don't want to continue to be billed*, delete them.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

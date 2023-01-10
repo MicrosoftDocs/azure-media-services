@@ -4,7 +4,7 @@ description: Learn how to access Azure Active Directory (Azure AD) authenticatio
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 09/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Get credentials to access Media Services API
@@ -60,3 +60,5 @@ This option could be used to authenticate an employee or member of an Azure Acti
 Copy your credentials to connect your user application from the **Connect to Media Services API** section. You can get text values or copy the JSON or XML blocks.
 
 ---
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

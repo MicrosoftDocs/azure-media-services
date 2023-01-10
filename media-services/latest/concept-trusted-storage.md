@@ -4,7 +4,7 @@ description: Managed Identities authentication allows Media Services to access t
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -35,3 +35,5 @@ You can learn more about enabling trusted storage with the [Media Services trust
 To understand the methods of creating trusted storage with Managed Identities, read [Managed Identities and Media Services](concept-managed-identities.md).
 
 For more information about Trusted Microsoft Services, see [Configure Azure Storage firewalls and virtual networks](/azure/storage/common/storage-network-security#trusted-microsoft-services).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

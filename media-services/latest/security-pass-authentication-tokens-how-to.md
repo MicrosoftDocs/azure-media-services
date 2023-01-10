@@ -4,7 +4,7 @@ description: Learn how to send authentication tokens from the client to the Medi
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -38,9 +38,11 @@ This option is used for PlayReady license acquisition only, through the CustomDa
 
 ```xml
     <?xml version="1.0"?>
-    <CustomData xmlns="http://schemas.microsoft.com/Azure/MediaServices/KeyDelivery/PlayReadyCustomData/v1"> 
-        <Token></Token> 
+    <CustomData xmlns="http://schemas.microsoft.com/Azure/MediaServices/KeyDelivery/PlayReadyCustomData/v1">
+        <Token></Token>
     </CustomData>
 ```
 
 Put your authentication token in the Token element.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -4,7 +4,7 @@ description: To start managing, encrypting, encoding, analyzing, and streaming m
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -33,3 +33,5 @@ When creating a Media Services account, you attach an Azure Storage account to t
 ## Associate streaming endpoint
 
 If you create an account using the Azure portal, a streaming endpoint is also created.  The name of the streaming endpoint is *default*.  You can create additional streaming endpoints for your account if you don't want to use the default streaming endpoint.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

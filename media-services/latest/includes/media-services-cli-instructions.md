@@ -1,9 +1,9 @@
 ---
-author: Juliako
+author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
 ms.date: 01/28/2019
-ms.author: juliako
+ms.author: inhenkel
 ---
 
 ## Use CLI Shell
@@ -16,7 +16,7 @@ If the CLI can open your default browser, it will do so and load a sign-in page.
 
 ### Specify location of files
 
-Many Media Services CLI commands allow you to pass a parameter with a file name. If you are using **Cloud Shell**, you can upload your file to your clouddrive (using Bash or PowerShell). 
+Many Media Services CLI commands allow you to pass a parameter with a file name. If you are using **Cloud Shell**, you can upload your file to your clouddrive (using Bash or PowerShell).
 
 ![Upload files]
 
@@ -32,5 +32,5 @@ Absolute file path on Linux/Mac and Windows OS
 * `@ "/usr/home/mytestfile.json"`
 *    `@"c:\tmp\user\mytestfile.json"`
 
-Use `{file}` if the command is asking for a path to the file. For example, `az ams transform create -a amsaccount -g resourceGroup -n custom --preset .\customPreset.json`. <br/> 
+Use `{file}` if the command is asking for a path to the file. For example, `az ams transform create -a amsaccount -g resourceGroup -n custom --preset .\customPreset.json`. <br/>
 Use `@{file}` if the command is going to load the specified file. For example, `az ams account-filter create -a amsaccount -g resourceGroup -n filterName --tracks @tracks.json`.

@@ -4,7 +4,7 @@ description: This article discusses Azure role-based access control (Azure RBAC)
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -26,3 +26,5 @@ See the following articles for more information:
 - [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
 - [Add or remove Azure role assignments using the REST API](/azure/role-based-access-control/role-assignments-rest)
 - [Media Services resource provider operations](/azure/role-based-access-control/resource-provider-operations#microsoftmedia)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

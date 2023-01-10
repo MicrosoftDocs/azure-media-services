@@ -4,7 +4,7 @@ description: This topic gives an overview of Azure Media Services live event sta
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -34,3 +34,5 @@ The live event can be in one of the following states.
 |**Deleting**| The live event is being deleted. No billing occurs in this transient state. |
 
 You can choose to enable live transcriptions when you create the live event. If you do so, you will be billed for Live Transcriptions whenever the live event is in the **Running** state. Note that you will be billed even if there is no audio flowing through the live event.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

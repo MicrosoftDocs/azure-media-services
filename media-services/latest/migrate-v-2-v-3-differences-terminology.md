@@ -4,7 +4,7 @@ description: This article describes the terminology differences between Azure Me
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -76,3 +76,5 @@ This article describes the terminology differences between Azure Media Services 
 | Live event standby mode <!--new row --> | There was no standby mode for V2. | Stand-by mode is a new v3 feature that helps manage hot pools of Live Events. Customers can now start a Live Event in stand-by mode at lower cost before transitioning it to the running state. This improves channel start times and reduces costs of operating hot pools for faster start ups. |
 | Live event billing <!--new row --> | <!-- empty-->| Live events billing is based on Live Channel meters. |
 | Live outputs <!--new row --> | Programs had to be started after creation. | Live Outputs start on creation and stop when deleted. |
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

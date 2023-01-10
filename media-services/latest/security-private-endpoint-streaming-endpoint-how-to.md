@@ -4,7 +4,7 @@ description: This article shows you how to use a private endpoint for a Streamin
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 06/08/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -160,3 +160,5 @@ You can use ARM templates to automate deployment. While the deployment is in pro
 ## Clean up resources
 
 If you aren't planning to use the resources created in this exercise, simply delete the resource group. If you don't delete the resources, you will be continue to be billed for them.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

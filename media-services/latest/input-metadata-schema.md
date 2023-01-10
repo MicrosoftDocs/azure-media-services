@@ -4,7 +4,7 @@ description: This article gives an overview of Azure Media Services v3 input met
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 08/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Input metadata
@@ -227,3 +227,5 @@ Contains a collection of AssetFile elements for the encoding job.
   ]
 }
 ```
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

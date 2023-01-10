@@ -4,7 +4,7 @@ description: Learn about streaming content with CDN integration, as well as pref
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 12/05/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -155,3 +155,5 @@ The `Origin-Assist CDN-Prefetch` feature supports the following streaming protoc
 
 -[How to enable CDN optimizations](stream-set-cdn-profile-rules-how-to.md)
 -[How to enable Origin Shield](stream-enable-origin-shield-how-to.md)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

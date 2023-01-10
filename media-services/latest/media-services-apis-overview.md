@@ -4,7 +4,7 @@ description: Learn about rules that apply to entities and APIs when developing w
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -131,3 +131,5 @@ AMSE is an Open Source project, support is provided by the community (issues can
 ## Filtering, ordering, paging of Media Services entities
 
 See [Filtering, ordering, paging of Azure Media Services entities](filter-order-page-entities-how-to.md).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

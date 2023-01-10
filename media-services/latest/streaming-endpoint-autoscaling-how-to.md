@@ -4,7 +4,7 @@ description: This article discusses how you can autoscale the premium streaming 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 06/29/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -101,3 +101,5 @@ button from the Scale rule screen.
 For more information about autoscaling in Azure, see [Overview of autoscale in
 Microsoft
 Azure](/azure/azure-monitor/autoscale/autoscale-overview).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

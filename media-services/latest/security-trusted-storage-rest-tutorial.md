@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ---
 
 # Tutorial: Media Services trusted storage
@@ -337,3 +337,5 @@ Authorization: Bearer {{getArmToken.response.body.access_token}}
 GET https://{{armEndpoint}}/subscriptions/{{subscription}}/resourceGroups/{{resourceGroup}}/providers/Microsoft.Media/mediaservices/{{accountName}}?api-version=2020-05-01
 Authorization: Bearer {{getArmToken.response.body.access_token}}
 ```
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

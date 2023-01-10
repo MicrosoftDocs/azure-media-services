@@ -4,7 +4,7 @@ description: Learn about filtering, ordering, and paging of Azure Media Services
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -54,7 +54,7 @@ var firstPage = await MediaServicesArmClient.Assets.ListAsync(CustomerResourceGr
 
 ## Order by
 
-Use `$orderby` to sort the returned objects by the specified parameter. For example:  
+Use `$orderby` to sort the returned objects by the specified parameter. For example:
 
 ```
 GET https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/mediaresources/providers/Microsoft.Media/mediaServices/amstestaccount/assets?api-version=2018-07-01$orderby=properties/created%20gt%202018-05-11T17:39:08.387Z
@@ -127,7 +127,7 @@ while (currentPage.NextPageLink != null)
 
 ## Using logical operators to combine query options
 
-Media Services v3 supports **OR** and **AND** logical operators. 
+Media Services v3 supports **OR** and **AND** logical operators.
 
 The following REST example checks the job's state:
 
@@ -135,7 +135,7 @@ The following REST example checks the job's state:
 https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/qbtest/providers/Microsoft.Media/mediaServices/qbtest/transforms/VideoAnalyzerTransform/jobs?$filter=properties/state%20eq%20Microsoft.Media.JobState'Scheduled'%20or%20properties/state%20eq%20Microsoft.Media.JobState'Processing'&api-version=2018-07-01
 ```
 
-You construct the same query in C# like this: 
+You construct the same query in C# like this:
 
 ```csharp
 var odataQuery = new ODataQuery<Job>("properties/state eq Microsoft.Media.JobState'Scheduled' or properties/state eq Microsoft.Media.JobState'Processing'");
@@ -160,7 +160,7 @@ The following table shows how you can apply the filtering and ordering options t
 |[Jobs](/rest/api/media/jobs)| name  | `eq`            | `asc` and `desc`|
 ||properties.state        | `eq`, `ne`        |                         |
 ||properties.created      | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
-||properties.lastModified | `gt`, `ge`, `lt`, `le` | `asc` and `desc`| 
+||properties.lastModified | `gt`, `ge`, `lt`, `le` | `asc` and `desc`|
 |[Streaming locators](/rest/api/media/streaminglocators)|name|`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
 ||properties.created    |`eq`, `ne`, `ge`, `le`,  `gt`, `lt`|`asc` and `desc`|
 ||properties.endTime    |`eq`, `ne`, `ge`, `le`, `gt`, `lt`|`asc` and `desc`|
@@ -169,3 +169,5 @@ The following table shows how you can apply the filtering and ordering options t
 |[Transforms](/rest/api/media/transforms)| name | `eq`            | `asc` and `desc`|
 || properties.created      | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
 || properties.lastModified | `gt`, `ge`, `lt`, `le`| `asc` and `desc`|
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

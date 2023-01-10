@@ -4,7 +4,7 @@ description: This article is gives you scenario based guidance for packaging and
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -50,3 +50,5 @@ After migration, you should avoid making any calls to the v2 API to modify strea
 ## Samples
 
 You can also [compare the V2 and V3 code in the code samples](migrate-v-2-v-3-migration-samples.md).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

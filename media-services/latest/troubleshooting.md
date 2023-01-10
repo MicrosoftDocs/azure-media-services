@@ -4,7 +4,7 @@ description: Find the causes and solutions for issues with Media Services.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: troubleshooting
-ms.date: 05/11/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Troubleshoot Media Services
@@ -54,3 +54,5 @@ Find the causes and solutions for issues with Media Services.
 [!INCLUDE [trouble-general-code-errors](includes/trouble-general-code-errors.md)]
 
 If you haven't found the solution to your problem, contact [Media Services Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest?amspage=troubleshootingdoc).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

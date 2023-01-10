@@ -4,7 +4,7 @@ description: Encoding complexities are encoder settings optimized for different 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 09/20/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -68,3 +68,5 @@ H.264 Basic Mode is a separate encoding pricing tier. It includes all encoding o
 
 > [!NOTE]
 > Note: H.264 Basic Mode pricing tier does NOT include [Content-Aware Encoding](/azure/media-services/latest/encode-content-aware-concept). The Content-Aware Encoding preset is a 2-pass solution, with the first pass pre-analyzing the input content and using the results to determine the optimal number of layers, bitrate, and resolutions. If the Content-Aware Encoding preset is set to the “speed” complexity, the preset output will still be speed-optimized but will be charged at the “balanced” and “quality” H.264 codec pricing.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

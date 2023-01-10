@@ -4,7 +4,7 @@ description: Learn how to create an Azure storage account to use with Azure Medi
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -40,3 +40,5 @@ There are different SKUs you can choose for your storage account. If you want to
 - [Access storage with a Media Services Managed Identity](security-access-storage-managed-identity-cli-tutorial.md?amspage=storage-account-concept)
 - [Media Services trusted storage](security-trusted-storage-rest-tutorial.md?amspage=storage-account-concept)
 - [Use the Azure portal to use customer-managed keys or BYOK with Media Services](security-customer-managed-keys-portal-tutorial.md?amspage=storage-account-concept)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

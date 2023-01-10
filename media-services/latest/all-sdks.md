@@ -4,7 +4,7 @@ description: This article lists all the SDKs that are available for Media Servic
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 03/22/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -23,3 +23,5 @@ You can use the following SDKs with Media Services.
 | [Python](configure-connect-python-howto.md) | [Python SDK](https://pypi.org/project/azure-mgmt-media/9.0.0/)|
 | [Java](configure-connect-java-howto.md) | [Java SDK](http://search.maven.org/artifact/com.azure.resourcemanager/azure-resourcemanager-mediaservices/2.0.0/jar)|
 |Go | [Go SDK](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/mediaservices/armmediaservices)|
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

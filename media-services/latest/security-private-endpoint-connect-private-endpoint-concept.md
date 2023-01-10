@@ -4,7 +4,7 @@ description: This article is an overview of Private Endpoint connections with Me
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 05/25/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -74,3 +74,5 @@ The `publicNetworkAccess` flag on the Media Services account can be used to allo
 ## Service level IP allowlists
 
 When `publicNetworkAccess` is enabled, requests from the public internet are allowed, subject to service level IP allowlists. If `publicNetworkAccess` is disabled, requests from the public internet are blocked, regardless of the IP allowlist settings. IP allowlists only apply to requests from the public internet; requests to private endpoints are not filtered by the IP allowlists.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

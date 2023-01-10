@@ -4,7 +4,7 @@ description: This article describes how to set up Microsoft Teams with Media Ser
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -72,3 +72,5 @@ Once you are done with your event, you can stop the live output, followed by the
 Your live event will be archived into the Media Services asset that you created during the steps above to create the live output.  This asset can now be used for on-demand playback using the same URL that you tested above in the Azure Media Player. The URL does not change unless you delete the locator and create another one. Assets can also have several locators attached with different settings, such as a time based filter to trim the start and end off a live event to remove unwanted content.
 
 The asset you generated from Teams can now be used in any encoding workflows in Azure Media Services, or sent to the Video Indexer service for analytics. All of the features of both Media Services and Video Indexer are available for use on the archived live event asset from Teams.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

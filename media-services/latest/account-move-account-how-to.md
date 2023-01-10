@@ -4,7 +4,7 @@ description: This article discusses moving a Media Services v3 account to anothe
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -21,3 +21,5 @@ If you need to move a Media Services account to a new subscription, you need to 
 
 > [!IMPORTANT]
 > Do not start the Streaming Endpoint until the move completes successfully.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

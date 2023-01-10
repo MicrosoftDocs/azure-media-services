@@ -3,8 +3,8 @@ title: Retired media processors
 description: Over time, we enhance Media Service components and retire legacy components. This article helps you migrate your application from a legacy component to a current component.
 author: IngridAtMicrosoft
 ms.service: media-services
-ms.topic: conceptual
-ms.date: 11/01/2022
+ms.topic: reference
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -32,3 +32,5 @@ Over time, we enhance Media Service components and retire legacy components. Thi
 ## Migration guide
 
 [Migration Guide introduction](migrate-v-2-v-3-migration-introduction.md)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

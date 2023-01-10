@@ -4,7 +4,7 @@ description: This article is an introduction to migrating from Media Services v2
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -75,3 +75,5 @@ Your application of Media Services V2 may be unique. Therefore, we have provided
 - [Packaging and delivery](migrate-v-2-v-3-migration-scenario-based-publishing.md)
 - [Content protection](migrate-v-2-v-3-migration-scenario-based-content-protection.md)
 - [Media Reserved Units (MRU)](migrate-v-2-v-3-migration-scenario-based-media-reserved-units.md)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]
