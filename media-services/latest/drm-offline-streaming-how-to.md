@@ -1,6 +1,6 @@
 ---
 title: Media Services v3 offline streaming
-description: This article gives an overview and shows how to use Azure Media Services v3 to dynamically encrypt your HTTP Live Streaming (HLS) content with Apple FairPlay in offline mode.
+description: This article covers offline streaming with Fairplay, Widevine and Playready
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
@@ -51,18 +51,9 @@ Clone the Media Services .Net samples.
 
 Modify the code in [Encrypt with DRM using .NET](https://github.com/Azure-Samples/media-services-v3-dotnet-tutorials/tree/main/AMSV3Tutorials/EncryptWithDRM) to add FairPlay configurations.
 
-<sup>*</sup> Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
 ## [Widevine](#tab/widevine/)
 
-
-
 [!INCLUDE [Widevine is not available in the GovCloud region.](./includes/widevine-not-available-govcloud.md)]
-
-This article gives you an overview of implementing offline mode playback for DASH content protected by Widevine on Android devices. It also answers some common questions related to offline streaming of Widevine protected content.
-
-> [!NOTE]
-> Offline DRM is only billed for making a single request for a license when you download the content. Any errors are not billed.
 
 ## Prerequisites
 
@@ -138,10 +129,6 @@ The above open-source PWA app is authored in Node.js. If you want to host your o
 
 ## [PlayReady](#tab/playready/)
 
-* Your viewers might need to download content onto their phone or tablet for playback when they are disconnected from the Internet.
-* In some countries/regions, Internet availability and/or bandwidth is still limited. Users may choose to download content to watch it in higher resolutions.
-* Some content providers may disallow DRM license delivery beyond a country/region's border. If a user needs to travel abroad and still wants to watch content, offline download is needed.
-
 The smooth streaming ([PIFF](/iis/media/smooth-streaming/protected-interoperable-file-format)) file format with H264/AAC has a binding with PlayReady (AES-128 CTR). The smooth streaming .ismv file, assuming audio is muxed in video, is itself an fMP4 and can be used for playback. If smooth streaming content goes through PlayReady encryption, each .ismv file becomes a PlayReady protected MP4 fragment. You can choose an .ismv file with the preferred bitrate and rename it as .mp4 for download.
 
 There are two options for hosting the PlayReady protected MP4 for progressive download:
@@ -165,6 +152,5 @@ For playback testing, you can use a Universal Windows Application on Windows 10.
 For more information, see [Content Protection in the FAQ](frequently-asked-questions.yml).
 
 Widevine is a service provided by Google Inc. and subject to the terms of service and Privacy Policy of Google, Inc.
-
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]
