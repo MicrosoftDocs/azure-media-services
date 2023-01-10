@@ -4,7 +4,7 @@ description: Learn how to analyze audio and video content using AudioAnalyzerPre
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -473,3 +473,4 @@ Videos that are found to contain adult or racy content might be available for pr
 }
 ]
 ```
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -4,7 +4,7 @@ description: This topic describes quotas and limits in Microsoft Azure Media Ser
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 11/04/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -108,3 +108,5 @@ Any job record in your account older than 90 days will be automatically deleted,
 ## Support ticket
 
 For resources that are not fixed, you may ask for the quotas to be raised, by opening a [support ticket](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest). Include detailed information in the request on the desired quota changes, use-case scenarios, and regions required. <br/>Do **not** create additional Azure Media Services accounts in an attempt to obtain higher limits.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

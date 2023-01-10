@@ -4,7 +4,7 @@ description: Media Services supports Apple's Low Latency HLS (LL-HLS).  Watch Ro
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 10/25/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -76,3 +76,5 @@ When using HLS output, choose HLS CMAF (format=m3u8-cmaf) whenever possible. If 
 
 > [!NOTE]
 > The end-to-end latency can vary depending on local network conditions or by introducing a CDN caching layer. You should test your exact configurations.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

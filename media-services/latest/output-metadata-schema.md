@@ -4,7 +4,7 @@ description: This article gives an overview of Azure Media Services v3 output me
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Output metadata
@@ -21,11 +21,11 @@ This article discusses the elements and types of the JSON schema on which the ou
 
 The {baseName} file naming macro used in the naming of the output metadata file is shortened to 32 chars when using any standard encoding preset or custom preset.  However, to avoid a naming conflict when using one of the CopyCodec operations (CopyAudio or CopyVideo) in a custom preset, the {Basename} is limited to 64 chars.  This is to support scenarios where customers want to archive all of the output files in their asset. If the filename is very long, the first 32 chars might be the same across multiple output files. In this case, the first 32 chars would produce duplicated output files when using CopyVideo or CopyAudio. As a result, the {Basename} behavior is to retain  64 chars if CopyCodec is used in the preset.
 
-You can find the complete schema code and JSON example at the end of this article.  
+You can find the complete schema code and JSON example at the end of this article.
 
 ## AssetFile
 
-Collection of AssetFile entries for the encoding job.  
+Collection of AssetFile entries for the encoding job.
 
 | Name | Description |
 | --- | --- |
@@ -36,9 +36,9 @@ Collection of AssetFile entries for the encoding job.
 | **Size**<br />Required |Size of the asset file in bytes. <br /><br />Example: `"Size": 32414631`|
 | **Duration**<br />Required |Content play back duration. For more information, see the [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. <br /><br />Example: `"Duration": "PT1M10.315S"`|
 
-## VideoTracks 
+## VideoTracks
 
-Each physical AssetFile can contain in it zero or more videos tracks interleaved into an appropriate container format. The **VideoTracks** element represents a collection of all the video tracks.  
+Each physical AssetFile can contain in it zero or more videos tracks interleaved into an appropriate container format. The **VideoTracks** element represents a collection of all the video tracks.
 
 | Name | Description |
 | --- | --- |
@@ -54,9 +54,9 @@ Each physical AssetFile can contain in it zero or more videos tracks interleaved
 | **Bitrate**<br />Required |Average video bit rate in bits per second, as calculated from the AssetFile. Counts only the elementary stream payload, and does not include the packaging overhead.  <br /><br />Example: `"Bitrate": 3551567`|
 | **TargetBitrate**<br />Required |Target average bitrate for this video track, as requested via the encoding preset, in bits per second. <br /><br />Example: `"TargetBitrate": 3520000` |
 
-## AudioTracks 
+## AudioTracks
 
-Each physical AssetFile can contain in it zero or more audio tracks interleaved into an appropriate container format. The **AudioTracks** element represents a collection of all those audio tracks.  
+Each physical AssetFile can contain in it zero or more audio tracks interleaved into an appropriate container format. The **AudioTracks** element represents a collection of all those audio tracks.
 
 | Name  | Description |
 | --- | --- |
@@ -250,3 +250,5 @@ Each physical AssetFile can contain in it zero or more audio tracks interleaved 
   ]
 }
 ```
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

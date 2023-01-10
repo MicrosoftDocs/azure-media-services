@@ -4,7 +4,7 @@ description: Learn about terminology and concepts for Azure Media Services.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 01/04/2023
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -35,3 +35,5 @@ The fundamental concepts described in these topics should be reviewed before sta
 |Monitoring with Event Grid|To see the progress of the job, use **Event Grid**. Media Services also emits the live event types. With Event Grid, your apps can listen for and react to events from virtually all Azure services, as well as custom sources. |[Handling Event Grid events](monitoring/reacting-to-media-services-events.md)<br/><br/>[Schemas](monitoring/media-services-event-schemas.md)|
 |Monitoring with Azure Monitor|Monitor metrics and diagnostic logs that help you understand how your apps are performing with Azure Monitor.|[Media Services monitoring](monitoring/monitor-media-services.md)|
 |Player clients|You can use any player framework that supports the HLS or DASH streaming protocol. There are many open source and commercial players available on the market (Shaka, Hls.js, Video.js, Theo Player, Bitmovin Player, etc.) as well as built-in native browser and OS level streaming support for HLS and DASH.  The Azure Media Player is also available to play back media content streamed by Media Services on a wide variety of browsers. The Azure Media Player uses industry standards, such as HTML5, Media Source Extensions (MSE), and Encrypted Media Extensions (EME) to provide an adaptive streaming experience. |[List of media players](player-media-players-concept.md)|
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -4,7 +4,7 @@ description: This article shows you how to create a Media Services custom transf
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -21,3 +21,5 @@ You can use the following methods to create a Media Services custom transform.
 ## CLI
 
 [!INCLUDE [task-create-custom-transform-cli.md](./includes/task-create-custom-transform-cli.md)]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

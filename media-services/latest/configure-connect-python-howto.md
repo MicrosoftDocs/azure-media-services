@@ -4,7 +4,7 @@ description: This article demonstrates how to connect to Media Services v3 API w
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Connect to Media Services v3 API - Python
@@ -48,9 +48,9 @@ pip3 install azure-mgmt-media
       Set the variables' values to the values you got from [Access APIs](./access-api-howto.md). Update the `ACCOUNT_NAME` and `RESOURCE_GROUP_NAME` variables to the Media Services account name and Resource Group names used when creating those resources.
 
     ```python
-    from azure.identity import ClientSecretCredential 
+    from azure.identity import ClientSecretCredential
     from azure.mgmt.media import AzureMediaServices
-    
+
     # Tenant ID for your Azure Subscription
     TENANT_ID = "(update-this-value)"
 
@@ -65,19 +65,19 @@ pip3 install azure-mgmt-media
 
     # Your Resource Group name
     RESOURCE_GROUP_NAME = "(update-this-value)"
-    
+
     # Your Azure Media Service account name
     ACCOUNT_NAME = "(update-this-value)"
 
     credentials = ClientSecretCredential(TENANT_ID, CLIENT_ID, CLIENT_SECRET)
-    
+
     # The Azure Media Services Client
     client = AzureMediaServices(credentials, SUBSCRIPTION_ID)
-    
+
     # Now that you are authenticated, you can manipulate the entities.
     # For example, list assets in your Media Services account
     assets = client.assets.list(RESOURCE_GROUP_NAME, ACCOUNT_NAME)
-    
+
     for i, r in enumerate(assets):
         print(r)
     ```
@@ -88,3 +88,5 @@ pip3 install azure-mgmt-media
 ## Additional samples
 
 Additional samples are available in GitHub in the [Azure Media Services v3 Python Samples](https://github.com/Azure-Samples/media-services-v3-python) repo.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

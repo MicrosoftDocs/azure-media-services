@@ -5,7 +5,7 @@ description: Learn how to stream live events by using .NET 5.0
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 11/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -202,3 +202,5 @@ az group delete --name amsResourceGroup
 
 > [!IMPORTANT]
 > Leaving the live event running incurs billing costs. Be aware that if the project or program stops responding or is closed out for any reason, it might leave the live event running in a billing state.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

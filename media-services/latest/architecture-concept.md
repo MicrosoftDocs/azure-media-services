@@ -4,7 +4,7 @@ description: This article describes architectures for Media Services.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -33,3 +33,5 @@ See [Video-on-demand digital media](/azure/architecture/solution-ideas/articles/
 The Gridwich system demonstrates best practices for processing and delivering media assets on Azure. Although the Gridwich system is media-specific, the message processing and eventing framework can apply to any stateless event processing workflow.
 
 See [Gridwich media processing system](/azure/architecture/reference-architectures/media-services/gridwich-architecture) in the Azure Architecture center.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

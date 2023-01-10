@@ -5,7 +5,7 @@ ms.service: media-services
 ms.topic: quickstart
 ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ---
 
 # Create an Azure Media Services live stream with OBS
@@ -194,3 +194,5 @@ To stop the streaming endpoint:
 
 > [!TIP]
 > If you don't want to keep the assets from this event, be sure to delete them so you're not billed for storage.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

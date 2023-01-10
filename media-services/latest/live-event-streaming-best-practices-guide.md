@@ -4,7 +4,7 @@ description: Customers often ask how they can reduce the latency of their live s
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 12/05/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -206,3 +206,5 @@ The Azure portal can help you simplify the calculations. On the streaming page, 
 ## Timing
 
 You may want to provision streaming units 1 hour ahead of the expected peak usage to ensure streaming units are ready.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

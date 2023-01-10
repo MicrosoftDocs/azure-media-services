@@ -4,7 +4,7 @@ description: This article lists live event error codes.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: error-reference
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -99,3 +99,5 @@ event.
 >|**MPE_INGEST_DISCONTINUITY** ||No|
 >| Description| There is discontinuty in incoming data.||
 >|Suggested solution| This is a warning that the encoder drops data due to a network issue or a system resource issue. Check the encoder log or system log. Monitor the system resource (CPU, memory or network) as well. If the system CPU is too high, try to lower the bitrate or use the H/W encoder option from the system graphics card.||
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

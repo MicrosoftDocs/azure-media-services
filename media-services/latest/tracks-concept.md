@@ -4,7 +4,7 @@ description: Media Services offers the Tracks API so you can deliver text tracks
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 01/04/2023
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -97,3 +97,5 @@ For detailed Tracks API steps, see the Samples below.
 
 - [How to edit and upload VTT files in the Azure portal](tracks-edit-track-portal-how-to.md) produced during a live event. You can upload additional WebVTT tracks using the same method.
 - [Use WebVTT files with Azure Media Services and Azure Media Player](amp-captions-tutorial.md)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

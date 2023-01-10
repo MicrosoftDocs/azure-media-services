@@ -4,7 +4,7 @@ description: This article discusses how to verify your on-premises live streamin
 author: johndeu
 manager: johndeu
 ms.author: inhenkel
-ms.date: 05/11/2022
+ms.date: 01/09/2023
 ms.topic: how-to
 ms.service: media-services
 ---
@@ -60,3 +60,5 @@ Follow the same steps as in [Pass-through Live Event verification](#pass-through
 ## Email your recorded settings
 
 Finally, email your recorded settings and live archive parameters to Azure Media Services at amshelp@microsoft.com as a notification that all self-verification checks have passed. Also, include your contact information for any follow-ups. You can contact the Azure Media Services team with any questions about this process.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

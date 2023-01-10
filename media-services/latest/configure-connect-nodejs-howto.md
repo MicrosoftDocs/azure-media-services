@@ -4,7 +4,7 @@ description: This article demonstrates how to connect to Media Services v3 API w
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 06/28/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Connect to Media Services v3 API - Node.js
@@ -196,3 +196,5 @@ Many more samples are available in the [repository](https://github.com/Azure-Sam
 - [Media Services concepts](concepts-overview.md)
 - [Azure for JavaScript & Node.js developers](/azure/developer/javascript/)
 - [Media Services source code in the @azure/azure-sdk-for-js repo](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/mediaservices/arm-mediaservices)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

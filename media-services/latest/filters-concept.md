@@ -4,7 +4,7 @@ description: This topic describes how to create filters so your client can use t
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 10/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Filters
@@ -140,3 +140,5 @@ Filters and streaming locators can be updated on the fly, but keep in mind that 
 It isn't recommended to update the definition of filters associated with an actively published **Streaming Locator**, especially when CDN is enabled. Streaming servers and CDNs can have internal caches that may result in stale cached data to be returned.
 
 If the filter definition needs to be changed consider creating a new filter and adding it to the **Streaming Locator** URL or publishing a uniquely new **Streaming Locator** that references the updated filter directly.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -4,7 +4,7 @@ description: Learn how to store Azure Media Services events in Azure Log Analyti
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -217,3 +217,5 @@ With the live stream, Azure Media Services is emitting various events that are t
 ## Delete resources
 
 If you don't want to continue to use the resources you created during this tutorial, make sure you delete all of the resources in the resource group or you will continue to be charged.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

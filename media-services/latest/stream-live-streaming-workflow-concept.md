@@ -4,7 +4,7 @@ description: To understand the live streaming workflow in Media Services v3, you
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -62,3 +62,5 @@ The asset that the live output is archiving to, automatically becomes an on-dema
 ## Live streaming FAQ
 
 See the [live streaming questions in the FAQ](frequently-asked-questions.yml).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

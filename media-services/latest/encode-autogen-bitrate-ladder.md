@@ -4,7 +4,7 @@ description: This topic shows how to use the Standard Encoder in Media Services 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 06/28/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 #  Encode with an auto-generated bitrate ladder
@@ -64,3 +64,5 @@ The [content-aware encoding presets](./encode-content-aware-concept.md) offer a 
 ## Encoding samples
 
 See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

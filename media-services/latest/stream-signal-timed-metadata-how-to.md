@@ -4,7 +4,7 @@ description: Timed metadata is custom data that is inserted into a live stream. 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 11/09/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -141,3 +141,5 @@ curl https://mylivestream.channel.media.azure.net/618377123f4c49b3937ade20204ca0
 ## Clean up resources
 
 Make sure you shut down the live event and the streaming endpoint and delete resources you don’t intend to keep using or you'll be billed.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

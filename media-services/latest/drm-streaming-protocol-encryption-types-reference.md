@@ -4,7 +4,7 @@ description: This reference article lists the low latency streaming protocols an
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 06/22/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -13,3 +13,5 @@ ms.author: inhenkel
 This reference article lists the low latency streaming protocols and encryption types.
 
 [!INCLUDE [low-latency-supported-encryption-types](includes/low-latency-supported-encryption-types.md)]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

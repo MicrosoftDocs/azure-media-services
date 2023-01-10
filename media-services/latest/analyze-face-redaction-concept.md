@@ -4,7 +4,7 @@ description: Azure Media Services v3 provides a face detection and redaction (bl
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/1/2022
+ms.date: 01/09/2023
 ms.author: johndeu
 ---
 # Find and redact (blur) faces with the Face Detector preset
@@ -160,3 +160,5 @@ You can find samples of the blur types below.
 The Redaction MP provides high precision face location detection and tracking that can detect up to 64 human faces in a video frame. Frontal faces provide the best results, while side faces and small faces (less than or equal to 24x24 pixels) are challenging.
 
 [!INCLUDE [media-services-analytics-output-json](./includes/media-services-analytics-output-json.md)]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -4,7 +4,7 @@ description: If you would like to access a storage account when the storage acco
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -122,3 +122,5 @@ For additional validation, you can check the Azure Storage logs to see which aut
 If you aren't planning to use the resources you created, delete the resource group.
 
 [!INCLUDE [Create a Media Services account with the CLI](./includes/clean-up-resources-cli.md)]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -4,7 +4,7 @@ description: This article gives an overview of using a private endpoint with Azu
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 06/06/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -120,3 +120,5 @@ It's also possible to create a private endpoint for a live event, while using a 
 ## How-tos and tutorials
 
 - [Create a private endpoint for a streaming endpoint in the portal](security-private-endpoint-streaming-endpoint-how-to.md)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

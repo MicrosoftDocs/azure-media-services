@@ -4,7 +4,7 @@ description: This article will assist you with setting up your environment for m
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/01/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -126,3 +126,5 @@ Read the article [Connect to Azure Media Services v3 API - Node.js](configure-co
 Download the [Go](https://godoc.org/github.com/Azure/azure-sdk-for-go/services/mediaservices/mgmt/2018-07-01/media) SDK.
 
 ---
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

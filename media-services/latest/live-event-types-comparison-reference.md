@@ -4,7 +4,7 @@ description: In Azure Media Services, a live event can be set to either a *pass-
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 10/21/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Live Event types comparison (REST)
@@ -125,3 +125,5 @@ For example, if you send a contribution feed at 720p to a Live Event configured 
 ### Bitrate of contribution feed and output layers
 
 The live encoder is configured to honor the bitrate settings in the preset, irrespective of the bitrate of the contribution feed. As a result the bitrate of the output layers may exceed that of the contribution feed. For example, if you send in a contribution feed at a resolution of 720p at 1 Mbps, the output layers will remain the same as in the [table](live-event-types-comparison-reference.md#output-video-streams-for-default720p) above.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

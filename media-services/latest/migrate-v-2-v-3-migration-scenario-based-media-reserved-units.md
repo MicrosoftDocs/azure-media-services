@@ -4,7 +4,7 @@ description: This article gives you MRU scenario based guidance that will assist
 author: jiayali-ms
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -43,3 +43,5 @@ For more information about MRUs, see [Media Reserved Units](concept-media-reserv
 ## Samples
 
 You can also [compare the V2 and V3 code in the code samples](migrate-v-2-v-3-migration-samples.md).
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 keywords: azure media services, stream
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -338,3 +338,5 @@ Run this Azure CLI command:
 ```cloudshell-bash
 az group delete --name amsResourceGroup
 ```
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

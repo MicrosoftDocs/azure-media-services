@@ -4,7 +4,7 @@ description: This tutorial walks you through the steps of creating an Azure Medi
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 09/28/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Create a Media Services account
@@ -60,3 +60,5 @@ You can use either the Azure portal or the CLI to create a Media Services accoun
 See the Media Services [REST API](/rest/api/media/mediaservices/create-or-update).
 
 ---
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

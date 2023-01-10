@@ -4,7 +4,7 @@ description: Suppose you want to build an “On Air” sign for your broadcastin
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -255,3 +255,5 @@ This function allows access to anyone. Securing access to the Azure Function and
 If you aren't planning to use the resources you created, delete the resource group.
 
 [!INCLUDE [Create a Media Services account with the CLI](./includes/clean-up-resources-cli.md)]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

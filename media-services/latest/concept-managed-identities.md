@@ -4,7 +4,7 @@ description: Media Services can be used with Azure Managed Identities.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -45,3 +45,5 @@ Try these tutorials to get some hands-on experience with using a Managed Identit
 To learn more about what managed identities can do for you and your Azure applications, see [Azure AD Managed Identities](/azure/active-directory/managed-identities-azure-resources/overview).
 
 To learn more about Azure Functions, see [About Azure Functions](/azure/azure-functions/functions-overview)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

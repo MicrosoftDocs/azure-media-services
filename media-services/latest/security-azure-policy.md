@@ -4,7 +4,7 @@ description: This article discusses Azure Policy built-in support for Azure Medi
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 05/25/2022
+ms.date: 01/09/2023
 ms.author: johndeu
 ---
 
@@ -55,3 +55,5 @@ When private link is used to access Media Services resources, a common requireme
 ### Outbound network security
 
 Azure Policy can be used to restrict how Media Services accesses external services. The [Azure Media Services jobs with HTTPS inputs should limit input URIs to permitted URI patterns](https://ms.portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fe9914afe-31cd-4b8a-92fa-c887f847d477) policy be used to either entirely block Media Services jobs that read from HTTP and HTTPS URLS or to limit Media Services jobs to reading from URLs that match specific patterns.
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

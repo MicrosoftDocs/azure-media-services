@@ -4,7 +4,7 @@ description: This article gives your content protection scenario-based guidance 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 3/16/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
@@ -118,3 +118,5 @@ You should first unpublish (remove all Streaming Locators) on the Asset via the 
 
 - [v3 Azure Media Services Explorer tool](https://github.com/Azure/Azure-Media-Services-Explorer)
 - [v2 Azure Media Services Explorer tool](https://github.com/Azure/Azure-Media-Services-Explorer/releases/tag/v4.3.15.0)
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]

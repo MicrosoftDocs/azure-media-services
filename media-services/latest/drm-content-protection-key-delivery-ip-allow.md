@@ -4,7 +4,7 @@ description: Learn how to restrict access to DRM and AES Keys by using IP allowl
 author: johndeu
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 11/07/2022
+ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 # Restrict access to DRM license and AES key delivery using IP allowlists
@@ -117,3 +117,5 @@ Additional examples:
 - To allow requests from any IP address, set the “defaultAction” of the “accessControl” block to “Allow” (and do not specify an “ipAllowList)
 - To allow all IPv4 addresses and block all IPv6 addresses, set the IP allow list to [ "0.0.0.0/0" ]
 - To allow all IPv6 addresses and block all IPv6 addresses, set the IP allow list to [ "::/0" ]
+
+[!INCLUDE [media-services-community](includes/media-services-community.md)]
