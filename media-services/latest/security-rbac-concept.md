@@ -24,7 +24,7 @@ To see the role definition for a specific role, follow the links below:
 - [Media Services Streaming Endpoints Administrator](/azure/role-based-access-control/built-in-roles#media-services-streaming-endpoints-administrator)
 - [Media Services Live Events Administrator](/azure/role-based-access-control/built-in-roles#media-services-live-events-administrator)
 
-## More information about using Azure RBAC with Media Services
+## More information about using Azure RBAC
 
 - [Classic subscription administrator roles, Azure roles, and Azure AD roles](/azure/role-based-access-control/rbac-and-directory-admin-roles)
 - [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
