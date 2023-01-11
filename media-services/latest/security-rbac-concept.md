@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Media Services defines a built-in roles specific to the service. The [Azure built-in role definitions](/azure/role-based-access-control/built-in-roles) article tells you exactly what the Media Services roles grant.
+Media Services defines built-in roles specific to the service. The [Azure built-in role definitions](/azure/role-based-access-control/built-in-roles) article tells you exactly what the Media Services roles grant.
 
 ## Media Services built-in roles
 
