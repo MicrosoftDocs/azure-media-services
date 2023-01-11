@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 12/05/2022
+ms.date: 01/10/2023
 ms.author: inhenkel
 ---
 
@@ -18,6 +18,12 @@ To stay up to date with the most recent developments, this article provides you 
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## December 2022
+
+Media Services now supports IPv6 for streaming media to live events, streaming content from streaming endpoints, and when delivering content keys. To enable IPv6 for streaming endpoints and live events, the IP allow list for the resource must include at least one IPv6 address or IPv6 range. When CDN support is enabled for a streaming endpoint, IPv6 support is dependent on the CDN configuration.
+
+For more information about using IPv6 with Media Services, see [Media Services live events](live-event-concept.md) and [Restrict access to DRM license and AES key delivery using IP allowlists](drm-content-protection-key-delivery-ip-allow.md).
 
 ## November 2022
 
