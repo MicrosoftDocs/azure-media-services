@@ -1,10 +1,10 @@
 ---
 title: Role-based access control for Media Services accounts
-description: This article discusses Azure role-based access control (Azure RBAC) for Azure Media Services accounts.Media Services defines built-in roles specific to the service. The Azure built-in role definitions article tells you exactly what the Media Services roles grant.
+description: This article discusses Azure role-based access control (Azure RBAC) for Azure Media Services accounts. Media Services defines built-in roles specific to the service. The Azure built-in role definitions article tells you exactly what the Media Services roles grant.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 01/12/2023
 ms.author: inhenkel
 ---
 
@@ -12,15 +12,19 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Currently, Azure Media Services does not define any custom roles specific to the service. To get full access to the Media Services account, customers can use the built-in roles of **Owner** or **Contributor**. The main difference between these roles is: the **Owner** can control who has access to a resource and the **Contributor** cannot. The built-in **Reader** role can also be used but the user or application will only have read access to the Media Services APIs.
+Media Services defines built-in roles specific to the service. The [Azure built-in role definitions](/azure/role-based-access-control/built-in-roles) article tells you exactly what the Media Services roles grant.
 
-## Design principles
+## Media Services built-in roles
 
-One of the key design principles of the v3 API is to make the API more secure. v3 APIs do not return secrets or credentials on **Get** or **List** operations. The keys are always null, empty, or sanitized from the response. The user needs to call a separate action method to get secrets or credentials. The **Reader** role cannot call operations like Asset.ListContainerSas, StreamingLocator.ListContentKeys, ContentKeyPolicies.GetPolicyPropertiesWithSecrets. Having separate actions enables you to set more granular Azure RBAC security permissions in a custom role if desired.
+To see the role definition for a specific role, follow the links below:
 
-The [built-in role definitions](/azure/role-based-access-control/built-in-roles) article tells you exactly what the role grants.
+- [Media Services Account Administrator](/azure/role-based-access-control/built-in-roles#media-services-account-administrator)
+- [Media Services Media Operator](/azure/role-based-access-control/built-in-roles#media-services-media-operator)
+- [Media Services Policy Administrator](/azure/role-based-access-control/built-in-roles#media-services-policy-administrator)
+- [Media Services Streaming Endpoints Administrator](/azure/role-based-access-control/built-in-roles#media-services-streaming-endpoints-administrator)
+- [Media Services Live Events Administrator](/azure/role-based-access-control/built-in-roles#media-services-live-events-administrator)
 
-See the following articles for more information:
+## More information about using Azure RBAC
 
 - [Classic subscription administrator roles, Azure roles, and Azure AD roles](/azure/role-based-access-control/rbac-and-directory-admin-roles)
 - [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
