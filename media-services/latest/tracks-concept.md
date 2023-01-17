@@ -23,10 +23,10 @@ With the Tracks API you can:
 - Get the download URL a text track so you can edit it, and then upload it back into the asset.
 - Show or hide a text track in a video player with settings in the HLS playlist or DASH manifest.
 
-## Text tracks
-
 > [!NOTE]
 > You can only add or update a text track on a video-on-demand (VOD) asset. Additionally, audio late binding isn’t supported for live streaming assets.
+
+## Text tracks
 
 ### Using text tracks with locally produced media
 
