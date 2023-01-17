@@ -4,7 +4,7 @@ description: Media Services offers the Tracks API so you can deliver text tracks
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 01/09/2023
+ms.date: 01/17/2023
 ms.author: inhenkel
 ---
 
@@ -22,6 +22,9 @@ With the Tracks API you can:
 - Specify accessibility attributes of the text or audio tracks.
 - Get the download URL a text track so you can edit it, and then upload it back into the asset.
 - Show or hide a text track in a video player with settings in the HLS playlist or DASH manifest.
+
+> [!NOTE]
+> You can only add or update a text track on a video-on-demand (VOD) asset. Additionally, audio late binding isn’t supported for live streaming assets.
 
 ## Text tracks
 
