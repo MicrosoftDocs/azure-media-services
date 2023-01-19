@@ -4,7 +4,7 @@ description: Media Services supports Apple's Low Latency HLS (LL-HLS).  Watch Ro
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 01/09/2023
+ms.date: 01/19/2023
 ms.author: inhenkel
 ---
 
@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Media Services supports Apple's Low Latency HLS (LL-HLS) specification as well as DASH.  [Watch](https://developer.apple.com/videos/play/wwdc2019/502/) Roger Pantos explain the Low Latency HLS specification at WWDC19 to understand how the specification gets your media content to your viewers faster.
+Media Services supports Apple's Low Latency HLS (LL-HLS) specification. [Watch](https://developer.apple.com/videos/play/wwdc2019/502/) Roger Pantos explain the Low Latency HLS specification at WWDC19 to understand how the specification gets your media content to your viewers faster.
 
 This article describes Media Services support for LL-HLS and provides you with implementation guidance.
 
@@ -22,7 +22,7 @@ Media Services provides two options for delivering streaming content with low la
 
 - **LowLatencyV2**. Use this option when:
   - You are using Media Services to encode a live event
-  - You are using either Low Latency HLS or DASH CMAF
+  - You are using Low Latency HLS
 - **LowLatency**. Use this option when:
   - You are using a pass-through live event
   - You need Smooth Streaming output
@@ -60,7 +60,7 @@ See [dynamic packaging](encode-dynamic-packaging-concept.md) page for more infor
 
 Use the links below to see the [3rd-party player sample](https://github.com/Azure-Samples/media-services-3rdparty-player-samples) test results.
 
-- Azure Media Player - use Low Latency Heuristic Profile. On Safari, it falls back to the native LL-HLS player. On other platforms, it will choose to play DASH.
+- Azure Media Player - use Low Latency Heuristic Profile.
 - [Shaka ](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/shaka#test-results)
 - [Video.js](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/video.js#test-results)
 - [hls.js](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/hls.js#test-results)
