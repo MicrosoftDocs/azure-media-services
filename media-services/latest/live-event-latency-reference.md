@@ -16,6 +16,9 @@ Media Services supports Apple's Low Latency HLS (LL-HLS) specification. [Watch](
 
 This article describes Media Services support for LL-HLS and provides you with implementation guidance.
 
+> [!NOTE]
+> At this time, we do not support LL-DASH.
+
 ## LowLatency and LowLatencyV2 options
 
 Media Services provides two options for delivering streaming content with low latency.
