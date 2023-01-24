@@ -130,7 +130,7 @@ For detailed description of the top-level diagnostic logs schema, see [Supported
 |  PolicyName  |  The Azure Resource Manager name of the policy. |
 |  StatusMessage  |  The status message. |
 
-Sample key delivery log
+#### Sample key delivery log
 
 ```json
 {
@@ -177,7 +177,7 @@ Sample key delivery log
 |  Location  |  Location of the service sending the event. |
 |  Properties  |  Operation details. |
 
-Sample live event log
+#### Sample live event log
 
 ```json
 [
@@ -225,7 +225,7 @@ Sample live event log
 |  URL  |  The streaming URL from Azure Media Services. |
 |  Status  |  Status code of the request. |
 
-Sample streaming endpoint log
+#### Sample streaming endpoint log
 
 ```json
 [
