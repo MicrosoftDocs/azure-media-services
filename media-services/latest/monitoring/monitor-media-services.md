@@ -85,6 +85,17 @@ Some things that you can examine with diagnostic logs are:
 - The latency on key delivery requests
 - The number of unauthorized license requests from clients
 
+## Analyzing logs
+
+Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.
+
+All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](/azure/azure-monitor/essentials/resource-logs-schema#top-level-common-schema).
+
+## Alerts
+
+Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system. You can set alerts on [metrics](/azure/azure-monitor/alerts/alerts-metric-overview), [logs](/azure/azure-monitor/alerts/git status
+alerts-unified-log), and the [activity log](/azure/azure-monitor/alerts/activity-log-alerts).
+
 ## Schemas
 
 For detailed description of the top-level diagnostic logs schema, see [Supported services, schemas, and categories for Azure Diagnostic Logs](/azure/azure-monitor/essentials/resource-logs-schema).
@@ -201,7 +212,7 @@ Sample live event log
 ]
 ```
 
-## Streaming Endpoints
+### Streaming Endpoints
 
 | **Name** | **Description** |
 | ------- | -------------- |
@@ -234,17 +245,6 @@ Sample streaming endpoint log
     }
 ]
 ```
-
-### Analyzing logs
-
-Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.
-
-All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](/azure/azure-monitor/essentials/resource-logs-schema#top-level-common-schema).
-
-## Alerts
-
-Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system. You can set alerts on [metrics](/azure/azure-monitor/alerts/alerts-metric-overview), [logs](/azure/azure-monitor/alerts/git status
-alerts-unified-log), and the [activity log](/azure/azure-monitor/alerts/activity-log-alerts).
 
 ## How-tos
 
