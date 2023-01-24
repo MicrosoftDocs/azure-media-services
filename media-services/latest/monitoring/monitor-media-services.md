@@ -6,7 +6,7 @@ ms.author: inhenkel
 manager: femilia
 ms.topic: how-to
 ms.service: media-services
-ms.date: 11/22/2022
+ms.date: 01/24/2023
 ---
 
 # Monitor Media Services
@@ -55,24 +55,9 @@ Media Services metrics are collected at regular intervals whether or not the val
 
 Metrics available for Media Services are:
 
-- [Media Services account metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservices)
+- [Media Services account metrics, including Key Delivery](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservices)
 - [Live event metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesliveevents)
 - [Streaming endpoint metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesstreamingendpoints)
-
->[!NOTE]
->At the time of this writing, you cannot create diagnostic settings for Live event metrics or streaming endpoint metrics in the Azure portal.
-
-### Metric dimensions
-
-For more information on what metric dimensions are, see [Multi-dimensional metrics](/azure/azure-monitor/essentials/data-platform-metrics#multi-dimensional-metrics).
-
-Media services has the following metric dimensions.  They are self-explantory based on the metrics they support.
-
-- OutputFormat
-- HttpStatusCode
-- ErrorCode
-- TrackName
-- KeyType
 
 ### Analyzing metrics
 
@@ -100,25 +85,52 @@ Some things that you can examine with diagnostic logs are:
 - The latency on key delivery requests
 - The number of unauthorized license requests from clients
 
-### Schemas
+## Analyzing logs
+
+Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.
+
+All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](/azure/azure-monitor/essentials/resource-logs-schema#top-level-common-schema).
+
+## Alerts
+
+Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system. You can set alerts on [metrics](/azure/azure-monitor/alerts/alerts-metric-overview), [logs](/azure/azure-monitor/alerts/git status
+alerts-unified-log), and the [activity log](/azure/azure-monitor/alerts/activity-log-alerts).
+
+## Schemas
 
 For detailed description of the top-level diagnostic logs schema, see [Supported services, schemas, and categories for Azure Diagnostic Logs](/azure/azure-monitor/essentials/resource-logs-schema).
 
-### Key delivery
+### Media Account Health
 
-These properties are specific to the key delivery log schema.
+| **Name** | **Description** |
+| ------- | -------------- |
+|  TimeGenerated  |  The timestamp (UTC) of when the event was generated. |
+|  OperationName  |  The name of the operation that triggered the event. |
+|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
+|  Location  |  Location of the service sending the log. |
+|  EventCode  |  The event code. |
+|  EventMessage  |  The event status message. |
 
-|Name|Description|
-|---|---|
-|keyId|The ID of the requested key.|
-|keyType|Could be one of the following values: "Clear" (no encryption), "FairPlay", "PlayReady", or "Widevine".|
-|policyName|The Azure Resource Manager name of the policy.|
-|tokenType|The token type.|
-|statusMessage|The status message.|
+### Key Delivery
 
-### Example
+| **Name** | **Description** |
+| ------- | -------------- |
+|  TimeGenerated  |  The timestamp (UTC) of when the event was generated. |
+|  OperationName  |  The name of the operation that triggered the event. |
+|  OperationVersion  |  Azure Media Services operation version. |
+|  ResultType  |  Azure Media Services operation result type. |
+|  ResultSignature  |  Azure Media Services operation result signature. |
+|  DurationMs  |  Azure Media Services operation duration in milliseconds. |
+|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
+|  Location  |  Location of the service sending the log. |
+|  RequestId  |  Id of the request. |
+|  KeyType  |  Could be one of the following values: Clear (no encryption), FairPlay, PlayReady, or Widevine. |
+|  KeyId  |  The ID of the requested key. |
+|  TokenType  |  The token type. |
+|  PolicyName  |  The Azure Resource Manager name of the policy. |
+|  StatusMessage  |  The status message. |
 
-Properties of the key delivery requests schema.
+#### Sample key delivery log
 
 ```json
 {
@@ -155,39 +167,84 @@ Properties of the key delivery requests schema.
 }
 ```
 
+### Live Events
+
+| **Name** | **Description** |
+| ------- | -------------- |
+|  TimeGenerated  |  The timestamp (UTC) when the event was generated. |
+|  OperationName  |  The name of the operation that triggered the event. |
+|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
+|  Location  |  Location of the service sending the event. |
+|  Properties  |  Operation details. |
+
+#### Sample live event log
+
 ```json
- {
-    "time": "2019-01-11T17:59:33.4676382Z",
-    "resourceId": "/SUBSCRIPTIONS/00000000-0000-0000-0000-0000000000/RESOURCEGROUPS/SBKEY/PROVIDERS/MICROSOFT.MEDIA/MEDIASERVICES/SBDNSTEST",
-    "operationName": "MICROSOFT.MEDIA/MEDIASERVICES/CONTENTKEYS/READ",
-    "operationVersion": "1.0",
-    "category": "KeyDeliveryRequests",
-    "resultType": "Failed",
-    "resultSignature": "Unauthorized",
-    "durationMs": 2,
-    "level": "Error",
-    "location": "uswestcentral",
-    "properties": {
-        "requestId": "875af030-b77c-416b-b7e1-58f23ebec182",
-        "keyType": "Clear",
-        "keyId": "3321e646-78d0-4896-84ec-c7b98eddfca5",
-        "policyName": "56a70229-82d0-4174-82bc-e9d3b14e5dbf",
-        "tokenType": "None",
-        "statusMessage": "No token present in authorization header or URL."
+[
+    {
+        "TimeGenerated": "2022-10-11T06:02:13.4730825Z",
+        "OperationName": "LIVEEVENTS/INGESTBEGIN",
+        "Level": "Informational",
+        "Location": "westcentralus",
+        "Properties": {"liveEventName":"CONTOSOLIVE","streamName":"1234","remoteIP":"10.0.0.xxx","remotePort":"35091"}
+    },
+    {
+        "TimeGenerated": "2022-10-11T06:02:19.8229491Z",
+        "OperationName": "LIVEEVENTS/STREAMINFO",
+        "Level": "Informational",
+        "Location": "westcentralus",
+        "Properties": {"liveEventName":"CONTOSOLIVE","remoteIP":"10.0.0.xxx","remotePort":"35091","trackName":"audio_160000","trackType":"audio","bitrate":160000,"timestamp":66,"timescale":1000,"resolution":"n/a"}
+    },
+    {
+        "TimeGenerated": "2022-10-11T06:04:41.1375866Z",
+        "OperationName": "LIVEEVENTS/INGESTEND",
+        "Level": "Informational",
+        "Location": "westcentralus",
+        "Properties": {"liveEventName":"CONTOSOLIVE","streamName":"1234","remoteIP":"10.0.0.xxx","remotePort":"35091","resultCode":"MPE_CLIENT_TERMINATED_SESSION"}
+    },
+    {
+        "TimeGenerated": "2022-10-11T06:07:01.0446756Z",
+        "OperationName": "LIVEEVENTS/INGESTDISCONTINUITY",
+        "Level": "Warning",
+        "Location": "westcentralus",
+        "Properties": {"liveEventName":"CONTOSOLIVE","trackName":"audio","timestamp":156777,"discontinuityGap":12605}
     }
-}
+]
 ```
 
-### Analyzing logs
+### Streaming Endpoints
 
-Data in Azure Monitor Logs is stored in tables where each table has its own set of unique properties.
+| **Name** | **Description** |
+| ------- | -------------- |
+|  TimeGenerated  |  The timestamp (UTC) when the event was generated. |
+|  OperationName  |  The name of the operation that triggered the event. |
+|  OperationVersion  |  Azure Media Services operation version. |
+|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
+|  Location  |  Location of the service sending the event. |
+|  ClientIP  |  IP address of the client. |
+|  URL  |  The streaming URL from Azure Media Services. |
+|  Status  |  Status code of the request. |
 
-All resource logs in Azure Monitor have the same fields followed by service-specific fields. The common schema is outlined in [Azure Monitor resource log schema](/azure/azure-monitor/essentials/resource-logs-schema#top-level-common-schema).
+#### Sample streaming endpoint log
 
-## Alerts
-
-Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system. You can set alerts on [metrics](/azure/azure-monitor/alerts/alerts-metric-overview), [logs](/azure/azure-monitor/alerts/git status
-alerts-unified-log), and the [activity log](/azure/azure-monitor/alerts/activity-log-alerts).
+```json
+[
+    {
+        "time": "2022-09-30T07:40:06.1524833Z",
+        "resourceId": "/SUBSCRIPTIONS/00000000-0000-0000-0000-000000000001/RESOURCEGROUPS/CONTOSORG/PROVIDERS/MICROSOFT.MEDIA/MEDIASERVICES/CONTOSOMEDIA/STREAMINGENDPOINTS/DEFAULT",
+        "operationName": "MICROSOFT.MEDIA/MEDIASERVICES/STREAMINGENDPOINTS/GET",
+        "category": "StreamingEndpointRequests",
+        "level": "Informational",
+        "location": "uswc1",
+        "properties": {
+            "ClientIP": "10.0.0.1",
+            "URL": "https://cdn--contosomedia-uswc.streaming.media.azure.net:443/00000000-0000-0000-0000-000000000000/contoso.ism/QualityLevels(127999)/Fragments(aac_eng_2_127999_2_1=20053333,format=mpd-time-csf)",
+            "Status": "200"
+        },
+        "operationVersion": "1.0"
+    }
+]
+```
 
 ## How-tos
 
