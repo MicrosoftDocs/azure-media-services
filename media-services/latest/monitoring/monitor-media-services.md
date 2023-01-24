@@ -134,32 +134,7 @@ For detailed description of the top-level diagnostic logs schema, see [Supported
 |  PolicyName  |  The Azure Resource Manager name of the policy. |
 |  StatusMessage  |  The status message. |
 
-### Live Events
-
-| **Name** | **Description** |
-| ------- | -------------- |
-|  TimeGenerated  |  The timestamp (UTC) when the event was generated. |
-|  OperationName  |  The name of the operation that triggered the event. |
-|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
-|  Location  |  Location of the service sending the event. |
-|  Properties  |  Operation details. |
-
-## Streaming Endpoints
-
-| **Name** | **Description** |
-| ------- | -------------- |
-|  TimeGenerated  |  The timestamp (UTC) when the event was generated. |
-|  OperationName  |  The name of the operation that triggered the event. |
-|  OperationVersion  |  Azure Media Services operation version. |
-|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
-|  Location  |  Location of the service sending the event. |
-|  ClientIP  |  IP address of the client. |
-|  URL  |  The streaming URL from Azure Media Services. |
-|  Status  |  Status code of the request. |
-
-### Example request return
-
-The following is an example of a key delivery requests return. Other types of requests will be similar.
+Sample key delivery log
 
 ```json
 {
@@ -195,6 +170,91 @@ The following is an example of a key delivery requests return. Other types of re
     }
 }
 ```
+
+### Live Events
+
+| **Name** | **Description** |
+| ------- | -------------- |
+|  TimeGenerated  |  The timestamp (UTC) when the event was generated. |
+|  OperationName  |  The name of the operation that triggered the event. |
+|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
+|  Location  |  Location of the service sending the event. |
+|  Properties  |  Operation details. |
+
+Sample live event log
+
+```json
+[
+    {
+        "TimeGenerated": "2022-10-11T06:02:13.4730825Z",
+        "OperationName": "LIVEEVENTS/INGESTBEGIN",
+        "Level": "Informational",
+        "Location": "westcentralus",
+        "Properties": {"liveEventName":"CONTOSOLIVE","streamName":"1234","remoteIP":"10.0.0.xxx","remotePort":"35091"}
+    },
+    {
+        "TimeGenerated": "2022-10-11T06:02:19.8229491Z",
+        "OperationName": "LIVEEVENTS/STREAMINFO",
+        "Level": "Informational",
+        "Location": "westcentralus",
+        "Properties": {"liveEventName":"CONTOSOLIVE","remoteIP":"10.0.0.xxx","remotePort":"35091","trackName":"audio_160000","trackType":"audio","bitrate":160000,"timestamp":66,"timescale":1000,"resolution":"n/a"}
+    },
+    {
+        "TimeGenerated": "2022-10-11T06:04:41.1375866Z",
+        "OperationName": "LIVEEVENTS/INGESTEND",
+        "Level": "Informational",
+        "Location": "westcentralus",
+        "Properties": {"liveEventName":"CONTOSOLIVE","streamName":"1234","remoteIP":"10.0.0.xxx","remotePort":"35091","resultCode":"MPE_CLIENT_TERMINATED_SESSION"}
+    },
+    {
+        "TimeGenerated": "2022-10-11T06:07:01.0446756Z",
+        "OperationName": "LIVEEVENTS/INGESTDISCONTINUITY",
+        "Level": "Warning",
+        "Location": "westcentralus",
+        "Properties": {"liveEventName":"CONTOSOLIVE","trackName":"audio","timestamp":156777,"discontinuityGap":12605}
+    }
+]
+```
+
+## Streaming Endpoints
+
+| **Name** | **Description** |
+| ------- | -------------- |
+|  TimeGenerated  |  The timestamp (UTC) when the event was generated. |
+|  OperationName  |  The name of the operation that triggered the event. |
+|  OperationVersion  |  Azure Media Services operation version. |
+|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
+|  Location  |  Location of the service sending the event. |
+|  ClientIP  |  IP address of the client. |
+|  URL  |  The streaming URL from Azure Media Services. |
+|  Status  |  Status code of the request. |
+
+Sample streaming endpoint log
+
+```json
+[
+    {
+        "time": "2022-09-30T07:40:06.1524833Z",
+        "resourceId": "/SUBSCRIPTIONS/00000000-0000-0000-0000-000000000001/RESOURCEGROUPS/CONTOSORG/PROVIDERS/MICROSOFT.MEDIA/MEDIASERVICES/CONTOSOMEDIA/STREAMINGENDPOINTS/DEFAULT",
+        "operationName": "MICROSOFT.MEDIA/MEDIASERVICES/STREAMINGENDPOINTS/GET",
+        "category": "StreamingEndpointRequests",
+        "level": "Informational",
+        "location": "uswc1",
+        "properties": {
+            "ClientIP": "10.0.0.1",
+            "URL": "https://cdn--contosomedia-uswc.streaming.media.azure.net:443/00000000-0000-0000-0000-000000000000/contoso.ism/QualityLevels(127999)/Fragments(aac_eng_2_127999_2_1=20053333,format=mpd-time-csf)",
+            "Status": "200"
+        },
+        "operationVersion": "1.0"
+    }
+]
+```
+
+### Example request return
+
+The following is an example of a key delivery requests return. Other types of requests will be similar.
+
+
 
 ### Analyzing logs
 
