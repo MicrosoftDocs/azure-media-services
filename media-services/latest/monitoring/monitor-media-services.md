@@ -55,12 +55,9 @@ Media Services metrics are collected at regular intervals whether or not the val
 
 Metrics available for Media Services are:
 
-- [Media Services account metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservices)
+- [Media Services account metrics, including Key Delivery](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservices)
 - [Live event metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesliveevents)
 - [Streaming endpoint metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesstreamingendpoints)
-
->[!NOTE]
->At the time of this writing, you cannot create diagnostic settings for Live event metrics or streaming endpoint metrics in the Azure portal.
 
 ### Metric dimensions
 
@@ -249,12 +246,6 @@ Sample streaming endpoint log
     }
 ]
 ```
-
-### Example request return
-
-The following is an example of a key delivery requests return. Other types of requests will be similar.
-
-
 
 ### Analyzing logs
 
