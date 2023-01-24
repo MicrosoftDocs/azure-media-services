@@ -59,18 +59,6 @@ Metrics available for Media Services are:
 - [Live event metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesliveevents)
 - [Streaming endpoint metrics](/azure/azure-monitor/essentials/metrics-supported#microsoftmediamediaservicesstreamingendpoints)
 
-### Metric dimensions
-
-For more information on what metric dimensions are, see [Multi-dimensional metrics](/azure/azure-monitor/essentials/data-platform-metrics#multi-dimensional-metrics).
-
-Media services has the following metric dimensions.  They are self-explantory based on the metrics they support.
-
-- OutputFormat
-- HttpStatusCode
-- ErrorCode
-- TrackName
-- KeyType
-
 ### Analyzing metrics
 
 You can analyze metrics for Media Services along with metrics from other Azure services using Metrics Explorer. See [Getting started with Azure Metrics Explorer](/azure/azure-monitor/essentials/metrics-getting-started) for details on using this tool.
