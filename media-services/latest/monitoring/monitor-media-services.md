@@ -6,7 +6,7 @@ ms.author: inhenkel
 manager: femilia
 ms.topic: how-to
 ms.service: media-services
-ms.date: 11/22/2022
+ms.date: 01/24/2023
 ---
 
 # Monitor Media Services
@@ -100,25 +100,66 @@ Some things that you can examine with diagnostic logs are:
 - The latency on key delivery requests
 - The number of unauthorized license requests from clients
 
-### Schemas
+## Schemas
 
 For detailed description of the top-level diagnostic logs schema, see [Supported services, schemas, and categories for Azure Diagnostic Logs](/azure/azure-monitor/essentials/resource-logs-schema).
 
-### Key delivery
+### Media Account Health
 
-These properties are specific to the key delivery log schema.
+| **Name** | **Description** |
+| ------- | -------------- |
+|  TimeGenerated  |  The timestamp (UTC) of when the event was generated. |
+|  OperationName  |  The name of the operation that triggered the event. |
+|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
+|  Location  |  Location of the service sending the log. |
+|  EventCode  |  The event code. |
+|  EventMessage  |  The event status message. |
 
-|Name|Description|
-|---|---|
-|keyId|The ID of the requested key.|
-|keyType|Could be one of the following values: "Clear" (no encryption), "FairPlay", "PlayReady", or "Widevine".|
-|policyName|The Azure Resource Manager name of the policy.|
-|tokenType|The token type.|
-|statusMessage|The status message.|
+### Key Delivery
 
-### Example
+| **Name** | **Description** |
+| ------- | -------------- |
+|  TimeGenerated  |  The timestamp (UTC) of when the event was generated. |
+|  OperationName  |  The name of the operation that triggered the event. |
+|  OperationVersion  |  Azure Media Services operation version. |
+|  ResultType  |  Azure Media Services operation result type. |
+|  ResultSignature  |  Azure Media Services operation result signature. |
+|  DurationMs  |  Azure Media Services operation duration in milliseconds. |
+|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
+|  Location  |  Location of the service sending the log. |
+|  RequestId  |  Id of the request. |
+|  KeyType  |  Could be one of the following values: Clear (no encryption), FairPlay, PlayReady, or Widevine. |
+|  KeyId  |  The ID of the requested key. |
+|  TokenType  |  The token type. |
+|  PolicyName  |  The Azure Resource Manager name of the policy. |
+|  StatusMessage  |  The status message. |
 
-Properties of the key delivery requests schema.
+### Live Events
+
+| **Name** | **Description** |
+| ------- | -------------- |
+|  TimeGenerated  |  The timestamp (UTC) when the event was generated. |
+|  OperationName  |  The name of the operation that triggered the event. |
+|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
+|  Location  |  Location of the service sending the event. |
+|  Properties  |  Operation details. |
+
+## Streaming Endpoints
+
+| **Name** | **Description** |
+| ------- | -------------- |
+|  TimeGenerated  |  The timestamp (UTC) when the event was generated. |
+|  OperationName  |  The name of the operation that triggered the event. |
+|  OperationVersion  |  Azure Media Services operation version. |
+|  Level  |  Message level. Possible values are Informational, Warning, Error, Critical and Verbose. |
+|  Location  |  Location of the service sending the event. |
+|  ClientIP  |  IP address of the client. |
+|  URL  |  The streaming URL from Azure Media Services. |
+|  Status  |  Status code of the request. |
+
+### Example request return
+
+The following is an example of a key delivery requests return. Other types of requests will be similar.
 
 ```json
 {
@@ -151,29 +192,6 @@ Properties of the key delivery requests schema.
         "policyName": "56a70229-82d0-4174-82bc-e9d3b14e5dbf",
         "tokenType": "JWT",
         "statusMessage": "OK"
-    }
-}
-```
-
-```json
- {
-    "time": "2019-01-11T17:59:33.4676382Z",
-    "resourceId": "/SUBSCRIPTIONS/00000000-0000-0000-0000-0000000000/RESOURCEGROUPS/SBKEY/PROVIDERS/MICROSOFT.MEDIA/MEDIASERVICES/SBDNSTEST",
-    "operationName": "MICROSOFT.MEDIA/MEDIASERVICES/CONTENTKEYS/READ",
-    "operationVersion": "1.0",
-    "category": "KeyDeliveryRequests",
-    "resultType": "Failed",
-    "resultSignature": "Unauthorized",
-    "durationMs": 2,
-    "level": "Error",
-    "location": "uswestcentral",
-    "properties": {
-        "requestId": "875af030-b77c-416b-b7e1-58f23ebec182",
-        "keyType": "Clear",
-        "keyId": "3321e646-78d0-4896-84ec-c7b98eddfca5",
-        "policyName": "56a70229-82d0-4174-82bc-e9d3b14e5dbf",
-        "tokenType": "None",
-        "statusMessage": "No token present in authorization header or URL."
     }
 }
 ```
