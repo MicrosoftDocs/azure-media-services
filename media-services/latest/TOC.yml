@@ -406,7 +406,7 @@
   - name: Accounts
     items:
     - name: Create an account
-      href: samples-accounts-reference.md#create-an-account
+      href: ./samples/samples-accounts-reference.md#create-an-account
 - name: How-to guides
   items:
   - name: Find your tenant and subscription
