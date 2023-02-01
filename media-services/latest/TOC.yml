@@ -429,7 +429,7 @@
       href: ./samples/samples-assets-reference.md#list-tracks-in-an-asset
       displayName: This sample shows you how to use the tracks collection to list all of the track names and track types (audio, video, or text) available on an asset
     - name: Add a WebVTT/IMSC1/TTML subtitle or caption to an existing asset
-      href: ./samples/samples-assets-reference.md#add-a-webvt-timsc1-ttml-subtitle-or-caption-to-an-existing-asset
+      href: ./samples/samples-assets-reference.md#add-a-webvttimsc1ttml-subtitle-or-caption-to-an-existing-asset
       displayName: This sample shows you how to use the tracks API on an Asset to add a new WebVTT or TTML/IMSC1 text profile caption or subtitle to an existing asset
     - name: Add an additional audio track to an existing asset using the tracks API
       href: ./samples/samples-assets-reference.md#add-an-additional-audio-track-to-an-existing-asset-using-the-tracks-api
