@@ -429,7 +429,7 @@
       href: ./samples/samples-assets-reference.md#list-tracks-in-an-asset
       displayName: This sample shows you how to use the tracks collection to list all of the track names and track types (audio, video, or text) available on an asset
     - name: Add a WebVTT/IMSC1/TTML subtitle or caption to an existing asset
-      href: ./samples/samples-assets-reference.md#add-a-webvtt/imsc1/ttml-subtitle-or-caption-to-an-existing-asset
+      href: ./samples/samples-assets-reference.md#add-a-webvt-timsc1-ttml-subtitle-or-caption-to-an-existing-asset
       displayName: This sample shows you how to use the tracks API on an Asset to add a new WebVTT or TTML/IMSC1 text profile caption or subtitle to an existing asset
     - name: Add an additional audio track to an existing asset using the tracks API
       href: ./samples/samples-assets-reference.md#add-an-additional-audio-track-to-an-existing-asset-using-the-tracks-api
@@ -437,25 +437,25 @@
   - name: Live Streaming
     items:
     - name: Live stream with standard passthrough
-      href: ./samples/samples-live streaming-reference.md#live-stream-with-standard-passthrough
+      href: ./samples/samples-live-streaming-reference.md#live-stream-with-standard-passthrough
       displayName: This sample shows you how to use standard passthrough live streaming.
     - name: Live stream with standard passthrough with Event Hubs
-      href: ./samples/samples-live streaming-reference.md#live-stream-with-standard-passthrough-with-event-hubs
+      href: ./samples/samples-live-streaming-reference.md#live-stream-with-standard-passthrough-with-event-hubs
       displayName: This sample demonstrates how to use Event Hubs to subscribe to events on the live streaming channel. Events include encoder connections, disconnections, heartbeat, latency, discontinuity, and drift issues.
     - name: Live stream with basic passthrough
-      href: ./samples/samples-live streaming-reference.md#live-stream-with-basic-passthrough
+      href: ./samples/samples-live-streaming-reference.md#live-stream-with-basic-passthrough
       displayName: This sample shows you how to set up the basic passthrough live event if you only need to broadcast a low-cost UGC channel.
     - name: Live stream with low Latency (LL-HLS) with 720P standard encoding
-      href: ./samples/samples-live streaming-reference.md#live-stream-with-low-latency-(ll-hls)-with-720p-standard-encoding
+      href: ./samples/samples-live-streaming-reference.md#live-stream-with-low-latency-ll-hls-with-720p-standard-encoding
       displayName: This sample shows you how to enable low latency live streaming with Apple's LL-HLS protocol and encode with the new 3-layer 720P HD adaptive bitrate encoding preset.
     - name: Live stream with 720P standard encoding
-      href: ./samples/samples-live streaming-reference.md#live-stream-with-720p-standard-encoding
+      href: ./samples/samples-live-streaming-reference.md#live-stream-with-720p-standard-encoding
       displayName: This sample shows you how to use live encoding in the cloud with the 720P HD adaptive bitrate encoding preset.
     - name: Live stream with 1080P encoding
-      href: ./samples/samples-live streaming-reference.md#live-stream-with-1080p-encoding
+      href: ./samples/samples-live-streaming-reference.md#live-stream-with-1080p-encoding
       displayName: This sample shows you how to use live encoding in the cloud with the 1080P HD adaptive bitrate encoding preset.
     - name: FFmpeg command line samples for RTMP and Smooth
-      href: ./samples/samples-live streaming-reference.md#ffmpeg-command-line-samples-for-rtmp-and-smooth
+      href: ./samples/samples-live-streaming-reference.md#ffmpeg-command-line-samples-for-rtmp-and-smooth
       displayName: This sample shows you how to use FFmpeg command lines locally to stream over RTMP or Smooth streaming. It demonstrates various scenarios including audio only, multi-audio, and screen recording.
   - name: VOD Streaming
     items:
@@ -468,18 +468,18 @@
   - name: Content Protection
     items:
     - name: Upload and stream HLS and DASH with PlayReady and Widevine DRM
-      href: ./samples/samples-content protection-reference.md#upload-and-stream-hls-and-dash-with-playready-and-widevine-drm
+      href: ./samples/samples-content-protection-reference.md#upload-and-stream-hls-and-dash-with-playready-and-widevine-drm
       displayName: This sample demonstrates how to encode and stream using Widevine and PlayReady DRM.
     - name: Deliver basic Playready DRM content protection and streaming
-      href: ./samples/samples-content protection-reference.md#deliver-basic-playready-drm-content-protection-and-streaming
+      href: ./samples/samples-content-protection-reference.md#deliver-basic-playready-drm-content-protection-and-streaming
       displayName: This sample demonstrates how to encode and stream using PlayReady DRM.
     - name: Deliver basic Widevine DRM content protection and streaming
-      href: ./samples/samples-content protection-reference.md#deliver-basic-widevine-drm-content-protection-and-streaming
+      href: ./samples/samples-content-protection-reference.md#deliver-basic-widevine-drm-content-protection-and-streaming
       displayName: This sample demonstrates how to encode and stream using Widevine DRM.
   - name: Encoding
     items:
     - name: Create a transform and use job preset overrides (v2-to-v3 API migration)
-      href: ./samples/samples-encoding-reference.md#create-a-transform-and-use-job-preset-overrides-(v2-to-v3-api-migration)
+      href: ./samples/samples-encoding-reference.md#create-a-transform-and-use-job-preset-overrides-v2-to-v3-api-migration
       displayName: If you need a workflow where you desire to submit custom preset jobs to a single queue, you can use this base sample that shows how to create a (mostly) empty Transform, and then use the preset override property on the Job to submit custom presets to the same transform. This allows you to treat the v3 AMS API a lot more like the legacy v2 API Job queue if you desire.
     - name: Copy Audio and Video to MP4 without re-encoding
       href: ./samples/samples-encoding-reference.md#copy-audio-and-video-to-mp4-without-re-encoding
@@ -494,10 +494,10 @@
       href: ./samples/samples-encoding-reference.md#encode-with-h264
       displayName: This sample shows how to use the standard encoder to encode a source file into H264 format with AAC audio and PNG thumbnails.
     - name: Encode with H264 with Event Hubs/Event Grid
-      href: ./samples/samples-encoding-reference.md#encode-with-h264-with-event-hubs/event-grid
+      href: ./samples/samples-encoding-reference.md#encode-with-h264-with-event-hubsevent-grid
       displayName: This sample shows how to use the standard encoder and receive and process Event Grid events from Media Services through an Event Hubs. First set up an Event Grid subscription that pushes events into an Event Hubs using the Azure portal or CLI to use this sample.
     - name: Create a thumbnail sprite (VTT) in JPG format
-      href: ./samples/samples-encoding-reference.md#create-a-thumbnail-sprite-(vtt)-in-jpg-format
+      href: ./samples/samples-encoding-reference.md#create-a-thumbnail-sprite-vtt-in-jpg-format
       displayName: This sample shows how to generate a VTT Sprite Thumbnail in JPG format and how to set the columns and number of images. It also shows a speed encoding mode in H264 for a 720P layer.
     - name: Use content aware encoding with H264
       href: ./samples/samples-encoding-reference.md#use-content-aware-encoding-with-h264
