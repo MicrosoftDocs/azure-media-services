@@ -545,7 +545,6 @@
     - name: Use Shaka player with Timed Metadata for live event interactivity
       href: samples-player-reference.md#use-shaka-player-with-timed-metadata-for-live-event-interactivity
       displayName: This sample shows how to use the Google Shaka player with Low latency HLS streams to receive timed metadata events and display interactive information overlayed on the video element. This can be used to build interactive ads, quiz shows, polling, and other solutions that require events to be triggered in your web page or application during a live stream.
-
 - name: How-to guides
   items:
   - name: Find your tenant and subscription
