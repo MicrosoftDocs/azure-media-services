@@ -402,8 +402,11 @@
       displayName: migration, samples, migration guide, benefits, v2 api, v2, v3, v2 to v3, v3 guidance, deprecation, retirement, legacy API, older API, old API, migrate, retire, deprecate, timeline, dates
       href: migrate-v-2-v-3-migration-samples.md
 - name: CODE SAMPLES
-  displayName: create an account, user managed identity, list assets, live stream, standard passthrough, basic, event hub, encode, transcode, 720p, 1080p, HLS, DASH, PlayReady, Widevine, H264, content aware encoding, HEVC, bulk encoding, SAS URL, Copy, video analytics, language override,  rotate, subclip, stitch, overlay, thumbnails, samples, SDK, tutorial, GitHub, .NET, C#, Python, Nodejs, Node, Node.JS Java, TypeScript, TS, JavaScript, JS
-  href: samples-overview.md
+  items:
+  - name: Accounts
+    items:
+    - name: Create an account
+      href: samples-accounts-reference.md#create-an-account
 - name: How-to guides
   items:
   - name: Find your tenant and subscription
