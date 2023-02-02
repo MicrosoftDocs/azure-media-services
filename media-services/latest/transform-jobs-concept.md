@@ -75,6 +75,6 @@ The Update operation on the [Job](/rest/api/media/jobs) entity can be used to mo
 
 ## Encoding samples
 
-See the extensive list of [Encoding Samples](samples-encoding-reference.md) for an encoding.
+See the extensive list of [Encoding Samples](./samples/samples-encoding-reference.md) for an encoding.
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]

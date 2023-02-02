@@ -64,6 +64,6 @@ Below are the results for another category of source content, where the encoder 
 
 ## Encoding samples
 
-See the extensive list of [Encoding Samples](samples-encoding-reference.md).
+See the extensive list of [Encoding Samples](./samples/samples-encoding-reference.md).
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]

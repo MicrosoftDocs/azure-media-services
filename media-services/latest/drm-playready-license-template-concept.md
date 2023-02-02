@@ -99,7 +99,7 @@ The XML conforms to the PlayReady license template XML schema defined in the [Pl
 
 Media Services provides types that you can use to configure a PlayReady license template.
 
-You can find samples for configuring license templates on the [Content Protection samples page](samples-content-protection-reference.md).
+You can find samples for configuring license templates on the [Content Protection samples page](./samples/samples-content-protection-reference.md).
 
 > [!IMPORTANT]
 > PlayReady license has restrictions that are powerful. If the output protections are too restrictive, the content might be unplayable on some clients. For more information, see the [PlayReady Compliance Rules](https://www.microsoft.com/playready/licensing/compliance/).

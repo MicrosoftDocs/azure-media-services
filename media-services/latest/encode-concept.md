@@ -98,6 +98,6 @@ For more information, see [pricing](https://azure.microsoft.com/pricing/details/
 
 ## Encoding samples
 
-See the extensive list of [Encoding Samples](samples-encoding-reference.md).
+See the extensive list of [Encoding Samples](./samples/samples-encoding-reference.md).
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]

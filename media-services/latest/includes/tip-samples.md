@@ -8,4 +8,4 @@ title: Video playback issues
 ---
 
 > [!TIP]
-> Want to generate thumbnails, stitch two videos together, subclip a video or rotate it (among other things)? You can find Media Services sample code on the [**Samples**](../samples-accounts-reference.md?amspage=samplenote) page.
+> Want to generate thumbnails, stitch two videos together, subclip a video or rotate it (among other things)? You can find Media Services sample code on the [**Samples**](../samples/samples-accounts-reference.md?amspage=samplenote) page.

@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.date: 02/02/2023
 ms.author: inhenkel
 ---
+
 #  Encode with an auto-generated bitrate ladder
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
@@ -63,6 +64,6 @@ The [content-aware encoding presets](./encode-content-aware-concept.md) offer a 
 
 ## Encoding samples
 
-See the extensive list of [Encoding samples](samples-encoding-reference.md).
+See the extensive list of [Encoding samples](./smples/samples-encoding-reference.md).
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]
