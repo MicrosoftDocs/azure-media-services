@@ -26,7 +26,7 @@ If you need a workflow where you desire to submit custom preset jobs to a single
 
 ## Copy Audio and Video to MP4 without re-encoding
 
-This sample uses the built in preset that rapidly copies the source video and audio into a new MP4 file that is ready to be streamed as on-demand through AMS. This is an extremely useful preset for pre-encoded content or externally encoded content to be quickly readied for streaming in AMS.
+This sample uses the built-in preset that rapidly copies the source video and audio into a new MP4 file that is ready to be streamed on-demand. This is an extremely useful preset for pre-encoded content or externally encoded content to be quickly readied for streaming in AMS.
 
 | Node.JS | Python |
 | ------- | ------ |
@@ -34,7 +34,7 @@ This sample uses the built in preset that rapidly copies the source video and au
 
 ## Copy Audio and Video to MP4 without re-encoding and create a low bitrate proxy
 
-This sample adds an additional fast encoded proxy resolution to the Copy Audio and Video to MP4 sample. It is very useful when creating a CMS or preview of an Asset.
+This sample adds an additional fast-encoded proxy resolution to the Copy Audio and Video to MP4 sample. It is very useful when creating a CMS or preview of an Asset.
 
 | Node.JS | Python |
 | ------- | ------ |
@@ -58,7 +58,7 @@ This sample shows how to use the standard encoder to encode a source file into H
 
 ## Encode with H264 with Event Hubs/Event Grid
 
-This sample shows how to use the standard encoder and receive and process Event Grid events from Media Services through an Event Hubs. First set up an Event Grid subscription that pushes events into an Event Hubs using the Azure portal or CLI to use this sample.
+This sample shows how to use the standard encoder and receive and process Event Grid events from Media Services through an Event Hubs. First, set up an Event Grid subscription that pushes events into an Event Hubs using the Azure portal or CLI to use this sample.
 
 | Node.JS | Python |
 | ------- | ------ |
@@ -138,7 +138,7 @@ This sample demonstrates how to control the output settings of the Content Aware
 
 ## Bulk encode from a remote Azure storage account using SAS URLs
 
-This samples shows how you can point to a remote Azure Storage account using a SAS URL and submit batches of encoding jobs to your account, monitor progress, and continue. You can modify the file extension types to scan for (e.g - .mp4, .mov) and control the batch size submitted. You can also modify the Transform used in the batch operation. This sample demonstrates the use of SAS URL's as ingest sources to a Job input. Make sure to configure the REMOTESTORAGEACCOUNTSAS environment variable in the .env file for this sample to work.
+This samples shows how you can point to a remote Azure Storage account using a SAS URL and submit batches of encoding jobs to your account, monitor progress, and continue. You can modify the file extension types to scan for (e.g - .mp4, .mov) and control the batch size submitted. You can also modify the Transform used in the batch operation. This sample demonstrates the use of SAS URLs as ingest sources to a Job input. Make sure to configure the `REMOTESTORAGEACCOUNTSAS` environment variable in the .env file for this sample to work.
 
 | Node.JS | Python |
 | ------- | ------ |

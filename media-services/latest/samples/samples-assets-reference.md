@@ -58,7 +58,7 @@ This sample shows you how to use the tracks collection to list all of the track 
 
 ## Add a WebVTT/IMSC1/TTML subtitle or caption to an existing asset
 
-This sample shows you how to use the tracks API on an Asset to add a new WebVTT or TTML/IMSC1 text profile caption or subtitle to an existing asset
+This sample shows you how to use the Tracks API on an Asset to add a new WebVTT or TTML/IMSC1 text profile caption or subtitle to an existing asset.
 
 | Node.JS | Python |
 | ------- | ------ |
@@ -66,7 +66,7 @@ This sample shows you how to use the tracks API on an Asset to add a new WebVTT 
 
 ## Add an additional audio track to an existing asset using the tracks API
 
-This sample shows you how to use the tracks API on an Asset to add an additional audio language or descriptive audio track to an existing asset. This sample demonstrates how to upload, encode using content aware encoding, and then late bind an additional audio track for a new language to the asset.
+This sample shows you how to use the Tracks API on an Asset to add an additional audio language or descriptive audio track to an existing asset. This sample demonstrates how to upload, encode using content aware encoding, and then late bind an additional audio track for a new language to the asset.
 
 | Node.JS | Python |
 | ------- | ------ |
