@@ -58,8 +58,6 @@ landingContent:
             url: ./access-api-howto.md
       - linkListType: download
         links:
-          - text: All GitHub code samples
-            url: samples-overview.md
           - text: .NET SDK samples
             url: https://github.com/Azure-Samples/media-services-v3-dotnet
           - text: Node.JS samples

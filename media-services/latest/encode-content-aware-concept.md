@@ -4,7 +4,7 @@ description: This article discusses content-aware encoding in Microsoft Azure Me
 author: jiayali-ms
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 02/02/2023
 ms.author: inhenkel
 ---
 
@@ -64,6 +64,6 @@ Below are the results for another category of source content, where the encoder 
 
 ## Encoding samples
 
-See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for an encoding.
+See the extensive list of [Encoding Samples](./samples/samples-encoding-reference.md).
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]

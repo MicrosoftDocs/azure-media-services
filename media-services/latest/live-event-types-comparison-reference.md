@@ -13,7 +13,7 @@ ms.author: inhenkel
 
 In Azure Media Services, a  [Live Event](/rest/api/media/liveevents) can be set to either a *pass-through* (an on-premises live encoder sends a multiple bitrate stream) or *live encoding* (an on-premises live encoder sends a single bitrate stream).
 
-This articles compares features of the live event types in the REST API. For use with SDKs, see the [.Net](/dotnet/api/microsoft.azure.management.media.liveeventsoperationsextensions?view=azure-dotnet&preserve-view=true), [Node.JS](/python/api/azure-mgmt-media/azure.mgmt.media.operations.liveeventsoperations?view=azure-python&preserve-view=true) or [Python](/python/api/azure-mgmt-media/azure.mgmt.media.operations.liveeventsoperations?view=azure-python&preserve-view=true).  Additionally, you can try the live event [sample code](samples-overview.md).
+This articles compares features of the live event types in the REST API. For use with SDKs, see the [.Net](/dotnet/api/microsoft.azure.management.media.liveeventsoperationsextensions?view=azure-dotnet&preserve-view=true), [Node.JS](/python/api/azure-mgmt-media/azure.mgmt.media.operations.liveeventsoperations?view=azure-python&preserve-view=true) or [Python](/python/api/azure-mgmt-media/azure.mgmt.media.operations.liveeventsoperations?view=azure-python&preserve-view=true).  Additionally, you can try the live event [sample code](./samples/samples-live-streaming-reference.md).
 
 ## Types comparison
 
