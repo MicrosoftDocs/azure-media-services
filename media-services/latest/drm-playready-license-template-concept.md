@@ -4,7 +4,7 @@ description: Learn about Azure Media Services v3 with the PlayReady license temp
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 02/02/2023
 ms.author: inhenkel
 ---
 # Media Services PlayReady license templates
@@ -99,7 +99,7 @@ The XML conforms to the PlayReady license template XML schema defined in the [Pl
 
 Media Services provides types that you can use to configure a PlayReady license template.
 
-You can find samples for configuring license templates on the [Samples](samples-overview.md) page.
+You can find samples for configuring license templates on the [Content Protection samples page](samples-content-protection-reference.md).
 
 > [!IMPORTANT]
 > PlayReady license has restrictions that are powerful. If the output protections are too restrictive, the content might be unplayable on some clients. For more information, see the [PlayReady Compliance Rules](https://www.microsoft.com/playready/licensing/compliance/).

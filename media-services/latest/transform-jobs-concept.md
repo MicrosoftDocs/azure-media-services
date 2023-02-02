@@ -4,7 +4,7 @@ description: Transforms describe the rules for processing your videos in Azure M
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 02/02/2023
 ms.author: inhenkel
 ---
 
@@ -75,6 +75,6 @@ The Update operation on the [Job](/rest/api/media/jobs) entity can be used to mo
 
 ## Encoding samples
 
-See the extensive list of coding [Samples](samples-overview.md?amspage=transform-jobs-concept) for an encoding.
+See the extensive list of [Encoding Samples](samples-encoding-reference.md) for an encoding.
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -98,6 +98,6 @@ The following table lists the codecs and file formats that are supported for exp
 
 ## Encoding samples
 
-See the extensive list of coding [Samples](samples-overview.md?amspage=encode-concept) for encoding.
+See the extensive list of [Encoding Samples](samples-encoding-reference.md).
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]

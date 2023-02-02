@@ -25,7 +25,7 @@ sections:
         We don't recommend that you try to wrap the REST API for Media Services directly into your own library code. Doing so properly for production purposes would require you to implement the full Azure Resource Manager retry logic and understand how to manage long-running operations in Resource Manager APIs. The client SDKs for various languages - for example, .NET, Java, TypeScript, Python, and Ruby - handle this for you automatically, to reduce the chances of problems with retry logic or failed API calls.
     - question: Where can I find Media Services samples?
       answer: |
-        See the article [Media Services v3 samples](samples-overview.md) for a listing of samples.
+        See the samples pages.  There are samples for [Accounts](samples-accounts-reference.md), [Assets](samples-assets-reference.md), [Live Streaming](samples-live-streaming-reference.md), [VOD Streaming](samples-vod-streaming-reference.md), [Content Protection](samples-content-protection-reference.md), [Encoding](samples-encoding-reference.md), [Analytics](samples-analytics-reference.md), and using [Players](samples-player-reference.md).
     - question: How does paging on large result sets (such as a list of assets) work in the API?
       answer: |
         When you're using pagination, you should always use the next link to enumerate the collection and not depend on a particular page size. For details and examples, see [Filtering, ordering, and paging entities](filter-order-page-entities-how-to.md).
@@ -106,9 +106,6 @@ sections:
     - question: How to rotate a video, subclip a video, stitch videos, create thumbnails and sprites, etc?
       answer: |
         If you are looking for ways to use a Media Services encoder to do things like rotate a video, subclip a video, stitch videos, create thumbnails and sprites, we have a ton of code samples on the [Code Samples](/azure/media-services/latest/samples-overview) page. Available sample languages include Node.JS, Python, .NET, and Java.
-    - question: Where are the SDK examples?
-      answer: |
-        You can find code samples for .Net, Node.JS, Python and Java on the [Samples](samples-overview.md) page.
   - name: Live streaming
     questions:
     - question: What is a Media Services live event?
