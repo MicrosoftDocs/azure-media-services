@@ -1,25 +1,51 @@
----title: Azure Media Services Assets code samplesdescription: This article is a listing of code samples for Assets.author: IngridAtMicrosoftms.service: media-servicesms.topic: conceptualms.date: 01/30/2023ms.author: inhenkel---
-# Azure Media Services Assets code samples
-[!INCLUDE [media services api v3 logo](../includes/v3-hr.md)]
-This article is a listing of code samples for Assets.
-## List the streaming locators on an asset using filters
-This sample shows you how to use filters to list the streaming locators attached to your assets.
+---
+title: Azure Media Services Assets code samples
+description: This article is a listing of code samples for Assets.
+author: IngridAtMicrosoft
+ms.service: media-services
+ms.topic: conceptual
+ms.date: 02/02/2023
+ms.author: inhenkel
+---
+
+# Azure Media Services Assets code samples
+
+[!INCLUDE [media services api v3 logo](../includes/v3-hr.md)]
+
+This article is a listing of code samples for Assets.
+
+[!INCLUDE [net_samples_note](../includes/net_samples_note.md)]
+
+## List the streaming locators on an asset using filters
+
+This sample shows you how to use filters to list the streaming locators attached to your assets.
+
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts) |  :small_blue_diamond: |
-## List tracks in an asset
-This sample shows you how to use the tracks collection to list all of the track names and track types (audio, video, or text) available on an asset
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts) |  :small_blue_diamond: |
+
+## List tracks in an asset
+
+This sample shows you how to use the tracks collection to list all of the track names and track types (audio, video, or text) available on an asset
+
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/list-tracks-in-asset.py) |
-## Add a WebVTT/IMSC1/TTML subtitle or caption to an existing asset
-This sample shows you how to use the tracks API on an Asset to add a new WebVTT or TTML/IMSC1 text profile caption or subtitle to an existing asset
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/list-tracks-in-asset.py) |
+
+## Add a WebVTT/IMSC1/TTML subtitle or caption to an existing asset
+
+This sample shows you how to use the tracks API on an Asset to add a new WebVTT or TTML/IMSC1 text profile caption or subtitle to an existing asset
+
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-WebVTT-tracks.ts) |  :small_blue_diamond: |
-## Add an additional audio track to an existing asset using the tracks API
-This sample shows you how to use the tracks API on an Asset to add an additional audio language or descriptive audio track to an existing asset. This sample demonstrates how to upload, encode using content aware encoding, and then late bind an additional audio track for a new language to the asset.
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-WebVTT-tracks.ts) |  :small_blue_diamond: |
+
+## Add an additional audio track to an existing asset using the tracks API
+
+This sample shows you how to use the tracks API on an Asset to add an additional audio language or descriptive audio track to an existing asset. This sample demonstrates how to upload, encode using content aware encoding, and then late bind an additional audio track for a new language to the asset.
+
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-audio-language-track.ts) |  :small_blue_diamond: |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-audio-language-track.ts) |  :small_blue_diamond: |
+
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]
