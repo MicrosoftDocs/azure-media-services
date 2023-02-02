@@ -45,9 +45,6 @@
     - name: Connect with Python SDK
       displayName: Python, SDK, client, library
       href: configure-connect-python-howto.md
-    - name: Connect with Java SDK
-      displayName: Java, SDK, client, library
-      href: configure-connect-java-howto.md
   - name: Try Media Services in the portal
     items:
     - name: Use WebVTT files with Azure Media Player

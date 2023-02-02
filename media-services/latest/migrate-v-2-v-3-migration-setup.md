@@ -4,7 +4,7 @@ description: This article will assist you with setting up your environment for m
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 02/02/2023
 ms.author: inhenkel
 ---
 
@@ -108,10 +108,6 @@ class Program
             _context = new CloudMediaContext(new Uri(_RESTAPIEndpoint), tokenProvider);
 
 ```
-
-## [Java](#tab/java)
-
-Read the article, [Connect to Media Services v3 API with Java](configure-connect-java-howto.md) to set up your environment.
 
 ## [Python](#tab/python)
 
