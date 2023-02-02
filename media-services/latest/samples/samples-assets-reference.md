@@ -16,6 +16,32 @@ This article is a listing of code samples for Assets.
 
 [!INCLUDE [net_samples_note](../includes/net_samples_note.md)]
 
+## List assets
+
+This is a basic example of how to connect and list assets.
+
+| Node.JS | Python |
+| ------- | ------ |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/HelloWorld-ListAssets/list-assets.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/list-assets-filtered.py) |
+
+## Get the storage container from an asset
+
+This sample demonstrates how to find the Azure storage account container used to store the contents of this asset. This can be used to then edit sources, modify, or copy contents using the Azure storage SDK library.
+
+| Node.JS | Python |
+| ------- | ------ |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/get-container-from-asset.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/get-container-from-asset.py) |
+
+## List assets using filters
+
+This sample shows you how to use filters in your list assets calls to find assets by date and order them.
+
+| Node.JS | Python |
+| ------- | ------ |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts) |  :small_blue_diamond: |
+
+[!INCLUDE [media-services-community](../includes/media-services-community.md)]
+
 ## List the streaming locators on an asset using filters
 
 This sample shows you how to use filters to list the streaming locators attached to your assets.
