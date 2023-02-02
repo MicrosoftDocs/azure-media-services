@@ -64,6 +64,6 @@ The [content-aware encoding presets](./encode-content-aware-concept.md) offer a 
 
 ## Encoding samples
 
-See the extensive list of [Encoding samples](./smples/samples-encoding-reference.md).
+See the extensive list of [Encoding samples](./samples/samples-encoding-reference.md).
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]

@@ -3180,6 +3180,11 @@
           "source_path_from_root": "/media-services/latest/configure-connect-java-howto.md",
           "redirect_url": "/media-services/latest/samples-overview",
           "redirect_document_id": false
+        },
+        {
+          "source_path_from_root": "/media-services/latest/samples-overview.md",
+          "redirect_url": "/media-services/latest/samples/samples-accounts-reference.md",
+          "redirect_document_id": false
         }
     ]
 }
