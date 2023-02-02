@@ -43,14 +43,9 @@ Quickstarts allow you to try out Media Services using the Azure portal.
 - [Live event with portal and Wirecast](live-event-wirecast-quickstart.md)
 - [Use portal to encrypt content](drm-encrypt-content-how-to.md)
 
-
 ### SDKs
 
 See the documentation for setting up your environment in Quickstarts, then start developing with [Azure Media Services v3 client SDKs](all-sdks.md).
-
-### Samples
-
-If you would like to dive in to code, check out the [Samples](samples-overview.md) to browse Azure Media Services code samples.
 
 ## Ask questions, give feedback, get updates
 

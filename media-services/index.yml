@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: IngridAtMicrosoft #Required; your GitHub user alias, with correct capitalization.
   ms.author: inhenkel #Required; microsoft alias of author; optional team alias.
-  ms.date: 01/04/2023 #Required; mm/dd/yyyy format.
+  ms.date: 02/02/2023 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -37,7 +37,7 @@ highlightedContent:
       url: ./latest/migrate-v-2-v-3-migration-introduction.md
     - title: GitHub samples
       itemType: download
-      url: ./latest/samples-overview.md
+      url: ./latest/samples/samples-accounts-reference.md
     - title: Azure Media Player
       itemType: overview
       url: ./azure-media-player/azure-media-player-overview.md

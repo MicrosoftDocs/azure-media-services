@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 01/10/2023
+ms.date: 02/02/2023
 ms.author: inhenkel
 ---
 
@@ -49,8 +49,6 @@ Updates to the 2022-08-01 API include:
 - Added support for PlayReady SL3000 security level in Content Key Policies
 - Extended asset tracks API to support audio tracks (for late-binding descriptive audio or multiple languages)
 - Added support for MPEG Common Encryption Clear Key with 'cenc' and 'cbcs' modes in Streaming Policies
-
-Many code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
 
 ### New SDK client versions available for Javascript, Python, Go
 
@@ -159,8 +157,6 @@ The new Asset Tracks API allows you to late-bind any number of audio tracks to a
 
 For the full list of capabilities on the Tracks API, see the article [Media Services Tracks API](tracks-concept.md)
 
-Many code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
-
 ### Support for MPEG Common Encryption Clear Key with CENC and CBCS encryption
 
 Clear Key encryption is a feature of the [MPEG Common Encryption (CENC) standard](https://www.iso.org/standard/68042.html) and is supported by the HTML5 Encrypted Media Extensions (EME) available in many modern browsers. Clear Key AES-128 encryption using 'cenc' or 'cbcs' encryption modes can be set in your Streaming policies to allow you to reach the widest range of devices across Apple, Web and Android.
@@ -180,8 +176,6 @@ This is very useful for when you want to stream with a very small time-shifting 
 You can set **rewindWindowLength** to a minimum value of 60 seconds. The default value is 30 minutes if you enable a live event with the "LowLatencyV2" option, otherwise, there is no default value. If the **rewindWindowLength** is not set, and the live event is not set to use "LowLatencyV2" option, no default value is set by the server and the seekable window during the live playback would be the same value as the **archiveWindowLength**.  In this situation, if the **archiveWindowLength** is set to a very large duration, the player could be impacted by more buffering issues during playback in the live mode because of the larger manifest size download to the player for parsing.
 
 For more details see the article [Use time-shifting and Live Outputs to create on-demand video playback](live-event-cloud-dvr-time-how-to.md)
-
-Many code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
 
 ### New Region: China North 3 is now GA
 
@@ -222,8 +216,6 @@ A new sample demonstrating how to late-bind a WebVTT or TTML subtitle or caption
 This sample shows how you can add any number of text tracks to an asset and have them packaged as TTML/IMSC1 text profile in both DASH and HLS.  The API also allows you to set specific characteristics of the HLS manifest, such as the Default caption track, set the "Forced" property, as well as control the "Characteristics" value of the HLS text track per the Apple HLS specification.
 
 The API currently supports uploading .vtt or .ttml file format to an existing asset. New tracks that are registered with the tracks API will show up immediately in the DASH and HLS manifest as IMSC1 profile MP4 text tracks.
-
-Many code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
 
 ## June 2022
 
@@ -270,8 +262,6 @@ Low latency HLS is only available on live transcoding channels and not yet avail
 
 A live demonstration of the LL-HLS delivery to a Shaka player is available at https://media.microsoft.com/live
 
-Code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
-
 ## March 2022
 
 ### .NET SDK version 6.0.0
@@ -314,8 +304,6 @@ For technical details on the new track API, see the [2021-11-01 version of the A
 
 A basic list tracks sample is provide in Javascript [each](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts)
 Additional samples and documentation will be provided for each SDK soon.
-
-Code samples are available in .NET, JavaScript (Node.js), Python, Java in our [Samples GitHub repositories](samples-overview.md)
 
 ## December 2021
 
