@@ -40,8 +40,6 @@ This sample shows you how to use filters in your list assets calls to find asset
 | ------- | ------ |
 | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts) |  :small_blue_diamond: |
 
-[!INCLUDE [media-services-community](../includes/media-services-community.md)]
-
 ## List the streaming locators on an asset using filters
 
 This sample shows you how to use filters to list the streaming locators attached to your assets.
