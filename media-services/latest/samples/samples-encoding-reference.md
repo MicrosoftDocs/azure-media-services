@@ -62,7 +62,8 @@ This sample shows how to use the standard encoder and receive and process Event 
 
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_with_EventHub/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264 _with_EventHub/encoding-h264-with-eventhub-helper.py) |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_with_EventHub/index.ts) |
+[Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_with_EventHub/encoding-h264-with-eventhub-helper.py) |
 
 ## Create a thumbnail sprite (VTT) in JPG format
 
