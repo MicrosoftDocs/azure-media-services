@@ -6,7 +6,7 @@ ms.author: inhenkel
 manager: femilia
 ms.topic: how-to
 ms.service: media-services
-ms.date: 01/24/2023
+ms.date: 02/07/2023
 ---
 
 # Monitor Media Services
