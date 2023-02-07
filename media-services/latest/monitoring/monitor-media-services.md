@@ -93,8 +93,7 @@ All resource logs in Azure Monitor have the same fields followed by service-spec
 
 ## Alerts
 
-Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system. You can set alerts on [metrics](/azure/azure-monitor/alerts/alerts-metric-overview), [logs](/azure/azure-monitor/alerts/git status
-alerts-unified-log), and the [activity log](/azure/azure-monitor/alerts/activity-log-alerts).
+Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system. You can set alerts on metrics, logs, and the activity log. For more information, see [Azure Monitor Alerts overview](/azure/azure-monitor/alerts/alerts-overview).
 
 ## Schemas
 
