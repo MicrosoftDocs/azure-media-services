@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Media Services supports Apple's Low Latency HLS (LL-HLS) specification. This article describes Media Services support for LL-HLS and provides you with implementation guidance.
+Media Services support Apple's Low Latency HLS (LL-HLS) specification. This article describes Media Services support for LL-HLS and provides you with implementation guidance.
 
 > [!NOTE]
 > At this time, we do not support LL-DASH.
@@ -59,7 +59,7 @@ We have tested with the latest version of the following players
 - Video.JS 7.21.1 with support for LL-HLS
 - ExoPlayer
 
-When using DASH output, be sure to configure the player for the low latency. For Azure Media Player, use the low latency heuristics settings.
+When using DASH output with Azure Media Player, configure the player with the following option: "heuristicprofile: LowLatency".
 
 ## Output formats
 For LL-HLS outputs use the format string: (format=m3u8-cmaf)
