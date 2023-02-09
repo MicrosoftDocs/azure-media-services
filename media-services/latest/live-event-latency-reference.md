@@ -1,6 +1,6 @@
 ---
 title: Live Event low latency settings in Azure Media Services
-description: Media Services supports Apple's Low Latency HLS (LL-HLS).  Watch Roger Pantos explain the Low Latency HLS specification at WWDC19 to get an understanding of how the specification works and what it can do you for you. This article describes Media Services support for LL-HLS and provides you with implementation guidance.
+description: Media Services supports Apple's Low Latency HLS (LL-HLS) specification.  This article describes Media Services support for LL-HLS and provides you with implementation guidance.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
@@ -12,31 +12,22 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
-Media Services supports Apple's Low Latency HLS (LL-HLS) specification. [Watch](https://developer.apple.com/videos/play/wwdc2019/502/) Roger Pantos explain the Low Latency HLS specification at WWDC19 to understand how the specification gets your media content to your viewers faster.
-
-This article describes Media Services support for LL-HLS and provides you with implementation guidance.
+Media Services support Apple's Low Latency HLS (LL-HLS) specification. This article describes Media Services support for LL-HLS and provides you with implementation guidance.
 
 > [!NOTE]
 > At this time, we do not support LL-DASH.
 
 ## LowLatency and LowLatencyV2 options
 
-Media Services provides two options for delivering streaming content with low latency.
+Media Services support low latency live streaming using LL-HLS for Standard Encoding Live Events and Premium Encoding Live Events. When creating a new encoding live event, you must choose StreamOptions.LowLatencyV2 when using the API, or the "Low latency" option using the Azure portal. With this option, you have certain limitations compared to the other stream options.
 
-- **LowLatencyV2**. Use this option when:
-  - You are using Media Services to encode a live event
-  - You are using Low Latency HLS
-- **LowLatency**. Use this option when:
-  - You are using a pass-through live event
-  - You need Smooth Streaming output
-  - An archive length (DVR window) of more than 6 hours
-  - Need to use FairPlay on Apple devices
+- Only RTMP input is supported at this time.
+- Smooth output is not supported. 
+- You can still use DASH output and gain benefits of a much lower latency compared to other stream options. However LL-DASH is not supported.
+- A smaller seekback window during live playback is recommended. By default we set a 30 minute seekback window.
+- We can only archive up to 6 hours of live content.
+- Fairplay support is limited.
 
-## LL-HLS URL
-
-This is an example of an HLS URL. The `(format-m3u8-cmaf)` part of the URL is required.
-
-`https://myamsaccount-usw22.streaming.media.azure.net/06c39667-84d8-43ce-9dba-3aee82e35262/output-20221021-193449-manifest.ism/manifest(format=m3u8-cmaf)`
 
 ## How to use LL-HLS
 
@@ -61,21 +52,20 @@ See [dynamic packaging](encode-dynamic-packaging-concept.md) page for more infor
 
 ## Player testing
 
-Use the links below to see the [3rd-party player sample](https://github.com/Azure-Samples/media-services-3rdparty-player-samples) test results.
+We recommend that you use players that support LL-HLS and configure the players appropriately for best results. You can see a demo of the live playback using Shaka player on the Azure Media Services [demo page](https://media.microsoft.com/en-us/live)
 
-- Azure Media Player - use Low Latency Heuristic Profile.
-- [Shaka ](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/shaka#test-results)
-- [Video.js](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/video.js#test-results)
-- [hls.js](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/hls.js#test-results)
-- [dash.js](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/dash.js#test-results)
-- [ExoPlayer](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/exoplayer#test-results)
-- [AVPlayer](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/avplayer#test-results)
-- [THEOplayer](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/THEOplayer#test-results)
-- [NexPlayer](https://github.com/Azure-Samples/media-services-3rdparty-player-samples/blob/master/docs/NexPlayer#test-results)
+We have tested with the latest version of the following players
+- Shaka 4.3.2
+- Video.JS 7.21.1 with support for LL-HLS
+- ExoPlayer
 
-## Additional recommendations
+When using DASH output with Azure Media Player, configure the player with the following option: "heuristicprofile: LowLatency".
 
-When using HLS output, choose HLS CMAF (format=m3u8-cmaf) whenever possible. If you must use other streaming formats such as TS outputs with HLS v3 (format=aapl-m3u8-v3) or HLS v4 (format=aapl-m3u8-v4), be sure to set the `LiveOutput.Hls.fragmentsPerTsSegment` setting for your live event to 1 to ensure that Media Services packs only one mp4 fragment into one TS segment.
+## Output formats
+For LL-HLS outputs use the format string: (format=m3u8-cmaf)
+`https://accountName-region.streaming.media.azure.net/11111111-1111-43ce-9dba-3aee82e35262/output.ism/manifest(format=m3u8-cmaf).m3u8`
+
+When using DASH output use the format string: (format=mpd-time-cmaf)
 
 > [!NOTE]
 > The end-to-end latency can vary depending on local network conditions or by introducing a CDN caching layer. You should test your exact configurations.
