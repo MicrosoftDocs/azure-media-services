@@ -472,6 +472,9 @@
     - name: Save metrics to a storage account
       displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
       href: ./monitoring/monitor-metrics-save-to-storage-how-to.md
+    - name: Audit control pane logs
+      displayName: monitoring, metrics, telemetry, logging, charts, charting, azure monitor, monitor, diagnostic, logs, logging
+      href: ./monitoring/monitor-log-analytics-workspaces-how-to.md
   - name: Security
     items:
     - name: Account security
