@@ -4,7 +4,7 @@ description: Media Services offers the Tracks API so you can deliver text tracks
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 01/17/2023
+ms.date: 02/09/2023
 ms.author: inhenkel
 ---
 
@@ -20,8 +20,8 @@ With the Tracks API you can:
 - Add or remove text tracks.
 - Add or remove audio tracks.
 - Specify accessibility attributes of the text or audio tracks.
-- Get the download URL a text track so you can edit it, and then upload it back into the asset.
-- Show or hide a text track in a video player with settings in the HLS playlist or DASH manifest.
+- Edit the track in the Azure portal, or download it then upload it back into the asset.
+- Show or hide a text track in a video player.
 
 > [!NOTE]
 > You can only add or update a text track on a video-on-demand (VOD) asset. Additionally, audio late binding isn’t supported for live streaming assets.
@@ -43,12 +43,9 @@ General workflow for using text tracks with locally produced text:
     WEBVTT
     Language: en-us
     ```
-1. Upload the video to Media Services
+1. Upload the video to Media Services.
 1. Create a transform and job to encode the video.
 1. Upload the additional text tracks.
-1. Edit (or update) the .ism file to tell the player which text tracks to use as well as their labeling and visibility by:
-    1. Manually editing it in the portal, or
-    1. Using the Tracks API to update the manifest programmatically.
 
 ### Using text tracks with live transcription
 
@@ -62,11 +59,10 @@ General workflow for using live transcription text tracks:
 1. Create a live event with live transcription enabled and with the source language selected.
 1. When the live event is over, wait for several minutes, and then delete the live output.  The archived asset will be available for on-demand streaming.  Valid streaming URLs will still be accessible to your viewers.
 1. List the tracks in the archived asset or view them in the portal. There will be a WebVTT file that contains the NBest transcription. It will have a .vtt extension. The file is named `auto-generated-best_XXX.vtt`.
-1. Download and edit the WebVTT file.
+1. Edit the VTT file in the Azure portal or download and edit it.
 1. To present the text track in multiple languages, translate the source text track to those languages and save them as separate files for each language using the .vtt extension.
 1. Upload the source language track, and the text tracks for each language.
-1. Edit (or update) the .ism file to tell the player which text tracks to use as well as their labeling and visibility by:
-    1. [Manually editing it in the portal](tracks-edit-track-portal-how-to.md), or
+1. If you don't use the Azure portal to upload the file, edit (or update) the .ism file to tell the player which text tracks to use as well as their labeling and visibility by:
     1. Using the [Tracks API](/rest/api/media/tracks/update-track-data?tabs=HTTP) to update the manifest programmatically using one of the SDKs or the CLI:
         1. [Node.JS](/javascript/api/@azure/arm-mediaservices/tracks?view=azure-node-latest#@azure-arm-mediaservices-tracks-beginupdatetrackdataandwait&preserve-view=true)
         1. [Python](/python/api/azure-mgmt-media/azure.mgmt.media.operations.tracksoperations?view=azure-python#azure-mgmt-media-operations-tracksoperations-begin-update-track-data&preserve-view=true)
