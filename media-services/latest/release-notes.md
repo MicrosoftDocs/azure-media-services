@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 02/02/2023
+ms.date: 02/09/2023
 ms.author: inhenkel
 ---
 
@@ -18,6 +18,12 @@ To stay up to date with the most recent developments, this article provides you 
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## January 2023
+
+### Changes to the Assets interface in the Azure portal
+
+You can now view all the tracks in your assets as well as add, edit or delete audio or text tracks.
 
 ## December 2022
 
