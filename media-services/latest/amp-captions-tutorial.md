@@ -43,6 +43,10 @@ The resulting files should look like this:
 | ---------------- | ---------------- |
 | WEBVTT<br/><br/>00:05.400 --> 00:10.833<br/>Hi. In this video we are going to learn how to use<br/><br/>00:10.833 --> 00:16.266<br/>captions and subtitles with Azure Media Services<br/><br/>00:16.266 --> 00:23.532<br/>and Azure Media Player.|WEBVTT<br/><br/>00:05.400 --> 00:10.833<br/>Hola. En este video vamos a aprender a usar<br/><br/>00:10.833 --> 00:16.266<br/>leyendas y subtítulos con Azure Media Services<br/><br/>00:16.266 --> 00:23.532<br/>y Azure Media Player.|
 
+## Filenames
+
+It is recommended that you name the files using language designators. For this example, the English file would be named *en-us.vtt*.  The Spanish file would be named *es-es.vtt*.
+
 ## Set up captions and subtitles for the Azure Media Player
 
 Choose which sample code you are going to use for the Azure Media Player.
@@ -60,7 +64,7 @@ For this exercise, use the Azure portal to upload the video.
 
 ## Create a transform
 
-Videos uploaded to an asset must be encoded in order for them to be streamed. Media Services provides built-in encoders. For this example, use either the *ContentAware* or *AdaptiveStreaming* encoder.
+Videos uploaded to an asset must be encoded in order for them to be streamed. Media Services provides built-in encoders. For this example, use the *ContentAwareEncoding* encoder.
 
 [!INCLUDE [task-create-transform-portal](includes/task-create-transform-portal.md)]
 
@@ -75,32 +79,51 @@ After you've created a transform, create a job that uses the transform to encode
 Once the job is completed, the resulting files from the encoder will be in the output asset.  **You will use this asset going forward.**
 
 1. Navigate to the output asset.
-1. Select **Upload captions**.
-1. Upload the WebVTT files you create for the source language and Spanish.
+1. Select **Add text track**.
+1. Enter a name in the **Name** field. For example, for an English text track enter *English*.
+1. Select **Upload new** radio button. Alternatively, if you have already created or uploaded a VTT file, you can select the **Use existing** radio button and select the track.
+1. Enter the text to be displayed in the player in the **Display name** field.
+1. Select either **Visible** radio button to ensure that the track will be displayed in the player client.
+1. Select the **HLS settings** checkboxes to set the track as the default track and/or set forced. For English, set it as the default track.
+1. Select the **Accessibility characteristics** checkboxes to identify what accessibility guideline the text track is used for.
+1. Select **I agree and upload** to upload the text track.
+1. Repeat these steps for Spanish, except don't select **Set as default track** as you have already set English as the default track.
 
-## Edit the manifest
+## View the manifest
 
-Since this example uses the Azure portal, edit the manifest file in the portal as well.
+View the manifest to see the track changes in the manifest file.
 
 1. You should already be on the output asset screen.
 1. Select the **storage container link**.  The storage container name starts with the "asset-" prefix. The storage container screen will appear.
 1. Select the `.ism` file from the file list. The blob screen will appear.
 1. Select **Edit**.
-1. Copy and paste the following XML above the `</switch>` element, changing the VTT file names to the ones you've uploaded.
+1. Look for the following XML above the `</switch>` element, changing the VTT file names to the ones you've uploaded.
 
-    ```html
-    <textstream src="english.vtt" systemBitrate="0">
+```xml
+    <textstream src="sample.cmft" systemBitrate="52" systemLanguage="en-us">
+        <param name="systemLanguage" value="en-us" valuetype="data" />
+        <param name="outputFlag" value="3" valuetype="data" />
+        <param name="systemBitrate" value="52" valuetype="data" />
+        <param name="transcriptsrc" value="en-us.vtt" valuetype="data" />
+        <param name="textIsDefault" value="TRUE" valuetype="data" />
+        <param name="textHlsCharacteristic" value="public.accessibility.transcribes-spoken-dialog" valuetype="data" />
+        <param name="trackID" value="1" valuetype="data" />
+        <param name="trackName" value="subt_en-us" valuetype="data" />
         <param name="textDisplayName" value="English" valuetype="data" />
-        <param name="outputFlag" value="2" valuetype="data" />
-        <param name="armId" value="english.vtt" valuetype="data" />
+        <param name="armId" value="English" valuetype="data" />
     </textstream>
-    <textstream src="spanish.vtt" systemBitrate="0">
+    <textstream src="es-es.cmft" systemBitrate="50333" systemLanguage="">
+        <param name="systemLanguage" value="" valuetype="data" />
+        <param name="outputFlag" value="3" valuetype="data" />
         <param name="systemBitrate" value="0" valuetype="data" />
-        <param name="textDisplayName" value="Spanish" valuetype="data" />
-        <param name="outputFlag" value="2" valuetype="data" />
-        <param name="armId" value="spanish.vtt" valuetype="data" />
+        <param name="transcriptsrc" value="es-es.vtt" valuetype="data" />
+        <param name="textHlsCharacteristic" value="public.accessibility.transcribes-spoken-dialog" valuetype="data" />
+        <param name="trackID" value="1" valuetype="data" />
+        <param name="trackName" value="subt" valuetype="data" />
+        <param name="textDisplayName" value="Español" valuetype="data" />
+        <param name="armId" value="Spanish" valuetype="data" />
     </textstream>
-    ```
+```
 
 ## Start streaming
 
@@ -111,14 +134,14 @@ So you can complete the rest of the steps, create a streaming locator for the as
 1. Navigate to the Media Services account you want to work with.
 1. Select **Assets** from the menu. The assets screen will appear.
 1. Under Streaming locators, select **+ New streaming locator**. The Add streaming locator screen will appear.
-1. Enter a name for the streaming locator in the **Name** field, if you want to change the default name.
-1. Select the Predefined_DownloadAndClearStreaming streaming policy from the **Streaming policy** dropdown list.
-1. Select **Add**. The video will start playing in the player on the screen, and the **Streaming URL** field will be populated.
-1. Select **Show URLs** in the Streaming locator list. The Streaming URLs screen will appear.
-1. Copy one of the streaming URLs onto your clipboard.  You'll be using this value to configure the player.
+1. Enter a name for the streaming locator in the **Name** field if you want to change the default name.
+1. Select the *Predefined_DownloadAndClearStreaming* streaming policy from the **Streaming policy** dropdown list.
+1. Select **Add**. If the streaming endpoint is running, the video will start playing in the player on the screen, and the **Playback URL** field will be populated.
+1. If the streaming endpoint isn't running, select **Start streaming endpoint**.
+1. Copy the Playback URL onto your clipboard.  You'll be using this value to configure the player.
 
 > [!IMPORTANT]
-> You must select the Predefined_DownloadAndClearStreaming streaming policy or the text tracks will not be rendered in the player. Also, remember to start the streaming endpoint.  Once the streaming endpoint starts, billing starts.
+> You must select the Predefined_DownloadAndClearStreaming streaming policy or the text tracks will not be rendered in the player. Also, remember to start the streaming endpoint.  Once the streaming endpoint starts, billing starts. Remember to turn it off when you are finished with this tutorial.
 
 ## Using the manifest and WebVTT URLs
 
