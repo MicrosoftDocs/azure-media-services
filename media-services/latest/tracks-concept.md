@@ -66,7 +66,7 @@ General workflow for using live transcription text tracks:
 1. To present the text track in multiple languages, translate the source text track to those languages and save them as separate files for each language using the .vtt extension.
 1. Upload the source language track, and the text tracks for each language.
 1. Edit (or update) the .ism file to tell the player which text tracks to use as well as their labeling and visibility by:
-    1. [Manually editing it in the portal](tracks-edit-track-portal-how-to.md#edit-the-ism-file-to-use-the-track), or
+    1. [Manually editing it in the portal](tracks-edit-track-portal-how-to.md), or
     1. Using the [Tracks API](/rest/api/media/tracks/update-track-data?tabs=HTTP) to update the manifest programmatically using one of the SDKs or the CLI:
         1. [Node.JS](/javascript/api/@azure/arm-mediaservices/tracks?view=azure-node-latest#@azure-arm-mediaservices-tracks-beginupdatetrackdataandwait&preserve-view=true)
         1. [Python](/python/api/azure-mgmt-media/azure.mgmt.media.operations.tracksoperations?view=azure-python#azure-mgmt-media-operations-tracksoperations-begin-update-track-data&preserve-view=true)
