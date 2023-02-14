@@ -4,7 +4,7 @@ description: Your live event is over and you have used live transcription to cre
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 01/09/2023
+ms.date: 02/14/2023
 ms.author: inhenkel
 ---
 
@@ -18,50 +18,29 @@ When your live event has used live transcription to create a VTT or TTML file fo
 
 [!INCLUDE [task-list-tracks-portal](includes/task-list-tracks-portal.md)]
 
+## Edit the track
+
+There are two ways to edit the track. You can either edit the track in the Azure portal or download the track and edit it locally.
+
+> [!WARNING]
+> Be careful that you don't edit the timestamps!
+
+### Edit the track in the Azure portal
+
+1. Select **Edit captions** next to the track you want to edit. The Captions editing screen will appear.
+1. Edit the file.
+1. Select **Save**.
+
 ### Download and edit the track
 
-1. Select the **vertical ellipses** next to the text track you want to work with. Live transcription text tracks are usually named *auto-generated-best_4800.vtt*.
+1. Select the **vertical ellipsis** next to the text track you want to work with. **NOTE:** Live transcription text tracks are usually named *auto-generated-best_4800.vtt*.
 1. Select **Download**. Save the file locally.
 1. Open the file in your favorite text edit.
-1. Reminder: Be careful with the timestamps.
-1. Edit the text and correct anything that live transcription didn't capture properly.
-1. Check for complete sentences and grammar.
-1. Save the edited file with either the same name if you plan to overwrite the source file, or with a different name if not.
+1. Edit the text or correct anything that live transcription didn't capture.
+1. Save the edited file.
 
-### Upload the edited file
+[!INCLUDE [task-upload-captions](includes/task-upload-captions.md)]
 
-You can either upload a file with a different file name or you can overwrite the existing file.
-
-1. Select **Upload**. The upload screen will appear.
-1. Select **file icon** to select the file you want to upload. If the file already exists in the asset, you'll get a warning message.
-1. If you want to overwrite the file, select the **Overwrite** checkbox.
-1. Select **Upload**. The file will begin uploading.
-
-You can upload additional files in the same way you uploaded the edited file.
-
-### Edit the .ism file to use the track
-
-1. Navigate to the storage container associated with the asset.
-1. Select the .ism file.  The file screen will appear.
-1. Select edit to view and edit the .ism file.
-1. Add the following XML to the .ism file.
-1. Set the `systemLanguage` parameter to the language designator for the language. For example, "en-us" for United States English or "ja-JP" for Japanese.
-1. Set the `trackID` to a number.
-1. Set the `trackName` to the language for the track.
-1. Set the `outputFlag` parameter to:
-    1. `3` to tell the client player to display the track.
-    1. `2` to tell the client player that the track should be hidden.
-
-The example below sets the text track to visible.
-
-```html
-
-<textstream src="english.vtt" systemBitrate="0">
-    <param name="textDisplayName" value="English" valuetype="data" />
-    <param name="outputFlag" value="2" valuetype="data" />
-    <param name="armId" value="english.vtt" valuetype="data" />
-</textstream>
-
-```
+[!INCLUDE [task-view-captions-ism](includes/task-view-captions-ism.md)]
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]

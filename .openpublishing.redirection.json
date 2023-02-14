@@ -3183,7 +3183,12 @@
         },
         {
           "source_path_from_root": "/media-services/latest/samples-overview.md",
-          "redirect_url": "/media-services/latest/samples/samples-accounts-reference.md",
+          "redirect_url": "/media-services/latest/samples/samples-accounts-reference",
+          "redirect_document_id": false
+        },
+        {
+          "source_path_from_root": "/media-services/latest/amp-captions-tutorial.md",
+          "redirect_url": "/media-services/latest/samples/tracks-portal-captions-tutorial",
           "redirect_document_id": false
         }
     ]
