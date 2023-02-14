@@ -4,7 +4,7 @@ description: This article shows you how to audit Media Services control plane lo
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 02/09/2023
+ms.date: 02/14/2023
 ms.author: inhenkel
 ---
 
@@ -47,9 +47,20 @@ After you turn on logging, you can use Kusto to query the logs using the Azure M
 1. Select **Monitor** and then select the **Logs** pane. It opens a UI where you can easily run queries with that specific account in scope. Run the following query to view control plane logs:
 
 ```kusto
-AzureDiagnostics
-| where ResourceProvider=="MICROSOFT.MEDIASERVICES" and Category=="ControlPlaneRequests"
-| where TimeGenerated >= ago(1h)
+// Media account health events
+// Media Services account health details.
+AMSMediaAccountHealth
+| project EventCode, EventMessage, _ResourceId
+| limit 100
+
+//Key delivery failed requests
+// AMSKeyDeliveryRequests
+// Lists the details of failed key delivery requests
+AMSKeyDeliveryRequests
+| where ResultType != "Succeeded"
+| project KeyId, PolicyName, ResultSignature, StatusMessage, _ResourceId
+| limit 100
+
 ```
 
 For more information about working with Log Analytics Workspaces, see [Log Analytics workspace overview](/azure/azure-monitor/logs/log-analytics-workspace-overview).
