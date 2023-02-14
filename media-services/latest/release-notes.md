@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 02/09/2023
+ms.date: 02/14/2023
 ms.author: inhenkel
 ---
 
@@ -23,7 +23,7 @@ To stay up to date with the most recent developments, this article provides you 
 
 ### Changes to the Assets interface in the Azure portal
 
-You can now view all the tracks in your assets as well as add, edit or delete audio or text tracks.
+You will see an improved user experience on the Assets blade in the Azure portal. You can now view tracks and files in the asset. You can also upload, update, or delete audio and text tracks in an asset.
 
 ## December 2022
 

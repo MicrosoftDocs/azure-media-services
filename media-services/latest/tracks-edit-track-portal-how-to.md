@@ -4,7 +4,7 @@ description: Your live event is over and you have used live transcription to cre
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 02/09/2023
+ms.date: 02/14/2023
 ms.author: inhenkel
 ---
 
@@ -36,8 +36,8 @@ There are two ways to edit the track. You can either edit the track in the Azure
 1. Select the **vertical ellipsis** next to the text track you want to work with. **NOTE:** Live transcription text tracks are usually named *auto-generated-best_4800.vtt*.
 1. Select **Download**. Save the file locally.
 1. Open the file in your favorite text edit.
-1. Edit the text or correct anything that live transcription didn't capture properly such as complete sentences and grammar.
-1. Save the edited file with either the same name if you plan to overwrite the source file, or with a different name if not.
+1. Edit the text or correct anything that live transcription didn't capture.
+1. Save the edited file.
 
 [!INCLUDE [task-upload-captions](includes/task-upload-captions.md)]
 
