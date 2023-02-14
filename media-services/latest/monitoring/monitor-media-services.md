@@ -6,7 +6,7 @@ ms.author: inhenkel
 manager: femilia
 ms.topic: how-to
 ms.service: media-services
-ms.date: 02/07/2023
+ms.date: 02/09/2023
 ---
 
 # Monitor Media Services
@@ -248,5 +248,6 @@ For detailed description of the top-level diagnostic logs schema, see [Supported
 ## How-tos
 
 - [Route Media Services metrics to storage](monitor-metrics-save-to-storage-how-to.md)
+- [Audit Media Services control plane logs](monitor-log-analytics-workspaces-how-to.md)
 - [Autoscaling premium streaming endpoints](../streaming-endpoint-autoscaling-how-to.md)
 - [Create an Azure Monitor dashboard and alerts](monitor-create-dashboard-alerts-how-to.md)
