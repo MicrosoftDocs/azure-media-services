@@ -101,7 +101,7 @@ So you can complete the rest of the steps, create a streaming locator for the as
 ## View the video with captions
 
 1. Make sure the the streaming endpoint is started.
-1. Open the hosted HTML page in a browser.
+1. Open the player.
 1. Select the text track for the language of your choice from the captions or subtitles list.
 
 [!INCLUDE [media-services-community](includes/media-services-community.md)]
