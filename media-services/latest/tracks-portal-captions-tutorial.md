@@ -27,7 +27,6 @@ For example, if the source language of a video is English, then the text track w
 
 - An Azure subscription.
 - A Media Services account.
-- Follow the steps in the [Azure Media Player Full Setup](/azure/media-services/azure-media-player/azure-media-player-full-setup) article. Use either the static or dynamic version.
 - Create a video with audio.
 - Export captions using your favorite video editing software in WebVTT format. If your editing software doesn't export captions to this format, there are many online conversion tools you can use to covert the file.
 - Translate the captions from the source language to another language and save the file with a different name than the source language.
