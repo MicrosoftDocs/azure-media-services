@@ -14,14 +14,12 @@ ms.author: inhenkel
 
 This article is a listing of code samples for Analytics.
 
-[!INCLUDE [net_samples_note](../includes/net_samples_note.md)]
-
 ## Use basic Audio Analytics with per-job language override
 
 This sample illustrates how to create a audio analyzer transform using the basic mode. It also shows how you can override the preset language on a per-job basis to avoid creating a transform for every language. It also shows how to upload a media file to an input asset, submit a job with the transform and download the results for verification.
 
-| Node.JS | Python |
-| ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/AudioAnalytics/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/AudioAnalytics/audio-analytics-helper.py) |
+| .NET| Node.JS | Python |
+| ----| ------- | ------ |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/AudioAnalytics/AudioAnalyzer) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/AudioAnalytics/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/AudioAnalytics/audio-analytics-helper.py) |
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]

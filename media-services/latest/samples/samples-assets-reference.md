@@ -4,7 +4,7 @@ description: This article is a listing of code samples for Assets.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/16/2023
+ms.date: 02/17/2023
 ms.author: inhenkel
 ---
 
@@ -13,8 +13,6 @@ ms.author: inhenkel
 [!INCLUDE [media services api v3 logo](../includes/v3-hr.md)]
 
 This article is a listing of code samples for Assets.
-
-[!INCLUDE [net_samples_note](../includes/net_samples_note.md)]
 
 ## List assets
 
@@ -71,5 +69,11 @@ This sample shows you how to use the Tracks API on an Asset to add an additional
 | Node.JS | Python |
 | ------- | ------ |
 | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-audio-language-track.ts) |  :small_blue_diamond: |
+
+## Asset management with .NET
+
+The sample for .NET contains the methods listed above in one script.
+
+[Asset Management with .NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Assets/AssetManagement)
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]
