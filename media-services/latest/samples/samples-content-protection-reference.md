@@ -4,7 +4,7 @@ description: This article is a listing of code samples for Content Protection.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 02/16/2023
 ms.author: inhenkel
 ---
 
@@ -30,7 +30,7 @@ This sample demonstrates how to encode and stream using PlayReady DRM.
 
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicPlayReady/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicPlayReady/basic-play-ready.py) |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicPlayReady/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicPlayReady/basic-play-ready-helper.py) |
 
 ## Deliver basic Widevine DRM content protection and streaming
 
@@ -38,6 +38,6 @@ This sample demonstrates how to encode and stream using Widevine DRM.
 
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicWidevine/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicWidevine/basic-widevine.py) |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicWidevine/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicWidevine/basic-widevine-helper.py) |
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]
