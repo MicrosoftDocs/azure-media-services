@@ -22,7 +22,7 @@ This sample shows you how to upload a local file or encoding from a source URL. 
 
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesSample/index.ts) |  :small_blue_diamond: |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesSample/index.ts) |  [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesSample/stream-files-helper.py) |
 
 ## Upload a file and stream with Clear Key encryption
 
@@ -30,6 +30,6 @@ This sample shows you how to upload a local file, encode it with Content Aware E
 
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) |  :small_blue_diamond: |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) |  [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesWithDRM/stream-files-with-drm-helper.py) |
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]
