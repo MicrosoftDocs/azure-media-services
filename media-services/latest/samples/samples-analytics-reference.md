@@ -4,7 +4,7 @@ description: This article is a listing of code samples for Analytics.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 02/16/2023
 ms.author: inhenkel
 ---
 
@@ -22,6 +22,6 @@ This sample illustrates how to create a audio analyzer transform using the basic
 
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/AudioAnalytics/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/AudioAnalytics/audio-analytics.py) |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/AudioAnalytics/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/AudioAnalytics/audio-analytics-helper.py) |
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]

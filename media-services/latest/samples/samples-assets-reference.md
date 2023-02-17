@@ -4,7 +4,7 @@ description: This article is a listing of code samples for Assets.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 02/16/2023
 ms.author: inhenkel
 ---
 
@@ -38,7 +38,7 @@ This sample shows you how to use filters in your list assets calls to find asset
 
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts) |  :small_blue_diamond: |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts) |  [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/list-assets-filtered.py) |
 
 ## List the streaming locators on an asset using filters
 
@@ -54,7 +54,7 @@ This sample shows you how to use the tracks collection to list all of the track 
 
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/list-tracks-in-asset.py) |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-tracks-in-asset.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/list-tracks-in-asset-helper.py) |
 
 ## Add a WebVTT/IMSC1/TTML subtitle or caption to an existing asset
 

@@ -4,7 +4,7 @@ description: This article is a listing of code samples for Accounts.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 02/16/2023
 ms.author: inhenkel
 ---
 
