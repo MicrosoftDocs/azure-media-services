@@ -38,7 +38,7 @@ This sample shows you how to use filters in your list assets calls to find asset
 
 | Node.JS | Python |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts) |  :small_blue_diamond: |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts) |  [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/list-assets-filtered.py) |
 
 ## List the streaming locators on an asset using filters
 

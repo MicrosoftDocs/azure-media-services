@@ -4,7 +4,7 @@ description: You may want your viewers to play only a section of a video. There 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 01/09/2023
+ms.date: 02/16/2023
 ms.author: inhenkel
 ---
 
@@ -93,11 +93,11 @@ Review the parts of the code that create a subclipping job:
 
 1. To create a subclipping job, first select the top bitrate video from either an encoding output asset or from a live event output archive asset (also called an archive) by selecting the track by attribute.
 
-:::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="TopBitRate":::
+:::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4-helper.py" id="TopBitRate":::
 
 2. Add the timestamp beginning and ending ranges to the track selection.
 
-:::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4.py" id="SubclipJobInput":::
+:::code language="python" source="~/../media-services-v3-python/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4-helper.py" id="SubclipJobInput":::
 
 ---
 
