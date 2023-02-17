@@ -26,9 +26,9 @@ This sample shows you how to upload a local file or encoding from a source URL. 
 
 This sample shows you how to upload a local file, encode it with Content Aware Encoding, and stream it using AES Clear Key encryption with the Azure Media Player. It also demonstrates how to create a basic JWT token for playback of AES encrypted content in the browser.
 
-| Node.JS | Python |
-| ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) |  [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesWithDRM/stream-files-with-drm-helper.py) |
+| .NET | Node.JS | Python |
+| ---- | ------- | ------ |
+| :small_blue_diamond: | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) |  [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesWithDRM/stream-files-with-drm-helper.py) |
 
 ## Stream an existing single bitrate MP4 files with HLS or DASH
 

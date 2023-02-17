@@ -117,16 +117,16 @@ This sample shows how to use the rotation filter to rotate a video by 90 degrees
 
 This sample shows how to use the standard encoder to encode a source file and output to MPEG Transport Stream format using H264 format with AAC audio and PNG thumbnail.
 
-| Node.JS | Python |
-| ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/encoding-h264-to-transportstream-helper.py) |
+| .NET | Node.JS | Python |
+| ---- | ------- | ------ |
+| :small_blue_diamond: | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/encoding-h264-to-transportstream-helper.py) |
 
 ## Encode with HEVC
 
 This sample shows how to use the standard encoder to encode a source file into HEVC format with AAC audio and PNG thumbnails.
 
 | .NET | Node.JS | Python |
-| ------- | ------ |
+| ---- | ------- | ------ |
 | [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_HEVC) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_HEVC/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_HEVC/encoding-hevc-helper.py) |
 
 ## Use content aware encoding with HEVC
