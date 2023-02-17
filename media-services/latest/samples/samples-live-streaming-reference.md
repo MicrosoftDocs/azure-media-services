@@ -14,8 +14,6 @@ ms.author: inhenkel
 
 This article is a listing of code samples for Live Streaming.
 
-[!INCLUDE [net_samples_note](../includes/net_samples_note.md)]
-
 ## Live stream with standard passthrough
 
 This sample shows you how to use standard passthrough live streaming.

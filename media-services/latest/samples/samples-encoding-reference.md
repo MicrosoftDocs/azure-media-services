@@ -14,8 +14,6 @@ ms.author: inhenkel
 
 This article is a listing of code samples for Encoding.
 
-[!INCLUDE [net_samples_note](../includes/net_samples_note.md)]
-
 ## Create a transform and use job preset overrides (v2-to-v3 API migration)
 
 If you need a workflow where you desire to submit custom preset jobs to a single queue, you can use this base sample that shows how to create a (mostly) empty Transform, and then use the preset override property on the Job to submit custom presets to the same transform. This allows you to treat the v3 AMS API a lot more like the legacy v2 API Job queue if you desire.
