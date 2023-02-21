@@ -2,7 +2,7 @@
 title: How to encrypt captions using AES-128 Clear Key encryption
 description: When enabling AES-128 clear key encryption, text tracks can be configured to be encrypted using a full "envelope" encryption technique that follows the same encryption pattern as the audio and video segments. These segments can then be decrypted by a client application after requesting the decryption key from the Media Services Key Delivery service using an authenticated JWT token. This method is supported by the Azure Media Player, but may not be supported on all devices and can require some client-side development work to make sure it succeeds on all platforms. This article shows you how to encrypt captions using AES-128 Clear Key encryption. It isn't necessary to do anything special with the text tracks. If you use AES-128 clear key encryption with the asset, the captions will also be encrypted.
 ms.topic: how-to
-ms.date: 01/09/2023
+ms.date: 02/21/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
 ms.service: media-services
@@ -17,6 +17,7 @@ It isn't necessary to do anything special with the text tracks (captions, subtit
 ## Prerequisites
 
 - Read [Content protection with dynamic encryption and key delivery](drm-content-protection-concept.md).
+- Understand an implementation of custom claims by reading [Claims-based identity and concepts in SharePoint](/sharepoint/dev/general-development/claims-based-identity-and-concepts-in-sharepoint)
 
 ## Step 1: Create a content key policy with AES Clear Key
 
@@ -25,6 +26,7 @@ You will choose token restriction for this example. Before you start working wit
 1. Sign in to the Azure portal.
 1. Navigate to the Media Services account you want to work with.
 1. Select **Content key policies**. The *Content key policy* screen will appear.
+1. Select **+ Add content key policy**. The Create content key policy screen will appear.
 1. Enter a name for the policy in the **Content key policy** name field.
 1. Enter a description in the **Description** field (optional).
 1. In the *AES clear key section* under the *Choose encryption options section*, select **+ Add**. The *Add AES clear key policy option* screen will appear.
@@ -57,6 +59,8 @@ You can use the [JWT Debugger](https://jwt.io/#debugger-io) to generate a JWT to
 
 ## Step 3: Create a streaming locator with Predefined_ClearKey and the content key policy
 
+For the following steps, it is assumed that you have uploaded and encoded a media file which would have produced an output asset.
+
 1. In the portal, navigate to the asset you want to work with.
 1. Select **+ streaming locator**. The *Add streaming locator* screen will appear.
 1. Enter a name for the streaming locator in the **Name** field.
@@ -74,7 +78,7 @@ You can use the [JWT Debugger](https://jwt.io/#debugger-io) to generate a JWT to
 
 Instructions for setting up your player client are not included here. However, for this example we will use the [Azure Media Player (AMP)](https://azuremediaplayerdemo.azurewebsites.net/) client demo. You can learn more about setting up AMP for DRM [here](../azure-media-player/azure-media-player-protected-content.md).
 
-You should already be on the asset page in the portal.
+You should already be on the Assets page in the portal.
 
 1. Select **Show URLs** next to the streaming locator you just created.
 1. Select the **copy** icon next to the streaming URL you want to use to copy it onto your clipboard.
