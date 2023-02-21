@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 02/14/2023
+ms.date: 02/21/2023
 ms.author: inhenkel
 ---
 
@@ -21,9 +21,39 @@ To stay up to date with the most recent developments, this article provides you 
 
 ## January 2023
 
+### Timed metadata
+
+Timed metadata is custom data that is inserted into a live stream. Both the data and its insertion timestamp are preserved in the media stream itself. This is so that clients playing the video stream can get the same custom metadata at the exact same time in relation to the video stream. With timed metadata you can:
+
+* Add interactivity elements to the live stream such as a poll.
+* Add information related to the video content such as speakers, product links, sports player stats, etc.
+* Add metadata about the video such as GPS location, time, etc.
+
+For more information, see [Timed metadata with Azure Media Services](stream-signal-timed-metadata-concept.md) and [How to signal timed metadata with Azure Media Services](stream-signal-timed-metadata-how-to.md). You can try it out with [Stackblitz](https://stackblitz.com/fork/github/Azure-Samples/media-services-v3-node-tutorials/tree/main/Player/examples/shaka?file=index.html&title=AMS%20Shaka%20Player%20Timed%20Metadata%20Sample).
+
+### Bitrate separation
+
+The ContentAwareEncoding bitrate separation and resolution decision were improved in this month's release.
+
+ContentAwareEncoding can be used together with PresetConfigurations to satisfy your specific requirements for optimal streaming and encoding performance.
+
+For better bitrate separation, the estimated complexity from trial encoding was used to estimate the top layer bitrate, the bottom layer bitrate, and the total number of layers. Once the top layer bitrate, bottom layer bitrate, and number of layers are decided, the bitrates of intermediate layers are calculated based on the even bitrate ratio between neighboring layers. It's almost evenly separated by bitrate in this case.
+
+When it comes to resolution, the bottom layer is the main issue. The bottom layer resolution can be configured through PresetConfigurations. The modified logic decides the bottom layer resolution based on the estimated complexity from trial encoding if you don't configure it. It also decides the bottom layer bitrate if set by users through PresetConfigurations. The resolution decision tried to use higher resolutions than 180P for the bottom layer to achieve better visual quality.
+
+This release also improves the content complexity estimation algorithm. The original algorithm is conservative and results in higher bitrates than necessary. With the modified estimation, the output bitrates are usually lower than before. In other words, you can now save more money in terms of network bandwidth and storage costs.
+
+### .NET SDK samples for the latest Azure.ResourceManager.Media client SDK
+
+The updated Azure.ResourceManager.Media client SDK (also known as the “track 2” .NET SDK” is available in Nuget [Azure.ResourceManager.Media](https://www.nuget.org/packages/Azure.ResourceManager.Media).  All samples have been updated in the main branch of our samples repository for .NET on github to the latest version of this client SDK.  [Azure-Samples/media-services-v3-dotnet](https://github.com/Azure-Samples/media-services-v3-dotnet/). The projects in this repository show how to implement different Azure Media Services scenarios using the v3 version. (github.com).
+
 ### Changes to the Assets interface in the Azure portal
 
 You will see an improved user experience on the Assets blade in the Azure portal. You can now view tracks and files in the asset. You can also upload, update, or delete audio and text tracks in an asset.
+
+### Live event health API
+
+You can track the health of your live event with the new live event health API.  Learn more about the API
 
 ## December 2022
 
