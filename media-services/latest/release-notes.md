@@ -51,10 +51,6 @@ The updated Azure.ResourceManager.Media client SDK (also known as the “track 2
 
 You will see an improved user experience on the Assets blade in the Azure portal. You can now view tracks and files in the asset. You can also upload, update, or delete audio and text tracks in an asset.
 
-### Live event health API
-
-You can track the health of your live event with the new live event health API.  Learn more about the API
-
 ## December 2022
 
 Media Services now supports IPv6 for streaming media to live events, streaming content from streaming endpoints, and when delivering content keys. To enable IPv6 for streaming endpoints and live events, the IP allow list for the resource must include at least one IPv6 address or IPv6 range. When CDN support is enabled for a streaming endpoint, IPv6 support is dependent on the CDN configuration.
