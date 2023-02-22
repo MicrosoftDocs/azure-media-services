@@ -4,7 +4,7 @@ description: Customers often ask how they can reduce the latency of their live s
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 02/21/2023
 ms.author: inhenkel
 ---
 
@@ -47,7 +47,7 @@ You are in control of the settings of the source encoder settings before the RTM
 
 Here are some configurations that will help you reduce the latency in our pipeline:
 
-1. **If you are using a passthrough live event, use the `LowLatency` Stream Option on the live event.** For all encoding live events, use the `LowLatencyV2` stream option unless you need a DVR window longer than 6 hours or smooth streaming output. Certain encryption formats are also not available with this option. Check [Dynamic encryption and key delivery](drm-content-protection-concept.md) for details.
+1. **Use the low latency stream options for live events.** For the Standard encoding (up to 720p) and Premium encoding (up to 1080p) stream options, unless you need a DVR window longer than 6 hours or smooth streaming output, use the Low latency stream latency setting.
 
 2. **We recommend that you choose CMAF output for both HLS and DASH playback.** This allows you to share the same fragments for both formats. It increases your cache hit ratio when CDN is used. For example:
 
