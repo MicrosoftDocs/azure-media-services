@@ -64,7 +64,6 @@ If the contribution feed is of 720p or higher resolution, the **Default720p** pr
 
 If the source frame rate on input is >30 fps, the frame rate will be reduced to match half of the input frame rate.  For example 60 fps would be reduced to 30fps.  50 fps would be reduced to 25 fps, etc.
 
-
 | Bitrate | Width | Height | MaxFPS | Profile |
 | ------- | ----- | ------ | ------ | ------- |
 | 3500    | 1280  | 720    | 30     | High    |
