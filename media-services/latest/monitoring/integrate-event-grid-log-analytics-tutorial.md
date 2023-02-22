@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 ## Azure Media Services Events
 
-Azure Media Services v3 emits events on [Azure Event Grid](monitoring/media-services-event-schemas.md). You can subscribe to events in many ways and store them in data stores. In this tutorial, you will subscribe to Media Services events using a [Log App Flow](https://azure.microsoft.com/services/logic-apps/). The Logic App will be triggered for each event and store the body of the event in Azure Log Analytics. Once the events are in Azure Log Analytics, you can use other Azure services to create a dashboard, monitor, and alert on these events, though we won't be covering that in this tutorial.
+Azure Media Services v3 emits events on [Azure Event Grid](media-services-event-schemas.md). You can subscribe to events in many ways and store them in data stores. In this tutorial, you will subscribe to Media Services events using a [Log App Flow](https://azure.microsoft.com/services/logic-apps/). The Logic App will be triggered for each event and store the body of the event in Azure Log Analytics. Once the events are in Azure Log Analytics, you can use other Azure services to create a dashboard, monitor, and alert on these events, though we won't be covering that in this tutorial.
 
 You will learn how to:
 
@@ -105,4 +105,4 @@ With the live stream, Azure Media Services is emitting various events that are t
 
 If you don't want to continue to use the resources you created during this tutorial, make sure you delete all of the resources in the resource group or you will continue to be charged.
 
-[!INCLUDE [media-services-community](includes/media-services-community.md)]
+[!INCLUDE [media-services-community](../includes/media-services-community.md)]
