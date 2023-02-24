@@ -3190,6 +3190,11 @@
           "source_path_from_root": "/media-services/latest/amp-captions-tutorial.md",
           "redirect_url": "/media-services/latest/samples/tracks-portal-captions-tutorial",
           "redirect_document_id": false
+        },
+        {
+          "source_path_from_root": "/media-services/latest/integrate-event-grid-log-analytics-tutorial.md",
+          "redirect_url": "/media-services/latest/monitoring/integrate-event-grid-log-analytics-tutorial",
+          "redirect_document_id": false
         }
     ]
 }

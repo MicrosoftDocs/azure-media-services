@@ -27,7 +27,7 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 ## Prerequisites
 
 * An Azure subscription.
-* A [Media Services](account-create-how-to.md) account and resource group.
+* A [Media Services](../account-create-how-to.md) account and resource group.
 * A [Log Analytics](/azure/azure-monitor/logs/quick-create-workspace) workspace
 
 
@@ -80,7 +80,7 @@ Now that you are subscribed to the event(s), create an action.
 
 ## Test
 
-Once you have the Logic App created, create a live event and start a live stream with your on-premises live encoder. If you haven't set up a live event for Media Services before, try the OBS [Quickstart](live-event-obs-quickstart.md)
+Once you have the Logic App created, create a live event and start a live stream with your on-premises live encoder. If you haven't set up a live event for Media Services before, try the OBS [Quickstart](../live-event-obs-quickstart.md)
 
 ## Verify the events
 
