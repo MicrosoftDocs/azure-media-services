@@ -1,7 +1,6 @@
 ---
-title: Stream live with Media Services by using .NET 5.0
-titleSuffix: Azure Media Services
-description: Learn how to stream live events by using .NET 5.0
+title: Stream live with Media Services by using .NET 7.0
+description: In Azure Media Services, live events are responsible for processing live streaming content. A live event provides an input endpoint (ingest URL) that you then provide to a live encoder. The live event receives input streams from the live encoder and makes them available for streaming through one or more streaming endpoints. Live events also provide a preview endpoint (preview URL) that you use to preview and validate your stream before further processing and delivery.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
@@ -9,7 +8,7 @@ ms.date: 01/09/2023
 ms.author: inhenkel
 ---
 
-# Tutorial: Stream live with Media Services by using .NET 5.0
+# Tutorial: Stream live with Media Services by using .NET 7.0
 
 In Azure Media Services, [live events](/rest/api/media/liveevents) are responsible for processing live streaming content. A live event provides an input endpoint (ingest URL) that you then provide to a live encoder. The live event receives input streams from the live encoder and makes them available for streaming through one or more [streaming endpoints](/rest/api/media/streamingendpoints). Live events also provide a preview endpoint (preview URL) that you use to preview and validate your stream before further processing and delivery.
 
