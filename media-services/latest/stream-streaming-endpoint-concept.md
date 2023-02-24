@@ -4,7 +4,7 @@ description: Learn about Streaming Endpoints (Origin), a dynamic packaging and s
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 02/24/2023
 ms.author: inhenkel
 ---
 
@@ -52,16 +52,16 @@ The following table describes the Premium and Standard streaming endpoint types.
 
 Feature|Standard|Premium
 ---|---|---
-Throughput |Up to 600 Mbps and can provide a much higher effective throughput when you use CDN.|200 Mbps per streaming unit (SU). Can provide a much higher effective throughput when you use CDN.
-CDN|Azure CDN, third-party CDN, or no CDN.|Azure CDN, third-party CDN, or no CDN.
-Billing is prorated| Daily|Daily
-Dynamic encryption|Yes|Yes
-Dynamic packaging|Yes|Yes
-Scale|Auto scales up to the targeted throughput.|Additional SUs.
-IP filtering/G20/Custom host <sup>1</sup>|Yes|Yes
-Progressive download|Yes|Yes
-Resource type| Shared <sup>2</sup>|Dedicated
-Recommended usage |Recommended for testing and non-essential streaming scenarios.|Professional usage.
+Throughput |Up to 600 Mbps and can provide a much higher effective throughput when you use CDN.|200 Mbps per streaming unit (SU). Can provide a much higher effective throughput when you use CDN.|
+CDN|Azure CDN, third-party CDN, or no CDN.|Azure CDN, third-party CDN, or no CDN.|
+Billing is prorated| Daily|Daily|
+Dynamic encryption|Yes|Yes|
+Dynamic packaging|Yes|Yes|
+Scale|Auto scales up to the targeted throughput.|Additional SUs.|
+IP filtering/G20/Custom host <sup>1</sup>|Yes|Yes|
+Progressive download|Yes|Yes|
+Resource type| Shared <sup>2</sup>|Dedicated|
+Recommended usage |Recommended for testing and non-essential streaming scenarios.|Professional usage.|
 
 <sup>1</sup> Only used directly on the streaming endpoint when the CDN isn't enabled on the endpoint.<br/>
 <sup>2</sup> Standard streaming endpoints use a shared pool of resources.<br/>

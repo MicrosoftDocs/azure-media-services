@@ -36,9 +36,6 @@ While you are migrating, you can create a V3 account that still has access to V2
 - The REST API and older version
 - Selecting the checkbox in the portal.
 
-> [!div class="mx-imgBorder"]
-> [ ![account creation in the portal](./media/migration-guide/v-3-v-2-access-account-creation-small.png) ](./media/migration-guide/v-3-v-2-access-account-creation.png#lightbox)
-
 All the .NET, CLI, and other SDKs will be targeting the latest 2020-05-01 API, so find or configure the older API versions.
 
 > [!NOTE]

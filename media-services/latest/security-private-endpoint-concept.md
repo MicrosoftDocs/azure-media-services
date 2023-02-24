@@ -4,7 +4,7 @@ description: This article gives an overview of using a private endpoint with Azu
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 02/24/2023
 ms.author: inhenkel
 ---
 
@@ -38,9 +38,9 @@ Use private endpoints when you want to make your resources accessible to a virtu
 The following table shows the services that are typically used with Media Services.  Review the documentation in the table below to understand how private endpoints and Private Link are used for each.
 
 | Service                | Media Services integration                      | Private endpoint documentation |
-| ---------------------- | ----------------------------------------------- | -------------------------- |
+| ---------------------- | ----------------------------------------------- | ------------------------------ |
 | Azure Storage          | Used to store media                             | [Use private endpoints for Azure Storage](/azure/storage/common/storage-private-endpoints) |
-| Azure Key Vault        | Used to store [customer-managed keys](security-customer-managed-keys-portal-tutorial.md)             | [Configure Azure Key Vault networking settings](/azure/key-vault/general/how-to-azure-key-vault-network-security) |
+| Azure Key Vault        | Used to store [customer-managed keys](security-customer-managed-keys-portal-tutorial.md) | [Configure Azure Key Vault networking settings](/azure/key-vault/general/how-to-azure-key-vault-network-security) |
 | Event Grid             | Provides [notifications of Media Services events](./monitoring/job-state-events-cli-how-to.md) | [Configure private endpoints for Azure Event Grid topics or domains](/azure/event-grid/configure-private-endpoints)  |
 
 > [!TIP]
@@ -51,11 +51,11 @@ The following table shows the services that are typically used with Media Servic
 Media Services endpoints may be accessed from a virtual network using private endpoints. Private endpoints may also be accessed from peered virtual networks or other networks connected to the virtual network using Express Route or VPN. You can also use Private Links with Media Services endpoints.
 
 | Endpoint                    | Description                                                               | Supports private endpoint | Internet access control |
-| --------------------------- | ------------------------------------------------------------------------- | --------------------- | ----------------------- |
-| Key delivery                | Provides media content keys and DRM licenses to media viewers             | Yes                   | IP allowlist            |
-| Live event                  | Ingests media content for live streaming                                  | Yes                   | IP allowlist            |
-| Streaming endpoint          | The origin server for streaming video and formats media into HLS and DASH | Yes                   | IP allowlist            |
-| Streaming endpoint with CDN | Stream media to many viewers                                              | No                    | Managed by CDN          |
+| --------------------------- | ------------------------------------------------------------------------- | ------------------------- | ----------------------- |
+| Key delivery                | Provides media content keys and DRM licenses to media viewers             | Yes                       | IP allowlist            |
+| Live event                  | Ingests media content for live streaming                                  | Yes                       | IP allowlist            |
+| Streaming endpoint          | The origin server for streaming video and formats media into HLS and DASH | Yes                       | IP allowlist            |
+| Streaming endpoint with CDN | Stream media to many viewers                                              | No                        | Managed by CDN          |
 
 > [!IMPORTANT]
 > Media Services accounts created with API versions prior to 2020-05-01 also have an endpoint for the legacy RESTv2 API endpoint (pending deprecation).

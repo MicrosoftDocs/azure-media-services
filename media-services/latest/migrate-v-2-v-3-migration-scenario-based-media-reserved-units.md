@@ -4,7 +4,7 @@ description: This article gives you MRU scenario based guidance that will assist
 author: jiayali-ms
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 02/21/2023
 ms.author: inhenkel
 ---
 

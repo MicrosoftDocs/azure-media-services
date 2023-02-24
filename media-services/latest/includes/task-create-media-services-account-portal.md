@@ -2,7 +2,7 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 11/04/2020
+ms.date: 02/24/2023
 ms.author: inhenkel
 
 ---
@@ -12,7 +12,10 @@ ms.author: inhenkel
 ### Create a Media Services account with the portal
 
 1. Sign in at the [Azure portal](https://portal.azure.com/).
-1. Click **+Create a resource** > **Media** > **Media Services**.
+1. Select **+Create a resource**.
+1. In the search field, enter "Media Services" and select **Enter**. Search results will appear including a card for Media Services.
+1. Select the **Media Services** card. The Media Services detail screen will appear.
+1. Select **Create**. The Create a Media Services account screen will appear.
 1. In the **Create a Media Services account** section enter required values.
 
     | Name | Description |
@@ -26,8 +29,6 @@ ms.author: inhenkel
 
     > [!IMPORTANT]
     > All **new** Media Services accounts require a user-managed identity. Previously created accounts that have a system-managed identity have not changed.
-
-    <!--|**Advanced settings**| You can create an account using a system-managed identity by selecting the **System-managed** radio button.  Making this selection will allow you to use customer-managed keys, or bring your own key (BYOK) and Media Services to enable trusted storage.  For more information about customer-managed keys, see [Bring your own key (customer-managed keys) with Media Services](../concept-use-customer-managed-keys-byok.md). Additionally, [managed identities](../concept-managed-identities.md) will also be enabled. -->
 
 1. Select the checkbox next to "I have all the rights to use the content/file, and agree that it will be handled per the Online Services Terms and the Microsoft Privacy Statement." to confirm and continue.
 1. Click **Review + create** or add tags with the **Next:Tags** button.

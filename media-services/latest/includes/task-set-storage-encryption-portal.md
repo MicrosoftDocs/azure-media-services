@@ -12,10 +12,12 @@ title: Set the encryption on a storage account
 
 ### Set the encryption on a storage account
 
-1. In the Azure portal, enter the name of the storage account you want to encrypt in the **Search** field at the top of the screen.  Matches will appear below the search field.
+1. In the Azure portal, navigate to the subscription you want to work with.
+1. Select **Resources**. The Resources screen will appear with a listing of all of the resources for that subscription.
+1. Enter the name (or part of the name) of the storage account you want to encrypt in the **Search** field at the top of the screen.  Matches will appear below the search field.
 1. Select the storage account you are looking for. The storage account screen will appear.
 1. Select **Encryption**.
-1. Select either Microsoft managed keys or Customer managed keys.
+1. Select either the **Microsoft managed keys** or **Customer managed keys** radio button.
 
 ### Use Microsoft-managed keys
 
@@ -26,7 +28,7 @@ By default, data in the storage account is encrypted using Microsoft managed key
 1. Select **Customer managed keys**.
 1. Select either **Enter key URI** or **Select from key vault**.
     1. If you select **Enter key URI**, enter the key URI in the Key URI field and select the subscription. (It may already be selected for you.)
-    1. If you select **Select from key vault**, you will then select **Select a key vault and key**. The Select key from Azure Key Vault screen will appear.
+    1. If you select **Select from key vault**, then select **Select a key vault and key**. The Select key from Azure Key Vault screen will appear.
 1. Select the **Key Vault** you want to use and either select a key you already have in your key vault or **create a new key**.
     1. If you choose to create a new key, select **Generate** or **Import** from the **Options** drop down. You can import only RSA keys.
     1. To generate a new key, give the key a name in the **Name** field then select the Key type:

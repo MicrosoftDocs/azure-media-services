@@ -5,7 +5,7 @@ ms.service: media-services
 ms.topic: quickstart
 ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.date: 01/09/2023
+ms.date: 02/21/2023
 ---
 
 # Create an Azure Media Services live stream
@@ -37,20 +37,18 @@ To keep things simple, we'll use an encoding preset for Azure Media Services in 
 1. In the email that you receive, verify your email address. Then the application will start the free trial.
 1. Recommended: Watch the video tutorial in the opening application screen.
 
-## Set up an Azure Media Services live stream
+## Set up an Azure Media Services live event
 
-1. Sign in to the Azure portal.
-1. Navigate to the Media Services account you want to work with.
-1. Select **Live streaming** from the **Media Services** listing.
+1. Go to the Azure Media Services account within the portal, and then select **Live streaming** from the **Media Services** listing.
 1. Select **Add live event** to create a new live streaming event.
 1. Enter a name for your new event, such as *TestLiveEvent*, in the **Live event name** box.
 1. Enter an optional description of the event in the **Description** box.
-1. Select the **Pass-through – no cloud encoding** option.
-1. Select the **RTMP** option.
-1. Make sure that the **No** option is selected for **Start live event**, to avoid being billed for the live event before it's ready. (Billing will begin when the live event is started.)
+1. Select the basic **Standard pass-through** option.
+1. Leave all the rest of the settings as they are for now.
+1. Select the **I have all the rights to use the content/file, and agree...** checkbox after you have read the Online Services Terms and the Microsoft Privacy Statement.
 1. Select the **Review + create** button to review the settings.
 1. Select the **Create** button to create the live event. You're then returned to the live event listing.
-1. Select the link to the live event that you just created. Notice that your event is stopped.
+1. Select the link to the live event that you created. Notice that your event is stopped.
 1. Keep this page open in your browser. We'll come back to it later.
 
 ## Set up a live stream by using Wirecast Studio

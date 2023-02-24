@@ -2,7 +2,7 @@
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
-ms.date: 08/18/2020
+ms.date: 02/24/2023
 ms.author: inhenkel
 title: Create a transform with the portal
 ---
@@ -13,7 +13,7 @@ title: Create a transform with the portal
 1. Select **Transforms + jobs**.
 1. Select **Add transform**. The Add transform screen will appear.
 1. Enter a transform name in the **Transform name** field.
-1. Optionally, add a description in the **Description** field.
+1. Optional: Add a description in the **Description** field.
 1. Select a transform type from the **Transform type** dropdown list. You can select from one of the following types:
     1. *Encoding* Use a built-in Standard Encoder preset to encode video or audio.
     1. *Copy* Copy video and/or audio stream into an asset that can be streamed.

@@ -4,7 +4,7 @@ description: Media Services supports Apple's Low Latency HLS (LL-HLS) specificat
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 01/19/2023
+ms.date: 02/21/2023
 ms.author: inhenkel
 ---
 
@@ -22,7 +22,7 @@ Media Services support Apple's Low Latency HLS (LL-HLS) specification. This arti
 Media Services support low latency live streaming using LL-HLS for Standard Encoding Live Events and Premium Encoding Live Events. When creating a new encoding live event, you must choose StreamOptions.LowLatencyV2 when using the API, or the "Low latency" option using the Azure portal. With this option, you have certain limitations compared to the other stream options.
 
 - Only RTMP input is supported at this time.
-- Smooth output is not supported. 
+- Smooth output is not supported.
 - You can still use DASH output and gain benefits of a much lower latency compared to other stream options. However LL-DASH is not supported.
 - A smaller seekback window during live playback is recommended. By default we set a 30 minute seekback window.
 - We can only archive up to 6 hours of live content.
@@ -52,17 +52,20 @@ See [dynamic packaging](encode-dynamic-packaging-concept.md) page for more infor
 
 ## Player testing
 
-We recommend that you use players that support LL-HLS and configure the players appropriately for best results. You can see a demo of the live playback using Shaka player on the Azure Media Services [demo page](https://media.microsoft.com/en-us/live)
+We recommend that you use players that support LL-HLS and configure the players appropriately for best results. You can see a demo of the live playback using Shaka player on the Azure Media Services [demo page](https://media.microsoft.com/en-us/live).
 
-We have tested with the latest version of the following players
+We have tested with the latest version of the following players:
+
 - Shaka 4.3.2
 - Video.JS 7.21.1 with support for LL-HLS
 - ExoPlayer
 
-When using DASH output with Azure Media Player, configure the player with the following option: "heuristicprofile: LowLatency".
+When using DASH output with Azure Media Player, configure the player with the following option: `heuristicprofile: LowLatency`.
 
 ## Output formats
-For LL-HLS outputs use the format string: (format=m3u8-cmaf)
+
+For LL-HLS outputs use the format string: (format=m3u8-cmaf). For example:
+
 `https://accountName-region.streaming.media.azure.net/11111111-1111-43ce-9dba-3aee82e35262/output.ism/manifest(format=m3u8-cmaf).m3u8`
 
 When using DASH output use the format string: (format=mpd-time-cmaf)

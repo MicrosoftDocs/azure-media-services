@@ -4,7 +4,7 @@ description: This article demonstrates how to connect to Media Services v3 API w
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 01/09/2023
+ms.date: 02/21/2023
 ms.author: inhenkel
 ---
 # Connect to Media Services v3 API - Node.js
@@ -80,33 +80,7 @@ Copy and paste the values into a file named *.env*. The file should be stored at
 
 Once you have created the *.env* file, you can start working with the samples.
 
-Example *.env* file:
-
-```nodejs
-# Values from the API Access page in the portal
-AADCLIENTID="00000000-0000-0000-0000-000000000000"
-AADSECRET="00000000-0000-0000-0000-000000000000"
-AADTENANTID="00000000-0000-0000-0000-000000000000"
-
-# Change this to match your Azure AD Tenant domain name.
-AADTENANTDOMAIN="microsoft.onmicrosoft.com"
-
-# Set this to your Media Services Account name, resource group it is contained in, and location
-ACCOUNTNAME="amsaccount"
-RESOURCEGROUP="amsResourceGroup"
-
-# Set this to your Azure Subscription ID
-SUBSCRIPTIONID="00000000-0000-0000-0000-000000000000"
-
-# You must change this if you are using Gov Cloud, China, or other non standard cloud regions
-AADENDPOINT="https://login.microsoftonline.com"
-
-# DRM Testing
-DRMSYMMETRICKEY="add random base 64 encoded string here"
-```
-
 ## Run the sample application *HelloWorld-ListAssets*
-
 
 1. Launch Visual Studio Code from the root Folder.
 
