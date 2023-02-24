@@ -111,8 +111,7 @@ You should first unpublish (remove all Streaming Locators) on the Asset via the 
 
 ## Samples
 
-- [v2tov3MigrationSample](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/v2tov3Migration)
-- You can also [compare the V2 and V3 code in the code samples](migrate-v-2-v-3-migration-samples.md).
+- You can [compare the V2 and V3 code in the code samples](migrate-v-2-v-3-migration-samples.md).
 
 ## Tools
 
