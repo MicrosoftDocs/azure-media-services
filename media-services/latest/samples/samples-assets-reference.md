@@ -44,7 +44,7 @@ This sample shows you how to use filters to list the streaming locators attached
 
 | &#32; | &#32; |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts) |  not yet available |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/list-assets-filtered.ts) |  Python not yet available |
 
 ## List tracks in an asset
 
@@ -60,7 +60,7 @@ This sample shows you how to use the Tracks API on an Asset to add a new WebVTT 
 
 | &#32; | &#32; |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-WebVTT-tracks.ts) |  not yet available |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-WebVTT-tracks.ts) |  Python not yet available |
 
 ## Add an additional audio track to an existing asset using the tracks API
 
@@ -68,7 +68,7 @@ This sample shows you how to use the Tracks API on an Asset to add an additional
 
 | &#32; | &#32; |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-audio-language-track.ts) |  not yet available |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-audio-language-track.ts) |  Python not yet available |
 
 ## Asset management with .NET
 

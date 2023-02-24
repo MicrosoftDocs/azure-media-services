@@ -64,7 +64,7 @@ This sample demonstrates how to control the output settings of the Content Aware
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_HEVC_ContentAware_Constrained/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_HEVC_ContentAware_Constrained/encoding-hevc-contentaware-constrained-helper.py) |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_HEVC_ContentAware_Constrained/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_HEVC_ContentAware_Constrained/encoding-hevc-contentaware-constrained-helper.py) |
 
 ## Images, thumbnails and sprites
 
@@ -82,7 +82,7 @@ This samples shows how to encode with a custom Transform to create a thumbnail s
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------- |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_SpriteThumbnail) | not yet available | [Python](https://github.com/IngridAtMicrosoft/media-services-v3-python/blob/main/VideoEncoding/Encoding_Sprite_Thumbnail/encoding-sprite-thumbnail-helper.py) |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_SpriteThumbnail) | Node.JS not yet available | [Python](https://github.com/IngridAtMicrosoft/media-services-v3-python/blob/main/VideoEncoding/Encoding_Sprite_Thumbnail/encoding-sprite-thumbnail-helper.py) |
 
 ### Create a thumbnail sprite (VTT) in JPG format
 
@@ -90,7 +90,7 @@ This sample shows how to generate a VTT Sprite Thumbnail in JPG format and how t
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Sprite_Thumbnail/index.ts) |  not yet available |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Sprite_Thumbnail/index.ts) |  Python not yet available |
 
 ## Video manipulation
 
@@ -100,7 +100,7 @@ This sample shows how to use the rotation filter to rotate a video by 90 degrees
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_Rotate90degrees/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_Rotate90degrees/encoding-h264-rotate90degrees-helper.py) |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_Rotate90degrees/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_Rotate90degrees/encoding-h264-rotate90degrees-helper.py) |
 
 ### Stitch and edit two assets together
 
@@ -118,7 +118,7 @@ If you need a workflow where you desire to submit custom preset jobs to a single
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/CreateTransform_Job_PresetOverride/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/CreateTransform_Job_PresetOverride/create-transform-job-preset-override-helper.py) |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/CreateTransform_Job_PresetOverride/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/CreateTransform_Job_PresetOverride/create-transform-job-preset-override-helper.py) |
 
 ### Output to MPEG transport stream format
 
@@ -126,7 +126,7 @@ This sample shows how to use the standard encoder to encode a source file and ou
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/encoding-h264-to-transportstream-helper.py) |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/encoding-h264-to-transportstream-helper.py) |
 
 ### Bulk encode from a remote Azure storage account using SAS URLs
 
@@ -134,7 +134,7 @@ This samples shows how you can point to a remote Azure Storage account using a S
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Bulk_Remote_Storage_Account_SAS/index.ts) |  not yet available |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Bulk_Remote_Storage_Account_SAS/index.ts) |  not yet available |
 
 ### Encode with Constant Rate Factor Preset for H.264
 
@@ -142,7 +142,7 @@ This sample shows how to create a custom encoding Transform using custom H.264 C
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_H264_ConstantRateFactor) | not yet available | not yet available |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_H264_ConstantRateFactor) | Node.JS not yet available | Python not yet available |
 
 ### Encode with MES adaptive bitrate predefined preset from an HTTP source URL
 
@@ -150,7 +150,7 @@ This sample demonstrates how to create an encoding Transform that uses a built-i
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_PredefinedPreset) | not yet available | not yet available |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_PredefinedPreset) | Node.JS not yet available | Python not yet available |
 
 ## Audio
 
@@ -170,7 +170,7 @@ This sample uses the built-in preset that rapidly copies the source video and au
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodec/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodec/encoding-builtin-copycodec-helper.py) |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodec/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodec/encoding-builtin-copycodec-helper.py) |
 
 ### Copy Audio and Video to MP4 without re-encoding and create a low bitrate proxy
 
@@ -178,7 +178,7 @@ This sample adds an additional fast-encoded proxy resolution to the Copy Audio a
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodecWithProxy/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodecWithProxy/encoding-builtin-copycodecwithproxy-helper.py) |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodecWithProxy/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodecWithProxy/encoding-builtin-copycodecwithproxy-helper.py) |
 
 ### Copy Audio and Video to MP4 without re-encoding and create a low bitrate proxy and VTT sprite thumbnail
 
@@ -186,7 +186,7 @@ This sample adds a VTT sprite thumbnail to the Copy Audio and Video to MP4 sampl
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Custom_CopyCodec_Sprite+Proxy/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_Custom_CopyCodec_Sprite_Proxy/encoding-custom-copycodec-sprite-proxy-helper.py) |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Custom_CopyCodec_Sprite+Proxy/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_Custom_CopyCodec_Sprite_Proxy/encoding-custom-copycodec-sprite-proxy-helper.py) |
 
 ## Combine with other Azure services
 
@@ -196,7 +196,7 @@ This sample shows how to use the standard encoder and receive and process Event 
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_with_EventHub/index.ts) |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_with_EventHub/index.ts) |
 [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_with_EventHub/encoding-h264-with-eventhub-helper.py) |
 
 ### Copy live archive to MP4 file format for export or use with Video Indexer
@@ -205,6 +205,6 @@ This sample demonstrates how to use the archived output from a live event and ex
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4-helper.py) |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Live_Archive_To_MP4/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/EncodingLiveArchiveMP4/encoding-live-archive-to-mp4-helper.py) |
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]

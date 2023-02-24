@@ -20,7 +20,7 @@ This sample demonstrates how to dynamically encrypt your content with AES-128.
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/BasicAESClearKey) | [NodeJS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) | not yet available |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/BasicAESClearKey) | [NodeJS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) | Python not yet available |
 
 ## Deliver basic Playready DRM content protection and streaming
 
@@ -52,7 +52,7 @@ This sample demonstrates how to dynamically encrypt your content with FairPlay D
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/OfflineFairPlay) | not yet available | not yet available |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/OfflineFairPlay) | Node.JS not yet available | Python not yet available |
 
 ## Deliver offline PlayReady and Widevine
 
@@ -60,6 +60,6 @@ This sample demonstrates how to dynamically encrypt your content with PlayReady 
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/OfflinePlayReadyAndWidevine) | not yet available | not yet available |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/OfflinePlayReadyAndWidevine) | Node.JS not yet available | Python not yet available |
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]

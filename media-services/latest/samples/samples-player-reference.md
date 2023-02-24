@@ -20,6 +20,6 @@ This sample shows how to use the Google Shaka player with Low latency HLS stream
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| :small_blue_diamond: | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Player/examples/shaka/index.js) |  not yet available |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Player/examples/shaka/index.js) |  Python not yet available |
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]

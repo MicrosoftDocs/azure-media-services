@@ -28,7 +28,7 @@ This sample shows you how to upload a local file, encode it with Content Aware E
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) |  [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesWithDRM/stream-files-with-drm-helper.py) |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) |  [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesWithDRM/stream-files-with-drm-helper.py) |
 
 ## Stream an existing single bitrate MP4 files with HLS or DASH
 
@@ -36,7 +36,7 @@ This sample demonstrates how to dynamically package VOD content from an existing
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/StreamExistingMp4) | not yet available | not yet available |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/StreamExistingMp4) | Node.JS not yet available | Python not yet available |
 
 ## Use dynamic packaging for VOD content with filters
 
@@ -44,6 +44,6 @@ This sample demonstrates how to filter content using asset and account filters.
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/AssetFilters) | not yet available | not yet available |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Streaming/AssetFilters) | Node.JS not yet available | Python not yet available |
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]
