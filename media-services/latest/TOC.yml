@@ -99,7 +99,7 @@
     href: security-customer-managed-keys-portal-tutorial.md
   - name: Store AMS events in Azure Log Analytics - Portal
     displayName: events, event grid, log analytics, tutorial, portal, monitoring, monitor
-    href: integrate-event-grid-log-analytics-tutorial.md
+    href: monitoring/integrate-event-grid-log-analytics-tutorial.md
 - name: Concepts
   items:
   - name: Overview

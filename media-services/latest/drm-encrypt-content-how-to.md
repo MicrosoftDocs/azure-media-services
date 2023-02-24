@@ -66,9 +66,9 @@ You can also add an AES-128 clear key encryption to your content. The content ke
 1. Navigate to the Media Services account you want to work with.
 1. Select **Assets**.
 1. From the list of assets, select the one you want to encrypt.
-1. In the **Streaming locator** section for the selected asset, select **+ Add a streaming locator**.
+1. In the **Streaming locators** section for the selected asset, select **+ New streaming locator**. The Add streaming locator screen will appear.
 1. Select a **streaming policy** that is appropriate for the **content key policy** that you configured.
-1. Once you select the appropriate streaming policy, you can select the content key policy from the drop-down list.
+1. Once you select the *appropriate* streaming policy, you can select the content key policy from the drop-down list. For example, to be able to use an AES ClearKey policy, you must select Predefined_ClearKey from the **Streaming policy** dropdown list.
 1. Select **Add** to add the streaming locator to your asset. This publishes the asset and generates the streaming URLs.
 
 ## Cleanup resources

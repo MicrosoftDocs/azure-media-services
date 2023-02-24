@@ -47,9 +47,9 @@ Open your web browser, and go to the [Microsoft Azure portal](https://portal.azu
 1. Select **Add live event** to create a new live streaming event.
 1. Enter a name for your new event, such as *TestLiveEvent*, in the **Live event name** box.
 1. Enter an optional description of the event in the **Description** box.
-1. Select the basic **Pass-through – no cloud encoding** option.
-1. Select the **RTMP** option.
-1. Make sure that the **No** option is selected for **Start live event**, to avoid being billed for the live event before it's ready. (Billing will begin when the live event is started.)
+1. Select the basic **Standard pass-through** option.
+1. Leave all the rest of the settings as they are for now.
+1. Select the **I have all the rights to use the content/file, and agree...** checkbox after you have read the Online Services Terms and the Microsoft Privacy Statement.
 1. Select the **Review + create** button to review the settings.
 1. Select the **Create** button to create the live event. You're then returned to the live event listing.
 1. Select the link to the live event that you created. Notice that your event is stopped.
@@ -75,10 +75,10 @@ OBS starts with a default scene but with no inputs selected.
 
 ### Set up streaming and advanced encoding settings in OBS
 
-In the next procedure, you'll go back to Azure Media Services in your browser to copy the input URL to enter into the output settings:
+In the next procedure, you'll go back to the portal Azure Media Services page in your browser to copy the input URL to enter into the output settings:
 
-1. On the Azure Media Services page of the portal, select **Start** to start the live stream event. (Billing starts now.)
-1. Set the **RTMP** toggle to **RTMPS**.
+1. If you aren't already on the streaming endpoint page in the portal, navigate to it from the Media Services account you are working with.
+1. Select **Start** to start the live stream event. (Billing starts now.)
 1. In the **Input URL** box, copy the URL to your clipboard.
 1. Switch to the OBS application.
 1. Select the **Settings** button in the **Controls** panel. The Settings options will open.
