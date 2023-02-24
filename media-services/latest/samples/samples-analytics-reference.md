@@ -12,7 +12,9 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](../includes/v3-hr.md)]
 
-This article is a listing of code samples for Analytics. For more information about video indexing and analysis, see [Azure Video Indexer](/azure/azure-video-indexer/video-indexer-overview).
+This article is a listing of code samples for Analytics.
+
+For more video analytics, try Azure Video Indexer. Azure Video Indexer is a cloud application, part of Azure Applied AI Services, built on Azure Media Services and Azure Cognitive Services (such as the Face, Translator, Computer Vision, and Speech). It enables you to extract the insights from your videos using Azure Video Indexer video and audio models. For more information about using Azure Video Indexer, see the [Azure Video Indexer](/azure/azure-video-indexer/video-indexer-overview) documentation.
 
 ## Use basic Audio Analytics with per-job language override
 
