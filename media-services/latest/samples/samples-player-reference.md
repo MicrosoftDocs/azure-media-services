@@ -23,3 +23,11 @@ This sample shows how to use the Google Shaka player with Low latency HLS stream
 | .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Player/examples/shaka/index.js) |  Python not yet available |
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]
+
+## Use HLS.js and timed-metadata insertion
+
+This sample demonstrates how to use the HLS.js player with HLS low latency live streaming (LL-HLS) and timed metadata insertion. Azure Media Services supports playback in any Javascript Media Source Extension based player that can support the streaming of HLS, Low latency HLS (LL-HLS) and MPEG DASH formats. The HLS.js player is an open source player solution that works well with AMS streaming.
+
+| &#32; | &#32; | &#32; |
+| ---- | ------- | ------ |
+| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Player/examples/hls-js/index.js) |  Python not yet available |
