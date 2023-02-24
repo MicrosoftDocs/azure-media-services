@@ -25,7 +25,7 @@ In this tutorial, you will:
 
 > [!NOTE]
 > Even though the tutorial uses **.NET SDK** examples, the general steps are the same for [REST API](/rest/api/media/liveevents),
-[CLI](https://learn.microsoft.com/en-us/cli/azure/ams/live-event), or other supported [SDKs](media-services-apis-overview.md#sdks).
+[CLI](/cli/azure/ams/live-event), or other supported [SDKs](media-services-apis-overview.md#sdks).
 
 ## Prerequisites
 
