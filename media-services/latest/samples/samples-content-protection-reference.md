@@ -42,7 +42,7 @@ This sample demonstrates how to encode and stream using Widevine DRM.
 
 ## Combined content protection
 
-## Upload and stream HLS and DASH with PlayReady and Widevine DRM
+### Upload and stream HLS and DASH with PlayReady and Widevine DRM
 
 This sample demonstrates how to encode and stream using Widevine and PlayReady DRM.
 

@@ -110,7 +110,7 @@ This sample demonstrates how to stitch and edit together two or more assets into
 | ---- | ------- | ------ |
 | [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_StitchTwoAssets)| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Stitch_Two_Assets/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_Stitch_Two_Assets/encoding-stitch-two-assets-helper.py) |
 
-## Preset override or special encoding
+## Preset override or other use case
 
 ### Create a transform and use job preset overrides (v2-to-v3 API migration)
 

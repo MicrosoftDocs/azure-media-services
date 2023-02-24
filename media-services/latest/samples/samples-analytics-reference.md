@@ -12,7 +12,7 @@ ms.author: inhenkel
 
 [!INCLUDE [media services api v3 logo](../includes/v3-hr.md)]
 
-This article is a listing of code samples for Analytics.
+This article is a listing of code samples for Analytics. For more information about video indexing and analysis, see [Azure Video Indexer](/azure/azure-video-indexer/video-indexer-overview).
 
 ## Use basic Audio Analytics with per-job language override
 
