@@ -4,7 +4,7 @@ description: This article is a listing of code samples for Content Protection.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/16/2023
+ms.date: 02/17/2023
 ms.author: inhenkel
 ---
 
@@ -14,30 +14,58 @@ ms.author: inhenkel
 
 This article is a listing of code samples for Content Protection.
 
-[!INCLUDE [net_samples_note](../includes/net_samples_note.md)]
+## Basic content protection
 
-## Upload and stream HLS and DASH with PlayReady and Widevine DRM
+### Deliver basic AESClearKey content protection and streaming
 
-This sample demonstrates how to encode and stream using Widevine and PlayReady DRM.
+This sample demonstrates how to dynamically encrypt your content with AES-128.
 
-| Node.JS | Python |
-| ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesWithDRMSample/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesWithDRM/stream-files-with-drm-sample.py) |
+| &#32; | &#32; | &#32; |
+| ---- | ------- | ------ |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/BasicAESClearKey) | [NodeJS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) | Python not yet available |
 
-## Deliver basic Playready DRM content protection and streaming
+### Deliver basic Playready DRM content protection and streaming
 
 This sample demonstrates how to encode and stream using PlayReady DRM.
 
-| Node.JS | Python |
-| ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicPlayReady/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicPlayReady/basic-play-ready-helper.py) |
+| &#32; | &#32; | &#32; |
+| ---- | ------- | ------ |
+|[.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/BasicPlayReady) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicPlayReady/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicPlayReady/basic-play-ready-helper.py) |
 
-## Deliver basic Widevine DRM content protection and streaming
+### Deliver basic Widevine DRM content protection and streaming
 
 This sample demonstrates how to encode and stream using Widevine DRM.
 
-| Node.JS | Python |
-| ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicWidevine/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicWidevine/basic-widevine-helper.py) |
+| &#32; | &#32; | &#32; |
+| ---- | ------- | ------ |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/BasicWidevine) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/ContentProtection/BasicWidevine/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/ContentProtection/BasicWidevine/basic-widevine-helper.py) |
+
+## Combined content protection
+
+### Upload and stream HLS and DASH with PlayReady and Widevine DRM
+
+This sample demonstrates how to encode and stream using Widevine and PlayReady DRM.
+
+| &#32; | &#32; | &#32; |
+| ---- | ------- | ------ |
+| not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFilesWithDRMSample/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFilesWithDRM/stream-files-with-drm-sample.py) |
+
+## Offline content protection
+
+### Deliver offline Fairplay
+
+This sample demonstrates how to dynamically encrypt your content with FairPlay DRM and play the content without requesting a license from license service.
+
+| &#32; | &#32; | &#32; |
+| ---- | ------- | ------ |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/OfflineFairPlay) | Node.JS not yet available | Python not yet available |
+
+### Deliver offline PlayReady and Widevine
+
+This sample demonstrates how to dynamically encrypt your content with PlayReady and Widevine DRM and play the content without requesting a license from license service.
+
+| &#32; | &#32; | &#32; |
+| ---- | ------- | ------ |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/OfflinePlayReadyAndWidevine) | Node.JS not yet available | Python not yet available |
 
 [!INCLUDE [media-services-community](../includes/media-services-community.md)]
