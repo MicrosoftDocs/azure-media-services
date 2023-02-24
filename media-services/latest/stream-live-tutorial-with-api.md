@@ -10,9 +10,9 @@ ms.author: inhenkel
 
 # Tutorial: Stream live with Media Services by using .NET 7.0**
 
-In Azure Media Services, [live events](https://learn.microsoft.com/rest/api/media/liveevents) are responsible for processing live streaming content. A live event provides an
+In Azure Media Services, [live events](/rest/api/media/liveevents) are responsible for processing live streaming content. A live event provides an
 input endpoint (ingest URL) that you then provide to a live encoder. The live event receives input streams from the live encoder using the RTMP/S or Smooth
-Streaming protocols and makes them available for streaming through one or more [streaming endpoints](https://learn.microsoft.com/rest/api/media/streamingendpoints). Live events also provide a preview endpoint (preview URL) that you use to preview and validate your stream before further processing and delivery.
+Streaming protocols and makes them available for streaming through one or more [streaming endpoints](/rest/api/media/streamingendpoints). Live events also provide a preview endpoint (preview URL) that you use to preview and validate your stream before further processing and delivery.
 
 This tutorial shows how to use .NET 7.0 to create a *pass-through* type of a live event. Pass-through type of live events are useful when you have an encoder that is capable of multi-bitrate, GOP aligned encoding, on premises and can be a simple way to reduce cloud costs. If you wish to reduce bandwidth and send a single bitrate stream to the cloud for multi-bitrate encoding, you can use a transcoding live event with the 720P or 1080P encoding presets.
 
@@ -24,8 +24,8 @@ In this tutorial, you will:
 - Clean up resources.
 
 > [!NOTE]
-> Even though the tutorial uses **.NET SDK** examples, the general steps are the same for [REST API](https://learn.microsoft.com/en-us/rest/api/media/liveevents),
-[CLI](https://learn.microsoft.com/en-us/cli/azure/ams/live-event), or other supported [SDKs](https://learn.microsoft.com/en-us/azure/media-services/latest/media-services-apis-overview#sdks).
+> Even though the tutorial uses **.NET SDK** examples, the general steps are the same for [REST API](/rest/api/media/liveevents),
+[CLI](https://learn.microsoft.com/en-us/cli/azure/ams/live-event), or other supported [SDKs](media-services-apis-overview.md#sdks).
 
 ## Prerequisites
 
@@ -142,7 +142,7 @@ Live outputs start when they're created and stop when they're deleted. When you 
 ## Create a streaming locator
 
 > [!NOTE]
-> When your Media Services account is created, a default streaming endpoint is added to your account in the stopped state. To start streaming your content and take advantage of [dynamic packaging](https://learn.microsoft.com/en-us/azure/media-services/latest/encode-dynamic-packaging-concept) and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the running state.
+> When your Media Services account is created, a default streaming endpoint is added to your account in the stopped state. To start streaming your content and take advantage of [dynamic packaging](encode-dynamic-packaging-concept.md) and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the running state.
 
 When you publish the asset by using a streaming locator, the live event (up to the DVR window length) will continue to be viewable until the streaming locator's expiration or deletion, whichever comes first. This is how you make the virtual "tape" recording available for your viewing audience to see live and on demand. The same URL can be used to watch the live event, the DVR window, or the on-demand asset when the recording is complete (when the live output is deleted).
 
@@ -153,7 +153,7 @@ When you publish the asset by using a streaming locator, the live event (up to t
 ## Watch the event
 
 Press **Ctrl+F5** to run the code. This will output streaming URLs that you can use to watch your live event. Copy the streaming URL that you got to create a
-streaming locator. You can use a media player of your choice. [Azure Media Player](https://amp.azure.net/libs/amp/latest/docs/index.html) is available to
+streaming locator. You can use a media player of your choice. Azure Media Player is available to
 test your stream at the [Media Player demo site](https://ampdemo.azureedge.net/).
 
 A live event automatically converts events to on-demand content when it's stopped. Even after you stop and delete the event, users can stream your archived content as a video on demand for as long as you don't delete the asset. An asset can't be deleted if an event is using it; the event must be deleted first.
