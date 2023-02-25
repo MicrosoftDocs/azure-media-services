@@ -41,7 +41,7 @@ You also need these items for live-streaming software:
 
 For monitoring the live event using Event Grid and Event Hubs, you can:
     1. Follow the steps in [Create and monitor Media Services events with Event Grid using the Azure portal](monitor-events-portal-how-to.md) or,
-    1. Follow the steps near the end of this tutorial in the [Monitoring Live Events using Event Grid and Event Hubs](#monitoring-live-events-using-event-grid-and-event-hub) section of this article.
+    1. Follow the steps near the end of this tutorial in the [Monitoring Live Events using Event Grid and Event Hubs](#monitoring-live-events-using-event-grid-and-event-hubs) section of this article.
 
 > [!TIP]
 > Review [Live streaming with Media Services v3](stream-live-streaming-concept.md) before proceeding.
