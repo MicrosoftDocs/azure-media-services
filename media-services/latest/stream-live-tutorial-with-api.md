@@ -95,14 +95,12 @@ You might want to specify the following things when you're creating the live eve
 
 - **A static host name and a unique GUID**. For an ingest URL to be predictive and easier to maintain in a hardware-based live encoder, set the `useStaticHostname` property to true. For detailed information, see [Live event ingest URLs](live-event-concept.md).
 
-    <!-- REPLACE SAMPLE CODE: Use region name `CreateLiveEvent`.-->
     [!code-csharp[Main](~/../media-services-v3-dotnet/Live/LiveEventWithDVR/Program.cs#CreateLiveEvent)]
 
 ## Get ingest URLs
 
 After the Live Event is created, you can get ingest URLs that you'll provide to the live encoder. The encoder uses these URLs to input a live stream.
 
-<!-- REPLACE IN SAMPLE CODE: Use region name `GetIngestUrl`.-->
 [!code-csharp[Main](~/../media-services-v3-dotnet/Live/LiveEventWithDVR/Program.cs#GetIngestURL)]
 
 ## Get the preview URL
@@ -111,8 +109,6 @@ Use `previewEndpoint` to preview and verify that the input from the encoder is b
 
 > [!IMPORTANT]
 > Make sure that the video is flowing to the preview URL before you continue.
-
-<!-- REPLACE SAMPLE CODE: Use region name `GetPreviewUrls`. -->
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/Live/LiveEventWithDVR/Program.cs#GetPreviewURLs)]
 
@@ -126,15 +122,11 @@ The next section will walk through the creation of the asset and the live output
 
 Create an asset for the live output to use.
 
-<!-- REPACE SAMPLE CODE: Use region name “CreateAsset” -->
-
 [!code-csharp[Main](~/../media-services-v3-dotnet/Live/LiveEventWithDVR/Program.cs#CreateAsset)]
 
 ### Create a live output
 
 Live outputs start when they're created and stop when they're deleted. When you delete the live output, you're not deleting the output asset or content in the asset. The asset with the recording is available for on-demand streaming as long as it exists and there's a streaming locator associated with it.
-
-<!-- REPACE SAMPLE CODE: Use region name “CreateLiveOutput” -->
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/Live/LiveEventWithDVR/Program.cs#CreateLiveOutput)]
 
@@ -144,8 +136,6 @@ Live outputs start when they're created and stop when they're deleted. When you 
 > When your Media Services account is created, a default streaming endpoint is added to your account in the stopped state. To start streaming your content and take advantage of [dynamic packaging](encode-dynamic-packaging-concept.md) and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the running state.
 
 You publish an asset by creating a streaming locator. The live event (up to the DVR window length) is viewable until the streaming locator's expiration or deletion, whichever comes first. It's how you make the video available for your viewing audience to see live and on demand. The same URL can be used to watch the live event, the DVR window, or the on-demand asset when the live event is finished and the live output is deleted.
-
-<!-- REPACE SAMPLE CODE: Use region name “CreateStreamingLocator” -->
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/Live/LiveEventWithDVR/Program.cs#CreateStreamingLocator)]
 
@@ -197,8 +187,6 @@ If you're done streaming events and want to clean up the resources provisioned e
 1. Stop streaming from the encoder.
 1. Stop the live event. After the live event is stopped, it won't incur any charges. When you need to start it again, the same ingest URL can be used so you won't need to reconfigure your encoder.
 1. Stop the streaming endpoint, unless you want to continue to provide the archive of your live event as an on-demand stream. If the live event is in a stopped state, it won't incur any charges.
-
-<!-- REPACE SAMPLE CODE: Use region name “Cleanup” -->
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/Live/LiveEventWithDVR/Program.cs#Cleanup)]
 
