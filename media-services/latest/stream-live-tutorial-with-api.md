@@ -14,18 +14,15 @@ In Azure Media Services, [live events](/rest/api/media/liveevents) are responsib
 input endpoint (ingest URL) that you then provide to a live encoder. The live event receives input streams from the live encoder using the RTMP/S or Smooth
 Streaming protocols and makes them available for streaming through one or more [streaming endpoints](/rest/api/media/streamingendpoints). Live events also provide a preview endpoint (preview URL) that you use to preview and validate your stream before further processing and delivery.
 
-This tutorial shows how to use .NET 7.0 to create a *pass-through* type of a live event. Pass-through type of live events are useful when you have an encoder that is capable of multi-bitrate, GOP aligned encoding, on premises and can be a simple way to reduce cloud costs. If you wish to reduce bandwidth and send a single bitrate stream to the cloud for multi-bitrate encoding, you can use a transcoding live event with the 720P or 1080P encoding presets.
+This tutorial shows how to use .NET 7.0 to create a *pass-through* live event. Pass-through live events are useful when you have an encoder that is capable of multi-bitrate, GOP aligned encoding on premises. It can be a simple way to reduce cloud costs. If you wish to reduce bandwidth and send a single bitrate stream to the cloud for multi-bitrate encoding, you can use a transcoding live event with the 720P or 1080P encoding presets.
 
 In this tutorial, you will:
 
 - Download a sample project.
 - Examine the code that performs live streaming.
-- Watch the event with [Azure Media Player](https://amp.azure.net/libs/amp/latest/docs/index.html) on the [Media Player demo site](https://ampdemo.azureedge.net/).
+- Watch the event with Azure Media Player on the [Media Player demo site](https://ampdemo.azureedge.net/).
+- Set up Event Grid to monitor the live event.
 - Clean up resources.
-
-> [!NOTE]
-> Even though the tutorial uses **.NET SDK** examples, the general steps are the same for [REST API](/rest/api/media/liveevents),
-[CLI](/cli/azure/ams/live-event), or other supported [SDKs](media-services-apis-overview.md#sdks).
 
 ## Prerequisites
 
@@ -40,6 +37,9 @@ You need these additional items for live-streaming software:
 
 - A camera or a device (like a laptop) that's used to broadcast an event.
 - An on-premises software encoder that encodes your camera stream and sends it to the Media Services live-streaming service through the Real-Time Messaging Protocol (RTMP/S). For more information, see [Recommended on-premises live encoders](encode-recommended-on-premises-live-encoders.md). The stream has to be in RTMP/S or Smooth Streaming format. This sample assumes that you'll use Open Broadcaster Software (OBS) Studio to broadcast RTMP/S to the ingest endpoint. [Install OBS Studio](https://obsproject.com/download).
+- Alternatively, you can try the [OBS Quickstart](live-event-obs-quickstart.md) to test the entire process with the Azure portal first.
+
+For monitoring the live event using Event Grid and Event Hub, you can follow the steps in [Create and monitor Media Services events with Event Grid using the Azure portal](monitor-events-portal-how-to.md) or follow the steps near the end of this tutorial in the [Monitoring Live Events using Event Grid and Event Hub](#monitoring-live-events-using-event-grid-and-event-hub) section of this article.
 
 > [!TIP]
 > Review [Live streaming with Media Services v3](stream-live-streaming-concept.md) before proceeding.
@@ -54,7 +54,7 @@ git clone https://github.com/Azure-Samples/media-services-v3-dotnet.git
 
 The live-streaming sample is in the [Live/LiveEventWithDVR](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/Live/LiveEventWithDVR) folder.
 
-Open `appsettings.json` in your downloaded project. Replace the values with account name, subscription Id and the resource group name that you got from [accessing APIs](access-api-howto.md).
+Open `appsettings.json` in your downloaded project. Replace the values with account name, subscription Id and the resource group name.
 
 > [!IMPORTANT]
 > This sample uses a unique suffix for each resource. If you cancel the debugging or terminate the app without running it through, you'll end up with multiple live events in your account. Be sure to stop the running live events. Otherwise, *you'll be billed*!
@@ -75,8 +75,7 @@ var mediaServicesAccount = armClient.GetMediaServicesAccountResource(mediaServic
 
 ## Create a live event
 
-This section shows how to create a *pass-through* type of live event (LiveEventEncodingType set to None). For information about the available types, see [Live event types](live-event-concept.md). In addition to pass-through, if you want to reduce your overall ingest bandwidth, or you do not have an appropriate multi-bitrate transcoder
-on-premises, you can use a live transcoding event for 720p or 1080p adaptive bitrate cloud encoding.
+This section shows how to create a *pass-through* type of live event (LiveEventEncodingType set to None). For information about the available types, see [Live event types](live-event-concept.md). If you want to reduce your overall ingest bandwidth, or you do not have an on-premises multi-bitrate transcoder, you can use a live transcoding event for 720p or 1080p adaptive bitrate cloud encoding.
 
 You might want to specify the following things when you're creating the live event:
 
@@ -88,7 +87,7 @@ You might want to specify the following things when you're creating the live eve
 
     If no IP addresses are specified and there's no rule definition, then no IP address will be allowed. To allow any IP address, create a rule and set 0.0.0.0/0 and ::/0. The IP addresses have to be in one of the following formats: IPv4 or IPv6 addresses with four numbers or a CIDR address range. For more information about using IPv4 or IPv6 see [Restrict access to DRM license and AES key delivery using IP allowlists](drm-content-protection-key-delivery-ip-allow.md).
 
-- **Autostart on an event as you create it**. When autostart is set to true, the live event will start after creation. That means the billing starts as soon as the live event starts running. You must explicitly call Stop on the live event resource to halt further billing. For more information, see [Live event states and billing](live-event-states-billing-concept.md).
+- **Autostart on an event as you create it**. When autostart is set to true, the live event will start after creation. That means the billing starts as soon as the live event starts running. You must explicitly call `Stop` on the live event resource to halt further billing. For more information, see [Live event states and billing](live-event-states-billing-concept.md).
 
     Standby modes are available to start the live event in a lower-cost "allocated" state that makes it faster to move to a running state. This is useful for situations like hot pools that need to hand out channels quickly to streamers.
 
@@ -117,23 +116,22 @@ Use `previewEndpoint` to preview and verify that the input from the encoder is b
 
 ## Create and manage live events and live outputs
 
-After you have the stream flowing into the live event, you can begin the streaming event by creating an asset, live output, and streaming locator. This
+After the live stream from the on-premises encoder is streaming to the live event, you can begin the live event by creating an asset, live output, and streaming locator. This
 will archive the stream and make it available to viewers through the streaming endpoint.
 
 The next section will walk through the creation of the asset and the live output.
 
 ### Create an asset**
 
-Create an asset for the live output to use. In our analogy, this will be the "tape" that we record the live video signal onto. Viewers will be able to see
-the contents live or on demand from this virtual tape.
+Create an asset for the live output to use.
 
 <!-- REPACE SAMPLE CODE: Use region name “CreateAsset” -->
 
 [!code-csharp[Main](~/../media-services-v3-dotnet/Live/LiveEventWithDVR/Program.cs#CreateAsset)]
 
-**Create a live output**
+### Create a live output
 
-Live outputs start when they're created and stop when they're deleted. When you delete the live output, you're not deleting the underlying asset or content in the asset. Think of it as ejecting the "tape." The asset with the recording will last as long as you like. When it's ejected (meaning, when the live output is deleted), it will be available for on-demand viewing immediately.
+Live outputs start when they're created and stop when they're deleted. When you delete the live output, you're not deleting the output asset or content in the asset. The asset with the recording will be available for on-demand streaming as long as it exists and there is a streaming locator associated with it.
 
 <!-- REPACE SAMPLE CODE: Use region name “CreateLiveOutput” -->
 
@@ -144,7 +142,7 @@ Live outputs start when they're created and stop when they're deleted. When you 
 > [!NOTE]
 > When your Media Services account is created, a default streaming endpoint is added to your account in the stopped state. To start streaming your content and take advantage of [dynamic packaging](encode-dynamic-packaging-concept.md) and dynamic encryption, the streaming endpoint from which you want to stream content has to be in the running state.
 
-When you publish the asset by using a streaming locator, the live event (up to the DVR window length) will continue to be viewable until the streaming locator's expiration or deletion, whichever comes first. This is how you make the virtual "tape" recording available for your viewing audience to see live and on demand. The same URL can be used to watch the live event, the DVR window, or the on-demand asset when the recording is complete (when the live output is deleted).
+You publish an asset by creating a streaming locator. The live event (up to the DVR window length) will continue to be viewable until the streaming locator's expiration or deletion, whichever comes first. This is how you make the video available for your viewing audience to see live and on demand. The same URL can be used to watch the live event, the DVR window, or the on-demand asset when the live event is finished and the live output is deleted.
 
 <!-- REPACE SAMPLE CODE: Use region name “CreateStreamingLocator” -->
 
@@ -152,15 +150,13 @@ When you publish the asset by using a streaming locator, the live event (up to t
 
 ## Watch the event
 
-Press **Ctrl+F5** to run the code. This will output streaming URLs that you can use to watch your live event. Copy the streaming URL that you got to create a
-streaming locator. You can use a media player of your choice. Azure Media Player is available to
-test your stream at the [Media Player demo site](https://ampdemo.azureedge.net/).
-
-A live event automatically converts events to on-demand content when it's stopped. Even after you stop and delete the event, users can stream your archived content as a video on demand for as long as you don't delete the asset. An asset can't be deleted if an event is using it; the event must be deleted first.
+Run the code. This will output streaming URLs that you can use to watch your live event. Copy the streaming locator URL. You can use a media player of your choice. You can use the [Media Player demo site](https://ampdemo.azureedge.net/) to test your stream.  Enter the URL into the URL field and select **Update player**.
 
 ## Monitoring Live Events using Event Grid and Event Hub
 
-The sample project can use Event Grid and Event Hub to monitor the Live Event. To enable monitoring:
+The sample project can use Event Grid and Event Hub to monitor the Live Event. You can set up and use Event Grid using the following
+
+To enable monitoring:
 
 1. Use the Azure Portal to create Event Hub Namespace and an Event Hub
     1. Search for “Event Hub” using the text box at the top of the Azure Portal.
@@ -193,6 +189,7 @@ Run the sample again. With Event Hub integration enabled, the sample will log ev
 will also be logged for various other events.
 
 After running the sample, delete the Event Hub and storage account if they are no longer needed.
+
 
 ## Clean up resources in your Media Services account
 
