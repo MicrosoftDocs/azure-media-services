@@ -100,7 +100,7 @@ This sample shows how to use the rotation filter to rotate a video by 90 degrees
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_Rotate90degrees/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_Rotate90degrees/encoding-h264-rotate90degrees-helper.py) |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_H264_Rotate90degrees) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_Rotate90degrees/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_Rotate90degrees/encoding-h264-rotate90degrees-helper.py) |
 
 ### Stitch and edit two assets together
 
@@ -170,7 +170,7 @@ This sample uses the built-in preset that rapidly copies the source video and au
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodec/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodec/encoding-builtin-copycodec-helper.py) |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_BuiltIn_CopyCodec) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodec/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodec/encoding-builtin-copycodec-helper.py) |
 
 ### Copy Audio and Video to MP4 without re-encoding and create a low bitrate proxy
 
