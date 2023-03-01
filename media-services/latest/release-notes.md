@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 02/21/2023
+ms.date: 03/01/2023
 ms.author: inhenkel
 ---
 
@@ -18,6 +18,14 @@ To stay up to date with the most recent developments, this article provides you 
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## March 2023
+
+Azure Media Indexer is retired.  It is replaced by the Media Services v3 AudioAnalyzerPreset Basic mode.
+
+## February 2023
+
+Release notes for February coming soon.
 
 ## January 2023
 
