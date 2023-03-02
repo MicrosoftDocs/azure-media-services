@@ -4,7 +4,7 @@ description: Learn how to analyze audio and video content using AudioAnalyzerPre
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 03/02/2023
 ms.author: inhenkel
 ---
 
@@ -71,8 +71,6 @@ The preset enables you to extract multiple audio insights from an audio or video
 The output includes a JSON file (with all the insights) and VTT file for the audio transcript. This preset accepts a property that specifies the language of the input file in the form of a [BCP47](https://tools.ietf.org/html/bcp47) string. The audio insights include:
 
 * **Audio transcription**: A transcript of the spoken words with timestamps. Multiple languages are supported.
-* **Speaker indexing**: A mapping of the speakers and the corresponding spoken words.
-* **Speech sentiment analysis**: The output of sentiment analysis performed on the audio transcription.
 * **Keywords**: Keywords that are extracted from the audio transcription.
 
 ### AudioAnalyzerPreset basic mode
@@ -290,44 +288,6 @@ Example:
 |SpeakerNumberOfFragments|The amount of fragments the speaker has in a video.|
 |SpeakerLongestMonolog|The speaker's longest monolog. If the speaker has silences inside the monolog it's included. Silence at the beginning and the end of the monolog is removed.|
 |SpeakerTalkToListenRatio|The calculation is based on the time spent on the speaker's monolog (without the silence in between) divided by the total time of the video. The time is rounded to the third decimal point.|
-
-
-### sentiments
-
-Sentiments are aggregated by their sentimentType field (Positive/Neutral/Negative). For example, 0-0.1, 0.1-0.2.
-
-|Name|Description|
-|---|---|
-|id|The sentiment ID.|
-|averageScore |The average of all scores of all instances of that sentiment type - Positive/Neutral/Negative|
-|instances|A list of time ranges where this sentiment appeared.|
-|sentimentType |The type can be 'Positive', 'Neutral', or 'Negative'.|
-
-```json
-"sentiments": [
-{
-    "id": 0,
-    "averageScore": 0.87,
-    "sentimentType": "Positive",
-    "instances": [
-    {
-        "start": "00:00:23",
-        "end": "00:00:41"
-    }
-    ]
-}, {
-    "id": 1,
-    "averageScore": 0.11,
-    "sentimentType": "Positive",
-    "instances": [
-    {
-        "start": "00:00:13",
-        "end": "00:00:21"
-    }
-    ]
-}
-]
-```
 
 ### labels
 
