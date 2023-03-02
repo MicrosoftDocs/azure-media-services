@@ -4,6 +4,7 @@ description: Follow the steps of this tutorial to use Azure CLI to create a new 
 author: IngridAtMicrosoft
 keywords: azure media services, stream
 ms.service: media-services
+ms.custom: devx-track-azurecli
 ms.topic: tutorial
 ms.date: 01/09/2023
 ms.author: inhenkel
