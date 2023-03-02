@@ -56,7 +56,7 @@ This sample is an example of using the standard encoder with Content Aware encod
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_HEVC_ContentAware)| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_HEVC_ContentAware/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_HEVC_ContentAware/encoding-hevc-contentaware-helper.py) |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_HEVC_ContentAware) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_HEVC_ContentAware/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_HEVC_ContentAware/encoding-hevc-contentaware-helper.py) |
 
 ### Use content aware encoding constrained with HEVC
 
@@ -64,7 +64,7 @@ This sample demonstrates how to control the output settings of the Content Aware
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_HEVC_ContentAware_Constrained/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_HEVC_ContentAware_Constrained/encoding-hevc-contentaware-constrained-helper.py) |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_HEVC_ContentAware_Constrained) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_HEVC_ContentAware_Constrained/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_HEVC_ContentAware_Constrained/encoding-hevc-contentaware-constrained-helper.py) |
 
 ## Images, thumbnails and sprites
 
@@ -126,7 +126,7 @@ This sample shows how to use the standard encoder to encode a source file and ou
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/encoding-h264-to-transportstream-helper.py) |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_H264_To_TransportStream) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_H264_To_TransportStream/encoding-h264-to-transportstream-helper.py) |
 
 ### Bulk encode from a remote Azure storage account using SAS URLs
 
@@ -178,7 +178,7 @@ This sample adds an additional fast-encoded proxy resolution to the Copy Audio a
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodecWithProxy/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodecWithProxy/encoding-builtin-copycodecwithproxy-helper.py) |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_BuiltIn_CopyCodecWithProxy) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodecWithProxy/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/VideoEncoding/Encoding_BuiltIn_CopyCodecWithProxy/encoding-builtin-copycodecwithproxy-helper.py) |
 
 ### Copy Audio and Video to MP4 without re-encoding and create a low bitrate proxy and VTT sprite thumbnail
 
