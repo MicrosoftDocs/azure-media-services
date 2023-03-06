@@ -4,7 +4,7 @@ description: This article is a listing of code samples for Encoding.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/24/2023
+ms.date: 03/06/2023
 ms.author: inhenkel
 ---
 
@@ -82,15 +82,7 @@ This samples shows how to encode with a custom Transform to create a thumbnail s
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------- |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_SpriteThumbnail) | Node.JS not yet available | [Python](https://github.com/IngridAtMicrosoft/media-services-v3-python/blob/main/VideoEncoding/Encoding_Sprite_Thumbnail/encoding-sprite-thumbnail-helper.py) |
-
-### Create a thumbnail sprite (VTT) in JPG format
-
-This sample shows how to generate a VTT Sprite Thumbnail in JPG format and how to set the columns and number of images. It also shows a speed encoding mode in H264 for a 720P layer.
-
-| &#32; | &#32; | &#32; |
-| ---- | ------- | ------ |
-| .NET not yet available | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Sprite_Thumbnail/index.ts) |  Python not yet available |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/VideoEncoding/Encoding_SpriteThumbnail) | [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/VideoEncoding/Encoding_Sprite_Thumbnail/index.ts) | [Python](https://github.com/IngridAtMicrosoft/media-services-v3-python/blob/main/VideoEncoding/Encoding_Sprite_Thumbnail/encoding-sprite-thumbnail-helper.py) |
 
 ## Video manipulation
 
