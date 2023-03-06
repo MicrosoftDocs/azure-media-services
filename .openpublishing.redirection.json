@@ -2553,17 +2553,17 @@
           },
           {
             "source_path_from_root": "/media-services/latest/monitoring/monitor-media-services-data-reference.md",
-            "redirect_url": "/media-services/latest/monitoring/monitor-media-services",
+            "redirect_url": "/azure/media-services/latest/monitoring/monitor-media-services",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/monitoring/media-services-diagnostic-logs-howto.md",
-            "redirect_url": "/media-services/latest/monitoring/monitor-media-services",
+            "redirect_url": "/azure/media-services/latest/monitoring/monitor-media-services",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/monitoring/media-services-metrics-howto.md",
-            "redirect_url": "/media-services/latest/monitoring/monitor-metrics-how-to",
+            "redirect_url": "/azure/media-services/latest/monitoring/monitor-metrics-how-to",
             "redirect_document_id": false
           },
           {
@@ -2578,107 +2578,107 @@
           },
           {
             "source_path_from_root": "/media-services/latest/drm-get-content-key-policy-how-to.md",
-            "redirect_url": "/media-services/latest/drm-get-content-signing-key-policy-net-how-to",
+            "redirect_url": "/azure/media-services/latest/drm-get-content-signing-key-policy-net-how-to",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/stream-manage-streaming-endpoints-how-to.md",
-            "redirect_url": "/media-services/latest/streaming-endpoint-create-how-to",
+            "redirect_url": "/azure/media-services/latest/streaming-endpoint-create-how-to",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/security-streaming-private-network.md",
-            "redirect_url": "/media-services/latest/streaming-private-endpoint-concept",
+            "redirect_url": "/azure/media-services/latest/streaming-private-endpoint-concept",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/security-private-link-arm-how-to.md",
-            "redirect_url": "/media-services/latest/security-private-endpoint-streaming-endpoint-how-to",
+            "redirect_url": "/azure/media-services/latest/security-private-endpoint-streaming-endpoint-how-to",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/security-private-link-concept.md",
-            "redirect_url": "/media-services/latest/security-private-endpoint-concept",
+            "redirect_url": "/azure/media-services/latest/security-private-endpoint-concept",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/security-private-link-connect-private-endpoint-concept.md",
-            "redirect_url": "/media-services/latest/security-private-endpoint-connect-private-endpoint-concept",
+            "redirect_url": "/azure/media-services/latest/security-private-endpoint-connect-private-endpoint-concept",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/security-private-link-streaming-endpoint-how-to.md",
-            "redirect_url": "/media-services/latest/security-private-endpoint-streaming-endpoint-how-to",
+            "redirect_url": "/azure/media-services/latest/security-private-endpoint-streaming-endpoint-how-to",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/asset-tracks-download-edit-upload-captions.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/stream-files-dotnet-quickstart.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/drm-protect-with-drm-tutorial.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/previous/media-services-redactor-walkthrough.md",
-            "redirect_url": "/media-services/previous/analyze-face-redactor-retirement-migration-overview",
+            "redirect_url": "/azure/media-services/previous/analyze-face-redactor-retirement-migration-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/signal-descriptive-audio-howto.md.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/architecture-azure-ad-content-protection.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/drm-get-content-signing-key-policy-net-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/drm-protect-with-aes128-tutorial.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/drm-test-system-concept.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/job-multiple-transform-outputs-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/signal-descriptive-audio-howto.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/storage-managing-multiple-storage-accounts-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/stream-files-tutorial-with-api.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/transform-crop-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
           },
           {
@@ -2688,12 +2688,12 @@
           },
           {
             "source_path_from_root": "/media-services/latest/player-shaka-player-how-to.md",
-            "redirect_url": "/media-services/latest/player-media-players-concept",
+            "redirect_url": "/azure/media-services/latest/player-media-players-concept",
             "redirect_document_id": false
           },
           {
             "source_path_from_root": "/media-services/latest/player-use-azure-media-player-how-to.md",
-            "redirect_url": "/media-services/latest/player-media-players-concept",
+            "redirect_url": "/azure/media-services/latest/player-media-players-concept",
             "redirect_document_id": false
           },
           {
@@ -2703,452 +2703,452 @@
           },
           {
             "source_path_from_root": "/media-services/latest/account-add-account-storage-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-delete-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-filter-create-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-filter-delete-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-filter-list-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-filter-show-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-filter-update-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-list-assets-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-list-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-list-transforms-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-remove-account-storage-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-set-account-encryption-customer-managed-key-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-set-account-encryption-system-managed-key-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-set-storage-authentication-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-show-encryption-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-show-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/account-update-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/asset-create-asset-filter-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/asset-create-asset-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/asset-delete-asset-filter-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/asset-delete-asset-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/asset-get-asset-sas-urls-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/asset-get-encryption-key-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/asset-list-asset-filters-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/asset-list-asset-streaming-locators-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/asset-update-asset-filter-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/drm-add-option-content-key-policy-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/drm-create-content-key-policy-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/drm-delete-content-key-policy-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/drm-list-content-key-policy-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/drm-remove-option-content-key-policy-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/drm-show-content-key-policy-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/drm-update-content-key-policy-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/drm-update-option-content-key-policy-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/job-cancel-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/job-create-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/job-delete-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/job-list-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/job-show-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/job-update-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-event-create-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-event-delete-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-event-list-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-event-reset-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-event-show-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-event-standby-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-event-start-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-event-stop-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-event-update-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-event-wait-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-output-create-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-output-delete-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-output-list-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/live-output-show-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/storage-create-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/storage-sync-storage-keys-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-endpoint-create-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-endpoint-delete-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-endpoint-list-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-endpoint-scale-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-endpoint-show-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-endpoint-start-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-endpoint-stop-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-endpoint-update-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-locator-create-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-locator-delete-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-locator-list-content-keys-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-locator-list-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-locator-list-paths-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-locator-show-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-policy-create-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-policy-delete-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-policy-list-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/streaming-policy-show-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/tracks-delete-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/tracks-get-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/tracks-list-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/transform-add-custom-transform-output-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/transform-create-transform-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/transform-delete-transform-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/transform-get-transform-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/transform-update-transform-how-to.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
             "source_path_from_root": "/media-services/latest/video-on-demand-simple-portal-quickstart.md",
-            "redirect_url": "/media-services/latest/samples-overview",
+            "redirect_url": "/azure/media-services/latest/samples-overview",
             "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/previous/media-rest-apis-with-postman.md",
-          "redirect_url": "/media-services/previous/media-services-overview",
+          "redirect_url": "/azure/media-services/previous/media-services-overview",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/previous/media-services-rest-upload-files.md",
-          "redirect_url": "/media-services/previous/media-services-overview",
+          "redirect_url": "/azure/media-services/previous/media-services-overview",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/previous/postman-collection.md",
-          "redirect_url": "/media-services/previous/media-services-overview",
+          "redirect_url": "/azure/media-services/previous/media-services-overview",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/previous/postman-environment.md",
-          "redirect_url": "/media-services/previous/media-services-overview",
+          "redirect_url": "/azure/media-services/previous/media-services-overview",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/previous/postman-live-streaming-collection.md",
-          "redirect_url": "/media-services/previous/media-services-overview",
+          "redirect_url": "/azure/media-services/previous/media-services-overview",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/latest/live-event-outputs-concept.md",
-          "redirect_url": "/media-services/latest/live-event-concept",
+          "redirect_url": "/azure/media-services/latest/live-event-concept",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/latest/migrate-v-2-v-3-migration-samples.md",
-          "redirect_url": "/media-services/latest/samples-overview",
+          "redirect_url": "/azure/media-services/latest/samples-overview",
           "redirect_document_id": false
         },
         {
@@ -3163,37 +3163,37 @@
         },
         {
           "source_path_from_root": "/media-services/latest/drm-offline-playready-streaming-for-windows-10.md",
-          "redirect_url": "/media-services/latest/drm-offline-streaming-how-to",
+          "redirect_url": "/azure/media-services/latest/drm-offline-streaming-how-to",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/latest/drm-offline-widevine-for-android.md",
-          "redirect_url": "/media-services/latest/drm-offline-streaming-how-to",
+          "redirect_url": "/azure/media-services/latest/drm-offline-streaming-how-to",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/latest/drm-offline-fairplay-for-ios-concept.md",
-          "redirect_url": "/media-services/latest/drm-offline-streaming-how-to",
+          "redirect_url": "/azure/media-services/latest/drm-offline-streaming-how-to",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/latest/configure-connect-java-howto.md",
-          "redirect_url": "/media-services/latest/samples-overview",
+          "redirect_url": "/azure/media-services/latest/samples-overview",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/latest/samples-overview.md",
-          "redirect_url": "/media-services/latest/samples/samples-accounts-reference",
+          "redirect_url": "/azure/media-services/latest/samples/samples-accounts-reference",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/latest/amp-captions-tutorial.md",
-          "redirect_url": "/media-services/latest/samples/tracks-portal-captions-tutorial",
+          "redirect_url": "/azure/media-services/latest/samples/tracks-portal-captions-tutorial",
           "redirect_document_id": false
         },
         {
           "source_path_from_root": "/media-services/latest/integrate-event-grid-log-analytics-tutorial.md",
-          "redirect_url": "/media-services/latest/monitoring/integrate-event-grid-log-analytics-tutorial",
+          "redirect_url": "/azure/media-services/latest/monitoring/integrate-event-grid-log-analytics-tutorial",
           "redirect_document_id": false
         }
     ]
