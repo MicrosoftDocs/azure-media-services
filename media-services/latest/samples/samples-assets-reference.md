@@ -68,7 +68,7 @@ This sample shows you how to use the Tracks API on an Asset to add an additional
 
 | &#32; | &#32; |
 | ------- | ------ |
-| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-audio-language-track.ts) |  Python not yet available |
+| [Node.JS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Assets/add-audio-language-track.ts) |  [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Assets/add-audio-language-track-helper.py) |
 
 ## Asset management with .NET
 

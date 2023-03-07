@@ -4,7 +4,7 @@ description: This article is a listing of code samples for Content Protection.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/17/2023
+ms.date: 03/07/2023
 ms.author: inhenkel
 ---
 
@@ -22,7 +22,7 @@ This sample demonstrates how to dynamically encrypt your content with AES-128.
 
 | &#32; | &#32; | &#32; |
 | ---- | ------- | ------ |
-| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/BasicAESClearKey) | [NodeJS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) | Python not yet available |
+| [.NET](https://github.com/Azure-Samples/media-services-v3-dotnet/tree/main/ContentProtection/BasicAESClearKey) | [NodeJS](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Streaming/StreamFileWithAESClearKey/index.ts) | [Python](https://github.com/Azure-Samples/media-services-v3-python/blob/main/Streaming/StreamFileWithAESClearKey/stream-files-with-aes-clear-key-helper.py) |
 
 ### Deliver basic Playready DRM content protection and streaming
 
