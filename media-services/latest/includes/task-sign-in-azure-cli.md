@@ -1,6 +1,7 @@
 ---
 author: IngridAtMicrosoft
 ms.service: media-services
+ms.custom: devx-track-azurecli
 ms.topic: include
 ms.date: 05/13/2021
 ms.author: inhenkel
