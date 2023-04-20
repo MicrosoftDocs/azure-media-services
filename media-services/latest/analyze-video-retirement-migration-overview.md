@@ -4,7 +4,7 @@ description: This article Media Services Video Analyzer retirement and migration
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: overview
-ms.date: 01/09/2023
+ms.date: 04/19/2023
 ms.author: inhenkel
 ---
 
@@ -26,7 +26,7 @@ Video Indexer provides an enhanced list of supported features that the Media Ser
 |-------------|------------------------------|-----------------------------------------------------|
 | **Media Insights** | [Enhanced](/azure/azure-video-indexer/video-indexer-output-json-v2) | [Fundamentals](/azure/media-services/latest/analyze-video-audio-files-concept) |
 | **Experiences**    | See the full list of supported features: [Overview](/azure/azure-video-indexer/video-indexer-overview) | Returns video insights only |
-| **Billing** | [Media Services pricing](https://azure.microsoft.com/pricing/details/media-services/#analytics) is the same  | [Media Services pricing](https://azure.microsoft.com/pricing/details/media-services/#analytics) is the same |
+| **Billing** | [Media Services pricing](https://azure.microsoft.com/pricing/details/video-indexer/) is the same  | [Media Services pricing](https://azure.microsoft.com/pricing/details/media-services/#analytics) is the same |
 | **Compliance**          | For the most current compliance updates, see [Azure Compliance Offerings.pdf](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942/file/178110/23/Microsoft%20Azure%20Compliance%20Offerings.pdf) and search for "Azure Video Indexer" to determine if it complies with a certificate of interest. | For the most current compliance updates, see [Azure Compliance Offerings.pdf](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942/file/178110/23/Microsoft%20Azure%20Compliance%20Offerings.pdf) and search for "Media Services" to determine if it complies with a certificate of interest. |
 | **Free Trial** | East US | Not available |
 | **Region availability** | See [Cognitive Services availability by region](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services) Note that this is fewer regions than AMS, so this is a region reduction currently | See [Media Services availability by region](https://azure.microsoft.com/global-infrastructure/services/?products=media-services). |

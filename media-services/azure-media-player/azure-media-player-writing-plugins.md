@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
 ms.topic: how-to
-ms.date: 11/1/2022
+ms.date: 04/19/2023
 ms.custom: devx-track-js
 ---
 
@@ -75,8 +75,8 @@ Plugin options are not required, including them just allows the developers using
 For inspiration and more examples on creating a plugin take a look at our [gallery](azure-media-player-plugin-gallery.md)
 
 >[!NOTE]
-> Plugin code dynamically changes items in the DOM during the lifetime of the viewer's player experience, it never makes permanent changes to the player's source code. This is where an understanding of your browser's developer tools comes in handy. For example, if you'd like to change the appearance of an element in the player you can find its HTML element by its class name and then add or change attributes from there. Here's a great resource on [changing HTML attributes.](http://www.w3schools.com/js/js_htmldom_html.asp)
+> Plugin code dynamically changes items in the DOM during the lifetime of the viewer's player experience, it never makes permanent changes to the player's source code. This is where an understanding of your browser's developer tools comes in handy. For example, if you'd like to change the appearance of an element in the player you can find its HTML element by its class name and then add or change attributes from there. Here's a great resource on [changing HTML attributes.](https://www.w3schools.com/js/js_htmldom_html.asp)
 
 ### Integrated Plugins ###
 
- There are currently two plugins baked into AMP: the [time-tip](http://sr-test.azurewebsites.net/Tests/Plugin%20Gallery/plugins/timetip/example.html) and [hotkeys](http://sr-test.azurewebsites.net/Tests/Plugin%20Gallery/plugins/hotkeys/example.html). These plugins were originally developed to be modular plugins for the player but are now included into the player source code.
+ There are currently two plugins baked into AMP: the [time-tip](https://sr-test.azurewebsites.net/Tests/Plugin%20Gallery/plugins/timetip/example.html) and [hotkeys](https://sr-test.azurewebsites.net/Tests/Plugin%20Gallery/plugins/hotkeys/example.html). These plugins were originally developed to be modular plugins for the player but are now included into the player source code.
