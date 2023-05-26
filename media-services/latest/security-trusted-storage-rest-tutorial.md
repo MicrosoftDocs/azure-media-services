@@ -4,6 +4,7 @@ description: In this tutorial, you'll learn how to enable trusted storage for Az
 author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.service: media-services
+ms.custom: devx-track-arm-template
 ms.topic: tutorial
 ms.date: 01/09/2023
 ---
