@@ -4,7 +4,7 @@ description: To stay up to date with the most recent developments, this article 
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: article
-ms.date: 03/01/2023
+ms.date: 06/29/2023
 ms.author: inhenkel
 ---
 
@@ -18,6 +18,10 @@ To stay up to date with the most recent developments, this article provides you 
 * Known issues
 * Bug fixes
 * Deprecated functionality
+
+## June 2023
+
+Azure Media Services is being retired as of June 30th, 2023. Please see the [Azure Media Services retirement guide](azure-media-services-retirement.md).
 
 ## March 2023
 
@@ -241,13 +245,7 @@ If you are currently using the Video Analyzer preset, we recommend updating your
 
 If you have questions, get answers from community experts in [Microsoft Q&A](/answers/topics/azure-media-services.html). If you have a support plan and you need technical help, please create a [support request](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) in the Azure portal.
 
-
 ## August 2022
-
-### New Azure Media Services marketing page with live low latency demonstration
-
-A new Azure Media Services marketing page with a live demonstration of LL-HLS is available now at [https://media.microsoft.com](https://media.microsoft.com).  This page will be updated with more links to samples, demonstrations and quick starts over time.
-Please bookmark the page as a reference page to easily jump to docs, samples, and login to your account in the Azure Portal.
 
 ### New Tracks API sample in Node.js/Typescript for adding Subtitle and Caption tracks to any asset
 
@@ -299,8 +297,6 @@ Live Transcription is now Generally Available (GA) and supports all available la
 Low latency HLS (LL-HLS) is now available in the API and in the Azure Portal. To enable LL-HLS, use the "LowLatencyV2" Stream Option when creating a live stream. See the Node.js sample for how to configure [Create a Low latency HLS live encoding event](https://github.com/Azure-Samples/media-services-v3-node-tutorials/blob/main/Live/720P_Low_Latency_Encoding_Live_Event/index.ts)
 In the Azure portal select the new "Low Latency" option when creating a live event.  The new LL-HLS feature can provide reduced latency in the 4-7 second range when using a player framework that supports the LL-HLS protocol.
 Low latency HLS is only available on live transcoding channels and not yet available for "pass-through" mode live events.
-
-A live demonstration of the LL-HLS delivery to a Shaka player is available at https://media.microsoft.com/live
 
 ## March 2022
 

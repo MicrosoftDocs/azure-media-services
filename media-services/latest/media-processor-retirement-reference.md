@@ -16,6 +16,9 @@ ms.author: inhenkel
 
 Over time, we enhance Media Service components and retire legacy components. This article helps you migrate your application from a legacy component to a current component.
 
+> [!IMPORTANT]
+> Although Azure Media Services is being retired on June 30th, 2024, there is no change to the media processor retirement timeline.
+
 ## Media processor retirement timeline
 
 | **Media processor name** | **Retirement date** | **Status** | **Additional notes** |

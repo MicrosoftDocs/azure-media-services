@@ -4,7 +4,7 @@ description: This article describes the feature gaps between Azure Media Service
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 06/29/2023
 ms.author: inhenkel
 ---
 
@@ -15,6 +15,8 @@ ms.author: inhenkel
 <hr color="#5ea0ef" size="10">
 
 ![migration steps 2](./media/migration-guide/steps-2.svg)
+
+[!INCLUDE [migration-no-longer-necessary](includes/migration-no-longer-necessary.md)]
 
 This part of the migration guidance gives you detailed information about the differences between the V2 and V3 APIs.
 

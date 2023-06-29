@@ -4,7 +4,7 @@ description: This article will assist you with setting up your environment for m
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 06/29/2023
 ms.author: inhenkel
 ---
 
@@ -15,6 +15,8 @@ ms.author: inhenkel
 <hr color="#5ea0ef" size="10">
 
 ![migration steps 2](./media/migration-guide/steps-3.svg)
+
+[!INCLUDE [migration-no-longer-necessary](includes/migration-no-longer-necessary.md)]
 
 The following describes the steps to take to set up your environment to use the Media Services V3 API.
 
