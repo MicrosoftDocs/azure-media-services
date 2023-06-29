@@ -4,13 +4,15 @@ description: This article is an introduction to migrating from Media Services v2
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 06/29/2023
 ms.author: inhenkel
 ---
 
 # Migrate from Media Services v2 to v3 introduction
 
 ![migration guide logo](./media/migration-guide/azure-media-services-logo-migration-guide.svg)
+
+[!INCLUDE [migration-no-longer-necessary](includes/migration-no-longer-necessary.md)]
 
 The Media Services migration guide helps you migrate from Media Services V2 APIs to V3 APIs based on a migration that takes advantage of the new features and functions that are now available. You should use your best judgment and determine what best fits your scenario.
 

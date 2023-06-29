@@ -4,7 +4,7 @@ description: This article is gives you live streaming scenario based guidance th
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/21/2023
+ms.date: 06/29/2023
 ms.author: inhenkel
 ---
 
@@ -15,6 +15,8 @@ ms.author: inhenkel
 <hr color="#5ea0ef" size="10">
 
 ![migration steps 2](./media/migration-guide/steps-4.svg)
+
+[!INCLUDE [migration-no-longer-necessary](includes/migration-no-longer-necessary.md)]
 
 The Azure portal now supports live event set up and management.  You are encouraged to try it out while testing your V2 to V3 migration.
 

@@ -8,6 +8,10 @@ metadata:
 title: Common questions about Azure Media Services
 summary: This article answers commonly asked questions about Azure Media Services.
 sections:
+  - name: Azure Media Services retirement
+    questions: 
+    - question: Where can I find more information about Azure Media Services retirement?
+      answer: See the [Azure Media Services retirement guide](azure-media-services-retirement.md)
   - name: Developing with SDKs
     questions:
     - question: Where can I find the Media Services API and SDKs?
