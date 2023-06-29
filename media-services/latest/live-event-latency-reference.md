@@ -4,7 +4,7 @@ description: Media Services supports Apple's Low Latency HLS (LL-HLS) specificat
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 0p6/29/2023
+ms.date: 6/29/2023
 ms.author: inhenkel
 ---
 

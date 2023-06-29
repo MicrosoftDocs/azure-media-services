@@ -4,7 +4,7 @@ description: This article is an introduction to migrating from Media Services v2
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 02/29/2023
+ms.date: 06/29/2023
 ms.author: inhenkel
 ---
 
