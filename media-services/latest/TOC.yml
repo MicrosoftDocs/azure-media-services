@@ -4,6 +4,8 @@
   items:
   - name: About Media Services v3
     href: media-services-overview.md
+  - name: Media Service retirement guide
+    href: azure-media-services-retirement.md
   - name: Release notes
     displayName: Release Notes, notes, updates, announcements, deprecations
     href: release-notes.md
