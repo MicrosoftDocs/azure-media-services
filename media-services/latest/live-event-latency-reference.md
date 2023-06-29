@@ -4,7 +4,7 @@ description: Media Services supports Apple's Low Latency HLS (LL-HLS) specificat
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
-ms.date: 02/21/2023
+ms.date: 0p6/29/2023
 ms.author: inhenkel
 ---
 
@@ -52,7 +52,7 @@ See [dynamic packaging](encode-dynamic-packaging-concept.md) page for more infor
 
 ## Player testing
 
-We recommend that you use players that support LL-HLS and configure the players appropriately for best results. You can see a demo of the live playback using Shaka player on the Azure Media Services [demo page](https://media.microsoft.com/en-us/live).
+We recommend that you use players that support LL-HLS and configure the players appropriately for best results.
 
 We have tested with the latest version of the following players:
 
