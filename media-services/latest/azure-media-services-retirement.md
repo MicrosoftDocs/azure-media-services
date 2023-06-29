@@ -38,7 +38,7 @@ This section contains links to partners, who also offer solutions for migrating 
 Azure Marketplace offerings:
 
 - [Bitmovin](https://bitmovin.com/azure-marketplace/)
-- [Ravnur](https://ams.ravnur.com)
+- [Ravnur](https://aka.ms/ams-ravnur)
 
 ### ISVs
 
@@ -92,7 +92,7 @@ Partner solutions will be available in a more limited set of regions than Media 
 
 ### Will partner solutions be available in Azure Government or China regions?
 
-Partner solutions will be available in Azure Government regions. [Ravnur](https://ams.ravnur.com/) is one partner that specializes in serving government customers. However, none of the partners listed in the Media Services retirement guide will have a marketplace offering available in the China region. We're working to provide further information on partner offerings in this region and will update the Media Services retirement guide accordingly.
+Partner solutions will be available in Azure Government regions. [Ravnur](https://aka.ms/ams-ravnur) is one partner that specializes in serving government customers. However, none of the partners listed in the Media Services retirement guide will have a marketplace offering available in the China region. We're working to provide further information on partner offerings in this region and will update the Media Services retirement guide accordingly.
 
 ### How can I get migration help and support?
 
