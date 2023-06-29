@@ -10,8 +10,6 @@ ms.author: inhenkel
 
 # Azure Media Services retirement guide
 
-## Media Services Retirement Guide
-
 The Media Services retirement guide presents options available for you to migrate to solutions from the Microsoft partner ecosystem or other Azure services.
 
 > [!Note]
