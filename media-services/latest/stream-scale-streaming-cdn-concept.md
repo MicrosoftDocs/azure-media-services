@@ -13,7 +13,7 @@ ms.author: inhenkel
 [!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 > [!IMPORTANT]
-> As Azure Media Services is being retired as of Jone 30th, 2023, and [Azure CDN will be retiring Azure CDN Standard from Akamai on 31 October 2023](https://azure.microsoft.com/updates/azure-cdn-will-be-retiring-azure-cdn-standard-from-akamai-on-31-october-2023-transition-to-another-cdn-profile-to-avoid-servi/) it is best not to create new CDNs. See the [Azure Media Services retirment guide](azure-media-services-retirement.md).
+> As Azure Media Services is being retired as of June 30th, 2024 and [Azure CDN will be retiring Azure CDN Standard from Akamai on 31 October 2023](https://azure.microsoft.com/updates/azure-cdn-will-be-retiring-azure-cdn-standard-from-akamai-on-31-october-2023-transition-to-another-cdn-profile-to-avoid-servi/) it is best not to create new CDNs for use with Azure Media Services. See the [Azure Media Services retirment guide](azure-media-services-retirement.md).
 
 Azure Content Delivery Network (CDN) offers developers a global solution for rapidly delivering high-bandwidth content to users by caching their content at strategically placed physical nodes across the world.
 

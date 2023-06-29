@@ -23,9 +23,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Cards
-    - title: About Azure Media Services (v3)
+    - title: Azure Media Services retirement guide
       itemType: overview
-      url: https://media.microsoft.com
+      url: ./latest/azure-media-services-retirement.md
     - title: Pricing
       itemType: overview
       url: https://azure.microsoft.com/pricing/details/media-services/
