@@ -4,7 +4,7 @@ description: Azure Media Services retirement announcement.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 06/29/2023
+ms.date: 07/10/2023
 ms.author: inhenkel
 ---
 
@@ -44,7 +44,7 @@ The following ISVs all have extensive experience in assisting customers with bui
 
 - [Eyevinn](https://www.eyevinntechnology.se/)
 - [Southworks](https://www.southworks.com/)
-- [Whdyio](https://whdiyo.com/)
+- [WhDiYo](https://whdiyo.com/)
 
 ## Video and audio analysis migration
 
