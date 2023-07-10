@@ -4,7 +4,7 @@ description: Azure Media Services retirement announcement.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 06/29/2023
+ms.date: 07/10/2023
 ms.author: inhenkel
 ---
 
@@ -44,11 +44,11 @@ The following ISVs all have extensive experience in assisting customers with bui
 
 - [Eyevinn](https://www.eyevinntechnology.se/)
 - [Southworks](https://www.southworks.com/)
-- [Whdyio](https://whdiyo.com/)
+- [WhDiYo](https://whdiyo.com/)
 
 ## Video and audio analysis migration
 
-Media Services allows you to extract insights from your video audio files using audio and video analyzer presets. If you're currently using these presets, you'll need to migrate them to [Azure Video Indexer](/azure/azure-video-indexer/video-indexer-overview) Video Indexer provides more advanced capabilities in speech-to-text, translations, speaker identification, and more. Audio and video analysis capabilities from Video Indexer are available in multiple feature bundles; for information on available bundles and pricing, see [Pricing – Azure Video Analyzer](/pricing/details/video-indexer/). To learn more about models available in these bundles, see [What is Azure Video Indexer?](/azure/azure-video-indexer/video-indexer-overview).
+Media Services allows you to extract insights from your video audio files using audio and video analyzer presets. If you're currently using these presets, you'll need to migrate them to [Azure Video Indexer](/azure/azure-video-indexer/video-indexer-overview) Video Indexer provides more advanced capabilities in speech-to-text, translations, speaker identification, and more. Audio and video analysis capabilities from Video Indexer are available in multiple feature bundles; for information on available bundles and pricing, see [Pricing – Azure Video Analyzer](https://azure.microsoft.com/pricing/details/video-indexer/). To learn more about models available in these bundles, see [What is Azure Video Indexer?](/azure/azure-video-indexer/video-indexer-overview).
 
 > [!Note]
 > The retirement of Media Services Video Analyzer on 14 September 2023 that was previously announced is not changing due to Azure Media Services being fully retired. If you are using Media Services Video Analyzer, you will still need to migrate to Azure Video Indexer by 14 September 2023. See Media Services Video Analyzer retirement and migration for additional information.
