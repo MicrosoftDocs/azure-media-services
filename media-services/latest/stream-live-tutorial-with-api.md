@@ -4,11 +4,13 @@ description: In Azure Media Services, live events are responsible for processing
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 02/24/2023
+ms.date: 07/17/2023
 ms.author: inhenkel
 ---
 
 # Tutorial: Stream live with Media Services by using .NET 7.0
+
+[!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 In Azure Media Services, [live events](/rest/api/media/liveevents) are responsible for processing live streaming content. A live event provides an
 input endpoint (ingest URL) that you then provide to a live encoder. The live event receives input streams from the live encoder using the RTMP/S or Smooth

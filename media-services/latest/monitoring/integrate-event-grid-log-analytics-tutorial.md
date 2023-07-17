@@ -4,11 +4,13 @@ description: Azure Media Services v3 emits events on Azure Event Grid. You can s
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: tutorial
-ms.date: 02/21/2023
+ms.date: 07/17/2023
 ms.author: inhenkel
 ---
 
 # Tutorial: Store Azure Media Services events in Azure Log Analytics
+
+[!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 ## Azure Media Services Events
 
