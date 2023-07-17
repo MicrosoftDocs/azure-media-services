@@ -10,7 +10,7 @@ ms.author: inhenkel
 
 # Tutorial: Store Azure Media Services events in Azure Log Analytics
 
-[!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
+[!INCLUDE [media services api v3 logo](../includes/v3-hr.md)]
 
 ## Azure Media Services Events
 
