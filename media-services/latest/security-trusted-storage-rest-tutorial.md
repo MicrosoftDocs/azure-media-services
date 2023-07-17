@@ -6,10 +6,12 @@ ms.author: inhenkel
 ms.service: media-services
 ms.custom: devx-track-arm-template
 ms.topic: tutorial
-ms.date: 01/09/2023
+ms.date: 07/17/2023
 ---
 
 # Tutorial: Media Services trusted storage
+
+[!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 In this tutorial, you'll learn:
 

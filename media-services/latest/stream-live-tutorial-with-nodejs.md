@@ -6,11 +6,13 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.devlang: javascript
 ms.topic: tutorial
-ms.date: 01/09/2023
+ms.date: 07/17/2023
 ms.author: inhenkel
 ---
 
 # Tutorial: Stream live with Media Services by using Node.js and TypeScript
+
+[!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 In Azure Media Services, [live events](/rest/api/media/liveevents) are responsible for processing live streaming content. A live event provides an input endpoint (ingest URL) that you then provide to a live encoder. The live event receives input streams from the live encoder and makes them available for streaming through one or more [streaming endpoints](/rest/api/media/streamingendpoints). Live events also provide a preview endpoint (preview URL) that you use to preview and validate your stream before further processing and delivery.
 
