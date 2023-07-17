@@ -4,7 +4,7 @@ description: Azure Media Services retirement announcement.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 07/10/2023
+ms.date: 07/17/2023
 ms.author: inhenkel
 ---
 
@@ -30,6 +30,9 @@ Solutions from each of these partners are available in the Azure Marketplace. Ea
 
 Both partners will support dynamic packaging of existing Media Services content, eliminating the need for content to be reprocessed. They possess a wide range of media services capabilities beyond what is currently available with Azure Media Services and will continue to add more capabilities and improvements for Azure customers in the future. For more information, please refer to their individual migration guides available from the above links.
 
+> [!IMPORTANT]
+> This doesn't apply to China regions.
+
 ### Other partner solutions
 
 This section contains links to partners, who also offer solutions for migrating your media services workflows through the Azure Marketplace, as well as to Independent Software Vendors (ISVs). Refer to the links for their offerings below for further information.
@@ -38,20 +41,29 @@ Azure Marketplace offerings:
 - [Bitmovin](https://bitmovin.com/azure-marketplace/)
 - [Ravnur](https://aka.ms/ams-ravnur)
 
-### ISVs
+> [!IMPORTANT]
+> This doesn't apply to China regions.
 
-The following ISVs all have extensive experience in assisting customers with building media services solutions using both Azure Media Services and partners that are listed above. They can provide guidance or development work needed to facilitate your transition away from Azure Media Services.
+### Software integrators (SIs)
+
+The following SIs all have extensive experience in assisting customers with building media services solutions using both Azure Media Services and partners that are listed above. They can provide guidance or development work needed to facilitate your transition away from Azure Media Services.
 
 - [Eyevinn](https://www.eyevinntechnology.se/)
 - [Southworks](https://www.southworks.com/)
 - [WhDiYo](https://whdiyo.com/)
 
+> [!IMPORTANT]
+> This doesn't apply to China regions.
+
 ## Video and audio analysis migration
 
 Media Services allows you to extract insights from your video audio files using audio and video analyzer presets. If you're currently using these presets, you'll need to migrate them to [Azure Video Indexer](/azure/azure-video-indexer/video-indexer-overview) Video Indexer provides more advanced capabilities in speech-to-text, translations, speaker identification, and more. Audio and video analysis capabilities from Video Indexer are available in multiple feature bundles; for information on available bundles and pricing, see [Pricing – Azure Video Analyzer](https://azure.microsoft.com/pricing/details/video-indexer/). To learn more about models available in these bundles, see [What is Azure Video Indexer?](/azure/azure-video-indexer/video-indexer-overview).
 
-> [!Note]
+> [!NOTE]
 > The retirement of Media Services Video Analyzer on 14 September 2023 that was previously announced is not changing due to Azure Media Services being fully retired. If you are using Media Services Video Analyzer, you will still need to migrate to Azure Video Indexer by 14 September 2023. See Media Services Video Analyzer retirement and migration for additional information.
+
+> [IMPORTANT]
+> Azure Video Indexer is not available in China Regions. Therefore, any audio and video analyzer preset usage in China regions will need to migrate to [Azure AI Services](https://azure.microsoft.com/products/cognitive-services/).
 
 ### How Can I get started with Azure Video Indexer?
 
@@ -82,7 +94,7 @@ Both [MediaKind](https://io.mediakind.com/) and [Harmonic](https://aka.ms/ams-ha
 
 ### Is Azure Media Player also being retired?
 
-Yes, Azure Media Player will also be retired on 30 June 2024. All partners listed in the Media Services retirement guide have alternative video players available for customers to use.
+Yes, Azure Media Player will also be retired on 30 June 2024. All partners listed in the Media Services retirement guide have alternative video players available for customers to use. See [Media players for Media Services](player-media-players-concept.md) for other video player options.
 
 ### Will partner solutions be available in the same Azure regions as Media Services?
 

@@ -4,10 +4,13 @@ description: Media Services supports Availability Zones providing fault-isolatio
 author: johndeu
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 07/17/2023
 ms.author: inhenkel
 ---
+
 # Availability Zones
+
+[!INCLUDE [media services api v3 logo](./includes/v3-hr.md)]
 
 Azure Media Services uses [Availability Zones](/azure/availability-zones/az-overview), providing fault-isolated locations within the same Azure region. Media Services is zone-redundant by default in the [available locations](/azure/availability-zones/az-region#azure-regions-with-availability-zones) and no extra configuration on the account is required to enable this capability.  Media Services stores media data in the associated storage account(s).  These storage accounts should be created as zone-redundant storage (ZRS) or Geo-zone-redundant storage (GZRS) to provide the same level of redundancy as the Media Services account. For  details on how to configure replication on the associated storage account(s), see the article [Change how a storage account is replicated](/azure/storage/common/redundancy-migration).
 
