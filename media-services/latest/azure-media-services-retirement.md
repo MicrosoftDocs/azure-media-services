@@ -44,7 +44,7 @@ Azure Marketplace offerings:
 > [!IMPORTANT]
 > This doesn't apply to China regions.
 
-### Software integrators (SIs)
+### System integrators (SIs)
 
 The following SIs all have extensive experience in assisting customers with building media services solutions using both Azure Media Services and partners that are listed above. They can provide guidance or development work needed to facilitate your transition away from Azure Media Services.
 
@@ -62,7 +62,7 @@ Media Services allows you to extract insights from your video audio files using 
 > [!NOTE]
 > The retirement of Media Services Video Analyzer on 14 September 2023 that was previously announced is not changing due to Azure Media Services being fully retired. If you are using Media Services Video Analyzer, you will still need to migrate to Azure Video Indexer by 14 September 2023. See Media Services Video Analyzer retirement and migration for additional information.
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > Azure Video Indexer is not available in China Regions. Therefore, any audio and video analyzer preset usage in China regions will need to migrate to [Azure AI Services](https://azure.microsoft.com/products/cognitive-services/).
 
 ### How Can I get started with Azure Video Indexer?
@@ -90,7 +90,7 @@ There are two types of data stored in Azure for Media Services: customer videos 
 
 ### What migration options will be available for existing Media Services content?
 
-Both [MediaKind](https://io.mediakind.com/) and [Harmonic](https://aka.ms/ams-harmonic) will offer dynamic packaging of existing AMS content without requiring the content to be moved to another location or reprocessed in most cases. If you don’t choose this option, we'll be releasing an open-source tool that will allow you to convert Media Services assets to CMAF format with HLS and DASH manifests, so that content can be directly streamed from Azure Storage. We'll provide an update in the Media Services retirement guide when this tool is available. 
+Both [MediaKind](https://io.mediakind.com/) and [Harmonic](https://aka.ms/ams-harmonic) will offer dynamic packaging of existing AMS content without requiring the content to be moved to another location or reprocessed in most cases. If you decide not to use this option, you can convert your Media Services assets to CMAF format with HLS and DASH manifests using the initial version of the open-source [Azure Media Services Migration Tool](https://github.com/Azure/azure-media-migration). This tool allows you to stream content directly from Azure Storage. See the [open issues section of the  tools readme](https://github.com/Azure/azure-media-migration/blob/main/README.md) for capabilities that will be supported in future versions of this tool.
 
 ### Is Azure Media Player also being retired?
 
