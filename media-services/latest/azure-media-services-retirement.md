@@ -62,7 +62,7 @@ Media Services allows you to extract insights from your video audio files using 
 > [!NOTE]
 > The retirement of Media Services Video Analyzer on 14 September 2023 that was previously announced is not changing due to Azure Media Services being fully retired. If you are using Media Services Video Analyzer, you will still need to migrate to Azure Video Indexer by 14 September 2023. See Media Services Video Analyzer retirement and migration for additional information.
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > Azure Video Indexer is not available in China Regions. Therefore, any audio and video analyzer preset usage in China regions will need to migrate to [Azure AI Services](https://azure.microsoft.com/products/cognitive-services/).
 
 ### How Can I get started with Azure Video Indexer?
