@@ -44,7 +44,7 @@ Azure Marketplace offerings:
 > [!IMPORTANT]
 > This doesn't apply to China regions.
 
-### Software integrators (SIs)
+### System integrators (SIs)
 
 The following SIs all have extensive experience in assisting customers with building media services solutions using both Azure Media Services and partners that are listed above. They can provide guidance or development work needed to facilitate your transition away from Azure Media Services.
 
