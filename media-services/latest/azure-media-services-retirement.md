@@ -4,7 +4,7 @@ description: Azure Media Services retirement announcement.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 07/17/2023
+ms.date: 07/24/2023
 ms.author: inhenkel
 ---
 
@@ -90,7 +90,7 @@ There are two types of data stored in Azure for Media Services: customer videos 
 
 ### What migration options will be available for existing Media Services content?
 
-Both [MediaKind](https://io.mediakind.com/) and [Harmonic](https://aka.ms/ams-harmonic) will offer dynamic packaging of existing AMS content without requiring the content to be moved to another location or reprocessed in most cases. If you don’t choose this option, we'll be releasing an open-source tool that will allow you to convert Media Services assets to CMAF format with HLS and DASH manifests, so that content can be directly streamed from Azure Storage. We'll provide an update in the Media Services retirement guide when this tool is available. 
+Both [MediaKind](https://io.mediakind.com/) and [Harmonic](https://aka.ms/ams-harmonic) will offer dynamic packaging of existing AMS content without requiring the content to be moved to another location or reprocessed in most cases. If you decide not to use this option, you can convert your Media Services assets to CMAF format with HLS and DASH manifests using the initial version of the open-source [Azure Media Services Migration Tool](https://github.com/Azure/azure-media-migration). This tool allows you to stream content directly from Azure Storage. See the [open issues section of the tools readme](https://github.com/Azure/azure-media-migration/blob/main/README.md) for capabilities that will be supported in future versions of this tool.
 
 ### Is Azure Media Player also being retired?
 
