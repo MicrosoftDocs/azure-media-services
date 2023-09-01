@@ -104,6 +104,26 @@ Partner solutions will be available in a more limited set of regions than Media 
 
 Partner solutions will be available in Azure Government regions. [Ravnur](https://aka.ms/ams-ravnur) is one partner that specializes in serving government customers. However, none of the partners listed in the Media Services retirement guide will have a marketplace offering available in the China region. We're working to provide further information on partner offerings in this region and will update the Media Services retirement guide accordingly.
 
+### Is creation of new Media Services accounts being blocked in all Azure regions?
+Currently, the creation of new Media Services accounts is being blocked in a subset of Azure regions where Media Services is available. These regions are listed below:
+
+| Geography            | Region Name                                                         | 
+|----------------------|---------------------------------------------------------------------|
+| Africa               | South Africa North, South Africa West                               | 
+| Azure Government     | US Gov Texas                                                        |
+| Canada               | Canada East                                                         | 
+| China                | China East, China East 2, China North, China North 2, China North 3 | 
+| France               | France South                                                        |
+| Germany              | Germany North                                                       |
+| India                | South India, West India                                             |
+| Korea                | Korea South                                                         |
+| Norway               | Norway East                                                         |
+| United Arab Emirates | UAE Central, UAE North                                              |
+| United Kingdom       | UK West                                                             |
+| United States        | North Central US                                                    |
+
+By the end of January 2024, Media Services account creation will be blocked in all regions. If you have an existing Media Services account, you can open a support ticket through the Azure Portal to enable account creation for a specific Azure subscription. Once enabled, you will be able to create new Media Services accounts in any Azure region where Media Services is available.
+
 ### How can I get migration help and support?
 
 You can contact Media Services with questions or follow our updates by one of the following methods:
