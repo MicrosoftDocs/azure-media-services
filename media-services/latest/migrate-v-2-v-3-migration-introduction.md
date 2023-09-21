@@ -16,8 +16,6 @@ ms.author: inhenkel
 
 The Media Services migration guide helps you migrate from Media Services V2 APIs to V3 APIs based on a migration that takes advantage of the new features and functions that are now available. You should use your best judgment and determine what best fits your scenario.
 
-[!INCLUDE [v2 deprecation notice](./includes/v2-deprecation-notice.md)]
-
 For more information about retired media processors and to keep track of those that are planned for retirement, see the [Media processor retirement reference](media-processor-retirement-reference.md) reference.
 
 ## How to use this guide
