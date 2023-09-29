@@ -26,7 +26,7 @@ This section provides links to partner solutions that will cover the breadth of 
 Solutions from each of these partners are available in the Azure Marketplace. Each of these partners has migration guides, available from the following links, to use for transition from Media Services to the partner service
 
 - [Harmonic](https://aka.ms/ams-harmonic)
-- [MediaKind](https://io.mediakind.com/)
+- [MediaKind](https://aka.ms/ams-mediakind)
 
 Both partners will support dynamic packaging of existing Media Services content, eliminating the need for content to be reprocessed. They possess a wide range of media services capabilities beyond what is currently available with Azure Media Services and will continue to add more capabilities and improvements for Azure customers in the future. For more information, please refer to their individual migration guides available from the above links.
 
@@ -38,7 +38,7 @@ Both partners will support dynamic packaging of existing Media Services content,
 This section contains links to partners, who also offer solutions for migrating your media services workflows through the Azure Marketplace, as well as to Independent Software Vendors (ISVs). Refer to the links for their offerings below for further information.
 Azure Marketplace offerings:
 
-- [Bitmovin](https://bitmovin.com/azure-marketplace/)
+- [Bitmovin](https://aka.ms/ams-bitmovin)
 - [Ravnur](https://aka.ms/ams-ravnur)
 
 > [!IMPORTANT]
@@ -48,9 +48,9 @@ Azure Marketplace offerings:
 
 The following SIs all have extensive experience in assisting customers with building media services solutions using both Azure Media Services and partners that are listed above. They can provide guidance or development work needed to facilitate your transition away from Azure Media Services.
 
-- [Eyevinn](https://www.eyevinntechnology.se/)
-- [Southworks](https://www.southworks.com/ams-retirement)
-- [WhDiYo](https://whdiyo.com/)
+- [Eyevinn](https://aka.ms/ams-eyevinn)
+- [Southworks](https://aka.ms/ams-southworks)
+- [WhDiYo](https://aka.ms/ams-whdiyo)
 
 > [!IMPORTANT]
 > This doesn't apply to China regions.
