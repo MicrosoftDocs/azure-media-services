@@ -4,8 +4,8 @@ description: Learn how to access Azure Active Directory (Azure AD) authenticatio
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 01/09/2023
-ms.author: inhenkel
+ms.date: 11/27/2023
+ms.author: akucer
 ---
 # Get credentials to access Media Services API
 
