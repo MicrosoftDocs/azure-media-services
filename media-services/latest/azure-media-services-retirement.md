@@ -21,7 +21,7 @@ The Media Services retirement guide presents options available for you to migrat
 
 This section provides links to partner solutions that cover the breadth of Azure Media Services capabilities, except for audio and video analysis workflows, supported by [Azure Video Indexer](/azure/azure-video-indexer/video-indexer-overview). Also included are links to System Integrators (SIs) that can help you with your transition from Azure Media Services.
 
-### Featured partner solutions
+### Partner solutions
 
 Solutions from each of these partners are available in the Azure Marketplace. Each of these partners has migration guides available from the following links to use for transitioning from Media Services to the partner service.
 
