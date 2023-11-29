@@ -13,7 +13,7 @@ ms.author: inhenkel
 | Feature | Central US | East US | East US 2 | North Central US | South Central US | West US | West US 2 | West US 3 | West Central US |
 | ------- | :--------: | :-----: | :-------: | :--------------: | :--------------: | :-----: | :-------: | :-------: | :-------------: |
 | [Azure EventGrid](../monitoring/reacting-to-media-services-events.md)|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
-| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)       |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)       |<!-- Central US -->|<!-- East US -->|<!-- East US 2 -->|<!-- North Central US -->|<!-- South Central US -->|<!-- West US -->|<!-- West US 2 -->|<!-- West US 3 -->|<!-- West Central US -->|
 | [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md)       |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
 | [StandardEncoderPreset](../encode-concept.md)                        |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
 | [LiveEvents](../stream-live-streaming-concept.md)                    |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|

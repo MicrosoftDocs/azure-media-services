@@ -12,7 +12,7 @@ ms.author: inhenkel
 | Feature| Australia Central | Australia Central 2 | Australia East | Australia Southeast |
 | ------ | :---------------: | :-----------------: | :------------: | :-----------------: |
 | [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |<!-- Central -->|<!-- Central 2 -->|&#10004;&#65039;|&#10004;&#65039;|
-| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)        |<!-- Central -->|<!-- Central 2 -->|&#10004;&#65039;|&#10004;&#65039;|
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)        |<!-- Central -->|<!-- Central 2 -->|<!-- East -->|<!-- Southeast -->|
 | [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md)        |<!-- Central -->|<!-- Central 2 -->|&#10004;&#65039;|&#10004;&#65039;|
 | [StandardEncoderPreset](../encode-concept.md)                         |<!-- Central -->|<!-- Central 2 -->|&#10004;&#65039;|&#10004;&#65039;|
 | [LiveEvents](../stream-live-streaming-concept.md)                     |<!-- Central -->|<!-- Central 2 -->|&#10004;&#65039;|&#10004;&#65039;|
