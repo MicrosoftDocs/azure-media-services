@@ -12,7 +12,7 @@ ms.author: inhenkel
 | Feature | France Central | France South |
 | ------- | :------------: | :----------: |
 | [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |&#10004;&#65039;|&#10004;&#65039;|
-| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)        |&#10004;&#65039;|&#10004;&#65039;|
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)        |<!--France Central -->|<!--France South -->|
 | [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md)        |&#10004;&#65039;|&#10004;&#65039;|
 | [StandardEncoderPreset](../encode-concept.md)                         |&#10004;&#65039;|&#10004;&#65039;|
 | [LiveEvents](../stream-live-streaming-concept.md)                     |&#10004;&#65039;|&#10004;&#65039;|

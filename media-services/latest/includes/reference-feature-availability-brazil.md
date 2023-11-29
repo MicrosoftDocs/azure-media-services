@@ -12,7 +12,7 @@ ms.author: inhenkel
 | Feature | Brazil South |
 | ------- | :----------: |
 | [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |&#10004;&#65039;|
-| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)        |&#10004;&#65039;|
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)        |<!--Brazil South -->|
 | [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md)        |&#10004;&#65039;|
 | [StandardEncoderPreset](../encode-concept.md)                         |&#10004;&#65039;|
 | [LiveEvents](../stream-live-streaming-concept.md)                     |&#10004;&#65039;|

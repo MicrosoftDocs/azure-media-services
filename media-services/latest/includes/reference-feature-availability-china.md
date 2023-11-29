@@ -12,7 +12,7 @@ ms.author: inhenkel
 | Feature | China East | China East 2 | China North | China North 2 | China North 3 |
 | --- | :---: | :---: | :---: | :----: | :----: |
 | [Azure EventGrid](../monitoring/reacting-to-media-services-events.md) |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
-| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)        |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
+| [VideoAnalyzerPreset](../analyze-video-audio-files-concept.md)        |<!--East -->|<!--East 2 -->|<!--North -->|<!--North 2-->|<!--North 3-->|
 | [AudioAnalyzerPreset](../analyze-video-audio-files-concept.md)        |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
 | [StandardEncoderPreset](../encode-concept.md)                         |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
 | [LiveEvents](../stream-live-streaming-concept.md)                     |&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|&#10004;&#65039;|
