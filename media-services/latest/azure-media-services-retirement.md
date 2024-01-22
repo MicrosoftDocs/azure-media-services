@@ -4,7 +4,7 @@ description: Azure Media Services retirement announcement.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 07/24/2023
+ms.date: 01/21/2024
 ms.author: inhenkel
 ---
 
@@ -25,7 +25,7 @@ This section provides links to partner solutions that cover the breadth of Azure
 
 Solutions from each of these partners are available in the Azure Marketplace. Each of these partners has migration guides available from the following links to use for transitioning from Media Services to the partner service.
 
-- [Harmonic](https://aka.ms/ams-harmonic)
+- [:::no-loc text="Harmonic":::](https://aka.ms/ams-harmonic)
 - [MediaKind](https://aka.ms/ams-mediakind)
 - [Bitmovin](https://aka.ms/ams-bitmovin)
 - [Ravnur](https://aka.ms/ams-ravnur)
@@ -73,7 +73,7 @@ Media Services allows you to extract insights from your video audio files using 
 
 ### What are the migration options for existing Media Services content?
 
-Both [MediaKind](https://io.mediakind.com/) and [Harmonic](https://aka.ms/ams-harmonic) offer dynamic packaging of existing AMS content without requiring the content to be reprocessed. If you decide not to use this option, you can convert your Media Services assets to CMAF format with HLS and DASH manifests using the open-source [Azure Media Services Migration Tool](https://github.com/Azure/azure-media-migration). This tool allows you to stream content directly from Azure Storage. See the [tools readme](https://github.com/Azure/azure-media-migration/blob/main/README.md) for additional information.
+Both [MediaKind](https://io.mediakind.com/) and [:::no-loc text="Harmonic":::](https://aka.ms/ams-harmonic) offer dynamic packaging of existing AMS content without requiring the content to be reprocessed. If you decide not to use this option, you can convert your Media Services assets to CMAF format with HLS and DASH manifests using the open-source [Azure Media Services Migration Tool](https://github.com/Azure/azure-media-migration). This tool allows you to stream content directly from Azure Storage. See the [tools readme](https://github.com/Azure/azure-media-migration/blob/main/README.md) for additional information.
 
 ### Why is Azure Media Services being retired?
 
