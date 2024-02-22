@@ -25,12 +25,11 @@ This section provides links to partner solutions that cover the breadth of Azure
 
 Solutions from each of these partners are available in the Azure Marketplace. Each of these partners has migration guides available from the following links to use for transitioning from Media Services to the partner service.
 
-- [:::no-loc text="Harmonic":::](https://aka.ms/ams-harmonic)
 - [MediaKind](https://aka.ms/ams-mediakind)
 - [Bitmovin](https://aka.ms/ams-bitmovin)
 - [Ravnur](https://aka.ms/ams-ravnur)
 
-Harmonic and MediaKind are our featured partners, offering solutions that support dynamic packaging of existing Media Services content, eliminating the need for content to be reprocessed. In addition, they possess a wide range of media services capabilities that go beyond what is currently available with Azure Media Services. Ravnur specializes in serving government customers, and their service is available in both Azure (Commercial) and Azure Government regions. For more information, please refer to their individual migration guides, which are available from the links above.
+MediaKind is our featured partner, offering  a solution that supports dynamic packaging of existing Media Services content, eliminating the need for content to be reprocessed. In addition, they possess a wide range of media services capabilities that go beyond what is currently available with Azure Media Services. Ravnur specializes in serving government customers and also supports dynamic packaging. Their service is available in both Azure (Commercial) and Azure Government regions. For more information, please refer to their individual migration guides, which are available from the links above.
 
 > [!IMPORTANT]
 > This doesn't apply to China regions.
@@ -56,13 +55,10 @@ The following SIs all have extensive experience in assisting customers with buil
 
 ## Video and audio analysis migration
 
-Media Services allows you to extract insights from your video audio files using audio and video analyzer presets. If you're currently using these presets, you'll need to migrate them to [Azure Video Indexer](/azure/azure-video-indexer/video-indexer-overview) Video Indexer provides more advanced capabilities in speech-to-text, translations, speaker identification, and more. Audio and video analysis capabilities from Video Indexer are available in multiple feature bundles; for information on available bundles and pricing, see [Pricing – Azure Video Analyzer](https://azure.microsoft.com/pricing/details/video-indexer/). To learn more about models available in these bundles, see [What is Azure Video Indexer?](/azure/azure-video-indexer/video-indexer-overview).
-
-> [!NOTE]
-> The retirement of Media Services Video Analyzer on 14 September 2023 that was previously announced is not changing due to Azure Media Services being fully retired. If you are using Media Services Video Analyzer, you will still need to migrate to Azure Video Indexer by 14 September 2023. See Media Services Video Analyzer retirement and migration for additional information.
+Media Services allows you to extract insights from your video audio files using audio and video analyzer presets. If you're currently using these presets, you'll need to migrate them to [Azure Video Indexer](/azure/azure-video-indexer/video-indexer-overview). Video Indexer provides more advanced capabilities in speech-to-text, translations, speaker identification, and more. Audio and video analysis capabilities from Video Indexer are available in multiple feature bundles; for information on available bundles and pricing, see [Pricing – Azure Video Analyzer](https://azure.microsoft.com/pricing/details/video-indexer/). To learn more about models available in these bundles, see [What is Azure Video Indexer?](/azure/azure-video-indexer/video-indexer-overview).
 
 > [!IMPORTANT]
-> Azure Video Indexer is not available in China Regions. Therefore, any audio and video analyzer preset usage in China regions will either need to migrate to [Azure AI Services](https://azure.microsoft.com/products/cognitive-services/) or to one of the China partners solutions such as [bopoda 博普达](https://aka.ms/ams-bopoda) that has similar capabilities.
+> Azure Video Indexer is not available in China Regions. Therefore, any audio analyzer preset usage in China regions will either need to migrate to [Azure AI Services](https://azure.microsoft.com/products/cognitive-services/) or to one of the China partners solutions such as [bopoda 博普达](https://aka.ms/ams-bopoda) that has similar capabilities.
 
 ### How Can I get started with Azure Video Indexer?
 
@@ -73,7 +69,7 @@ Media Services allows you to extract insights from your video audio files using 
 
 ### What are the migration options for existing Media Services content?
 
-Both [MediaKind](https://io.mediakind.com/) and [:::no-loc text="Harmonic":::](https://aka.ms/ams-harmonic) offer dynamic packaging of existing AMS content without requiring the content to be reprocessed. If you decide not to use this option, you can convert your Media Services assets to CMAF format with HLS and DASH manifests using the open-source [Azure Media Services Migration Tool](https://github.com/Azure/azure-media-migration). This tool allows you to stream content directly from Azure Storage. See the [tools readme](https://github.com/Azure/azure-media-migration/blob/main/README.md) for additional information.
+Both [MediaKind](https://io.mediakind.com/) and [Ravnur](https://aka.ms/ams-ravnur) offer dynamic packaging of existing AMS content without requiring the content to be reprocessed. If you decide not to use this option, you can convert your Media Services assets to CMAF format with HLS and DASH manifests using the open-source [Azure Media Services Migration Tool](https://github.com/Azure/azure-media-migration). This tool allows you to stream content directly from Azure Storage. See the [tools readme](https://github.com/Azure/azure-media-migration/blob/main/README.md) for additional information.
 
 ### Why is Azure Media Services being retired?
 
@@ -97,11 +93,11 @@ Yes, Azure Media Player will also be retired on 30 June 2024. All partners liste
 
 ### Will partner solutions be available in the same Azure regions as Media Services?
 
-Partner solutions will be available in a more limited set of regions than Media Services. The featured partners, Harmonic and MediaKind, plan to provide coverage across North America, Europe, Asia Pacific, South America, Australia, and India. While they may not have full availability in these regions by June 30, 2023, they're working to expand their coverage in these areas.
+Partner solutions will be available in a more limited set of regions than Media Services. The featured partner MediaKind, plans to provide coverage across North America, Europe, Asia Pacific, South America, Australia, and India. Ravnur's provides a solution that can be deployed to any Azure region.
 
 ### Will partner solutions be available in Azure Government regions?
 
-Partner solutions will be available in Azure Government regions. [Ravnur](https://aka.ms/ams-ravnur) is one partner that specializes in serving government customers.
+Partner solutions will be available in Azure Government regions. [Ravnur](https://aka.ms/ams-ravnur) is one partner that specializes in serving government customers and can support customers in any Azure Government region.
 
 ### Is creation of new Media Services accounts being blocked in all Azure regions?
 Currently, the creation of new Media Services accounts is being blocked in a subset of Azure regions where Media Services is available. These regions are listed below:
@@ -121,7 +117,7 @@ Currently, the creation of new Media Services accounts is being blocked in a sub
 | United Kingdom       | UK West                                                             |
 | United States        | North Central US                                                    |
 
-By the end of January 2024, Media Services account creation will be blocked in all regions. If you have an existing Media Services account, you can open a support ticket through the Azure Portal to enable account creation for a specific Azure subscription. Once enabled, you will be able to create new Media Services accounts in any Azure region where Media Services is available.
+By the end of February 2024, Media Services account creation will be blocked in all regions. If you have an existing Media Services account, you can open a support ticket through the Azure Portal to enable account creation for a specific Azure subscription. Once enabled, you will be able to create new Media Services accounts in any Azure region where Media Services is available.
 
 ### How can I get migration help and support?
 
