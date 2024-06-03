@@ -6,7 +6,6 @@ ms.service: media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel
-ms.custom: contperf-fy22q4
 ---
 # Update Media Services v3 after rolling storage access keys
 
