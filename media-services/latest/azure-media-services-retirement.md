@@ -51,17 +51,17 @@ The following SIs all have extensive experience in assisting customers with buil
 
 ## Data migration options
 
-Your existing Azure Media Services assets will remain in your Azure Storage containers even after your Azure Services Account is deleted. Any Media Services metadata associated with these assets will become read-only for approximately 90 days after your account is deactivated. Be sure to export any necessary data before this time.
+Your existing Azure Media Services assets will remain in your Azure Storage containers even after your AMS account is deleted. Any Media Services metadata associated with these assets will become read-only for approximately 90 days after your account is deactivated. Be sure to export any necessary data before this time.
 
 For customers in the public Azure regions, these are the data migration options available to you:
 
-- **Bitmovin automatic migration**
-    Bitmovin's solution enables customers to retain their existing non-DRM streaming URLs until June 30, 2025. The migration process involves transferring the metadata associated with your assets to Bitmovin, allowing them to continue streaming your content. No play update is required. For more details, refer to [Automatic migration to Bitmovin](#).
-- **MediaKind**
+- **Bitmovin automatic migration**<br/>
+    Bitmovin's solution enables customers to retain their existing non-DRM streaming URLs until June 30, 2025. The migration process involves transferring the metadata associated with your assets to Bitmovin, allowing them to continue streaming your content. No play update is required. For more details, refer to [Automatic migration to Bitmovin](azure-media-services-retirement-automatic-migration-bitmovin.md).
+- **MediaKind**<br/>
     For regions where MediaKind is available. MiediaKind can continue to stream your existing content in HLS/DASH with AES and DRM support (PlayReady, Widevine and FairPlay). Follow the [MediaKind migration guide](https://docs.mk.io/docs/migrate-your-ams-assets).
-- **Ravnur**
+- **Ravnur**<br/>
     Ravnu's solution can be hosted in you Azure subscription to continue streaming existing AMS content in HLS/DASH. Follow the [Ravnur migration guide](https://docs.ravnur.com/hc/en-us/articles/19218387054994-RMS-Deployment-Guide).
-- **Azure Media Services static migration**
+- **Azure Media Services static migration**<br/>
     The AMS static migration tool allows you to tranform your existing assets to stream directly from the storage location of you choosing using HLS/DASH. We recommend that you turn on CDN on the storage account to scale this solution. You will need to provision your own compute resources in the same region as your storage account for this migration.
 
     However, all existing URLs must be updated after this mirgration. Azure Media Pleayer no longer supports this new format, so a player update will be required if you are using Azure Media Player.
@@ -72,10 +72,10 @@ This table can help you determine the most suitable option.
 
 | Option | Availability | Preserves existing URLs | Data move required | Streaming format | AES/DRM support | Player update required |
 | --- | -------- | ----------------------- | ------------------ | ---------------- | --------------- | ---------------------- |
-| Bitmovin<br/>Automatic Migration | All regions | Yes<br/>until June 30, 2024 | Not until<br/>June 30, 2024 | All supported by AMS | AES supported,<br/>DRM not supported | No |  
-| Bitmovin<br/>Streams, VOD | 20+ regions | No | Yes | DASH/HLS | AES<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes | 
-| MediaKind | 8 regions | URL structure maitained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes |
-| Ravnur | Everywhere<br/>Runs on your subscription | URL structure maitained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes |
+| Bitmovin<br/>Automatic Migration | All regions | Yes<br/>until June 30, 2024 | Not until<br/>June 30, 2024 | All supported by AMS | AES,<br/>DRM not supported | No |  
+| Bitmovin<br/>Streams, VOD | 20+ regions | No | Yes | DASH/HLS | AES,<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes | 
+| MediaKind | 8 regions | URL structure maitained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES,<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes |
+| Ravnur | Everywhere<br/>Runs on your subscription | URL structure maitained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES,<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes |
 | AMS Static Migration | Everywhere | No | Yes | DASH/HLS | AES<br/>(You must run your own delivery service.) | Yes |
 
 ## Video and audio analysis migration
