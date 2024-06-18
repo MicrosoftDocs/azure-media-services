@@ -4,43 +4,43 @@ description: Azure Media Services retirement announcement.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 01/21/2024
+ms.date: 06/18/2024
 ms.author: inhenkel
 ---
 
 # Azure Media Services retirement guide
 
-The Media Services retirement guide presents options available for you to migrate to solutions from the Microsoft partner ecosystem or other Azure services.
+Azure Media Service announced its retirement on June 30, 2024 in June 2023. The Media Services retirement guide presents options available for you to migrate to solutions from the Microsoft partner ecosystem or other Azure services.
 
 > [!Note]
-> Migrate to a Microsoft partner solution for your on-demand encoding, live streaming, on-demand streaming, and content protection workflows and to Azure Video Indexer for your audio and video analysis workflows by 30 June 2024. Azure Media Services will be fully retired by this date.  
+> Migrate to a Microsoft partner solution for your on-demand encoding, live streaming, on-demand streaming, and content protection by 30 June 2024.  
 
-**Action Required:** To prevent disruptions to your workloads, review this retirement guide for options to transition your workflow before 30 June 2024. After this date, Media Services won’t be supported, and customers won’t have access to their Media Services accounts.
+**Action Required:** To prevent disruptions to your workloads, review this retirement guide for options to transition your workflow before 30 June 2024. After this date, Media Services will stop streaming on all your Azure Media Services accounts and your accounts will become read-only for approximately 90 days until they are automatically deleted.
+
+A one-time 30-day extension until early August is offered on the Azure portal. Extend your account before your account becomes read-only to avoid interruptions. No further extension is possible.
+
+Go to the Azure portal to check your account's expiration date and request the one-time extension.
 
 ## Migration guidance overview
 
-This section provides links to partner solutions that cover the breadth of Azure Media Services capabilities, except for audio and video analysis workflows, supported by [Azure Video Indexer](/azure/azure-video-indexer/video-indexer-overview). Also included are links to System Integrators (SIs) that can help you with your transition from Azure Media Services.
+Migrate your media workflows to one of the partner solutions listed below. Also included are links to System Integrators (SIs) that can help you with your transition from Azure Media Services. Partners and SI's are listed in alphabetical order.
 
 ### Partner solutions
 
 Solutions from each of these partners are available in the Azure Marketplace. Each of these partners has migration guides available from the following links to use for transitioning from Media Services to the partner service.
 
-- [MediaKind](https://aka.ms/ams-mediakind)
 - [Bitmovin](https://aka.ms/ams-bitmovin)
+- [MediaKind](https://aka.ms/ams-mediakind)
 - [Ravnur](https://aka.ms/ams-ravnur)
 
-MediaKind is our featured partner, offering  a solution that supports dynamic packaging of existing Media Services content, eliminating the need for content to be reprocessed. In addition, they possess a wide range of media services capabilities that go beyond what is currently available with Azure Media Services. Ravnur specializes in serving government customers and also supports dynamic packaging. Their service is available in both Azure (Commercial) and Azure Government regions. For more information, please refer to their individual migration guides, which are available from the links above.
-
-> [!IMPORTANT]
-> This doesn't apply to China regions.
+MediaKind and Bitmovin are available to our public cloud customers. Ravnur specializes in serving government customers. Their service is available in both Azure (Commercial) and Azure Government regions. For more information, please refer to their individual migration guides, which are available from the links above.
 
 ### China partner solutions
 
-This section provides links to our partners who offer solutions for migrating media services workflows in Azure China regions. Please refer to the links below for more information on their offerings.
+Use the links following links to learn more about our partner solutions in Azure China regions. 
 
-- [bopoda 博普达](https://aka.ms/ams-bopoda)
 - [Arcvideo 当虹科技](https://aka.ms/ams-arcvideo)
-
+- [bopoda 博普达](https://aka.ms/ams-bopoda)
 
 ### System integrators (SIs)
 
@@ -52,6 +52,35 @@ The following SIs all have extensive experience in assisting customers with buil
 
 > [!IMPORTANT]
 > This doesn't apply to China regions.
+
+## Data migration options
+
+Your existing Azure Media Services assets will remain in your Azure Storage containers even after your AMS account is deleted. Any Media Services metadata associated with these assets will become read-only for approximately 90 days after your account is deactivated. Be sure to export any necessary data before this time.
+
+For customers in the public Azure regions, these are the data migration options available to you:
+
+- **Bitmovin automatic migration**<br/>
+    Bitmovin's solution enables customers to retain their existing non-DRM streaming URLs until June 30, 2025. The migration process involves transferring the metadata associated with your assets to Bitmovin, allowing them to continue streaming your content. No play update is required. For more details, refer to [Automatic migration to Bitmovin](azure-media-services-retirement-automatic-migration-bitmovin.md).
+- **MediaKind**<br/>
+    For regions where MediaKind is available. MiediaKind can continue to stream your existing content in HLS/DASH with AES and DRM support (PlayReady, Widevine and FairPlay). Follow the [MediaKind migration guide](https://docs.mk.io/docs/migrate-your-ams-assets).
+- **Ravnur**<br/>
+    Ravnu's solution can be hosted in you Azure subscription to continue streaming existing AMS content in HLS/DASH. Follow the [Ravnur migration guide](https://docs.ravnur.com/hc/en-us/articles/19218387054994-RMS-Deployment-Guide).
+- **Azure Media Services static migration**<br/>
+    The AMS static migration tool allows you to tranform your existing assets to stream directly from the storage location of you choosing using HLS/DASH. We recommend that you turn on CDN on the storage account to scale this solution. You will need to provision your own compute resources in the same region as your storage account for this migration.
+
+    However, all existing URLs must be updated after this mirgration. Azure Media Pleayer no longer supports this new format, so a player update will be required if you are using Azure Media Player.
+
+    The AMS migration tool is available [here](https://github.com/Azure/azure-media-migration).
+
+This table can help you determine the most suitable option.
+
+| Option | Availability | Preserves existing URLs | Data move required | Streaming format | AES/DRM support | Player update required |
+| --- | -------- | ----------------------- | ------------------ | ---------------- | --------------- | ---------------------- |
+| Bitmovin<br/>Automatic Migration | All regions | Yes<br/>until June 30, 2024 | Not until<br/>June 30, 2024 | All supported by AMS | AES,<br/>DRM not supported | No |  
+| Bitmovin<br/>Streams, VOD | 20+ regions | No | Yes | DASH/HLS | AES,<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes | 
+| MediaKind | 8 regions | URL structure maitained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES,<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes |
+| Ravnur | Everywhere<br/>Runs on your subscription | URL structure maitained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES,<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes |
+| AMS Static Migration | Everywhere | No | Yes | DASH/HLS | AES<br/>(You must run your own delivery service.) | Yes |
 
 ## Video and audio analysis migration
 
@@ -67,13 +96,15 @@ Media Services allows you to extract insights from your video audio files using 
 
 ## Common questions about Azure Media Services retirement
 
-### What are the migration options for existing Media Services content?
-
-Both [MediaKind](https://io.mediakind.com/) and [Ravnur](https://aka.ms/ams-ravnur) offer dynamic packaging of existing AMS content without requiring the content to be reprocessed. If you decide not to use this option, you can convert your Media Services assets to CMAF format with HLS and DASH manifests using the open-source [Azure Media Services Migration Tool](https://github.com/Azure/azure-media-migration). This tool allows you to stream content directly from Azure Storage. See the [tools readme](https://github.com/Azure/azure-media-migration/blob/main/README.md) for additional information.
-
 ### Why is Azure Media Services being retired?
 
 This is a result of Microsoft focusing on strategic areas of secular growth and long-term competitiveness for the company. We’re also accelerating media services solutions from the Microsoft partner ecosystem across integrated solution vendors and system integrators to ensure that Azure users have access to a variety of high-quality media services solutions.
+
+### What happens when my AMS account expires? 
+
+On the Azure portal you will find your AMS account’s expiration date and time. Within approximately one of hour of the expiration time all running live events and streaming endpoints will be stopped. The AMS API allows all GET operations and will reject all PATCH, PUT or POST operations. The only exception is that we allow customers to update the CDN settings on streaming endpoints. Enabling CDN for streaming endpoints migrated to Bitmovin allows customers to preserve existing streaming URLs until June 30th, 2025.  
+
+Approximately 90 days after the expiration expiration time, your AMS account will be deleted. Remember to copy out any AMS data prior to that time. Bitmovin, MediaKind and other migration tools work best when asset information can still be queried. The AMS migration tool can work after account deletion, but you will lose all information about existing URLs.   
 
 ### Is Azure Video Indexer being retired?
 
@@ -81,11 +112,11 @@ No, Azure Video Indexer isn't part of the Media Services retirement. Although Vi
 
 ### Do I still need to migrate from Media Services v2 APIs to v3 APIs?
 
-No, you no longer need to migrate from Media Services v2 APIs to v3 APIs. We'll be sending out further communication to all customers who are still using v2 APIs to ensure they're aware of this change. Both v2 and v3 APIs will be retired simultaneously on 30 June 2024.
+No, you no longer need to migrate from Media Services v2 APIs to v3 APIs. Both v2 and v3 APIs will be retired simultaneously on 30 June 2024. The v2 APIs are not expected to work after your account expires.
 
 ### What will happen to customer data after the retirement date?
 
-There are two types of data stored in Azure for Media Services: customer videos and associated files (for example, .ism, .ismc, and .mp4 files) that make up a Media Services asset, and Media Services account data. Customer videos and associated files are stored in the customer's Azure Storage account and will remain unaffected by the retirement of Media Services. However, all account data, including streaming endpoints, live events, and asset metadata, will be deleted as part of the retirement process.
+There are two types of data stored in Azure for Media Services: customer videos and associated files (for example, .ism, .ismc, and .mp4 files) that make up a Media Services asset, and Media Services account data. Customer videos and associated files are stored in the customer's Azure Storage account and will remain unaffected by the retirement of Media Services. However, all account data, including streaming endpoints, live events, and asset metadata, will be deleted as part of the retirement process, approximately 90 days after accounts are deactivated in July.
 
 ### Is Azure Media Player also being retired?
 
@@ -100,24 +131,8 @@ Partner solutions will be available in a more limited set of regions than Media 
 Partner solutions will be available in Azure Government regions. [Ravnur](https://aka.ms/ams-ravnur) is one partner that specializes in serving government customers and can support customers in any Azure Government region.
 
 ### Is creation of new Media Services accounts being blocked in all Azure regions?
-Currently, the creation of new Media Services accounts is being blocked in a subset of Azure regions where Media Services is available. These regions are listed below:
 
-| Geography            | Region Name                                                         | 
-|----------------------|---------------------------------------------------------------------|
-| Africa               | South Africa North, South Africa West                               | 
-| Azure Government     | US Gov Texas                                                        |
-| Canada               | Canada East                                                         | 
-| China                | China East, China East 2, China North, China North 2, China North 3 | 
-| France               | France South                                                        |
-| Germany              | Germany North                                                       |
-| India                | South India, West India                                             |
-| Korea                | Korea South                                                         |
-| Norway               | Norway East                                                         |
-| United Arab Emirates | UAE Central, UAE North                                              |
-| United Kingdom       | UK West                                                             |
-| United States        | North Central US                                                    |
-
-By the end of February 2024, Media Services account creation will be blocked in all regions. If you have an existing Media Services account, you can open a support ticket through the Azure Portal to enable account creation for a specific Azure subscription. Once enabled, you will be able to create new Media Services accounts in any Azure region where Media Services is available.
+Yes, the creation of new Media Services accounts is blocked in all Azure regions.
 
 ### How can I get migration help and support?
 
