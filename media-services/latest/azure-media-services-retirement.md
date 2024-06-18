@@ -4,7 +4,7 @@ description: Azure Media Services retirement announcement.
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
-ms.date: 06/10/2024
+ms.date: 06/18/2024
 ms.author: inhenkel
 ---
 
@@ -15,7 +15,11 @@ Azure Media Service announced its retirement on June 30, 2024 in June 2023. The 
 > [!Note]
 > Migrate to a Microsoft partner solution for your on-demand encoding, live streaming, on-demand streaming, and content protection by 30 June 2024.  
 
-**Action Required:** To prevent disruptions to your workloads, review this retirement guide for options to transition your workflow before 30 June 2024. After this date, Media Services will stop streaming on all your Azure Media Services accounts and your accounts will become read-only for approximately 90 days until they are automatically deleted. Go to the Azure portal to learn more.
+**Action Required:** To prevent disruptions to your workloads, review this retirement guide for options to transition your workflow before 30 June 2024. After this date, Media Services will stop streaming on all your Azure Media Services accounts and your accounts will become read-only for approximately 90 days until they are automatically deleted.
+
+A one-time 30-day extension until early August is offered on the Azure portal. Extend your account before your account becomes read-only to avoid interruptions. No further extension is possible.
+
+Go to the Azure portal to check your account's expiration date and request the one-time extension.
 
 ## Migration guidance overview
 
@@ -92,13 +96,15 @@ Media Services allows you to extract insights from your video audio files using 
 
 ## Common questions about Azure Media Services retirement
 
-### What are the migration options for existing Media Services content?
-
-Both [MediaKind](https://io.mediakind.com/) and [Ravnur](https://aka.ms/ams-ravnur) offer dynamic packaging of existing AMS content without requiring the content to be reprocessed. If you decide not to use this option, you can convert your Media Services assets to CMAF format with HLS and DASH manifests using the open-source [Azure Media Services Migration Tool](https://github.com/Azure/azure-media-migration). This tool allows you to stream content directly from Azure Storage. See the [tools readme](https://github.com/Azure/azure-media-migration/blob/main/README.md) for additional information.
-
 ### Why is Azure Media Services being retired?
 
 This is a result of Microsoft focusing on strategic areas of secular growth and long-term competitiveness for the company. We’re also accelerating media services solutions from the Microsoft partner ecosystem across integrated solution vendors and system integrators to ensure that Azure users have access to a variety of high-quality media services solutions.
+
+### What happens when my AMS account expires? 
+
+On the Azure portal you will find your AMS account’s expiration date and time. Within approximately one of hour of the expiration time all running live events and streaming endpoints will be stopped. The AMS API allows all GET operations and will reject all PATCH, PUT or POST operations. The only exception is that we allow customers to update the CDN settings on streaming endpoints. Enabling CDN for streaming endpoints migrated to Bitmovin allows customers to preserve existing streaming URLs until June 30th, 2025.  
+
+Approximately 90 days after the expiration expiration time, your AMS account will be deleted. Remember to copy out any AMS data prior to that time. Bitmovin, MediaKind and other migration tools work best when asset information can still be queried. The AMS migration tool can work after account deletion, but you will lose all information about existing URLs.   
 
 ### Is Azure Video Indexer being retired?
 
@@ -106,11 +112,11 @@ No, Azure Video Indexer isn't part of the Media Services retirement. Although Vi
 
 ### Do I still need to migrate from Media Services v2 APIs to v3 APIs?
 
-No, you no longer need to migrate from Media Services v2 APIs to v3 APIs. We'll be sending out further communication to all customers who are still using v2 APIs to ensure they're aware of this change. Both v2 and v3 APIs will be retired simultaneously on 30 June 2024.
+No, you no longer need to migrate from Media Services v2 APIs to v3 APIs. Both v2 and v3 APIs will be retired simultaneously on 30 June 2024. The v2 APIs are not expected to work after your account expires.
 
 ### What will happen to customer data after the retirement date?
 
-There are two types of data stored in Azure for Media Services: customer videos and associated files (for example, .ism, .ismc, and .mp4 files) that make up a Media Services asset, and Media Services account data. Customer videos and associated files are stored in the customer's Azure Storage account and will remain unaffected by the retirement of Media Services. However, all account data, including streaming endpoints, live events, and asset metadata, will be deleted as part of the retirement process.
+There are two types of data stored in Azure for Media Services: customer videos and associated files (for example, .ism, .ismc, and .mp4 files) that make up a Media Services asset, and Media Services account data. Customer videos and associated files are stored in the customer's Azure Storage account and will remain unaffected by the retirement of Media Services. However, all account data, including streaming endpoints, live events, and asset metadata, will be deleted as part of the retirement process, approximately 90 days after accounts are deactivated in July.
 
 ### Is Azure Media Player also being retired?
 
