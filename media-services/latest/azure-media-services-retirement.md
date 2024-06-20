@@ -62,13 +62,13 @@ For customers in the public Azure regions, these are the data migration options 
 - **Bitmovin automatic migration**<br/>
     Bitmovin's solution enables customers to retain their existing non-DRM streaming URLs until June 30, 2025. The migration process involves transferring the metadata associated with your assets to Bitmovin, allowing them to continue streaming your content. No play update is required. For more details, refer to [Automatic migration to Bitmovin](azure-media-services-retirement-automatic-migration-bitmovin.md).
 - **MediaKind**<br/>
-    For regions where MediaKind is available. MiediaKind can continue to stream your existing content in HLS/DASH with AES and DRM support (PlayReady, Widevine and FairPlay). Follow the [MediaKind migration guide](https://docs.mk.io/docs/migrate-your-ams-assets).
+    For regions where MediaKind is available. MediaKind can continue to stream your existing content in HLS/DASH with AES and DRM support (PlayReady, Widevine and FairPlay). Follow the [MediaKind migration guide](https://docs.mk.io/docs/migrate-your-ams-assets).
 - **Ravnur**<br/>
-    Ravnu's solution can be hosted in you Azure subscription to continue streaming existing AMS content in HLS/DASH. Follow the [Ravnur migration guide](https://docs.ravnur.com/hc/en-us/articles/19218387054994-RMS-Deployment-Guide).
+    Ravnur's solution can be hosted in you Azure subscription to continue streaming existing AMS content in HLS/DASH. Follow the [Ravnur migration guide](https://docs.ravnur.com/hc/en-us/articles/19218387054994-RMS-Deployment-Guide).
 - **Azure Media Services static migration**<br/>
-    The AMS static migration tool allows you to tranform your existing assets to stream directly from the storage location of you choosing using HLS/DASH. We recommend that you turn on CDN on the storage account to scale this solution. You will need to provision your own compute resources in the same region as your storage account for this migration.
+    The AMS static migration tool allows you to transform your existing assets to stream directly from the storage location of you choosing using HLS/DASH. We recommend that you turn on CDN on the storage account to scale this solution. You will need to provision your own compute resources in the same region as your storage account for this migration.
 
-    However, all existing URLs must be updated after this mirgration. Azure Media Pleayer no longer supports this new format, so a player update will be required if you are using Azure Media Player.
+    However, all existing URLs must be updated after this migration. Azure Media Player no longer supports this new format, so a player update will be required if you are using Azure Media Player.
 
     The AMS migration tool is available [here](https://github.com/Azure/azure-media-migration).
 
@@ -104,7 +104,7 @@ This is a result of Microsoft focusing on strategic areas of secular growth and 
 
 On the Azure portal you will find your AMS account’s expiration date and time. Within approximately one of hour of the expiration time all running live events and streaming endpoints will be stopped. The AMS API allows all GET operations and will reject all PATCH, PUT or POST operations. The only exception is that we allow customers to update the CDN settings on streaming endpoints. Enabling CDN for streaming endpoints migrated to Bitmovin allows customers to preserve existing streaming URLs until June 30th, 2025.  
 
-Approximately 90 days after the expiration expiration time, your AMS account will be deleted. Remember to copy out any AMS data prior to that time. Bitmovin, MediaKind and other migration tools work best when asset information can still be queried. The AMS migration tool can work after account deletion, but you will lose all information about existing URLs.   
+Approximately 90 days after the expiration time, your AMS account will be deleted. Remember to copy out any AMS data prior to that time. Bitmovin, MediaKind and other migration tools work best when asset information can still be queried. The AMS migration tool can work after account deletion, but you will lose all information about existing URLs.   
 
 ### Is Azure Video Indexer being retired?
 
@@ -124,11 +124,11 @@ Yes, Azure Media Player will also be retired on 30 June 2024. All partners liste
 
 ### Will partner solutions be available in the same Azure regions as Media Services?
 
-Partner solutions will be available in a more limited set of regions than Media Services. The featured partner MediaKind, plans to provide coverage across North America, Europe, Asia Pacific, South America, Australia, and India. Ravnur's provides a solution that can be deployed to any Azure region.
+Partner solutions will be available in a more limited set of regions than Media Services. Refer to each partner's documentation pages for covered regions.
 
 ### Will partner solutions be available in Azure Government regions?
 
-Partner solutions will be available in Azure Government regions. [Ravnur](https://aka.ms/ams-ravnur) is one partner that specializes in serving government customers and can support customers in any Azure Government region.
+[Ravnur](https://aka.ms/ams-ravnur) is one partner that specializes in serving government customers and can support customers in any Azure Government region.
 
 ### Is creation of new Media Services accounts being blocked in all Azure regions?
 
