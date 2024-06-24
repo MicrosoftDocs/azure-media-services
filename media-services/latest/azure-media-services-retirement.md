@@ -77,10 +77,10 @@ This table can help you determine the most suitable option.
 | Option | Availability | Preserves existing URLs | Data move required | Streaming format | AES/DRM support | Player update required |
 | --- | -------- | ----------------------- | ------------------ | ---------------- | --------------- | ---------------------- |
 | Bitmovin<br/>Automatic Migration | All regions | Yes<br/>until June 30, 2024 | Not until<br/>June 30, 2024 | All supported by AMS | AES,<br/>DRM not supported | No |  
-| Bitmovin<br/>Streams, VOD | 20+ regions | No | Yes | DASH/HLS | AES,<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes | 
-| MediaKind | 8 regions | URL structure maitained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES,<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes |
-| Ravnur | Everywhere<br/>Runs on your subscription | URL structure maitained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES,<br/>Widevide<br/>FairPlay<br/>PlayReady | Yes |
-| AMS Static Migration | Everywhere | No | Yes | DASH/HLS | AES<br/>(You must run your own delivery service.) | Yes |
+| Bitmovin<br/>Streams, VOD | 20+ regions | No | Yes | DASH/HLS | AES,<br/>Widevine<br/>FairPlay<br/>PlayReady | Yes | 
+| MediaKind | 8 regions | URL structure maintained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES,<br/>Widevine<br/>FairPlay<br/>PlayReady | Yes |
+| Ravnur | Everywhere<br/>Runs on your subscription | URL structure maintained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES,<br/>Widevine<br/>FairPlay<br/>PlayReady | Yes |
+| AMS Static Migration | Everywhere | No | Yes | DASH/HLS | AES<br/>(You must run your own key delivery service) | Yes |
 
 ## Video and audio analysis migration
 
