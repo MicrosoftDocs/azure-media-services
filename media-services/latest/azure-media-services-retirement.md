@@ -37,7 +37,7 @@ MediaKind and Bitmovin are available to our public cloud customers. Ravnur speci
 
 ### China partner solutions
 
-Use the links following links to learn more about our partner solutions in Azure China regions. 
+Use the links following links to learn more about our partner solutions in Azure China regions. Both products are available for other regions via the Azure Marketplace.
 
 - [Arcvideo 当虹科技](https://aka.ms/ams-arcvideo)
 - [bopoda 博普达](https://aka.ms/ams-bopoda)
@@ -76,7 +76,7 @@ This table can help you determine the most suitable option.
 
 | Option | Availability | Preserves existing URLs | Data move required | Streaming format | AES/DRM support | Player update required |
 | --- | -------- | ----------------------- | ------------------ | ---------------- | --------------- | ---------------------- |
-| Bitmovin<br/>Automatic Migration | All regions | Yes<br/>until June 30, 2024 | Not until<br/>June 30, 2024 | All supported by AMS | AES,<br/>DRM not supported | No |  
+| Bitmovin<br/>Automatic Migration | All regions | Yes<br/>until June 30, 2025 | Not until<br/>June 30, 2025 | All supported by AMS | AES,<br/>DRM not supported | No |  
 | Bitmovin<br/>Streams, VOD | 20+ regions | No | Yes | DASH/HLS | AES,<br/>Widevine<br/>FairPlay<br/>PlayReady | Yes | 
 | MediaKind | 8 regions | URL structure maintained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES,<br/>Widevine<br/>FairPlay<br/>PlayReady | Yes |
 | Ravnur | Everywhere<br/>Runs on your subscription | URL structure maintained,<br/>host name must be updated | No | DASH/HLS<br/>Filter support | AES,<br/>Widevine<br/>FairPlay<br/>PlayReady | Yes |
