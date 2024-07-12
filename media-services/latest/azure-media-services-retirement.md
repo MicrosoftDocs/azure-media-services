@@ -37,7 +37,7 @@ MediaKind and Bitmovin are available to our public cloud customers. Ravnur speci
 
 ### China partner solutions
 
-Use the links following links to learn more about our partner solutions in Azure China regions. Both products are available for other regions via the Azure Marketplace as well.
+Use the links following links to learn more about our partner solutions in Azure China regions. Both products are available for other regions via the Azure Marketplace.
 
 - [Arcvideo 当虹科技](https://aka.ms/ams-arcvideo)
 - [bopoda 博普达](https://aka.ms/ams-bopoda)
