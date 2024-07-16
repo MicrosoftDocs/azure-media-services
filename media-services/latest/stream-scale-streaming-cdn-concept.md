@@ -4,7 +4,7 @@ description: Learn about streaming content with CDN integration, as well as pref
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 07/16/2024
 ms.author: inhenkel
 ---
 
@@ -98,7 +98,7 @@ CDN support for the `Origin-Assist CDN-Prefetch` headers (for both live and vide
 
 To see part of the header exchange in action, you can try the following steps:
 
-1. Use Postman or cURL to issue a request to the Media Services origin for an audio or video segment or fragment. Make sure to add the header `CDN-Origin-Assist-Prefetch-Enabled: 1` in the request.
+1. Use cURL to issue a request to the Media Services origin for an audio or video segment or fragment. Make sure to add the header `CDN-Origin-Assist-Prefetch-Enabled: 1` in the request.
 2. In the response, you should see the header `CDN-Origin-Assist-Prefetch-Path` with a relative path as its value.
 
 ### Supported streaming protocols
