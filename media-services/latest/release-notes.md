@@ -237,7 +237,7 @@ After **September 14, 2023**, any applications you have developed using the Azur
 
 **Action Required**
 
-The Azure Media Redactor (RESTv2) and the Face Detector preset will be retired and are not being replaced at this time. If you would like to instead detect people in a video, we recommend you update your applications to use the Video Indexer APIs for [detecting observed people](/azure/azure-video-indexer/observed-people-tracing) and [matching observed people](/azure/azure-video-indexer/matched-person) to faces and [submit a request to get access to the Limited Access program](https://aka.ms/facerecognition) for these features.
+The Azure Media Redactor (RESTv2) and the Face Detector preset will be retired and are not being replaced at this time. If you would like to instead detect people in a video, we recommend you update your applications to use the [Azure AI Video Indexer APIs](/azure/azure-videp-indexer).
 
 If you are currently using the Video Analyzer preset, we recommend updating your applications to use the Video Indexer APIs for video analysis, which offers an extended range of capabilities.
 
@@ -714,9 +714,9 @@ The *Token Replay Prevention* feature released in limited regions back in Septem
 
 Added support for the following new recommended partner encoders for RTMP live streaming:
 
-- [Cambria Live 4.3](https://www.capellasystems.net/products/cambria-live/)
-- [GoPro Hero7/8 and Max action cameras](https://gopro.com/help/articles/block/getting-started-with-live-streaming)
-- [Restream.io](https://restream.io/)
+- Cambria Live 4.3
+- GoPro Hero7/8 and Max action cameras
+- Restream.io
 
 ### File Encoding enhancements
 
