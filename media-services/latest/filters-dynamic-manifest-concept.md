@@ -4,7 +4,7 @@ description: Learn how to create filters using Dynamic Packager to filter and se
 author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 09/19/2024
 ms.author: inhenkel
 ---
 
@@ -33,10 +33,7 @@ You specify a list of filter track property conditions based on which tracks of 
 
 ### Monitor the bitrate of a video stream
 
-You can use the [Azure Media Player demo page](https://aka.ms/azuremediaplayer) to monitor the bitrate of a video stream. The demo page displays diagnostics info on the **Diagnostics** tab:
-
-<!--![Azure Media Player diagnostics][amp_diagnostics]-->
-:::image type="content" source="media/diagrams/amp_diagnostics.png" alt-text="azure media player diagnostics":::
+You can use the [Azure Media Player demo page](https://aka.ms/azuremediaplayer) to monitor the bitrate of a video stream. The demo page displays diagnostics info on the **Diagnostics** tab.
 
 ### Examples: URLs with filters in query string
 
