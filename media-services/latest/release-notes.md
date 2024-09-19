@@ -237,7 +237,7 @@ After **September 14, 2023**, any applications you have developed using the Azur
 
 **Action Required**
 
-The Azure Media Redactor (RESTv2) and the Face Detector preset will be retired and are not being replaced at this time. If you would like to instead detect people in a video, we recommend you update your applications to use the Video Indexer APIs for [detecting observed people](/azure/azure-video-indexer/observed-people-tracing) and [matching observed people](/azure/azure-video-indexer/matched-person) to faces and [submit a request to get access to the Limited Access program](https://aka.ms/facerecognition) for these features.
+The Azure Media Redactor (RESTv2) and the Face Detector preset will be retired and are not being replaced at this time. If you would like to instead detect people in a video, we recommend you update your applications to use the [Azure AI Video Indexer APIs](/azure/azure-video-indexer).
 
 If you are currently using the Video Analyzer preset, we recommend updating your applications to use the Video Indexer APIs for video analysis, which offers an extended range of capabilities.
 
@@ -376,8 +376,6 @@ The new basic pass-through live event SKU allows customers to create live events
 ### Improved scale management and monitoring for a Streaming Endpoint in the portal
 
 The streaming endpoint portal page now provides an easy way for you to manage your egress capacity and estimate your audience  reach with and without a CDN configured.  Adjust the delivery bitrate and expected CDN cache hit ratio to get quick estimations of your audience size and help you determine if you need to scale up to more Premium streaming endpoints.
-
-   [ ![Scale and monitor streaming endpoints in the portal](./media/release-notes/streaming-endpoint-monitor-inline.png) ](./media/release-notes/streaming-endpoint-monitor.png#lightbox)
 
 ### Streaming Endpoint portal page now shows CPU, egress, and latency metrics
 
@@ -716,9 +714,9 @@ The *Token Replay Prevention* feature released in limited regions back in Septem
 
 Added support for the following new recommended partner encoders for RTMP live streaming:
 
-- [Cambria Live 4.3](https://www.capellasystems.net/products/cambria-live/)
-- [GoPro Hero7/8 and Max action cameras](https://gopro.com/help/articles/block/getting-started-with-live-streaming)
-- [Restream.io](https://restream.io/)
+- Cambria Live 4.3
+- GoPro Hero7/8 and Max action cameras
+- Restream.io
 
 ### File Encoding enhancements
 
@@ -951,7 +949,7 @@ CMAF and 'cbcs' encryption support for Apple HLS (iOS 11+) and MPEG-DASH players
 
 ### Video Indexer
 
-Video Indexer GA release was announced in August. For new information about currently supported features, see [What is Video Indexer](/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-indexer-overview).
+Video Indexer GA release was announced in August.
 
 ### Plans for changes
 
