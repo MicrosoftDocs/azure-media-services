@@ -1,9 +1,9 @@
 ---
-author: johndeu
+author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
 ms.date: 10/09/21
-ms.author: johndeu
+ms.author: inhenkel
 ---
 
 > [!WARNING]

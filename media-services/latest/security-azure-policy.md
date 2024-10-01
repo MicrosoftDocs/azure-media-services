@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
-ms.author: johndeu
+ms.author: inhenkel
 ---
 
 # Azure Policy for Media Services

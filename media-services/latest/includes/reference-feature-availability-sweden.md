@@ -3,7 +3,7 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
 ms.date: 08/30/2022
-ms.author: johnde
+ms.author: inhenkel
 ---
 
 <!--Feature availability in region-->

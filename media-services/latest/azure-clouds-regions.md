@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: reference
 ms.date: 01/09/2023
-ms.author: johndeu
+ms.author: inhenkel
 ---
 
 # Azure Media Services v3 clouds and regions availability
