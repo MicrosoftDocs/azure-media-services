@@ -1,11 +1,11 @@
 ---
 title: include file
 description: include file
-author: Juliako
+author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
 ms.date: 05/01/2019
-ms.author: juliako
+ms.author: inhenkel
 ---
 
 ### Access the Media Services API

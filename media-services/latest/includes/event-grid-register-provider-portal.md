@@ -2,11 +2,11 @@
  title: include file
  description: include file
  services: event-grid
- author: spelluru
+ author: IngridAtMicrosoft
  ms.service: event-grid
  ms.topic: include
  ms.date: 04/16/2020
- ms.author: spelluru
+ ms.author: inhenkel
 ---
 
 ## Enable Event Grid resource provider

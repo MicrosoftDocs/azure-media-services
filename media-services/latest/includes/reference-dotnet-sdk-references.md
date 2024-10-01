@@ -1,5 +1,5 @@
 ---
-author: inhenkel
+author: IngridAtMicrosoft
 ms.service: media-services 
 ms.topic: include
 ms.date: 08/20/2021
