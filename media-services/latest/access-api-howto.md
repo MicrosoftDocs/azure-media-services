@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: how-to
 ms.date: 11/27/2023
-ms.author: akucer
+ms.author: inhenkel
 ---
 # Get credentials to access Media Services API
 
