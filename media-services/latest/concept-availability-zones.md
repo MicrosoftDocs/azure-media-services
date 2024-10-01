@@ -1,7 +1,7 @@
 ---
 title: Availability Zones
 description: Media Services supports Availability Zones providing fault-isolation
-author: inhenkel
+author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
 ms.date: 07/17/2023
