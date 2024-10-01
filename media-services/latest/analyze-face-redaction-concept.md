@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
-ms.author: johndeu
+ms.author: inhenkel
 ---
 # Find and redact (blur) faces with the Face Detector preset
 

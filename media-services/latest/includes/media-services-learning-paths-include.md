@@ -1,9 +1,9 @@
 ---
-author: Juliako
+author: IngridAtMicrosoft
 ms.service: media-services
 ms.topic: include
 ms.date: 03/20/2019
-ms.author: juliako
+ms.author: inhenkel
 ---
 
 ### Media Services v3 (latest)
