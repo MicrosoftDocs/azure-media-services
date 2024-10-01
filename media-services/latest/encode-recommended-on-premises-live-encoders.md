@@ -49,7 +49,7 @@ When streaming via RTMPS, check firewall and/or proxy settings to confirm that o
 - [Cambria Live 4.3](https://www.capellasystems.net/products/cambria-live/)
 - Elemental Live (version 2.14.15 and higher)
 - [Ffmpeg](https://www.ffmpeg.org)
-- [GoPro](https://gopro.com/help/articles/block/getting-started-with-live-streaming) Hero 7 and Hero 8
+- [GoPro](https://gopro.com/) Hero 7 and Hero 8
 - Haivision KB
 - Haivision Makito X HEVC
 - [OBS Studio](https://obsproject.com/download)
