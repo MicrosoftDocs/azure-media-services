@@ -1,7 +1,7 @@
 ---
 title: Restrict access to DRM license and AES key delivery using IP allowlists
 description: Learn how to restrict access to DRM and AES Keys by using IP allowlists.
-author: johndeu
+author: inhenkel
 ms.service: media-services
 ms.topic: conceptual
 ms.date: 01/09/2023

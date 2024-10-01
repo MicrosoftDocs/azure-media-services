@@ -1,9 +1,9 @@
 ---
-author: johndeu
+author: inhenkel
 ms.service: media-services
 ms.topic: include
 ms.date: 08/17/2021
-ms.author: johndeu
+ms.author: inhenkel
 ---
 
 ## Azure Policy definitions for Private Links
