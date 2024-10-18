@@ -102,7 +102,7 @@ You should see a JSON response similar to the below:
             "resourceType": "Microsoft.Storage/storageAccounts"
           }
         ],
-        "id": "/subscriptions/35c2594a-23da-4fce-b59c-f6fb9513eeeb/resourceGroups/amsarmquickstartrg/providers/Microsoft.Media/mediaServices/{accountname}",
+        "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/amsarmquickstartrg/providers/Microsoft.Media/mediaServices/{accountname}",
         "resourceGroup": "amsarmquickstartrg",
         "resourceName": "{accountname}",
         "resourceType": "Microsoft.Media/mediaServices"

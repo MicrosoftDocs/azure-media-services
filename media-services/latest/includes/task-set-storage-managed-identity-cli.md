@@ -34,7 +34,7 @@ Example JSON response:
   "resourceGroup": "your-resource-group-name",
   "storageAccounts": [
     {
-      "id": "/subscriptions/2b461b25-f7b4-4a22-90cc-d640a14b5471/resourceGroups/your-resource-group-name/providers/Microsoft.Storage/storageAccounts/your-storage-account-name",
+      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/your-resource-group-name/providers/Microsoft.Storage/storageAccounts/your-storage-account-name",
       "resourceGroup": "your-resource-group-name",
       "type": "Primary"
     }

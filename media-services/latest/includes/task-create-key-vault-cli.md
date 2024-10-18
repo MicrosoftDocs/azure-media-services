@@ -35,7 +35,7 @@ Example JSON response:
     "accessPolicies": [
       {
         "applicationId": null,
-        "objectId": "00000000-0000-0000-0000-000000000000",
+        "objectId": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
         "permissions": {
           "certificates": [
             "get",
