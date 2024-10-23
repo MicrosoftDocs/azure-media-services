@@ -2,7 +2,7 @@
 title: Automatic migration to Bitmovin
 description: One of our Azure partners, Bitmovin, allows you to stream AMS content without changing the streaming URLs until June 30, 2025. To automatically migration to Bitmovin, subscribe to the Bitmovin product from the Azure Marketplace and then follow the instructions provided in the Bitmovin portal.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 06/18/2024
 ms.author: inhenkel

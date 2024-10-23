@@ -2,7 +2,7 @@
 title: Media Services Video Analyzer retirement and migration
 description: This article Media Services Video Analyzer retirement and migration.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: overview
 ms.date: 04/19/2023
 ms.author: inhenkel

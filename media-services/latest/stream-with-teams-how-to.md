@@ -2,7 +2,7 @@
 title: Stream a Microsoft Teams meeting
 description: This article describes how to set up Microsoft Teams with Media Services to stream a Teams meeting to an external audience.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

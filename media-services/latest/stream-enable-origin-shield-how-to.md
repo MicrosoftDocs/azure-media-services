@@ -2,7 +2,7 @@
 title: How to enable origin shield
 description: It is best to use a Content Delivery Network (CDN) with a shielded origin to ensure that traffic for your media content is delivered efficiently. This article walks you through the steps in the Azure portal.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

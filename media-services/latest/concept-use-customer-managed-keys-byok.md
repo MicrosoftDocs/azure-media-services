@@ -3,7 +3,7 @@ title: Bring your own key (customer-managed keys)
 description: You can use a customer-managed key (that is, bring your own key) with Media Services.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ---

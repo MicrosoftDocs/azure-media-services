@@ -3,7 +3,7 @@ title: Azure Media Player Full Setup
 description: Learn how to set up the Azure Media Player.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 04/05/2021
 ms.custom: devx-track-js

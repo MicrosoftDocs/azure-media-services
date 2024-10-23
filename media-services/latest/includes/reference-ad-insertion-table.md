@@ -1,7 +1,7 @@
 ---
 title: Closed captioning and ad insertion
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 03/22/2022
 ms.author: inhenkel

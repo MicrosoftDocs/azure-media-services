@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.date: 01/09/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ---
 
 # Quickstart: Use portal to encrypt content

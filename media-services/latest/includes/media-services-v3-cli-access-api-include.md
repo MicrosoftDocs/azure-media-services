@@ -2,7 +2,7 @@
 title: include file
 description: include file
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: include
 ms.date: 05/01/2019
 ms.author: inhenkel
@@ -39,7 +39,7 @@ This command produces a response similar to this:
   "ArmEndpoint": "https://management.azure.com/",
   "Region": "West US 2",
   "ResourceGroup": "amsResourceGroup",
-  "SubscriptionId": "00000000-0000-0000-0000-000000000000"
+  "SubscriptionId": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e"
 }
 ```
 

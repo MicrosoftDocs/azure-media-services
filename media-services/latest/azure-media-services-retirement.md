@@ -2,7 +2,7 @@
 title: Azure Media Services retirement guide
 description: Azure Media Services retirement announcement.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 06/18/2024
 ms.author: inhenkel

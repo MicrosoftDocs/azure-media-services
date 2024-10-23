@@ -3,7 +3,7 @@ title: Azure Media Player URL Rewriter
 description: Azure Media Player will rewrite a given URL from Azure Media Services to provide streams for SMOOTH, DASH, HLS v3, and HLS v4.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: overview
 ms.date: 04/05/2021
 ms.custom:

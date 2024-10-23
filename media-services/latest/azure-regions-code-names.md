@@ -2,7 +2,7 @@
 title: Clouds and regions for Azure Media Services v3
 description: This article talks about the URLs used for endpoints and code for regions.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: reference
 ms.date: 01/09/2023
 ms.author: inhenkel
@@ -25,7 +25,7 @@ For example, for the Azure region West US 2 (displayed below), you will use "wes
 ```json
    {
       "displayName": "West US 2",
-      "id": "/subscriptions/00000000-23da-4fce-b59c-f6fb9513eeeb/locations/westus2",
+      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/locations/westus2",
       "latitude": "47.233",
       "longitude": "-119.852",
       "name": "westus2",

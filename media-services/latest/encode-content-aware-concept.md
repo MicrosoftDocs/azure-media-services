@@ -2,7 +2,7 @@
 title: Content-aware encoding preset
 description: This article discusses content-aware encoding in Microsoft Azure Media Services v3.
 author: jiayali-ms
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 02/02/2023
 ms.author: inhenkel

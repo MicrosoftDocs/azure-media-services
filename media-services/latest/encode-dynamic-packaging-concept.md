@@ -2,7 +2,7 @@
 title: Dynamic packaging in Azure Media Services v3
 description: This article gives an overview of dynamic packaging in Azure Media Services.
 author: myoungerman
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

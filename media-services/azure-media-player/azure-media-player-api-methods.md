@@ -3,7 +3,7 @@ title: Azure Media Player API Methods
 description: The Azure Media Player API allows you to interact with the video through JavaScript, whether the browser is playing the video through HTML5 video, Flash, Silverlight, or any other supported playback technologies. 
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: reference
 ms.date: 04/05/2021
 ---

@@ -3,7 +3,7 @@ title: Azure Media Player Accessibility
 description: Learn more about the Azure Media Player's accessibility settings.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: overview
 ms.date: 04/05/2021
 ---

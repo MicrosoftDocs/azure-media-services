@@ -2,7 +2,7 @@
 title: Timed metadata with Azure Media Services
 description: Timed metadata is custom data that is inserted into a live stream. Both the data and its insertion timestamp are preserved in the media stream itself. This is so that clients playing the video stream can get the same custom metadata at the exact same time in relation to the video stream. With timed metadata you can add interactivity elements to the live stream such as a poll, add information related to the video content such as speakers, product links, sports player stats, etc. and add metadata about the video such as GPS location, time, etc.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel

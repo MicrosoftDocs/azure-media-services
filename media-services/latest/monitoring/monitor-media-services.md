@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 manager: femilia
 ms.topic: how-to
-ms.service: media-services
+ms.service: azure-media-services
 ms.date: 02/09/2023
 ---
 
@@ -147,7 +147,7 @@ For detailed description of the top-level diagnostic logs schema, see [Supported
             "audience": "urn:test"
         },
         "claims": {
-            "urn:microsoft:azure:mediaservices:contentkeyidentifier": "3321e646-78d0-4896-84ec-c7b98eddfca5",
+            "urn:microsoft:azure:mediaservices:contentkeyidentifier": "aaaaaaaa-0b0b-1c1c-2d2d-333333333333",
             "iss": "http://testacs",
             "aud": "urn:test",
             "exp": "1547233138"
@@ -158,7 +158,7 @@ For detailed description of the top-level diagnostic logs schema, see [Supported
     "properties": {
         "requestId": "b0243468-d8e5-4edf-a48b-d408e1661050",
         "keyType": "Clear",
-        "keyId": "3321e646-78d0-4896-84ec-c7b98eddfca5",
+        "keyId": "aaaaaaaa-0b0b-1c1c-2d2d-333333333333",
         "policyName": "56a70229-82d0-4174-82bc-e9d3b14e5dbf",
         "tokenType": "JWT",
         "statusMessage": "OK"

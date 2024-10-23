@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.date: 01/09/2023
 ms.topic: how-to
-ms.service: media-services
+ms.service: azure-media-services
 ---
 
 # How to verify your on-premises live streaming encoder

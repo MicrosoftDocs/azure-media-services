@@ -2,7 +2,7 @@
 title: Encoding video and audio with Media Services
 description: This article explains about encoding video and audio with Azure Media Services.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 02/02/2023
 ms.author: inhenkel

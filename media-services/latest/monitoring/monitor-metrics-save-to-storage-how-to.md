@@ -2,7 +2,7 @@
 title: Route Media Services Azure Monitor metrics to storage
 description: This article shows you how to route monitoring data to the storage account and then view the data.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 07/27/2022
 ms.author: inhenkel

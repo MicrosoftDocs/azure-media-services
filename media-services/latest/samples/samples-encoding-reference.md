@@ -2,7 +2,7 @@
 title: Azure Media Services Encoding code samples
 description: This article is a listing of code samples for Encoding.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 03/06/2023
 ms.author: inhenkel

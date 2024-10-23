@@ -2,7 +2,7 @@
 title: How to edit a text track in the Azure portal
 description: Your live event is over and you have used live transcription to create a VTT or TTML file for use with captions and transcripts for the captured video.  However, the live transcription will likely need some editing.  You may later want to deliver the text in multiple languages and allow your viewers to choose which to use in the player.  This article covers how to edit the source VTT file in the Azure portal.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: overview
 ms.date: 02/14/2023
 ms.author: inhenkel

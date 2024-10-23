@@ -2,7 +2,7 @@
 title: Monitor streaming endpoints
 description: There are monitoring metrics available for Media Services streaming endpoints. Monitoring metrics assist you in keeping track of the health of your streaming endpoints so you can act when your streaming endpoints aren’t performing as expected. This article discusses metrics for streaming endpoints and the reasons to use them.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 07/27/2022
 ms.author: inhenkel

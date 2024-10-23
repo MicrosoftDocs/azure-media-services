@@ -2,7 +2,7 @@
 title: Transforms and Jobs in Media Services
 description: Transforms describe the rules for processing your videos in Azure Media Services.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 02/02/2023
 ms.author: inhenkel
