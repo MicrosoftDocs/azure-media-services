@@ -26,10 +26,10 @@ Example JSON response:
     "keyVaultProperties": null,
     "type": "SystemKey"
   },
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/your-resource-group-name/providers/Microsoft.Media/mediaservices/your-media-services-account",
+  "id": "/subscriptions/ffffffff-eeee-dddd-cccc-bbbbbbbbbbb0/resourceGroups/your-resource-group-name/providers/Microsoft.Media/mediaservices/your-media-services-account",
   "identity": {
-    "principalId": "00000000-0000-0000-0000-000000000000",
-    "tenantId": "00000000-0000-0000-0000-000000000000",
+    "principalId": "ffffffff-eeee-dddd-cccc-bbbbbbbbbbb0",
+    "tenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
     "type": "SystemAssigned"  //Type will show "Managed Identity" if you have assigned a role to the Media Services account.
   },
   "location": "your-region",
@@ -38,7 +38,7 @@ Example JSON response:
   "resourceGroup": "your-resource-group-name",
   "storageAccounts": [
     {
-      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/your-resource-group-name/providers/Microsoft.Storage/storageAccounts/your-storage-account-name",
+      "id": "/subscriptions/ffffffff-eeee-dddd-cccc-bbbbbbbbbbb0/resourceGroups/your-resource-group-name/providers/Microsoft.Storage/storageAccounts/your-storage-account-name",
       "resourceGroup": "your-resource-group-name",
       "type": "Primary"
     }
