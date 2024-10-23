@@ -3,7 +3,7 @@ title: Azure Media Player error codes
 description: An error code reference for Azure Media Player.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: error-reference
 ms.date: 04/05/2021
 ---

@@ -2,7 +2,7 @@
 title: Live Event low latency settings in Azure Media Services
 description: Media Services supports Apple's Low Latency HLS (LL-HLS) specification.  This article describes Media Services support for LL-HLS and provides you with implementation guidance.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: reference
 ms.date: 6/29/2023
 ms.author: inhenkel

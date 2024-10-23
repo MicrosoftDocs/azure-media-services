@@ -2,7 +2,7 @@
 title: How to enable CDN optimizations
 description: To get the most of a streaming endpoint CDN, you may want to change the way it behaves based on certain conditions. This article covers how to use the Azure portal and the CDN Rules engine to adjust the behavior of a CDN profile.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

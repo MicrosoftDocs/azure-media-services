@@ -3,7 +3,7 @@ title: Azure Media Player Options
 description: The Azure Media Player embed code is simply an HTML5 video tag, so for many of the options you can use the standard tag attributes to set the options.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: reference
 ms.date: 04/05/2021
 ms.custom:

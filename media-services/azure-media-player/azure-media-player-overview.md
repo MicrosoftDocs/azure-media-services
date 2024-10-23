@@ -3,7 +3,7 @@ title: Azure Media Player Overview
 description: Learn more about the Azure Media Player.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: overview
 ms.date: 04/05/2021
 ---

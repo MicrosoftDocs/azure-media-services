@@ -2,7 +2,7 @@
 title: Retired media processors
 description: Over time, we enhance Media Service components and retire legacy components. This article helps you migrate your application from a legacy component to a current component.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: reference
 ms.date: 03/01/2023
 ms.author: inhenkel

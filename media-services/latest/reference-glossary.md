@@ -4,7 +4,7 @@ description: Use this article to understand the concepts used by Media Services.
 services: media-services
 author: IngridAtMicrosoft
 manager: femila
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: reference
 ms.date: 03/23/2022
 ms.author: inhenkel

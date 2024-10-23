@@ -2,7 +2,7 @@
 title: Media Services live streaming best practices guide
 description: Customers often ask how they can reduce the latency of their live stream. This article describes best practices for achieving low-latency live streams with in addition to live event encoding. Before you continue reading this article, read the Low Latency HLS (LL-HLS) article to understand low latency with live event encoding. Then, come back to this guide to understand what else may affect streaming latency.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 02/21/2023
 ms.author: inhenkel

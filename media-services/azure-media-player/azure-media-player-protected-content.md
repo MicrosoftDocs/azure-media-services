@@ -3,7 +3,7 @@ title: Azure Media Player Protected Content
 description: Azure Media Player currently supports AES-128 bit envelope encrypted content and common encrypted content.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: overview
 ms.date: 04/05/2021
 ms.custom:

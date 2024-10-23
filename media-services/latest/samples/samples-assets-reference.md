@@ -2,7 +2,7 @@
 title: Azure Media Services Assets code samples
 description: This article is a listing of code samples for Assets.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 02/24/2023
 ms.author: inhenkel

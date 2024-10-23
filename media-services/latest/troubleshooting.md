@@ -2,7 +2,7 @@
 title: Troubleshoot Media Services
 description: Find the causes and solutions for issues with Media Services.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: troubleshooting
 ms.date: 01/09/2023
 ms.author: inhenkel

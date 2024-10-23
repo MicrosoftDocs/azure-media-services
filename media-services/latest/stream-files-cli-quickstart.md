@@ -3,7 +3,7 @@ title: Stream video files with Azure Media Services CLI
 description: Follow the steps of this tutorial to use Azure CLI to create a new Azure Media Services account, encode a file, and stream it to Azure Media Player.
 author: IngridAtMicrosoft
 keywords: azure media services, stream
-ms.service: media-services
+ms.service: azure-media-services
 ms.custom: devx-track-azurecli
 ms.topic: tutorial
 ms.date: 01/09/2023

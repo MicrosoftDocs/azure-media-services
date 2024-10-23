@@ -2,7 +2,7 @@
 title: Encoding speed and performance
 description: Encoding complexities are encoder settings optimized for different video attributes. There are three complexities that the Standard Encoder supports Speed Optimized - The encoder uses settings that are optimized for faster encoding. Quality is sacrificed to decrease encoding time. Balanced Optimized - The encoder uses settings that achieve a balance between speed and quality and Quality Optimized -The encoder uses settings that are optimized to produce higher quality output at the expense of slower overall encoding time.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

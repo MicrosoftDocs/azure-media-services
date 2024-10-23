@@ -2,7 +2,7 @@
 title: Audit Media Services control plane logs
 description: This article shows you how to audit Media Services control plane logs with Log Analytics Worskpaces.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 02/14/2023
 ms.author: inhenkel

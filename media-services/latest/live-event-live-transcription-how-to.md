@@ -2,7 +2,7 @@
 title: Live transcription
 description: When you publish a live stream using MPEG-DASH or HLS/CMAF, transcribed text in IMSC1.1 compatible TTML is created along with video and audio. It is packaged into MPEG-4 Part 30 (ISO/IEC 14496-30) fragments. If you use HLS/TS, text is delivered as chunked VTT. This article describes how to enable live transcription when streaming a Live Event with Azure Media Services.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel

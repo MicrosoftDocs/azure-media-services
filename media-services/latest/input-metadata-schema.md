@@ -2,7 +2,7 @@
 title: Azure Media Services v3 input metadata schema
 description: This article gives an overview of Azure Media Services v3 input metadata schema.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: reference
 ms.date: 01/09/2023
 ms.author: inhenkel

@@ -9,7 +9,7 @@ metadata:
   title: Azure Media Services documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Azure Media Services enable you to build media applications using low-latency live streaming, batch encoding, content-protection/DRM, and deliver streaming content to millions of viewers on any device.
   services: media-services
-  ms.service: media-services #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: azure-media-services
   ms.subservice:
   ms.topic: hub-page # Required
   ms.collection: collection

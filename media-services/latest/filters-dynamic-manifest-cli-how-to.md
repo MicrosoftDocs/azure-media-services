@@ -2,7 +2,7 @@
 title: Use CLI to create filters with Azure Media Services
 description: This article shows how to use CLI to create filters with Azure Media Services v3.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel

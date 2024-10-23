@@ -2,7 +2,7 @@
 title: Update Media Services v3 after rolling storage access keys | Microsoft Docs
 description: This article gives you guidance on how to update Media Services v3 after rolling storage access keys.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel

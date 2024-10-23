@@ -2,7 +2,7 @@
 title: Media Services account ARM template
 description: This article shows you how to use an ARM template to create a media services account.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.custom: devx-track-arm-template
 ms.topic: quickstart
 ms.date: 01/09/2023

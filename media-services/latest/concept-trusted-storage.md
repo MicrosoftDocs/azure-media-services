@@ -2,7 +2,7 @@
 title: Trusted storage for Media Services
 description: Managed Identities authentication allows Media Services to access the storage account that has been configured with a firewall or a VNet restriction through trusted storage access.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

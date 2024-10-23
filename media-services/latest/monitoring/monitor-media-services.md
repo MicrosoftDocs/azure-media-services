@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 manager: femilia
 ms.topic: how-to
-ms.service: media-services
+ms.service: azure-media-services
 ms.date: 02/09/2023
 ---
 

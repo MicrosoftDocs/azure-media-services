@@ -3,7 +3,7 @@ title: Stream live with Media Services by using Node.js and TypeScript
 titleSuffix: Azure Media Services
 description: Learn how to stream live events by using Node.js, TypeScript, and OBS Studio.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.devlang: javascript
 ms.topic: tutorial
 ms.date: 07/17/2023

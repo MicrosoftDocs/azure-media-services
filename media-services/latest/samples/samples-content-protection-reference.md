@@ -2,7 +2,7 @@
 title: Azure Media Services Content Protection code samples
 description: This article is a listing of code samples for Content Protection.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 03/07/2023
 ms.author: inhenkel

@@ -2,7 +2,7 @@
 title: Autoscale Media Services premium streaming endpoints
 description: This article discusses how you can autoscale the premium streaming endpoints in your Media Services account based on any available metrics for the streaming endpoint, or metrics for any related entities.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel

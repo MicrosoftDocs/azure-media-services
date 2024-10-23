@@ -2,7 +2,7 @@
 title: Streaming Policies in Azure Media Services
 description: This article gives an explanation of what Streaming Policies are, and how they are used by Azure Media Services.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

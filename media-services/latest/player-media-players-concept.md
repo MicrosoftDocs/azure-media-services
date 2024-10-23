@@ -3,7 +3,7 @@ title: Media players for Media Services overview
 description: Which media players can I use with Azure Media Services? Azure Media Player, Shaka, and Video.js so far.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ---

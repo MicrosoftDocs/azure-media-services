@@ -2,7 +2,7 @@
 title: Media Services Face Detector preset retirement and migration
 description: This article discusses Media Services Face Detector retirement and migration.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

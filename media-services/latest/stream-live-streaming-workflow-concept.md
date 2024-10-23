@@ -2,7 +2,7 @@
 title: Media Services live streaming workflow
 description: To understand the live streaming workflow in Media Services v3, you have to first review and understand the following concepts- Streaming endpoints, live events and live outputs, and streaming locators.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 02/02/2023
 ms.author: inhenkel

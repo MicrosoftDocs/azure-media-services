@@ -2,7 +2,7 @@
 title: Storage side encryption for Media Services storage accounts
 description: To protect your assets at rest, the assets should be encrypted by the storage side encryption.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

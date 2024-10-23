@@ -2,7 +2,7 @@
 title: Find and redact faces in Azure Media Services v3 API | Microsoft Docs
 description: Azure Media Services v3 provides a face detection and redaction (blur) preset that enables you to submit a video file, detect faces, and optionally apply redaction (blurring) to them in a single combined pass, or through a two-stage operation allowing for editing. This article demonstrates how to find and redact faces with the Face Detector preset in the v3 API.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

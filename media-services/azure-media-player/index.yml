@@ -6,7 +6,7 @@ summary: Learn more about using the Azure Media Player
 metadata:
   title: Azure Media Player landing page
   description: Learn more about using the Azure Media Player on your web pages.
-  ms.service: media-services
+  ms.service: azure-media-services
   ms.topic: landing-page
   author: IngridAtMicrosoft
   ms.author: inhenkel

@@ -2,7 +2,7 @@
 title: Create a Media Service custom transform
 description: This article shows you how to create a Media Services custom transform.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel

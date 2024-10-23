@@ -2,7 +2,7 @@
 title: include file
 description: include file
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: include
 ms.date: 05/01/2019
 ms.author: inhenkel

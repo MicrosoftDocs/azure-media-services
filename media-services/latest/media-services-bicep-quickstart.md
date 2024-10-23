@@ -2,7 +2,7 @@
 title: Media Services account Bicep
 description: This article shows you how to use Bicep to create a media services account.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.custom: devx-track-bicep
 ms.topic: quickstart
 ms.date: 01/09/2023
