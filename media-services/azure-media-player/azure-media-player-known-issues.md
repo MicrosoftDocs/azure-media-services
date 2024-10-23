@@ -3,7 +3,7 @@ title: Azure Media Player Known Issues
 description: The current release has the following known issues.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: reference
 ms.date: 04/05/2021
 ---

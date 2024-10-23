@@ -2,7 +2,7 @@
 title: Live event states and billing in Azure Media Services
 description: This topic gives an overview of Azure Media Services live event states and billing.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

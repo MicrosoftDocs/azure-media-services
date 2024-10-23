@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 
 
 
-ms.service: media-services
+ms.service: azure-media-services
 
 
 ms.topic: include

@@ -2,7 +2,7 @@
 title: Connect to Azure Media Services v3 API - .NET
 description: This article demonstrates how to connect to Media Services v3 API with .NET.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel

@@ -2,7 +2,7 @@
 title: Create an Azure Monitor dashboard and alerts
 description: Once you have created charts for account, live event, or streaming endpoint metrics, you can pin them to a dashboard. You can create dashboards for multiple Media Services accounts under one subscription. Metrics charts are provided by Azure Monitor. You can create alerts to let you know when a metric has reached or exceeded a threshold. For example, you can create an alert that lets you know when you are getting close to your asset quota, or when you have a spike in media requests. This article shows you how to create dashboards and set alerts for Media Services resources.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 07/27/2022
 ms.author: inhenkel

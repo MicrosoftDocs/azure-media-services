@@ -2,7 +2,7 @@
 title: Overview of Live streaming
 description: This article gives an overview of live streaming using Azure Media Services v3.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

@@ -5,7 +5,7 @@ author: IngridAtMicrosoft
 ms.author: inhenkel
 ms.date: 01/09/2023
 ms.topic: conceptual
-ms.service: media-services
+ms.service: azure-media-services
 ---
 
 # Verified on-premises live streaming encoders

@@ -2,7 +2,7 @@
 title: Media Services asset tracks
 description: Media Services offers the Tracks API so you can deliver text tracks with complete sentences and proper punctuation right after a live event is over, enable accessibility player features for the viewer, allow viewers to select the text and audio tracks of their choice.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: overview
 ms.date: 02/09/2023
 ms.author: inhenkel

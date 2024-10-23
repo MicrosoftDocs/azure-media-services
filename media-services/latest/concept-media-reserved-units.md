@@ -2,7 +2,7 @@
 title: Media reserved units - Azure
 description: Media reserved units allow you to scale media process and determine the speed of your media processing tasks.
 author: jiayali-ms
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

@@ -2,7 +2,7 @@
 title: Using preset overrides to change transform settings on job submission
 description: This article how to use preset overrides to adjust transform settings on a per-job instance
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

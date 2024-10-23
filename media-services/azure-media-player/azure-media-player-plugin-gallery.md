@@ -3,7 +3,7 @@ title: Azure Media Player Plugin Gallery
 description: This article contains a list of plugins available for Azure Media Player.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: overview
 ms.date: 04/19/2023
 ---

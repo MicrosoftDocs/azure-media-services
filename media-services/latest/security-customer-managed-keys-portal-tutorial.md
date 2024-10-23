@@ -3,7 +3,7 @@ title: Use customer-managed keys or BYOK portal
 description: In this tutorial, use the Azure portal to enable customer-managed keys or bring your own key (BYOK) with an Azure Media Services storage account.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: tutorial
 ms.date: 07/17/2023
 ---

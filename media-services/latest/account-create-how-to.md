@@ -2,7 +2,7 @@
 title: Create an Azure Media Services account
 description: This tutorial walks you through the steps of creating an Azure Media Services account.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel

@@ -2,7 +2,7 @@
 title: Stream content with CDN integration
 description: Learn about streaming content with CDN integration, as well as prefetching and Origin-Assist CDN-Prefetch.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 07/16/2024
 ms.author: inhenkel

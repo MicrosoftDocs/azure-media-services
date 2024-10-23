@@ -4,7 +4,7 @@ description: Use these icons in your architectural diagrams.
 services: media-services
 author: IngridAtMicrosoft
 manager: femila
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: reference
 ms.date: 04/05/2022
 ms.author: inhenkel

@@ -2,7 +2,7 @@
 title: Azure Media Service Compliance, privacy and security
 description: As an important reminder, you must comply with all applicable laws in your use of Azure Media Services, and you may not use Media Services or any Azure service in a manner that violates the rights of others, or that may be harmful to others.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: overview
 ms.date: 01/09/2023
 ms.author: inhenkel

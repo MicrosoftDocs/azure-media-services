@@ -2,7 +2,7 @@
 title: Upload media
 description: Learn how to upload media for streaming or encoding.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel

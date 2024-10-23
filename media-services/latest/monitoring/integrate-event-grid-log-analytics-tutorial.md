@@ -2,7 +2,7 @@
 title: Store Media Services events in Azure Log Analytics
 description: Azure Media Services v3 emits events on Azure Event Grid. You can subscribe to events in many ways and store them in data stores. In this tutorial, you will subscribe to Media Services events using a Log App Flow. The Logic App will be triggered for each event and store the body of the event in Azure Log Analytics. Once the events are in Azure Log Analytics, you can use other Azure services to create a dashboard, monitor, and alert on these events, though we won't be covering that in this tutorial.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: tutorial
 ms.date: 07/17/2023
 ms.author: inhenkel

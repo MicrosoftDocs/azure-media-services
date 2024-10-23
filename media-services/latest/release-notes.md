@@ -2,7 +2,7 @@
 title: Azure Media Services v3 release notes
 description: To stay up to date with the most recent developments, this article provides you with the latest updates on Azure Media Services v3.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: article
 ms.date: 06/29/2023
 ms.author: inhenkel

@@ -2,7 +2,7 @@
 title: Azure Media Services Analytics code samples
 description: This article is a listing of code samples for Analytics.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 02/24/2023
 ms.author: inhenkel

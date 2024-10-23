@@ -3,7 +3,7 @@ title: Azure Media Player demos
 description: This page contains a listing of links to demos of the Azure Media Player.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: article
 ms.date: 04/05/2021
 ---

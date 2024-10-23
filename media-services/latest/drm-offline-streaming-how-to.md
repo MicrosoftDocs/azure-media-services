@@ -2,7 +2,7 @@
 title: Media Services v3 offline streaming
 description: This article covers offline streaming with Fairplay, Widevine and Playready
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 01/09/2023
 ms.author: inhenkel

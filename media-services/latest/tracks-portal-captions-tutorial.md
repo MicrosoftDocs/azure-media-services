@@ -2,7 +2,7 @@
 title: How to use WebVTT files with Azure Media Services
 description: This article describes the steps for using captions and subtitles with Azure Media Services. In general, text tracks are used for closed captioning that enables viewers who need accessibility features in a video player to understand what is being said and sounds exist in a video. Subtitles, are text tracks that show the speech and sounds in a different language than the source language. For example, if the source language of a video is English, then the text track would be considered a caption. If an additional language text track is provided, it's considered a subtitle.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 02/14/2023
 ms.author: inhenkel

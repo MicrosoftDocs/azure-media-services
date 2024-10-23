@@ -2,7 +2,7 @@
 title: Azure Media Services packaging and origin errors
 description: This topic describes errors that you may receive from the Azure Media Services Streaming Endpoint (Orgin) service.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: error-reference
 ms.date: 01/09/2023
 ms.author: inhenkel

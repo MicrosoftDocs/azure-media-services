@@ -2,7 +2,7 @@
 title: Azure Policy built-in support in Media Services
 description: This article discusses Azure Policy built-in support for Azure Media Services scenarios.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

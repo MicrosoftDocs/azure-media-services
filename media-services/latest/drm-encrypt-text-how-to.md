@@ -5,7 +5,7 @@ ms.topic: how-to
 ms.date: 02/21/2023
 ms.author: inhenkel
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ---
 
 # How to encrypt captions using AES-128 Clear Key encryption

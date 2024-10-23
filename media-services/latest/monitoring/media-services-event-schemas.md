@@ -2,7 +2,7 @@
 title: Azure Event Grid schemas for Media Services events
 description: Learn about the properties that are provided for Media Services events with Azure Event Grid.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: reference
 ms.date: 11/8/2022
 ms.author: inhenkel

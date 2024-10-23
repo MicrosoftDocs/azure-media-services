@@ -2,7 +2,7 @@
 title: All Media Services SDKs
 description: This article lists all the SDKs that are available for Media Services.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel

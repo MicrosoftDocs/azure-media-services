@@ -3,7 +3,7 @@ title: Azure Media Services Trusted Storage
 description: In this tutorial, you'll learn how to enable trusted storage for Azure Media Services, use Manged Identities for trusted storage, and give Azure Services to access to a storage account when using a firewall or VPN.
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.custom: devx-track-arm-template
 ms.topic: tutorial
 ms.date: 07/17/2023

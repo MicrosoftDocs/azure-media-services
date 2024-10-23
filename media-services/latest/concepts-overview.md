@@ -2,7 +2,7 @@
 title: Media Services terminology and concepts
 description: Learn about terminology and concepts for Azure Media Services.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: overview
 ms.date: 01/09/2023
 ms.author: inhenkel

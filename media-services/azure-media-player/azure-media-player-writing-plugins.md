@@ -3,7 +3,7 @@ title: Writing plugins for Azure Media Player
 description: Learn how to write a plugin with Azure Media Player with JavaScript
 author: IngridAtMicrosoft
 ms.author: inhenkel
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: how-to
 ms.date: 04/19/2023
 ms.custom: devx-track-js

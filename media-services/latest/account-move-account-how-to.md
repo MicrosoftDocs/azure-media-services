@@ -2,7 +2,7 @@
 title: Move a Media Services account to another subscription
 description: This article discusses moving a Media Services v3 account to another subscription.
 author: IngridAtMicrosoft
-ms.service: media-services
+ms.service: azure-media-services
 ms.topic: conceptual
 ms.date: 01/09/2023
 ms.author: inhenkel
